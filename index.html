@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Unity CPP2IL｜反编译 / 逆向还原平台</title>
+  <meta name="description" content="Unity CPP2IL 提供 IL2CPP、APK、IPA、WASM、ARM 等多平台逆向分析与 C# 代码还原能力，支持上传分析、结构识别、调用关系恢复与结果导出。" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://cpp2il.example.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Unity CPP2IL｜反编译 / 逆向还原平台" />
+  <meta property="og:description" content="面向 Unity IL2CPP 的多平台逆向分析与 C# 代码还原工作台。" />
+  <meta property="og:image" content="https://cpp2il.example.com/assets/slides/0.png" />
+  <meta property="og:url" content="https://cpp2il.example.com/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Unity CPP2IL｜反编译 / 逆向还原平台" />
+  <meta name="twitter:description" content="面向 Unity IL2CPP 的多平台逆向分析与 C# 代码还原工作台。" />
+  <meta name="twitter:image" content="https://cpp2il.example.com/assets/slides/0.png" />
+
+  <!-- JSON-LD 结构化数据 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Unity CPP2IL",
+    "applicationCategory": "DeveloperApplication",
+    "description": "Unity IL2CPP 逆向还原平台，支持多平台包体分析与 C# 代码恢复。",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ══════════════════════════════════════════
+       0. 变量与重置
+       ══════════════════════════════════════════ */
+    :root{
+      --ink:#06112e;
+      --muted:#3b4e6a;
+      --soft:#4a5a78;
+      --line:rgba(82,100,245,.16);
+      --line-strong:rgba(82,100,245,.28);
+      --primary:#5264f5;
+      --primary-2:#805cff;
+      --cyan:#1bc6ff;
+      --bg:#f7f9ff;
+      --card:rgba(255,255,255,.82);
+      --glass:rgba(255,255,255,.74);
+      --shadow:0 28px 90px rgba(27,42,110,.16);
+      --shadow-strong:0 38px 120px rgba(7,17,47,.22);
+      --radius:30px;
+      --ease:cubic-bezier(.22,.8,.22,1);
+    }
+
+    *,*::before,*::after{box-sizing:border-box}
+    html{width:100%;min-height:100%;scroll-behavior:smooth;background:var(--bg);color:var(--ink);overflow-x:hidden}
+    body{
+      min-width:320px;min-height:100%;margin:0;overflow-x:hidden;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;
+      background:
+        radial-gradient(900px 540px at 78% 5%, rgba(82,100,245,.16), transparent 68%),
+        radial-gradient(720px 480px at 16% 18%, rgba(27,198,255,.10), transparent 62%),
+        linear-gradient(180deg,#fff 0%,#f8faff 46%,#fff 100%);
+    }
+    body::before{
+      content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+      background-image:linear-gradient(rgba(61,77,145,.052) 1px,transparent 1px),linear-gradient(90deg,rgba(61,77,145,.052) 1px,transparent 1px);
+      background-size:42px 42px;
+      -webkit-mask-image:radial-gradient(ellipse at center,#000 0%,rgba(0,0,0,.72) 44%,transparent 86%);
+      mask-image:radial-gradient(ellipse at center,#000 0%,rgba(0,0,0,.72) 44%,transparent 86%);
+    }
+    button,a{font:inherit}
+    a{text-decoration:none;color:inherit}
+    img,video{max-width:100%;height:auto}
+    section{scroll-margin-top:92px}
+    ol,ul{margin:0;padding:0;list-style:none}
+
+    /* ══════════════════════════════════════════
+       1. 全局焦点样式（a11y）
+       ══════════════════════════════════════════ */
+    :focus-visible{
+      outline:3px solid var(--primary);
+      outline-offset:3px;
+      border-radius:8px;
+    }
+    :focus:not(:focus-visible){outline:none}
+
+    /* ══════════════════════════════════════════
+       2. Skip Link（a11y）
+       ══════════════════════════════════════════ */
+    .skip-link{
+      position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;
+    }
+    .skip-link:focus{
+      position:fixed;top:12px;left:12px;width:auto;height:auto;z-index:100;
+      padding:12px 20px;border-radius:12px;background:#fff;box-shadow:var(--shadow);
+      font-weight:700;color:var(--primary);
+    }
+
+    /* ══════════════════════════════════════════
+       3. 容器
+       ══════════════════════════════════════════ */
+    .wrap{width:calc(100% - 48px);max-width:1280px;margin-left:auto;margin-right:auto}
+
+    /* ══════════════════════════════════════════
+       4. 顶部导航
+       ══════════════════════════════════════════ */
+    .topbar{position:fixed;left:0;right:0;top:0;z-index:40;padding:16px 20px 0;pointer-events:none}
+    .nav{
+      width:100%;max-width:1280px;height:64px;margin:0 auto;padding:0 10px 0 18px;
+      display:flex;align-items:center;justify-content:space-between;gap:18px;
+      border:1px solid rgba(255,255,255,.76);border-radius:999px;background:var(--glass);
+      box-shadow:0 18px 60px rgba(25,37,90,.12);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+      pointer-events:auto;
+    }
+    @supports not (backdrop-filter:blur(1px)){
+      .nav{background:rgba(255,255,255,.94)}
+    }
+    .brand{display:flex;align-items:center;gap:11px;font-weight:950;letter-spacing:-.04em;color:var(--ink);white-space:nowrap}
+    .brand-mark{width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--primary),var(--primary-2));box-shadow:0 12px 24px rgba(82,100,245,.32);position:relative;overflow:hidden;flex:0 0 auto}
+    .brand-mark::after{content:"";position:absolute;inset:8px;border-radius:8px;border:2px solid rgba(255,255,255,.9)}
+    .nav-links{display:flex;align-items:center;gap:6px;color:#52607d;font-size:14px;font-weight:850;min-width:0}
+    .nav-links a{padding:10px 13px;border-radius:999px;transition:background .22s var(--ease),color .22s var(--ease);white-space:nowrap}
+    .nav-links a:hover{background:rgba(82,100,245,.08);color:var(--primary)}
+    .nav-actions{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+
+    /* ══════════════════════════════════════════
+       5. 按钮
+       ══════════════════════════════════════════ */
+    .btn{
+      height:44px;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:0 18px;
+      border:1px solid var(--line);border-radius:999px;background:#fff;color:#111b3d;
+      font-weight:950;letter-spacing:-.025em;white-space:nowrap;cursor:pointer;
+      box-shadow:0 10px 26px rgba(30,44,110,.08);
+      transition:transform .24s var(--ease),box-shadow .24s var(--ease),border-color .24s var(--ease),background .24s var(--ease);
+    }
+    .btn:hover{transform:translateY(-2px);border-color:var(--line-strong);box-shadow:0 16px 34px rgba(30,44,110,.13)}
+    .btn.primary{border-color:transparent;color:#fff;background:linear-gradient(135deg,var(--primary),var(--primary-2));box-shadow:0 18px 34px rgba(82,100,245,.30)}
+    .btn.primary:hover{box-shadow:0 24px 48px rgba(82,100,245,.36)}
+    .btn.ghost{background:rgba(255,255,255,.76)}
+    .play-icon{width:22px;height:22px;display:grid;place-items:center;border-radius:999px;background:rgba(82,100,245,.10);color:var(--primary);font-size:10px;line-height:1;flex:0 0 auto}
+
+    /* ══════════════════════════════════════════
+       6. Hero
+       ══════════════════════════════════════════ */
+    .hero{position:relative;min-height:auto;padding:clamp(104px,8vw,128px) 0 clamp(56px,5.5vw,82px);display:flex;align-items:flex-start}
+    .hero-inner{
+      display:flex;flex-direction:column;align-items:center;gap:54px;width:100%;
+    }
+    .hero-copy{max-width:820px;text-align:center;width:100%}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;margin:0 0 18px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.78);color:var(--primary);font-size:12px;font-weight:950;letter-spacing:.11em;text-transform:uppercase;box-shadow:0 12px 32px rgba(49,64,142,.08);max-width:100%}
+    .eyebrow::before{content:"";width:8px;height:8px;border-radius:999px;background:linear-gradient(135deg,var(--primary),var(--cyan));box-shadow:0 0 0 6px rgba(82,100,245,.10);flex:0 0 auto}
+    h1{margin:0;color:var(--ink);font-size:clamp(42px,4.4vw,68px);line-height:1.02;letter-spacing:-.075em;font-weight:980;text-wrap:balance}
+    .gradient-text{background:linear-gradient(120deg,var(--primary),var(--primary-2) 58%,#19bff8);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{margin:24px auto 0;max-width:680px;color:var(--muted);font-size:clamp(17px,1.35vw,20px);line-height:1.78;font-weight:650;letter-spacing:-.02em}
+    .hero-cta{display:flex;align-items:center;flex-wrap:wrap;gap:13px;margin-top:32px;justify-content:center}
+    .hero-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:32px;max-width:620px;margin-left:auto;margin-right:auto}
+    .meta-card{padding:15px 16px;border:1px solid rgba(82,100,245,.12);border-radius:20px;background:rgba(255,255,255,.70);box-shadow:0 14px 34px rgba(28,43,100,.08);min-width:0}
+    .meta-card b{display:block;color:var(--ink);font-size:15px;letter-spacing:-.035em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .meta-card span{display:block;margin-top:5px;color:var(--soft);font-size:12px;font-weight:800}
+
+    /* ══════════════════════════════════════════
+       7. Hero 视觉区域（Bilibili iframe 嵌入）
+       ══════════════════════════════════════════ */
+    .visual{position:relative;width:100%;max-width:960px}
+    .visual::before{content:"";position:absolute;inset:-52px -34px auto auto;width:280px;height:280px;border-radius:999px;background:radial-gradient(circle,rgba(82,100,245,.20),transparent 70%);filter:blur(4px);z-index:-1}
+    .screen-card{position:relative;width:100%;padding:14px;border:1px solid rgba(255,255,255,.76);border-radius:34px;background:linear-gradient(180deg,rgba(255,255,255,.88),rgba(255,255,255,.62));box-shadow:var(--shadow-strong);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);overflow:hidden}
+    @supports not (backdrop-filter:blur(1px)){
+      .screen-card{background:rgba(255,255,255,.96)}
+    }
+    .screen-card::after{content:"";position:absolute;inset:0;border-radius:34px;pointer-events:none;background:linear-gradient(120deg,rgba(255,255,255,.42),transparent 38%,rgba(82,100,245,.08));mix-blend-mode:screen}
+    .browser-bar{height:42px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 15px 0 13px;border-bottom:1px solid rgba(82,100,245,.10)}
+    .lights{display:flex;gap:7px;flex:0 0 auto}.lights span{width:10px;height:10px;border-radius:999px;background:rgba(82,100,245,.22)}
+    .browser-title{color:#7583a5;font-size:12px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+    /* iframe 响应式容器 */
+    .iframe-wrap{
+      position:relative;width:100%;padding-top:56.25%; /* 16:9 */
+      border-radius:23px;overflow:hidden;
+      background:#07112f;
+      box-shadow:inset 0 0 0 1px rgba(82,100,245,.10);
+    }
+    .iframe-wrap iframe{
+      position:absolute;top:0;left:0;width:100%;height:100%;border:0;
+    }
+
+    /* 悬浮提示卡 */
+    .float-chip{position:absolute;right:24px;bottom:76px;z-index:2;display:flex;align-items:center;gap:10px;max-width:260px;padding:13px 14px;border:1px solid rgba(255,255,255,.74);border-radius:18px;background:rgba(255,255,255,.82);box-shadow:0 24px 60px rgba(7,17,47,.17);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+    @supports not (backdrop-filter:blur(1px)){
+      .float-chip{background:rgba(255,255,255,.94)}
+    }
+    .float-chip i{width:34px;height:34px;flex:0 0 auto;border-radius:13px;background:linear-gradient(135deg,var(--primary),var(--cyan));box-shadow:0 12px 24px rgba(82,100,245,.26)}
+    .float-chip strong{display:block;font-size:13px;letter-spacing:-.03em}.float-chip span{display:block;margin-top:3px;color:#657293;font-size:12px;font-weight:760}
+
+    /* 滚动提示 */
+    .scroll-hint{
+      display:flex;flex-direction:column;align-items:center;gap:6px;
+      margin-top:-10px;color:var(--soft);font-size:11px;font-weight:700;
+      letter-spacing:.04em;text-transform:uppercase;
+    }
+    .scroll-arrow{
+      width:30px;height:30px;display:grid;place-items:center;
+      border:1px solid var(--line);border-radius:999px;font-size:14px;
+      animation:scrollBounce 2.2s ease-in-out infinite;
+    }
+    @keyframes scrollBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+
+    /* ══════════════════════════════════════════
+       8. 通用 Section
+       ══════════════════════════════════════════ */
+    .section{position:relative;padding:96px 0}
+    .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:32px}
+    .section-kicker{margin:0 0 10px;color:var(--primary);font-size:12px;font-weight:980;letter-spacing:.16em;text-transform:uppercase}
+    .section h2{margin:0;color:var(--ink);font-size:clamp(32px,3.6vw,54px);line-height:1;letter-spacing:-.065em;text-wrap:balance}
+    .section-desc{max-width:470px;margin:0;color:var(--muted);font-size:16px;line-height:1.75;font-weight:650}
+
+    /* ══════════════════════════════════════════
+       9. Demo Section
+       ══════════════════════════════════════════ */
+    .demo-section{padding-top:28px}
+    .video-card{position:relative;padding:16px;border:1px solid rgba(255,255,255,.82);border-radius:36px;background:linear-gradient(180deg,rgba(255,255,255,.92),rgba(255,255,255,.70));box-shadow:var(--shadow-strong);overflow:hidden}
+    .video-card::before{content:"";position:absolute;left:50%;top:0;width:64%;height:44%;transform:translate(-50%,-45%);border-radius:999px;background:radial-gradient(circle,rgba(82,100,245,.24),transparent 70%);filter:blur(18px);pointer-events:none}
+    .video-toolbar{min-height:48px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 14px;border-bottom:1px solid rgba(82,100,245,.10);position:relative;z-index:1}
+    .video-label{display:flex;align-items:center;gap:10px;color:#657293;font-size:12px;font-weight:950;letter-spacing:.08em;text-transform:uppercase}.video-label::before{content:"";width:9px;height:9px;border-radius:999px;background:#20d48a;box-shadow:0 0 0 7px rgba(32,212,138,.12);flex:0 0 auto}
+    .video-tags{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.video-tags span{padding:6px 10px;border-radius:999px;background:rgba(82,100,245,.08);color:#5264f5;font-size:12px;font-weight:900}
+    .video-shell{position:relative;margin-top:14px;border-radius:25px;overflow:hidden;background:#07112f;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+    .video-shell .iframe-wrap{border-radius:0}
+
+    /* ══════════════════════════════════════════
+       10. Pipeline（分析流程）
+       ══════════════════════════════════════════ */
+    .pipeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:28px;position:relative}
+
+    @media(min-width:761px){
+      .pipeline::before{
+        content:"";position:absolute;top:50%;left:6%;right:6%;height:2px;z-index:0;
+        background:linear-gradient(90deg,var(--primary),var(--cyan));opacity:.15;
+      }
+    }
+
+    .step{
+      position:relative;z-index:1;min-height:190px;padding:24px;
+      border:1px solid rgba(82,100,245,.12);border-radius:28px;
+      background:rgba(255,255,255,.72);box-shadow:0 18px 48px rgba(30,44,110,.08);overflow:hidden;
+    }
+    .step::after{content:"";position:absolute;right:-34px;top:-42px;width:120px;height:120px;border-radius:999px;background:rgba(82,100,245,.10)}
+    .step small{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:16px;background:linear-gradient(135deg,var(--primary),var(--primary-2));box-shadow:0 16px 32px rgba(82,100,245,.26);color:#fff;font-size:13px;font-weight:980}
+    .step h3{margin:22px 0 10px;color:var(--ink);font-size:18px;line-height:1.2;letter-spacing:-.045em}
+    .step p{margin:0;color:var(--muted);font-size:14px;line-height:1.65;font-weight:650}
+
+    /* ══════════════════════════════════════════
+       11. CTA
+       ══════════════════════════════════════════ */
+    .final-cta{padding:72px 0 96px}
+    .cta-panel{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:34px;border:1px solid rgba(255,255,255,.82);border-radius:34px;background:linear-gradient(135deg,rgba(82,100,245,.12),rgba(255,255,255,.78) 42%,rgba(27,198,255,.10));box-shadow:var(--shadow)}
+    .cta-panel h2{margin:0;color:var(--ink);font-size:clamp(28px,3.2vw,44px);line-height:1.04;letter-spacing:-.065em}
+    .cta-panel p{margin:12px 0 0;color:var(--muted);font-size:16px;line-height:1.7;font-weight:650}
+
+    /* ══════════════════════════════════════════
+       12. Footer
+       ══════════════════════════════════════════ */
+    .site-footer{
+      border-top:1px solid rgba(82,100,245,.10);padding:40px 0;
+      background:rgba(255,255,255,.60);
+    }
+    .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .footer-brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--ink)}
+    .footer-brand .brand-mark{width:28px;height:28px;border-radius:10px}
+    .footer-copy{color:var(--muted);font-size:13px;font-weight:600}
+
+    /* ══════════════════════════════════════════
+       13. 入场动画
+       ══════════════════════════════════════════ */
+    .hero-copy,.visual,.scroll-hint{opacity:0;animation:fadeUp .7s var(--ease) forwards}
+    .visual{animation-delay:.12s}
+    .scroll-hint{animation-delay:.24s}
+    .step{opacity:0;animation:fadeUp .5s var(--ease) forwards}
+    .step:nth-child(1){animation-delay:.05s}
+    .step:nth-child(2){animation-delay:.12s}
+    .step:nth-child(3){animation-delay:.19s}
+    .step:nth-child(4){animation-delay:.26s}
+    .video-card,.cta-panel{opacity:0;animation:fadeUp .6s var(--ease) forwards;animation-delay:.1s}
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(24px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    /* ══════════════════════════════════════════
+       14. 响应式断点
+       ══════════════════════════════════════════ */
+
+    /* --bp-desktop: ≥1181px -- */
+    @media(min-width:1181px){
+      .demo-section{padding-top:54px}
+    }
+
+    /* --bp-tablet~desktop: 761px~1180px -- */
+    @media(max-width:1180px){
+      .nav-links{display:none}
+      .hero{min-height:auto;padding-top:116px}
+      .hero-inner{gap:38px}
+      .visual{max-width:860px}
+      .pipeline{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .section-head{align-items:flex-start;flex-direction:column}
+      .pipeline::before{display:none}
+    }
+
+    /* --bp-mobile: ≤760px -- */
+    @media(max-width:760px){
+      body::before{display:none}
+
+      .topbar{padding:10px 10px 0}
+      .nav{height:58px;padding-left:14px}
+      .brand{font-size:14px;gap:9px}
+      .brand-mark{width:28px;height:28px;border-radius:10px}
+      .brand-mark::after{inset:6px;border-radius:6px;border-width:1.5px}
+
+      .nav-actions .btn.ghost{display:none}
+      .btn{height:40px;padding:0 14px;font-size:14px}
+      .wrap{width:calc(100% - 28px)}
+      .hero{padding:92px 0 54px}
+      .hero-inner{gap:28px}
+      .eyebrow{font-size:10px;letter-spacing:.08em;padding:7px 10px}
+      h1{font-size:clamp(36px,10vw,48px);line-height:1.05;letter-spacing:-.065em}
+      .lead{font-size:16px;line-height:1.72;margin-top:18px}
+      .hero-meta{grid-template-columns:1fr;margin-top:24px}
+      .meta-card{padding:13px 14px}
+      .screen-card{padding:9px;border-radius:24px}
+      .browser-bar{height:34px;padding-left:10px;padding-right:10px}
+      .browser-title{font-size:10px}
+      .iframe-wrap{border-radius:17px}
+      .section{padding:66px 0}
+      .demo-section{padding-top:8px}
+      .section-desc{font-size:15px}
+      .video-card{padding:10px;border-radius:24px}
+      .video-toolbar{height:auto;min-height:44px;align-items:flex-start;flex-direction:column;padding:10px 10px 12px}
+      .video-tags{justify-content:flex-start}
+      .video-shell{border-radius:17px;margin-top:10px}
+      .pipeline{grid-template-columns:1fr;gap:12px}
+      .pipeline::before{
+        display:block;
+        left:35px;top:8%;bottom:8%;width:2px;
+        background:linear-gradient(180deg,var(--primary),var(--cyan));opacity:.12;
+      }
+      .step{min-height:auto}
+      .cta-panel{align-items:flex-start;flex-direction:column;padding:24px;border-radius:26px}
+      .final-cta{padding-bottom:64px}
+      .footer-inner{flex-direction:column;align-items:flex-start;gap:12px}
+    }
+
+    /* --bp-small: ≤420px -- */
+    @media(max-width:420px){
+      .nav-actions .btn.primary{padding:0 12px}
+      .btn{font-size:13px}
+      .wrap{width:calc(100% - 24px)}
+      .topbar{padding-left:8px;padding-right:8px}
+      .hero{padding-top:88px}
+      h1{font-size:34px}
+      .hero-cta .btn{width:100%}
+      .browser-title{max-width:170px}
+      .video-tags span{font-size:11px}
+      .section h2{font-size:30px}
+    }
+
+    /* ══════════════════════════════════════════
+       15. 减弱动画（a11y）
+       ══════════════════════════════════════════ */
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{
+        animation-duration:.001ms!important;
+        animation-iteration-count:1!important;
+        transition-duration:.001ms!important;
+        scroll-behavior:auto!important;
+      }
+      .hero-copy,.visual,.scroll-hint,.step,.video-card,.cta-panel{
+        opacity:1!important;transform:none!important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ Skip Link ═══ -->
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+  <!-- ═══ 导航 ═══ -->
+  <header class="topbar">
+    <nav class="nav" aria-label="Unity CPP2IL 导航">
+      <a class="brand" href="#top" aria-label="Unity CPP2IL 首页">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>CPP2IL</span>
+      </a>
+      <div class="nav-links" aria-label="页面导航">
+        <a href="#top">首页</a>
+        <a href="#demo">演示视频</a>
+        <a href="#workflow">处理流程</a>
+      </div>
+      <div class="nav-actions">
+        <a class="btn ghost" href="#demo" data-play-demo><span class="play-icon">▶</span>查看演示</a>
+        <a class="btn primary" href="https://ccna3po7lqul.feishu.cn/share/base/form/shrcnSKePcBYvea3LNF4h8wgvII"  target="_blank">内测申请 →</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ═══ 主体 ═══ -->
+  <main id="main-content">
+
+    <!-- ────── Hero ────── -->
+    <section class="hero" id="top">
+      <div class="wrap hero-inner">
+
+        <!-- 上方：文案 -->
+        <div class="hero-copy">
+          <p class="eyebrow">专业的 Unity CPP2IL 逆向还原平台</p>
+          <h1>Unity CPP2IL <span class="gradient-text">逆向还原工作台</span></h1>
+          <p class="lead">面向 Unity 游戏安全研究、代码审计、兼容性分析与 WebGL / ARM 原生包体还原，提供从包体导入、元数据识别、结构分析到 C# 代码恢复的完整工作流。</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="https://ccna3po7lqul.feishu.cn/share/base/form/shrcnSKePcBYvea3LNF4h8wgvII"  target="_blank">申请内测 →</a>
+            <a class="btn ghost" href="#demo" data-play-demo><span class="play-icon">▶</span>查看演示</a>
+          </div>
+          <div class="hero-meta" aria-label="能力摘要">
+            <div class="meta-card"><b>IL2CPP → C#</b><span>还原代码结构</span></div>
+            <div class="meta-card"><b>ARM / WebGL</b><span>多平台包体分析</span></div>
+            <div class="meta-card"><b>AST 还原链路</b><span>可追踪转换过程</span></div>
+          </div>
+        </div>
+
+        <!-- 下方：Bilibili iframe 嵌入 -->
+        <div class="visual" aria-label="Unity CPP2IL 功能预览">
+          <div class="screen-card">
+            <div class="browser-bar">
+              <div class="lights" aria-hidden="true"><span></span><span></span><span></span></div>
+              <div class="browser-title">IL2CPP 分析工作台</div>
+            </div>
+            <div class="iframe-wrap">
+              <iframe
+                src="//player.bilibili.com/player.html?isOutside=true&aid=116822724707548&bvid=BV1vm7W6gEjL&cid=39458703555&p=1&high_quality=1&danmaku=0"
+                scrolling="no"
+                frameborder="0"
+                allowfullscreen="true"
+                loading="lazy"
+                title="CPP2IL 功能预览视频"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- 滚动提示 -->
+        <div class="scroll-hint" aria-hidden="true">
+          <span class="scroll-arrow">↓</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ────── Demo ────── -->
+    <section class="section demo-section" id="demo" aria-label="Unity CPP2IL 产品演示">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">产品演示</p>
+            <h2>观看 CPP2IL 实际分析流程</h2>
+          </div>
+          <p class="section-desc">以下演示视频展示从包体导入、元数据识别、结构分析到 C# 还原结果查看的完整链路，覆盖主要操作步骤与输出格式。</p>
+        </div>
+        <div class="video-card">
+          <div class="video-toolbar">
+            <div class="video-label">CPP2IL 产品演示</div>
+            <div class="video-tags" aria-label="演示标签"><span>包体上传</span><span>元数据提取</span><span>代码还原</span><span>结果浏览</span></div>
+          </div>
+          <div class="video-shell">
+            <div class="iframe-wrap">
+              <iframe
+                src="//player.bilibili.com/player.html?isOutside=true&aid=116822724576489&bvid=BV1Rm7W6uEJM&cid=39460079403&p=1&high_quality=1&danmaku=0"
+                scrolling="no"
+                frameborder="0"
+                allowfullscreen="true"
+                loading="lazy"
+                title="CPP2IL 产品演示视频"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ────── Workflow ────── -->
+    <section class="section" id="workflow" aria-label="Unity CPP2IL 分析流程">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">分析流程</p>
+            <h2>从包体到可读 C# 的完整链路</h2>
+          </div>
+          <p class="section-desc">围绕 Unity IL2CPP 项目的真实分析场景，串联上传、识别、还原与导出流程，让访问者快速理解工具能力与使用路径。</p>
+        </div>
+        <ol class="pipeline" aria-label="分析流程步骤">
+          <li class="step"><small>01</small><h3>上传包体与元数据</h3><p>支持 APK、IPA、WASM、Windows、ELF、Mach-O 等输入格式，统一进入分析流程。</p></li>
+          <li class="step"><small>02</small><h3>自动识别分析目标</h3><p>自动识别文件类型、运行平台、元数据结构与反编译策略，减少手工配置。</p></li>
+          <li class="step"><small>03</small><h3>恢复结构与调用关系</h3><p>重建类型、方法、字段、调用链与控制流关系，形成可追踪的中间表示。</p></li>
+          <li class="step"><small>04</small><h3>查看并导出结果</h3><p>输出更接近 Unity 工程习惯的 C# 代码、结构报告与分析结果，便于审计和验证。</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ────── CTA ────── -->
+    <section class="final-cta">
+      <div class="wrap">
+        <div class="cta-panel">
+          <div>
+            <h2>申请加入 CPP2IL 内测</h2>
+            <p>体验多平台包体分析、元数据映射、调用关系恢复与 C# 代码还原能力，适合 Unity 安全研究、兼容性排查与代码审计场景。</p>
+          </div>
+          <a class="btn primary" href="https://ccna3po7lqul.feishu.cn/share/base/form/shrcnSKePcBYvea3LNF4h8wgvII"  target="_blank">内测申请 →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>CPP2IL</span>
+      </div>
+      <p class="footer-copy">© 2026 CPP2IL. 仅供安全研究与代码审计用途。</p>
+    </div>
+  </footer>
+
+  <!-- ═══ 脚本 ═══ -->
+  <script>
+    /* ── 播放演示按钮 → 平滑滚动到演示区 ── */
+    document.querySelectorAll('[data-play-demo]').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        var demo = document.getElementById('demo');
+        if (demo) {
+          demo.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
