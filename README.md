@@ -1,7 +1,5 @@
 # cpp2il.github.io
 Unity CPP2IL is a reverse-engineering platform for Unity IL2CPP. It processes APK, IPA, WASM, ELF, and Mach-O packages — extracting metadata, rebuilding type hierarchies, restoring call graphs and control flow, then decompiles to readable C# with a traceable IR pipeline. Designed for game security research, code auditing, and compatibility analysis
-
-```markdown
 <h1 align="center">Unity CPP2IL</h1>
 
 <p align="center">
@@ -24,6 +22,7 @@ Unity CPP2IL is a reverse-engineering platform for Unity IL2CPP. It processes AP
 
 [![视频封面](https://i0.hdslb.com/bfs/archive/你的封面图.jpg)](https://www.bilibili.com/video/BV1vm7W6gEjL)
 [Unity CPP2IL 产品演示](https://www.bilibili.com/video/BV1Rm7W6uEJM)
+
 ---
 
 ## 目录
@@ -440,7 +439,7 @@ CPP2IL 的核心工作是从右侧逆向还原左侧的信息。AST 还原链路
 
 ## 与同类工具对比
 
-| 特性 | CPP2IL | Il2CppDumper |Cpp2IL (Samboy)| dnSpy/ILSpy |
+| 特性 | CPP2IL | Il2CppDumper | Cpp2IL (Samboy) | dnSpy/ILSpy |
 |---|:---:|:---:|:---:|:---:|
 | 元数据解析 | ✅ | ✅ | ✅ | ❌ |
 | 方法体还原 | ✅ | ❌ | ⚠️ 部分 | ✅ (仅 .NET) |
@@ -589,7 +588,6 @@ git push origin feature/your-feature
 | 内测申请 | [cpp2il.com/apply.html](https://ccna3po7lqul.feishu.cn/share/base/form/shrcnSKePcBYvea3LNF4h8wgvII) |
 | GitHub | [https://github.com/chenzifeng/cpp2il.github.io](https://github.com/chenzifeng/cpp2il.github.io) |
 | 问题反馈 | [GitHub Issues](https://github.com/chenzifeng/cpp2il.github.io/issues) |
-| 邮箱 | contact@cpp2il.com |
 
 ---
 
@@ -604,4 +602,3 @@ Copyright © 2026 CPP2IL. All rights reserved.
 <p align="center">
   <sub>仅供安全研究与代码审计用途。请遵守当地法律法规。</sub>
 </p>
-```
