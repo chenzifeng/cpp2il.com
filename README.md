@@ -1,16 +1,20 @@
+```markdown
 # cpp2il.github.io
 Unity CPP2IL is a reverse-engineering platform for Unity IL2CPP. It processes APK, IPA, WASM, ELF, and Mach-O packages — extracting metadata, rebuilding type hierarchies, restoring call graphs and control flow, then decompiles to readable C# with a traceable IR pipeline. Designed for game security research, code auditing, and compatibility analysis
+
+[中文文档](README_zh.md) | [English document](README.md)
+
 <h1 align="center">Unity CPP2IL</h1>
 
 <p align="center">
-  <strong>面向 Unity IL2CPP 的多平台逆向还原工作台</strong>
+  <strong>Multi-platform reverse engineering workbench for Unity IL2CPP</strong>
 </p>
 
 <p align="center">
-  <a href="https://cpp2il.com">官网</a> ·
-  <a href="https://ccna3po7lqul.feishu.cn/share/base/form/shrcnSKePcBYvea3LNF4h8wgvII">内测申请</a> ·
-  <a href="https://github.com/chenzifeng/cpp2il.github.io/issues">问题反馈</a> ·
-  <a href="#-常见问题">FAQ</a>
+  <a href="https://cpp2il.com">Official Website</a> ·
+  <a href="https://ccna3po7lqul.feishu.cn/share/base/form/shrcnSKePcBYvea3LNF4h8wgvII">Apply for Beta</a> ·
+  <a href="https://github.com/chenzifeng/cpp2il.github.io/issues">Issue Feedback</a> ·
+  <a href="#-faq">FAQ</a>
 </p>
 
 <p align="center">
@@ -20,147 +24,150 @@ Unity CPP2IL is a reverse-engineering platform for Unity IL2CPP. It processes AP
   <img src="https://img.shields.io/badge/License-Proprietary-red" alt="License" />
 </p>
 
-[![视频封面](https://i0.hdslb.com/bfs/archive/你的封面图.jpg)](https://www.bilibili.com/video/BV1vm7W6gEjL)
-[Unity CPP2IL 产品演示](https://www.bilibili.com/video/BV1Rm7W6uEJM)
+[![Video Cover](https://i0.hdslb.com/bfs/archive/your-cover-image.jpg)](https://www.bilibili.com/video/BV1vm7W6gEjL)
+[Unity CPP2IL Product Demo](https://www.bilibili.com/video/BV1Rm7W6uEJM)
 
 ---
 
-## 目录
+## Table of Contents
 
-- [简介](#简介)
-- [核心能力](#核心能力)
-- [支持的输入格式](#支持的输入格式)
-- [工作流程](#工作流程)
-- [输出结果](#输出结果)
-- [快速开始](#快速开始)
-  - [在线平台（推荐）](#在线平台推荐)
-  - [本地部署](#本地部署)
-- [使用示例](#使用示例)
-  - [示例 1：分析 Android APK](#示例-1分析-android-apk)
-  - [示例 2：分析 iOS IPA](#示例-2分析-ios-ipa)
-  - [示例 3：分析 WebGL WASM](#示例-3分析-webgl-wasm)
-- [项目结构](#项目结构)
-- [技术架构](#技术架构)
-  - [分析管线](#分析管线)
-  - [AST 还原链路](#ast-还原链路)
-- [与同类工具对比](#与同类工具对比)
-- [性能基准](#性能基准)
-- [常见问题](#常见问题)
-- [安全与合规](#安全与合规)
-- [贡献指南](#贡献指南)
-- [更新日志](#更新日志)
-- [联系方式](#联系方式)
-- [许可证](#许可证)
+- [Introduction](#introduction)
+- [Core Capabilities](#core-capabilities)
+- [Supported Input Formats](#supported-input-formats)
+- [Workflow](#workflow)
+- [Output Results](#output-results)
+- [Quick Start](#quick-start)
+  - [Online Platform (Recommended)](#online-platform-recommended)
+  - [Local Deployment](#local-deployment)
+- [Usage Examples](#usage-examples)
+  - [Example 1: Analyzing an Android APK](#example-1-analyzing-an-android-apk)
+  - [Example 2: Analyzing an iOS IPA](#example-2-analyzing-an-ios-ipa)
+  - [Example 3: Analyzing a WebGL WASM](#example-3-analyzing-a-webgl-wasm)
+- [Project Structure](#project-structure)
+- [Technical Architecture](#technical-architecture)
+  - [Analysis Pipeline](#analysis-pipeline)
+  - [AST Restoration Chain](#ast-restoration-chain)
+- [Comparison with Similar Tools](#comparison-with-similar-tools)
+- [Performance Benchmarks](#performance-benchmarks)
+- [FAQ](#faq)
+- [Security & Compliance](#security--compliance)
+- [Contributing Guide](#contributing-guide)
+- [Changelog](#changelog)
+- [Contact](#contact)
+- [License](#license)
 
 ---
 
-## 简介
+## Introduction
 
-**Unity CPP2IL** 是一个面向 Unity IL2CPP 项目的逆向分析与 C# 代码还原平台。
+**Unity CPP2IL** is a reverse analysis and C# code restoration platform for Unity IL2CPP projects.
 
-Unity 引擎使用 IL2CPP（Intermediate Language To C++）技术将 C# 代码编译为 C++，再由平台原生编译器生成机器码。这一过程丢失了原始的类型信息、泛型参数、委托关系与高层控制流结构。CPP2IL 的目标是从编译产物中尽可能还原这些信息，输出可读、可追踪的 C# 代码与结构化分析报告。
+The Unity engine uses IL2CPP (Intermediate Language To C++) technology to compile C# code into C++, which is then compiled into machine code by the platform's native compiler. This process loses original type information, generic parameters, delegate relationships, and high-level control flow structures. CPP2IL aims to recover as much of this information as possible from the compiled output, delivering readable and traceable C# code along with structured analysis reports.
 
-### 适用场景
+### Use Cases
 
-| 场景 | 说明 |
+| Scenario | Description |
 |---|---|
-| **游戏安全研究** | 分析游戏逻辑、协议通信、数据存储机制 |
-| **代码审计** | 检查第三方 SDK 行为、隐私合规、敏感数据处理 |
-| **兼容性排查** | 定位崩溃堆栈中 IL2CPP 符号对应的原始代码 |
-| **漏洞分析** | 还原潜在的安全漏洞上下文 |
-| **学术研究** | 编译器逆向、程序分析、静态分析技术研究 |
+| **Game Security Research** | Analyze game logic, protocol communication, and data storage mechanisms |
+| **Code Auditing** | Inspect third-party SDK behavior, privacy compliance, and sensitive data handling |
+| **Compatibility Troubleshooting** | Locate the original code corresponding to IL2CPP symbols in crash stacks |
+| **Vulnerability Analysis** | Reconstruct the context around potential security vulnerabilities |
+| **Academic Research** | Compiler reverse engineering, program analysis, and static analysis research |
 
-> **免责声明**：本工具仅供安全研究与代码审计用途。使用者应遵守所在地区的法律法规，不得用于非法目的。
-
----
-
-## 核心能力
-
-- **IL2CPP 元数据解析** — 解析 `global-metadata.dat`，提取类型定义、方法签名、字符串字面量、字段布局等元数据
-- **libil2cpp 二进制分析** — 基于 ELF / PE / Mach-O / WASM 二进制结构，识别 IL2CPP 生成的 C++ 函数与运行时接口
-- **类型结构重建** — 还原类继承关系、接口实现、泛型实例化、枚举定义与嵌套类型
-- **调用关系恢复** — 构建方法级调用图（Call Graph），识别虚方法调度、委托调用与反射调用
-- **控制流分析** — 从 LLVM IR / 机器码层面恢复 if-else、循环、switch、try-catch 等控制流结构
-- **C# 代码还原** — 输出接近 Unity 工程习惯的 C# 代码，保留命名空间、类型层次与方法签名
-- **AST 可追踪** — 每段输出代码可追溯到中间表示（IR）节点，便于人工审查与验证
-- **多平台覆盖** — 统一分析管线，支持 Android、iOS、Windows、macOS、Linux、WebGL 等平台产物
+> **Disclaimer**: This tool is intended solely for security research and code auditing. Users must comply with local laws and regulations and shall not use it for illegal purposes.
 
 ---
 
-## 支持的输入格式
+## Core Capabilities
 
-| 格式 | 平台 | 说明 |
+- **IL2CPP Metadata Parsing** — Parse `global-metadata.dat` to extract type definitions, method signatures, string literals, field layouts, and other metadata
+- **libil2cpp Binary Analysis** — Identify IL2CPP-generated C++ functions and runtime interfaces based on ELF / PE / Mach-O / WASM binary structures
+- **Type Structure Reconstruction** — Restore class inheritance hierarchies, interface implementations, generic instantiations, enum definitions, and nested types
+- **Call Relationship Recovery** — Build method-level call graphs, identifying virtual method dispatch, delegate calls, and reflective invocations
+- **Control Flow Analysis** — Recover if-else, loops, switch, try-catch, and other control flow structures from LLVM IR / machine code level
+- **C# Code Restoration** — Output C# code that approximates typical Unity project conventions, preserving namespaces, type hierarchies, and method signatures
+- **Traceable AST** — Every output code segment can be traced back to an intermediate representation (IR) node, facilitating manual review and verification
+- **Multi-platform Coverage** — A unified analysis pipeline supports artifacts from Android, iOS, Windows, macOS, Linux, WebGL, and other platforms
+
+---
+
+## Supported Input Formats
+
+| Format | Platform | Description |
 |---|---|---|
-| `.apk` | Android | 完整 APK 包，自动解压并定位 `libil2cpp.so` 与 `global-metadata.dat` |
+| `.apk` | Android | Full APK package, automatically extracts and locates `libil2cpp.so` and `global-metadata.dat` |
 | `.aab` | Android | Android App Bundle |
-| `.ipa` | iOS | iOS 应用包，自动解压并定位 Mach-O 二进制 |
-| `.xarchive` / `.app` | macOS | macOS 应用包 |
-| `.exe` / `.dll` | Windows | Windows 可执行文件或 IL2CPP 动态库 |
-| `.so` / `.dylib` | Linux / macOS | ELF 或 Mach-O 共享库 |
-| `.wasm` | WebGL | WebAssembly 模块，配合 JavaScript 胶水代码分析 |
-| `libil2cpp.so` + `global-metadata.dat` | 通用 | 直接上传核心二进制与元数据文件 |
+| `.ipa` | iOS | iOS application package, automatically extracts and locates the Mach-O binary |
+| `.xarchive` / `.app` | macOS | macOS application bundle |
+| `.exe` / `.dll` | Windows | Windows executable or IL2CPP dynamic library |
+| `.so` / `.dylib` | Linux / macOS | ELF or Mach-O shared library |
+| `.wasm` | WebGL | WebAssembly module, analyzed alongside JavaScript glue code |
+| `libil2cpp.so` + `global-metadata.dat` | Generic | Directly upload the core binary and metadata files |
 
-> 上传时无需手动解包。平台会自动识别文件类型、运行平台与元数据结构。
+> No manual unpacking is required. The platform automatically identifies file type, target platform, and metadata structures.
 
 ---
 
-## 工作流程
+## Workflow
 
 ```
 ┌──────────────┐     ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
 │              │     │              │     │              │     │              │
-│  ① 上传包体  │────▶│ ② 自动识别   │────▶│ ③ 结构还原   │────▶│ ④ 结果导出   │
+│ ① Upload     │───▶│ ② Auto-detect│───▶│ ③ Structure  │───▶│ ④ Export     │
+│   Package    │     │              │     │   Restore    │     │   Results    │
 │              │     │              │     │              │     │              │
 └──────────────┘     └──────────────┘     └──────────────┘     └──────────────┘
-  APK / IPA /          文件类型识别         类型重建             C# 代码
-  WASM / ELF /         平台判定            方法签名恢复         结构报告
-  Mach-O / EXE         元数据定位          调用图构建           分析日志
-                       反编译策略选择       控制流分析
-                                           AST 生成
+  APK / IPA /          File type ID         Type rebuilding      C# code
+  WASM / ELF /         Platform detection   Method signature     Structure report
+  Mach-O / EXE         Metadata location    recovery             Analysis log
+                       Decompilation         Call graph
+                       strategy selection    construction
+                                             Control flow analysis
+                                             AST generation
 ```
 
-### 详细步骤
+### Detailed Steps
 
-**Step 1 — 上传包体与元数据**
+**Step 1 — Upload Package and Metadata**
 
-支持拖拽或选择文件上传。平台支持单文件（APK/IPA）或分离文件（libil2cpp.so + global-metadata.dat）两种上传模式。
+Supports drag-and-drop or file selection. Both single-file (APK/IPA) and split-file (libil2cpp.so + global-metadata.dat) upload modes are supported.
 
-**Step 2 — 自动识别分析目标**
+**Step 2 — Automatic Target Identification**
 
-- 检测文件格式（ELF / PE / Mach-O / WASM）
-- 识别目标架构（ARMv7 / ARM64 / x86 / x86_64 / WebAssembly）
-- 定位 IL2CPP 元数据区段与符号表
-- 解析 Unity 版本以选择对应的元数据结构定义
-- 根据平台特征选择最优分析策略
+- Detect file format (ELF / PE / Mach-O / WASM)
+- Identify target architecture (ARMv7 / ARM64 / x86 / x86_64 / WebAssembly)
+- Locate IL2CPP metadata sections and symbol tables
+- Parse the Unity version to select the corresponding metadata structure definitions
+- Choose the optimal analysis strategy based on platform characteristics
 
-**Step 3 — 恢复结构与调用关系**
+**Step 3 — Restore Structure and Call Relationships**
 
-- 解析 `global-metadata.dat` 中的类型定义表、方法定义表、字符串表
-- 在二进制中定位 IL2CPP Runtime API 调用点
-- 重建类层次结构（继承链、接口实现）
-- 恢复方法签名（参数类型、返回值、泛型参数）
-- 构建方法级调用图
-- 从 LLVM IR / 机器码恢复高层控制流
-- 生成抽象语法树（AST）
+- Parse type definition tables, method definition tables, and string tables from `global-metadata.dat`
+- Locate IL2CPP Runtime API call sites within the binary
+- Rebuild class hierarchies (inheritance chains, interface implementations)
+- Restore method signatures (parameter types, return values, generic parameters)
+- Build method-level call graphs
+- Recover high-level control flow from LLVM IR / machine code
+- Generate an Abstract Syntax Tree (AST)
 
-**Step 4 — 查看并导出结果**
+**Step 4 — View and Export Results**
 
-- 在线浏览还原后的 C# 代码
-- 按命名空间 / 类型 / 方法层级导航
-- 查看方法级调用关系图
-- 导出完整项目结构（ZIP）
-- 导出分析报告（Markdown / JSON）
+- Browse the restored C# code online
+- Navigate by namespace / type / method hierarchy
+- View method-level call relationship diagrams
+- Export the complete project structure (ZIP)
+- Export analysis reports (Markdown / JSON)
 
 ---
 
-## 输出结果
+## Output Results
 
-### C# 代码
+### C# Code
 
-输出的 C# 代码尽可能还原以下结构：
+The output C# code restores the following structures as accurately as possible:
 
 ```csharp
-// 还原示例 — 输出代码保留命名空间、类型层次、泛型参数与方法签名
+// Restoration example — output preserves namespaces, type hierarchies, generic parameters, and method signatures
 namespace Game.Core
 {
     public class PlayerController : MonoBehaviour
@@ -183,20 +190,20 @@ namespace Game.Core
 }
 ```
 
-### 结构化报告
+### Structured Report
 
 ```
-├── types.json          # 类型定义（字段、方法、继承关系）
-├── methods.json        # 方法签名与调用关系
-├── strings.json        # 字符串字面量表
-├── callgraph.json      # 方法级调用图
-├── analysis.log        # 分析过程日志
-└── summary.md          # 可读摘要报告
+├── types.json          # Type definitions (fields, methods, inheritance)
+├── methods.json        # Method signatures and call relationships
+├── strings.json        # String literal table
+├── callgraph.json      # Method-level call graph
+├── analysis.log        # Analysis process log
+└── summary.md          # Human-readable summary report
 ```
 
-### 可追踪 IR
+### Traceable IR
 
-每个还原的 C# 语句可关联到中间表示节点：
+Each restored C# statement can be linked to an intermediate representation node:
 
 ```
 [Line 12] _rigidbody.velocity = direction * _moveSpeed;
@@ -207,78 +214,78 @@ namespace Game.Core
 
 ---
 
-## 快速开始
+## Quick Start
 
-### 在线平台（推荐）
+### Online Platform (Recommended)
 
-1. 访问 [cpp2il.com](https://cpp2il.com)
-2. 点击「申请内测」填写申请表
-3. 获得访问权限后，上传包体文件
-4. 等待分析完成，在线浏览或导出结果
+1. Visit [cpp2il.com](https://cpp2il.com)
+2. Click "Apply for Beta" to fill out the application form
+3. After obtaining access, upload the package file
+4. Wait for the analysis to complete, then browse or export results online
 
-### 本地部署
+### Local Deployment
 
-#### 环境要求
+#### Requirements
 
-| 依赖 | 最低版本 | 说明 |
+| Dependency | Minimum Version | Notes |
 |---|---|---|
-| Docker | 24.0+ | 推荐使用 Docker 部署 |
-| 磁盘空间 | 10 GB+ | 取决于分析目标大小 |
-| 内存 | 8 GB+ | 大型包体建议 16 GB+ |
+| Docker | 24.0+ | Docker deployment is recommended |
+| Disk Space | 10 GB+ | Depends on the size of the analysis target |
+| Memory | 8 GB+ | 16 GB+ recommended for large packages |
 
-#### Docker 部署
+#### Docker Deployment
 
 ```bash
-# 拉取镜像
+# Pull the image
 docker pull ghcr.io/your-org/cpp2il:latest
 
-# 启动服务
+# Start the service
 docker run -d \
   --name cpp2il \
   -p 8080:8080 \
   -v ./data:/app/data \
   ghcr.io/your-org/cpp2il:latest
 
-# 访问
+# Access
 open http://localhost:8080
 ```
 
-#### 源码构建
+#### Build from Source
 
 ```bash
-# 克隆仓库
+# Clone the repository
 git clone https://github.com/chenzifeng/cpp2il.github.io.git
 cd cpp2il
 
-# 安装依赖
+# Install dependencies
 npm install
 
-# 构建
+# Build
 npm run build
 
-# 启动
+# Start
 npm run start
 ```
 
 ---
 
-## 使用示例
+## Usage Examples
 
-### 示例 1：分析 Android APK
+### Example 1: Analyzing an Android APK
 
 ```bash
-# 使用 CLI 工具分析 APK
+# Analyze an APK using the CLI tool
 cpp2il analyze \
   --input game.apk \
   --platform android \
   --arch arm64 \
   --output ./output/
 
-# 输出结构
+# Output structure
 # ./output/
-# ├── GameAssembly.so          # 提取的 IL2CPP 二进制
-# ├── global-metadata.dat      # 提取的元数据
-# ├── decompiled/              # 还原的 C# 代码
+# ├── GameAssembly.so             # Extracted IL2CPP binary
+# ├── global-metadata.dat         # Extracted metadata
+# ├── decompiled/                 # Restored C# code
 # │   ├── Assembly-CSharp/
 # │   │   ├── Game/
 # │   │   │   ├── Core/
@@ -289,11 +296,11 @@ cpp2il analyze \
 # │   │   │       └── ...
 # │   │   └── Plugins/
 # │   └── Assembly-CSharp-firstpass/
-# ├── report.json              # 分析报告
-# └── summary.md               # 可读摘要
+# ├── report.json                 # Analysis report
+# └── summary.md                  # Human-readable summary
 ```
 
-### 示例 2：分析 iOS IPA
+### Example 2: Analyzing an iOS IPA
 
 ```bash
 cpp2il analyze \
@@ -302,14 +309,14 @@ cpp2il analyze \
   --arch arm64 \
   --output ./output/
 
-# 平台会自动：
-# 1. 解压 IPA → Payload/Game.app/
-# 2. 定位主二进制文件
-# 3. 提取 embedded metadata
-# 4. 执行完整分析管线
+# The platform automatically:
+# 1. Extracts IPA → Payload/Game.app/
+# 2. Locates the main binary
+# 3. Extracts embedded metadata
+# 4. Executes the complete analysis pipeline
 ```
 
-### 示例 3：分析 WebGL WASM
+### Example 3: Analyzing a WebGL WASM
 
 ```bash
 cpp2il analyze \
@@ -318,57 +325,57 @@ cpp2il analyze \
   --glue build.framework.js \
   --output ./output/
 
-# WebGL 分析额外处理：
-# - WASM 模块解析
-# - JavaScript 胶水代码映射
-# - IL2CPP WASM Runtime 接口识别
+# Additional processing for WebGL analysis:
+# - WASM module parsing
+# - JavaScript glue code mapping
+# - IL2CPP WASM Runtime interface identification
 ```
 
 ---
 
-## 项目结构
+## Project Structure
 
 ```
 cpp2il/
 ├── packages/
-│   ├── core/                  # 核心分析引擎
-│   │   ├── metadata/          # 元数据解析器
-│   │   │   ├── parser.ts      # global-metadata.dat 解析
-│   │   │   ├── types.ts       # 类型定义重建
-│   │   │   └── strings.ts     # 字符串表提取
-│   │   ├── binary/            # 二进制分析
-│   │   │   ├── elf.ts         # ELF 格式支持
-│   │   │   ├── pe.ts          # PE 格式支持
-│   │   │   ├── macho.ts       # Mach-O 格式支持
-│   │   │   └── wasm.ts        # WebAssembly 支持
-│   │   ├── decompiler/        # 反编译管线
-│   │   │   ├── cfg.ts         # 控制流图构建
-│   │   │   ├── ssa.ts         # SSA 变换
-│   │   │   ├── type-infer.ts  # 类型推断
-│   │   │   └── emitter.ts     # C# 代码生成
-│   │   └── callgraph/         # 调用图分析
-│   ├── web/                   # Web 前端
+│   ├── core/                  # Core analysis engine
+│   │   ├── metadata/          # Metadata parser
+│   │   │   ├── parser.ts      # global-metadata.dat parsing
+│   │   │   ├── types.ts       # Type definition reconstruction
+│   │   │   └── strings.ts     # String table extraction
+│   │   ├── binary/            # Binary analysis
+│   │   │   ├── elf.ts         # ELF format support
+│   │   │   ├── pe.ts          # PE format support
+│   │   │   ├── macho.ts       # Mach-O format support
+│   │   │   └── wasm.ts        # WebAssembly support
+│   │   ├── decompiler/        # Decompilation pipeline
+│   │   │   ├── cfg.ts         # Control flow graph construction
+│   │   │   ├── ssa.ts         # SSA transformation
+│   │   │   ├── type-infer.ts  # Type inference
+│   │   │   └── emitter.ts     # C# code generation
+│   │   └── callgraph/         # Call graph analysis
+│   ├── web/                   # Web frontend
 │   │   ├── src/
-│   │   │   ├── pages/         # 页面组件
-│   │   │   ├── components/    # UI 组件
-│   │   │   └── stores/        # 状态管理
+│   │   │   ├── pages/         # Page components
+│   │   │   ├── components/    # UI components
+│   │   │   └── stores/        # State management
 │   │   └── public/
-│   ├── api/                   # 后端 API
+│   ├── api/                   # Backend API
 │   │   ├── routes/
 │   │   ├── services/
-│   │   └── workers/           # 分析任务队列
-│   └── cli/                   # 命令行工具
-├── docs/                      # 文档
-├── examples/                  # 示例文件
+│   │   └── workers/           # Analysis task queue
+│   └── cli/                   # Command-line tool
+├── docs/                      # Documentation
+├── examples/                  # Example files
 ├── docker-compose.yml
 └── README.md
 ```
 
 ---
 
-## 技术架构
+## Technical Architecture
 
-### 分析管线
+### Analysis Pipeline
 
 ```
                      ┌─────────────────────────────────────────────────┐
@@ -378,11 +385,11 @@ cpp2il/
                     ┌─────────────────────┼─────────────────────┐
                     ▼                     ▼                     ▼
             ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
-            │  Metadata     │     │  Binary       │     │  Glue /      │
-            │  Parser       │     │  Analyzer     │     │  Runtime     │
+            │  Metadata    │     │  Binary      │     │  Glue /      │
+            │  Parser      │     │  Analyzer    │     │  Runtime     │
             │              │     │              │     │              │
-            │ global-       │     │ ELF/PE/MachO │     │ JS glue      │
-            │ metadata.dat │     │ WASM module   │     │ IL2CPP RT    │
+            │ global-      │     │ ELF/PE/MachO │     │ JS glue      │
+            │ metadata.dat │     │ WASM module  │     │ IL2CPP RT    │
             └──────┬───────┘     └──────┬───────┘     └──────┬───────┘
                    │                     │                     │
                    └──────────┬──────────┘─────────────────────┘
@@ -391,21 +398,22 @@ cpp2il/
                     │  Type System     │
                     │  Reconstruction  │
                     │                  │
-                    │ 类继承 / 接口    │
-                    │ 泛型实例化       │
-                    │ 枚举 / 委托      │
+                    │ Class Inheritance│
+                    │ / Interfaces     │
+                    │ Generic Inst.    │
+                    │ Enums / Delegates│
                     └────────┬─────────┘
                               │
                    ┌──────────┴──────────┐
                    ▼                     ▼
            ┌──────────────┐     ┌──────────────┐
-           │  Call Graph   │     │  Control Flow │
-           │  Builder      │     │  Recovery     │
+           │  Call Graph  │     │  Control Flow│
+           │  Builder     │     │  Recovery    │
            │              │     │              │
-           │ 直接调用      │     │ if/else      │
-           │ 虚方法调度    │     │ loops        │
-           │ 委托 / 反射   │     │ switch       │
-           │              │     │ try/catch    │
+           │ Direct Calls │     │ if/else      │
+           │ Virtual Disp.│     │ loops        │
+           │ Delegates /  │     │ switch       │
+           │ Reflection   │     │ try/catch    │
            └──────┬───────┘     └──────┬───────┘
                    │                     │
                    └──────────┬──────────┘
@@ -418,187 +426,189 @@ cpp2il/
                    ┌──────────┴──────────┐
                    ▼                     ▼
            ┌──────────────┐     ┌──────────────┐
-           │  C# Emitter   │     │  Report       │
-           │              │     │  Generator    │
-           │ 可读 C# 代码  │     │              │
-           │ 命名空间组织   │     │ JSON / MD     │
+           │  C# Emitter  │     │  Report      │
+           │              │     │  Generator   │
+           │ Readable C#  │     │              │
+           │ Organized by │     │ JSON / MD    │
+           │ Namespace    │     │              │
            └──────────────┘     └──────────────┘
 ```
 
-### AST 还原链路
+### AST Restoration Chain
 
-每段输出代码均可追溯到中间表示：
+Every output code segment can be traced back to its intermediate representation:
 
 ```
-源码 (C#)  →  IL (IL2CPP)  →  C++ (编译产物)  →  机器码  →  [CPP2IL]  →  IR  →  AST  →  C# (还原)
+Source (C#) → IL (IL2CPP) → C++ (Compiled) → Machine Code → [CPP2IL] → IR → AST → C# (Restored)
 ```
 
-CPP2IL 的核心工作是从右侧逆向还原左侧的信息。AST 还原链路保证每个输出节点都可以回溯到对应的 IR 表示，支持人工审查与验证。
+CPP2IL's core task is to reverse-engineer the information from the right back to the left. The AST restoration chain ensures that every output node can be traced back to its corresponding IR representation, supporting manual review and verification.
 
 ---
 
-## 与同类工具对比
+## Comparison with Similar Tools
 
-| 特性 | CPP2IL | Il2CppDumper | Cpp2IL (Samboy) | dnSpy/ILSpy |
+| Feature | CPP2IL | Il2CppDumper | Cpp2IL (Samboy) | dnSpy/ILSpy |
 |---|:---:|:---:|:---:|:---:|
-| 元数据解析 | ✅ | ✅ | ✅ | ❌ |
-| 方法体还原 | ✅ | ❌ | ⚠️ 部分 | ✅ (仅 .NET) |
-| 控制流恢复 | ✅ | ❌ | ⚠️ 基础 | ✅ |
-| 调用图构建 | ✅ | ❌ | ❌ | ❌ |
-| AST 可追踪 | ✅ | ❌ | ❌ | ❌ |
-| WebGL 支持 | ✅ | ❌ | ❌ | ❌ |
-| 在线平台 | ✅ | ❌ | ❌ | ❌ |
-| 多格式统一入口 | ✅ | ❌ | ⚠️ | ❌ |
-| 代码结构还原质量 | 高 | 无代码输出 | 中 | 仅限托管代码 |
+| Metadata Parsing | ✅ | ✅ | ✅ | ❌ |
+| Method Body Restoration | ✅ | ❌ | ⚠️ Partial | ✅ (.NET only) |
+| Control Flow Recovery | ✅ | ❌ | ⚠️ Basic | ✅ |
+| Call Graph Construction | ✅ | ❌ | ❌ | ❌ |
+| Traceable AST | ✅ | ❌ | ❌ | ❌ |
+| WebGL Support | ✅ | ❌ | ❌ | ❌ |
+| Online Platform | ✅ | ❌ | ❌ | ❌ |
+| Unified Multi-format Input | ✅ | ❌ | ⚠️ | ❌ |
+| Code Structure Restoration Quality | High | No code output | Medium | Managed code only |
 
-> **说明**：本对比基于截至 2025 年 5 月的公开信息，各工具持续更新中，实际能力请以最新版本为准。
+> **Note**: This comparison is based on publicly available information as of May 2025. All tools are continuously updated; please refer to the latest versions for their actual capabilities.
 
 ---
 
-## 性能基准
+## Performance Benchmarks
 
-以下数据基于典型 Unity IL2CPP 项目的测试结果（仅作参考）：
+The following data is based on testing with typical Unity IL2CPP projects (for reference only):
 
-| 指标 | 小型项目 | 中型项目 | 大型项目 |
+| Metric | Small Project | Medium Project | Large Project |
 |---|---|---|---|
-| 方法数量 | ~5K | ~50K | ~200K+ |
-| 元数据大小 | ~5 MB | ~50 MB | ~200 MB+ |
-| libil2cpp 大小 | ~30 MB | ~150 MB | ~500 MB+ |
-| 分析耗时 | ~2 min | ~15 min | ~60 min+ |
-| 内存占用 | ~2 GB | ~6 GB | ~16 GB+ |
+| Method Count | ~5K | ~50K | ~200K+ |
+| Metadata Size | ~5 MB | ~50 MB | ~200 MB+ |
+| libil2cpp Size | ~30 MB | ~150 MB | ~500 MB+ |
+| Analysis Time | ~2 min | ~15 min | ~60 min+ |
+| Memory Usage | ~2 GB | ~6 GB | ~16 GB+ |
 
-> 具体性能取决于服务器配置、目标复杂度与 IL2CPP 版本。
-
----
-
-## 常见问题
-
-### Q: 支持哪些 Unity 版本？
-
-支持 Unity 5.6 ~ Unity 6（2025）的 IL2CPP 输出。不同版本的 `global-metadata.dat` 结构存在差异，平台会自动检测并适配。
-
-### Q: 输出的 C# 代码可以直接编译吗？
-
-不完全可以。输出代码还原了类型结构、方法签名与控制流，但以下信息可能缺失或近似：
-- 局部变量名（IL2CPP 不保留原始变量名）
-- 注释与代码风格
-- 某些复杂的泛型约束
-- 编译器生成的辅助方法
-
-输出代码的主要价值在于**可读性分析**与**结构理解**，而非直接复用编译。
-
-### Q: 分析结果的准确度如何？
-
-准确度取决于目标的复杂度与 IL2CPP 版本。典型的：
-- **类型与方法签名**：准确率 95%+
-- **控制流结构**：对简单函数准确率 90%+，复杂嵌套或优化后的函数可能需要人工校正
-- **调用关系**：直接调用准确率高，虚方法与反射调用可能存在近似
-
-### Q: 如何处理代码混淆？
-
-平台内置基础的反混淆能力（字符串解密、控制流平坦化还原等）。对于重度混淆的目标，建议结合 IR 追踪功能进行人工分析。
-
-### Q: 分析数据存储在哪里？
-
-- **在线平台**：分析结果加密存储，保留 30 天后自动清除。用户可随时手动删除。
-- **本地部署**：数据完全存储在本地，不上传至外部服务器。
-
-### Q: 可以批量分析多个包体吗？
-
-内测阶段暂不支持批量队列。正式版将提供批量分析 API 与任务队列功能。
+> Actual performance depends on server configuration, target complexity, and the IL2CPP version.
 
 ---
 
-## 安全与合规
+## FAQ
 
-### 数据安全
+### Q: Which Unity versions are supported?
 
-- 所有上传文件使用 TLS 加密传输
-- 分析结果加密存储，隔离访问
-- 支持手动删除与自动过期清除
-- 本地部署模式下数据不出本地网络
+We support IL2CPP output from Unity 5.6 through Unity 6 (2025). The structure of `global-metadata.dat` differs across versions; the platform automatically detects and adapts to them.
 
-### 合规声明
+### Q: Can the output C# code be compiled directly?
 
-- 本工具仅面向安全研究人员与代码审计人员
-- 使用者应确保拥有分析目标的合法权限
-- 不得将本工具用于侵犯知识产权、破解商业软件或其他违法行为
-- 输出结果仅供研究参考，不构成法律建议
+Not entirely. The output code restores type structures, method signatures, and control flow, but the following information may be missing or approximate:
+- Local variable names (IL2CPP does not retain original variable names)
+- Comments and code style
+- Certain complex generic constraints
+- Compiler-generated helper methods
+
+The primary value of the output code lies in **readability analysis** and **structural understanding**, rather than direct recompilation.
+
+### Q: How accurate are the analysis results?
+
+Accuracy depends on target complexity and the IL2CPP version. Typically:
+- **Types and Method Signatures**: >95% accuracy
+- **Control Flow Structures**: >90% for simple functions; complex nested or optimized functions may require manual correction
+- **Call Relationships**: High accuracy for direct calls; virtual methods and reflective calls may involve approximations
+
+### Q: How is code obfuscation handled?
+
+The platform includes basic anti-obfuscation capabilities (string decryption, control flow flattening recovery, etc.). For heavily obfuscated targets, it is recommended to leverage the IR tracing feature for manual analysis.
+
+### Q: Where is the analysis data stored?
+
+- **Online Platform**: Analysis results are encrypted at rest, retained for 30 days before automatic deletion. Users can manually delete them at any time.
+- **Local Deployment**: Data is stored entirely on-premises and is never uploaded to external servers.
+
+### Q: Can I analyze multiple packages in batch?
+
+Batch queuing is not supported during the beta phase. The official release will include a batch analysis API and task queue functionality.
 
 ---
 
-## 贡献指南
+## Security & Compliance
 
-欢迎社区贡献。当前阶段主要接受以下类型的贡献：
+### Data Security
 
-1. **Bug 反馈** — 通过 [Issues](https://github.com/chenzifeng/cpp2il.github.io/issues) 提交
-2. **文档改进** — 修正错误、补充说明、翻译
-3. **平台适配** — 新增文件格式支持、Unity 版本适配
-4. **分析策略** — 改进控制流恢复、类型推断等算法
+- All uploaded files are transmitted using TLS encryption
+- Analysis results are encrypted at rest with isolated access
+- Manual deletion and automatic expiration are supported
+- In local deployment mode, data never leaves the local network
 
-### 开发流程
+### Compliance Statement
+
+- This tool is intended solely for security researchers and code auditors
+- Users must ensure they have legal permission to analyze the target
+- The tool must not be used for intellectual property infringement, cracking commercial software, or other illegal activities
+- Output results are for research reference only and do not constitute legal advice
+
+---
+
+## Contributing Guide
+
+Community contributions are welcome. At this stage, we primarily accept the following types of contributions:
+
+1. **Bug Reports** — Submit via [Issues](https://github.com/chenzifeng/cpp2il.github.io/issues)
+2. **Documentation Improvements** — Corrections, clarifications, and translations
+3. **Platform Adaptations** — Support for new file formats or Unity versions
+4. **Analysis Strategies** — Improvements to control flow recovery, type inference, and other algorithms
+
+### Development Workflow
 
 ```bash
-# Fork 本仓库
-# 创建特性分支
+# Fork this repository
+# Create a feature branch
 git checkout -b feature/your-feature
 
-# 提交更改
+# Commit your changes
 git commit -m "feat: add xxx support"
 
-# 推送并创建 Pull Request
+# Push and create a Pull Request
 git push origin feature/your-feature
 ```
 
-### 代码规范
+### Code Standards
 
-- TypeScript 严格模式
-- ESLint + Prettier 格式化
-- 提交信息遵循 [Conventional Commits](https://www.conventionalcommits.org/)
-- 新功能需附带单元测试
-
----
-
-## 更新日志
-
-### v0.9.0-beta（2026-01）
-
-- 首次内测发布
-- 支持 APK / IPA / WASM / ELF / Mach-O 格式
-- 完整的元数据解析 → 类型重建 → 控制流分析 → C# 代码生成管线
-- 在线工作台 Web UI
-- 基础调用图构建与 IR 追踪
-
-### 计划中
-
-- [ ] CLI 工具公开发布
-- [ ] 批量分析 API
-- [ ] Unity 6 完整适配
-- [ ] 反混淆策略扩展
-- [ ] 插件系统（自定义分析策略）
-- [ ] VS Code 插件（在线浏览分析结果）
+- TypeScript strict mode
+- ESLint + Prettier formatting
+- Commit messages follow [Conventional Commits](https://www.conventionalcommits.org/)
+- New features should include unit tests
 
 ---
 
-## 联系方式
+## Changelog
 
-| 渠道 | 链接 |
+### v0.9.0-beta (January 2026)
+
+- Initial beta release
+- Support for APK / IPA / WASM / ELF / Mach-O formats
+- Complete metadata parsing → type reconstruction → control flow analysis → C# code generation pipeline
+- Online workbench Web UI
+- Basic call graph construction and IR tracing
+
+### Planned
+
+- [ ] Public CLI tool release
+- [ ] Batch analysis API
+- [ ] Full Unity 6 compatibility
+- [ ] Expanded anti-obfuscation strategies
+- [ ] Plugin system (custom analysis strategies)
+- [ ] VS Code extension (browse analysis results online)
+
+---
+
+## Contact
+
+| Channel | Link |
 |---|---|
-| 官网 | [cpp2il.com](https://cpp2il.com) |
-| 内测申请 | [cpp2il.com/apply.html](https://ccna3po7lqul.feishu.cn/share/base/form/shrcnSKePcBYvea3LNF4h8wgvII) |
+| Official Website | [cpp2il.com](https://cpp2il.com) |
+| Beta Access Application | [cpp2il.com/apply.html](https://ccna3po7lqul.feishu.cn/share/base/form/shrcnSKePcBYvea3LNF4h8wgvII) |
 | GitHub | [https://github.com/chenzifeng/cpp2il.github.io](https://github.com/chenzifeng/cpp2il.github.io) |
-| 问题反馈 | [GitHub Issues](https://github.com/chenzifeng/cpp2il.github.io/issues) |
+| Issue Feedback | [GitHub Issues](https://github.com/chenzifeng/cpp2il.github.io/issues) |
 
 ---
 
-## 许可证
+## License
 
 Copyright © 2026 CPP2IL. All rights reserved.
 
-本项目为专有软件。未经授权不得复制、修改或分发。详见 [LICENSE](./LICENSE) 文件。
+This project is proprietary software. Unauthorized copying, modification, or distribution is prohibited. See the [LICENSE](./LICENSE) file for details.
 
 ---
 
 <p align="center">
-  <sub>仅供安全研究与代码审计用途。请遵守当地法律法规。</sub>
+  <sub>For security research and code auditing purposes only. Please comply with local laws and regulations.</sub>
 </p>
+```
