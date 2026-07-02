@@ -23,8 +23,15 @@ Unity CPP2IL is a reverse-engineering platform for Unity IL2CPP. It processes AP
   <img src="https://img.shields.io/badge/License-Proprietary-red" alt="License" />
 </p>
 
-[![视频封面](https://i0.hdslb.com/bfs/archive/你的封面图.jpg)](https://www.bilibili.com/video/BV1vm7W6gEjL)
-[Unity CPP2IL 产品演示](https://www.bilibili.com/video/BV1Rm7W6uEJM)
+<a href="https://www.bilibili.com/video/BV1Rm7W6uEJM" target="_blank">
+  <img src="2672faf0-19f8-4ec7-a875-0fba9d82b114.png" alt="Video Cover" width="512">
+</a>
+
+【Unity CPP2IL 宣传视频】
+[https://www.bilibili.com/video/BV1Rm7W6uEJM](https://www.bilibili.com/video/BV1vm7W6gEjL)
+
+【Unity CPP2IL 产品演示】
+[https://www.bilibili.com/video/BV1Rm7W6uEJM](https://www.bilibili.com/video/BV1Rm7W6uEJM)
 
 ---
 
