@@ -1,36 +1,56 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-lang="zh-CN">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#ffffff" />
-  <title>Unity CPP2IL｜反编译 / 逆向还原平台</title>
-  <meta name="description" content="Unity CPP2IL 提供 IL2CPP、APK、IPA、WASM、ARM 等多平台逆向分析与 C# 代码还原能力，支持上传分析、结构识别、调用关系恢复与结果导出。" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://cpp2il.example.com/" />
+  <title>Unity CPP2IL｜IL2CPP 反编译 / Reverse Engineering & C# Source Recovery</title>
+  <meta name="description" content="Unity CPP2IL 是面向 Unity IL2CPP 的反编译与逆向还原平台，支持 APK、IPA、WASM、ARM64、WebGL、ELF、Mach-O、GameAssembly.dll 与 libil2cpp.so 分析，自动识别 global-metadata.dat，恢复类型、方法、调用关系、控制流与 C# 源代码。Unity CPP2IL is a Unity IL2CPP decompiler and reverse engineering platform for APK, IPA, WASM, ARM64, WebGL and native binaries, helping recover readable C# source code for security research and code audit." />
+  <meta name="keywords" content="Unity CPP2IL, CPP2IL, Unity IL2CPP, IL2CPP 反编译, Unity 反编译, Unity 逆向工程, Unity 游戏逆向, IL2CPP 到 C#, IL2CPP 还原 C#, IL2CPP 源代码恢复, C# 代码还原, Unity 源码恢复, Unity 源代码还原, APK 反编译, IPA 反编译, WASM 反编译, WebGL 反编译, ARM64 反汇编, ARM32 反汇编, x86 x64 反编译, global-metadata.dat, metadata.dat, GameAssembly.dll, libil2cpp.so, Mach-O 逆向, ELF 逆向, PE 逆向, 控制流还原, 调用关系恢复, AST 还原, 二进制分析, 代码审计, 安全研究, 游戏安全分析, 兼容性分析, 反混淆分析, Unity WebGL 逆向, Unity CPP2IL platform, Unity IL2CPP decompiler, IL2CPP decompiler, IL2CPP reverse engineering, Unity reverse engineering, Unity game reverse engineering, IL2CPP to C#, C# source recovery, Unity source code recovery, decompile IL2CPP, recover Unity source code, APK decompiler, IPA reverse engineering, WASM decompiler, WebGL reverse engineering, ARM64 disassembly, ARM32 disassembly, x86 x64 native analysis, global-metadata.dat extractor, metadata parser, GameAssembly.dll analysis, libil2cpp.so analysis, Mach-O reverse engineering, ELF reverse engineering, PE analysis, control flow recovery, call graph recovery, AST reconstruction, binary analysis, code audit, security research, game security analysis, compatibility analysis, deobfuscation analysis" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="language" content="zh-CN,en" />
+  <meta name="author" content="CPP2IL" />
+  <link rel="canonical" href="https://cpp2il.com/" />
+  <link rel="alternate" hreflang="zh-CN" href="https://cpp2il.com/?lang=zh-CN" />
+  <link rel="alternate" hreflang="en" href="https://cpp2il.com/?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://cpp2il.com/" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://cpp2il.com/sitemap.xml" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Unity CPP2IL｜反编译 / 逆向还原平台" />
-  <meta property="og:description" content="面向 Unity IL2CPP 的多平台逆向分析与 C# 代码还原工作台。" />
-  <meta property="og:image" content="https://cpp2il.example.com/assets/slides/0.png" />
-  <meta property="og:url" content="https://cpp2il.example.com/" />
+  <meta property="og:site_name" content="CPP2IL" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="Unity CPP2IL｜IL2CPP 反编译 / Reverse Engineering & C# Source Recovery" />
+  <meta property="og:description" content="面向 Unity IL2CPP 的多平台逆向分析与 C# 代码还原工作台。Unity IL2CPP decompiler and reverse engineering workbench for APK, IPA, WASM, ARM64, WebGL and native binaries." />
+  <meta property="og:image" content="https://cpp2il.com/assets/slides/0.png" />
+  <meta property="og:url" content="https://cpp2il.com/" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Unity CPP2IL｜反编译 / 逆向还原平台" />
-  <meta name="twitter:description" content="面向 Unity IL2CPP 的多平台逆向分析与 C# 代码还原工作台。" />
-  <meta name="twitter:image" content="https://cpp2il.example.com/assets/slides/0.png" />
+  <meta name="twitter:title" content="Unity CPP2IL｜IL2CPP Decompiler & C# Source Recovery" />
+  <meta name="twitter:description" content="Unity IL2CPP reverse engineering platform for APK, IPA, WASM, ARM64, WebGL, GameAssembly.dll, libil2cpp.so and readable C# source recovery." />
+  <meta name="twitter:image" content="https://cpp2il.com/assets/slides/0.png" />
 
   <!-- JSON-LD 结构化数据 -->
-  <script type="application/ld+json">
+  <script type="application/ld+json" id="ld-software">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Unity CPP2IL",
+    "alternateName": ["CPP2IL", "Unity IL2CPP Decompiler", "Unity IL2CPP 反编译平台"],
+    "url": "https://cpp2il.com/",
     "applicationCategory": "DeveloperApplication",
-    "description": "Unity IL2CPP 逆向还原平台，支持多平台包体分析与 C# 代码恢复。",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" }
+    "operatingSystem": "Web",
+    "inLanguage": ["zh-CN", "en"],
+    "description": "Unity CPP2IL is a bilingual Unity IL2CPP decompiler and reverse engineering platform for APK, IPA, WASM, ARM64, WebGL, GameAssembly.dll and libil2cpp.so analysis, supporting metadata extraction, call graph recovery, control flow reconstruction and readable C# source recovery. Unity CPP2IL 是面向 Unity IL2CPP 的中英文反编译与逆向还原平台，支持多平台包体分析、元数据提取、调用关系恢复、控制流还原与 C# 源代码恢复。",
+    "keywords": "Unity CPP2IL, CPP2IL, Unity IL2CPP, IL2CPP 反编译, Unity 反编译, Unity 逆向工程, Unity 游戏逆向, IL2CPP 到 C#, IL2CPP 还原 C#, IL2CPP 源代码恢复, C# 代码还原, Unity 源码恢复, Unity 源代码还原, APK 反编译, IPA 反编译, WASM 反编译, WebGL 反编译, ARM64 反汇编, ARM32 反汇编, x86 x64 反编译, global-metadata.dat, metadata.dat, GameAssembly.dll, libil2cpp.so, Mach-O 逆向, ELF 逆向, PE 逆向, 控制流还原, 调用关系恢复, AST 还原, 二进制分析, 代码审计, 安全研究, 游戏安全分析, 兼容性分析, 反混淆分析, Unity WebGL 逆向, Unity CPP2IL platform, Unity IL2CPP decompiler, IL2CPP decompiler, IL2CPP reverse engineering, Unity reverse engineering, Unity game reverse engineering, IL2CPP to C#, C# source recovery, Unity source code recovery, decompile IL2CPP, recover Unity source code, APK decompiler, IPA reverse engineering, WASM decompiler, WebGL reverse engineering, ARM64 disassembly, ARM32 disassembly, x86 x64 native analysis, global-metadata.dat extractor, metadata parser, GameAssembly.dll analysis, libil2cpp.so analysis, Mach-O reverse engineering, ELF reverse engineering, PE analysis, control flow recovery, call graph recovery, AST reconstruction, binary analysis, code audit, security research, game security analysis, compatibility analysis, deobfuscation analysis",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "CPP2IL",
+      "url": "https://cpp2il.com/"
+    }
   }
   </script>
 
@@ -132,6 +152,19 @@
     .nav-links a{padding:10px 13px;border-radius:999px;transition:background .22s var(--ease),color .22s var(--ease);white-space:nowrap}
     .nav-links a:hover{background:rgba(82,100,245,.08);color:var(--primary)}
     .nav-actions{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+    .lang-switch{
+      display:inline-flex;align-items:center;gap:4px;padding:4px;
+      border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.74);
+      box-shadow:0 10px 24px rgba(30,44,110,.07);
+    }
+    .lang-btn{
+      height:34px;min-width:42px;padding:0 10px;border:0;border-radius:999px;background:transparent;
+      color:#657293;font-size:12px;font-weight:950;letter-spacing:.02em;cursor:pointer;
+      transition:background .22s var(--ease),color .22s var(--ease),box-shadow .22s var(--ease);
+    }
+    .lang-btn:hover{color:var(--primary);background:rgba(82,100,245,.08)}
+    .lang-btn.active{color:#fff;background:linear-gradient(135deg,var(--primary),var(--primary-2));box-shadow:0 10px 22px rgba(82,100,245,.24)}
+
 
     /* ══════════════════════════════════════════
        5. 按钮
@@ -258,7 +291,33 @@
     .step p{margin:0;color:var(--muted);font-size:14px;line-height:1.65;font-weight:650}
 
     /* ══════════════════════════════════════════
-       11. CTA
+       11. Capabilities（关键词自然覆盖）
+       ══════════════════════════════════════════ */
+    .capabilities{padding-top:72px}
+    .capability-grid{
+      display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px;
+    }
+    .capability-card{
+      min-height:220px;padding:24px;border:1px solid rgba(82,100,245,.12);border-radius:28px;
+      background:rgba(255,255,255,.72);box-shadow:0 18px 48px rgba(30,44,110,.08);overflow:hidden;
+      position:relative;
+    }
+    .capability-card::before{
+      content:"";position:absolute;right:-42px;top:-42px;width:126px;height:126px;border-radius:999px;
+      background:radial-gradient(circle,rgba(27,198,255,.14),transparent 68%);
+    }
+    .capability-card h3{position:relative;margin:0 0 12px;color:var(--ink);font-size:19px;line-height:1.2;letter-spacing:-.045em}
+    .capability-card p{position:relative;margin:0;color:var(--muted);font-size:14px;line-height:1.72;font-weight:650}
+    .keyword-cloud{
+      display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;
+    }
+    .keyword-cloud span{
+      padding:8px 11px;border:1px solid rgba(82,100,245,.12);border-radius:999px;
+      background:rgba(255,255,255,.70);color:#52607d;font-size:12px;font-weight:850;
+    }
+
+    /* ══════════════════════════════════════════
+       12. CTA
        ══════════════════════════════════════════ */
     .final-cta{padding:72px 0 96px}
     .cta-panel{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:34px;border:1px solid rgba(255,255,255,.82);border-radius:34px;background:linear-gradient(135deg,rgba(82,100,245,.12),rgba(255,255,255,.78) 42%,rgba(27,198,255,.10));box-shadow:var(--shadow)}
@@ -266,7 +325,7 @@
     .cta-panel p{margin:12px 0 0;color:var(--muted);font-size:16px;line-height:1.7;font-weight:650}
 
     /* ══════════════════════════════════════════
-       12. Footer
+       13. Footer
        ══════════════════════════════════════════ */
     .site-footer{
       border-top:1px solid rgba(82,100,245,.10);padding:40px 0;
@@ -276,9 +335,11 @@
     .footer-brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--ink)}
     .footer-brand .brand-mark{width:28px;height:28px;border-radius:10px}
     .footer-copy{color:var(--muted);font-size:13px;font-weight:600}
+    .footer-links{display:flex;align-items:center;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:13px;font-weight:800}
+    .footer-links a:hover{color:var(--primary)}
 
     /* ══════════════════════════════════════════
-       13. 入场动画
+       14. 入场动画
        ══════════════════════════════════════════ */
     .hero-copy,.visual,.scroll-hint{opacity:0;animation:fadeUp .7s var(--ease) forwards}
     .visual{animation-delay:.12s}
@@ -295,7 +356,7 @@
     }
 
     /* ══════════════════════════════════════════
-       14. 响应式断点
+       15. 响应式断点
        ══════════════════════════════════════════ */
 
     /* --bp-desktop: ≥1181px -- */
@@ -310,6 +371,7 @@
       .hero-inner{gap:38px}
       .visual{max-width:860px}
       .pipeline{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .capability-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
       .section-head{align-items:flex-start;flex-direction:column}
       .pipeline::before{display:none}
     }
@@ -325,6 +387,8 @@
       .brand-mark::after{inset:6px;border-radius:6px;border-width:1.5px}
 
       .nav-actions .btn.ghost{display:none}
+      .lang-switch{padding:3px}
+      .lang-btn{height:32px;min-width:36px;padding:0 8px;font-size:11px}
       .btn{height:40px;padding:0 14px;font-size:14px}
       .wrap{width:calc(100% - 28px)}
       .hero{padding:92px 0 54px}
@@ -345,6 +409,7 @@
       .video-toolbar{height:auto;min-height:44px;align-items:flex-start;flex-direction:column;padding:10px 10px 12px}
       .video-tags{justify-content:flex-start}
       .video-shell{border-radius:17px;margin-top:10px}
+      .capability-grid{grid-template-columns:1fr;gap:12px}
       .pipeline{grid-template-columns:1fr;gap:12px}
       .pipeline::before{
         display:block;
@@ -368,11 +433,12 @@
       .hero-cta .btn{width:100%}
       .browser-title{max-width:170px}
       .video-tags span{font-size:11px}
+      .lang-switch{display:none}
       .section h2{font-size:30px}
     }
 
     /* ══════════════════════════════════════════
-       15. 减弱动画（a11y）
+       16. 减弱动画（a11y）
        ══════════════════════════════════════════ */
     @media(prefers-reduced-motion:reduce){
       *,*::before,*::after{
@@ -390,23 +456,29 @@
 <body>
 
   <!-- ═══ Skip Link ═══ -->
-  <a class="skip-link" href="#main-content">跳到主要内容</a>
+  <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳到主要内容</a>
 
   <!-- ═══ 导航 ═══ -->
   <header class="topbar">
-    <nav class="nav" aria-label="Unity CPP2IL 导航">
-      <a class="brand" href="#top" aria-label="Unity CPP2IL 首页">
+    <nav class="nav" aria-label="Unity CPP2IL 导航" data-i18n-attr="aria-label:nav.aria">
+      <a class="brand" href="#top" aria-label="Unity CPP2IL 首页" data-i18n-attr="aria-label:nav.homeAria">
         <span class="brand-mark" aria-hidden="true"></span>
         <span>CPP2IL</span>
       </a>
       <div class="nav-links" aria-label="页面导航">
-        <a href="#top">首页</a>
-        <a href="#demo">演示视频</a>
-        <a href="#workflow">处理流程</a>
+        <a href="#top" data-i18n="nav.home">首页</a>
+        <a href="#demo" data-i18n="nav.demo">演示视频</a>
+        <a href="#capabilities" data-i18n="nav.capabilities">支持能力</a>
+        <a href="qa.html" data-lang-href="qa.html" data-i18n="nav.qa">常见问题</a>
+        <a href="#workflow" data-i18n="nav.workflow">处理流程</a>
       </div>
       <div class="nav-actions">
-        <a class="btn ghost" href="#demo" data-play-demo><span class="play-icon">▶</span>查看演示</a>
-        <a class="btn primary" href="https://ccna3po7lqul.feishu.cn/share/base/form/shrcnSKePcBYvea3LNF4h8wgvII"  target="_blank">内测申请 →</a>
+        <div class="lang-switch" aria-label="Language switcher" data-i18n-attr="aria-label:lang.switcher">
+          <button class="lang-btn" type="button" data-lang-set="zh-CN" aria-pressed="true">中</button>
+          <button class="lang-btn" type="button" data-lang-set="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn ghost" href="#demo" data-play-demo><span class="play-icon">▶</span><span data-i18n="nav.watchDemo">查看演示</span></a>
+        <a class="btn primary" href="https://ccna3po7lqul.feishu.cn/share/base/form/shrcnSKePcBYvea3LNF4h8wgvII" target="_blank" rel="noopener noreferrer" data-i18n="nav.beta">内测申请 →</a>
       </div>
     </nav>
   </header>
@@ -420,26 +492,26 @@
 
         <!-- 上方：文案 -->
         <div class="hero-copy">
-          <p class="eyebrow">专业的 Unity CPP2IL 逆向还原平台</p>
-          <h1>Unity CPP2IL <span class="gradient-text">逆向还原工作台</span></h1>
-          <p class="lead">面向 Unity 游戏安全研究、代码审计、兼容性分析与 WebGL / ARM 原生包体还原，提供从包体导入、元数据识别、结构分析到 C# 代码恢复的完整工作流。</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">专业的 Unity CPP2IL 逆向还原平台</p>
+          <h1><span data-i18n="hero.titlePrefix">Unity CPP2IL</span> <span class="gradient-text" data-i18n="hero.titleHighlight">逆向还原工作台</span></h1>
+          <p class="lead" data-i18n="hero.lead">面向 Unity 游戏安全研究、代码审计、兼容性分析与 WebGL / ARM 原生包体还原，提供从包体导入、元数据识别、结构分析到 C# 代码恢复的完整工作流。</p>
           <div class="hero-cta">
-            <a class="btn primary" href="https://ccna3po7lqul.feishu.cn/share/base/form/shrcnSKePcBYvea3LNF4h8wgvII"  target="_blank">申请内测 →</a>
-            <a class="btn ghost" href="#demo" data-play-demo><span class="play-icon">▶</span>查看演示</a>
+            <a class="btn primary" href="https://ccna3po7lqul.feishu.cn/share/base/form/shrcnSKePcBYvea3LNF4h8wgvII" target="_blank" rel="noopener noreferrer" data-i18n="hero.apply">申请内测 →</a>
+            <a class="btn ghost" href="#demo" data-play-demo><span class="play-icon">▶</span><span data-i18n="hero.watch">查看演示</span></a>
           </div>
-          <div class="hero-meta" aria-label="能力摘要">
-            <div class="meta-card"><b>IL2CPP → C#</b><span>还原代码结构</span></div>
-            <div class="meta-card"><b>ARM / WebGL</b><span>多平台包体分析</span></div>
-            <div class="meta-card"><b>AST 还原链路</b><span>可追踪转换过程</span></div>
+          <div class="hero-meta" aria-label="能力摘要" data-i18n-attr="aria-label:hero.metaAria">
+            <div class="meta-card"><b data-i18n="hero.meta1Title">IL2CPP → C#</b><span data-i18n="hero.meta1Desc">还原代码结构</span></div>
+            <div class="meta-card"><b data-i18n="hero.meta2Title">ARM / WebGL</b><span data-i18n="hero.meta2Desc">多平台包体分析</span></div>
+            <div class="meta-card"><b data-i18n="hero.meta3Title">AST 还原链路</b><span data-i18n="hero.meta3Desc">可追踪转换过程</span></div>
           </div>
         </div>
 
         <!-- 下方：Bilibili iframe 嵌入 -->
-        <div class="visual" aria-label="Unity CPP2IL 功能预览">
+        <div class="visual" aria-label="Unity CPP2IL 功能预览" data-i18n-attr="aria-label:hero.visualAria">
           <div class="screen-card">
             <div class="browser-bar">
               <div class="lights" aria-hidden="true"><span></span><span></span><span></span></div>
-              <div class="browser-title">IL2CPP 分析工作台</div>
+              <div class="browser-title" data-i18n="hero.browserTitle">IL2CPP 分析工作台</div>
             </div>
             <div class="iframe-wrap">
               <iframe
@@ -448,7 +520,7 @@
                 frameborder="0"
                 allowfullscreen="true"
                 loading="lazy"
-                title="CPP2IL 功能预览视频"
+                title="CPP2IL 功能预览视频" data-i18n-attr="title:hero.previewVideoTitle"
               ></iframe>
             </div>
           </div>
@@ -462,19 +534,19 @@
     </section>
 
     <!-- ────── Demo ────── -->
-    <section class="section demo-section" id="demo" aria-label="Unity CPP2IL 产品演示">
+    <section class="section demo-section" id="demo" aria-label="Unity CPP2IL 产品演示" data-i18n-attr="aria-label:demo.aria">
       <div class="wrap">
         <div class="section-head">
           <div>
-            <p class="section-kicker">产品演示</p>
-            <h2>观看 CPP2IL 实际分析流程</h2>
+            <p class="section-kicker" data-i18n="demo.kicker">产品演示</p>
+            <h2 data-i18n="demo.title">观看 CPP2IL 实际分析流程</h2>
           </div>
-          <p class="section-desc">以下演示视频展示从包体导入、元数据识别、结构分析到 C# 还原结果查看的完整链路，覆盖主要操作步骤与输出格式。</p>
+          <p class="section-desc" data-i18n="demo.desc">以下演示视频展示从包体导入、元数据识别、结构分析到 C# 还原结果查看的完整链路，覆盖主要操作步骤与输出格式。</p>
         </div>
         <div class="video-card">
           <div class="video-toolbar">
-            <div class="video-label">CPP2IL 产品演示</div>
-            <div class="video-tags" aria-label="演示标签"><span>包体上传</span><span>元数据提取</span><span>代码还原</span><span>结果浏览</span></div>
+            <div class="video-label" data-i18n="demo.label">CPP2IL 产品演示</div>
+            <div class="video-tags" aria-label="演示标签" data-i18n-attr="aria-label:demo.tagsAria"><span data-i18n="demo.tag1">包体上传</span><span data-i18n="demo.tag2">元数据提取</span><span data-i18n="demo.tag3">代码还原</span><span data-i18n="demo.tag4">结果浏览</span></div>
           </div>
           <div class="video-shell">
             <div class="iframe-wrap">
@@ -484,7 +556,7 @@
                 frameborder="0"
                 allowfullscreen="true"
                 loading="lazy"
-                title="CPP2IL 产品演示视频"
+                title="CPP2IL 产品演示视频" data-i18n-attr="title:demo.videoTitle"
               ></iframe>
             </div>
           </div>
@@ -492,21 +564,64 @@
       </div>
     </section>
 
-    <!-- ────── Workflow ────── -->
-    <section class="section" id="workflow" aria-label="Unity CPP2IL 分析流程">
+    <!-- ────── Capabilities / SEO Keywords ────── -->
+    <section class="section capabilities" id="capabilities" aria-label="Unity CPP2IL 支持能力" data-i18n-attr="aria-label:capabilities.aria">
       <div class="wrap">
         <div class="section-head">
           <div>
-            <p class="section-kicker">分析流程</p>
-            <h2>从包体到可读 C# 的完整链路</h2>
+            <p class="section-kicker" data-i18n="capabilities.kicker">支持能力</p>
+            <h2 data-i18n="capabilities.title">覆盖 Unity IL2CPP 逆向还原核心场景</h2>
           </div>
-          <p class="section-desc">围绕 Unity IL2CPP 项目的真实分析场景，串联上传、识别、还原与导出流程，让访问者快速理解工具能力与使用路径。</p>
+          <p class="section-desc" data-i18n="capabilities.desc">围绕 Unity IL2CPP 反编译、Unity 游戏逆向、APK / IPA / WASM 包体分析、global-metadata.dat 提取与 C# 源代码恢复，提供面向安全研究和代码审计的完整能力。</p>
         </div>
-        <ol class="pipeline" aria-label="分析流程步骤">
-          <li class="step"><small>01</small><h3>上传包体与元数据</h3><p>支持 APK、IPA、WASM、Windows、ELF、Mach-O 等输入格式，统一进入分析流程。</p></li>
-          <li class="step"><small>02</small><h3>自动识别分析目标</h3><p>自动识别文件类型、运行平台、元数据结构与反编译策略，减少手工配置。</p></li>
-          <li class="step"><small>03</small><h3>恢复结构与调用关系</h3><p>重建类型、方法、字段、调用链与控制流关系，形成可追踪的中间表示。</p></li>
-          <li class="step"><small>04</small><h3>查看并导出结果</h3><p>输出更接近 Unity 工程习惯的 C# 代码、结构报告与分析结果，便于审计和验证。</p></li>
+
+        <div class="capability-grid">
+          <article class="capability-card">
+            <h3 data-i18n="capabilities.card1Title">IL2CPP 反编译与 C# 源码恢复</h3>
+            <p data-i18n="capabilities.card1Desc">从 IL2CPP 原生二进制中恢复类型、字段、方法签名、命名空间、类结构与更接近 Unity 工程习惯的 C# 代码，适合代码审计、兼容性分析与安全研究。</p>
+          </article>
+          <article class="capability-card">
+            <h3 data-i18n="capabilities.card2Title">多平台包体与原生文件分析</h3>
+            <p data-i18n="capabilities.card2Desc">支持 APK、IPA、WASM、WebGL、Windows PE、ELF、Mach-O、GameAssembly.dll、libil2cpp.so、ARM32、ARM64、x86 与 x64 等常见 Unity 发布目标。</p>
+          </article>
+          <article class="capability-card">
+            <h3 data-i18n="capabilities.card3Title">元数据、AST 与调用关系恢复</h3>
+            <p data-i18n="capabilities.card3Desc">自动识别 global-metadata.dat，解析 IL2CPP 元数据映射，重建 AST、中间表示、控制流、调用链、函数关系与结构报告，降低手工逆向分析成本。</p>
+          </article>
+        </div>
+
+        <div class="keyword-cloud" aria-label="SEO keywords" data-i18n-attr="aria-label:capabilities.keywordAria">
+          <span>Unity IL2CPP</span>
+          <span>CPP2IL</span>
+          <span>IL2CPP 反编译</span>
+          <span>Unity reverse engineering</span>
+          <span>IL2CPP to C#</span>
+          <span>C# source recovery</span>
+          <span>global-metadata.dat</span>
+          <span>GameAssembly.dll</span>
+          <span>libil2cpp.so</span>
+          <span>APK / IPA / WASM</span>
+          <span>ARM64 / WebGL</span>
+          <span>AST reconstruction</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ────── Workflow ────── -->
+    <section class="section" id="workflow" aria-label="Unity CPP2IL 分析流程" data-i18n-attr="aria-label:workflow.aria">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker" data-i18n="workflow.kicker">分析流程</p>
+            <h2 data-i18n="workflow.title">从包体到可读 C# 的完整链路</h2>
+          </div>
+          <p class="section-desc" data-i18n="workflow.desc">围绕 Unity IL2CPP 项目的真实分析场景，串联上传、识别、还原与导出流程，让访问者快速理解工具能力与使用路径。</p>
+        </div>
+        <ol class="pipeline" aria-label="分析流程步骤" data-i18n-attr="aria-label:workflow.stepsAria">
+          <li class="step"><small>01</small><h3 data-i18n="workflow.step1Title">上传包体与元数据</h3><p data-i18n="workflow.step1Desc">支持 APK、IPA、WASM、Windows、ELF、Mach-O 等输入格式，统一进入分析流程。</p></li>
+          <li class="step"><small>02</small><h3 data-i18n="workflow.step2Title">自动识别分析目标</h3><p data-i18n="workflow.step2Desc">自动识别文件类型、运行平台、元数据结构与反编译策略，减少手工配置。</p></li>
+          <li class="step"><small>03</small><h3 data-i18n="workflow.step3Title">恢复结构与调用关系</h3><p data-i18n="workflow.step3Desc">重建类型、方法、字段、调用链与控制流关系，形成可追踪的中间表示。</p></li>
+          <li class="step"><small>04</small><h3 data-i18n="workflow.step4Title">查看并导出结果</h3><p data-i18n="workflow.step4Desc">输出更接近 Unity 工程习惯的 C# 代码、结构报告与分析结果，便于审计和验证。</p></li>
         </ol>
       </div>
     </section>
@@ -516,10 +631,13 @@
       <div class="wrap">
         <div class="cta-panel">
           <div>
-            <h2>申请加入 CPP2IL 内测</h2>
-            <p>体验多平台包体分析、元数据映射、调用关系恢复与 C# 代码还原能力，适合 Unity 安全研究、兼容性排查与代码审计场景。</p>
+            <h2 data-i18n="cta.title">申请加入 CPP2IL 内测</h2>
+            <p data-i18n="cta.desc">体验多平台包体分析、元数据映射、调用关系恢复与 C# 代码还原能力，适合 Unity 安全研究、兼容性排查与代码审计场景。</p>
           </div>
-          <a class="btn primary" href="https://ccna3po7lqul.feishu.cn/share/base/form/shrcnSKePcBYvea3LNF4h8wgvII"  target="_blank">内测申请 →</a>
+          <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+            <a class="btn ghost" href="qa.html" data-lang-href="qa.html" data-i18n="cta.faq">查看常见问题</a>
+            <a class="btn primary" href="https://ccna3po7lqul.feishu.cn/share/base/form/shrcnSKePcBYvea3LNF4h8wgvII" target="_blank" rel="noopener noreferrer" data-i18n="cta.apply">内测申请 →</a>
+          </div>
         </div>
       </div>
     </section>
@@ -532,12 +650,245 @@
         <span class="brand-mark" aria-hidden="true"></span>
         <span>CPP2IL</span>
       </div>
-      <p class="footer-copy">© 2026 CPP2IL. 仅供安全研究与代码审计用途。</p>
+      <div class="footer-links">
+        <a href="qa.html" data-lang-href="qa.html" data-i18n="footer.qa">常见问题</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 CPP2IL. 仅供安全研究与代码审计用途。</p>
     </div>
   </footer>
 
   <!-- ═══ 脚本 ═══ -->
   <script>
+    const I18N = {
+      "zh-CN": {
+        "meta.title": "Unity CPP2IL｜IL2CPP 反编译 / 逆向还原 / C# 源代码恢复",
+        "meta.description": "Unity CPP2IL 是面向 Unity IL2CPP 的反编译与逆向还原平台，支持 APK、IPA、WASM、ARM64、WebGL、ELF、Mach-O、GameAssembly.dll 与 libil2cpp.so 分析，自动识别 global-metadata.dat，恢复类型、方法、调用关系、控制流与 C# 源代码。",
+        "a11y.skip": "跳到主要内容",
+        "nav.aria": "Unity CPP2IL 导航",
+        "nav.homeAria": "Unity CPP2IL 首页",
+        "nav.home": "首页",
+        "nav.demo": "演示视频",
+        "nav.capabilities": "支持能力",
+        "nav.workflow": "处理流程",
+        "nav.qa": "常见问题",
+        "nav.watchDemo": "查看演示",
+        "nav.beta": "内测申请 →",
+        "lang.switcher": "语言切换",
+        "hero.eyebrow": "专业的 Unity CPP2IL 逆向还原平台",
+        "hero.titlePrefix": "Unity CPP2IL",
+        "hero.titleHighlight": "逆向还原工作台",
+        "hero.lead": "面向 Unity 游戏安全研究、代码审计、兼容性分析与 WebGL / ARM 原生包体还原，提供从包体导入、元数据识别、结构分析到 C# 代码恢复的完整工作流。",
+        "hero.apply": "申请内测 →",
+        "hero.watch": "查看演示",
+        "hero.metaAria": "能力摘要",
+        "hero.meta1Title": "IL2CPP → C#",
+        "hero.meta1Desc": "还原代码结构",
+        "hero.meta2Title": "ARM / WebGL",
+        "hero.meta2Desc": "多平台包体分析",
+        "hero.meta3Title": "AST 还原链路",
+        "hero.meta3Desc": "可追踪转换过程",
+        "hero.visualAria": "Unity CPP2IL 功能预览",
+        "hero.browserTitle": "IL2CPP 分析工作台",
+        "hero.previewVideoTitle": "CPP2IL 功能预览视频",
+        "demo.aria": "Unity CPP2IL 产品演示",
+        "demo.kicker": "产品演示",
+        "demo.title": "观看 CPP2IL 实际分析流程",
+        "demo.desc": "以下演示视频展示从包体导入、元数据识别、结构分析到 C# 还原结果查看的完整链路，覆盖主要操作步骤与输出格式。",
+        "demo.label": "CPP2IL 产品演示",
+        "demo.tagsAria": "演示标签",
+        "demo.tag1": "包体上传",
+        "demo.tag2": "元数据提取",
+        "demo.tag3": "代码还原",
+        "demo.tag4": "结果浏览",
+        "demo.videoTitle": "CPP2IL 产品演示视频",
+        "capabilities.aria": "Unity CPP2IL 支持能力",
+        "capabilities.kicker": "支持能力",
+        "capabilities.title": "覆盖 Unity IL2CPP 逆向还原核心场景",
+        "capabilities.desc": "围绕 Unity IL2CPP 反编译、Unity 游戏逆向、APK / IPA / WASM 包体分析、global-metadata.dat 提取与 C# 源代码恢复，提供面向安全研究和代码审计的完整能力。",
+        "capabilities.card1Title": "IL2CPP 反编译与 C# 源码恢复",
+        "capabilities.card1Desc": "从 IL2CPP 原生二进制中恢复类型、字段、方法签名、命名空间、类结构与更接近 Unity 工程习惯的 C# 代码，适合代码审计、兼容性分析与安全研究。",
+        "capabilities.card2Title": "多平台包体与原生文件分析",
+        "capabilities.card2Desc": "支持 APK、IPA、WASM、WebGL、Windows PE、ELF、Mach-O、GameAssembly.dll、libil2cpp.so、ARM32、ARM64、x86 与 x64 等常见 Unity 发布目标。",
+        "capabilities.card3Title": "元数据、AST 与调用关系恢复",
+        "capabilities.card3Desc": "自动识别 global-metadata.dat，解析 IL2CPP 元数据映射，重建 AST、中间表示、控制流、调用链、函数关系与结构报告，降低手工逆向分析成本。",
+        "capabilities.keywordAria": "SEO 关键词",
+        "workflow.aria": "Unity CPP2IL 分析流程",
+        "workflow.kicker": "分析流程",
+        "workflow.title": "从包体到可读 C# 的完整链路",
+        "workflow.desc": "围绕 Unity IL2CPP 项目的真实分析场景，串联上传、识别、还原与导出流程，让访问者快速理解工具能力与使用路径。",
+        "workflow.stepsAria": "分析流程步骤",
+        "workflow.step1Title": "上传包体与元数据",
+        "workflow.step1Desc": "支持 APK、IPA、WASM、Windows、ELF、Mach-O 等输入格式，统一进入分析流程。",
+        "workflow.step2Title": "自动识别分析目标",
+        "workflow.step2Desc": "自动识别文件类型、运行平台、元数据结构与反编译策略，减少手工配置。",
+        "workflow.step3Title": "恢复结构与调用关系",
+        "workflow.step3Desc": "重建类型、方法、字段、调用链与控制流关系，形成可追踪的中间表示。",
+        "workflow.step4Title": "查看并导出结果",
+        "workflow.step4Desc": "输出更接近 Unity 工程习惯的 C# 代码、结构报告与分析结果，便于审计和验证。",
+        "cta.title": "申请加入 CPP2IL 内测",
+        "cta.desc": "体验多平台包体分析、元数据映射、调用关系恢复与 C# 代码还原能力，适合 Unity 安全研究、兼容性排查与代码审计场景。",
+        "cta.apply": "内测申请 →",
+        "cta.faq": "查看常见问题",
+        "footer.qa": "常见问题",
+        "footer.copy": "© 2026 CPP2IL. 仅供安全研究与代码审计用途。"
+      },
+      en: {
+        "meta.title": "Unity CPP2IL｜IL2CPP Decompiler, Reverse Engineering & C# Source Recovery",
+        "meta.description": "Unity CPP2IL is a Unity IL2CPP decompiler and reverse engineering platform for APK, IPA, WASM, ARM64, WebGL, ELF, Mach-O, GameAssembly.dll and libil2cpp.so analysis. It detects global-metadata.dat and recovers types, methods, call graphs, control flow and readable C# source code.",
+        "a11y.skip": "Skip to main content",
+        "nav.aria": "Unity CPP2IL navigation",
+        "nav.homeAria": "Unity CPP2IL home",
+        "nav.home": "Home",
+        "nav.demo": "Demo",
+        "nav.capabilities": "Capabilities",
+        "nav.workflow": "Workflow",
+        "nav.qa": "FAQ",
+        "nav.watchDemo": "Watch demo",
+        "nav.beta": "Join beta →",
+        "lang.switcher": "Language switcher",
+        "hero.eyebrow": "Professional Unity CPP2IL reverse engineering platform",
+        "hero.titlePrefix": "Unity CPP2IL",
+        "hero.titleHighlight": "Reverse Engineering Workbench",
+        "hero.lead": "Built for Unity game security research, code audit, compatibility analysis and WebGL / ARM native package recovery. Import packages, detect metadata, analyze structure and recover readable C# source code in one workflow.",
+        "hero.apply": "Apply for beta →",
+        "hero.watch": "Watch demo",
+        "hero.metaAria": "Capability summary",
+        "hero.meta1Title": "IL2CPP → C#",
+        "hero.meta1Desc": "Recover code structure",
+        "hero.meta2Title": "ARM / WebGL",
+        "hero.meta2Desc": "Multi-platform analysis",
+        "hero.meta3Title": "AST pipeline",
+        "hero.meta3Desc": "Traceable recovery flow",
+        "hero.visualAria": "Unity CPP2IL feature preview",
+        "hero.browserTitle": "IL2CPP Analysis Workbench",
+        "hero.previewVideoTitle": "CPP2IL feature preview video",
+        "demo.aria": "Unity CPP2IL product demo",
+        "demo.kicker": "Product Demo",
+        "demo.title": "Watch the real CPP2IL analysis workflow",
+        "demo.desc": "The demo shows the complete path from package import and metadata detection to structure analysis and C# recovery output, covering the main operations and result formats.",
+        "demo.label": "CPP2IL Product Demo",
+        "demo.tagsAria": "Demo tags",
+        "demo.tag1": "Package upload",
+        "demo.tag2": "Metadata extraction",
+        "demo.tag3": "Code recovery",
+        "demo.tag4": "Result browser",
+        "demo.videoTitle": "CPP2IL product demo video",
+        "capabilities.aria": "Unity CPP2IL capabilities",
+        "capabilities.kicker": "Capabilities",
+        "capabilities.title": "Covering the core Unity IL2CPP reverse engineering scenarios",
+        "capabilities.desc": "CPP2IL covers Unity IL2CPP decompilation, Unity game reverse engineering, APK / IPA / WASM package analysis, global-metadata.dat extraction and C# source code recovery for security research and code audit.",
+        "capabilities.card1Title": "IL2CPP decompilation and C# source recovery",
+        "capabilities.card1Desc": "Recover types, fields, method signatures, namespaces, class structures and readable C# code from IL2CPP native binaries for code audit, compatibility analysis and security research.",
+        "capabilities.card2Title": "Multi-platform package and native binary analysis",
+        "capabilities.card2Desc": "Analyze common Unity targets including APK, IPA, WASM, WebGL, Windows PE, ELF, Mach-O, GameAssembly.dll, libil2cpp.so, ARM32, ARM64, x86 and x64 builds.",
+        "capabilities.card3Title": "Metadata, AST and call graph recovery",
+        "capabilities.card3Desc": "Detect global-metadata.dat automatically, parse IL2CPP metadata mappings, rebuild AST, intermediate representation, control flow, call chains, function relationships and analysis reports.",
+        "capabilities.keywordAria": "SEO keywords",
+        "workflow.aria": "Unity CPP2IL analysis workflow",
+        "workflow.kicker": "Workflow",
+        "workflow.title": "Complete path from package to readable C#",
+        "workflow.desc": "A real Unity IL2CPP analysis workflow connects upload, detection, recovery and export, helping visitors quickly understand the product capability and usage path.",
+        "workflow.stepsAria": "Analysis workflow steps",
+        "workflow.step1Title": "Upload package and metadata",
+        "workflow.step1Desc": "Support APK, IPA, WASM, Windows, ELF, Mach-O and other input formats, then route them into one analysis workflow.",
+        "workflow.step2Title": "Detect analysis target automatically",
+        "workflow.step2Desc": "Identify file type, runtime platform, metadata layout and decompilation strategy automatically to reduce manual configuration.",
+        "workflow.step3Title": "Recover structure and call relationships",
+        "workflow.step3Desc": "Rebuild types, methods, fields, call chains and control flow into a traceable intermediate representation.",
+        "workflow.step4Title": "Review and export results",
+        "workflow.step4Desc": "Export C# code, structure reports and analysis results that are closer to Unity project conventions for audit and verification.",
+        "cta.title": "Apply for CPP2IL beta access",
+        "cta.desc": "Try multi-platform package analysis, metadata mapping, call graph recovery and C# source recovery for Unity security research, compatibility debugging and code audit.",
+        "cta.apply": "Join beta →",
+        "cta.faq": "Read FAQ",
+        "footer.qa": "FAQ",
+        "footer.copy": "© 2026 CPP2IL. For security research and code audit only."
+      }
+    };
+
+    const supportedLangs = ["zh-CN", "en"];
+
+    function getLangFromUrl() {
+      const lang = new URLSearchParams(window.location.search).get("lang");
+      if (!lang) return null;
+      return /^zh/i.test(lang) ? "zh-CN" : /^en/i.test(lang) ? "en" : null;
+    }
+
+    function detectUserLang() {
+      const fromUrl = getLangFromUrl();
+      if (fromUrl) return fromUrl;
+      const saved = localStorage.getItem("cpp2il_lang");
+      if (supportedLangs.includes(saved)) return saved;
+      const browserLangs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+      return browserLangs.some(function(lang) { return /^zh/i.test(lang); }) ? "zh-CN" : "en";
+    }
+
+    function t(lang, key) {
+      return (I18N[lang] && I18N[lang][key]) || I18N["zh-CN"][key] || key;
+    }
+
+    function setMeta(name, value, attr) {
+      const selector = attr === "property" ? 'meta[property="' + name + '"]' : 'meta[name="' + name + '"]';
+      const el = document.querySelector(selector);
+      if (el) el.setAttribute("content", value);
+    }
+
+    function applyLang(lang) {
+      const current = supportedLangs.includes(lang) ? lang : "zh-CN";
+      document.documentElement.lang = current;
+      document.documentElement.dataset.lang = current;
+      document.title = t(current, "meta.title");
+      setMeta("description", t(current, "meta.description"), "name");
+      setMeta("og:title", t(current, "meta.title"), "property");
+      setMeta("og:description", t(current, "meta.description"), "property");
+      setMeta("twitter:title", t(current, "meta.title"), "name");
+      setMeta("twitter:description", t(current, "meta.description"), "name");
+
+      document.querySelectorAll("[data-i18n]").forEach(function(el) {
+        el.textContent = t(current, el.dataset.i18n);
+      });
+
+      document.querySelectorAll("[data-i18n-attr]").forEach(function(el) {
+        el.dataset.i18nAttr.split(";").forEach(function(pair) {
+          const parts = pair.split(":");
+          if (parts.length !== 2) return;
+          const attr = parts[0].trim();
+          const key = parts[1].trim();
+          el.setAttribute(attr, t(current, key));
+        });
+      });
+
+
+      document.querySelectorAll("[data-lang-href]").forEach(function(el) {
+        const base = el.dataset.langHref;
+        if (!base) return;
+        const u = new URL(base, window.location.href);
+        u.searchParams.set("lang", current);
+        el.setAttribute("href", u.pathname.split('/').pop() + u.search + u.hash);
+      });
+
+      document.querySelectorAll("[data-lang-set]").forEach(function(btn) {
+        const active = btn.dataset.langSet === current;
+        btn.classList.toggle("active", active);
+        btn.setAttribute("aria-pressed", active ? "true" : "false");
+      });
+
+      localStorage.setItem("cpp2il_lang", current);
+    }
+
+    document.querySelectorAll("[data-lang-set]").forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        const lang = btn.dataset.langSet;
+        applyLang(lang);
+        const url = new URL(window.location.href);
+        url.searchParams.set("lang", lang);
+        window.history.replaceState({}, "", url.toString());
+      });
+    });
+
+    applyLang(detectUserLang());
+
     /* ── 播放演示按钮 → 平滑滚动到演示区 ── */
     document.querySelectorAll('[data-play-demo]').forEach(function(btn) {
       btn.addEventListener('click', function(e) {

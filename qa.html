@@ -1,0 +1,1656 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>CPP2IL QA｜Unity3D 反编译、IL2CPP 逆向工程与源码恢复常见问题</title>
+  <meta name="description" content="CPP2IL QA 长尾关键词页面，聚焦 Unity3D 反编译、Unity 逆向工程、IL2CPP decompiler、C# 源码恢复、APK / IPA / WASM / WebGL 分析、GameAssembly.dll、libil2cpp.so、global-metadata.dat 和软件逆向工程项目。" />
+  <meta name="keywords" content="CPP2IL, Unity CPP2IL, Unity3D 反编译, Unity 3D 反编译, Unity 反编译, Unity 逆向工程, Unity3D 逆向工程, Unity 游戏逆向, 游戏反编译, 游戏逆向工程, 游戏源码恢复, Unity3D 源码恢复, Unity 源码恢复, 恢复源码, 源码还原, C# 源码恢复, C# 代码还原, IL2CPP 反编译, IL2CPP 逆向, IL2CPP to C#, IL2CPP 源代码恢复, IL2CPP decompiler, Unity IL2CPP decompiler, Unity IL2CPP reverse engineering, Unity reverse engineering, Unity game reverse engineering, C# source recovery, Unity source code recovery, game source recovery, software reverse engineering, 软件逆向工程, 逆向工程项目, 二进制分析, binary analysis, AST 还原, AST reconstruction, control flow recovery, 控制流还原, call graph recovery, 调用关系恢复, metadata parser, global-metadata.dat, metadata.dat, GameAssembly.dll, libil2cpp.so, APK 反编译, APK decompiler, IPA 逆向, IPA reverse engineering, WASM 反编译, WASM decompiler, WebGL 反编译, Unity WebGL reverse engineering, ARM64 反汇编, ARM64 disassembly, ARM32 analysis, x86 x64 native analysis, Mach-O reverse engineering, ELF reverse engineering, PE analysis, deobfuscation analysis, 反混淆分析, 代码审计, 安全研究, 游戏安全分析, 兼容性分析, 恶意代码检测, 第三方 SDK 审计, 供应链安全" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="language" content="zh-CN,en" />
+  <meta name="author" content="CPP2IL" />
+  <link rel="canonical" href="https://cpp2il.com/qa.html" />
+  <link rel="alternate" hreflang="zh-CN" href="https://cpp2il.com/qa.html?lang=zh-CN" />
+  <link rel="alternate" hreflang="en" href="https://cpp2il.com/qa.html?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://cpp2il.com/qa.html" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://cpp2il.com/sitemap.xml" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CPP2IL" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="CPP2IL QA｜Unity3D 反编译、IL2CPP 逆向工程与源码恢复常见问题" />
+  <meta property="og:description" content="CPP2IL QA 长尾关键词页面，聚焦 Unity3D 反编译、Unity 逆向工程、IL2CPP decompiler、C# 源码恢复、APK / IPA / WASM / WebGL 分析、GameAssembly.dll、libil2cpp.so、global-metadata.dat 和软件逆向工程项目。" />
+  <meta property="og:image" content="https://cpp2il.com/assets/slides/0.png" />
+  <meta property="og:url" content="https://cpp2il.com/qa.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CPP2IL FAQ｜Unity3D Decompilation, IL2CPP Reverse Engineering &amp; Source Recovery" />
+  <meta name="twitter:description" content="CPP2IL FAQ long-tail keyword page focused on Unity3D decompilation, Unity reverse engineering, IL2CPP decompiler, C# source recovery, APK / IPA / WASM / WebGL analysis, GameAssembly.dll, libil2cpp.so, global-metadata.dat and software reverse engineering projects." />
+  <meta name="twitter:image" content="https://cpp2il.com/assets/slides/0.png" />
+
+  <script type="application/ld+json" id="ld-software">{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Unity CPP2IL",
+  "alternateName": [
+    "CPP2IL",
+    "Unity IL2CPP Decompiler",
+    "Unity3D 反编译与源码恢复平台"
+  ],
+  "url": "https://cpp2il.com/",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Web",
+  "inLanguage": [
+    "zh-CN",
+    "en"
+  ],
+  "description": "CPP2IL is a Unity3D IL2CPP decompiler and reverse engineering workbench for C# source recovery, APK / IPA / WASM / WebGL / GameAssembly.dll / libil2cpp.so / global-metadata.dat analysis. CPP2IL 是面向 Unity3D 反编译、IL2CPP 逆向工程、恢复源码、C# 代码还原和软件逆向工程项目的在线分析平台。",
+  "keywords": "CPP2IL, Unity CPP2IL, Unity3D 反编译, Unity 3D 反编译, Unity 反编译, Unity 逆向工程, Unity3D 逆向工程, Unity 游戏逆向, 游戏反编译, 游戏逆向工程, 游戏源码恢复, Unity3D 源码恢复, Unity 源码恢复, 恢复源码, 源码还原, C# 源码恢复, C# 代码还原, IL2CPP 反编译, IL2CPP 逆向, IL2CPP to C#, IL2CPP 源代码恢复, IL2CPP decompiler, Unity IL2CPP decompiler, Unity IL2CPP reverse engineering, Unity reverse engineering, Unity game reverse engineering, C# source recovery, Unity source code recovery, game source recovery, software reverse engineering, 软件逆向工程, 逆向工程项目, 二进制分析, binary analysis, AST 还原, AST reconstruction, control flow recovery, 控制流还原, call graph recovery, 调用关系恢复, metadata parser, global-metadata.dat, metadata.dat, GameAssembly.dll, libil2cpp.so, APK 反编译, APK decompiler, IPA 逆向, IPA reverse engineering, WASM 反编译, WASM decompiler, WebGL 反编译, Unity WebGL reverse engineering, ARM64 反汇编, ARM64 disassembly, ARM32 analysis, x86 x64 native analysis, Mach-O reverse engineering, ELF reverse engineering, PE analysis, deobfuscation analysis, 反混淆分析, 代码审计, 安全研究, 游戏安全分析, 兼容性分析, 恶意代码检测, 第三方 SDK 审计, 供应链安全",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CNY"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CPP2IL",
+    "url": "https://cpp2il.com/"
+  }
+}</script>
+  <script type="application/ld+json" id="ld-faq">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "zh-CN",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "什么是 Unity3D IL2CPP 反编译？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unity3D IL2CPP 反编译是指对 Unity3D 游戏或应用发布后的 IL2CPP 原生包体进行结构化分析，从 APK、IPA、Windows GameAssembly.dll、Android libil2cpp.so、WebGL WASM、global-metadata.dat 等文件中恢复类型、方法、字段、调用关系、控制流和接近 C# 的源码结构。它常用于授权代码审计、Unity 游戏安全研究、兼容性排查、历史项目分析、恶意代码检测和软件逆向工程学习。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Unity3D 反编译、Unity 逆向工程和 IL2CPP to C# 有什么区别？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unity3D 反编译通常强调把发布产物转换成更可读的代码或结构；Unity 逆向工程范围更广，包含资源分析、二进制分析、运行时行为分析、调用链分析和安全审计；IL2CPP to C# 则更聚焦于从 IL2CPP 原生代码与 metadata 中恢复 C# 类、方法、字段、命名空间和伪源码。CPP2IL 主要面向 Unity IL2CPP decompiler、C# source recovery、Unity source code recovery 和 game reverse engineering 这些场景。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "为什么 Unity3D 项目使用 IL2CPP 后更难直接恢复源码？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unity3D 使用 IL2CPP 后，C# 会先转换为 C++，再编译为 ARM64、ARM32、x86、x64、Mach-O、ELF、PE 或 WASM 等原生目标。传统 .NET / C# 反编译器依赖 IL 字节码，而 IL2CPP 发布包中通常不存在完整原始 IL，所以需要结合 global-metadata.dat、GameAssembly.dll、libil2cpp.so、WASM 函数表、方法指针、类型元数据和控制流还原来做源码恢复。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CPP2IL 适合做 Unity3D 源码恢复吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CPP2IL 适合用于 Unity3D 源码恢复评估，尤其是 IL2CPP 发布后的 C# 结构恢复、类型恢复、方法签名恢复、字段恢复、调用图恢复和控制流分析。需要注意的是，IL2CPP 逆向恢复出来的是分析用途的 C# 伪源码或近似源码结构，不等同于完整 Unity Editor 工程，也不能保证包含原始注释、局部变量名、Prefab、场景、AssetBundle、Shader 和美术资源。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Unity3D 源码恢复和 Unity 资源提取是一回事吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不是。Unity3D 源码恢复主要关注 IL2CPP / C# 逻辑代码、类结构、方法调用、字段和控制流；Unity 资源提取主要关注 AssetBundle、Prefab、Scene、Texture、Audio、Animation、Shader、Material 等资源。一个完整的 Unity 逆向工程项目通常会同时涉及代码反编译、资源分析、二进制分析、WebGL WASM 分析、Android APK 分析和 iOS IPA 分析。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Unity3D 游戏逆向工程常见目标是什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unity3D 游戏逆向工程的常见目标包括理解客户端逻辑、验证第三方 SDK、安全审计敏感 API、检查加密与配置加载逻辑、分析异常崩溃、排查兼容性、定位恶意代码、进行供应链安全检查以及恢复自有历史项目的源码结构。关键词包括 Unity game reverse engineering、Unity3D 反编译、游戏源码恢复、IL2CPP reverse engineering、software reverse engineering 和 binary analysis。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Android APK 里的 libil2cpp.so 和 global-metadata.dat 如何用于源码恢复？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Android Unity IL2CPP APK 通常包含 libil2cpp.so 与 global-metadata.dat。libil2cpp.so 提供 ARM32 / ARM64 原生代码、函数实现、方法指针和调用逻辑；global-metadata.dat 提供类型、方法、字段、字符串和元数据映射。把二者关联起来，才能更好地完成 APK 反编译、IL2CPP 反编译、C# 代码还原、调用关系恢复和 Unity3D 源码恢复。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Windows Unity 游戏中的 GameAssembly.dll 是什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GameAssembly.dll 是 Windows 平台 Unity IL2CPP 项目的核心原生二进制之一，通常承载从 C# 转换并编译后的本地代码。进行 Windows Unity 反编译、GameAssembly.dll analysis、PE 逆向、x64 native analysis、C# source recovery 时，通常需要把 GameAssembly.dll 与 global-metadata.dat 关联，恢复类型、方法和调用路径。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "iOS IPA / Mach-O 的 Unity IL2CPP 逆向重点是什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "iOS Unity IL2CPP 逆向通常关注 IPA 包内的 Mach-O 二进制、ARM64 指令、符号表、Section 结构、metadata 映射和 Unity 版本特征。关键词包括 IPA reverse engineering、Mach-O reverse engineering、ARM64 disassembly、IL2CPP to C#、Unity iOS reverse engineering 和 C# 源码恢复。合法授权下，这类分析适合安全审计、兼容性验证和历史项目研究。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Unity WebGL / WASM 反编译为什么是独立关键词？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unity WebGL 项目会把 IL2CPP 结果编译为 WebAssembly / WASM，并通过 framework.js、data 文件和浏览器运行时加载。WebGL WASM 反编译需要关注 wasm function index、table mapping、control flow recovery、AST reconstruction、metadata 关联和 C# 伪代码恢复，因此它和普通 Android APK 反编译、Windows DLL 逆向、iOS Mach-O 分析有明显区别。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ELF、PE、Mach-O、WASM 在 Unity 逆向中分别代表什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ELF 通常对应 Android / Linux 原生库，例如 libil2cpp.so；PE 通常对应 Windows 可执行文件或 DLL，例如 GameAssembly.dll；Mach-O 通常对应 iOS / macOS 原生二进制；WASM 对应 Unity WebGL 的 WebAssembly 模块。Unity3D 逆向工程需要根据 ELF reverse engineering、PE analysis、Mach-O analysis、WASM decompiler 等不同目标选择不同分析策略。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ARM64、ARM32、x86、x64 对 IL2CPP 分析有什么影响？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不同 CPU 架构会影响指令集、调用约定、寄存器使用、函数边界识别、反汇编结果和控制流恢复质量。Android APK 可能同时包含 ARMv7 / ARM32 和 ARM64；Windows 多为 x86 / x64；iOS 主要是 ARM64；WebGL 是 WASM。CPP2IL 的关键词覆盖 ARM64 disassembly、ARM32 analysis、x86 x64 native analysis 和 IL2CPP binary analysis。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Unity3D 热更新 DLL 和 IL2CPP 原生包体需要一起分析吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "很多 Unity3D 项目会同时使用 IL2CPP 主包和热更新脚本，例如 HybridCLR、Lua、XLua、puerts、ILRuntime 或自研脚本系统。做 Unity 逆向工程项目时，可能需要同时分析 GameAssembly.dll / libil2cpp.so / WASM、global-metadata.dat、热更新 DLL、AssetBundle、脚本资源和配置文件，才能完整理解客户端逻辑与源码恢复范围。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "IL2CPP to C# 能恢复到什么程度？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IL2CPP to C# 通常可以恢复类型名、命名空间、方法签名、字段、部分泛型结构、继承关系、接口关系、字符串引用、调用关系和接近 C# 的伪代码。恢复程度取决于 Unity 版本、metadata 完整性、符号信息、是否混淆、是否加固、编译优化级别和目标平台。对于 Unity3D 源码恢复，合理预期是“用于阅读和审计的结构化源码”，不是百分百还原原始工程。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Unity3D 恢复源码是否等于恢复完整工程？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不等于。Unity3D 恢复源码主要指恢复 C# 逻辑代码结构，例如类型、方法、字段、控制流、调用图和伪源码。完整 Unity 工程还包含工程设置、场景、Prefab、材质、Shader、动画、脚本引用、资源路径和编辑器数据。CPP2IL 更适合“Unity 源码恢复 / Unity source code recovery / C# source recovery”的代码审计部分。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "丢失 Unity3D 源码后还能通过发布包恢复吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "如果是自己拥有版权和授权的历史 Unity3D 项目，发布包可以用于恢复部分源码结构和逻辑线索。IL2CPP 包体中的 GameAssembly.dll、libil2cpp.so、WASM 和 global-metadata.dat 可以帮助恢复类、方法、字段和调用链；AssetBundle 和资源文件可以帮助恢复部分资源关系。但无法保证恢复原始注释、完整工程结构、编辑器配置和开发过程中的源文件。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "C# 伪代码、反编译源码和原始源码有什么区别？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "C# 伪代码是根据二进制和元数据重建的可读表达，不一定能直接编译；反编译源码是更接近高级语言的恢复结果，但仍可能缺失变量名、注释和工程上下文；原始源码是开发者真实维护的工程代码。Unity IL2CPP decompiler 的价值在于让软件逆向工程项目更快理解逻辑，而不是承诺完全复制原始源码仓库。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "控制流还原对 Unity3D 反编译有什么作用？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "控制流还原用于从底层分支、跳转、基本块和异常处理结构中恢复 if、else、switch、for、while、try/catch 等高级逻辑。对于 Unity3D 反编译、IL2CPP reverse engineering、WASM decompiler、ARM64 disassembly 和 GameAssembly.dll analysis，控制流恢复直接影响 C# 伪代码可读性和代码审计效率。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "调用关系恢复对游戏安全分析有什么帮助？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "调用关系恢复可以建立方法之间、类型之间、模块之间的调用图，帮助安全研究人员快速定位登录、支付、配置、网络、加密、资源加载、反作弊、热更新和第三方 SDK 相关逻辑。对于 Unity 游戏逆向、游戏安全分析、恶意代码检测、供应链安全审计和兼容性排查，call graph recovery 是核心能力之一。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AST reconstruction 在 IL2CPP 反编译里是什么意思？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AST reconstruction 是把低层指令、中间表示和表达式重新组织成类似源码语法树的过程。它可以让 IL2CPP 反编译输出更接近 C#，例如恢复表达式、赋值、条件判断、循环、方法调用和对象访问。AST 还原越稳定，Unity3D 源码恢复、软件逆向工程阅读和代码审计体验越好。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "方法名、类名和字段名一定能恢复吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不一定。Unity IL2CPP 中很多名称依赖 metadata、符号和构建设置。如果 global-metadata.dat 完整且未被强混淆，类型名、方法名、字段名通常更容易恢复；如果 metadata 被加密、裁剪、混淆或符号被剥离，恢复结果可能只保留地址、索引或推断名称。源码恢复需要结合 metadata parser、binary analysis、string analysis 和人工复核。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "泛型、接口和虚函数会影响 IL2CPP 源码恢复吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "会。Unity IL2CPP 中的泛型实例化、接口分发、虚函数表、反射调用和 AOT 编译会让类型恢复和调用关系恢复更复杂。高质量的 IL2CPP reverse engineering 需要关注 generic sharing、virtual invoke、interface invoke、rgctx、method pointer 和 metadata registration 等信息，才能更准确地还原 C# 结构。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "一个 Unity3D 逆向项目通常包含哪些阶段？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "完整 Unity3D 逆向项目通常包含样本确认、授权确认、平台识别、APK / IPA / WebGL / Windows 包体解包、global-metadata.dat 定位、GameAssembly.dll 或 libil2cpp.so 分析、WASM 分析、方法映射、类型恢复、调用图恢复、控制流还原、C# 伪源码浏览、资源关联、报告导出和人工验证。CPP2IL 主要提升 IL2CPP 反编译与源码恢复阶段的效率。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "软件逆向工程和游戏逆向工程有什么共同点？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "软件逆向工程和游戏逆向工程都关注二进制结构、函数逻辑、数据流、控制流、调用关系、字符串引用和安全边界。Unity3D 游戏逆向工程更常遇到 IL2CPP、AssetBundle、热更新、WebGL WASM、Android APK、iOS IPA、反作弊和图形资源；普通软件逆向工程则可能更多关注 PE、ELF、Mach-O、协议、加壳和系统 API。CPP2IL 是更垂直的 Unity IL2CPP reverse engineering 工具。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Unity3D 反编译如何服务代码审计？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unity3D 反编译可以把发布包中的逻辑恢复为更可读的类、方法、字段和调用链，帮助审计人员检查敏感 API、网络请求、配置读取、加密实现、支付流程、第三方 SDK、日志输出和异常处理。对于企业内部授权项目，IL2CPP 反编译、C# 源码恢复和二进制分析可以作为代码审计、供应链安全和版本对比的补充手段。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Unity3D 反编译如何帮助兼容性排查？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "当缺少完整源码或需要对比多个发布版本时，Unity3D 反编译可以帮助定位平台相关代码、Android / iOS / WebGL 条件逻辑、第三方 SDK 初始化、资源加载路径、反射调用、热更新入口和异常处理差异。关键词包括 compatibility analysis、Unity WebGL debugging、APK analysis、IPA analysis、C# source recovery 和 call graph recovery。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Unity3D 反编译如何用于恶意代码检测？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "在合法授权的安全研究中，Unity3D 反编译可以帮助分析可疑 APK、IPA 或 WebGL 包体中的敏感权限调用、动态加载、网络上报、配置下发、加密传输、反射调用、第三方 SDK 行为和隐藏逻辑。IL2CPP reverse engineering 与 C# source recovery 能提供静态代码线索，但最终结论仍需要结合沙箱、动态日志、网络行为和人工分析。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "第三方 SDK 审计为什么需要 Unity IL2CPP 逆向？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unity3D 项目常集成广告、统计、登录、支付、推送、热更新、反作弊和数据分析 SDK。发布包中 SDK 逻辑可能经过 IL2CPP 编译或混合脚本加载。通过 Unity IL2CPP 逆向、调用关系恢复、字符串分析和 C# 伪源码浏览，可以帮助确认 SDK 初始化、权限使用、数据上报、网络域名和版本差异。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "逆向工程项目报告应包含哪些内容？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "面向 Unity3D / IL2CPP 的逆向工程项目报告通常包含样本信息、平台与架构、Unity 版本、关键文件列表、global-metadata.dat 状态、GameAssembly.dll / libil2cpp.so / WASM 分析结果、类型恢复摘要、调用图、关键函数、风险点、兼容性问题、源码恢复范围、限制说明和合规边界。这样的报告适合安全研究、代码审计和研发排查。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "global-metadata.dat 为什么是 Unity IL2CPP SEO 的核心关键词？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "global-metadata.dat 是大量 Unity IL2CPP 分析问题的入口词，因为研究人员经常搜索 global-metadata.dat extractor、metadata parser、metadata.dat 解析、IL2CPP metadata、Unity metadata recovery 等关键词。它直接影响类型恢复、方法恢复、字段恢复、字符串恢复和 C# 源码还原，是 Unity3D 反编译和 IL2CPP reverse engineering 内容页的重要长尾关键词。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "metadata parser 在源码恢复中做什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "metadata parser 用于解析 Unity IL2CPP 元数据结构，提取类型定义、方法定义、字段定义、参数、属性、字符串、泛型信息和索引映射。没有可靠的 metadata parser，GameAssembly.dll analysis、libil2cpp.so analysis、WASM decompiler 和 IL2CPP to C# 的结果都会缺少关键上下文。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "method pointer 和 metadata registration 有什么作用？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "method pointer、metadata registration 和 code registration 用于把元数据中的方法、类型与原生二进制中的函数地址或函数索引关联起来。对于 Unity IL2CPP 反编译，这些信息可以帮助完成方法映射、函数重命名、调用关系恢复、泛型处理和 C# 伪源码输出，是 IL2CPP binary analysis 的关键技术词。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "string analysis 在 Unity3D 逆向中有什么价值？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "string analysis 可以帮助定位 API 路径、配置键、资源名、日志信息、错误码、网络域名、加密参数、SDK 名称和功能入口。结合 IL2CPP 反编译、调用图恢复、global-metadata.dat 解析和 C# 伪源码浏览，字符串分析可以显著提升 Unity 游戏安全分析、软件逆向工程和代码审计效率。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "符号剥离会影响 Unity3D 源码恢复吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "会。符号剥离会减少函数名、类名、调试信息和地址映射，使 GameAssembly.dll、libil2cpp.so、Mach-O 或 ELF 分析更依赖 metadata、字符串、函数签名、交叉引用和人工推断。即使符号被剥离，IL2CPP metadata 与二进制结构仍可能提供源码恢复线索，但恢复结果会更依赖分析质量。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "混淆和加固对 IL2CPP 反编译有什么影响？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "混淆和加固可能改变名称、控制流、字符串、metadata、二进制布局和运行时加载方式，从而影响 Unity3D 反编译、C# 源码恢复和调用关系恢复。内容层面可以覆盖 deobfuscation analysis、反混淆分析、protected IL2CPP、metadata encryption、control flow obfuscation 等关键词，但实际分析必须在合法授权范围内进行，并需要人工验证。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "反汇编和反编译在 Unity IL2CPP 中有什么区别？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "反汇编把原生二进制转换为汇编指令，例如 ARM64 disassembly、x86 disassembly、WASM disassembly；反编译则尝试把低层指令恢复为更高级的 C# 伪代码或结构化逻辑。Unity IL2CPP 分析通常需要先有二进制分析和反汇编，再结合 metadata、AST reconstruction、control flow recovery 才能得到更可读的反编译结果。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CPP2IL 和 Il2CppDumper 的区别是什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il2CppDumper 常用于从 IL2CPP 二进制和 metadata 中导出脚本、符号、头文件或辅助分析信息；CPP2IL 更强调在线工作台、结构恢复、C# 源码恢复、调用关系恢复、控制流还原、结果浏览和报告输出。SEO 关键词可以覆盖 CPP2IL vs Il2CppDumper、Unity IL2CPP decompiler、IL2CPP source recovery 和 automated IL2CPP analysis。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CPP2IL 和 IDA Pro / Ghidra 的关系是什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IDA Pro 和 Ghidra 是通用二进制分析平台，适合深入查看 PE、ELF、Mach-O、ARM64、x86、WASM 等低层结构。CPP2IL 更聚焦 Unity IL2CPP，把 metadata、类型、方法、调用关系和 C# 结构恢复整合到更垂直的流程中。实际 Unity 逆向工程项目中，它们可以互补使用。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "dnSpy / ILSpy 为什么不能直接解决 IL2CPP 反编译？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "dnSpy 和 ILSpy 更适合 .NET / Mono / C# IL 字节码场景。Unity IL2CPP 发布后，C# 逻辑已经变成 C++ 再编译为原生代码，不再是普通 IL 字节码。因此 IL2CPP 反编译需要 GameAssembly.dll、libil2cpp.so、global-metadata.dat、WASM、二进制分析和 metadata 关联，而不是只靠传统 C# 反编译器。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Unity 反编译工具链为什么需要自动化？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "手工 Unity 反编译工具链通常涉及解包、定位 metadata、导出符号、导入 Ghidra / IDA、重命名函数、分析调用图、查看伪代码和整理报告。自动化可以减少重复配置、减少错误、提升批量分析效率，并让 Unity3D 源码恢复、APK decompiler、WASM decompiler、GameAssembly.dll analysis 和 libil2cpp.so analysis 更适合在线平台。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "在线 Unity IL2CPP decompiler 的优势是什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "在线 Unity IL2CPP decompiler 可以把上传分析、平台识别、metadata 解析、二进制分析、C# 源码恢复、调用链浏览和结果导出放在统一界面中。对于不想搭建复杂本地工具链的用户，在线工作台更适合快速验证 APK 反编译、IPA 逆向、WASM 反编译、Unity WebGL 逆向和软件逆向工程项目。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "CPP2IL 是否用于破解游戏、绕过付费或作弊？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不是。CPP2IL 的定位是授权安全研究、代码审计、兼容性分析、恶意代码检测、历史项目恢复和教育研究。页面可以覆盖 Unity 游戏逆向、游戏反编译、game decompiler、Unity game reverse engineering 等关键词，但用途应限定在合法授权和研究场景，不应被用于破解、盗版、绕过授权、作弊或攻击服务端。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "进行 Unity3D 反编译前需要确认什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "进行 Unity3D 反编译、IL2CPP 逆向、APK 反编译、IPA 逆向或 WebGL WASM 分析前，应确认样本来源合法、授权范围明确、数据不包含敏感用户信息、密钥或受保密协议限制的内容。企业场景下应配合内部合规流程、数据治理和审计记录，确保软件逆向工程项目服务于安全研究和研发排查。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "QA 页面是否提供攻击步骤或绕过方案？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不提供。QA 页面用于解释 Unity3D 反编译、IL2CPP reverse engineering、C# source recovery、binary analysis、metadata parser、call graph recovery 等概念和网站能力，不提供绕过授权、破解付费、作弊、攻击服务端、规避安全机制或提取商业机密的操作步骤。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "源码恢复结果如何用于合规审计？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "源码恢复结果可以帮助合规团队查看第三方组件、SDK 行为、敏感权限、数据采集、网络传输、加密存储、日志输出和平台差异。对于 Unity3D / IL2CPP 项目，C# 伪源码、调用图、字符串引用和二进制分析报告可以作为安全审计材料，但应与源代码仓库、构建记录和动态测试结果交叉验证。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "上传 APK、IPA、WASM 或 DLL 时需要注意哪些数据安全问题？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "上传 APK、IPA、WASM、GameAssembly.dll、libil2cpp.so、global-metadata.dat、ELF、PE、Mach-O 等文件前，应确认不包含密钥、账号、内网地址、用户隐私数据、商业机密或受 NDA 限制的内容。对于企业安全研究和软件逆向工程项目，建议使用专门样本、脱敏数据和明确授权记录。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "为什么 QA 中要同时出现反编译、逆向和源码恢复关键词？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "用户搜索习惯不同，有人搜索 Unity3D 反编译、有人搜索 Unity 逆向工程、有人搜索 IL2CPP decompiler、有人搜索 C# source recovery、有人搜索恢复源码或软件逆向工程项目。QA 页面把这些关键词放进真实问题和答案，可以覆盖更多长尾搜索意图，同时通过合规说明强调授权安全研究和代码审计边界。"
+      }
+    }
+  ]
+}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <style>
+    /* ══════════════════════════════════════════
+       0. 变量与重置
+       ══════════════════════════════════════════ */
+    :root{
+      --ink:#06112e;
+      --muted:#3b4e6a;
+      --soft:#4a5a78;
+      --line:rgba(82,100,245,.16);
+      --line-strong:rgba(82,100,245,.28);
+      --primary:#5264f5;
+      --primary-2:#805cff;
+      --cyan:#1bc6ff;
+      --bg:#f7f9ff;
+      --card:rgba(255,255,255,.82);
+      --glass:rgba(255,255,255,.74);
+      --shadow:0 28px 90px rgba(27,42,110,.16);
+      --shadow-strong:0 38px 120px rgba(7,17,47,.22);
+      --radius:30px;
+      --ease:cubic-bezier(.22,.8,.22,1);
+    }
+
+    *,*::before,*::after{box-sizing:border-box}
+    html{width:100%;min-height:100%;scroll-behavior:smooth;background:var(--bg);color:var(--ink);overflow-x:hidden}
+    body{
+      min-width:320px;min-height:100%;margin:0;overflow-x:hidden;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;
+      background:
+        radial-gradient(900px 540px at 78% 5%, rgba(82,100,245,.16), transparent 68%),
+        radial-gradient(720px 480px at 16% 18%, rgba(27,198,255,.10), transparent 62%),
+        linear-gradient(180deg,#fff 0%,#f8faff 46%,#fff 100%);
+    }
+    body::before{
+      content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+      background-image:linear-gradient(rgba(61,77,145,.052) 1px,transparent 1px),linear-gradient(90deg,rgba(61,77,145,.052) 1px,transparent 1px);
+      background-size:42px 42px;
+      -webkit-mask-image:radial-gradient(ellipse at center,#000 0%,rgba(0,0,0,.72) 44%,transparent 86%);
+      mask-image:radial-gradient(ellipse at center,#000 0%,rgba(0,0,0,.72) 44%,transparent 86%);
+    }
+    button,a{font:inherit}
+    a{text-decoration:none;color:inherit}
+    img,video{max-width:100%;height:auto}
+    section{scroll-margin-top:92px}
+    ol,ul{margin:0;padding:0;list-style:none}
+
+    /* ══════════════════════════════════════════
+       1. 全局焦点样式（a11y）
+       ══════════════════════════════════════════ */
+    :focus-visible{
+      outline:3px solid var(--primary);
+      outline-offset:3px;
+      border-radius:8px;
+    }
+    :focus:not(:focus-visible){outline:none}
+
+    /* ══════════════════════════════════════════
+       2. Skip Link（a11y）
+       ══════════════════════════════════════════ */
+    .skip-link{
+      position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;
+    }
+    .skip-link:focus{
+      position:fixed;top:12px;left:12px;width:auto;height:auto;z-index:100;
+      padding:12px 20px;border-radius:12px;background:#fff;box-shadow:var(--shadow);
+      font-weight:700;color:var(--primary);
+    }
+
+    /* ══════════════════════════════════════════
+       3. 容器
+       ══════════════════════════════════════════ */
+    .wrap{width:calc(100% - 48px);max-width:1280px;margin-left:auto;margin-right:auto}
+
+    /* ══════════════════════════════════════════
+       4. 顶部导航
+       ══════════════════════════════════════════ */
+    .topbar{position:fixed;left:0;right:0;top:0;z-index:40;padding:16px 20px 0;pointer-events:none}
+    .nav{
+      width:100%;max-width:1280px;height:64px;margin:0 auto;padding:0 10px 0 18px;
+      display:flex;align-items:center;justify-content:space-between;gap:18px;
+      border:1px solid rgba(255,255,255,.76);border-radius:999px;background:var(--glass);
+      box-shadow:0 18px 60px rgba(25,37,90,.12);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+      pointer-events:auto;
+    }
+    @supports not (backdrop-filter:blur(1px)){
+      .nav{background:rgba(255,255,255,.94)}
+    }
+    .brand{display:flex;align-items:center;gap:11px;font-weight:950;letter-spacing:-.04em;color:var(--ink);white-space:nowrap}
+    .brand-mark{width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--primary),var(--primary-2));box-shadow:0 12px 24px rgba(82,100,245,.32);position:relative;overflow:hidden;flex:0 0 auto}
+    .brand-mark::after{content:"";position:absolute;inset:8px;border-radius:8px;border:2px solid rgba(255,255,255,.9)}
+    .nav-links{display:flex;align-items:center;gap:6px;color:#52607d;font-size:14px;font-weight:850;min-width:0}
+    .nav-links a{padding:10px 13px;border-radius:999px;transition:background .22s var(--ease),color .22s var(--ease);white-space:nowrap}
+    .nav-links a:hover{background:rgba(82,100,245,.08);color:var(--primary)}
+    .nav-actions{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+    .lang-switch{
+      display:inline-flex;align-items:center;gap:4px;padding:4px;
+      border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.74);
+      box-shadow:0 10px 24px rgba(30,44,110,.07);
+    }
+    .lang-btn{
+      height:34px;min-width:42px;padding:0 10px;border:0;border-radius:999px;background:transparent;
+      color:#657293;font-size:12px;font-weight:950;letter-spacing:.02em;cursor:pointer;
+      transition:background .22s var(--ease),color .22s var(--ease),box-shadow .22s var(--ease);
+    }
+    .lang-btn:hover{color:var(--primary);background:rgba(82,100,245,.08)}
+    .lang-btn.active{color:#fff;background:linear-gradient(135deg,var(--primary),var(--primary-2));box-shadow:0 10px 22px rgba(82,100,245,.24)}
+
+
+    /* ══════════════════════════════════════════
+       5. 按钮
+       ══════════════════════════════════════════ */
+    .btn{
+      height:44px;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:0 18px;
+      border:1px solid var(--line);border-radius:999px;background:#fff;color:#111b3d;
+      font-weight:950;letter-spacing:-.025em;white-space:nowrap;cursor:pointer;
+      box-shadow:0 10px 26px rgba(30,44,110,.08);
+      transition:transform .24s var(--ease),box-shadow .24s var(--ease),border-color .24s var(--ease),background .24s var(--ease);
+    }
+    .btn:hover{transform:translateY(-2px);border-color:var(--line-strong);box-shadow:0 16px 34px rgba(30,44,110,.13)}
+    .btn.primary{border-color:transparent;color:#fff;background:linear-gradient(135deg,var(--primary),var(--primary-2));box-shadow:0 18px 34px rgba(82,100,245,.30)}
+    .btn.primary:hover{box-shadow:0 24px 48px rgba(82,100,245,.36)}
+    .btn.ghost{background:rgba(255,255,255,.76)}
+    .play-icon{width:22px;height:22px;display:grid;place-items:center;border-radius:999px;background:rgba(82,100,245,.10);color:var(--primary);font-size:10px;line-height:1;flex:0 0 auto}
+
+    /* ══════════════════════════════════════════
+       6. Hero
+       ══════════════════════════════════════════ */
+    .hero{position:relative;min-height:auto;padding:clamp(104px,8vw,128px) 0 clamp(56px,5.5vw,82px);display:flex;align-items:flex-start}
+    .hero-inner{
+      display:flex;flex-direction:column;align-items:center;gap:54px;width:100%;
+    }
+    .hero-copy{max-width:820px;text-align:center;width:100%}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;margin:0 0 18px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.78);color:var(--primary);font-size:12px;font-weight:950;letter-spacing:.11em;text-transform:uppercase;box-shadow:0 12px 32px rgba(49,64,142,.08);max-width:100%}
+    .eyebrow::before{content:"";width:8px;height:8px;border-radius:999px;background:linear-gradient(135deg,var(--primary),var(--cyan));box-shadow:0 0 0 6px rgba(82,100,245,.10);flex:0 0 auto}
+    h1{margin:0;color:var(--ink);font-size:clamp(42px,4.4vw,68px);line-height:1.02;letter-spacing:-.075em;font-weight:980;text-wrap:balance}
+    .gradient-text{background:linear-gradient(120deg,var(--primary),var(--primary-2) 58%,#19bff8);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{margin:24px auto 0;max-width:680px;color:var(--muted);font-size:clamp(17px,1.35vw,20px);line-height:1.78;font-weight:650;letter-spacing:-.02em}
+    .hero-cta{display:flex;align-items:center;flex-wrap:wrap;gap:13px;margin-top:32px;justify-content:center}
+    .hero-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:32px;max-width:620px;margin-left:auto;margin-right:auto}
+    .meta-card{padding:15px 16px;border:1px solid rgba(82,100,245,.12);border-radius:20px;background:rgba(255,255,255,.70);box-shadow:0 14px 34px rgba(28,43,100,.08);min-width:0}
+    .meta-card b{display:block;color:var(--ink);font-size:15px;letter-spacing:-.035em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .meta-card span{display:block;margin-top:5px;color:var(--soft);font-size:12px;font-weight:800}
+
+    /* ══════════════════════════════════════════
+       7. Hero 视觉区域（Bilibili iframe 嵌入）
+       ══════════════════════════════════════════ */
+    .visual{position:relative;width:100%;max-width:960px}
+    .visual::before{content:"";position:absolute;inset:-52px -34px auto auto;width:280px;height:280px;border-radius:999px;background:radial-gradient(circle,rgba(82,100,245,.20),transparent 70%);filter:blur(4px);z-index:-1}
+    .screen-card{position:relative;width:100%;padding:14px;border:1px solid rgba(255,255,255,.76);border-radius:34px;background:linear-gradient(180deg,rgba(255,255,255,.88),rgba(255,255,255,.62));box-shadow:var(--shadow-strong);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);overflow:hidden}
+    @supports not (backdrop-filter:blur(1px)){
+      .screen-card{background:rgba(255,255,255,.96)}
+    }
+    .screen-card::after{content:"";position:absolute;inset:0;border-radius:34px;pointer-events:none;background:linear-gradient(120deg,rgba(255,255,255,.42),transparent 38%,rgba(82,100,245,.08));mix-blend-mode:screen}
+    .browser-bar{height:42px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 15px 0 13px;border-bottom:1px solid rgba(82,100,245,.10)}
+    .lights{display:flex;gap:7px;flex:0 0 auto}.lights span{width:10px;height:10px;border-radius:999px;background:rgba(82,100,245,.22)}
+    .browser-title{color:#7583a5;font-size:12px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+    /* iframe 响应式容器 */
+    .iframe-wrap{
+      position:relative;width:100%;padding-top:56.25%; /* 16:9 */
+      border-radius:23px;overflow:hidden;
+      background:#07112f;
+      box-shadow:inset 0 0 0 1px rgba(82,100,245,.10);
+    }
+    .iframe-wrap iframe{
+      position:absolute;top:0;left:0;width:100%;height:100%;border:0;
+    }
+
+    /* 悬浮提示卡 */
+    .float-chip{position:absolute;right:24px;bottom:76px;z-index:2;display:flex;align-items:center;gap:10px;max-width:260px;padding:13px 14px;border:1px solid rgba(255,255,255,.74);border-radius:18px;background:rgba(255,255,255,.82);box-shadow:0 24px 60px rgba(7,17,47,.17);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+    @supports not (backdrop-filter:blur(1px)){
+      .float-chip{background:rgba(255,255,255,.94)}
+    }
+    .float-chip i{width:34px;height:34px;flex:0 0 auto;border-radius:13px;background:linear-gradient(135deg,var(--primary),var(--cyan));box-shadow:0 12px 24px rgba(82,100,245,.26)}
+    .float-chip strong{display:block;font-size:13px;letter-spacing:-.03em}.float-chip span{display:block;margin-top:3px;color:#657293;font-size:12px;font-weight:760}
+
+    /* 滚动提示 */
+    .scroll-hint{
+      display:flex;flex-direction:column;align-items:center;gap:6px;
+      margin-top:-10px;color:var(--soft);font-size:11px;font-weight:700;
+      letter-spacing:.04em;text-transform:uppercase;
+    }
+    .scroll-arrow{
+      width:30px;height:30px;display:grid;place-items:center;
+      border:1px solid var(--line);border-radius:999px;font-size:14px;
+      animation:scrollBounce 2.2s ease-in-out infinite;
+    }
+    @keyframes scrollBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+
+    /* ══════════════════════════════════════════
+       8. 通用 Section
+       ══════════════════════════════════════════ */
+    .section{position:relative;padding:96px 0}
+    .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:32px}
+    .section-kicker{margin:0 0 10px;color:var(--primary);font-size:12px;font-weight:980;letter-spacing:.16em;text-transform:uppercase}
+    .section h2{margin:0;color:var(--ink);font-size:clamp(32px,3.6vw,54px);line-height:1;letter-spacing:-.065em;text-wrap:balance}
+    .section-desc{max-width:470px;margin:0;color:var(--muted);font-size:16px;line-height:1.75;font-weight:650}
+
+    /* ══════════════════════════════════════════
+       9. Demo Section
+       ══════════════════════════════════════════ */
+    .demo-section{padding-top:28px}
+    .video-card{position:relative;padding:16px;border:1px solid rgba(255,255,255,.82);border-radius:36px;background:linear-gradient(180deg,rgba(255,255,255,.92),rgba(255,255,255,.70));box-shadow:var(--shadow-strong);overflow:hidden}
+    .video-card::before{content:"";position:absolute;left:50%;top:0;width:64%;height:44%;transform:translate(-50%,-45%);border-radius:999px;background:radial-gradient(circle,rgba(82,100,245,.24),transparent 70%);filter:blur(18px);pointer-events:none}
+    .video-toolbar{min-height:48px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 14px;border-bottom:1px solid rgba(82,100,245,.10);position:relative;z-index:1}
+    .video-label{display:flex;align-items:center;gap:10px;color:#657293;font-size:12px;font-weight:950;letter-spacing:.08em;text-transform:uppercase}.video-label::before{content:"";width:9px;height:9px;border-radius:999px;background:#20d48a;box-shadow:0 0 0 7px rgba(32,212,138,.12);flex:0 0 auto}
+    .video-tags{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.video-tags span{padding:6px 10px;border-radius:999px;background:rgba(82,100,245,.08);color:#5264f5;font-size:12px;font-weight:900}
+    .video-shell{position:relative;margin-top:14px;border-radius:25px;overflow:hidden;background:#07112f;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+    .video-shell .iframe-wrap{border-radius:0}
+
+    /* ══════════════════════════════════════════
+       10. Pipeline（分析流程）
+       ══════════════════════════════════════════ */
+    .pipeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:28px;position:relative}
+
+    @media(min-width:761px){
+      .pipeline::before{
+        content:"";position:absolute;top:50%;left:6%;right:6%;height:2px;z-index:0;
+        background:linear-gradient(90deg,var(--primary),var(--cyan));opacity:.15;
+      }
+    }
+
+    .step{
+      position:relative;z-index:1;min-height:190px;padding:24px;
+      border:1px solid rgba(82,100,245,.12);border-radius:28px;
+      background:rgba(255,255,255,.72);box-shadow:0 18px 48px rgba(30,44,110,.08);overflow:hidden;
+    }
+    .step::after{content:"";position:absolute;right:-34px;top:-42px;width:120px;height:120px;border-radius:999px;background:rgba(82,100,245,.10)}
+    .step small{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:16px;background:linear-gradient(135deg,var(--primary),var(--primary-2));box-shadow:0 16px 32px rgba(82,100,245,.26);color:#fff;font-size:13px;font-weight:980}
+    .step h3{margin:22px 0 10px;color:var(--ink);font-size:18px;line-height:1.2;letter-spacing:-.045em}
+    .step p{margin:0;color:var(--muted);font-size:14px;line-height:1.65;font-weight:650}
+
+    /* ══════════════════════════════════════════
+       11. Capabilities（关键词自然覆盖）
+       ══════════════════════════════════════════ */
+    .capabilities{padding-top:72px}
+    .capability-grid{
+      display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px;
+    }
+    .capability-card{
+      min-height:220px;padding:24px;border:1px solid rgba(82,100,245,.12);border-radius:28px;
+      background:rgba(255,255,255,.72);box-shadow:0 18px 48px rgba(30,44,110,.08);overflow:hidden;
+      position:relative;
+    }
+    .capability-card::before{
+      content:"";position:absolute;right:-42px;top:-42px;width:126px;height:126px;border-radius:999px;
+      background:radial-gradient(circle,rgba(27,198,255,.14),transparent 68%);
+    }
+    .capability-card h3{position:relative;margin:0 0 12px;color:var(--ink);font-size:19px;line-height:1.2;letter-spacing:-.045em}
+    .capability-card p{position:relative;margin:0;color:var(--muted);font-size:14px;line-height:1.72;font-weight:650}
+    .keyword-cloud{
+      display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;
+    }
+    .keyword-cloud span{
+      padding:8px 11px;border:1px solid rgba(82,100,245,.12);border-radius:999px;
+      background:rgba(255,255,255,.70);color:#52607d;font-size:12px;font-weight:850;
+    }
+
+    /* ══════════════════════════════════════════
+       12. CTA
+       ══════════════════════════════════════════ */
+    .final-cta{padding:72px 0 96px}
+    .cta-panel{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:34px;border:1px solid rgba(255,255,255,.82);border-radius:34px;background:linear-gradient(135deg,rgba(82,100,245,.12),rgba(255,255,255,.78) 42%,rgba(27,198,255,.10));box-shadow:var(--shadow)}
+    .cta-panel h2{margin:0;color:var(--ink);font-size:clamp(28px,3.2vw,44px);line-height:1.04;letter-spacing:-.065em}
+    .cta-panel p{margin:12px 0 0;color:var(--muted);font-size:16px;line-height:1.7;font-weight:650}
+
+    /* ══════════════════════════════════════════
+       13. Footer
+       ══════════════════════════════════════════ */
+    .site-footer{
+      border-top:1px solid rgba(82,100,245,.10);padding:40px 0;
+      background:rgba(255,255,255,.60);
+    }
+    .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .footer-brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--ink)}
+    .footer-brand .brand-mark{width:28px;height:28px;border-radius:10px}
+    .footer-copy{color:var(--muted);font-size:13px;font-weight:600}
+    .footer-links{display:flex;align-items:center;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:13px;font-weight:800}
+    .footer-links a:hover{color:var(--primary)}
+
+    /* ══════════════════════════════════════════
+       14. 入场动画
+       ══════════════════════════════════════════ */
+    .hero-copy,.visual,.scroll-hint{opacity:0;animation:fadeUp .7s var(--ease) forwards}
+    .visual{animation-delay:.12s}
+    .scroll-hint{animation-delay:.24s}
+    .step{opacity:0;animation:fadeUp .5s var(--ease) forwards}
+    .step:nth-child(1){animation-delay:.05s}
+    .step:nth-child(2){animation-delay:.12s}
+    .step:nth-child(3){animation-delay:.19s}
+    .step:nth-child(4){animation-delay:.26s}
+    .video-card,.cta-panel{opacity:0;animation:fadeUp .6s var(--ease) forwards;animation-delay:.1s}
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(24px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    /* ══════════════════════════════════════════
+       15. 响应式断点
+       ══════════════════════════════════════════ */
+
+    /* --bp-desktop: ≥1181px -- */
+    @media(min-width:1181px){
+      .demo-section{padding-top:54px}
+    }
+
+    /* --bp-tablet~desktop: 761px~1180px -- */
+    @media(max-width:1180px){
+      .nav-links{display:none}
+      .hero{min-height:auto;padding-top:116px}
+      .hero-inner{gap:38px}
+      .visual{max-width:860px}
+      .pipeline{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .capability-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .section-head{align-items:flex-start;flex-direction:column}
+      .pipeline::before{display:none}
+    }
+
+    /* --bp-mobile: ≤760px -- */
+    @media(max-width:760px){
+      body::before{display:none}
+
+      .topbar{padding:10px 10px 0}
+      .nav{height:58px;padding-left:14px}
+      .brand{font-size:14px;gap:9px}
+      .brand-mark{width:28px;height:28px;border-radius:10px}
+      .brand-mark::after{inset:6px;border-radius:6px;border-width:1.5px}
+
+      .nav-actions .btn.ghost{display:none}
+      .lang-switch{padding:3px}
+      .lang-btn{height:32px;min-width:36px;padding:0 8px;font-size:11px}
+      .btn{height:40px;padding:0 14px;font-size:14px}
+      .wrap{width:calc(100% - 28px)}
+      .hero{padding:92px 0 54px}
+      .hero-inner{gap:28px}
+      .eyebrow{font-size:10px;letter-spacing:.08em;padding:7px 10px}
+      h1{font-size:clamp(36px,10vw,48px);line-height:1.05;letter-spacing:-.065em}
+      .lead{font-size:16px;line-height:1.72;margin-top:18px}
+      .hero-meta{grid-template-columns:1fr;margin-top:24px}
+      .meta-card{padding:13px 14px}
+      .screen-card{padding:9px;border-radius:24px}
+      .browser-bar{height:34px;padding-left:10px;padding-right:10px}
+      .browser-title{font-size:10px}
+      .iframe-wrap{border-radius:17px}
+      .section{padding:66px 0}
+      .demo-section{padding-top:8px}
+      .section-desc{font-size:15px}
+      .video-card{padding:10px;border-radius:24px}
+      .video-toolbar{height:auto;min-height:44px;align-items:flex-start;flex-direction:column;padding:10px 10px 12px}
+      .video-tags{justify-content:flex-start}
+      .video-shell{border-radius:17px;margin-top:10px}
+      .capability-grid{grid-template-columns:1fr;gap:12px}
+      .pipeline{grid-template-columns:1fr;gap:12px}
+      .pipeline::before{
+        display:block;
+        left:35px;top:8%;bottom:8%;width:2px;
+        background:linear-gradient(180deg,var(--primary),var(--cyan));opacity:.12;
+      }
+      .step{min-height:auto}
+      .cta-panel{align-items:flex-start;flex-direction:column;padding:24px;border-radius:26px}
+      .final-cta{padding-bottom:64px}
+      .footer-inner{flex-direction:column;align-items:flex-start;gap:12px}
+    }
+
+    /* --bp-small: ≤420px -- */
+    @media(max-width:420px){
+      .nav-actions .btn.primary{padding:0 12px}
+      .btn{font-size:13px}
+      .wrap{width:calc(100% - 24px)}
+      .topbar{padding-left:8px;padding-right:8px}
+      .hero{padding-top:88px}
+      h1{font-size:34px}
+      .hero-cta .btn{width:100%}
+      .browser-title{max-width:170px}
+      .video-tags span{font-size:11px}
+      .lang-switch{display:none}
+      .section h2{font-size:30px}
+    }
+
+    /* ══════════════════════════════════════════
+       16. 减弱动画（a11y）
+       ══════════════════════════════════════════ */
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{
+        animation-duration:.001ms!important;
+        animation-iteration-count:1!important;
+        transition-duration:.001ms!important;
+        scroll-behavior:auto!important;
+      }
+      .hero-copy,.visual,.scroll-hint,.step,.video-card,.cta-panel{
+        opacity:1!important;transform:none!important;
+      }
+    }
+  
+
+    /* Focused QA SEO page */
+    .qa-hero{padding:clamp(116px,9vw,144px) 0 54px;text-align:center}
+    .qa-hero .lead{max-width:920px}
+    .breadcrumb{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:18px;color:var(--soft);font-size:13px;font-weight:800}
+    .breadcrumb a{color:var(--primary)}
+    .qa-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:34px auto 0;max-width:1040px}
+    .qa-summary-card{padding:18px;border:1px solid rgba(82,100,245,.12);border-radius:22px;background:rgba(255,255,255,.72);box-shadow:0 14px 34px rgba(28,43,100,.08)}
+    .qa-summary-card b{display:block;font-size:20px;letter-spacing:-.04em;color:var(--ink)}
+    .qa-summary-card span{display:block;margin-top:6px;color:var(--soft);font-size:12px;font-weight:850}
+    .qa-layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:28px;align-items:start}
+    .qa-side{position:sticky;top:100px;padding:20px;border:1px solid rgba(82,100,245,.12);border-radius:26px;background:rgba(255,255,255,.72);box-shadow:0 16px 44px rgba(30,44,110,.08)}
+    .qa-side h2{font-size:20px;line-height:1.15;margin:0 0 12px;letter-spacing:-.04em}.qa-side p{margin:0 0 14px;color:var(--muted);font-size:14px;line-height:1.65;font-weight:650}
+    .qa-side a{display:block;padding:10px 12px;border-radius:14px;color:#52607d;font-size:14px;font-weight:900}.qa-side a:hover{background:rgba(82,100,245,.08);color:var(--primary)}
+    .faq-group{margin-bottom:34px}.faq-group-title{margin:0 0 14px;color:var(--primary);font-size:13px;font-weight:980;letter-spacing:.14em;text-transform:uppercase}.faq-list{display:grid;gap:12px}
+    .faq-item{border:1px solid rgba(82,100,245,.14);border-radius:22px;background:rgba(255,255,255,.78);box-shadow:0 14px 38px rgba(30,44,110,.07);overflow:hidden}.faq-item[open]{box-shadow:0 18px 50px rgba(30,44,110,.11)}
+    .faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:flex-start;gap:14px;padding:20px 22px;color:var(--ink);font-size:18px;font-weight:950;line-height:1.35;letter-spacing:-.035em}.faq-item summary::-webkit-details-marker{display:none}
+    .faq-index{display:inline-grid;place-items:center;width:34px;height:34px;flex:0 0 auto;border-radius:13px;background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;font-size:12px;font-weight:980;box-shadow:0 12px 24px rgba(82,100,245,.22)}
+    .faq-body{padding:0 22px 22px 70px;color:var(--muted);font-size:15px;line-height:1.84;font-weight:650}.faq-body p{margin:0 0 10px}.faq-body p:last-child{margin-bottom:0}
+    .seo-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}.seo-topic{padding:18px;border:1px solid rgba(82,100,245,.12);border-radius:22px;background:rgba(255,255,255,.72);box-shadow:0 14px 34px rgba(28,43,100,.08)}
+    .seo-topic h3{margin:0 0 8px;font-size:17px;letter-spacing:-.035em}.seo-topic p{margin:0;color:var(--muted);font-size:14px;line-height:1.72;font-weight:650}
+    .keyword-cloud{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.keyword-cloud span{padding:7px 10px;border-radius:999px;background:rgba(82,100,245,.08);color:#5264f5;font-size:12px;font-weight:900}
+    @media(max-width:1180px){.qa-layout{grid-template-columns:1fr}.qa-side{position:relative;top:auto}.qa-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.seo-topic-grid{grid-template-columns:1fr}}
+    @media(max-width:760px){.qa-hero{padding-top:98px}.qa-summary{grid-template-columns:1fr}.faq-item summary{font-size:16px;padding:17px}.faq-body{padding:0 17px 18px 17px}.faq-index{display:none}}
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="nav.qa">常见问题</a>
+  <header class="topbar">
+    <nav class="nav" data-i18n-attr="aria-label:nav.aria" aria-label="CPP2IL QA 导航">
+      <a class="brand" href="index.html" data-lang-href="index.html" aria-label="CPP2IL 首页"><span class="brand-mark" aria-hidden="true"></span><span>CPP2IL</span></a>
+      <div class="nav-links" aria-label="页面导航">
+        <a href="index.html" data-lang-href="index.html" data-i18n="nav.home">首页</a>
+        <a href="qa.html" data-lang-href="qa.html" data-i18n="nav.qa">常见问题</a>
+        <a href="index.html#demo" data-lang-href="index.html#demo" data-i18n="nav.demo">演示视频</a>
+      </div>
+      <div class="nav-actions">
+        <div class="lang-switch" aria-label="Language switcher"><button class="lang-btn active" type="button" data-lang-set="zh-CN">中</button><button class="lang-btn" type="button" data-lang-set="en">EN</button></div>
+        <a class="btn primary" href="https://ccna3po7lqul.feishu.cn/share/base/form/shrcnSKePcBYvea3LNF4h8wgvII" target="_blank" rel="noopener noreferrer" data-i18n="nav.apply">内测申请 →</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section class="qa-hero">
+      <div class="wrap">
+        <div class="breadcrumb"><a href="index.html" data-lang-href="index.html" data-i18n="breadcrumb.home">首页</a><span>/</span><span data-i18n="breadcrumb.current">QA</span></div>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Unity3D 反编译 / IL2CPP 逆向 QA</p>
+        <h1 data-i18n="hero.title">Unity3D 反编译、逆向工程与源码恢复问答</h1>
+        <p class="lead" data-i18n="hero.lead">本页删除了泛泛的网站说明类内容，集中覆盖 CPP2IL、Unity3D 反编译、IL2CPP 逆向、C# 源码恢复、游戏源码恢复、APK / IPA / WASM 分析、WebGL 反编译、软件逆向工程项目等 SEO 长尾关键词。</p>
+        <div class="qa-summary" aria-label="FAQ summary">
+          <div class="qa-summary-card"><b>47</b><span data-i18n="summary.count.desc">聚焦反编译与源码恢复</span></div>
+          <div class="qa-summary-card"><b data-i18n="summary.platforms">多平台</b><span data-i18n="summary.platforms.desc">APK / IPA / WASM / DLL / SO</span></div>
+          <div class="qa-summary-card"><b data-i18n="summary.keywords">关键词集群</b><span data-i18n="summary.keywords.desc">中英文长尾 SEO</span></div>
+          <div class="qa-summary-card"><b data-i18n="summary.schema">FAQPage</b><span data-i18n="summary.schema.desc">结构化问答数据</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="qa-list">
+      <div class="wrap qa-layout">
+        <aside class="qa-side">
+          <h2 data-i18n="side.title">QA 分类</h2>
+          <p data-i18n="side.desc">全部问题都围绕 Unity3D、IL2CPP、反编译、逆向工程、源码恢复和软件逆向工程展开。</p>
+          <a href="#unity-il2cpp-basics" data-side-index="0">Unity3D / IL2CPP 基础</a>
+<a href="#formats-platforms" data-side-index="1">包体格式与平台</a>
+<a href="#source-recovery" data-side-index="2">反编译与源码恢复</a>
+<a href="#reverse-projects" data-side-index="3">逆向工程项目场景</a>
+<a href="#metadata-terms" data-side-index="4">元数据与技术关键词</a>
+<a href="#tools-comparison" data-side-index="5">工具链与对比关键词</a>
+<a href="#safe-authorized" data-side-index="6">授权、安全与边界</a>
+        </aside>
+        <div><section class="faq-group" id="unity-il2cpp-basics">
+  <h2 class="faq-group-title" data-group-index="0">Unity3D / IL2CPP 基础</h2>
+  <div class="faq-list">
+    <details class="faq-item" data-faq-index="0" open>
+      <summary><span class="faq-index">01</span><span data-faq-question>什么是 Unity3D IL2CPP 反编译？</span></summary>
+      <div class="faq-body"><p data-faq-answer>Unity3D IL2CPP 反编译是指对 Unity3D 游戏或应用发布后的 IL2CPP 原生包体进行结构化分析，从 APK、IPA、Windows GameAssembly.dll、Android libil2cpp.so、WebGL WASM、global-metadata.dat 等文件中恢复类型、方法、字段、调用关系、控制流和接近 C# 的源码结构。它常用于授权代码审计、Unity 游戏安全研究、兼容性排查、历史项目分析、恶意代码检测和软件逆向工程学习。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="1" open>
+      <summary><span class="faq-index">02</span><span data-faq-question>Unity3D 反编译、Unity 逆向工程和 IL2CPP to C# 有什么区别？</span></summary>
+      <div class="faq-body"><p data-faq-answer>Unity3D 反编译通常强调把发布产物转换成更可读的代码或结构；Unity 逆向工程范围更广，包含资源分析、二进制分析、运行时行为分析、调用链分析和安全审计；IL2CPP to C# 则更聚焦于从 IL2CPP 原生代码与 metadata 中恢复 C# 类、方法、字段、命名空间和伪源码。CPP2IL 主要面向 Unity IL2CPP decompiler、C# source recovery、Unity source code recovery 和 game reverse engineering 这些场景。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="2">
+      <summary><span class="faq-index">03</span><span data-faq-question>为什么 Unity3D 项目使用 IL2CPP 后更难直接恢复源码？</span></summary>
+      <div class="faq-body"><p data-faq-answer>Unity3D 使用 IL2CPP 后，C# 会先转换为 C++，再编译为 ARM64、ARM32、x86、x64、Mach-O、ELF、PE 或 WASM 等原生目标。传统 .NET / C# 反编译器依赖 IL 字节码，而 IL2CPP 发布包中通常不存在完整原始 IL，所以需要结合 global-metadata.dat、GameAssembly.dll、libil2cpp.so、WASM 函数表、方法指针、类型元数据和控制流还原来做源码恢复。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="3">
+      <summary><span class="faq-index">04</span><span data-faq-question>CPP2IL 适合做 Unity3D 源码恢复吗？</span></summary>
+      <div class="faq-body"><p data-faq-answer>CPP2IL 适合用于 Unity3D 源码恢复评估，尤其是 IL2CPP 发布后的 C# 结构恢复、类型恢复、方法签名恢复、字段恢复、调用图恢复和控制流分析。需要注意的是，IL2CPP 逆向恢复出来的是分析用途的 C# 伪源码或近似源码结构，不等同于完整 Unity Editor 工程，也不能保证包含原始注释、局部变量名、Prefab、场景、AssetBundle、Shader 和美术资源。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="4">
+      <summary><span class="faq-index">05</span><span data-faq-question>Unity3D 源码恢复和 Unity 资源提取是一回事吗？</span></summary>
+      <div class="faq-body"><p data-faq-answer>不是。Unity3D 源码恢复主要关注 IL2CPP / C# 逻辑代码、类结构、方法调用、字段和控制流；Unity 资源提取主要关注 AssetBundle、Prefab、Scene、Texture、Audio、Animation、Shader、Material 等资源。一个完整的 Unity 逆向工程项目通常会同时涉及代码反编译、资源分析、二进制分析、WebGL WASM 分析、Android APK 分析和 iOS IPA 分析。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="5">
+      <summary><span class="faq-index">06</span><span data-faq-question>Unity3D 游戏逆向工程常见目标是什么？</span></summary>
+      <div class="faq-body"><p data-faq-answer>Unity3D 游戏逆向工程的常见目标包括理解客户端逻辑、验证第三方 SDK、安全审计敏感 API、检查加密与配置加载逻辑、分析异常崩溃、排查兼容性、定位恶意代码、进行供应链安全检查以及恢复自有历史项目的源码结构。关键词包括 Unity game reverse engineering、Unity3D 反编译、游戏源码恢复、IL2CPP reverse engineering、software reverse engineering 和 binary analysis。</p></div>
+    </details>
+  </div>
+</section>
+<section class="faq-group" id="formats-platforms">
+  <h2 class="faq-group-title" data-group-index="1">包体格式与平台</h2>
+  <div class="faq-list">
+    <details class="faq-item" data-faq-index="6">
+      <summary><span class="faq-index">07</span><span data-faq-question>Android APK 里的 libil2cpp.so 和 global-metadata.dat 如何用于源码恢复？</span></summary>
+      <div class="faq-body"><p data-faq-answer>Android Unity IL2CPP APK 通常包含 libil2cpp.so 与 global-metadata.dat。libil2cpp.so 提供 ARM32 / ARM64 原生代码、函数实现、方法指针和调用逻辑；global-metadata.dat 提供类型、方法、字段、字符串和元数据映射。把二者关联起来，才能更好地完成 APK 反编译、IL2CPP 反编译、C# 代码还原、调用关系恢复和 Unity3D 源码恢复。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="7">
+      <summary><span class="faq-index">08</span><span data-faq-question>Windows Unity 游戏中的 GameAssembly.dll 是什么？</span></summary>
+      <div class="faq-body"><p data-faq-answer>GameAssembly.dll 是 Windows 平台 Unity IL2CPP 项目的核心原生二进制之一，通常承载从 C# 转换并编译后的本地代码。进行 Windows Unity 反编译、GameAssembly.dll analysis、PE 逆向、x64 native analysis、C# source recovery 时，通常需要把 GameAssembly.dll 与 global-metadata.dat 关联，恢复类型、方法和调用路径。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="8">
+      <summary><span class="faq-index">09</span><span data-faq-question>iOS IPA / Mach-O 的 Unity IL2CPP 逆向重点是什么？</span></summary>
+      <div class="faq-body"><p data-faq-answer>iOS Unity IL2CPP 逆向通常关注 IPA 包内的 Mach-O 二进制、ARM64 指令、符号表、Section 结构、metadata 映射和 Unity 版本特征。关键词包括 IPA reverse engineering、Mach-O reverse engineering、ARM64 disassembly、IL2CPP to C#、Unity iOS reverse engineering 和 C# 源码恢复。合法授权下，这类分析适合安全审计、兼容性验证和历史项目研究。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="9">
+      <summary><span class="faq-index">10</span><span data-faq-question>Unity WebGL / WASM 反编译为什么是独立关键词？</span></summary>
+      <div class="faq-body"><p data-faq-answer>Unity WebGL 项目会把 IL2CPP 结果编译为 WebAssembly / WASM，并通过 framework.js、data 文件和浏览器运行时加载。WebGL WASM 反编译需要关注 wasm function index、table mapping、control flow recovery、AST reconstruction、metadata 关联和 C# 伪代码恢复，因此它和普通 Android APK 反编译、Windows DLL 逆向、iOS Mach-O 分析有明显区别。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="10">
+      <summary><span class="faq-index">11</span><span data-faq-question>ELF、PE、Mach-O、WASM 在 Unity 逆向中分别代表什么？</span></summary>
+      <div class="faq-body"><p data-faq-answer>ELF 通常对应 Android / Linux 原生库，例如 libil2cpp.so；PE 通常对应 Windows 可执行文件或 DLL，例如 GameAssembly.dll；Mach-O 通常对应 iOS / macOS 原生二进制；WASM 对应 Unity WebGL 的 WebAssembly 模块。Unity3D 逆向工程需要根据 ELF reverse engineering、PE analysis、Mach-O analysis、WASM decompiler 等不同目标选择不同分析策略。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="11">
+      <summary><span class="faq-index">12</span><span data-faq-question>ARM64、ARM32、x86、x64 对 IL2CPP 分析有什么影响？</span></summary>
+      <div class="faq-body"><p data-faq-answer>不同 CPU 架构会影响指令集、调用约定、寄存器使用、函数边界识别、反汇编结果和控制流恢复质量。Android APK 可能同时包含 ARMv7 / ARM32 和 ARM64；Windows 多为 x86 / x64；iOS 主要是 ARM64；WebGL 是 WASM。CPP2IL 的关键词覆盖 ARM64 disassembly、ARM32 analysis、x86 x64 native analysis 和 IL2CPP binary analysis。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="12">
+      <summary><span class="faq-index">13</span><span data-faq-question>Unity3D 热更新 DLL 和 IL2CPP 原生包体需要一起分析吗？</span></summary>
+      <div class="faq-body"><p data-faq-answer>很多 Unity3D 项目会同时使用 IL2CPP 主包和热更新脚本，例如 HybridCLR、Lua、XLua、puerts、ILRuntime 或自研脚本系统。做 Unity 逆向工程项目时，可能需要同时分析 GameAssembly.dll / libil2cpp.so / WASM、global-metadata.dat、热更新 DLL、AssetBundle、脚本资源和配置文件，才能完整理解客户端逻辑与源码恢复范围。</p></div>
+    </details>
+  </div>
+</section>
+<section class="faq-group" id="source-recovery">
+  <h2 class="faq-group-title" data-group-index="2">反编译与源码恢复</h2>
+  <div class="faq-list">
+    <details class="faq-item" data-faq-index="13">
+      <summary><span class="faq-index">14</span><span data-faq-question>IL2CPP to C# 能恢复到什么程度？</span></summary>
+      <div class="faq-body"><p data-faq-answer>IL2CPP to C# 通常可以恢复类型名、命名空间、方法签名、字段、部分泛型结构、继承关系、接口关系、字符串引用、调用关系和接近 C# 的伪代码。恢复程度取决于 Unity 版本、metadata 完整性、符号信息、是否混淆、是否加固、编译优化级别和目标平台。对于 Unity3D 源码恢复，合理预期是“用于阅读和审计的结构化源码”，不是百分百还原原始工程。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="14">
+      <summary><span class="faq-index">15</span><span data-faq-question>Unity3D 恢复源码是否等于恢复完整工程？</span></summary>
+      <div class="faq-body"><p data-faq-answer>不等于。Unity3D 恢复源码主要指恢复 C# 逻辑代码结构，例如类型、方法、字段、控制流、调用图和伪源码。完整 Unity 工程还包含工程设置、场景、Prefab、材质、Shader、动画、脚本引用、资源路径和编辑器数据。CPP2IL 更适合“Unity 源码恢复 / Unity source code recovery / C# source recovery”的代码审计部分。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="15">
+      <summary><span class="faq-index">16</span><span data-faq-question>丢失 Unity3D 源码后还能通过发布包恢复吗？</span></summary>
+      <div class="faq-body"><p data-faq-answer>如果是自己拥有版权和授权的历史 Unity3D 项目，发布包可以用于恢复部分源码结构和逻辑线索。IL2CPP 包体中的 GameAssembly.dll、libil2cpp.so、WASM 和 global-metadata.dat 可以帮助恢复类、方法、字段和调用链；AssetBundle 和资源文件可以帮助恢复部分资源关系。但无法保证恢复原始注释、完整工程结构、编辑器配置和开发过程中的源文件。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="16">
+      <summary><span class="faq-index">17</span><span data-faq-question>C# 伪代码、反编译源码和原始源码有什么区别？</span></summary>
+      <div class="faq-body"><p data-faq-answer>C# 伪代码是根据二进制和元数据重建的可读表达，不一定能直接编译；反编译源码是更接近高级语言的恢复结果，但仍可能缺失变量名、注释和工程上下文；原始源码是开发者真实维护的工程代码。Unity IL2CPP decompiler 的价值在于让软件逆向工程项目更快理解逻辑，而不是承诺完全复制原始源码仓库。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="17">
+      <summary><span class="faq-index">18</span><span data-faq-question>控制流还原对 Unity3D 反编译有什么作用？</span></summary>
+      <div class="faq-body"><p data-faq-answer>控制流还原用于从底层分支、跳转、基本块和异常处理结构中恢复 if、else、switch、for、while、try/catch 等高级逻辑。对于 Unity3D 反编译、IL2CPP reverse engineering、WASM decompiler、ARM64 disassembly 和 GameAssembly.dll analysis，控制流恢复直接影响 C# 伪代码可读性和代码审计效率。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="18">
+      <summary><span class="faq-index">19</span><span data-faq-question>调用关系恢复对游戏安全分析有什么帮助？</span></summary>
+      <div class="faq-body"><p data-faq-answer>调用关系恢复可以建立方法之间、类型之间、模块之间的调用图，帮助安全研究人员快速定位登录、支付、配置、网络、加密、资源加载、反作弊、热更新和第三方 SDK 相关逻辑。对于 Unity 游戏逆向、游戏安全分析、恶意代码检测、供应链安全审计和兼容性排查，call graph recovery 是核心能力之一。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="19">
+      <summary><span class="faq-index">20</span><span data-faq-question>AST reconstruction 在 IL2CPP 反编译里是什么意思？</span></summary>
+      <div class="faq-body"><p data-faq-answer>AST reconstruction 是把低层指令、中间表示和表达式重新组织成类似源码语法树的过程。它可以让 IL2CPP 反编译输出更接近 C#，例如恢复表达式、赋值、条件判断、循环、方法调用和对象访问。AST 还原越稳定，Unity3D 源码恢复、软件逆向工程阅读和代码审计体验越好。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="20">
+      <summary><span class="faq-index">21</span><span data-faq-question>方法名、类名和字段名一定能恢复吗？</span></summary>
+      <div class="faq-body"><p data-faq-answer>不一定。Unity IL2CPP 中很多名称依赖 metadata、符号和构建设置。如果 global-metadata.dat 完整且未被强混淆，类型名、方法名、字段名通常更容易恢复；如果 metadata 被加密、裁剪、混淆或符号被剥离，恢复结果可能只保留地址、索引或推断名称。源码恢复需要结合 metadata parser、binary analysis、string analysis 和人工复核。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="21">
+      <summary><span class="faq-index">22</span><span data-faq-question>泛型、接口和虚函数会影响 IL2CPP 源码恢复吗？</span></summary>
+      <div class="faq-body"><p data-faq-answer>会。Unity IL2CPP 中的泛型实例化、接口分发、虚函数表、反射调用和 AOT 编译会让类型恢复和调用关系恢复更复杂。高质量的 IL2CPP reverse engineering 需要关注 generic sharing、virtual invoke、interface invoke、rgctx、method pointer 和 metadata registration 等信息，才能更准确地还原 C# 结构。</p></div>
+    </details>
+  </div>
+</section>
+<section class="faq-group" id="reverse-projects">
+  <h2 class="faq-group-title" data-group-index="3">逆向工程项目场景</h2>
+  <div class="faq-list">
+    <details class="faq-item" data-faq-index="22">
+      <summary><span class="faq-index">23</span><span data-faq-question>一个 Unity3D 逆向项目通常包含哪些阶段？</span></summary>
+      <div class="faq-body"><p data-faq-answer>完整 Unity3D 逆向项目通常包含样本确认、授权确认、平台识别、APK / IPA / WebGL / Windows 包体解包、global-metadata.dat 定位、GameAssembly.dll 或 libil2cpp.so 分析、WASM 分析、方法映射、类型恢复、调用图恢复、控制流还原、C# 伪源码浏览、资源关联、报告导出和人工验证。CPP2IL 主要提升 IL2CPP 反编译与源码恢复阶段的效率。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="23">
+      <summary><span class="faq-index">24</span><span data-faq-question>软件逆向工程和游戏逆向工程有什么共同点？</span></summary>
+      <div class="faq-body"><p data-faq-answer>软件逆向工程和游戏逆向工程都关注二进制结构、函数逻辑、数据流、控制流、调用关系、字符串引用和安全边界。Unity3D 游戏逆向工程更常遇到 IL2CPP、AssetBundle、热更新、WebGL WASM、Android APK、iOS IPA、反作弊和图形资源；普通软件逆向工程则可能更多关注 PE、ELF、Mach-O、协议、加壳和系统 API。CPP2IL 是更垂直的 Unity IL2CPP reverse engineering 工具。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="24">
+      <summary><span class="faq-index">25</span><span data-faq-question>Unity3D 反编译如何服务代码审计？</span></summary>
+      <div class="faq-body"><p data-faq-answer>Unity3D 反编译可以把发布包中的逻辑恢复为更可读的类、方法、字段和调用链，帮助审计人员检查敏感 API、网络请求、配置读取、加密实现、支付流程、第三方 SDK、日志输出和异常处理。对于企业内部授权项目，IL2CPP 反编译、C# 源码恢复和二进制分析可以作为代码审计、供应链安全和版本对比的补充手段。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="25">
+      <summary><span class="faq-index">26</span><span data-faq-question>Unity3D 反编译如何帮助兼容性排查？</span></summary>
+      <div class="faq-body"><p data-faq-answer>当缺少完整源码或需要对比多个发布版本时，Unity3D 反编译可以帮助定位平台相关代码、Android / iOS / WebGL 条件逻辑、第三方 SDK 初始化、资源加载路径、反射调用、热更新入口和异常处理差异。关键词包括 compatibility analysis、Unity WebGL debugging、APK analysis、IPA analysis、C# source recovery 和 call graph recovery。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="26">
+      <summary><span class="faq-index">27</span><span data-faq-question>Unity3D 反编译如何用于恶意代码检测？</span></summary>
+      <div class="faq-body"><p data-faq-answer>在合法授权的安全研究中，Unity3D 反编译可以帮助分析可疑 APK、IPA 或 WebGL 包体中的敏感权限调用、动态加载、网络上报、配置下发、加密传输、反射调用、第三方 SDK 行为和隐藏逻辑。IL2CPP reverse engineering 与 C# source recovery 能提供静态代码线索，但最终结论仍需要结合沙箱、动态日志、网络行为和人工分析。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="27">
+      <summary><span class="faq-index">28</span><span data-faq-question>第三方 SDK 审计为什么需要 Unity IL2CPP 逆向？</span></summary>
+      <div class="faq-body"><p data-faq-answer>Unity3D 项目常集成广告、统计、登录、支付、推送、热更新、反作弊和数据分析 SDK。发布包中 SDK 逻辑可能经过 IL2CPP 编译或混合脚本加载。通过 Unity IL2CPP 逆向、调用关系恢复、字符串分析和 C# 伪源码浏览，可以帮助确认 SDK 初始化、权限使用、数据上报、网络域名和版本差异。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="28">
+      <summary><span class="faq-index">29</span><span data-faq-question>逆向工程项目报告应包含哪些内容？</span></summary>
+      <div class="faq-body"><p data-faq-answer>面向 Unity3D / IL2CPP 的逆向工程项目报告通常包含样本信息、平台与架构、Unity 版本、关键文件列表、global-metadata.dat 状态、GameAssembly.dll / libil2cpp.so / WASM 分析结果、类型恢复摘要、调用图、关键函数、风险点、兼容性问题、源码恢复范围、限制说明和合规边界。这样的报告适合安全研究、代码审计和研发排查。</p></div>
+    </details>
+  </div>
+</section>
+<section class="faq-group" id="metadata-terms">
+  <h2 class="faq-group-title" data-group-index="4">元数据与技术关键词</h2>
+  <div class="faq-list">
+    <details class="faq-item" data-faq-index="29">
+      <summary><span class="faq-index">30</span><span data-faq-question>global-metadata.dat 为什么是 Unity IL2CPP SEO 的核心关键词？</span></summary>
+      <div class="faq-body"><p data-faq-answer>global-metadata.dat 是大量 Unity IL2CPP 分析问题的入口词，因为研究人员经常搜索 global-metadata.dat extractor、metadata parser、metadata.dat 解析、IL2CPP metadata、Unity metadata recovery 等关键词。它直接影响类型恢复、方法恢复、字段恢复、字符串恢复和 C# 源码还原，是 Unity3D 反编译和 IL2CPP reverse engineering 内容页的重要长尾关键词。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="30">
+      <summary><span class="faq-index">31</span><span data-faq-question>metadata parser 在源码恢复中做什么？</span></summary>
+      <div class="faq-body"><p data-faq-answer>metadata parser 用于解析 Unity IL2CPP 元数据结构，提取类型定义、方法定义、字段定义、参数、属性、字符串、泛型信息和索引映射。没有可靠的 metadata parser，GameAssembly.dll analysis、libil2cpp.so analysis、WASM decompiler 和 IL2CPP to C# 的结果都会缺少关键上下文。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="31">
+      <summary><span class="faq-index">32</span><span data-faq-question>method pointer 和 metadata registration 有什么作用？</span></summary>
+      <div class="faq-body"><p data-faq-answer>method pointer、metadata registration 和 code registration 用于把元数据中的方法、类型与原生二进制中的函数地址或函数索引关联起来。对于 Unity IL2CPP 反编译，这些信息可以帮助完成方法映射、函数重命名、调用关系恢复、泛型处理和 C# 伪源码输出，是 IL2CPP binary analysis 的关键技术词。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="32">
+      <summary><span class="faq-index">33</span><span data-faq-question>string analysis 在 Unity3D 逆向中有什么价值？</span></summary>
+      <div class="faq-body"><p data-faq-answer>string analysis 可以帮助定位 API 路径、配置键、资源名、日志信息、错误码、网络域名、加密参数、SDK 名称和功能入口。结合 IL2CPP 反编译、调用图恢复、global-metadata.dat 解析和 C# 伪源码浏览，字符串分析可以显著提升 Unity 游戏安全分析、软件逆向工程和代码审计效率。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="33">
+      <summary><span class="faq-index">34</span><span data-faq-question>符号剥离会影响 Unity3D 源码恢复吗？</span></summary>
+      <div class="faq-body"><p data-faq-answer>会。符号剥离会减少函数名、类名、调试信息和地址映射，使 GameAssembly.dll、libil2cpp.so、Mach-O 或 ELF 分析更依赖 metadata、字符串、函数签名、交叉引用和人工推断。即使符号被剥离，IL2CPP metadata 与二进制结构仍可能提供源码恢复线索，但恢复结果会更依赖分析质量。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="34">
+      <summary><span class="faq-index">35</span><span data-faq-question>混淆和加固对 IL2CPP 反编译有什么影响？</span></summary>
+      <div class="faq-body"><p data-faq-answer>混淆和加固可能改变名称、控制流、字符串、metadata、二进制布局和运行时加载方式，从而影响 Unity3D 反编译、C# 源码恢复和调用关系恢复。内容层面可以覆盖 deobfuscation analysis、反混淆分析、protected IL2CPP、metadata encryption、control flow obfuscation 等关键词，但实际分析必须在合法授权范围内进行，并需要人工验证。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="35">
+      <summary><span class="faq-index">36</span><span data-faq-question>反汇编和反编译在 Unity IL2CPP 中有什么区别？</span></summary>
+      <div class="faq-body"><p data-faq-answer>反汇编把原生二进制转换为汇编指令，例如 ARM64 disassembly、x86 disassembly、WASM disassembly；反编译则尝试把低层指令恢复为更高级的 C# 伪代码或结构化逻辑。Unity IL2CPP 分析通常需要先有二进制分析和反汇编，再结合 metadata、AST reconstruction、control flow recovery 才能得到更可读的反编译结果。</p></div>
+    </details>
+  </div>
+</section>
+<section class="faq-group" id="tools-comparison">
+  <h2 class="faq-group-title" data-group-index="5">工具链与对比关键词</h2>
+  <div class="faq-list">
+    <details class="faq-item" data-faq-index="36">
+      <summary><span class="faq-index">37</span><span data-faq-question>CPP2IL 和 Il2CppDumper 的区别是什么？</span></summary>
+      <div class="faq-body"><p data-faq-answer>Il2CppDumper 常用于从 IL2CPP 二进制和 metadata 中导出脚本、符号、头文件或辅助分析信息；CPP2IL 更强调在线工作台、结构恢复、C# 源码恢复、调用关系恢复、控制流还原、结果浏览和报告输出。SEO 关键词可以覆盖 CPP2IL vs Il2CppDumper、Unity IL2CPP decompiler、IL2CPP source recovery 和 automated IL2CPP analysis。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="37">
+      <summary><span class="faq-index">38</span><span data-faq-question>CPP2IL 和 IDA Pro / Ghidra 的关系是什么？</span></summary>
+      <div class="faq-body"><p data-faq-answer>IDA Pro 和 Ghidra 是通用二进制分析平台，适合深入查看 PE、ELF、Mach-O、ARM64、x86、WASM 等低层结构。CPP2IL 更聚焦 Unity IL2CPP，把 metadata、类型、方法、调用关系和 C# 结构恢复整合到更垂直的流程中。实际 Unity 逆向工程项目中，它们可以互补使用。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="38">
+      <summary><span class="faq-index">39</span><span data-faq-question>dnSpy / ILSpy 为什么不能直接解决 IL2CPP 反编译？</span></summary>
+      <div class="faq-body"><p data-faq-answer>dnSpy 和 ILSpy 更适合 .NET / Mono / C# IL 字节码场景。Unity IL2CPP 发布后，C# 逻辑已经变成 C++ 再编译为原生代码，不再是普通 IL 字节码。因此 IL2CPP 反编译需要 GameAssembly.dll、libil2cpp.so、global-metadata.dat、WASM、二进制分析和 metadata 关联，而不是只靠传统 C# 反编译器。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="39">
+      <summary><span class="faq-index">40</span><span data-faq-question>Unity 反编译工具链为什么需要自动化？</span></summary>
+      <div class="faq-body"><p data-faq-answer>手工 Unity 反编译工具链通常涉及解包、定位 metadata、导出符号、导入 Ghidra / IDA、重命名函数、分析调用图、查看伪代码和整理报告。自动化可以减少重复配置、减少错误、提升批量分析效率，并让 Unity3D 源码恢复、APK decompiler、WASM decompiler、GameAssembly.dll analysis 和 libil2cpp.so analysis 更适合在线平台。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="40">
+      <summary><span class="faq-index">41</span><span data-faq-question>在线 Unity IL2CPP decompiler 的优势是什么？</span></summary>
+      <div class="faq-body"><p data-faq-answer>在线 Unity IL2CPP decompiler 可以把上传分析、平台识别、metadata 解析、二进制分析、C# 源码恢复、调用链浏览和结果导出放在统一界面中。对于不想搭建复杂本地工具链的用户，在线工作台更适合快速验证 APK 反编译、IPA 逆向、WASM 反编译、Unity WebGL 逆向和软件逆向工程项目。</p></div>
+    </details>
+  </div>
+</section>
+<section class="faq-group" id="safe-authorized">
+  <h2 class="faq-group-title" data-group-index="6">授权、安全与边界</h2>
+  <div class="faq-list">
+    <details class="faq-item" data-faq-index="41">
+      <summary><span class="faq-index">42</span><span data-faq-question>CPP2IL 是否用于破解游戏、绕过付费或作弊？</span></summary>
+      <div class="faq-body"><p data-faq-answer>不是。CPP2IL 的定位是授权安全研究、代码审计、兼容性分析、恶意代码检测、历史项目恢复和教育研究。页面可以覆盖 Unity 游戏逆向、游戏反编译、game decompiler、Unity game reverse engineering 等关键词，但用途应限定在合法授权和研究场景，不应被用于破解、盗版、绕过授权、作弊或攻击服务端。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="42">
+      <summary><span class="faq-index">43</span><span data-faq-question>进行 Unity3D 反编译前需要确认什么？</span></summary>
+      <div class="faq-body"><p data-faq-answer>进行 Unity3D 反编译、IL2CPP 逆向、APK 反编译、IPA 逆向或 WebGL WASM 分析前，应确认样本来源合法、授权范围明确、数据不包含敏感用户信息、密钥或受保密协议限制的内容。企业场景下应配合内部合规流程、数据治理和审计记录，确保软件逆向工程项目服务于安全研究和研发排查。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="43">
+      <summary><span class="faq-index">44</span><span data-faq-question>QA 页面是否提供攻击步骤或绕过方案？</span></summary>
+      <div class="faq-body"><p data-faq-answer>不提供。QA 页面用于解释 Unity3D 反编译、IL2CPP reverse engineering、C# source recovery、binary analysis、metadata parser、call graph recovery 等概念和网站能力，不提供绕过授权、破解付费、作弊、攻击服务端、规避安全机制或提取商业机密的操作步骤。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="44">
+      <summary><span class="faq-index">45</span><span data-faq-question>源码恢复结果如何用于合规审计？</span></summary>
+      <div class="faq-body"><p data-faq-answer>源码恢复结果可以帮助合规团队查看第三方组件、SDK 行为、敏感权限、数据采集、网络传输、加密存储、日志输出和平台差异。对于 Unity3D / IL2CPP 项目，C# 伪源码、调用图、字符串引用和二进制分析报告可以作为安全审计材料，但应与源代码仓库、构建记录和动态测试结果交叉验证。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="45">
+      <summary><span class="faq-index">46</span><span data-faq-question>上传 APK、IPA、WASM 或 DLL 时需要注意哪些数据安全问题？</span></summary>
+      <div class="faq-body"><p data-faq-answer>上传 APK、IPA、WASM、GameAssembly.dll、libil2cpp.so、global-metadata.dat、ELF、PE、Mach-O 等文件前，应确认不包含密钥、账号、内网地址、用户隐私数据、商业机密或受 NDA 限制的内容。对于企业安全研究和软件逆向工程项目，建议使用专门样本、脱敏数据和明确授权记录。</p></div>
+    </details>
+    <details class="faq-item" data-faq-index="46">
+      <summary><span class="faq-index">47</span><span data-faq-question>为什么 QA 中要同时出现反编译、逆向和源码恢复关键词？</span></summary>
+      <div class="faq-body"><p data-faq-answer>用户搜索习惯不同，有人搜索 Unity3D 反编译、有人搜索 Unity 逆向工程、有人搜索 IL2CPP decompiler、有人搜索 C# source recovery、有人搜索恢复源码或软件逆向工程项目。QA 页面把这些关键词放进真实问题和答案，可以覆盖更多长尾搜索意图，同时通过合规说明强调授权安全研究和代码审计边界。</p></div>
+    </details>
+  </div>
+</section></div>
+      </div>
+    </section>
+    <section class="section" id="keyword-cluster">
+      <div class="wrap">
+        <div class="section-head">
+          <div><p class="section-kicker" data-i18n="topics.kicker">关键词覆盖</p><h2 data-i18n="topics.title">更聚焦的 Unity3D 反编译 SEO 内容集群</h2></div>
+          <p class="section-desc" data-i18n="topics.desc">以下关键词已自然写入 QA 标题、正文、meta、JSON-LD 与页面可见内容，减少无关问答，增强搜索主题一致性。</p>
+        </div>
+        <div class="seo-topic-grid">
+          <article class="seo-topic"><h3 data-i18n="topic1.title">Unity3D / IL2CPP</h3><p data-i18n="topic1.desc">Unity3D 反编译、Unity IL2CPP decompiler、IL2CPP reverse engineering、IL2CPP to C#、global-metadata.dat。</p></article>
+          <article class="seo-topic"><h3 data-i18n="topic2.title">源码恢复 / 代码还原</h3><p data-i18n="topic2.desc">C# source recovery、Unity 源码恢复、游戏源码恢复、恢复源码、C# 代码还原、AST reconstruction。</p></article>
+          <article class="seo-topic"><h3 data-i18n="topic3.title">逆向工程项目</h3><p data-i18n="topic3.desc">软件逆向工程、游戏逆向工程、APK 反编译、IPA reverse engineering、WASM decompiler、GameAssembly.dll analysis。</p></article>
+        </div>
+        <div class="keyword-cloud" aria-label="keyword cloud"><span>Unity3D 反编译</span><span>IL2CPP 逆向</span><span>Unity 逆向工程</span><span>恢复源码</span><span>C# 源码恢复</span><span>Unity source code recovery</span><span>IL2CPP decompiler</span><span>APK 反编译</span><span>IPA reverse engineering</span><span>WASM decompiler</span><span>WebGL 反编译</span><span>GameAssembly.dll</span><span>libil2cpp.so</span><span>global-metadata.dat</span><span>software reverse engineering</span><span>游戏源码恢复</span><span>AST reconstruction</span><span>call graph recovery</span><span>control flow recovery</span><span>binary analysis</span></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand"><span class="brand-mark" aria-hidden="true"></span><span>CPP2IL</span></div>
+      <div class="footer-links"><a href="qa.html" data-lang-href="qa.html" data-i18n="footer.qa">常见问题</a><a href="sitemap.xml">Sitemap</a></div>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 CPP2IL. 仅供授权安全研究、代码审计与源码恢复评估用途。</p>
+    </div>
+  </footer>
+  <script>
+    const I18N = {
+      "zh-CN": {
+            "meta.title": "CPP2IL QA｜Unity3D 反编译、IL2CPP 逆向工程与源码恢复常见问题",
+            "meta.description": "CPP2IL QA 长尾关键词页面，聚焦 Unity3D 反编译、Unity 逆向工程、IL2CPP decompiler、C# 源码恢复、APK / IPA / WASM / WebGL 分析、GameAssembly.dll、libil2cpp.so、global-metadata.dat 和软件逆向工程项目。",
+            "nav.aria": "CPP2IL QA 导航",
+            "nav.home": "首页",
+            "nav.qa": "常见问题",
+            "nav.demo": "演示视频",
+            "nav.apply": "内测申请 →",
+            "breadcrumb.home": "首页",
+            "breadcrumb.current": "QA",
+            "hero.eyebrow": "Unity3D 反编译 / IL2CPP 逆向 QA",
+            "hero.title": "Unity3D 反编译、逆向工程与源码恢复问答",
+            "hero.lead": "本页删除了泛泛的网站说明类内容，集中覆盖 CPP2IL、Unity3D 反编译、IL2CPP 逆向、C# 源码恢复、游戏源码恢复、APK / IPA / WASM 分析、WebGL 反编译、软件逆向工程项目等 SEO 长尾关键词。",
+            "summary.count": "详细 QA",
+            "summary.count.desc": "聚焦反编译与源码恢复",
+            "summary.platforms": "多平台",
+            "summary.platforms.desc": "APK / IPA / WASM / DLL / SO",
+            "summary.keywords": "关键词集群",
+            "summary.keywords.desc": "中英文长尾 SEO",
+            "summary.schema": "FAQPage",
+            "summary.schema.desc": "结构化问答数据",
+            "side.title": "QA 分类",
+            "side.desc": "全部问题都围绕 Unity3D、IL2CPP、反编译、逆向工程、源码恢复和软件逆向工程展开。",
+            "topics.kicker": "关键词覆盖",
+            "topics.title": "更聚焦的 Unity3D 反编译 SEO 内容集群",
+            "topics.desc": "以下关键词已自然写入 QA 标题、正文、meta、JSON-LD 与页面可见内容，减少无关问答，增强搜索主题一致性。",
+            "topic1.title": "Unity3D / IL2CPP",
+            "topic1.desc": "Unity3D 反编译、Unity IL2CPP decompiler、IL2CPP reverse engineering、IL2CPP to C#、global-metadata.dat。",
+            "topic2.title": "源码恢复 / 代码还原",
+            "topic2.desc": "C# source recovery、Unity 源码恢复、游戏源码恢复、恢复源码、C# 代码还原、AST reconstruction。",
+            "topic3.title": "逆向工程项目",
+            "topic3.desc": "软件逆向工程、游戏逆向工程、APK 反编译、IPA reverse engineering、WASM decompiler、GameAssembly.dll analysis。",
+            "footer.qa": "常见问题",
+            "footer.copy": "© 2026 CPP2IL. 仅供授权安全研究、代码审计与源码恢复评估用途。"
+      },
+      "en": {
+            "meta.title": "CPP2IL FAQ｜Unity3D Decompilation, IL2CPP Reverse Engineering & Source Recovery",
+            "meta.description": "CPP2IL FAQ long-tail keyword page focused on Unity3D decompilation, Unity reverse engineering, IL2CPP decompiler, C# source recovery, APK / IPA / WASM / WebGL analysis, GameAssembly.dll, libil2cpp.so, global-metadata.dat and software reverse engineering projects.",
+            "nav.aria": "CPP2IL FAQ navigation",
+            "nav.home": "Home",
+            "nav.qa": "FAQ",
+            "nav.demo": "Demo",
+            "nav.apply": "Join beta →",
+            "breadcrumb.home": "Home",
+            "breadcrumb.current": "FAQ",
+            "hero.eyebrow": "Unity3D Decompilation / IL2CPP Reverse Engineering FAQ",
+            "hero.title": "Unity3D Decompilation, Reverse Engineering and Source Recovery FAQ",
+            "hero.lead": "This page removes generic website explanation questions and focuses on CPP2IL, Unity3D decompilation, IL2CPP reverse engineering, C# source recovery, game source recovery, APK / IPA / WASM analysis, WebGL decompilation and software reverse engineering project keywords.",
+            "summary.count": "Detailed QAs",
+            "summary.count.desc": "Focused on decompilation and source recovery",
+            "summary.platforms": "Multi-platform",
+            "summary.platforms.desc": "APK / IPA / WASM / DLL / SO",
+            "summary.keywords": "Keyword cluster",
+            "summary.keywords.desc": "Chinese and English long-tail SEO",
+            "summary.schema": "FAQPage",
+            "summary.schema.desc": "Structured FAQ data",
+            "side.title": "FAQ Categories",
+            "side.desc": "Every question focuses on Unity3D, IL2CPP, decompilation, reverse engineering, source recovery and software reverse engineering.",
+            "topics.kicker": "Keyword Coverage",
+            "topics.title": "More focused Unity3D decompilation SEO content cluster",
+            "topics.desc": "The following keywords are naturally included in FAQ titles, body content, meta tags, JSON-LD and visible page content to reduce unrelated QAs and strengthen topical consistency.",
+            "topic1.title": "Unity3D / IL2CPP",
+            "topic1.desc": "Unity3D decompilation, Unity IL2CPP decompiler, IL2CPP reverse engineering, IL2CPP to C#, global-metadata.dat.",
+            "topic2.title": "Source recovery / Code restore",
+            "topic2.desc": "C# source recovery, Unity source code recovery, game source recovery, source restore, C# code recovery, AST reconstruction.",
+            "topic3.title": "Reverse engineering projects",
+            "topic3.desc": "Software reverse engineering, game reverse engineering, APK decompilation, IPA reverse engineering, WASM decompiler, GameAssembly.dll analysis.",
+            "footer.qa": "FAQ",
+            "footer.copy": "© 2026 CPP2IL. For authorized security research, code audit and source recovery evaluation only."
+      }
+};
+    const FAQS = {
+      "zh-CN": [
+            {
+                  "q": "什么是 Unity3D IL2CPP 反编译？",
+                  "a": "Unity3D IL2CPP 反编译是指对 Unity3D 游戏或应用发布后的 IL2CPP 原生包体进行结构化分析，从 APK、IPA、Windows GameAssembly.dll、Android libil2cpp.so、WebGL WASM、global-metadata.dat 等文件中恢复类型、方法、字段、调用关系、控制流和接近 C# 的源码结构。它常用于授权代码审计、Unity 游戏安全研究、兼容性排查、历史项目分析、恶意代码检测和软件逆向工程学习。"
+            },
+            {
+                  "q": "Unity3D 反编译、Unity 逆向工程和 IL2CPP to C# 有什么区别？",
+                  "a": "Unity3D 反编译通常强调把发布产物转换成更可读的代码或结构；Unity 逆向工程范围更广，包含资源分析、二进制分析、运行时行为分析、调用链分析和安全审计；IL2CPP to C# 则更聚焦于从 IL2CPP 原生代码与 metadata 中恢复 C# 类、方法、字段、命名空间和伪源码。CPP2IL 主要面向 Unity IL2CPP decompiler、C# source recovery、Unity source code recovery 和 game reverse engineering 这些场景。"
+            },
+            {
+                  "q": "为什么 Unity3D 项目使用 IL2CPP 后更难直接恢复源码？",
+                  "a": "Unity3D 使用 IL2CPP 后，C# 会先转换为 C++，再编译为 ARM64、ARM32、x86、x64、Mach-O、ELF、PE 或 WASM 等原生目标。传统 .NET / C# 反编译器依赖 IL 字节码，而 IL2CPP 发布包中通常不存在完整原始 IL，所以需要结合 global-metadata.dat、GameAssembly.dll、libil2cpp.so、WASM 函数表、方法指针、类型元数据和控制流还原来做源码恢复。"
+            },
+            {
+                  "q": "CPP2IL 适合做 Unity3D 源码恢复吗？",
+                  "a": "CPP2IL 适合用于 Unity3D 源码恢复评估，尤其是 IL2CPP 发布后的 C# 结构恢复、类型恢复、方法签名恢复、字段恢复、调用图恢复和控制流分析。需要注意的是，IL2CPP 逆向恢复出来的是分析用途的 C# 伪源码或近似源码结构，不等同于完整 Unity Editor 工程，也不能保证包含原始注释、局部变量名、Prefab、场景、AssetBundle、Shader 和美术资源。"
+            },
+            {
+                  "q": "Unity3D 源码恢复和 Unity 资源提取是一回事吗？",
+                  "a": "不是。Unity3D 源码恢复主要关注 IL2CPP / C# 逻辑代码、类结构、方法调用、字段和控制流；Unity 资源提取主要关注 AssetBundle、Prefab、Scene、Texture、Audio、Animation、Shader、Material 等资源。一个完整的 Unity 逆向工程项目通常会同时涉及代码反编译、资源分析、二进制分析、WebGL WASM 分析、Android APK 分析和 iOS IPA 分析。"
+            },
+            {
+                  "q": "Unity3D 游戏逆向工程常见目标是什么？",
+                  "a": "Unity3D 游戏逆向工程的常见目标包括理解客户端逻辑、验证第三方 SDK、安全审计敏感 API、检查加密与配置加载逻辑、分析异常崩溃、排查兼容性、定位恶意代码、进行供应链安全检查以及恢复自有历史项目的源码结构。关键词包括 Unity game reverse engineering、Unity3D 反编译、游戏源码恢复、IL2CPP reverse engineering、software reverse engineering 和 binary analysis。"
+            },
+            {
+                  "q": "Android APK 里的 libil2cpp.so 和 global-metadata.dat 如何用于源码恢复？",
+                  "a": "Android Unity IL2CPP APK 通常包含 libil2cpp.so 与 global-metadata.dat。libil2cpp.so 提供 ARM32 / ARM64 原生代码、函数实现、方法指针和调用逻辑；global-metadata.dat 提供类型、方法、字段、字符串和元数据映射。把二者关联起来，才能更好地完成 APK 反编译、IL2CPP 反编译、C# 代码还原、调用关系恢复和 Unity3D 源码恢复。"
+            },
+            {
+                  "q": "Windows Unity 游戏中的 GameAssembly.dll 是什么？",
+                  "a": "GameAssembly.dll 是 Windows 平台 Unity IL2CPP 项目的核心原生二进制之一，通常承载从 C# 转换并编译后的本地代码。进行 Windows Unity 反编译、GameAssembly.dll analysis、PE 逆向、x64 native analysis、C# source recovery 时，通常需要把 GameAssembly.dll 与 global-metadata.dat 关联，恢复类型、方法和调用路径。"
+            },
+            {
+                  "q": "iOS IPA / Mach-O 的 Unity IL2CPP 逆向重点是什么？",
+                  "a": "iOS Unity IL2CPP 逆向通常关注 IPA 包内的 Mach-O 二进制、ARM64 指令、符号表、Section 结构、metadata 映射和 Unity 版本特征。关键词包括 IPA reverse engineering、Mach-O reverse engineering、ARM64 disassembly、IL2CPP to C#、Unity iOS reverse engineering 和 C# 源码恢复。合法授权下，这类分析适合安全审计、兼容性验证和历史项目研究。"
+            },
+            {
+                  "q": "Unity WebGL / WASM 反编译为什么是独立关键词？",
+                  "a": "Unity WebGL 项目会把 IL2CPP 结果编译为 WebAssembly / WASM，并通过 framework.js、data 文件和浏览器运行时加载。WebGL WASM 反编译需要关注 wasm function index、table mapping、control flow recovery、AST reconstruction、metadata 关联和 C# 伪代码恢复，因此它和普通 Android APK 反编译、Windows DLL 逆向、iOS Mach-O 分析有明显区别。"
+            },
+            {
+                  "q": "ELF、PE、Mach-O、WASM 在 Unity 逆向中分别代表什么？",
+                  "a": "ELF 通常对应 Android / Linux 原生库，例如 libil2cpp.so；PE 通常对应 Windows 可执行文件或 DLL，例如 GameAssembly.dll；Mach-O 通常对应 iOS / macOS 原生二进制；WASM 对应 Unity WebGL 的 WebAssembly 模块。Unity3D 逆向工程需要根据 ELF reverse engineering、PE analysis、Mach-O analysis、WASM decompiler 等不同目标选择不同分析策略。"
+            },
+            {
+                  "q": "ARM64、ARM32、x86、x64 对 IL2CPP 分析有什么影响？",
+                  "a": "不同 CPU 架构会影响指令集、调用约定、寄存器使用、函数边界识别、反汇编结果和控制流恢复质量。Android APK 可能同时包含 ARMv7 / ARM32 和 ARM64；Windows 多为 x86 / x64；iOS 主要是 ARM64；WebGL 是 WASM。CPP2IL 的关键词覆盖 ARM64 disassembly、ARM32 analysis、x86 x64 native analysis 和 IL2CPP binary analysis。"
+            },
+            {
+                  "q": "Unity3D 热更新 DLL 和 IL2CPP 原生包体需要一起分析吗？",
+                  "a": "很多 Unity3D 项目会同时使用 IL2CPP 主包和热更新脚本，例如 HybridCLR、Lua、XLua、puerts、ILRuntime 或自研脚本系统。做 Unity 逆向工程项目时，可能需要同时分析 GameAssembly.dll / libil2cpp.so / WASM、global-metadata.dat、热更新 DLL、AssetBundle、脚本资源和配置文件，才能完整理解客户端逻辑与源码恢复范围。"
+            },
+            {
+                  "q": "IL2CPP to C# 能恢复到什么程度？",
+                  "a": "IL2CPP to C# 通常可以恢复类型名、命名空间、方法签名、字段、部分泛型结构、继承关系、接口关系、字符串引用、调用关系和接近 C# 的伪代码。恢复程度取决于 Unity 版本、metadata 完整性、符号信息、是否混淆、是否加固、编译优化级别和目标平台。对于 Unity3D 源码恢复，合理预期是“用于阅读和审计的结构化源码”，不是百分百还原原始工程。"
+            },
+            {
+                  "q": "Unity3D 恢复源码是否等于恢复完整工程？",
+                  "a": "不等于。Unity3D 恢复源码主要指恢复 C# 逻辑代码结构，例如类型、方法、字段、控制流、调用图和伪源码。完整 Unity 工程还包含工程设置、场景、Prefab、材质、Shader、动画、脚本引用、资源路径和编辑器数据。CPP2IL 更适合“Unity 源码恢复 / Unity source code recovery / C# source recovery”的代码审计部分。"
+            },
+            {
+                  "q": "丢失 Unity3D 源码后还能通过发布包恢复吗？",
+                  "a": "如果是自己拥有版权和授权的历史 Unity3D 项目，发布包可以用于恢复部分源码结构和逻辑线索。IL2CPP 包体中的 GameAssembly.dll、libil2cpp.so、WASM 和 global-metadata.dat 可以帮助恢复类、方法、字段和调用链；AssetBundle 和资源文件可以帮助恢复部分资源关系。但无法保证恢复原始注释、完整工程结构、编辑器配置和开发过程中的源文件。"
+            },
+            {
+                  "q": "C# 伪代码、反编译源码和原始源码有什么区别？",
+                  "a": "C# 伪代码是根据二进制和元数据重建的可读表达，不一定能直接编译；反编译源码是更接近高级语言的恢复结果，但仍可能缺失变量名、注释和工程上下文；原始源码是开发者真实维护的工程代码。Unity IL2CPP decompiler 的价值在于让软件逆向工程项目更快理解逻辑，而不是承诺完全复制原始源码仓库。"
+            },
+            {
+                  "q": "控制流还原对 Unity3D 反编译有什么作用？",
+                  "a": "控制流还原用于从底层分支、跳转、基本块和异常处理结构中恢复 if、else、switch、for、while、try/catch 等高级逻辑。对于 Unity3D 反编译、IL2CPP reverse engineering、WASM decompiler、ARM64 disassembly 和 GameAssembly.dll analysis，控制流恢复直接影响 C# 伪代码可读性和代码审计效率。"
+            },
+            {
+                  "q": "调用关系恢复对游戏安全分析有什么帮助？",
+                  "a": "调用关系恢复可以建立方法之间、类型之间、模块之间的调用图，帮助安全研究人员快速定位登录、支付、配置、网络、加密、资源加载、反作弊、热更新和第三方 SDK 相关逻辑。对于 Unity 游戏逆向、游戏安全分析、恶意代码检测、供应链安全审计和兼容性排查，call graph recovery 是核心能力之一。"
+            },
+            {
+                  "q": "AST reconstruction 在 IL2CPP 反编译里是什么意思？",
+                  "a": "AST reconstruction 是把低层指令、中间表示和表达式重新组织成类似源码语法树的过程。它可以让 IL2CPP 反编译输出更接近 C#，例如恢复表达式、赋值、条件判断、循环、方法调用和对象访问。AST 还原越稳定，Unity3D 源码恢复、软件逆向工程阅读和代码审计体验越好。"
+            },
+            {
+                  "q": "方法名、类名和字段名一定能恢复吗？",
+                  "a": "不一定。Unity IL2CPP 中很多名称依赖 metadata、符号和构建设置。如果 global-metadata.dat 完整且未被强混淆，类型名、方法名、字段名通常更容易恢复；如果 metadata 被加密、裁剪、混淆或符号被剥离，恢复结果可能只保留地址、索引或推断名称。源码恢复需要结合 metadata parser、binary analysis、string analysis 和人工复核。"
+            },
+            {
+                  "q": "泛型、接口和虚函数会影响 IL2CPP 源码恢复吗？",
+                  "a": "会。Unity IL2CPP 中的泛型实例化、接口分发、虚函数表、反射调用和 AOT 编译会让类型恢复和调用关系恢复更复杂。高质量的 IL2CPP reverse engineering 需要关注 generic sharing、virtual invoke、interface invoke、rgctx、method pointer 和 metadata registration 等信息，才能更准确地还原 C# 结构。"
+            },
+            {
+                  "q": "一个 Unity3D 逆向项目通常包含哪些阶段？",
+                  "a": "完整 Unity3D 逆向项目通常包含样本确认、授权确认、平台识别、APK / IPA / WebGL / Windows 包体解包、global-metadata.dat 定位、GameAssembly.dll 或 libil2cpp.so 分析、WASM 分析、方法映射、类型恢复、调用图恢复、控制流还原、C# 伪源码浏览、资源关联、报告导出和人工验证。CPP2IL 主要提升 IL2CPP 反编译与源码恢复阶段的效率。"
+            },
+            {
+                  "q": "软件逆向工程和游戏逆向工程有什么共同点？",
+                  "a": "软件逆向工程和游戏逆向工程都关注二进制结构、函数逻辑、数据流、控制流、调用关系、字符串引用和安全边界。Unity3D 游戏逆向工程更常遇到 IL2CPP、AssetBundle、热更新、WebGL WASM、Android APK、iOS IPA、反作弊和图形资源；普通软件逆向工程则可能更多关注 PE、ELF、Mach-O、协议、加壳和系统 API。CPP2IL 是更垂直的 Unity IL2CPP reverse engineering 工具。"
+            },
+            {
+                  "q": "Unity3D 反编译如何服务代码审计？",
+                  "a": "Unity3D 反编译可以把发布包中的逻辑恢复为更可读的类、方法、字段和调用链，帮助审计人员检查敏感 API、网络请求、配置读取、加密实现、支付流程、第三方 SDK、日志输出和异常处理。对于企业内部授权项目，IL2CPP 反编译、C# 源码恢复和二进制分析可以作为代码审计、供应链安全和版本对比的补充手段。"
+            },
+            {
+                  "q": "Unity3D 反编译如何帮助兼容性排查？",
+                  "a": "当缺少完整源码或需要对比多个发布版本时，Unity3D 反编译可以帮助定位平台相关代码、Android / iOS / WebGL 条件逻辑、第三方 SDK 初始化、资源加载路径、反射调用、热更新入口和异常处理差异。关键词包括 compatibility analysis、Unity WebGL debugging、APK analysis、IPA analysis、C# source recovery 和 call graph recovery。"
+            },
+            {
+                  "q": "Unity3D 反编译如何用于恶意代码检测？",
+                  "a": "在合法授权的安全研究中，Unity3D 反编译可以帮助分析可疑 APK、IPA 或 WebGL 包体中的敏感权限调用、动态加载、网络上报、配置下发、加密传输、反射调用、第三方 SDK 行为和隐藏逻辑。IL2CPP reverse engineering 与 C# source recovery 能提供静态代码线索，但最终结论仍需要结合沙箱、动态日志、网络行为和人工分析。"
+            },
+            {
+                  "q": "第三方 SDK 审计为什么需要 Unity IL2CPP 逆向？",
+                  "a": "Unity3D 项目常集成广告、统计、登录、支付、推送、热更新、反作弊和数据分析 SDK。发布包中 SDK 逻辑可能经过 IL2CPP 编译或混合脚本加载。通过 Unity IL2CPP 逆向、调用关系恢复、字符串分析和 C# 伪源码浏览，可以帮助确认 SDK 初始化、权限使用、数据上报、网络域名和版本差异。"
+            },
+            {
+                  "q": "逆向工程项目报告应包含哪些内容？",
+                  "a": "面向 Unity3D / IL2CPP 的逆向工程项目报告通常包含样本信息、平台与架构、Unity 版本、关键文件列表、global-metadata.dat 状态、GameAssembly.dll / libil2cpp.so / WASM 分析结果、类型恢复摘要、调用图、关键函数、风险点、兼容性问题、源码恢复范围、限制说明和合规边界。这样的报告适合安全研究、代码审计和研发排查。"
+            },
+            {
+                  "q": "global-metadata.dat 为什么是 Unity IL2CPP SEO 的核心关键词？",
+                  "a": "global-metadata.dat 是大量 Unity IL2CPP 分析问题的入口词，因为研究人员经常搜索 global-metadata.dat extractor、metadata parser、metadata.dat 解析、IL2CPP metadata、Unity metadata recovery 等关键词。它直接影响类型恢复、方法恢复、字段恢复、字符串恢复和 C# 源码还原，是 Unity3D 反编译和 IL2CPP reverse engineering 内容页的重要长尾关键词。"
+            },
+            {
+                  "q": "metadata parser 在源码恢复中做什么？",
+                  "a": "metadata parser 用于解析 Unity IL2CPP 元数据结构，提取类型定义、方法定义、字段定义、参数、属性、字符串、泛型信息和索引映射。没有可靠的 metadata parser，GameAssembly.dll analysis、libil2cpp.so analysis、WASM decompiler 和 IL2CPP to C# 的结果都会缺少关键上下文。"
+            },
+            {
+                  "q": "method pointer 和 metadata registration 有什么作用？",
+                  "a": "method pointer、metadata registration 和 code registration 用于把元数据中的方法、类型与原生二进制中的函数地址或函数索引关联起来。对于 Unity IL2CPP 反编译，这些信息可以帮助完成方法映射、函数重命名、调用关系恢复、泛型处理和 C# 伪源码输出，是 IL2CPP binary analysis 的关键技术词。"
+            },
+            {
+                  "q": "string analysis 在 Unity3D 逆向中有什么价值？",
+                  "a": "string analysis 可以帮助定位 API 路径、配置键、资源名、日志信息、错误码、网络域名、加密参数、SDK 名称和功能入口。结合 IL2CPP 反编译、调用图恢复、global-metadata.dat 解析和 C# 伪源码浏览，字符串分析可以显著提升 Unity 游戏安全分析、软件逆向工程和代码审计效率。"
+            },
+            {
+                  "q": "符号剥离会影响 Unity3D 源码恢复吗？",
+                  "a": "会。符号剥离会减少函数名、类名、调试信息和地址映射，使 GameAssembly.dll、libil2cpp.so、Mach-O 或 ELF 分析更依赖 metadata、字符串、函数签名、交叉引用和人工推断。即使符号被剥离，IL2CPP metadata 与二进制结构仍可能提供源码恢复线索，但恢复结果会更依赖分析质量。"
+            },
+            {
+                  "q": "混淆和加固对 IL2CPP 反编译有什么影响？",
+                  "a": "混淆和加固可能改变名称、控制流、字符串、metadata、二进制布局和运行时加载方式，从而影响 Unity3D 反编译、C# 源码恢复和调用关系恢复。内容层面可以覆盖 deobfuscation analysis、反混淆分析、protected IL2CPP、metadata encryption、control flow obfuscation 等关键词，但实际分析必须在合法授权范围内进行，并需要人工验证。"
+            },
+            {
+                  "q": "反汇编和反编译在 Unity IL2CPP 中有什么区别？",
+                  "a": "反汇编把原生二进制转换为汇编指令，例如 ARM64 disassembly、x86 disassembly、WASM disassembly；反编译则尝试把低层指令恢复为更高级的 C# 伪代码或结构化逻辑。Unity IL2CPP 分析通常需要先有二进制分析和反汇编，再结合 metadata、AST reconstruction、control flow recovery 才能得到更可读的反编译结果。"
+            },
+            {
+                  "q": "CPP2IL 和 Il2CppDumper 的区别是什么？",
+                  "a": "Il2CppDumper 常用于从 IL2CPP 二进制和 metadata 中导出脚本、符号、头文件或辅助分析信息；CPP2IL 更强调在线工作台、结构恢复、C# 源码恢复、调用关系恢复、控制流还原、结果浏览和报告输出。SEO 关键词可以覆盖 CPP2IL vs Il2CppDumper、Unity IL2CPP decompiler、IL2CPP source recovery 和 automated IL2CPP analysis。"
+            },
+            {
+                  "q": "CPP2IL 和 IDA Pro / Ghidra 的关系是什么？",
+                  "a": "IDA Pro 和 Ghidra 是通用二进制分析平台，适合深入查看 PE、ELF、Mach-O、ARM64、x86、WASM 等低层结构。CPP2IL 更聚焦 Unity IL2CPP，把 metadata、类型、方法、调用关系和 C# 结构恢复整合到更垂直的流程中。实际 Unity 逆向工程项目中，它们可以互补使用。"
+            },
+            {
+                  "q": "dnSpy / ILSpy 为什么不能直接解决 IL2CPP 反编译？",
+                  "a": "dnSpy 和 ILSpy 更适合 .NET / Mono / C# IL 字节码场景。Unity IL2CPP 发布后，C# 逻辑已经变成 C++ 再编译为原生代码，不再是普通 IL 字节码。因此 IL2CPP 反编译需要 GameAssembly.dll、libil2cpp.so、global-metadata.dat、WASM、二进制分析和 metadata 关联，而不是只靠传统 C# 反编译器。"
+            },
+            {
+                  "q": "Unity 反编译工具链为什么需要自动化？",
+                  "a": "手工 Unity 反编译工具链通常涉及解包、定位 metadata、导出符号、导入 Ghidra / IDA、重命名函数、分析调用图、查看伪代码和整理报告。自动化可以减少重复配置、减少错误、提升批量分析效率，并让 Unity3D 源码恢复、APK decompiler、WASM decompiler、GameAssembly.dll analysis 和 libil2cpp.so analysis 更适合在线平台。"
+            },
+            {
+                  "q": "在线 Unity IL2CPP decompiler 的优势是什么？",
+                  "a": "在线 Unity IL2CPP decompiler 可以把上传分析、平台识别、metadata 解析、二进制分析、C# 源码恢复、调用链浏览和结果导出放在统一界面中。对于不想搭建复杂本地工具链的用户，在线工作台更适合快速验证 APK 反编译、IPA 逆向、WASM 反编译、Unity WebGL 逆向和软件逆向工程项目。"
+            },
+            {
+                  "q": "CPP2IL 是否用于破解游戏、绕过付费或作弊？",
+                  "a": "不是。CPP2IL 的定位是授权安全研究、代码审计、兼容性分析、恶意代码检测、历史项目恢复和教育研究。页面可以覆盖 Unity 游戏逆向、游戏反编译、game decompiler、Unity game reverse engineering 等关键词，但用途应限定在合法授权和研究场景，不应被用于破解、盗版、绕过授权、作弊或攻击服务端。"
+            },
+            {
+                  "q": "进行 Unity3D 反编译前需要确认什么？",
+                  "a": "进行 Unity3D 反编译、IL2CPP 逆向、APK 反编译、IPA 逆向或 WebGL WASM 分析前，应确认样本来源合法、授权范围明确、数据不包含敏感用户信息、密钥或受保密协议限制的内容。企业场景下应配合内部合规流程、数据治理和审计记录，确保软件逆向工程项目服务于安全研究和研发排查。"
+            },
+            {
+                  "q": "QA 页面是否提供攻击步骤或绕过方案？",
+                  "a": "不提供。QA 页面用于解释 Unity3D 反编译、IL2CPP reverse engineering、C# source recovery、binary analysis、metadata parser、call graph recovery 等概念和网站能力，不提供绕过授权、破解付费、作弊、攻击服务端、规避安全机制或提取商业机密的操作步骤。"
+            },
+            {
+                  "q": "源码恢复结果如何用于合规审计？",
+                  "a": "源码恢复结果可以帮助合规团队查看第三方组件、SDK 行为、敏感权限、数据采集、网络传输、加密存储、日志输出和平台差异。对于 Unity3D / IL2CPP 项目，C# 伪源码、调用图、字符串引用和二进制分析报告可以作为安全审计材料，但应与源代码仓库、构建记录和动态测试结果交叉验证。"
+            },
+            {
+                  "q": "上传 APK、IPA、WASM 或 DLL 时需要注意哪些数据安全问题？",
+                  "a": "上传 APK、IPA、WASM、GameAssembly.dll、libil2cpp.so、global-metadata.dat、ELF、PE、Mach-O 等文件前，应确认不包含密钥、账号、内网地址、用户隐私数据、商业机密或受 NDA 限制的内容。对于企业安全研究和软件逆向工程项目，建议使用专门样本、脱敏数据和明确授权记录。"
+            },
+            {
+                  "q": "为什么 QA 中要同时出现反编译、逆向和源码恢复关键词？",
+                  "a": "用户搜索习惯不同，有人搜索 Unity3D 反编译、有人搜索 Unity 逆向工程、有人搜索 IL2CPP decompiler、有人搜索 C# source recovery、有人搜索恢复源码或软件逆向工程项目。QA 页面把这些关键词放进真实问题和答案，可以覆盖更多长尾搜索意图，同时通过合规说明强调授权安全研究和代码审计边界。"
+            }
+      ],
+      "en": [
+            {
+                  "q": "What is Unity3D IL2CPP decompilation?",
+                  "a": "Unity3D IL2CPP decompilation means structurally analyzing native IL2CPP outputs from Unity3D games or applications, such as APK, IPA, Windows GameAssembly.dll, Android libil2cpp.so, WebGL WASM and global-metadata.dat, to recover types, methods, fields, call relationships, control flow and C#-like source structures. It is commonly used for authorized code audit, Unity game security research, compatibility debugging, legacy project analysis, malware detection and software reverse engineering education."
+            },
+            {
+                  "q": "What is the difference between Unity3D decompilation, Unity reverse engineering and IL2CPP to C#?",
+                  "a": "Unity3D decompilation usually emphasizes converting released artifacts into more readable code or structures. Unity reverse engineering is broader and may include asset analysis, binary analysis, runtime behavior analysis, call-chain analysis and security audit. IL2CPP to C# focuses on recovering C# classes, methods, fields, namespaces and pseudocode from IL2CPP native code and metadata. CPP2IL mainly targets Unity IL2CPP decompiler, C# source recovery, Unity source code recovery and game reverse engineering scenarios."
+            },
+            {
+                  "q": "Why is source recovery harder after a Unity3D project uses IL2CPP?",
+                  "a": "After a Unity3D project uses IL2CPP, C# is converted to C++ and then compiled to native targets such as ARM64, ARM32, x86, x64, Mach-O, ELF, PE or WASM. Traditional .NET / C# decompilers rely on IL bytecode, while IL2CPP builds usually do not contain the original IL in full form. Source recovery therefore requires global-metadata.dat, GameAssembly.dll, libil2cpp.so, WASM function tables, method pointers, type metadata and control-flow recovery."
+            },
+            {
+                  "q": "Is CPP2IL suitable for Unity3D source code recovery?",
+                  "a": "CPP2IL is suitable for evaluating Unity3D source recovery, especially C# structure recovery, type recovery, method signature recovery, field recovery, call graph recovery and control-flow analysis after IL2CPP builds. The recovered result is C#-like pseudocode or approximate source structure for analysis, not a full Unity Editor project, and it does not guarantee original comments, local variable names, prefabs, scenes, AssetBundles, shaders or art assets."
+            },
+            {
+                  "q": "Is Unity3D source recovery the same as Unity asset extraction?",
+                  "a": "No. Unity3D source recovery focuses on IL2CPP / C# logic code, class structures, method calls, fields and control flow. Unity asset extraction focuses on AssetBundle, prefab, scene, texture, audio, animation, shader and material resources. A complete Unity reverse engineering project may involve code decompilation, asset analysis, binary analysis, WebGL WASM analysis, Android APK analysis and iOS IPA analysis at the same time."
+            },
+            {
+                  "q": "What are common goals of Unity3D game reverse engineering?",
+                  "a": "Common goals include understanding client logic, validating third-party SDKs, auditing sensitive APIs, checking encryption and configuration loading logic, analyzing crashes, debugging compatibility issues, locating malicious code, performing supply-chain security checks and recovering source structures for owned legacy projects. Relevant keywords include Unity game reverse engineering, Unity3D decompilation, game source recovery, IL2CPP reverse engineering, software reverse engineering and binary analysis."
+            },
+            {
+                  "q": "How are libil2cpp.so and global-metadata.dat in Android APK used for source recovery?",
+                  "a": "An Android Unity IL2CPP APK usually contains libil2cpp.so and global-metadata.dat. libil2cpp.so provides ARM32 / ARM64 native code, function implementations, method pointers and call logic, while global-metadata.dat provides types, methods, fields, strings and metadata mappings. Correlating both is essential for APK decompilation, IL2CPP decompilation, C# code recovery, call graph recovery and Unity3D source recovery."
+            },
+            {
+                  "q": "What is GameAssembly.dll in Windows Unity games?",
+                  "a": "GameAssembly.dll is one of the core native binaries of Windows Unity IL2CPP projects and usually contains native code compiled from converted C#. For Windows Unity decompilation, GameAssembly.dll analysis, PE reverse engineering, x64 native analysis and C# source recovery, GameAssembly.dll is typically correlated with global-metadata.dat to recover types, methods and call paths."
+            },
+            {
+                  "q": "What matters in iOS IPA / Mach-O Unity IL2CPP reverse engineering?",
+                  "a": "iOS Unity IL2CPP reverse engineering usually focuses on the Mach-O binary inside the IPA, ARM64 instructions, symbol tables, section layout, metadata mapping and Unity version characteristics. Keywords include IPA reverse engineering, Mach-O reverse engineering, ARM64 disassembly, IL2CPP to C#, Unity iOS reverse engineering and C# source recovery. Under proper authorization, this analysis supports security audit, compatibility verification and legacy project research."
+            },
+            {
+                  "q": "Why is Unity WebGL / WASM decompilation a separate keyword area?",
+                  "a": "Unity WebGL projects compile IL2CPP output to WebAssembly / WASM and load it through framework.js, data files and a browser runtime. WebGL WASM decompilation must consider wasm function indexes, table mapping, control flow recovery, AST reconstruction, metadata correlation and C# pseudocode recovery, making it different from Android APK decompilation, Windows DLL reverse engineering and iOS Mach-O analysis."
+            },
+            {
+                  "q": "What do ELF, PE, Mach-O and WASM mean in Unity reverse engineering?",
+                  "a": "ELF usually refers to Android / Linux native libraries such as libil2cpp.so. PE usually refers to Windows executables or DLLs such as GameAssembly.dll. Mach-O usually refers to iOS / macOS native binaries. WASM refers to WebAssembly modules used by Unity WebGL. Unity3D reverse engineering requires different strategies for ELF reverse engineering, PE analysis, Mach-O analysis and WASM decompiler workflows."
+            },
+            {
+                  "q": "How do ARM64, ARM32, x86 and x64 affect IL2CPP analysis?",
+                  "a": "Different CPU architectures affect instruction sets, calling conventions, register usage, function-boundary detection, disassembly output and control-flow recovery quality. Android APKs may include ARMv7 / ARM32 and ARM64, Windows is often x86 / x64, iOS is mainly ARM64, and WebGL uses WASM. CPP2IL keyword coverage includes ARM64 disassembly, ARM32 analysis, x86 x64 native analysis and IL2CPP binary analysis."
+            },
+            {
+                  "q": "Should Unity3D hot-update DLLs and IL2CPP native packages be analyzed together?",
+                  "a": "Many Unity3D projects combine an IL2CPP main package with hot-update scripts such as HybridCLR, Lua, XLua, puerts, ILRuntime or custom script systems. A Unity reverse engineering project may need to analyze GameAssembly.dll / libil2cpp.so / WASM, global-metadata.dat, hot-update DLLs, AssetBundles, script resources and configuration files together to understand client logic and the scope of source recovery."
+            },
+            {
+                  "q": "How much can IL2CPP to C# recover?",
+                  "a": "IL2CPP to C# can usually recover type names, namespaces, method signatures, fields, some generic structures, inheritance relationships, interfaces, string references, call relationships and C#-like pseudocode. Recovery quality depends on Unity version, metadata integrity, symbol information, obfuscation, protection, compiler optimization level and target platform. For Unity3D source recovery, the realistic expectation is structured source for reading and audit, not a perfect reproduction of the original project."
+            },
+            {
+                  "q": "Does Unity3D source recovery mean recovering the full project?",
+                  "a": "No. Unity3D source recovery mainly means recovering C# logic code structures such as types, methods, fields, control flow, call graphs and pseudocode. A full Unity project also contains project settings, scenes, prefabs, materials, shaders, animations, script references, resource paths and editor data. CPP2IL is more suitable for the code-audit side of Unity source code recovery and C# source recovery."
+            },
+            {
+                  "q": "Can source be recovered from a Unity3D release build after losing the original project?",
+                  "a": "For a legacy Unity3D project that you own and are authorized to analyze, a release build may help recover part of the source structure and logic. GameAssembly.dll, libil2cpp.so, WASM and global-metadata.dat can help recover classes, methods, fields and call chains, while AssetBundles and resource files may help recover some asset relationships. It cannot guarantee original comments, complete project layout, editor settings or the developer’s original source files."
+            },
+            {
+                  "q": "What is the difference between C# pseudocode, decompiled source and original source?",
+                  "a": "C# pseudocode is a readable representation reconstructed from binaries and metadata and may not compile directly. Decompiled source is closer to a high-level language result but may still miss variable names, comments and project context. Original source is the real code maintained by developers. The value of a Unity IL2CPP decompiler is to help software reverse engineering projects understand logic faster, not to promise an exact clone of the original repository."
+            },
+            {
+                  "q": "Why does control-flow recovery matter in Unity3D decompilation?",
+                  "a": "Control-flow recovery reconstructs high-level logic such as if, else, switch, for, while and try/catch from low-level branches, jumps, basic blocks and exception-handling structures. For Unity3D decompilation, IL2CPP reverse engineering, WASM decompiler workflows, ARM64 disassembly and GameAssembly.dll analysis, control-flow recovery directly affects C# pseudocode readability and code audit efficiency."
+            },
+            {
+                  "q": "How does call graph recovery help game security analysis?",
+                  "a": "Call graph recovery builds relationships among methods, types and modules, helping researchers locate logic related to login, payment, configuration, networking, encryption, resource loading, anti-cheat, hot update and third-party SDKs. For Unity game reverse engineering, game security analysis, malware detection, supply-chain audit and compatibility debugging, call graph recovery is a core capability."
+            },
+            {
+                  "q": "What does AST reconstruction mean in IL2CPP decompilation?",
+                  "a": "AST reconstruction reorganizes low-level instructions, intermediate representations and expressions into a source-like syntax tree. It makes IL2CPP decompilation output closer to C#, including expressions, assignments, conditions, loops, method calls and object access. More stable AST reconstruction improves Unity3D source recovery, software reverse engineering readability and code audit experience."
+            },
+            {
+                  "q": "Can method names, class names and field names always be recovered?",
+                  "a": "Not always. Many names in Unity IL2CPP depend on metadata, symbols and build settings. If global-metadata.dat is complete and not heavily obfuscated, type names, method names and field names are easier to recover. If metadata is encrypted, stripped, obfuscated or symbols are removed, the result may contain addresses, indexes or inferred names. Source recovery must combine metadata parsing, binary analysis, string analysis and manual review."
+            },
+            {
+                  "q": "Do generics, interfaces and virtual methods affect IL2CPP source recovery?",
+                  "a": "Yes. Generic instantiation, interface dispatch, virtual tables, reflection calls and AOT compilation in Unity IL2CPP make type recovery and call graph recovery more complex. High-quality IL2CPP reverse engineering must consider generic sharing, virtual invoke, interface invoke, rgctx, method pointers and metadata registration to reconstruct C# structures more accurately."
+            },
+            {
+                  "q": "What stages does a Unity3D reverse engineering project usually include?",
+                  "a": "A complete Unity3D reverse engineering project usually includes sample validation, authorization validation, platform identification, APK / IPA / WebGL / Windows unpacking, locating global-metadata.dat, analyzing GameAssembly.dll or libil2cpp.so, WASM analysis, method mapping, type recovery, call graph recovery, control-flow reconstruction, C# pseudocode browsing, asset correlation, report export and manual verification. CPP2IL mainly improves the IL2CPP decompilation and source recovery stages."
+            },
+            {
+                  "q": "What do software reverse engineering and game reverse engineering have in common?",
+                  "a": "Both software reverse engineering and game reverse engineering examine binary structures, function logic, data flow, control flow, call relationships, string references and security boundaries. Unity3D game reverse engineering more often involves IL2CPP, AssetBundles, hot update systems, WebGL WASM, Android APK, iOS IPA, anti-cheat and graphics assets, while general software reverse engineering may focus more on PE, ELF, Mach-O, protocols, packing and system APIs. CPP2IL is a more vertical Unity IL2CPP reverse engineering tool."
+            },
+            {
+                  "q": "How does Unity3D decompilation support code audit?",
+                  "a": "Unity3D decompilation can recover released package logic into more readable classes, methods, fields and call chains, helping auditors inspect sensitive APIs, network requests, configuration loading, encryption implementation, payment flows, third-party SDKs, logging and exception handling. For authorized internal projects, IL2CPP decompilation, C# source recovery and binary analysis can supplement code audit, supply-chain security and version comparison."
+            },
+            {
+                  "q": "How can Unity3D decompilation help compatibility debugging?",
+                  "a": "When full source is unavailable or multiple release versions must be compared, Unity3D decompilation can help locate platform-specific code, Android / iOS / WebGL conditional logic, third-party SDK initialization, resource loading paths, reflection calls, hot-update entries and exception-handling differences. Keywords include compatibility analysis, Unity WebGL debugging, APK analysis, IPA analysis, C# source recovery and call graph recovery."
+            },
+            {
+                  "q": "How can Unity3D decompilation be used for malware detection?",
+                  "a": "Within authorized security research, Unity3D decompilation can help analyze suspicious APK, IPA or WebGL packages for sensitive permission calls, dynamic loading, network reporting, configuration delivery, encrypted transport, reflection calls, third-party SDK behavior and hidden logic. IL2CPP reverse engineering and C# source recovery provide static code clues, but final conclusions should combine sandboxing, dynamic logs, network behavior and manual analysis."
+            },
+            {
+                  "q": "Why does third-party SDK auditing need Unity IL2CPP reverse engineering?",
+                  "a": "Unity3D projects often integrate advertising, analytics, login, payment, push, hot-update, anti-cheat and data analysis SDKs. SDK logic in release packages may be compiled through IL2CPP or loaded through mixed scripting systems. Unity IL2CPP reverse engineering, call graph recovery, string analysis and C# pseudocode browsing can help verify SDK initialization, permission use, data reporting, network domains and version differences."
+            },
+            {
+                  "q": "What should a reverse engineering project report include?",
+                  "a": "A Unity3D / IL2CPP reverse engineering project report usually includes sample information, platform and architecture, Unity version, key files, global-metadata.dat status, GameAssembly.dll / libil2cpp.so / WASM analysis results, type recovery summary, call graph, key functions, risk points, compatibility issues, source recovery scope, limitations and compliance boundaries. Such reports support security research, code audit and engineering debugging."
+            },
+            {
+                  "q": "Why is global-metadata.dat a core keyword for Unity IL2CPP SEO?",
+                  "a": "global-metadata.dat is an entry keyword for many Unity IL2CPP analysis questions because researchers often search for global-metadata.dat extractor, metadata parser, metadata.dat parsing, IL2CPP metadata and Unity metadata recovery. It directly affects type recovery, method recovery, field recovery, string recovery and C# source recovery, making it an important long-tail keyword for Unity3D decompilation and IL2CPP reverse engineering content."
+            },
+            {
+                  "q": "What does a metadata parser do in source recovery?",
+                  "a": "A metadata parser parses Unity IL2CPP metadata structures and extracts type definitions, method definitions, field definitions, parameters, properties, strings, generic information and index mappings. Without a reliable metadata parser, GameAssembly.dll analysis, libil2cpp.so analysis, WASM decompiler workflows and IL2CPP to C# results lack critical context."
+            },
+            {
+                  "q": "What are method pointers and metadata registration used for?",
+                  "a": "Method pointers, metadata registration and code registration correlate methods and types in metadata with function addresses or indexes in native binaries. In Unity IL2CPP decompilation, they help with method mapping, function renaming, call graph recovery, generic handling and C# pseudocode output, making them key technical terms in IL2CPP binary analysis."
+            },
+            {
+                  "q": "Why is string analysis useful in Unity3D reverse engineering?",
+                  "a": "String analysis helps locate API paths, configuration keys, resource names, log messages, error codes, network domains, encryption parameters, SDK names and feature entry points. Combined with IL2CPP decompilation, call graph recovery, global-metadata.dat parsing and C# pseudocode browsing, string analysis improves Unity game security analysis, software reverse engineering and code audit efficiency."
+            },
+            {
+                  "q": "Does symbol stripping affect Unity3D source recovery?",
+                  "a": "Yes. Symbol stripping removes function names, class names, debug information and address mappings, making GameAssembly.dll, libil2cpp.so, Mach-O or ELF analysis more dependent on metadata, strings, function signatures, cross-references and manual inference. Even if symbols are stripped, IL2CPP metadata and binary structure may still provide source recovery clues, but the result depends more heavily on analysis quality."
+            },
+            {
+                  "q": "How do obfuscation and protection affect IL2CPP decompilation?",
+                  "a": "Obfuscation and protection may change names, control flow, strings, metadata, binary layout and runtime loading, affecting Unity3D decompilation, C# source recovery and call graph recovery. Content can cover keywords such as deobfuscation analysis, protected IL2CPP, metadata encryption and control flow obfuscation, but real analysis must stay within authorized scope and requires manual validation."
+            },
+            {
+                  "q": "What is the difference between disassembly and decompilation in Unity IL2CPP?",
+                  "a": "Disassembly converts native binaries into assembly instructions such as ARM64 disassembly, x86 disassembly or WASM disassembly. Decompilation attempts to recover low-level instructions into higher-level C# pseudocode or structured logic. Unity IL2CPP analysis usually needs binary analysis and disassembly first, then metadata, AST reconstruction and control-flow recovery to produce more readable decompiled output."
+            },
+            {
+                  "q": "What is the difference between CPP2IL and Il2CppDumper?",
+                  "a": "Il2CppDumper is often used to export scripts, symbols, headers or helper analysis data from IL2CPP binaries and metadata. CPP2IL emphasizes an online workbench, structure recovery, C# source recovery, call graph recovery, control-flow reconstruction, result browsing and report output. SEO keywords can include CPP2IL vs Il2CppDumper, Unity IL2CPP decompiler, IL2CPP source recovery and automated IL2CPP analysis."
+            },
+            {
+                  "q": "How does CPP2IL relate to IDA Pro and Ghidra?",
+                  "a": "IDA Pro and Ghidra are general binary analysis platforms suitable for deep inspection of PE, ELF, Mach-O, ARM64, x86 and WASM structures. CPP2IL focuses on Unity IL2CPP and integrates metadata, types, methods, call relationships and C# structure recovery into a more vertical workflow. In real Unity reverse engineering projects, these tools can complement each other."
+            },
+            {
+                  "q": "Why can dnSpy or ILSpy not directly solve IL2CPP decompilation?",
+                  "a": "dnSpy and ILSpy are better suited for .NET / Mono / C# IL bytecode. After Unity IL2CPP publishing, C# logic has been converted to C++ and compiled to native code, no longer ordinary IL bytecode. IL2CPP decompilation therefore requires GameAssembly.dll, libil2cpp.so, global-metadata.dat, WASM, binary analysis and metadata correlation, not only traditional C# decompilers."
+            },
+            {
+                  "q": "Why does a Unity decompilation toolchain need automation?",
+                  "a": "A manual Unity decompilation toolchain often involves unpacking, locating metadata, exporting symbols, importing into Ghidra / IDA, renaming functions, analyzing call graphs, reviewing pseudocode and preparing reports. Automation reduces repetitive configuration, lowers mistakes, improves batch analysis efficiency and makes Unity3D source recovery, APK decompiler, WASM decompiler, GameAssembly.dll analysis and libil2cpp.so analysis more suitable for an online platform."
+            },
+            {
+                  "q": "What are the advantages of an online Unity IL2CPP decompiler?",
+                  "a": "An online Unity IL2CPP decompiler can place upload analysis, platform detection, metadata parsing, binary analysis, C# source recovery, call-chain browsing and result export in one interface. For users who do not want to build a complex local toolchain, an online workbench is better for quickly validating APK decompilation, IPA reverse engineering, WASM decompilation, Unity WebGL reverse engineering and software reverse engineering projects."
+            },
+            {
+                  "q": "Is CPP2IL intended for game cracking, payment bypass or cheating?",
+                  "a": "No. CPP2IL is positioned for authorized security research, code audit, compatibility analysis, malware detection, legacy project recovery and education. The page can cover keywords such as Unity game reverse engineering, game decompiler and Unity game decompilation, but usage should remain within legal authorization and research contexts, not cracking, piracy, license bypass, cheating or server attacks."
+            },
+            {
+                  "q": "What should be confirmed before Unity3D decompilation?",
+                  "a": "Before Unity3D decompilation, IL2CPP reverse engineering, APK decompilation, IPA reverse engineering or WebGL WASM analysis, confirm that the sample source is legal, authorization is clear, and the data does not include sensitive user information, keys or content restricted by confidentiality agreements. Enterprise projects should follow compliance processes, data governance and audit records to ensure software reverse engineering supports security research and engineering debugging."
+            },
+            {
+                  "q": "Does the FAQ page provide attack steps or bypass methods?",
+                  "a": "No. The FAQ explains concepts and product capabilities such as Unity3D decompilation, IL2CPP reverse engineering, C# source recovery, binary analysis, metadata parser and call graph recovery. It does not provide steps for license bypass, payment cracking, cheating, server attacks, evading security controls or extracting trade secrets."
+            },
+            {
+                  "q": "How can source recovery results support compliance audits?",
+                  "a": "Source recovery results help compliance teams inspect third-party components, SDK behavior, sensitive permissions, data collection, network transmission, encrypted storage, logging and platform differences. For Unity3D / IL2CPP projects, C# pseudocode, call graphs, string references and binary analysis reports can serve as security audit material, but should be cross-validated with source repositories, build records and dynamic testing results."
+            },
+            {
+                  "q": "What data safety issues should be considered when uploading APK, IPA, WASM or DLL files?",
+                  "a": "Before uploading APK, IPA, WASM, GameAssembly.dll, libil2cpp.so, global-metadata.dat, ELF, PE or Mach-O files, confirm that they do not contain keys, accounts, internal addresses, user private data, trade secrets or NDA-restricted content. For enterprise security research and software reverse engineering projects, use dedicated samples, sanitized data and explicit authorization records."
+            },
+            {
+                  "q": "Why should the FAQ include decompilation, reverse engineering and source recovery keywords together?",
+                  "a": "Search behavior varies: some users search for Unity3D decompilation, others for Unity reverse engineering, IL2CPP decompiler, C# source recovery, source recovery or software reverse engineering projects. Placing these keywords inside real questions and answers covers more long-tail search intent while compliance language emphasizes authorized security research and code audit boundaries."
+            }
+      ]
+};
+    const GROUP_TITLES = {
+      "zh-CN": [
+            "Unity3D / IL2CPP 基础",
+            "包体格式与平台",
+            "反编译与源码恢复",
+            "逆向工程项目场景",
+            "元数据与技术关键词",
+            "工具链与对比关键词",
+            "授权、安全与边界"
+      ],
+      "en": [
+            "Unity3D / IL2CPP Basics",
+            "Formats and Platforms",
+            "Decompilation and Source Recovery",
+            "Reverse Engineering Project Scenarios",
+            "Metadata and Technical Keywords",
+            "Toolchain and Comparison Keywords",
+            "Authorization, Safety and Boundaries"
+      ]
+};
+    const supportedLangs = ["zh-CN", "en"];
+    function getLangFromUrl() { const lang = new URLSearchParams(window.location.search).get("lang"); if (!lang) return null; return /^zh/i.test(lang) ? "zh-CN" : /^en/i.test(lang) ? "en" : null; }
+    function detectUserLang() { const fromUrl = getLangFromUrl(); if (fromUrl) return fromUrl; const saved = localStorage.getItem("cpp2il_lang"); if (supportedLangs.includes(saved)) return saved; const browserLangs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""]; return browserLangs.some(function(lang) { return /^zh/i.test(lang); }) ? "zh-CN" : "en"; }
+    function t(lang, key) { return (I18N[lang] && I18N[lang][key]) || I18N["zh-CN"][key] || key; }
+    function setMeta(name, value, attr) { const selector = attr === "property" ? 'meta[property="' + name + '"]' : 'meta[name="' + name + '"]'; const el = document.querySelector(selector); if (el) el.setAttribute("content", value); }
+    function buildFaqSchema(lang) { return {"@context":"https://schema.org","@type":"FAQPage","inLanguage":lang,"mainEntity":FAQS[lang].map(function(x){return {"@type":"Question","name":x.q,"acceptedAnswer":{"@type":"Answer","text":x.a}};})}; }
+    function applyLang(lang) {
+      const current = supportedLangs.includes(lang) ? lang : "zh-CN";
+      document.documentElement.lang = current; document.documentElement.dataset.lang = current; document.title = t(current, "meta.title");
+      setMeta("description", t(current, "meta.description"), "name"); setMeta("og:title", t(current, "meta.title"), "property"); setMeta("og:description", t(current, "meta.description"), "property"); setMeta("twitter:title", t(current, "meta.title"), "name"); setMeta("twitter:description", t(current, "meta.description"), "name");
+      document.querySelectorAll("[data-i18n]").forEach(function(el) { el.textContent = t(current, el.dataset.i18n); });
+      document.querySelectorAll("[data-i18n-attr]").forEach(function(el) { el.dataset.i18nAttr.split(";").forEach(function(pair) { const parts = pair.split(":"); if (parts.length !== 2) return; el.setAttribute(parts[0].trim(), t(current, parts[1].trim())); }); });
+      document.querySelectorAll("[data-lang-href]").forEach(function(el) { const base = el.dataset.langHref; if (!base) return; const u = new URL(base, window.location.href); u.searchParams.set("lang", current); el.setAttribute("href", u.pathname.split('/').pop() + u.search + u.hash); });
+      document.querySelectorAll("[data-lang-set]").forEach(function(btn) { const active = btn.dataset.langSet === current; btn.classList.toggle("active", active); btn.setAttribute("aria-pressed", active ? "true" : "false"); });
+      document.querySelectorAll("[data-group-index]").forEach(function(el) { const title = GROUP_TITLES[current][Number(el.dataset.groupIndex)]; if (title) el.textContent = title; });
+      document.querySelectorAll("[data-side-index]").forEach(function(el) { const title = GROUP_TITLES[current][Number(el.dataset.sideIndex)]; if (title) el.textContent = title; });
+      document.querySelectorAll("[data-faq-index]").forEach(function(item) { const data = FAQS[current][Number(item.dataset.faqIndex)]; if (!data) return; const q = item.querySelector("[data-faq-question]"); const a = item.querySelector("[data-faq-answer]"); if (q) q.textContent = data.q; if (a) a.textContent = data.a; });
+      const faqLd = document.getElementById("ld-faq"); if (faqLd) faqLd.textContent = JSON.stringify(buildFaqSchema(current));
+      localStorage.setItem("cpp2il_lang", current);
+    }
+    document.querySelectorAll("[data-lang-set]").forEach(function(btn) { btn.addEventListener("click", function() { const lang = btn.dataset.langSet; applyLang(lang); const url = new URL(window.location.href); url.searchParams.set("lang", lang); window.history.replaceState({}, "", url.toString()); }); });
+    applyLang(detectUserLang());
+</script>
+</body>
+</html>

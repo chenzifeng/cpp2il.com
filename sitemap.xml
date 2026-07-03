@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://cpp2il.com/</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cpp2il.com/?lang=zh-CN" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cpp2il.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cpp2il.com/" />
+  </url>
+  <url>
+    <loc>https://cpp2il.com/qa.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cpp2il.com/qa.html?lang=zh-CN" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cpp2il.com/qa.html?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cpp2il.com/qa.html" />
+  </url>
+</urlset>
