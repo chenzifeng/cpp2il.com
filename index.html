@@ -54,6 +54,51 @@
   }
   </script>
 
+  <!-- VideoObject 结构化数据：中英文视频源 -->
+  <script type="application/ld+json" id="ld-videos">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "VideoObject",
+        "name": "CPP2IL 平台介绍视频 / CPP2IL Platform Introduction Video",
+        "description": "CPP2IL 平台介绍视频，中文版本使用 Bilibili，英文版本使用 YouTube，展示 Unity IL2CPP 反编译、逆向工程、C# 源代码恢复、APK / IPA / WASM / WebGL / ARM64 包体分析能力。",
+        "thumbnailUrl": ["https://cpp2il.com/assets/slides/0.png"],
+        "embedUrl": "https://www.youtube.com/embed/uleAhjYoUIY",
+        "contentUrl": "https://www.youtube.com/watch?v=uleAhjYoUIY",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "VideoObject",
+        "name": "CPP2IL 产品演示视频 / CPP2IL Product Demo Video",
+        "description": "CPP2IL 产品演示视频，英文版本使用 YouTube，展示包体上传、global-metadata.dat 识别、IL2CPP 元数据解析、AST 还原、调用关系恢复与 C# 源代码还原流程。",
+        "thumbnailUrl": ["https://cpp2il.com/assets/slides/0.png"],
+        "embedUrl": "https://www.youtube.com/embed/UOFBK9RiGUw",
+        "contentUrl": "https://www.youtube.com/watch?v=UOFBK9RiGUw",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "VideoObject",
+        "name": "CPP2IL 平台介绍视频",
+        "description": "CPP2IL 中文平台介绍视频，使用 Bilibili 展示 Unity3D 反编译、Unity 逆向工程、IL2CPP 到 C#、源码恢复与安全研究相关能力。",
+        "thumbnailUrl": ["https://cpp2il.com/assets/slides/0.png"],
+        "embedUrl": "https://player.bilibili.com/player.html?isOutside=true&aid=116822724707548&bvid=BV1vm7W6gEjL&cid=39458703555&p=1",
+        "contentUrl": "https://www.bilibili.com/video/BV1vm7W6gEjL/",
+        "inLanguage": "zh-CN"
+      },
+      {
+        "@type": "VideoObject",
+        "name": "CPP2IL 产品演示视频",
+        "description": "CPP2IL 中文产品演示视频，展示 Unity IL2CPP 包体上传、元数据提取、结构识别、调用链恢复、控制流还原与 C# 源码恢复流程。",
+        "thumbnailUrl": ["https://cpp2il.com/assets/slides/0.png"],
+        "embedUrl": "https://player.bilibili.com/player.html?isOutside=true&aid=116822724576489&bvid=BV1Rm7W6uEJM&cid=39460079403&p=1",
+        "contentUrl": "https://www.bilibili.com/video/BV1Rm7W6uEJM/",
+        "inLanguage": "zh-CN"
+      }
+    ]
+  }
+  </script>
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -202,7 +247,7 @@
     .meta-card span{display:block;margin-top:5px;color:var(--soft);font-size:12px;font-weight:800}
 
     /* ══════════════════════════════════════════
-       7. Hero 视觉区域（Bilibili iframe 嵌入）
+       7. Hero 视觉区域（按语言切换 Bilibili / YouTube iframe）
        ══════════════════════════════════════════ */
     .visual{position:relative;width:100%;max-width:960px}
     .visual::before{content:"";position:absolute;inset:-52px -34px auto auto;width:280px;height:280px;border-radius:999px;background:radial-gradient(circle,rgba(82,100,245,.20),transparent 70%);filter:blur(4px);z-index:-1}
@@ -506,7 +551,7 @@
           </div>
         </div>
 
-        <!-- 下方：Bilibili iframe 嵌入 -->
+        <!-- 下方：平台介绍视频 iframe，中文加载 Bilibili，英文加载 YouTube -->
         <div class="visual" aria-label="Unity CPP2IL 功能预览" data-i18n-attr="aria-label:hero.visualAria">
           <div class="screen-card">
             <div class="browser-bar">
@@ -515,12 +560,17 @@
             </div>
             <div class="iframe-wrap">
               <iframe
+                data-video-iframe="intro"
+                data-zh-src="//player.bilibili.com/player.html?isOutside=true&aid=116822724707548&bvid=BV1vm7W6gEjL&cid=39458703555&p=1&high_quality=1&danmaku=0"
+                data-en-src="https://www.youtube.com/embed/uleAhjYoUIY?rel=0&modestbranding=1&playsinline=1"
                 src="//player.bilibili.com/player.html?isOutside=true&aid=116822724707548&bvid=BV1vm7W6gEjL&cid=39458703555&p=1&high_quality=1&danmaku=0"
                 scrolling="no"
                 frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen="true"
+                referrerpolicy="strict-origin-when-cross-origin"
                 loading="lazy"
-                title="CPP2IL 功能预览视频" data-i18n-attr="title:hero.previewVideoTitle"
+                title="CPP2IL 平台介绍视频" data-i18n-attr="title:hero.previewVideoTitle"
               ></iframe>
             </div>
           </div>
@@ -551,10 +601,15 @@
           <div class="video-shell">
             <div class="iframe-wrap">
               <iframe
+                data-video-iframe="demo"
+                data-zh-src="//player.bilibili.com/player.html?isOutside=true&aid=116822724576489&bvid=BV1Rm7W6uEJM&cid=39460079403&p=1&high_quality=1&danmaku=0"
+                data-en-src="https://www.youtube.com/embed/UOFBK9RiGUw?rel=0&modestbranding=1&playsinline=1"
                 src="//player.bilibili.com/player.html?isOutside=true&aid=116822724576489&bvid=BV1Rm7W6uEJM&cid=39460079403&p=1&high_quality=1&danmaku=0"
                 scrolling="no"
                 frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen="true"
+                referrerpolicy="strict-origin-when-cross-origin"
                 loading="lazy"
                 title="CPP2IL 产品演示视频" data-i18n-attr="title:demo.videoTitle"
               ></iframe>
@@ -690,7 +745,7 @@
         "hero.meta3Desc": "可追踪转换过程",
         "hero.visualAria": "Unity CPP2IL 功能预览",
         "hero.browserTitle": "IL2CPP 分析工作台",
-        "hero.previewVideoTitle": "CPP2IL 功能预览视频",
+        "hero.previewVideoTitle": "CPP2IL 平台介绍视频",
         "demo.aria": "Unity CPP2IL 产品演示",
         "demo.kicker": "产品演示",
         "demo.title": "观看 CPP2IL 实际分析流程",
@@ -762,7 +817,7 @@
         "hero.meta3Desc": "Traceable recovery flow",
         "hero.visualAria": "Unity CPP2IL feature preview",
         "hero.browserTitle": "IL2CPP Analysis Workbench",
-        "hero.previewVideoTitle": "CPP2IL feature preview video",
+        "hero.previewVideoTitle": "CPP2IL platform introduction video",
         "demo.aria": "Unity CPP2IL product demo",
         "demo.kicker": "Product Demo",
         "demo.title": "Watch the real CPP2IL analysis workflow",
@@ -834,6 +889,15 @@
       if (el) el.setAttribute("content", value);
     }
 
+    function updateVideoEmbeds(lang) {
+      document.querySelectorAll("[data-video-iframe]").forEach(function(frame) {
+        const src = lang === "en" ? frame.dataset.enSrc : frame.dataset.zhSrc;
+        if (src && frame.getAttribute("src") !== src) {
+          frame.setAttribute("src", src);
+        }
+      });
+    }
+
     function applyLang(lang) {
       const current = supportedLangs.includes(lang) ? lang : "zh-CN";
       document.documentElement.lang = current;
@@ -844,6 +908,7 @@
       setMeta("og:description", t(current, "meta.description"), "property");
       setMeta("twitter:title", t(current, "meta.title"), "name");
       setMeta("twitter:description", t(current, "meta.description"), "name");
+      updateVideoEmbeds(current);
 
       document.querySelectorAll("[data-i18n]").forEach(function(el) {
         el.textContent = t(current, el.dataset.i18n);
