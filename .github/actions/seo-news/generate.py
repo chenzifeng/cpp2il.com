@@ -557,7 +557,7 @@ def html_page(
     ))[:14]
     for term in used_terms:
         item = keyword_by_term.get(term)
-        href = item.internal_url if item else "/news/"
+        href = item.internal_url if item else "/public/news/"
         keyword_links.append(
             f'<a class="tag" href="{html.escape(href, quote=True)}">{html.escape(term)}</a>'
         )
@@ -635,7 +635,7 @@ def html_page(
   </div></header>
   <main class="wrap">{''.join(cards)}</main>
   <footer><div class="wrap">
-    <a href="{html.escape(site.get('home_path', '/'), quote=True)}">{site_name}</a> · <a href="/news/">News archive</a> · Updated {generated_at.strftime('%Y-%m-%d %H:%M UTC')}
+    <a href="{html.escape(site.get('home_path', '/'), quote=True)}">{site_name}</a> · <a href="/public/news/">News archive</a> · Updated {generated_at.strftime('%Y-%m-%d %H:%M UTC')}
   </div></footer>
 </body>
 </html>
@@ -661,7 +661,7 @@ def render_index(site: dict, pages: Sequence[dict]) -> str:
 <html lang="{html.escape(site.get('language', 'en'))}"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Technical News | {html.escape(site['name'])}</title><meta name="description" content="{description}">
-<link rel="canonical" href="{base_url}/news/"><link rel="alternate" type="application/rss+xml" href="{base_url}/news.xml">
+<link rel="canonical" href="{base_url}/public/news/"><link rel="alternate" type="application/rss+xml" href="{base_url}/public/news.xml">
 <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False)}</script>
 <style>body{{margin:0;background:#080b12;color:#eef3ff;font:16px/1.6 system-ui,sans-serif}}main{{width:min(960px,calc(100% - 32px));margin:auto;padding:64px 0}}a{{color:#85b2ff}}h1{{font-size:clamp(2.2rem,7vw,4.8rem);line-height:1}}p,small{{color:#a7b2c5}}ul{{list-style:none;padding:0;border-top:1px solid #263146}}li{{display:flex;justify-content:space-between;gap:18px;padding:18px 0;border-bottom:1px solid #263146}}li span{{display:flex;gap:12px;white-space:nowrap}}time{{color:#8d99ac}}</style>
 </head><body><main><a href="/">← {html.escape(site['name'])}</a><h1>Technical News</h1><p>{description}</p><ul>{''.join(rows)}</ul></main></body></html>
@@ -676,13 +676,13 @@ def render_rss(site: dict, pages: Sequence[dict], generated_at: dt.datetime) -> 
         page_date = dt.datetime.fromisoformat(page["date"]).replace(tzinfo=dt.timezone.utc)
         items.append(f"""<item><title>{xml_escape(page['title'])}</title><link>{xml_escape(url)}</link><guid isPermaLink="true">{xml_escape(url)}</guid><pubDate>{email.utils.format_datetime(page_date)}</pubDate><description>{xml_escape(page.get('description', ''))}</description></item>""")
     return f"""<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>{xml_escape(site['name'])} Technical News</title><link>{xml_escape(base_url + '/news/')}</link><description>{xml_escape(site.get('description', 'Curated technical news.'))}</description><lastBuildDate>{email.utils.format_datetime(generated_at)}</lastBuildDate>{''.join(items)}</channel></rss>
+<rss version="2.0"><channel><title>{xml_escape(site['name'])} Technical News</title><link>{xml_escape(base_url + '/public/news/')}</link><description>{xml_escape(site.get('description', 'Curated technical news.'))}</description><lastBuildDate>{email.utils.format_datetime(generated_at)}</lastBuildDate>{''.join(items)}</channel></rss>
 """
 
 
 def render_standard_sitemap(site: dict, pages: Sequence[dict]) -> str:
     base_url = site["base_url"].rstrip("/")
-    urls = [f"<url><loc>{xml_escape(base_url + '/news/')}</loc></url>"]
+    urls = [f"<url><loc>{xml_escape(base_url + '/public/news/')}</loc></url>"]
     for page in pages[:365]:
         loc = absolute_url(base_url, page["path"])
         urls.append(f"<url><loc>{xml_escape(loc)}</loc><lastmod>{xml_escape(page.get('updated_at', page['date']))}</lastmod></url>")
