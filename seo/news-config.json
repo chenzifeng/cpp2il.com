@@ -1,0 +1,306 @@
+{
+  "site": {
+    "name": "CPP2IL",
+    "base_url": "https://www.cpp2il.com",
+    "language": "en",
+    "publisher_name": "CPP2IL",
+    "description": "Curated Unity, IL2CPP, reverse engineering, decompilation and WebAssembly tooling updates.",
+    "output_dir": "public",
+    "news_path": "news",
+    "home_path": "/",
+    "logo_url": "https://www.cpp2il.com/logo.png"
+  },
+  "keywords": [
+    {
+      "term": "Unity IL2CPP",
+      "aliases": ["IL2CPP", "Unity IL2CPP", "IL2CPP metadata", "IL2CPP binary", "AOT scripting backend"],
+      "priority": 10,
+      "internal_url": "/"
+    },
+    {
+      "term": "IL2CPP decompilation",
+      "aliases": ["IL2CPP decompiler", "decompile IL2CPP", "IL2CPP recovery", "IL2CPP code recovery", "IL2CPP analysis"],
+      "priority": 10,
+      "internal_url": "/"
+    },
+    {
+      "term": "Unity source code recovery",
+      "aliases": ["C# source recovery", "Unity code recovery", "source code reconstruction", "recover Unity source code"],
+      "priority": 9,
+      "internal_url": "/"
+    },
+    {
+      "term": "Unity WebGL reverse engineering",
+      "aliases": ["Unity WebGL", "WASM reverse engineering", "WebAssembly analysis", "WebGL decompilation", "wasm decompiler"],
+      "priority": 9,
+      "internal_url": "/"
+    },
+    {
+      "term": "APK and IPA analysis",
+      "aliases": ["APK analysis", "IPA analysis", "Android binary analysis", "iOS binary analysis", "ARM64 analysis"],
+      "priority": 7,
+      "internal_url": "/"
+    },
+    {
+      "term": "Unity engine releases",
+      "aliases": ["Unity Editor", "Unity LTS", "Unity Beta", "Unity Alpha", "Unity 6", "scripting backend"],
+      "priority": 6,
+      "internal_url": "/news/"
+    },
+    {
+      "term": "Unity asset extraction",
+      "aliases": ["Unity asset extraction", "Unity asset recovery", "AssetRipper", "AssetStudio", "asset bundle extraction"],
+      "priority": 7,
+      "internal_url": "/"
+    },
+    {
+      "term": "Unity runtime tooling",
+      "aliases": ["BepInEx", "MelonLoader", "Il2CppInterop", "Il2CppUnhollower", "Unity mod loader"],
+      "priority": 7,
+      "internal_url": "/"
+    },
+    {
+      "term": "C# decompilation",
+      "aliases": ["C# decompiler", ".NET decompiler", "ILSpy", "dnSpy", "assembly decompiler"],
+      "priority": 7,
+      "internal_url": "/"
+    },
+    {
+      "term": "Binary reverse engineering",
+      "aliases": ["binary reverse engineering", "binary analysis", "Ghidra", "decompiler analysis", "disassembler"],
+      "priority": 7,
+      "internal_url": "/"
+    },
+    {
+      "term": "Dynamic instrumentation",
+      "aliases": ["dynamic instrumentation", "Frida", "runtime hooking", "native hooking", "memory instrumentation"],
+      "priority": 6,
+      "internal_url": "/"
+    },
+    {
+      "term": "WebAssembly tooling",
+      "aliases": ["WebAssembly tooling", "WABT", "Binaryen", "Emscripten", "Wasmtime", "wasm2wat", "wasm-opt"],
+      "priority": 7,
+      "internal_url": "/"
+    }
+  ],
+  "feeds": [
+    {
+      "name": "Unity Official Blog",
+      "url": "https://blog.unity.com/rss",
+      "category": "unity-official",
+      "trust": 10,
+      "max_items": 3,
+      "source_boost": 2,
+      "include_any": ["IL2CPP", "WebGL", "WebAssembly", "WASM", "scripting backend", "CoreCLR", "compiler", "build pipeline", "Android", "iOS", "security", "profiling", "memory", "AOT"],
+      "exclude_any": ["Made with Unity", "advertising", "monetization", "creator spotlight", "games roundup"]
+    },
+    {
+      "name": "Unity LTS Releases",
+      "url": "https://unity.com/releases/editor/lts-releases.xml",
+      "category": "unity-releases",
+      "trust": 10,
+      "max_items": 2,
+      "source_boost": 3,
+      "topic_terms": ["Unity engine releases"]
+    },
+    {
+      "name": "Unity Beta Releases",
+      "url": "https://unity.com/releases/editor/beta-releases.xml",
+      "category": "unity-releases",
+      "trust": 10,
+      "max_items": 1,
+      "source_boost": 2,
+      "topic_terms": ["Unity engine releases"]
+    },
+    {
+      "name": "Unity Alpha Releases",
+      "url": "https://unity.com/releases/editor/alpha-releases.xml",
+      "category": "unity-releases",
+      "trust": 10,
+      "max_items": 1,
+      "source_boost": 1,
+      "topic_terms": ["Unity engine releases"]
+    },
+    {
+      "name": "Cpp2IL Releases",
+      "url": "https://github.com/SamboyCoding/Cpp2IL/releases.atom",
+      "category": "il2cpp-core",
+      "trust": 10,
+      "max_items": 3,
+      "source_boost": 8,
+      "topic_terms": ["Unity IL2CPP", "IL2CPP decompilation"]
+    },
+    {
+      "name": "Cpp2IL Development Commits",
+      "url": "https://github.com/SamboyCoding/Cpp2IL/commits/development.atom",
+      "category": "il2cpp-core",
+      "trust": 9,
+      "max_items": 2,
+      "source_boost": 7,
+      "topic_terms": ["Unity IL2CPP", "IL2CPP decompilation"]
+    },
+    {
+      "name": "AssetRipper Releases",
+      "url": "https://github.com/AssetRipper/AssetRipper/releases.atom",
+      "category": "unity-assets",
+      "trust": 9,
+      "max_items": 2,
+      "source_boost": 5,
+      "topic_terms": ["Unity asset extraction", "Unity source code recovery"]
+    },
+    {
+      "name": "Il2CppDumper Releases",
+      "url": "https://github.com/Perfare/Il2CppDumper/releases.atom",
+      "category": "il2cpp-core",
+      "trust": 9,
+      "max_items": 2,
+      "source_boost": 7,
+      "topic_terms": ["Unity IL2CPP", "IL2CPP decompilation"]
+    },
+    {
+      "name": "Il2CppInspector Releases",
+      "url": "https://github.com/djkaty/Il2CppInspector/releases.atom",
+      "category": "il2cpp-core",
+      "trust": 8,
+      "max_items": 1,
+      "source_boost": 5,
+      "topic_terms": ["Unity IL2CPP", "IL2CPP decompilation"]
+    },
+    {
+      "name": "Il2CppVersions Commits",
+      "url": "https://github.com/nneonneo/Il2CppVersions/commits/master.atom",
+      "category": "il2cpp-metadata",
+      "trust": 9,
+      "max_items": 2,
+      "source_boost": 7,
+      "topic_terms": ["Unity IL2CPP"]
+    },
+    {
+      "name": "BepInEx Releases",
+      "url": "https://github.com/BepInEx/BepInEx/releases.atom",
+      "category": "unity-runtime",
+      "trust": 9,
+      "max_items": 2,
+      "source_boost": 4,
+      "topic_terms": ["Unity runtime tooling", "Unity IL2CPP"]
+    },
+    {
+      "name": "Il2CppInterop Releases",
+      "url": "https://github.com/BepInEx/Il2CppInterop/releases.atom",
+      "category": "unity-runtime",
+      "trust": 9,
+      "max_items": 2,
+      "source_boost": 6,
+      "topic_terms": ["Unity runtime tooling", "Unity IL2CPP"]
+    },
+    {
+      "name": "MelonLoader Releases",
+      "url": "https://github.com/LavaGang/MelonLoader/releases.atom",
+      "category": "unity-runtime",
+      "trust": 8,
+      "max_items": 2,
+      "source_boost": 4,
+      "topic_terms": ["Unity runtime tooling", "Unity IL2CPP"]
+    },
+    {
+      "name": "ILSpy Releases",
+      "url": "https://github.com/icsharpcode/ILSpy/releases.atom",
+      "category": "dotnet-decompilers",
+      "trust": 9,
+      "max_items": 2,
+      "source_boost": 4,
+      "topic_terms": ["C# decompilation"]
+    },
+    {
+      "name": "dnSpyEx Releases",
+      "url": "https://github.com/dnSpyEx/dnSpy/releases.atom",
+      "category": "dotnet-decompilers",
+      "trust": 8,
+      "max_items": 2,
+      "source_boost": 4,
+      "topic_terms": ["C# decompilation"]
+    },
+    {
+      "name": "Ghidra Releases",
+      "url": "https://github.com/NationalSecurityAgency/ghidra/releases.atom",
+      "category": "reverse-engineering",
+      "trust": 10,
+      "max_items": 1,
+      "source_boost": 3,
+      "topic_terms": ["Binary reverse engineering"]
+    },
+    {
+      "name": "Frida Releases",
+      "url": "https://github.com/frida/frida/releases.atom",
+      "category": "dynamic-analysis",
+      "trust": 9,
+      "max_items": 1,
+      "source_boost": 3,
+      "topic_terms": ["Dynamic instrumentation", "APK and IPA analysis"]
+    },
+    {
+      "name": "Emscripten Releases",
+      "url": "https://github.com/emscripten-core/emscripten/releases.atom",
+      "category": "webassembly",
+      "trust": 10,
+      "max_items": 1,
+      "source_boost": 3,
+      "topic_terms": ["WebAssembly tooling", "Unity WebGL reverse engineering"]
+    },
+    {
+      "name": "WABT Releases",
+      "url": "https://github.com/WebAssembly/wabt/releases.atom",
+      "category": "webassembly",
+      "trust": 10,
+      "max_items": 1,
+      "source_boost": 3,
+      "topic_terms": ["WebAssembly tooling", "Unity WebGL reverse engineering"]
+    },
+    {
+      "name": "Binaryen Releases",
+      "url": "https://github.com/WebAssembly/binaryen/releases.atom",
+      "category": "webassembly",
+      "trust": 10,
+      "max_items": 1,
+      "source_boost": 3,
+      "topic_terms": ["WebAssembly tooling", "Unity WebGL reverse engineering"]
+    },
+    {
+      "name": "Wasmtime Releases",
+      "url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+      "category": "webassembly",
+      "trust": 9,
+      "max_items": 1,
+      "source_boost": 2,
+      "topic_terms": ["WebAssembly tooling"]
+    }
+  ],
+  "generation": {
+    "max_items": 14,
+    "min_items": 1,
+    "min_new_items": 1,
+    "min_score": 6,
+    "max_age_days": 60,
+    "max_items_per_source": 2,
+    "max_items_per_category": 4,
+    "excerpt_length": 320,
+    "max_discovered_keywords": 40,
+    "min_discovered_occurrences": 2,
+    "page_title_keyword_count": 2,
+    "daily_slug": "unity-il2cpp-reverse-engineering-news",
+    "request_timeout_seconds": 20,
+    "feed_fetch_retries": 2,
+    "feed_retry_delay_seconds": 1.5,
+    "max_feed_bytes": 2000000,
+    "user_agent": "CPP2IL-SEO-News/2.0 (+https://www.cpp2il.com)",
+    "google_news_sitemap": false,
+    "global_exclude_terms": [
+      "casino",
+      "gambling",
+      "giveaway",
+      "job opening",
+      "we are hiring"
+    ]
+  }
+}
