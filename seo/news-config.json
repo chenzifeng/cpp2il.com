@@ -5,7 +5,7 @@
     "language": "en",
     "publisher_name": "CPP2IL",
     "description": "Curated Unity, IL2CPP, reverse engineering, decompilation and WebAssembly tooling updates.",
-    "output_dir": "public",
+    "output_dir": ".",
     "news_path": "news",
     "home_path": "/",
     "logo_url": "https://www.cpp2il.com/logo.png"
