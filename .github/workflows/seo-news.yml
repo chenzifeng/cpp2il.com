@@ -1,0 +1,69 @@
+name: SEO News
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 01:17 UTC = 09:17 Malaysia time. Scheduled runs can be delayed by GitHub.
+    - cron: "17 1 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seo-news-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.SEO_PUSH_TOKEN || github.token }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Validate configuration
+        run: |
+          python .github/actions/seo-news/generate.py \
+            --workspace . \
+            --config seo/news-config.json \
+            --validate-config
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Generate SEO news pages
+        id: seo_news
+        uses: ./.github/actions/seo-news
+        with:
+          config: seo/news-config.json
+
+      - name: Print generation summary
+        run: |
+          echo "Page entries: ${{ steps.seo_news.outputs.generated_count }}"
+          echo "New entries: ${{ steps.seo_news.outputs.new_item_count }}"
+          echo "Sources OK: ${{ steps.seo_news.outputs.source_success_count }}"
+          echo "Sources failed: ${{ steps.seo_news.outputs.source_failure_count }}"
+          echo "Page: ${{ steps.seo_news.outputs.page_path }}"
+
+      - name: Commit generated content
+        shell: bash
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "No SEO news changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "seo: update curated technical news [skip ci]"
+          git push
