@@ -1,0 +1,38 @@
+name: "SEO News Generator"
+description: "Curate trusted RSS/Atom entries and generate diverse static SEO news pages."
+author: "Repository maintainers"
+
+inputs:
+  config:
+    description: "Path to the JSON configuration file, relative to the repository root."
+    required: false
+    default: "seo/news-config.json"
+
+outputs:
+  generated_count:
+    description: "Number of entries on the generated daily page."
+    value: ${{ steps.generate.outputs.generated_count }}
+  new_item_count:
+    description: "Number of newly published entries."
+    value: ${{ steps.generate.outputs.new_item_count }}
+  page_path:
+    description: "Generated daily page path."
+    value: ${{ steps.generate.outputs.page_path }}
+  source_success_count:
+    description: "Number of successfully fetched sources."
+    value: ${{ steps.generate.outputs.source_success_count }}
+  source_failure_count:
+    description: "Number of failed sources."
+    value: ${{ steps.generate.outputs.source_failure_count }}
+
+runs:
+  using: "composite"
+  steps:
+    - id: generate
+      shell: bash
+      env:
+        SEO_NEWS_CONFIG: ${{ inputs.config }}
+      run: |
+        python "$GITHUB_ACTION_PATH/generate.py" \
+          --workspace "$GITHUB_WORKSPACE" \
+          --config "$SEO_NEWS_CONFIG"
