@@ -655,7 +655,7 @@ def render_index(site: dict, pages: Sequence[dict]) -> str:
     schema = {
         "@context": "https://schema.org", "@type": "CollectionPage",
         "name": f'{site["name"]} Technical News', "description": site.get("description", "Curated technical news."),
-        "url": base_url + "/news/",
+        "url": base_url + "/public/news/",
     }
     return f"""<!doctype html>
 <html lang="{html.escape(site.get('language', 'en'))}"><head>
