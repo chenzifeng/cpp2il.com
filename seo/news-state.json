@@ -1,8 +1,59 @@
 {
   "version": 2,
-  "last_generated_at": "2026-07-21T04:35:50.193761+00:00",
+  "last_generated_at": "2026-07-22T04:37:03.866137+00:00",
   "feed_errors": [],
   "pages": [
+    {
+      "date": "2026-07-22",
+      "path": "/news/2026-07-22-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Dynamic instrumentation News — July 22, 2026",
+      "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 2 relevant releases and technical developments with or…",
+      "item_count": 2,
+      "new_item_count": 2,
+      "updated_at": "2026-07-22T04:37:03.866137+00:00",
+      "entries": [
+        {
+          "entry_id": "d27c4730b8daaa908fdab1dee5edc1d2c3eba86fd59f1ea7c4d0708b8b371845",
+          "title": "Frida 17.16.4",
+          "url": "https://github.com/frida/frida/releases/tag/17.16.4",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-07-21T23:22:22+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 32
+        },
+        {
+          "entry_id": "c9216f75059f514a7aa6c9e990bc96a5c99ce3ebaddcf17dd5e8c10e4d6c83b1",
+          "title": "v47.0.2: Release Wasmtime 47.0.2 (#13925)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v47.0.2",
+          "summary": "47.0.2 Released 2026-07-21. Fixed Fix async-delivered write-closed events for futures. #13914 Fix call hooks with yields and concurrent execution. #13871",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly",
+          "published": "2026-07-21T19:57:26+00:00",
+          "trust": 9,
+          "source_boost": 2,
+          "topic_terms": [
+            "WebAssembly tooling"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling"
+          ],
+          "score": 27
+        }
+      ]
+    },
     {
       "date": "2026-07-21",
       "path": "/news/2026-07-21-unity-il2cpp-reverse-engineering-news.html",
