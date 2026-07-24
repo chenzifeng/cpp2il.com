@@ -856,7 +856,7 @@ def main() -> int:
 
     slug_prefix = slugify(str(generation.get("daily_slug", "unity-il2cpp-reverse-engineering-news")))
     filename = f"{today}-{slug_prefix}.html"
-    relative_path = f"/{site.get('news_path', 'news').strip('/')}/{filename}"
+    relative_path = f"/public/{site.get('news_path', 'news').strip('/')}/{filename}"
     page_url = absolute_url(site["base_url"], relative_path)
     page_html, title, description = html_page(
         site=site,
