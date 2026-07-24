@@ -1,5 +1,5 @@
 name: "SEO News Generator"
-description: "Curate trusted RSS/Atom entries and generate diverse static SEO news pages."
+description: "Curate RSS/Atom, GitHub discovery, and Hacker News signals into static SEO news pages."
 author: "Repository maintainers"
 
 inputs:
@@ -32,6 +32,7 @@ runs:
       shell: bash
       env:
         SEO_NEWS_CONFIG: ${{ inputs.config }}
+        GITHUB_API_TOKEN: ${{ github.token }}
       run: |
         python "$GITHUB_ACTION_PATH/generate.py" \
           --workspace "$GITHUB_WORKSPACE" \
