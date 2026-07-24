@@ -336,6 +336,7 @@ def validate_config(config: dict) -> tuple[list[Keyword], list[FeedSpec], list[G
         if not site.get(key):
             raise ValueError(f"Missing site.{key}")
     safe_http_url(site["base_url"])
+    normalize_url_prefix(str(site.get("url_prefix", "")))
     keywords = load_keywords(config.get("keywords", []))
     feeds = load_feeds(config.get("feeds", []))
     github_searches = load_github_searches(config.get("github_discovery", []))
@@ -775,6 +776,31 @@ def absolute_url(base_url: str, path: str) -> str:
     return urllib.parse.urljoin(base_url.rstrip("/") + "/", path.lstrip("/"))
 
 
+def normalize_url_prefix(value: str) -> str:
+    value = value.strip()
+    if not value or value == "/":
+        return ""
+    if "://" in value or "?" in value or "#" in value or "\\" in value:
+        raise ValueError("site.url_prefix must be a URL path such as /public")
+    parts = [part for part in value.split("/") if part]
+    if any(part in {".", ".."} for part in parts):
+        raise ValueError("site.url_prefix cannot contain . or .. segments")
+    return "/" + "/".join(parts)
+
+
+def site_url_path(site: dict, path: str) -> str:
+    prefix = normalize_url_prefix(str(site.get("url_prefix", "")))
+    suffix = "/" + str(path).lstrip("/")
+    if prefix and (suffix == prefix or suffix.startswith(prefix + "/")):
+        return suffix
+    return prefix + suffix
+
+
+def migrate_page_path(site: dict, path: str) -> str:
+    # Upgrades state written by older versions where /public was missing.
+    return site_url_path(site, path)
+
+
 def xml_escape(value: str) -> str:
     return html.escape(value, quote=True)
 
@@ -889,7 +915,7 @@ def html_page(
     ))[:14]
     for term in used_terms:
         item = keyword_by_term.get(term)
-        href = item.internal_url if item else "/news/"
+        href = item.internal_url if item else site_url_path(site, "news/")
         keyword_links.append(
             f'<a class="tag" href="{html.escape(href, quote=True)}">{html.escape(term)}</a>'
         )
@@ -939,7 +965,7 @@ def html_page(
   <title>{html.escape(title)} | {site_name}</title>
   <meta name="description" content="{html.escape(description, quote=True)}">
   <link rel="canonical" href="{html.escape(page_url, quote=True)}">
-  <link rel="alternate" type="application/rss+xml" title="{site_name} News RSS" href="{base_url}/news.xml">
+  <link rel="alternate" type="application/rss+xml" title="{site_name} News RSS" href="{absolute_url(base_url, site_url_path(site, 'news.xml'))}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{html.escape(title, quote=True)}">
   <meta property="og:description" content="{html.escape(description, quote=True)}">
@@ -967,7 +993,7 @@ def html_page(
   </div></header>
   <main class="wrap">{''.join(cards)}</main>
   <footer><div class="wrap">
-    <a href="{html.escape(site.get('home_path', '/'), quote=True)}">{site_name}</a> · <a href="/news/">News archive</a> · Updated {generated_at.strftime('%Y-%m-%d %H:%M UTC')}
+    <a href="{html.escape(site.get('home_path', '/'), quote=True)}">{site_name}</a> · <a href="{site_url_path(site, 'news/')}">News archive</a> · Updated {generated_at.strftime('%Y-%m-%d %H:%M UTC')}
   </div></footer>
 </body>
 </html>
@@ -977,6 +1003,10 @@ def html_page(
 
 def render_hot_page(site: dict, entries: Sequence[Entry], generated_at: dt.datetime) -> str:
     base_url = site["base_url"].rstrip("/")
+    archive_path = site_url_path(site, "news/")
+    hot_path = site_url_path(site, "news/github-hot.html")
+    sources_path = site_url_path(site, "news/sources.html")
+    hot_url = absolute_url(base_url, hot_path)
     cards: list[str] = []
     for entry in entries:
         cards.append(
@@ -991,7 +1021,7 @@ def render_hot_page(site: dict, entries: Sequence[Entry], generated_at: dt.datet
         "@type": "CollectionPage",
         "name": "Trending GitHub Reverse Engineering Projects",
         "description": description,
-        "url": base_url + "/news/github-hot.html",
+        "url": hot_url,
         "dateModified": generated_at.isoformat(),
         "mainEntity": {
             "@type": "ItemList",
@@ -1005,11 +1035,10 @@ def render_hot_page(site: dict, entries: Sequence[Entry], generated_at: dt.datet
     return f"""<!doctype html><html lang="{html.escape(site.get('language', 'en'))}"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Trending GitHub Reverse Engineering Projects | {html.escape(site['name'])}</title>
-<meta name="description" content="{html.escape(description, quote=True)}"><link rel="canonical" href="{base_url}/news/github-hot.html">
+<meta name="description" content="{html.escape(description, quote=True)}"><link rel="canonical" href="{hot_url}">
 <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False).replace('</', '<\\/')}</script>
 <style>:root{{color-scheme:dark;--bg:#080b12;--panel:#111725;--text:#eef3ff;--muted:#9da9bd;--line:#263146;--accent:#72a7ff}}*{{box-sizing:border-box}}body{{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,sans-serif}}main{{width:min(1080px,calc(100% - 32px));margin:auto;padding:52px 0}}a{{color:var(--accent)}}h1{{font-size:clamp(2.2rem,6vw,4.4rem);line-height:1.04}}.lead,.meta,.tags{{color:var(--muted)}}.grid{{display:grid;gap:16px}}article{{padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}}article h2{{margin:.35em 0;line-height:1.25}}article h2 a{{color:var(--text);text-decoration:none}}.meta{{display:flex;justify-content:space-between;gap:12px;font-size:.9rem}}nav{{display:flex;gap:16px;flex-wrap:wrap}}</style>
-</head><body><main><nav><a href="/">← {html.escape(site['name'])}</a><a href="/news/">News archive</a><a href="/news/sources.html">Sources</a></nav><h1>Trending GitHub & Community Signals</h1><p class="lead">{html.escape(description)} Updated {generated_at.strftime('%Y-%m-%d %H:%M UTC')}.</p><div class="grid">{''.join(cards)}</div></main></body></html>"""
-
+</head><body><main><nav><a href="/">← {html.escape(site['name'])}</a><a href="{archive_path}">News archive</a><a href="{sources_path}">Sources</a></nav><h1>Trending GitHub & Community Signals</h1><p class="lead">{html.escape(description)} Updated {generated_at.strftime('%Y-%m-%d %H:%M UTC')}.</p><div class="grid">{''.join(cards)}</div></main></body></html>"""
 
 def render_sources_page(
     site: dict,
@@ -1036,61 +1065,70 @@ def render_sources_page(
         rows.append(
             f'<tr><td><a href="{html.escape(url, quote=True)}" rel="noopener noreferrer">{html.escape(name)}</a></td><td>{html.escape(kind)}</td><td>{html.escape(category_label(category))}</td><td class="status {html.escape(status)}">{html.escape(status)}</td><td>{html.escape(detail)}</td></tr>'
         )
+    base_url = site["base_url"].rstrip("/")
+    archive_path = site_url_path(site, "news/")
+    hot_path = site_url_path(site, "news/github-hot.html")
+    sources_path = site_url_path(site, "news/sources.html")
+    sources_url = absolute_url(base_url, sources_path)
     description = "Transparent list of feeds and discovery APIs used by the CPP2IL technical news curator."
-    return f"""<!doctype html><html lang="{html.escape(site.get('language', 'en'))}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>News Sources | {html.escape(site['name'])}</title><meta name="description" content="{html.escape(description, quote=True)}"><link rel="canonical" href="{site['base_url'].rstrip('/')}/news/sources.html"><style>:root{{color-scheme:dark;--bg:#080b12;--text:#eef3ff;--muted:#9da9bd;--line:#263146;--accent:#72a7ff}}*{{box-sizing:border-box}}body{{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 system-ui,sans-serif}}main{{width:min(1180px,calc(100% - 28px));margin:auto;padding:48px 0}}a{{color:var(--accent)}}h1{{font-size:clamp(2rem,6vw,4rem)}}p{{color:var(--muted)}}.table{{overflow:auto;border:1px solid var(--line);border-radius:14px}}table{{width:100%;border-collapse:collapse;min-width:850px}}th,td{{padding:13px 14px;text-align:left;border-bottom:1px solid var(--line)}}th{{position:sticky;top:0;background:#111725}}.status.ok{{color:#74d99f}}.status.error{{color:#ff8b8b}}.status.disabled{{color:#9da9bd}}nav{{display:flex;gap:16px;flex-wrap:wrap}}</style></head><body><main><nav><a href="/">← {html.escape(site['name'])}</a><a href="/news/">News archive</a><a href="/news/github-hot.html">GitHub hot</a></nav><h1>News Sources</h1><p>{html.escape(description)} Last checked {generated_at.strftime('%Y-%m-%d %H:%M UTC')}.</p><div class="table"><table><thead><tr><th>Source</th><th>Type</th><th>Category</th><th>Status</th><th>Latest check</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div></main></body></html>"""
-
+    return f"""<!doctype html><html lang="{html.escape(site.get('language', 'en'))}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>News Sources | {html.escape(site['name'])}</title><meta name="description" content="{html.escape(description, quote=True)}"><link rel="canonical" href="{sources_url}"><style>:root{{color-scheme:dark;--bg:#080b12;--text:#eef3ff;--muted:#9da9bd;--line:#263146;--accent:#72a7ff}}*{{box-sizing:border-box}}body{{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 system-ui,sans-serif}}main{{width:min(1180px,calc(100% - 28px));margin:auto;padding:48px 0}}a{{color:var(--accent)}}h1{{font-size:clamp(2rem,6vw,4rem)}}p{{color:var(--muted)}}.table{{overflow:auto;border:1px solid var(--line);border-radius:14px}}table{{width:100%;border-collapse:collapse;min-width:850px}}th,td{{padding:13px 14px;text-align:left;border-bottom:1px solid var(--line)}}th{{position:sticky;top:0;background:#111725}}.status.ok{{color:#74d99f}}.status.error{{color:#ff8b8b}}.status.disabled{{color:#9da9bd}}nav{{display:flex;gap:16px;flex-wrap:wrap}}</style></head><body><main><nav><a href="/">← {html.escape(site['name'])}</a><a href="{archive_path}">News archive</a><a href="{hot_path}">GitHub hot</a></nav><h1>News Sources</h1><p>{html.escape(description)} Last checked {generated_at.strftime('%Y-%m-%d %H:%M UTC')}.</p><div class="table"><table><thead><tr><th>Source</th><th>Type</th><th>Category</th><th>Status</th><th>Latest check</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div></main></body></html>"""
 
 def render_index(site: dict, pages: Sequence[dict]) -> str:
     base_url = site["base_url"].rstrip("/")
+    archive_path = site_url_path(site, "news/")
+    hot_path = site_url_path(site, "news/github-hot.html")
+    sources_path = site_url_path(site, "news/sources.html")
+    rss_path = site_url_path(site, "news.xml")
     rows = []
     for page in pages[:90]:
+        page_path = migrate_page_path(site, str(page["path"]))
         rows.append(
-            f'<li><a href="{html.escape(page["path"], quote=True)}">{html.escape(page["title"])}</a>'
+            f'<li><a href="{html.escape(page_path, quote=True)}">{html.escape(page["title"])}</a>'
             f'<span><small>{int(page.get("item_count", 0))} items</small> <time datetime="{html.escape(page["date"])}">{html.escape(page["date"])}</time></span></li>'
         )
     description = html.escape(site.get("description", "Curated technical news."))
     schema = {
         "@context": "https://schema.org", "@type": "CollectionPage",
         "name": f'{site["name"]} Technical News', "description": site.get("description", "Curated technical news."),
-        "url": base_url + "/news/",
+        "url": absolute_url(base_url, archive_path),
     }
     return f"""<!doctype html>
 <html lang="{html.escape(site.get('language', 'en'))}"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Technical News | {html.escape(site['name'])}</title><meta name="description" content="{description}">
-<link rel="canonical" href="{base_url}/news/"><link rel="alternate" type="application/rss+xml" href="{base_url}/news.xml">
+<link rel="canonical" href="{absolute_url(base_url, archive_path)}"><link rel="alternate" type="application/rss+xml" href="{absolute_url(base_url, rss_path)}">
 <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False)}</script>
 <style>body{{margin:0;background:#080b12;color:#eef3ff;font:16px/1.6 system-ui,sans-serif}}main{{width:min(960px,calc(100% - 32px));margin:auto;padding:64px 0}}a{{color:#85b2ff}}h1{{font-size:clamp(2.2rem,7vw,4.8rem);line-height:1}}p,small{{color:#a7b2c5}}ul{{list-style:none;padding:0;border-top:1px solid #263146}}li{{display:flex;justify-content:space-between;gap:18px;padding:18px 0;border-bottom:1px solid #263146}}li span{{display:flex;gap:12px;white-space:nowrap}}time{{color:#8d99ac}}</style>
-</head><body><main><a href="/">← {html.escape(site['name'])}</a><p><a href="/news/github-hot.html">Trending GitHub</a> · <a href="/news/sources.html">Sources & health</a> · <a href="/news.xml">RSS</a></p><h1>Technical News</h1><p>{description}</p><ul>{''.join(rows)}</ul></main></body></html>
+</head><body><main><a href="/">← {html.escape(site['name'])}</a><p><a href="{hot_path}">Trending GitHub</a> · <a href="{sources_path}">Sources & health</a> · <a href="{rss_path}">RSS</a></p><h1>Technical News</h1><p>{description}</p><ul>{''.join(rows)}</ul></main></body></html>
 """
-
 
 def render_rss(site: dict, pages: Sequence[dict], generated_at: dt.datetime) -> str:
     base_url = site["base_url"].rstrip("/")
+    archive_url = absolute_url(base_url, site_url_path(site, "news/"))
     items = []
     for page in pages[:30]:
-        url = absolute_url(base_url, page["path"])
+        path = migrate_page_path(site, str(page["path"]))
+        url = absolute_url(base_url, path)
         page_date = dt.datetime.fromisoformat(page["date"]).replace(tzinfo=dt.timezone.utc)
         items.append(f"""<item><title>{xml_escape(page['title'])}</title><link>{xml_escape(url)}</link><guid isPermaLink="true">{xml_escape(url)}</guid><pubDate>{email.utils.format_datetime(page_date)}</pubDate><description>{xml_escape(page.get('description', ''))}</description></item>""")
     return f"""<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>{xml_escape(site['name'])} Technical News</title><link>{xml_escape(base_url + '/news/')}</link><description>{xml_escape(site.get('description', 'Curated technical news.'))}</description><lastBuildDate>{email.utils.format_datetime(generated_at)}</lastBuildDate>{''.join(items)}</channel></rss>
+<rss version="2.0"><channel><title>{xml_escape(site['name'])} Technical News</title><link>{xml_escape(archive_url)}</link><description>{xml_escape(site.get('description', 'Curated technical news.'))}</description><lastBuildDate>{email.utils.format_datetime(generated_at)}</lastBuildDate>{''.join(items)}</channel></rss>
 """
-
 
 def render_standard_sitemap(site: dict, pages: Sequence[dict]) -> str:
     base_url = site["base_url"].rstrip("/")
     urls = [
-        f"<url><loc>{xml_escape(base_url + '/news/')}</loc></url>",
-        f"<url><loc>{xml_escape(base_url + '/news/github-hot.html')}</loc></url>",
-        f"<url><loc>{xml_escape(base_url + '/news/sources.html')}</loc></url>",
+        f"<url><loc>{xml_escape(absolute_url(base_url, site_url_path(site, 'news/')))}</loc></url>",
+        f"<url><loc>{xml_escape(absolute_url(base_url, site_url_path(site, 'news/github-hot.html')))}</loc></url>",
+        f"<url><loc>{xml_escape(absolute_url(base_url, site_url_path(site, 'news/sources.html')))}</loc></url>",
     ]
     for page in pages[:365]:
-        loc = absolute_url(base_url, page["path"])
+        path = migrate_page_path(site, str(page["path"]))
+        loc = absolute_url(base_url, path)
         urls.append(f"<url><loc>{xml_escape(loc)}</loc><lastmod>{xml_escape(page.get('updated_at', page['date']))}</lastmod></url>")
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{''.join(urls)}</urlset>
 """
-
 
 def render_google_news_sitemap(site: dict, pages: Sequence[dict], now: dt.datetime) -> str:
     base_url = site["base_url"].rstrip("/")
@@ -1100,7 +1138,7 @@ def render_google_news_sitemap(site: dict, pages: Sequence[dict], now: dt.dateti
         page_date = dt.date.fromisoformat(page["date"])
         if page_date < recent_cutoff:
             continue
-        loc = absolute_url(base_url, page["path"])
+        loc = absolute_url(base_url, migrate_page_path(site, str(page["path"])))
         urls.append(f"""<url><loc>{xml_escape(loc)}</loc><news:news><news:publication><news:name>{xml_escape(site['publisher_name'])}</news:name><news:language>{xml_escape(site.get('language', 'en'))}</news:language></news:publication><news:publication_date>{xml_escape(page['date'])}</news:publication_date><news:title>{xml_escape(page['title'])}</news:title></news:news></url>""")
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">{''.join(urls)}</urlset>
@@ -1299,6 +1337,9 @@ def main() -> int:
     if not isinstance(state, dict):
         state = {"version": 3, "pages": []}
     pages = list(state.get("pages", []))
+    for page in pages:
+        if page.get("path"):
+            page["path"] = migrate_page_path(site, str(page["path"]))
 
     # These evergreen pages are refreshed even when there is not enough new material
     # for a new daily digest.
@@ -1375,7 +1416,7 @@ def main() -> int:
 
     slug_prefix = slugify(str(generation.get("daily_slug", "unity-il2cpp-reverse-engineering-news")))
     filename = f"{today}-{slug_prefix}.html"
-    relative_path = f"/{site.get('news_path', 'news').strip('/')}/{filename}"
+    relative_path = site_url_path(site, f"{site.get('news_path', 'news').strip('/')}/{filename}")
     page_url = absolute_url(site["base_url"], relative_path)
     page_html, title, description = html_page(
         site=site,
