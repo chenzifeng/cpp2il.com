@@ -200,6 +200,39 @@ class GeneratorTests(unittest.TestCase):
                 "list": "unknown-list",
             }])
 
+    def test_public_url_prefix_is_applied_without_duplication(self):
+        site = {"url_prefix": "/public"}
+        self.assertEqual(MODULE.site_url_path(site, "news/"), "/public/news/")
+        self.assertEqual(
+            MODULE.site_url_path(site, "/public/news/item.html"),
+            "/public/news/item.html",
+        )
+        self.assertEqual(
+            MODULE.migrate_page_path(site, "/news/item.html"),
+            "/public/news/item.html",
+        )
+
+    def test_generated_navigation_uses_public_prefix(self):
+        site = {
+            "name": "CPP2IL",
+            "base_url": "https://cpp2il.com",
+            "language": "en",
+            "description": "News",
+            "url_prefix": "/public",
+        }
+        page = {
+            "date": "2026-07-20",
+            "path": "/news/test.html",
+            "title": "Test News",
+            "item_count": 1,
+            "updated_at": "2026-07-20T00:00:00+00:00",
+        }
+        rendered = MODULE.render_index(site, [page])
+        self.assertIn('href="/public/news/test.html"', rendered)
+        self.assertIn('href="/public/news/github-hot.html"', rendered)
+        self.assertIn('href="https://cpp2il.com/public/news.xml"', rendered)
+        self.assertNotIn('href="/news/test.html"', rendered)
+
 
 if __name__ == "__main__":
     unittest.main()
