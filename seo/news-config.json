@@ -8,7 +8,8 @@
     "output_dir": "public",
     "news_path": "news",
     "home_path": "/",
-    "logo_url": "https://cpp2il.com/logo.png"
+    "logo_url": "https://cpp2il.com/logo.png",
+    "url_prefix": "/public"
   },
   "keywords": [
     {
