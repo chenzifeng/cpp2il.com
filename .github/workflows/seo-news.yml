@@ -3,7 +3,7 @@ name: SEO News
 on:
   workflow_dispatch:
   schedule:
-    # 01:17 UTC = 09:17 Malaysia time. Scheduled runs can be delayed by GitHub.
+    # 01:17 UTC = 09:17 Malaysia / China time.
     - cron: "17 1 * * *"
 
 permissions:
@@ -16,7 +16,7 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
 
     steps:
       - name: Checkout
@@ -55,10 +55,12 @@ jobs:
           echo "Page: ${{ steps.seo_news.outputs.page_path }}"
 
       - name: Commit generated content
+        id: commit
         shell: bash
         run: |
           if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
             echo "No SEO news changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
@@ -67,3 +69,41 @@ jobs:
           git add -A
           git commit -m "seo: update curated technical news"
           git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Trigger Cloudflare Pages build and deployment
+        if: steps.commit.outputs.changed == 'true'
+        shell: bash
+        env:
+          CLOUDFLARE_PAGES_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_PAGES_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$CLOUDFLARE_PAGES_DEPLOY_HOOK" ]; then
+            echo "::warning::CLOUDFLARE_PAGES_DEPLOY_HOOK is not configured."
+            echo "::warning::Git push completed, but explicit Cloudflare deployment was not triggered."
+            exit 0
+          fi
+
+          response_file="$(mktemp)"
+          http_code="$(
+            curl \
+              --silent \
+              --show-error \
+              --location \
+              --retry 3 \
+              --retry-delay 2 \
+              --retry-all-errors \
+              --output "$response_file" \
+              --write-out "%{http_code}" \
+              --request POST \
+              "$CLOUDFLARE_PAGES_DEPLOY_HOOK"
+          )"
+
+          cat "$response_file"
+          echo
+
+          if [ "$http_code" -lt 200 ] || [ "$http_code" -ge 300 ]; then
+            echo "::error::Cloudflare Deploy Hook returned HTTP $http_code"
+            exit 1
+          fi
+
+          echo "Cloudflare Pages deployment accepted (HTTP $http_code)."
