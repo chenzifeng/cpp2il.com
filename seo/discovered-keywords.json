@@ -1,9 +1,59 @@
 {
-  "version": 2,
+  "version": 3,
   "keywords": {
+    "trending GitHub repository": {
+      "count": 19,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-07-24"
+    },
+    "trending GitHub": {
+      "count": 19,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-07-24"
+    },
+    "GitHub repository": {
+      "count": 19,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-07-24"
+    },
     "Unity": {
-      "count": 8,
+      "count": 10,
       "first_seen": "2026-07-20",
+      "last_seen": "2026-07-24"
+    },
+    "wasm": {
+      "count": 9,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-24"
+    },
+    "decompiler": {
+      "count": 9,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-24"
+    },
+    "WebAssembly": {
+      "count": 4,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-07-24"
+    },
+    "reverse engineering": {
+      "count": 4,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-07-24"
+    },
+    "metadata": {
+      "count": 4,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-07-24"
+    },
+    "webassembly": {
+      "count": 3,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-07-24"
+    },
+    "apk": {
+      "count": 3,
+      "first_seen": "2026-07-24",
       "last_seen": "2026-07-24"
     },
     "Unity f1 LTS": {
@@ -21,15 +71,10 @@
       "first_seen": "2026-07-20",
       "last_seen": "2026-07-23"
     },
-    "wasm": {
+    "Il2CppDumper": {
       "count": 2,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-07-20"
-    },
-    "decompiler": {
-      "count": 2,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-07-20"
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-07-24"
     },
     "decompilation": {
       "count": 2,

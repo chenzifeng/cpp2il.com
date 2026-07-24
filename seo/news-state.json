@@ -1,35 +1,531 @@
 {
-  "version": 2,
-  "last_generated_at": "2026-07-24T03:45:24.508503+00:00",
-  "feed_errors": [],
+  "version": 3,
+  "last_generated_at": "2026-07-24T04:37:48.426658+00:00",
+  "source_errors": [
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+  ],
   "pages": [
     {
       "date": "2026-07-24",
-      "path": "/public/news/2026-07-24-unity-il2cpp-reverse-engineering-news.html",
-      "title": "Unity engine releases News — July 24, 2026",
-      "description": "Curated Unity engine releases updates for developers and security researchers. 1 relevant releases and technical developments with original source links.",
-      "item_count": 1,
-      "new_item_count": 1,
-      "updated_at": "2026-07-24T03:45:24.508503+00:00",
+      "path": "/news/2026-07-24-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — July 24, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 24 relevant releases and technical developments with original sou…",
+      "item_count": 24,
+      "new_item_count": 24,
+      "updated_at": "2026-07-24T04:37:48.426658+00:00",
       "entries": [
         {
-          "entry_id": "49f16c6cf7be22b17ad72f1b10723cb2018ebe7f29e780169593124f7a608f64",
-          "title": "Unity 6000.7.0 Alpha",
-          "url": "https://unity.com/releases/editor/alpha/6000.7.0a3",
-          "summary": "Unity 6000.7.0 Alpha",
-          "source": "Unity Alpha Releases",
-          "source_url": "https://unity.com/releases/editor/alpha-releases.xml",
-          "category": "unity-releases",
-          "published": "2026-07-23T13:51:02+00:00",
-          "trust": 10,
-          "source_boost": 1,
+          "entry_id": "a24ea145fe94bcb0333e5eaa12cf2a2fe6943cccf9adba4e851f4d8d4c6079f0",
+          "title": "UltraSina/androidReverse — trending GitHub repository",
+          "url": "https://github.com/UltraSina/androidReverse",
+          "summary": "Android reverse engineering entirely on-device. Radare2 binary analysis, 8 Java decompilers, Flutter & Unity il2cpp support. GitHub discovery signal: 99 stars, 7 forks, 1 open issues; language Unknown; last pushed 2026-07-01. Topics: android-reverse, androidide, apk-analyzer, bytecode, decompiler, kotlin-android, radare2, reverse-engineering, smali, static-analysis.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-03-26+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-06-17T06:46:49+00:00",
+          "trust": 8,
+          "source_boost": 15,
           "topic_terms": [
-            "Unity engine releases"
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
           ],
           "matched_terms": [
-            "Unity engine releases"
+            "Unity IL2CPP",
+            "IL2CPP decompilation",
+            "Android reverse engineering",
+            "Binary reverse engineering"
           ],
-          "score": 24
+          "score": 67
+        },
+        {
+          "entry_id": "a6800d3ded2fc6e293ab7924152861d2e90ffadccc67b3c6846471f714858d63",
+          "title": "bombaris34/il2cpp-pdb — trending GitHub repository",
+          "url": "https://github.com/bombaris34/il2cpp-pdb",
+          "summary": "Il2CppDumper fork with a native Rust PDB generator for x64 PE (GameAssembly.dll): function names, full struct types and typed prototypes, auto-loaded by IDA. GitHub discovery signal: 43 stars, 2 forks, 0 open issues; language C#; last pushed 2026-06-06.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-03-26+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-06-06T01:41:33+00:00",
+          "trust": 8,
+          "source_boost": 13,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 67
+        },
+        {
+          "entry_id": "1377dda3e33fef1b6a38de410515c5b5f568e43e271130aeb32b427c2de181eb",
+          "title": "LiangYuZz/Zygisk-Il2CppFucker — trending GitHub repository",
+          "url": "https://github.com/LiangYuZz/Zygisk-Il2CppFucker",
+          "summary": "A reverse engineering toolkit for Il2Cpp based on a Zygisk module, modified from the \"Zygisk-Il2CppDumper\" project. GitHub discovery signal: 51 stars, 13 forks, 0 open issues; language C; last pushed 2026-06-20.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-03-26+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-06-20T04:43:40+00:00",
+          "trust": 8,
+          "source_boost": 15,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 59
+        },
+        {
+          "entry_id": "bc736c8523c0827fde0298f8bc8eee7d5393a1ac5fa07eb33e6619523ad3ee14",
+          "title": "GeniusHu-tgty/Open-tgtylab — trending GitHub repository",
+          "url": "https://github.com/GeniusHu-tgty/Open-tgtylab",
+          "summary": "开源逆向工程实验环境 — Agent 原生安全研究工具箱，集成 Ghidra/Rizin/Frida/SQLMap 知识库驱动分析 GitHub discovery signal: 183 stars, 20 forks, 0 open issues; language Lua; last pushed 2026-07-13.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-06-29T17:36:56+00:00",
+          "trust": 8,
+          "source_boost": 18,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Binary reverse engineering",
+            "Dynamic instrumentation"
+          ],
+          "score": 53
+        },
+        {
+          "entry_id": "ecdbc17317b1d01e48b1c321a5b5ac75071ab46d98b897538756c3afe0a560a6",
+          "title": "ZX41R/awesome-reverse-engineering-and-malware-analysis — trending GitHub repository",
+          "url": "https://github.com/ZX41R/awesome-reverse-engineering-and-malware-analysis",
+          "summary": "Reverse engineering & malware analysis, curated and verified disassemblers, unpacking, exploit dev, fuzzing, DFIR, and the deep-cut writeups other lists miss. GitHub discovery signal: 60 stars, 9 forks, 0 open issues; language Shell; last pushed 2026-07-13. Topics: awesome-list, binary-analysis, binary-exploitation, ctf, cybersecurity, dfir, exploit-development, firmware, fuzzing, ghidra.",
+          "source": "GitHub Hot Binary Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Abinary-analysis+created%3A%3E%3D2026-03-26+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-07-06T12:14:54+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling",
+            "Malware analysis tooling"
+          ],
+          "score": 51
+        },
+        {
+          "entry_id": "d12af42633fb0f1e68e7e19f02ecc476a52b8662cee521a216c56b4c38c2d847",
+          "title": "LING71671/open-reverselab — trending GitHub repository",
+          "url": "https://github.com/LING71671/open-reverselab",
+          "summary": "Agent-native reverse-engineering lab with a 197-article knowledge base, MCP tools, and CTF/APK/PE automation workflows.[有通用AI越狱bug😂😉] GitHub discovery signal: 889 stars, 232 forks, 4 open issues; language Python; last pushed 2026-07-21. Topics: ai-agent, android-reverse-engineering, binary-analysis, cryptography, ctf, digital-forensics, frida, ghidra, ios-reverse-engineering, knowledge-base.",
+          "source": "GitHub Hot Android Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-reverse-engineering+created%3A%3E%3D2026-04-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-mobile",
+          "published": "2026-06-17T14:31:38+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Android reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "Binary reverse engineering",
+            "Dynamic instrumentation"
+          ],
+          "score": 51
+        },
+        {
+          "entry_id": "9a33f88f7228dfeb96782126ae20a5df4931069764da71b425ebe7e221cfe724",
+          "title": "dreamland-blog/KSU-Rust-Frida — trending GitHub repository",
+          "url": "https://github.com/dreamland-blog/KSU-Rust-Frida",
+          "summary": "KFM GitHub discovery signal: 65 stars, 29 forks, 1 open issues; language Shell; last pushed 2026-07-06.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-07-06T13:02:59+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 49
+        },
+        {
+          "entry_id": "7c596bfd5d7b655052b3f2544dd0bd467569b394fc2439646ce5fcef5a81d091",
+          "title": "Neusoft-Intelligent-Laboratory/FridayOS-Lite — trending GitHub repository",
+          "url": "https://github.com/Neusoft-Intelligent-Laboratory/FridayOS-Lite",
+          "summary": "技术小白也能拥有的 AI 第二大脑：无需翻墙、无需订阅，跟着图文 ~20 分钟装好 Obsidian + Claudian + cc-switch + DeepSeek V4。 GitHub discovery signal: 492 stars, 52 forks, 0 open issues; language Python; last pushed 2026-07-16.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-06-09T03:46:24+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 49
+        },
+        {
+          "entry_id": "48c89f2a0bb3cdeb5cbb85a504dcca96159a58395cccb42ef21e5985ca74b624",
+          "title": "maosasagawa/blackbox-re-agent — trending GitHub repository",
+          "url": "https://github.com/maosasagawa/blackbox-re-agent",
+          "summary": "Conversational black-box reverse-engineering agent on the pi coding agent — analyzes apk/.o/.hex/exe with a self-provisioning toolchain (radare2 · Ghidra · angr · jadx). Static analysis. Claude Code & Codex compatible. GitHub discovery signal: 33 stars, 0 forks, 0 open issues; language TypeScript; last pushed 2026-06-09. Topics: ai-agent, angr, apk, ctf, decompiler, firmware-analysis, ghidra, malware-analysis, radare2, reverse-engineering.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-01-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-06-09T03:25:36+00:00",
+          "trust": 8,
+          "source_boost": 12,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Android reverse engineering",
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 49
+        },
+        {
+          "entry_id": "07ebe6c845a19e705e5abe162bc48552f38a2240ebfb78c137aab2d78fa14a88",
+          "title": "v0.7.3",
+          "url": "https://github.com/LavaGang/MelonLoader/releases/tag/v0.7.3",
+          "summary": "What's Changed: Updated AsmResolver to 6.0.0-beta.5 Updated Il2CppInterop to 1.5.1-ci.845 Fixed an issue with [D] Debug Mode Identifier in Console Title not being appended when set with Game Information Fixed an issue with MelonUtils.SetConsoleTitle not working when DontSetTitle Console option is true Fixed an issue with Loader.cfg saving DebugMode as true when first launching with a Debug Build Implemented support for .NET Portable directories under <GAME>/dotnet and <GAME>/MelonLoader/Dependencies/dotnet [ #1062 ] Fixed compilation issues for MacOS Modified Il2Cpp Type Registration to be logged when in Debug Mode Fixed cross-compilation issues for Linux Fixed Initialization Issues with native Mono and Il2Cpp games on Linux Fixed an issue with Automatic Melon Harmony Patching looking for unannotated types Fixed UnityEngine.Il2CppAssetBundleManager to support Unity 6000+ [ #1122 ] Fixed NativeHook Functionality for Linux [ #1123 ] Fixed AssemblyVerifier.IsNameValid to support Unicode Standard Annex 15 [ #1094 ] Fixed an issue with Loader.cfg having its values overwritten by defaults Fixed an issue with Loader.cfg not recreating missing options Fixed an issue with ArgumentException being thrown when parsing duplicate launch options Adjusted NuGet package to include package references [ #1127 ] Fixed an issue with CoreClrDelegateFixer causing crashes under Wine/Proton Fixed NativeHook Backwards Compatibility Reverted BootstrapInterop NativeHook exports to utilize pointers again to work around recursive trampoline issue Fixed MelonUtils.TryPatchAll methods to allow returned list of generated patches Reimplemented warning for CoreClrDelegateFixer.SanityCheckDetour when reusing a pinned delegate Added 0Harmony.dll to the list of assemblies to be force-resolved from the included file to fix resolve issues Fixed an issue with Warnings and Errors not having identifiers Aligned MelonUtils.TryPatchAll extensions to expected Harmony.PatchAll behavior Improved Il2CppInterop InjectionHelpers.Setup Fix Implemented Tomlet Mapping for Rect and RectInt Adjusted OnPreferencesSaved and OnPreferencesLoaded callbacks to fix an issue with them sometimes not being triggered Fixed Il2CppICallInjector to ignore shim methods that use GetPinnableReference Fixed an issue with MacOS Bootstrap not having the needed __interpose [ #1138 ] Added a Launch Script for easier MacOS installation [ #1138 ] Fixed an issue with Il2CppICallInjector not handling complete Method Signatures Fixed UnityEngine.Il2CppImageConversionManager to support Unity 6000+ [ #1144 ] Improved .NET Portable Directory loading Fixed an issue with Bootstrap Core Pathing being used before Initialization [ #1163 ] Rewrote .NET Handling to better abide by overrides Implemented Portable .NET Runtime Fallback to help minimize HostFxr load failures Fixed an issue with .NET Handling not abiding by Base Directory Contributors: JoShMiQueL made a contribution in #1062 Javialonqv made a contribution in #1122 & #1144 aldelaro5 made a contribution in #1123 kohanis made a contribution in #1094 ds5678 made a contribution in #1127 Rukongai made a contribution in #1138 Squaduck made a contribution in #1163 Full Changelog : CHANGELOG.md | v0.7.2...v0.7.3",
+          "source": "MelonLoader Releases",
+          "source_url": "https://github.com/LavaGang/MelonLoader/releases.atom",
+          "category": "unity-runtime",
+          "published": "2026-05-14T20:20:01+00:00",
+          "trust": 8,
+          "source_boost": 4,
+          "topic_terms": [
+            "Unity runtime tooling",
+            "Unity IL2CPP"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "Unity engine releases",
+            "Unity runtime tooling"
+          ],
+          "score": 49
+        },
+        {
+          "entry_id": "34563d66306d46b397602a0955d8d4e7e44291c40e7dd1cf40962e2e303c0726",
+          "title": "6.1.6",
+          "url": "https://github.com/radareorg/radare2/releases/tag/6.1.6",
+          "summary": "Release Notes Codename: \"lospatos2\" Version: 6.1.6 Previous: 6.1.4 AbiDiff: 83-107 (24) Commits: 455 Contributors: 25 curl -Ls https://github.com/radareorg/radare2/releases/download/6.1.6/radare2-6.1.6.tar.xz | tar xJv radare2-6.1.6/sys/install.sh Highlights More details Authors AGhebrea AGhebrea Abhi Claude Dirk Mueller Dirk Mueller Hinotobi Mattia Galuppi Michał Mnich Ole André Vadla Ravnås Priyanshu Kumar WearyTraveller42 aviciano condret davidpolverari dependabot[bot] orbisai0security pancake pancake pancake phix33 phix33 potato randomjack94dev s-zaizen Changes abi Add command file string API Migrate RBinSymbols from RList to RVec Get rid of the backward compat r_core_cmd_calls (Use r_core_call) anal Rename anal.flagstop to .flagbounds and clarify diff w/ anal.flagends Add anal.flagstop function boundary option Fix PPC positive conditional branches Fix garbage upper bits in xref/heap table size columns (ut64 casts) Add and test static x86 clobber cc metadata Add static x86 calling convention preserve metadata Add static x86 calling convention stack cleanup metadata Improve static and indirect call convention analysis Improve static x86 calling convention stack cleanup Stabilize register index ordering Honor calling convention register clobbers Track callee-popped stack arguments Resolve dynamic calling conventions lazily Add dynamic calling convention parser Generalize calling convention location accessors Use dyncc calling convention for isvm archs Add tests for static calling convention multi-return Fix static calling convention argument lookup Handle two-operand imul and idiv Use indexed return registers in calling conventions Initial support for multireturn in calling conventions Recover ObjC inheritance in analysis classes Better default fcn names, respect symbols Extend RBinMeta for Java/Dalvik/MSIL dynamic callconvs Stack based dynamic calling convention fix for Java Support dynamic calling conventions for Java and Dalvik Fix switch analysis for latest DEX Show branch cases in afbtj Speed up function basic block lookup a bit Keep SwitchOp.dependency ops in afbt, Vc and pdc Reduce type propagation churn and false positives Simplify type propagation backtrace state Tighten type trace access matching All public var apis use RVec now Configurable jumptable maxcases Fix stale Rust jump table bounds Fix x86 jump table autosizing for Rust niche switches Refactor jump table decoding and case analysis Clamp switch case counts and borrow register names Fix afbt script output and sparse zero entries Redesign and extend the jump/switch table API and commands Rename afj to afbt and add a test Fix arch value handling for stack operations Tighten x86 stack operand analysis Populate Xtensa value metadata for stack analysis Populate RISC-V stack value metadata Populate MIPS value metadata for stack analysis Fix ARM stack variable substitution Populate ARM value metadata for stack analysis Rewrite stack variable extraction around values Stop using ESIL in function analysis Fix MIPS register argument recovery Fix bug in 'as command' not showing the right syscall The afbc forces the address to be the first of the basic block if any ArenaPushPop uses CoW optimization Fix infinite loop in the codemeta Support pining functions with custom emojis Fix CID 1654963,1654964,1654965 - check r_esil_get_parm_strs retval in set_mem dfg Fix CID 1654968 - check r_esil_get_parm_strs retval in esil_dfg Add missing anal.plugins.pre config var analsys Rename anal.flagstop to .flagbounds and clarify diff w/ anal.flagends analysis Add anal.flagstop function boundary option Fix PPC positive conditional branches Add and test static x86 clobber cc metadata Add static x86 calling convention preserve metadata Add static x86 calling convention stack cleanup metadata Improve static and indirect call convention analysis Improve static x86 calling convention stack cleanup Stabilize register index ordering Honor calling convention register clobbers Track callee-popped stack arguments Resolve dynamic calling conventions lazily Add dynamic calling convention parser Generalize calling convention location accessors Use dyncc calling convention for isvm archs Add tests for static calling convention multi-return Fix static calling convention argument lookup Handle two-operand imul and idiv Use indexed return registers in calling conventions Initial support for multireturn in calling conventions Recover ObjC inheritance in analysis classes Better default fcn names, respect symbols Extend RBinMeta for Java/Dalvik/MSIL dynamic callconvs Stack based dynamic calling convention fix for Java Support dynamic calling conventions for Java and Dalvik Fix switch analysis for latest DEX Show branch cases in afbtj Keep SwitchOp.dependency ops in afbt, Vc and pdc Reduce type propagation churn and false positives Simplify type propagation backtrace state Tighten type trace access matching All public var apis use RVec now Configurable jumptable maxcases Fix stale Rust jump table bounds Fix x86 jump table autosizing for Rust niche switches Refactor jump table decoding and case analysis Clamp switch case counts and borrow register names Fix afbt script output and sparse zero entries Redesign and extend the jump/switch table API and commands Rename afj to afbt and add a test Fix arch value handling for stack operations Tighten x86 stack operand analysis Populate Xtensa value metadata for stack analysis Populate RISC-V stack value metadata Populate MIPS value metadata for stack analysis Fix ARM stack variable substitution Populate ARM value metadata for stack analysis Rewrite stack variable extraction around values Stop using ESIL in function analysis Fix MIPS register argument recovery Fix bug in 'as command' not showing the right syscall The afbc forces the address to be the first of the basic block if any ArenaPushPop uses CoW optimization Fix infinite loop in the codemeta Support pining functions with custom emojis Fix CID 1654963,1654964,1654965 - check r_esil_get_parm_strs retval in set_mem dfg Fix CID 1654968 - check r_esil_get_parm_strs retval in esil_dfg Add missing anal.plugins.pre config var api Move markdown rendering code into a separate file arch Add OpType/ESIL for PPC dword shifts, X-form ld/st, cntlz, mulh, CR moves Fix signed/endian branch-target analysis in vax, dalvik, xap, arm.gnu and java Fix sparc.gnu endian disassembly Fix capstone v5 M68K patch application More BE fixes even for capstone m68k big endian capstone bug patch More arch goodies for virtual regs Update wasm3 support for try/mmx ops Fix aarch64 big endian be8 Update capstone v5/next for the x86 perf boost Fix STM8 pointer offset operands and jump targets Add opt-in Zydis x86 arch plugin Optimize the cs_len_prefix_opcode helper for x86 Add RArchInfo.WODST for archs with write-only destination operands Stack allocate insn to avoid malloc/free in arm.cs V850 ESIL: Fix flags, sign-extension, bit ops, shifts Fix v860 esil sign, bit ops like shifts and update flags asm Cleanup ppc.nz handlers and emit_ppc comments Add ppc.nz r_asm encoder plugin Refactor r_num_math error handling in asm Fix memory leak in x86_nz parseOpcode error paths bin Add remove class ..field/:inheritance info with ic[+-] Fix per-section reloc cap dropping relocs on multi-section ET_REL objects Fix signed-char Swift super-class and field-type parsing in mach0 Fix iS/iSS flags column showing garbage upper bits Emit dynamic calling conventions from bin metadata Implement RBinPlugin.getCc for dotnet,java,dex,python and wasm Parse valid wasm sections 12 and 13 (datacount + tag) RBinStrings are now stored in a vector Speed up COFF bigobj loading Preallocate flag storage from cbin Store flag names in arena and fix DEX leaks Keep trimmed RBinString.length sync Fix objc/macho/swift parsing bugs on big endian Dettach reloc_fixups from load_unnamed Migrate RBinSection store from RList to RVec Invalidate addr2klassmethod when ic- removes a method Use RVec for Mach-O reloc fixups Add r_bin_class_add_method and surface class methods Use chained fixup page size for mach0 swizzle chunks Fix Coverity static analysis findings Avoid stale COFF relocation symbol pointers Fix integer overflows in dex_parse_class_method_addrline Add bin.meta config var to permit disabling the codemeta info Lazy-load DEX addrline debug info Extend 'ies' for Dalvik onCreate symbol entrypoints Skip abstract methods when listing dalvik entrypoints Add bin.classes.namesonly option to skip method/field parsing Fix macho-swift/objc metadata leaks Map DEX code sections after method headers Limit DEX_PROTO_STACK_PARAMS to 64 Fix the MAX_DEX_PARAMS warning happening in some dex Fix huge macho chained fixup memory leak Add bin.relocs.xrefs to avoid creating them if not needed Parse side support for binunnamed for elf, som, dyldcache and more Extend bin.unnamed to other file formats Add RBinOptions.loadUnnamed via bin.unnamed to not load unnamed symbols Preserve xtr bin info when metadata is partial Add bin.flags to skip bin symbol flags Fix double free in r_bin_import_free Fix DWARF compilation directory metadata leak Guard large id* scripts, reduce dwarf memory usage more and fix ^C trap Warn on huge DWARF debug info loads Dont do drama when loading libraries without entrypoint Trim bin startup metadata with the help of a profiler Handle more PPC64 reloc types and BE-aware reloc patching Port the sep64 binxtr plugin to fs Initial refactoring of the binxtr plugins as rfs ones Ignore fatmacho magics in the java bin plugin Fix #25859 - entrypoint with overlapped elf segments Fix CID 1654967 - widen addr_sym_table to ut64 in load_symbols_from_phdr Add ii+ and ii- to add/remove imports at will Fixes v2p/p2v conversion for in-memory ELFs Handle ABS32 and GLOB_DAT relocs for arm32 Force fallback to phdr parsing when stringtab fails in ELF Fix buffer size when parsing binaries from memory Reduce double derefs in dex for perf reasons Fix detection of stripped Swift machos Reduce double derefs in elf for perf reasons Parse and display DER signatures in macho (iC command) Expose DYLD_ENVIRONMENT, __RESTRICT and MH_APP_EXTENSION_SAFE via sdb Kill the hacky RABIN2_CODESIGN_VERBOSE hack using rbinoptions Expose macho signing type in the sdb Reduce double derefs i macho for perf reasons Support globs in the symclass patterns Add fortify and asan symbol names Refine mach0 is_pie and has_nx (heap and stack) checks build Fix all warnings spotted by GCC-15. Hello Ubuntu26 Hide otezip symbols from libr_util Fix the dist tarball and test it in the ci This slots naming is a Qt keyword conflicting with iaito ci Allow Coverity Scan workflow failures Publish tcc r2r report in CI Run more tests and fix crossmbuild mipsbe Avoid libatomic when linking wasm r2r Add big endian testsuite runs Link Zydis in iOS blob build Disable Zydis in Fil-C builds Link bundled Zydis in static builds cons Add R_PRINTF_CHECK to r_cons_printf and fix the format-width bugs it surfaces Add strikethrough support the markdown renderer Support italic and bold markdown Fix terminal mouse escape parsing core Clean up line seek cache rebuild Expose dynamic calling convention inspection Double free in visual mode when highlighting string >= 32 chars Prompt to rebuild outdated r2pm plugins Report invalid dotted eval keys Iterate over the external plugin system once again Custom internal plugin reorder and unify plugin storage crash Fix gdb's stop reason exec path lifetime Fix #25992 - Sanitize library names in il* and add obf base64: Use strbuf for GDB XML register profiles Fix #25974 - oversized GDB XML code pointer aliases Fix #25977 - oversized GDB register cache writes Fix parseCodeDirectory OOB Read Avoid unbounded memcpy in gdb’s handle_vFile_pread Fix Mach-O chained fixups starts bounds Fix Dalvik get_name ownership mismatch Dont crash when RMagic dataset is not installed Stabilize bin vectors before reloc creation Fix use-after-free when commenting in visual mode Fix double free in r_bin_import_free Fix #25918 - Fix out of bounds read in RBin.PE.getName Preallocating 7GB of DWARF dies makes kernels unhappy Fix memcpy UB with 0 and sign type for winkd Fix #25886 - null deref in corrupted dwarf Fix #25872 - null deref in r2fload Fix int ovf allocation macho bugs spotted by @apkunpacker Fix memory exhaustion on corrupted DEX Fix CID 1655150 - clamp num_annotations and dedupe rtv/rti helpers in shlr/java Fix null deref in default cc Fix lot of vulns in shlr/java Fix integer overflow in java extract_type_value Fix #25840 - OOB read in Java class parser and simplify ref-name building Fix #25835 and #25836 - UAFs in the gdb remote protocol Properly null-terminate readlink() buffer - fixes UB in r2pm Fix an offby1 in rasm2+stdin with r_str_ntrim debug Enforce syscall number lookup and add more tracing tests Fix register response too large warning in gdb client Reduce DWARF debug info memory usage Group debugger configuration in RDebugOptions Add support for syscall tracing in FreeBSD Add Linux fasttime debugger support Add syscall enter and leave hooks Add parameter format for all syscalls Add checkpoint replay api and commands Fix dx restore Ignore unknown breakpoints by default and show some help Add missing eiz register for the x64-32 profile Sync cpu flags definitions in all the intel reg profiles Fix YMM stitching loop to iterate 8 regs for 32-bit targets Fix print_fpu to use runtime bits check instead of compile-time Add missing vec64 mm0-mm7 and vec128 xmm0-xmm7 to x64-32 regprofile Fix FPU st0-st7 register size from .64 to .80 in x64-32 regprofile Fix i386 syscall calling convention aliases in x64-32 regprofile Fix 4 byte oobread in ptrace_setregs for Linux-x86_64_32 Fix #9995 and #15255 - DRX regprofile for 32 on 64-bit hosts disasm Memoize the current basic block in RDisasmState Fix big-endian bugs in the disasm refs Add ahie to specify an enum type hint for imms Use disasm api instead of commands in pdr Use RVec in Reflines Dynamically pick the needed decoding features in the disassembler Display function pins in the disassembly doc Document dynamic calling conventions egg Refactor ppc emitter helpers; default ragg2 endian from arch Add REggEmit priv hooks; move ppc emitter state off file-scope statics Update ppc emitter for REggEmit RStrBuf migration Treat -c bigendian without value as truthy in ragg2 Add PowerPC support to ragg2 Fix #15468 - ragg2 -P/-B/-w now work on archs without an egg backend Add example programs and ragg2 regression tests for egg Rewrite the ESIL backend in ragg2/egg as an expression compiler Add raw-register syntax and parser cleanups in ragg2/egg esil Add ESIL for ppc byte-reverse loads/stores and fix opex invalid-reg crash Skip op decode for hard pins in ESIL step Use explicit ESIL interfaces in analysis helpers Use explicit ESIL interfaces for aop cost Setup ESIL DFG instances through r_esil_setup Fix ESIL voyeur initialization and empty write hooks Add packed register sizes to ESIL interfaces Wire ESIL BITS through util interfaces Keep caller ESIL interfaces during setup Add explicit ESIL interfaces and voyeurs Heapless emulation using the new sliced strings Honor failed IO reads in ESIL memory callbacks Fix voyeur index in r_esil_mem_write Clamp shift amount in esil >>=[N] helper Fix stray stack push in esil %=[N] helper Fix null anal deref in pdo / r_esil_toc_new Unbroke 4 FPU emulation tests Add more esil step back tests Fix ESIL trace register rollback off-by-one Return false on oversized ESIL parser tokens flags Avoid double name filtering in r_flag_set fs Initial support for the plan9 Fossil FileSystem Add fsoptions and welcome the 9fs support graph Two dimensional scrolling with urxvt events io Explicit sperm listings for RIOMaps and RIORegions Warn when map resize is ignored due to new size being 0 Fix zero size/resize for gzip, malloc, null and xattr lang Improve error handling in r2fload qjs Fix all the memory leaks in the qjs plugin magic Fix CRLF parsing in RMagic needed for windows perf Improve RBitMap and fix some bugs Cache DEX prototypes to not rebuild signatures Use RBitmap in Dex.isClassIndexInClasses (O(n^n) => O(n)) Cache ELF bits detection (6x faster loads) Use HtPP instead of Sdb and inline node shortcuts Use RVec and Sets in more graph places Use RVec instead of RList in the asciiart graph Use RVec.findSorted in disasm and core analysis print Enjoy utf8 cursors in disasm Add emoji name support, and use it from aflp Show function/bb/flag color in aflj and afl= Add bbcolor/flagcolor in navbar json projects Improve module id and support debugger and r2frida Refactor newprj into separate files Implement project diffing subcommand Save localvars, types and callconv in newprj Support function/bbs/colors in newprj Save/restore xrefs in newprj Honor prj.new on load Save eval vars in new projects Save flagspaces and other flag attributes in new projects Register prj plugin tab autocompletion Implement prj open to start on a clean session Fix a bunch of UB and logic bugs in the new projects Ignore symlinked notes pseudo Fix pdco output Supress jmps when they are actually switches in pdc r2r Fix dyncc tests on mipsbe Use posix_spawnp for r2r child processes Fix r2r subprocess reaping race reg Consolidate vregs banks and regprofile parsing Dont warn regprofiles without A0 Add virtual register banks sandbox Fix #25803 - Replace execl with execlp on r_sandbox_system search Rename /G to /ag and improved gadget classification Add gadget.esil to classify conditional branches ROP search it's now /G and we have rop.cond Improve deterministic syscall search security Confine project deletion to dir.projects Fix cmdinj via DWARF filenames in the CL* emitters Fix cmdinj in agn/age emitters Fix cmd injection via raw type names in txg graph script Fix cmd injection via raw DWARF file/line in CL/CC emitter Fix cmd injection via raw class names in icg graph script Fix command injection in project's comment replay Fix 3 command injection bugs related to varnames Fix cmd injection via unsanitized DWARF arg name in afsv shell Add RCons.yesNoBut and use it to permit deleting onprompt load Add scr.font.* and the new utf8 fonts support Check VISUAL first, then EDITOR when deciding cfg.editor Add scr.prompt.r2pm for r2pm rebuild prompts Swap /g and /ag - gadget vs graph Better spot invalid 's' subcommands Add cat -m to expose the markdown renderer api Fix repeated command parsing after semicolons Fix wrong relative seeks +3+1 != 9 Add CCb basic-block comment listing Add CLLb basic-block source listing New ?(){}{} conditional syntax Hello miniclippy! Implement ls -a to list hidden files too socket Expose all HTTP request headers in RSocketHTTPRequest syscall Add PowerPC linux syscall definitions tools Fix rasm2 show_analinfo leaks on text path Fix rasm2 -f - stdin skip to use the slurped length types Switch c2 types parser to use the rstrs api util Add PJ's api to append an rjson Use r_hex_from_byte in asn1_str Fix large regex matcher state comparison Remove r_snprintf and bump ABI version Introduce RBitSet data structure Implement RVec.findSorted using skiplist tricks Add hidden sandbox grain Fix #16549 - r_regex_init leaks when called on initialized RRegex Initial implementation of the string slice&store api visual Initialize visual ESIL analysis context Fix unaligned ops with mouse wheel scroll windows Add r_str_iendswith for case insensitive extensions",
+          "source": "radare2 Releases",
+          "source_url": "https://github.com/radareorg/radare2/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-06-02T23:07:09+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling",
+            "Dynamic instrumentation",
+            "WebAssembly runtime"
+          ],
+          "score": 46
+        },
+        {
+          "entry_id": "d64dae5c6afd57a480a1065ffb89746780daa3e254c6fda4c86c7d8788bd95cc",
+          "title": "1-3-7/disrobe — trending GitHub repository",
+          "url": "https://github.com/1-3-7/disrobe",
+          "summary": "Decompile, deobfuscate, and unpack almost anything: a universal, deterministic, single-binary reverse-engineering toolkit in Rust for Python, JVM/Android, .NET, WebAssembly, JS, Go, and native packers (UPX/PyArmor/PyInstaller/Nuitka) and 20+ more. Built for malware analysis, CTFs, and security research. GitHub discovery signal: 29 stars, 3 forks, 0 open issues; language Rust; last pushed 2026-07-24. Topics: android, binary-analysis, cybersecurity, decompiler, deobfuscator, disassembler, infosec, malware, malware-analysis, nuitka.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-01-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-05-27T12:04:13+00:00",
+          "trust": 8,
+          "source_boost": 11,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Malware analysis tooling",
+            "Decompiler research"
+          ],
+          "score": 45
+        },
+        {
+          "entry_id": "e345c497e5a0b5f4b580d84d4df9896b5301c891d82369acd20ff1c5b8555e3b",
+          "title": "SyscallX-18113/Apkx-Hunter — trending GitHub repository",
+          "url": "https://github.com/SyscallX-18113/Apkx-Hunter",
+          "summary": "Apkx-Hunter is an Android Static Analysis Framework written entirely in C with OWASP MASVS scanning with 15 categories and 166 detection patterns for Android security assessments, reverse engineering, malware analysis, bug bounty hunting, and penetration testing. It features ML-based secret scoring, and advanced static security analysis. GitHub discovery signal: 72 stars, 9 forks, 0 open issues; language C; last pushed 2026-07-23. Topics: android, android-malware, android-pentesting, android-reverse-engineering, android-security, android-static-analysis, apk-analysis-, bug-bounty, cybersecurity, malware-analysis.",
+          "source": "GitHub Hot Android Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-reverse-engineering+created%3A%3E%3D2026-04-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-mobile",
+          "published": "2026-07-11T11:29:57+00:00",
+          "trust": 8,
+          "source_boost": 17,
+          "topic_terms": [
+            "Android reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 44
+        },
+        {
+          "entry_id": "5e34cdda8b33345630df0e22c3d6d704ee0dee0ab5e7006b8b1721e927567e91",
+          "title": "wasi-sdk-34-rc.1",
+          "url": "https://github.com/WebAssembly/wasi-sdk/releases/tag/wasi-sdk-34-rc.1",
+          "summary": "This is a pre-release of the wasi-sdk-34 tag which will eventually use LLVM 23. This is intended to assist in testing the new wasip3 target and the ABI changes maded in LLVM tip-of-tree. This upgrades to LLVM/Clang tip-of-tree as of July 1, 2026. Testing is welcome and appreciated, but this is not an official release just yet. What's Changed reduce whitespace differences among cmake toolchain files by @yamt in #631 Update CppExceptions.md documentation by @alexcrichton in #630 Add WASI_SDK_BUILD_SHARED option by @rvandermeulen in #632 Set CMAKE_EXECUTABLE_SUFFIX in toolchain files by @alexcrichton in #634 Update wasm-component-ld by @alexcrichton in #635 Remove wasm32-wasi and wasm32-wasi-threads targets by @alexcrichton in #637 More work towards a wasip3 target by @alexcrichton in #636 New Contributors @rvandermeulen made their first contribution in #632 Full Changelog : wasi-sdk-33...wasi-sdk-34-rc.1",
+          "source": "WASI SDK Releases",
+          "source_url": "https://github.com/WebAssembly/wasi-sdk/releases.atom",
+          "category": "webassembly",
+          "published": "2026-07-02T14:00:50+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 44
+        },
+        {
+          "entry_id": "8ee1c16ece68b2a6b2768001706a93af80f0d55a358259bbe677abd0aeb22725",
+          "title": "2M12/DeNuitkanizator — trending GitHub repository",
+          "url": "https://github.com/2M12/DeNuitkanizator",
+          "summary": "Nuitka Assembly analyzer (as well as PyInstaller and other packagers) and native exe-files for extracting metadata, strings, modules, and structures from compiled ones.exe files. It is not a decompiler - it does not restore the source code. GitHub discovery signal: 16 stars, 2 forks, 0 open issues; language Python; last pushed 2026-07-03. Topics: binary-analysis, capstone, ctf, cybersecurity, dfir, disassembler, exe-analyzer, malware-analysis, nuitka, open-source.",
+          "source": "GitHub Hot Binary Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Abinary-analysis+created%3A%3E%3D2026-03-26+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-06-12T16:21:03+00:00",
+          "trust": 8,
+          "source_boost": 10,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 44
+        },
+        {
+          "entry_id": "a6d58d447201047bd674b0d1fd6aeb7f60bceb6a399abba247f7210e61b67c65",
+          "title": "cellebrite-labs/ghidra-rpc — trending GitHub repository",
+          "url": "https://github.com/cellebrite-labs/ghidra-rpc",
+          "summary": "A Ghidra agentic reverse engineering skill. GitHub discovery signal: 281 stars, 18 forks, 0 open issues; language Python; last pushed 2026-07-07.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-03-26+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-06-04T18:41:57+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 44
+        },
+        {
+          "entry_id": "2d51719c69624d105c781edbdf43d16a58155290efa3263136dc52f0a7d0a4f9",
+          "title": "Sidenai/hyperion-disassembler — trending GitHub repository",
+          "url": "https://github.com/Sidenai/hyperion-disassembler",
+          "summary": "Native multi-arch disassembler & decompiler - PE/ELF/Mach-O, x86/x64/ARM64, Lua scripting, RTTI recovery GitHub discovery signal: 199 stars, 23 forks, 0 open issues; language C++; last pushed 2026-06-23. Topics: disassembler, gamehackingtools, re, reverseengineering, windows.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-03-26+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-05-10T17:18:38+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 44
+        },
+        {
+          "entry_id": "6c1fa37b20370a586adb8815fc2c3420fc32bf5bebc59c87d916baae1ad8e58d",
+          "title": "samyfodil/wazy — trending GitHub repository",
+          "url": "https://github.com/samyfodil/wazy",
+          "summary": "Fastest WebAssembly runtime for Go. Supports Component Model & Async. Zero dependencies, no CGO, pure Go. GitHub discovery signal: 29 stars, 1 forks, 0 open issues; language Go; last pushed 2026-07-23. Topics: ahead-of-time, compiler, go, golang, just-in-time, runtime, vm, wasi, wasm, webassembly.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-04-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-07-12T00:19:33+00:00",
+          "trust": 8,
+          "source_boost": 15,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 42
+        },
+        {
+          "entry_id": "e0d383f1d5a2863e41dcc33261c87f3959d21a14428eed8f4829fa7e1d0c1df5",
+          "title": "bytecodealliance/endive — trending GitHub repository",
+          "url": "https://github.com/bytecodealliance/endive",
+          "summary": "The JVM native WebAssembly runtime GitHub discovery signal: 264 stars, 18 forks, 15 open issues; language Java; last pushed 2026-07-23. Topics: java, wasm, webassembly.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-04-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-05-19T17:51:27+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 42
+        },
+        {
+          "entry_id": "699dbc02bbba5724b5ac0736a3010f275dc90e1b86977703f847879b985c3858",
+          "title": "JRBusiness/REipa — trending GitHub repository",
+          "url": "https://github.com/JRBusiness/REipa",
+          "summary": "Fast iOS decompiler & Mach-O disassembler in Rust — arm64, Objective-C class-dump, Swift metadata, and a native desktop GUI. Reads .ipa/App Store binaries directly, no Ghidra, IDA, radare2, or LLVM. GitHub discovery signal: 5 stars, 0 forks, 0 open issues; language Rust; last pushed 2026-07-04. Topics: aarch64, apple, arm64, binary-analysis, class-dump, decompiler, disassembler, ghidra-alternative, ida-pro, ios.",
+          "source": "GitHub Hot iOS Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=%22ios+reverse+engineering%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-03-26+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-mobile",
+          "published": "2026-07-03T19:05:34+00:00",
+          "trust": 8,
+          "source_boost": 11,
+          "topic_terms": [
+            "iOS reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "iOS reverse engineering",
+            "Binary reverse engineering"
+          ],
+          "score": 41
+        },
+        {
+          "entry_id": "805d295ace1892662e54684f0397d4e23c40b972027405d83de36e3a0e144077",
+          "title": "Dump-GUY/ida-nativeaot — trending GitHub repository",
+          "url": "https://github.com/Dump-GUY/ida-nativeaot",
+          "summary": "Recover .NET Native AOT metadata in IDA Pro — MethodTable/type hierarchy, virtual methods, and string literals from symbol-stripped binaries. IDAPython port of washi1337/ghidra-nativeaot. GitHub discovery signal: 62 stars, 4 forks, 1 open issues; language Python; last pushed 2026-06-15. Topics: decompiler, dotnet, eetype, ghidra-port, ida-plugin, ida-pro, idapython, malware-analysis, metadata-recovery, methodtable.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-01-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-06-14T08:26:18+00:00",
+          "trust": 8,
+          "source_boost": 13,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 40
+        },
+        {
+          "entry_id": "04dbfdd30e320d4e9f0cb6c918f5675cedb22a0370b36c70d6c488f60a1459bb",
+          "title": "nuskey8/DotWasm — trending GitHub repository",
+          "url": "https://github.com/nuskey8/DotWasm",
+          "summary": "A WebAssembly runtime implemented in C# for .NET GitHub discovery signal: 85 stars, 7 forks, 7 open issues; language C#; last pushed 2026-05-27. Topics: csharp, dotnet, wasm, webassembly, webassembly-runtime.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-04-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-05-27T16:13:14+00:00",
+          "trust": 8,
+          "source_boost": 14,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 40
+        },
+        {
+          "entry_id": "9c501163b957cf693269b0abff583d3aa209579475a786fef7c73c07d4daeed7",
+          "title": "wasi-sdk-34-rc.2",
+          "url": "https://github.com/WebAssembly/wasi-sdk/releases/tag/wasi-sdk-34-rc.2",
+          "summary": "What's Changed Bump wasm-component-ld version by @alexcrichton in #642 Prepare for 34-rc.2 by @alexcrichton in #644 Full Changelog : wasi-sdk-34-rc.1...wasi-sdk-34-rc.2",
+          "source": "WASI SDK Releases",
+          "source_url": "https://github.com/WebAssembly/wasi-sdk/releases.atom",
+          "category": "webassembly",
+          "published": "2026-07-22T03:28:10+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "d988ccec9368bc5af4a6e70bb4590499b30d7afd86dd30a4f40673a9ec7d808a",
+          "title": "6.0.0-Alpha8",
+          "url": "https://github.com/capstone-engine/capstone/releases/tag/6.0.0-Alpha8",
+          "summary": "Highlights This is a patch release with bug fixes and a few new additions. Thanks a lot to all the new contributors helping with this release! Python Bindings Python bindings on Linux load libcapstone.so now with the RTLD_DEEPBIND flag set. On some Linux systems this should limit the symbols' scopes to the library, instead of global ones. Useful for tools which have two different Capstone versions in their dependency tree. Architectures Update M68k and add support for ColdFire ISA (Sponsored by RizinOrg) Extend M680X support to RS08 and HCS12X. RISC-V: Add reg_access to details. Add support for x86 MOVSXD instructions. x86 decoding uses lookup tables now to increase the overall speed. What's Changed wasm: add missing error check in read_memoryimmediate() by @Oblivionsage in #2866 Extend M680X support to RS08 by @historicattle in #2872 Python binding: Removing xprint utility used in the tests in v6 branch by @Antelox in #2874 Introduce a +noaliascompressed option to selectively enable none-aliasing for compressed instrcution only but leave aliasing for the rest of instructions by @moste00 in #2869 riscv: remove extra RISCV_INS_INVALID by @12101111 in #2876 update clang-format to 20 by @b1llow in #2883 cs_disasm_iter: return early on zero-size input by @slate5 in #2886 Fix stale values in the detail struct by @slate5 in #2881 Add dependabot.yml by @Rot127 in #2884 x86: correctly handle XACQUIRE/XRELEASE by @jxors in #2882 fix: avoid strnlen() in cs_strndup for Mac OS X 10.5 portability by @Scottcjn in #2889 Fix RISCV aliases by @slate5 in #2891 Document the test boolean values. by @Rot127 in #2892 x86: simplify REX prefix parsing by @jxors in #2885 Fix sysreg registers in RISC-V and modify the header patcher to not crash if a header doesn't include all tags of a generated .inc file by @moste00 in #2894 RISC-V: add reg_access and test its usages in C and Python by @moste00 in #2895 RISCV: Fix operand detection (REAL/ALIAS) by @slate5 in #2897 Coverity fixes by @Rot127 in #2901 Update m68k by @b1llow in #2880 Fix position of comments to not break const_generator.py by @historicattle in #2906 Extend M680X support to HCS12X by @historicattle in #2898 next: Speedup x86 decoding with the help of LUT tables by @trufae in #2908 Implements load libcapstone.so with RTLD_DEEPBIND #2912 by @AGhebrea in #2913 Replace cmake setup with manual steps to reduce dependencies. by @Rot127 in #2916 Python: use setattr to rewire Cs.disasm to avoid type checking errors by @mrexodia in #2915 Handle SStream overflow by truncating appends by @Rot127 in #2921 RISCV: the Ventana vendor is missing in the API by @slate5 in #2917 Fix UB of shift >63. by @Rot127 in #2922 Add M68K ColdFire ISA support by @b1llow in #2927 Fix AArch64 register-offset load/store memory operand access ( #2802 ) by @DanielBotnik in #2929 x86: Decode MOVSXD r32, r/m32 and MOVSXD r16, r/m16 by @0xradulf in #2930 New Contributors @Oblivionsage made their first contribution in #2866 @historicattle made their first contribution in #2872 @12101111 made their first contribution in #2876 @slate5 made their first contribution in #2886 @Scottcjn made their first contribution in #2889 @AGhebrea made their first contribution in #2913 @DanielBotnik made their first contribution in #2929 @0xradulf made their first contribution in #2930 Full Changelog : 6.0.0-Alpha7...6.0.0-Alpha8",
+          "source": "Capstone Releases",
+          "source_url": "https://github.com/capstone-engine/capstone/releases.atom",
+          "category": "native-binary",
+          "published": "2026-05-23T19:26:25+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Native binary tooling",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 37
         }
       ]
     },
