@@ -139,13 +139,66 @@ class GeneratorTests(unittest.TestCase):
 
     def test_project_config_has_many_unique_valid_sources(self):
         config = json.loads((ROOT / "seo" / "news-config.json").read_text(encoding="utf-8"))
-        keywords, feeds = MODULE.validate_config(config)
+        keywords, feeds, github_searches, hacker_news = MODULE.validate_config(config)
         enabled = [feed for feed in feeds if feed.enabled]
-        self.assertGreaterEqual(len(keywords), 10)
-        self.assertGreaterEqual(len(enabled), 20)
+        self.assertGreaterEqual(len(keywords), 15)
+        self.assertGreaterEqual(len(enabled), 60)
+        self.assertGreaterEqual(sum(source.enabled for source in github_searches), 8)
+        self.assertGreaterEqual(sum(source.enabled for source in hacker_news), 2)
         self.assertEqual(len({MODULE.normalize_url(feed.url) for feed in enabled}), len(enabled))
         categories = {feed.category for feed in enabled}
-        self.assertGreaterEqual(len(categories), 8)
+        self.assertGreaterEqual(len(categories), 15)
+
+    def test_github_search_parser_adds_popularity_signal(self):
+        spec = MODULE.GithubSearchSpec(
+            name="GitHub Hot IL2CPP",
+            query="il2cpp created:>={since}",
+            category="github-hot-il2cpp",
+            trust=8,
+            enabled=True,
+            max_items=3,
+            source_boost=4,
+            topic_terms=("Unity IL2CPP",),
+            include_any=(),
+            exclude_any=(),
+            lookback_days=90,
+            min_stars=2,
+            per_page=20,
+            sort="stars",
+            order="desc",
+        )
+        now = dt.datetime(2026, 7, 24, tzinfo=dt.timezone.utc)
+        raw = {"items": [{
+            "html_url": "https://github.com/example/il2cpp-tool",
+            "full_name": "example/il2cpp-tool",
+            "description": "IL2CPP metadata recovery and analysis",
+            "stargazers_count": 128,
+            "forks_count": 20,
+            "open_issues_count": 4,
+            "language": "C++",
+            "topics": ["il2cpp", "reverse-engineering"],
+            "created_at": "2026-07-01T00:00:00Z",
+            "pushed_at": "2026-07-23T00:00:00Z",
+            "archived": False,
+            "disabled": False,
+        }]}
+        entries = MODULE.parse_github_search_result(raw, spec, now)
+        self.assertEqual(len(entries), 1)
+        self.assertIn("128 stars", entries[0].summary)
+        self.assertGreater(entries[0].source_boost, spec.source_boost)
+
+    def test_hacker_news_source_validation(self):
+        source = MODULE.load_hacker_news_sources([{
+            "name": "HN Top",
+            "list": "topstories",
+            "include_any": ["WebAssembly"],
+        }])[0]
+        self.assertEqual(source.list_name, "topstories")
+        with self.assertRaises(ValueError):
+            MODULE.load_hacker_news_sources([{
+                "name": "Invalid",
+                "list": "unknown-list",
+            }])
 
 
 if __name__ == "__main__":
