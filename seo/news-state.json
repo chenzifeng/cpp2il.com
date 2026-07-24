@@ -1,8 +1,38 @@
 {
   "version": 2,
-  "last_generated_at": "2026-07-23T04:39:22.905454+00:00",
+  "last_generated_at": "2026-07-24T03:45:24.508503+00:00",
   "feed_errors": [],
   "pages": [
+    {
+      "date": "2026-07-24",
+      "path": "/public/news/2026-07-24-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity engine releases News — July 24, 2026",
+      "description": "Curated Unity engine releases updates for developers and security researchers. 1 relevant releases and technical developments with original source links.",
+      "item_count": 1,
+      "new_item_count": 1,
+      "updated_at": "2026-07-24T03:45:24.508503+00:00",
+      "entries": [
+        {
+          "entry_id": "49f16c6cf7be22b17ad72f1b10723cb2018ebe7f29e780169593124f7a608f64",
+          "title": "Unity 6000.7.0 Alpha",
+          "url": "https://unity.com/releases/editor/alpha/6000.7.0a3",
+          "summary": "Unity 6000.7.0 Alpha",
+          "source": "Unity Alpha Releases",
+          "source_url": "https://unity.com/releases/editor/alpha-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-07-23T13:51:02+00:00",
+          "trust": 10,
+          "source_boost": 1,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 24
+        }
+      ]
+    },
     {
       "date": "2026-07-23",
       "path": "/news/2026-07-23-unity-il2cpp-reverse-engineering-news.html",
