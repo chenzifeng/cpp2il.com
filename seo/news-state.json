@@ -1,14 +1,514 @@
 {
   "version": 3,
-  "last_generated_at": "2026-07-24T04:37:48.426658+00:00",
+  "last_generated_at": "2026-07-25T04:32:00.184860+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
     {
+      "date": "2026-07-25",
+      "path": "/public/news/2026-07-25-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — July 25, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 24 relevant releases and technical developments with original sou…",
+      "item_count": 24,
+      "new_item_count": 24,
+      "updated_at": "2026-07-25T04:32:00.184860+00:00",
+      "entries": [
+        {
+          "entry_id": "7324d9814af8ae964b19169d7186edc9e32f79e471a03426b7df356d41baa2a0",
+          "title": "vmx7/rust_pdb — trending GitHub repository",
+          "url": "https://github.com/vmx7/rust_pdb",
+          "summary": "self-contained il2cpp to windows pdb generator (rust, x64, metadata v39) GitHub discovery signal: 36 stars, 0 forks, 0 open issues; language C++; last pushed 2026-07-15. Topics: cpp, ida, il2cpp, il2cppdumper, pdb, pdb-generator, reverse-engineering, rust, unity, windows.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-03-27+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-07-15T16:11:08+00:00",
+          "trust": 8,
+          "source_boost": 17,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 51
+        },
+        {
+          "entry_id": "7f13315d558bd249dee0ed2724ce5e9b16e1d86869004a54bafb62cb0690ebaa",
+          "title": "f3rb123/kill_flutter — trending GitHub repository",
+          "url": "https://github.com/f3rb123/kill_flutter",
+          "summary": "Flutter SSL Pinning Bypass Tool for Android & iOS — works on any Flutter version without pattern databases GitHub discovery signal: 163 stars, 22 forks, 0 open issues; language Python; last pushed 2026-07-24. Topics: android, apk, boringssl, bypass, flutter, flutter-ssl-pinning-bypass, frida, ios, ipa, latest-reflutter.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-26+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-07-02T17:23:36+00:00",
+          "trust": 8,
+          "source_boost": 17,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 43
+        },
+        {
+          "entry_id": "1bfc15cfcbbb2a6cda0dbc376cd99816b797d89aef504047f8eaf67cc464e472",
+          "title": "MartinDelophy/ai-video-editor — trending GitHub repository",
+          "url": "https://github.com/MartinDelophy/ai-video-editor",
+          "summary": "Local-first browser AI video editor with ONNX voiceovers, Whisper captions, talking avatars, and multi-track MP4/WebM export. GitHub discovery signal: 260 stars, 19 forks, 4 open issues; language JavaScript; last pushed 2026-07-24. Topics: agent-skills, ai-video-editor, ai-voiceover, automatic-captions, browser-ai, ffmpeg, ffmpeg-wasm, joyvasa, liveportrait, onnx.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-04-26+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-07-09T04:43:11+00:00",
+          "trust": 8,
+          "source_boost": 19,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 38
+        },
+        {
+          "entry_id": "b119d53ee66e371eea4a706c2cf6737a74361663384625ebd0523102d8f2b7c9",
+          "title": "0xSHAK1B/Instagram-iOS-SSL-Pinning-Bypass — trending GitHub repository",
+          "url": "https://github.com/0xSHAK1B/Instagram-iOS-SSL-Pinning-Bypass",
+          "summary": "SSL Pinning Bypass for Instagram iOS (IPA) — Intercept and analyze HTTPS traffic on iPhone & iPad using Burp Suite, mitmproxy, Reqable, or Proxypin. TrollStore & Sideloadly compatible. GitHub discovery signal: 3 stars, 0 forks, 0 open issues; language Unknown; last pushed 2026-06-30. Topics: frida, https-interception, instagram, instagram-ios, instagram-ios-ssl-certificate-pinning-bypass, instagram-ios-ssl-pinning-bypass, instagram-ios-traffic-analysis, instagram-ios-traffic-interception, instagram-ssl-pinning-bypass, instagram-ssl-unpinning.",
+          "source": "GitHub Hot iOS Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=%22ios+reverse+engineering%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-03-27+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-mobile",
+          "published": "2026-06-27T13:21:56+00:00",
+          "trust": 8,
+          "source_boost": 9,
+          "topic_terms": [
+            "iOS reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "iOS reverse engineering",
+            "Dynamic instrumentation"
+          ],
+          "score": 36
+        },
+        {
+          "entry_id": "c8ffb82d1fcf055466ea37a430a73cc899970f1993d6e363f2edee204e73b10a",
+          "title": "version_130",
+          "url": "https://github.com/WebAssembly/binaryen/releases/tag/version_130",
+          "summary": "What's Changed Canonicalize NaNs from nearbyint by @stevenfontanella in #8561 feat: Update jsoo build process for libbinaryen by @spotandjake in #8565 Handle ref before expected in Heap2Local for StructCmpxchg by @tlively in #8566 GUFA: Ignore unreachable packed reads by @kripken in #8564 Group locals by written type in binary writer by @tlively in #8568 More ArrayCmpxchg expected opts in Heap2Local by @tlively in #8567 Fix typos by @tlively in #8570 Make everything 4% faster by skipping empty tasks [NFC] by @kripken in #8571 [NFC] Allow SubTypes::iterSubTypes to stop early by @kripken in #8573 Temporarily disable Split in fuzz_opt by @tlively in #8575 [NFC] Optimize ModuleUtils type-scanning code by @kripken in #8572 [FP16] Implement f32x4.promote_low_f16x8. by @brendandahl in #8578 Fix optimized grouping of locals by @tlively in #8577 Make getters const in Module class by @stevenfontanella in #8579 Make everything 1.5% faster by calling leaf visitors immediately [NFC] by @kripken in #8581 feat(js & c-api): Rename Memory segment functions data segment. by @spotandjake in #8576 [ci] Use emsdk-setup github action by @sbc100 in #8584 Move a v8 fuzzer flag to a more prominent place by @kripken in #8582 [Stack Switching] wasm-ctor-eval: stop on serializing continuations to globals by @kripken in #8585 [NFC] Move fuzzer VMs out of CompareVMs by @kripken in #8587 [NFC] Fuzzer: Add a run_js() method by @kripken in #8588 Fuzzer: Make --fuzz-preserve-imports-and-exports also preserve the start function by @kripken in #8589 Fix spelling typos by @daichifukui in #8591 perf: use unordered_set for Name sets for better compile speed by @Changqing-JING in #8586 Increase Alpine stack size to 8MB by @kripken in #8595 Refactor graph traversal in GlobalEffects by @stevenfontanella in #8593 New fuzzer: PreserveImportsExportsJS by @kripken in #8592 [NFC] Simplify lexer and move to header by @tlively in #8597 perf: use unordered containers for Name sets in SimplifyLocals and DuplicateFunctionElimination by @Changqing-JING in #8600 [NFC] Simplify a bit of logic in RemoveUnusedBrs by @kripken in #8603 [NFC] Skip parsing instructions in first parser pass by @tlively in #8601 Heap2Local: Handle unreachable ref.test replacement by @kripken in #8605 Use fewer scratch locals in IRBuilder by @tlively in #8608 Handle strings when skipping function bodies by @tlively in #8614 Validate descriptor clause forward references by @tlively in #8611 PreserveImportsExportsJS fuzzer: Handle JS differences in stack traces by @kripken in #8610 NFC: Propagate global effects via strongly-connected components by @stevenfontanella in #8607 BranchHinting fuzzing: Do not remove effects when deinstrumenting by @kripken in #8613 [NFC] Simplify printing of unreachable replacements by @tlively in #8616 Fix and improve unreachable parsing by @tlively in #8617 [NFC] Remove redundant code from bad merge by @tlively in #8627 Simplify branch hint instrumentation by @tlively in #8624 [StackIR] Optimize the simple case of a multivalue tee and extracts by @kripken in #8623 Look at fallthrough when deleting branch hints by @tlively in #8630 [wasm-merge] Preserve function names when writing a profile by @tlively in #8631 Avoid assertion in BrOn parsing by @kripken in #8635 Fix comment about --no-auto-initial-contents by @aheejin in #8636 PreserveImportsExportsJS fuzzer: Handle NaNs properly by @kripken in #8620 Account for global effects in LinearExecutionWalker by @stevenfontanella in #8637 Fix binary writing for test_emit_all_features by @stevenfontanella in #8642 Add feature flag for wide arithmetic by @stevenfontanella in #8639 Fuzzer: Only run one handler at a time by @kripken in #8643 [FP16] Implement f16x8.demote_{f64x2, f32x4}_zero. by @brendandahl in #8580 Compute effects for indirect calls in GlobalEffects by @stevenfontanella in #8609 Canonicalize NaNs when casting between float and double by @stevenfontanella in #8645 add missing include by @walkingeyerobot in #8646 [wasm-reduce] Empty functions with delta debugging by @tlively in #8640 Rename lld tests to finalize tests. NFC by @sbc100 in #8395 [legalize-js-interface] Don't delete exports by @sbc100 in #8649 PreserveImportsExportsJS fuzzer: Handle crashes and function ids by @kripken in #8648 Enable more ruff checks and remove flake8. NFC by @sbc100 in #8654 Fuzzer: Do not return 0 from upTo when input is finished by @kripken in #8653 Support i64.add/sub128 instructions from Wide Arithmetic proposal by @stevenfontanella in #8638 Move getI64Pair to wasm::Types by @stevenfontanella in #8658 [EH] Vacuum: Fix up pops after adding blocks in a Try by @kripken in #8659 Disable wide arithmetic in fuzzers by @stevenfontanella in #8663 [EH] Handle pops in Directize by @kripken in #8666 wasm-reduce: Fix integer overflows by @kripken in #8665 Support i64.mul_wide_s and i64.mul_wide_u from Wide Arithmetic proposal by @stevenfontanella in #8652 [NFC] Refactor delta debugger utility to a struct by @tlively in #8651 Avoid use of C++20 header in GlobalEffects.cpp by @juj in #8668 Directize: Handle table.grow by @kripken in #8671 RemoveExports pass by @kripken in #8670 Add Wide Arithmetic C + JS APIs by @stevenfontanella in #8660 Fix clang 13 build by @juj in #8669 Rename relaxed SIMD instructions with prefix by @brendandahl in #8673 [NFC] Use pascal-style string storage for IString/Name by @kripken in #8662 RemoveExports: Support comma separation and a response file by @kripken in #8674 SignatureRefining: Do not refine results of functions used in continuations by @kripken in #8675 Support fuzzing more Relaxed SIMD instructions by @brendandahl in #8676 perf: avoid O(N^2) exiting-branch checks in CodeFolding by @Changqing-JING in #8599 Add fuzzing support for more FP16 instructions by @brendandahl in #8678 Flush stdout/stderr between wasm-opt tests by @sbc100 in #8680 New fuzzer mode: Fuzz against JavaScript by @kripken in #8655 Enable fuzzing for relaxed atomics by @stevenfontanella in #8664 Remove guesswork from getStackPointerGlobal. NFC by @sbc100 in #8679 Add print_heading testsuite helper. NFC by @sbc100 in #8650 [NFC] Inline more core HeapType methods by @kripken in #8681 [NFC] cache repeated tree walks to avoid O(N^2) in optimizeTerminatingTails in CodeFolding by @Changqing-JING in #8602 Fuzzer: Fix subtyping of bottom types when fuzzing against JS by @kripken in #8683 Fix crash in MinimizeRecGroups by @tlively in #8685 [wasm-split] Move shareImportableItems (NFC) by @aheejin in #8686 Testing: Add verbose logging feature, and stop excessive spec logging by @kripken in #8684 Fuzzer: Do not emit calls to table.get when trivialNesting is set by @kripken in #8700 [wasm-merge] Handle merging of start functions with control flow by @kripken in #8697 [wasm-reduce] Remove functions with delta debugging by @tlively in #8690 execution-results: Handle a trap during start by @kripken in #8699 JSON: Implement printing for all types by @kripken in #8701 [wasm-split] Split module elements early by @aheejin in #8688 PrintBoundary pass, emitting a JSON summary of the API boundary of the module by @kripken in #8703 Supply fuzz imports to second modules as well by @tlively in #8705 [wasm-split] Use Name() for nonexistent global base (NFC) by @aheejin in #8704 [wasm-split] Sync secondary tables' initial/max by @aheejin in #8714 [wasm-split] Fix table naming conflicts by @aheejin in #8708 Fix validation error in wasm-reduce by @tlively in #8715 Fix implicitly-deleted default constructor error on older Xcode versions by @sbc100 in #8719 Use C++20 string_view starts_with/ends_with methods. NFC by @sbc100 in #8722 Use C++20 requires clauses in TypeNameGeneratorBase by @sbc100 in #8552 [CI] Build on macos-14 rather than macos-latest by @sbc100 in #8721 Fix macos 13 compilation errors with stringstream.view() by @kripken in #8725 [wasm-split] Tidy up indirectCallsToSecondaryFunctions (NFC) by @aheejin in #8726 [wasm-split] Share active table with caller modules by @aheejin in #8728 Skip folding branches of unreachable If by @tlively in #8724 Run non-nullable local fixups when reducing functions by @tlively in #8730 wasm-ctor-eval: Remove the start function when we succeed by @kripken in #8702 Fuzzer: Export tags by @kripken in #8729 [wasm-split] Do not split out the start function by @kripken in #8711 Fix OOB errors in the lexer by @tlively in #8734 [NFC] Return optional in Lexer::peek by @tlively in #8737 MarkJSCalled pass by @kripken in #8733 PrintBoundary: Handle types for all externable things by @kripken in #8739 Fix test_cluster_fuzz.py V8 flags mismatch by @tlively in #8746 Require linux on the wasm-reduce lit test by @tlively in #8749 Fix i64x2 shift on big-endian by @sertonix in #8748 Fix ContinuationStore desynchronization by @tlively in #8741 [Fuzzer] Make Split's exports a list of strings by @aheejin in #8731 [wasm-split] Don't split trapping globals by @aheejin in #8742 [Stack Switching] Fix continuation execution from a start function by @kripken in #8751 RemoveUnusedModuleElements: Referenced elems refer to their offsets by @kripken in #8750 Fuzzer: Mark js-called functions before optimizing by @kripken in #8752 LICM: Migrate from invalidates to orderedBefore by @tlively in #8743 LocalCSE: Migrate from invalidates to orderedBefore by @tlively in #8744 CodePushing: Migrate from invalidates to orderedBefore by @tlively in #8745 Effect analysis for indirect call expressions by @stevenfontanella in #8625 Set branchesOut effect for call.without.effects by @stevenfontanella in #8695 Fix \"pessemistic\" => \"pessimistic\" by @tlively in #8756 [NFC] Document reference construction in closed world by @kripken in #8761 Set BUILD_STATIC_LIB under emscripten by @sbc100 in #8762 Fix block-nested Pop in GUFA by @tlively in #8747 Fix typo in mark-js-called.wast by @tlively in #8755 HeapStoreOptimization: Migrate from invalidates to orderedBefore by @tlively in #8758 [wasm-split] Generate fillers in MVP + --no-placenolders by @aheejin in #8759 Use indirect call effects in LinearExecutionWalker by @stevenfontanella in #8738 [wasm-split] Scan trapping globals if custom descriptors is enabled (NFC) by @aheejin in #8768 NFC: Use const EffectAnalyzer& in ostream operator by @stevenfontanella in #8769 Support resuming into try-catch in interpreter by @tlively in #8757 [NFC] Simplify externref literal representation by @tlively in #8765 MergeBlocks: Migrate from invalidates to orderedBefore by @tlively in #8767 Fix refinalization for --gufa-cast-all by @tlively in #8773 Use cmake standard BUILD_SHARED_LIBS setting by @sbc100 in #8764 [NFC] Refactor closedWorld to WorldMode enum by @tlively in #8740 Update merge-blocks-atomics.wast expectations by @tlively in #8777 OptimizeCasts: Migrate from invalidates to orderedBefore by @tlively in #8774 [wasm-ctor-eval] Avoid local and global state getting out of sync by @kripken in #8776 NFC: Simplify test with improved indirect call effects by @stevenfontanella in #8780 [wasm-ctor-eval] Do not error on non-constant code in the start function by @kripken in #8778 Fuzz wide arithmetic instructions by @stevenfontanella in #8661 Enable fuzzing for wide arithmetic by @stevenfontanella in #8781 Add isActive/isPassive methods to segments (NFC) by @aheejin in #8782 [wasm-split] Fix error printing when func does not exist by @aheejin in #8784 Skip d8 lit tests on windows by @kripken in #8788 [StackSwitching] Error properly on an unhandled resume during start by @kripken in #8787 NFC: Require override keyword by @stevenfontanella in #8789 Make areConsecutiveInputsEqual more precise by @tlively in #8783 [wasm-split] Move computeTransitiveGlobals into getUsedNames (NFC) by @aheejin in #8790 update_lit_tests.py: Do not leak results between modules by @kripken in #8791 Version 130 by @kripken in #8793 New Contributors @daichifukui made their first contribution in #8591 Full Changelog : version_129...version_130",
+          "source": "Binaryen Releases",
+          "source_url": "https://github.com/WebAssembly/binaryen/releases.atom",
+          "category": "webassembly",
+          "published": "2026-06-22T23:58:16+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Unity WebGL reverse engineering"
+          ],
+          "matched_terms": [
+            "Unity WebGL reverse engineering",
+            "WebAssembly tooling"
+          ],
+          "score": 36
+        },
+        {
+          "entry_id": "651bdea27bf0691f5cb3d1c34e89f16118edce4d39308a034da879597f279195",
+          "title": "azw413/Glass — trending GitHub repository",
+          "url": "https://github.com/azw413/Glass",
+          "summary": "Glass - a fast and free IDA Pro alternative GitHub discovery signal: 188 stars, 11 forks, 0 open issues; language Rust; last pushed 2026-06-15.",
+          "source": "GitHub Hot iOS Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=%22ios+reverse+engineering%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-03-27+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-mobile",
+          "published": "2026-05-15T18:41:51+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "iOS reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "iOS reverse engineering"
+          ],
+          "score": 36
+        },
+        {
+          "entry_id": "2ab9ff73be1593610dc3f2f83c985cff07c62905c777a9f3d4069e359a32dd65",
+          "title": "v47.0.0: Release Wasmtime 47.0.0 (#13898)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v47.0.0",
+          "summary": "47.0.0 Released 2026-07-20. Added Wasmtime now has the WebAssembly GC proposal enabled by default. #13594 Wasmtime now has the WebAssembly exception-handling proposal enabled by default. #13603 Cranelift now supports the compact unwind format on Mach-O platforms. #13586 Wasmtime now supports bounds-checked unsafe intrinsics which take spectre mitigations into account. #13597 The wasmtime::Engine type now supports reflection to determine the value of most Config options that were selected during creation. #13671 Support for fibers on unsupported architectures is now supported through an opt-in compile time Cargo feature defining a C API embedders can implement. #13620 Embedders can now create an ArrayRef with a memcpy-style constructor. #13716 A new Accessor::poll_ready_for_concurrent_call API can be used to detect when backpressure indicates that a function is ready to be invoked. #13683 Changed Support for wasi-threads and Wasmtime's wasi-common crate have been removed. For more information see the associated RFC in Wasmtime. #13558 The call_indirect instruction of final super types has been optimized when the GC proposal is enabled. #13572 Cranelift's *_imm builder helpers have been deprecated in favor of *_imm_{s,u} helpers. #13583 The wasmtime CLI's syntax supported for --invoke with components now supports fully qualified WIT interface names. #13564 Cranelift's stack_{load,store} instructions have been removed. #13580 Cranelift's {band,bor,bxor}_not instructions have been removed. #13590 Cranelift's global_value instruction has been removed. #13682 The wasmtime wizer subcommand now supports specifying the initialization function with WAVE for components. #13582 Wasmtime's codegen on aarch64 for the i32x4.relaxed_dot_i8x16_i7x16_add_s wasm instruction now uses a single sdot instruction where possible. #13640 Wasmtime's .wasmtime{traps,addrmap} sections in *.cwasm files are now significantly smaller. #13628 Wasmtime now supports removing symbols from *.cwasm files and additionally has a documentation page about producing minimally-sized *.cwasm outputs. #13630 Wasmtime now suports resources in the named_imports option of bindgen! . #13666 Wasmtime now invokes the host's socket_addr_check callback for implicit binds performed in WASIp3. #13677 Wasmtime's component-to-component sync-to-sync fused adapters have been optimized. #13695 Cranelift now supports RISC-V's Zvbb extension. #13738 Fixed The IPV6_V6ONLY option is now set for UDP sockets. #13596 Uncaught wasm exceptions at component boundaries are now turned into traps to prevent components catching exceptions from other components. #13613 Addresses being sent do with WASIp3 and UDP are now validated as they are in WASIp2. #13631 GC roots on component model fiber stacks are now properly traced. #13693 An unaligned load when reading debug state slot values has been fixed. #13791",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-07-20T15:12:30+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "6727d3dbadfb8cb7f37d371ff9cf8580476cd15023a14eb9237af750a0e6c2b2",
+          "title": "WasmEdge 0.17.0",
+          "url": "https://github.com/WasmEdge/WasmEdge/releases/tag/0.17.0",
+          "summary": "0.17.0 (2026-05-18) Breaking changes: [AOT]: WasmEdge no longer runs a compiled WASM by default for safety reasons. The default execution mode will be interpreter, even the given program is a compiled WASM file. Please ensure you add --run-mode=aot to enable AOT mode when running a compiled AOT WASM. Features: [Version]: Bump the version of the WasmEdge shared library. Due to the breaking change of API, bump the SOVERSION to 0.1.1 . Due to the breaking change of API, bump the plug-in API_VERSION to 5 . [Memory64] feat: support wasm memory64 proposal in interpreter and AOT/JIT feat(api): introduce limit context to replace limit struct [CAPI] feat(api): add registerModule with alias name across API layers [Component Model] feat(loader): complete the loader implementation of canonical feat(validator): implement ComponentName parsing and validation with full spec coverage feat(component,validator): validate component value types, func types, and type imports feat(component,validator): populate instance exports and support alias-export chains feat(component,validator): export ascription sort-kind subtype check feat(component,loader): align functype binary grammar with current spec feat(component,loader): support i64 resource rep under memory64 proposal feat(component,validator): validate declaration types in component model ( #4797 ) feat(component,validator): reject duplicate names on instance exprs ( #4811 ) feat(component,validator): validate canonical built-ins ( #4842 ) [WASI-NN] feat(wasi-nn,piper): update the WASI-NN Piper plugin due to upstream changes ( #4443 ) feat(wasi-nn,ggml): support HIP backend for llama.cpp ( #4552 ) feat(wasi-nn,ggml): upgrade llama.cpp version to b8757 feat(wasi-nn,ggml): redirect multi model log ( #4801 ) [Tools] feat(cli): add CLI option to control logging level ( #4525 ) feat(loader,vm): gate AOT/JIT behaviour on RunMode and tighten dlopen scope [Misc] feat(hash): upgrade rapidhash to v3 Nano variant ( #4734 ) feat(android): remove gradle-wrapper.jar and bootstrap wrapper ( #4505 ) feat(android): move app from utils to examples ( #4499 ) feat(docker): add libpiper to plugin-deps image Fixed issues: [CAPI] fix(api): add noexcept to all C API functions fix(api): add exception handlers at C API boundary fix(api): guard WasmEdge_StringCopy against null Buf ( #4686 ) fix(api): typo and grammar error in WasmEdge C API docs ( #4763 ) fix(api): correct parameter order of VM RegisterModuleFromImportWithAlias fix(api): handle null paths in C APIs ( #4835 ) [Component Model] fix(component): use ValVariant for argument types in ToolOnComponent ( #4704 , #4716 ) fix(component,loader): missed set data in loading core deftype fix(component,validator): enforce lowercase package name per spec PR #630 fix(component,validator): route core module externdesc and stop export double-count fix(component): pass correct alignment to realloc in canonical lifting ( #4730 ) [Validator] fix(validator): wrong jump end offset of try_table fix(validator): handle unreachable type in ref.test/ref.cast validation ( #4669 ) fix(validator): use matchType for active element segment reftype ( #4814 ) [Loader] fix(loader): handle try_table catch flag syntax ( #4676 ) fix(loader,component): support component inline export names and core tag sort in loader ( #4745 ) fix(loader): reject non-canonical multi-byte SLEB128 blocktype ( #4817 ) [Executor] fix(executor): move WaiterMap from Executor to MemoryInstance fix(executor): preserve nullability for externalized refs in ref.test/ref.cast ( #4679 ) fix(executor): use memmove semantics for same-memory memory.copy ( #4671 ) fix(executor): preserve heap type when externalizing references ( #4536 ) fix(executor): synchronize HostFuncHandler callback invocation ( #4508 ) fix(executor): correct memory.init error log logic ( #4582 ) fix(executor): only memory address apply the uint64_t, the indices of memories still are uint32_t fix(executor): ref type for uninit values in table ( #4764 ) fix(executor): normalize null ref types for locals and AOT ( #4772 ) fix(executor): prevent silent override of error code in registerModule() & registerComponent() ( #4777 ) fix(executor): reject insufficient argument count in component invoke fix(executor): correct WASI socket v2 fallback matching ( #4832 ) fix(executor): preserve exnref payload across throw_ref [Runtime] fix(runtime): use unique_lock in StoreManager::reset() to prevent data race ( #4771 ) [AOT] fix(llvm): serialize LLD linker invocations with mutex fix(compiler): error on LLVM-22 ( #4696 ) fix(aot): align the NaN propagation order in {f32x4,f64x2}.max/min with the interpreter mode ( #4522 ) [Tools] fix(cli): handle invalid numeric arguments gracefully ( #4602 ) fix(tools): handle exported function not found case in reactor mode ( #4647 ) fix(tools): default logging level not passing ( #4765 ) fix(po): reject numeric option values with trailing garbage fix(cli): reject insufficient arguments for invoked function [WASI] fix(wasi): resolve 100% CPU usage on macOS due to clock mismatch ( #4470 ) fix(wasi): return ERRNO BADF error when try to sync a directory ( #4572 ) fix(wasi): refactor Poller context handling to use pointer instead of wrapper ( #4509 ) fix(wasi): initialize Filestat to silence MSVC C4701 warning ( #4852 ) [WASI-NN] fix(wasi-nn,bitnet): out-of-bounds array access in unload() function ( #4531 ) fix(wasi-nn): disable shallow clone for BitNet dependency ( #4638 ) fix(wasi-nn): install espeak-ng-data for Piper backend tests in CI ( #4634 ) [Plugin] fix(plugin,process): correct timeout unit conversion ( #4678 ) fix(plugin,ffmpeg): clamp guest-provided lengths when copying FFmpeg C strings ( #4478 ) fix(plugin,zlib): standardize missing memory instance handling ( #4506 ) fix(plugin,ffmpeg): remove duplicate directory creation check ( #4484 ) [Docker] fix(docker): build libpiper statically ( #4565 ) fix(docker): build libpiper statically in install script ( #4535 ) fix(docker): manually link espeak-ng and ucd static libs for Piper backend ( #4622 ) [Examples] fix(example): update PluginDescriptor in getstring example ( #4798 ) [Misc] fix(common): correct uint128 output for fmt on Windows fix(common): remove invalid specialization for uint128 ( #4796 ) fix(misc): resolve warnings on Windows clang-cl fix(typo): some typo in comments ( #4810 ) Tests: test(spec): add thread and wait command support in spec tests test: add C-API boundary test for empty strings test(spec): combine component model spec tests into core spec test infrastructure test: support component-model spec test test(spec): update spec test suite to 2026/03/01 test: apply the spec tests for memory64 proposal test: add component model fuzz testing ( #4657 ) test(component,validator): split component tests and add type validation tests test(component,validator): add regression tests for validator fixes test(component): enable func spec test and drop wrong-order entry fix(test): split poll socket tests to isolate flaky cycle 2 ( #4747 ) fix(test): disable LTO in tensorflow plugin tests of manylinux ( #4766 ) test(component): fix GCC -Wdangling-reference and gate Clang-only flags ( #4813 ) test: cover RunMode behaviours and opt JIT/AOT spec tests into explicit modes test(executor): regression tests for exnref payload preservation Refactored: refactor(loader): trick for deducing the instruction class size refactor(runtime): adjust the boundary printing logic for error logging refactor(installer): handle shell login config by OS and distro ( #4453 ) refactor(WASI-Crypto): deduplicate factory functions and OpenSSL BIO helpers ( #4545 ) refactor(validator): introduce typed index spaces and fix section validation refactor(api): introduce RunMode and the --run-mode CLI flag refactor(component): move AST::Component::Canonical enums to enums.inc ( #4875 ) Misc: docs: explain why ErrCode does not support parameterized messages ( #4666 ) docs(roadmap): update roadmap for Q1/2026 ( #4583 ) docs: add WasmEdge mentorship policy ( #4519 ) docs: update CONTRIBUTING and PR template for the basic checks ( #4538 ) chore(AI): provide AGENTS.md for the AI co-working toolchains ( #4521 ) chore: add mentorship policy into the issue template ( #4520 ) chore: add missing gitvote update from previous maintainer onboarding ( #4493 ) docs: create technical review document for WasmEdge docs: update the technical-review.md for the latest changes docs(roadmap): update roadmap for Q2/2026 ( #4800 ) chore: fix comment grammar sweep ( #4850 ) CI: [dependabot] ci(dependabot): bump github/codeql-action from 4.31.9 to 4.35.4 ci(dependabot): bump codecov/codecov-action from 5.5.2 to 6.0.0 ( #4750 ) ci(dependabot): bump actions/cache from 5.0.1 to 5.0.5 ci(dependabot): bump cachix/install-nix-action from 31.9.0 to 31.10.6 ci(dependabot): bump vedantmgoyal9/winget-releaser ( #4721 ) ci(dependabot): bump dorny/paths-filter from 3.0.2 to 4.0.1 ( #4718 ) ci(dependabot): bump actions/download-artifact from 8.0.0 to 8.0.1 ( #4717 ) ci(dependabot): bump step-security/harden-runner from 2.14.0 to 2.19.1 ci(dependabot): bump the docker group with 3 updates ( #4697 ) ci(dependabot): bump docker/login-action from 3.6.0 to 4.1.0 in the docker group ( #4760 ) ci(dependabot): bump docker/bake-action from 7.0.0 to 7.1.0 in the docker group ( #4780 ) ci(dependabot): bump the upload-and-download-artifact group with 2 updates ( #4689 ) ci(dependabot): bump actions/upload-artifact from 7.0.0 to 7.0.1 ci(dependabot): bump crazy-max/ghaction-chocolatey from 3.4.0 to 4.0.0 ( #4652 ) ci(dependabot): bump actions/setup-python from 6.1.0 to 6.2.0 ( #4555 ) ci(dependabot): bump actions/checkout from 6.0.1 to 6.0.2 ( #4556 ) ci(dependabot): bump actions/github-script from 8.0.0 to 9.0.0 ( #4783 ) ci(dependabot): bump actions/labeler from 6.0.1 to 6.1.0 ( #4869 ) ci(dependabot): bump GuillaumeFalourd/setup-windows10-sdk-action from 2.4 to 2.5 ( #4868 ) [Runner] ci(riscv): enable RISC-V cross-compilation CI ( #4542 ) ci: guard reusable workflows and jobs to avoid empty matrix jobs ( #4668 ) ci: optimize s390x workflow with apt cache and Ninja ( #4645 ) ci: cache homebrew deps, lld ( #4600 ) ci(windows): cache LLVM and remove redundant CMake configure for WASI-NN GGML ( #4580 ) ci: fix Windows GGML performance by forcing Release build ( #4578 ) ci: bump lineguard to 0.1.7 ( #4627 ) ci: symbol exposure checking ci: update labeler.yml for some new categories ( #4584 ) refactor(ci): optimize workflows ( #4544 ) fix(ci): cache lld pre-built on macOS workflow ( #4753 ) fix(ci): new content for wasi-testsuite ( #4751 ) fix(ci): update SOVERSION for openwrt build ( #4792 ) fix(ci): bump Fedora IWYU toolchain to llvm19 + IWYU 0.23 ( #4827 ) fix(ci): backward support for old tap in older brew LLVM version ( #4845 ) Thank all the contributors who made this release possible! Abdelrahman Emad, alabulei1, Asish Kumar, Asmit Kumar Rai, Barry, Digo, Divyansh Khatri, Han-Wen Tsao, harukiki97, hydai, Kajal Jotwani, Karan Lokchandani, Khushi-Singh, LuaLighter, Lîm Tsú-thuàn, Meet Jain, Mrinal Chaturvedi, Parship Chowdhury, Piyush Kumar, Pranjal Kole, Samarth Jain, SANCHIT KUMAR, Sankalp Jha, Shen-Ta Hsieh(BestSteve), Siddhartha Mondal, Sourav Kumar, SriramB, Tushar Gupta, Vikas_pal8923, Vishal Malyan, Wang-Yang Li, Yi Liu, Yi-Ying He If you want to build from source, please use WasmEdge-0.17.0-src.tar.gz instead of the zip or tarball provided by GitHub directly.",
+          "source": "WasmEdge Releases",
+          "source_url": "https://github.com/WasmEdge/WasmEdge/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-07-14T12:42:34+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "e12905ff98a51d485c1164c81aa2c7e680ab518f1374472b2f716e46d51d40b8",
+          "title": "WasmEdge 0.17.1",
+          "url": "https://github.com/WasmEdge/WasmEdge/releases/tag/0.17.1",
+          "summary": "0.17.1 (2026-07-03) Features: [CAPI] feat(api): version C ABI symbols for the 0.16 -> 0.17 limit change ( #4951 ) Fixed issues: [Validator] fix: reject non-funcref tables/refs in call_indirect and call_ref ( #4920 ) [WASI] fix(wasi): reject symlink targets that resolve outside the preopen root ( #4938 ) [WASI-Logging] fix(plugin/wasi-logging): keep the default logger alive across instances [Common] fix(common): build against fmt 8 and spdlog without callback_sink fix(common): extend formatter compat to fmt 6 and spdlog 1.5 fix(common): build against fmt 12.2 where uint128_fallback was renamed fix(common): honor format specs and preserve Char fill width in fmt<8 uint128 formatter fallback fix(common): guard __has_include probes and include for std::move Refactored: [Common] refactor(common): move WASMEDGE_FMT_CONST to a dedicated fmt compat header refactor(common): unify ErrInfo fmt formatters on the FmtCtx template pattern CI: feat(ci): add static-lib build workflow for macOS arm64 ( #4948 ) fix(ci): brew trust for wasmedge/llvm ( #5079 ) ci: ignore gcov negative-hit parse errors in coverage build ( #5062 ) ci: add fuzzer build to Ubuntu CI matrix ( #5036 ) ci: remove unused packages in fedora rawhide ( #5069 ) [dependabot] ci(dependabot): bump codecov/codecov-action from 6.0.1 to 7.0.0 ( #4943 ) ci(dependabot): bump github/codeql-action from 4.36.1 to 4.36.2 ( #4944 ) ci(dependabot): bump step-security/harden-runner from 2.19.1 to 2.19.4 ( #4890 , #4899 ) ci(dependabot): bump actions/checkout from 6.0.2 to 7.0.0 ( #4925 , #5042 ) ci(dependabot): bump the docker group with 3 updates ( #4898 ) ci(dependabot): bump actions/cache from 5.0.5 to 6.1.0 ( #5083 , #5084 , #5085 ) ci(dependabot): bump actions/setup-python from 6.2.0 to 6.3.0 ( #5082 ) ci(dependabot): bump crazy-max/ghaction-chocolatey from 4.0.0 to 4.1.0 ( #5081 ) Thank all the contributors who made this release possible! Shen-Ta Hsieh(BestSteve), Yi-Ying He, dm4, hydai If you want to build from source, please use WasmEdge-0.17.1-src.tar.gz instead of the zip or tarball provided by GitHub directly.",
+          "source": "WasmEdge Releases",
+          "source_url": "https://github.com/WasmEdge/WasmEdge/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-07-06T12:43:02+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "f385c76f7be0b4740a7cfd1aa0c6417e8f88f6e6b70c25e342f377fd43d053ac",
+          "title": "WAMR-2.4.5",
+          "url": "https://github.com/bytecodealliance/wasm-micro-runtime/releases/tag/WAMR-2.4.5",
+          "summary": "Breaking Changes New Features Bug Fixes CVE-2026-54914. Fix a potential heap Buffer Overflow in WASI poll_oneoff. CVE-2026-54913. Fix a potential partial uninitialized memory read in load_init_expr. CVE-2026-54912. Fix a potential heap buffer overflow in fast interpreter. Enhancements Others",
+          "source": "WAMR Releases",
+          "source_url": "https://github.com/bytecodealliance/wasm-micro-runtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-06-29T23:07:45+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "6c2e328cebb7d974edc22de10935f05dbe6a95afc2e7992f831d247ea53314c9",
+          "title": "6.0.1",
+          "url": "https://github.com/emscripten-core/emscripten/releases/tag/6.0.1",
+          "summary": "What's Changed The ability to redirect JS compiler stderr using EMCC_STDERR_FILE was removed. These days you can use EMCC_DEBUG and/or EMCC_DEBUG_SAVE to preserve all the intermediate JS compiler files. ( #27101 ) The installed versions of the compiler-rt library now follow the upstream naming convetion of libclang_rt.<something>.a . ( #27089 ) Dynamic linking now explicitly requires asynchronous Wasm compilation. The process of loading side modules at startup currently depends on this. ( #27086 ) New experimental -sCROSS_ORIGIN_STORAGE linker flag integrating the proposed Cross-Origin Storage browser API as a progressive enhancement for Wasm loading on the web target. See docs/compiling/CrossOriginStorage.rst for details. ( #27066 ) The -sUSE_PTHREADS and -sMEMORY64 flags have been deprecated in favor of the more standard -pthread and -m64 (or --target=wasm64 ) flags. ( #27025 ) Adds wasm-bindgen support. When -sWASM_BINDGEN is set, Emscripten will call out to wasm-bindgen in the users's path and integrate the wasm-bindgen JS with the normal Emscripten JS. Some wasm-bindgen features may not yet be fully supported. ( #23493 ) Fixed getentropy / random_get spuriously failing under Node.js and the shell environment for small requests. ( #27122 ) The startup process for the generated program now makes use of async / await under more circumstances (specifically when using setStatus , or run dependencies). This means that errors during startup (or during the main() function) will more often show up as unhandled promise rejections ( onunhandledreject ) rather than synchronous errors ( onerror ). ( #27121 ) Contributors Thanks to the following contributors: @sbc100 (48) @brendandahl (3) @hwhsu1231 (3) @kleisauke (3) @Diyou (2) @arsnyder16 (1) @guybedford (1) @hoodmane (1) @iakovgi (1) @juj (1) @stevenwdv (1) @tomayac (1) @valadaptive (1) @walkingeyerobot (1) New Contributors @iakovgi made their first contribution in #27109 Full Changelog : 6.0.0...6.0.1",
+          "source": "Emscripten Releases",
+          "source_url": "https://github.com/emscripten-core/emscripten/releases.atom",
+          "category": "webassembly",
+          "published": "2026-06-22T22:12:03+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Unity WebGL reverse engineering"
+          ],
+          "matched_terms": [
+            "Unity WebGL reverse engineering",
+            "WebAssembly tooling"
+          ],
+          "score": 34
+        },
+        {
+          "entry_id": "8be5edc3fb3600945b3f0cb7b0b6e27b7945531b74c0363b922576aa65ac0666",
+          "title": "Ghidra_12.1.1_build",
+          "url": "https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidra_12.1.1_build",
+          "summary": "GP-1 Additional ChangeHistory revision for 12.1.1 release",
+          "source": "Ghidra Releases",
+          "source_url": "https://github.com/NationalSecurityAgency/ghidra/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-05-27T18:21:37+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 33
+        },
+        {
+          "entry_id": "63ddd93d048f9d3ef1562cfd86140a070e760e737246424dd126bd95a9d03ff1",
+          "title": "v1.254.0",
+          "url": "https://github.com/bytecodealliance/wasm-tools/releases/tag/v1.254.0",
+          "summary": "What's Changed Reject out-of-range NaN payloads and bare type-index value types by @vouillon in #2563 Implement upstream spec changes for component text syntax by @alexcrichton in #2562 wasmparser: require result equivalence for (on $t switch) handler by @vouillon in #2564 Prevent unbounded recursion when parsing WITs by @alexcrichton in #2565 Add a parse recurse limit to wasm-wave by @alexcrichton in #2566 wasm-metadata: Place a limit on decompression size by @alexcrichton in #2567 Fix limiting 32-bit tables with wasm-smith by @alexcrichton in #2569 Validate component model type depth by @alexcrichton in #2570 Fix requiring realloc for async -lowered results-with-pointers by @alexcrichton in #2572 Call __wasm_init_task for _initialize hook by @alexcrichton in #2574 Release wasm-tools 1.254.0 by @github-actions[bot] in #2575 New Contributors @vouillon made their first contribution in #2563 Full Changelog : v1.253.0...v1.254.0",
+          "source": "wasm-tools Releases",
+          "source_url": "https://github.com/bytecodealliance/wasm-tools/releases.atom",
+          "category": "webassembly",
+          "published": "2026-07-20T17:34:12+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "Decompiler research"
+          ],
+          "score": 32
+        },
+        {
+          "entry_id": "2e862cf8276d8b6a6c2476e83df30b637f5a67c74ce7e9f1c4308eacbc2b43b6",
+          "title": "v1.253.0",
+          "url": "https://github.com/bytecodealliance/wasm-tools/releases/tag/v1.253.0",
+          "summary": "What's Changed Limit the element count of fixed-length lists by @eyupcanakman in #2537 wasmparser: Rename BinaryReaderError to Error by @lann in #2546 fix: signature lowering for strings and lists on modules with 64bit memory by @christoph-dfinity in #2544 json-from-wast: name emitted files after the output stem by @eyupcanakman in #2542 Refactor KebabStr to not require unsafe code by @alexcrichton in #2548 Add CustomSectionReader -> BinaryReader conversion by @WorldSEnder in #2550 wasmparser: Add Error::missing_wasm_feature by @lann in #2549 fix: use ptr-sized type when returning via ptr indirection under memory64 by @christoph-dfinity in #2553 Synchronize threading intrinsics with specification by @alexcrichton in #2554 Remove resource.drop async by @alexcrichton in #2552 Initial work for versionsuffix and external-id by @alexcrichton in #2555 Make parsing errors downcastable by @PhoebeSzmucer in #2557 Add SourceMap::resolve_span for resolving global span locations by @PhoebeSzmucer in #2559 Render error by @PhoebeSzmucer in #2560 Support external-id on more items by @alexcrichton in #2558 Release wasm-tools 1.253.0 by @github-actions[bot] in #2561 New Contributors @christoph-dfinity made their first contribution in #2544 Full Changelog : v1.252.0...v1.253.0",
+          "source": "wasm-tools Releases",
+          "source_url": "https://github.com/bytecodealliance/wasm-tools/releases.atom",
+          "category": "webassembly",
+          "published": "2026-07-07T16:29:04+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "Decompiler research"
+          ],
+          "score": 32
+        },
+        {
+          "entry_id": "49f8461ddd5154519eace20f91cfd128e3b328e7e9f0c52ed3c05898c3f734a5",
+          "title": "6.1.8",
+          "url": "https://github.com/radareorg/radare2/releases/tag/6.1.8",
+          "summary": "Release Notes Codename: \"Exploit Twist\" Version: 6.1.8 Previous: 6.1.6 AbiDiff: 107-110 (3) Commits: 236 Contributors: 18 curl -Ls https://github.com/radareorg/radare2/releases/download/6.1.8/radare2-6.1.8.tar.xz | tar xJv radare2-6.1.8/sys/install.sh Highlights More details Authors Abhi Evgeny Kolmakov Jon Palmisciano Kevin Stubbings Lazar Aleksic Luisss003 Nitan Alexandru Marcel Ole André Vadla Ravnås ada-l0velace bdunahu dependabot[bot] pancake pancake pancake phix33 phix33 potato randomjack94dev Changes abi The sdb_remove has been deprecated as dupe for sdb_unset analysis Keep duplicate single-instruction import trampolines distinct on name collision Autoname import call stubs after the imported function Don't create string metadata at addresses inside analysed functions Add pebble script for stub scans Optimize SDB key renames in analysis metadata Ship the syscall tables for PebbleOS Render array stack var element accesses as name[i] in disasm Shadow phantom stack vars overlaid by an array-typed variable's extent Optimize a:six and add more tests for it Fix afv mislabeling DWARF register locals as args by honoring isarg Fix PPC bctrl losing CALL type under capstone6 via BCCTR/BCCTRL alias ids arch Harden PPC64 TOC tracking by invalidating toc_map on register clobber, call and return Invalidate the PPC TOC register cache on function return Validate asm.cpu against plugin CPU list Default cpu for avr is now ATxmega128a4u Fix PIC disassembler on big endian hosts More ARM big endian fixes Update capstone v5/next, bigendian, m68k and x64 fixes asm Apply the pseudo filter only once in rasm2 and pad bin Fix obf reload stacking duplicate bin objects and io maps Autoresolve anal.gp for ppc32 via small-data Handle as cyclic memory the raw string map address wraparounds Honor paddr in raw strings Fix raw string rebasing for non-VA sections Fix #10722 - Respect mapaddr on raw strings Optimize dyldcache local symbol matching Fix #26079 - Local symbols missing in dyldcache In ftab/gns1 use segment tags for proper archinfo Harden GNS1 loader Add FTAB extractor plugin Improve GNS1 detection to solve dyldcache false positives Require spaced arguments for iz+ Fix dyldcache local symbol offset matching Add R_DYLDCACHE_NO_DEPS option for shallow filtering Auto-resolve PPC64 TOC base (anal.gp) for ET_REL and ELFv2 Fix fuzzed PE timeout bug, clamping vsize Reduce false positives in the PL PEs id Add Rust and D demanglers Add new C++ demangler Add IBM XL demangler Add ARM ABI demangler Add ldmap.r2.js script to load sourceline from ldscript map files Fix more bigendian parsing bugs for PE Fix kernelcache parsing on bigendian Fix SFC parsing on big endian Fix big endian parsing bug for MDT Implement idd command Apply PPC64 TOC16 relocations to addis/ld immediates on ET_REL Clean LE endian-safe parser Detect ppc32 e500/e500mc cpu from .PPC.EMB.apuinfo note Fix memory leaks in the mdmp parser Fix misaligned PPC ET_REL REL24/REL14 relocation targets build Fix riscv_cs capstone mode detection for all capstone versions Move Nix stuff into dist/nix switch to rev for sdb Bump softprops/action-gh-release from 3.0.0 to 3.0.1 update zydis subproject url for nix Add Nix flake and dev shell support Use #ifdef CS_VERSION_PRE_RELEASE instead of CS_NEXT_VERSION version guard for riscv_cs capstone mode Fix subproject updates Meson use_sys_zydis: find library as capital \"Zydis\" Detect system zydis without pkgconfig + ppc fixes cons Use RStrConstPool for RConsMark names Fix console context races and UAF when running background tasks Fix bluy theme color for swi/new instructions Fix #25984 - Support negative internal grep columns Reset terminal with RCons in a portable way core Fix numvar reference math state handling crash Fix HFS+ filename UTF-8 buffer sizing Fix null deref when RBinInfo callback is null Fix p= sparse map allocation crash Fix len multiply overflow in r_str_utf16_encode Fix len multiply overflow in r_str_escape_utf Fix len multiply overflow in escape_utf8 Fix sz multiply overflow in r_str_escape_raw Fix #26047 - allocation size overflow in r_str_word_get0set Fix count overflow in x examine command Fix blocksize multiply overflow in pfb command Fix integer overflow in pxAv print command Fix signed overflow and null deref in pv print command Fix #26048 - integer overflow in pb Fix #26051 - oobread on truncated mdmp files Fix #26049 - cmd.load descriptor UAF in bin load Fix #26045 - r_str_append signed length overflow Fix #26044 - UAF in pde, regprofile changing inside the loop Fix more OOB read bugs in the java parser Fix #26043 - 2 byte oobread bug in RBinJava line number table parser Fix #26042 - Fix aos opcode count overflow Fix #26046 - Harden and optimie RStr.replace for irreal 2 milion length strings cases Fix #26035 - Oobsfaults in omba, ombd and ombg commands Fix more empty buffer issues in bin2strdup callers Fix assert with 0 length quoted strings in w debug Fix cons push leak in RDebugIo reg profile Open self with api instead of commands in r2preload Fix GDB register cache bounds and ownership checks diff Use RCons.printf in core/gdiff disasm Support hexdump/disasm addresses in octal base Unify asm.addr.base10/36 into asm.addr.base Fix overlapped strings length using RAnalOp.ptrSize Apply the pseudo filter only once in the disasm pipeline Preserve spaces in constructed string comments esil Model PPC XER.CA ESIL for add/subtract-with-carry and algebraic shift-right Isolate ESIL registers for type link propagation Use local ESIL for type link propagation Unify ESIL constructors behind an REsilOptions struct Use core ESIL step-back for dsb Consolidate ESIL step-back history and tests Report ESIL step-over stop status Improve stepover and more aeso tests Print ESIL cmd handler values in hexadecimal Honor esil.iotrap in core ESIL stepping Rewrite ESIL stepping around core single step Get rid of esil.verbose Use ESIL voyeurs to track refs Reload core ESIL callbacks on arch changes Fix PPC indexed load/store, shift/rotate/divide and sign-extend ESIL Add ESIL for PPC scalar floating-point load/store/arith/convert ops Fix floating point emulation bug on 32bit Fix error handling in esil poke Fix esil poke on big endian hosts Add ESIL for PPC integer/logical/rotate/mod ops and fix subfze/nor/nand Add ESIL for the PPC isel conditional-select instruction Pass ESIL instances to arch callbacks Use local ESIL stats for ROP classification Tighten core ESIL step and trap handling Clean up core ESIL config and interface plumbing Treat unreadable pin PCs as handled in core ESIL Fix ESIL alias voyeurs seeing updated registers Add core ESIL lifecycle and stepback support fs Fix HFS+ catalog filename conversion Avoid heap allocation in HFS+ catalog key compare Expose addrline dwarf info in the r2 virtual filesystem Fix ntfs utf16 filenames on bigendian http Fix prefix and www root fallbacks io The dsc io plugin is not a block device Fix memory leak in io.self on close Fix windows block device identify muta Fix endian bugs in the serpent print Implement pFJ for JWT token decoding Add the CLd for source baked decompiler command Add RTableOptions.wrap and more markdown improvements Extend all p-/p= with json and better bounds Fix #26034 - pf beyond blocksize prints zeros pseudo Simplify pdc helpers and remove redundant null checks Refactor pdc line emission and loop goto filtering Resolve pdc global folds from analysis metadata Recover varnames with gp relative globals for pdc signatures Hold asm.addr.base for pdc too Reset asm.addr.relto in pdc to not break pseudo disasm Fold resolved TOC global loads into flag names in pdc r2r Fix token test terminal reset expectation refactor Use r_read_ble32 in rtti_msvc reg Document lowercase register roles for dyncc search Use isolated ESIL VM for gadget search Use local ESIL in search commands Preserve gadget class details Unify gadget class storage Fix legacy ROP classification correctness shell Add r2vsql in the fallback command handler Shorten alias help messages Fix 'join' command argument parsing socket Fix PTY dynapi initialization in socket redirection tests Improve and document REQUIRE in r2r Some tests require zydis tools Fix binary number parsing in rasm2 Rafs2 wasnt included in binr/blob types Fix type lookups for long function names Add 'tsn' to lookup struct names by size Add ten command for enum lookup by numeric value Support union offsets in type member lookup util Optimize RStrBuf.slice - 30% faster Render inline markdown codeblocks/spans Render markdown attributes in table cells Add table trim option with ellipsis Fix markdown table emoji widths Fix custom float roundings and endian issues windows Port the r2preload thing to Windows",
+          "source": "radare2 Releases",
+          "source_url": "https://github.com/radareorg/radare2/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-06-23T12:51:51+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 32
+        },
+        {
+          "entry_id": "c3ed779a2fb6ebe15d023b2b0b26716e7e4f726558f7f2f62cbc0f4f1908d106",
+          "title": "Release v0.9.0",
+          "url": "https://github.com/rizinorg/rizin/releases/tag/v0.9.0",
+          "summary": "In this release we continued the long-running migration toward the unified RzArch plugin model: the legacy RzAsm struct was dropped from the public API (a compatibility layer remains for the in-progress parts), and ESIL was moved into its own isolated namespace. ESIL remains deprecated and is scheduled for removal, while RzIL continues to grow as its replacement. Sadly, in this release we weren't able to finish the ESIL->RzIL migration yet, but we made a substantial progress in this regard and have working prototype. On the architecture front several new disassemblers and analysis plugins were added. TMS320C54x joins the TMS320 family (whose C55x/C55x+ RzIL coverage was also greatly extended), classic BPF (cBPF) disassembly was added, SuperH-3 (SH-3) is now selectable via asm.cpu , and new M680X CPU types ( RS08 , HCS12X ) and MCS96 ISA variants (8096/80C196/80C296) are supported. MCS96 got the analysis support. We also moved more plugins onto Capstone v6 (now 6.0.0-alpha9 ): RISC-V was rewritten on top of Capstone, HPPA (PA-RISC) switched to the Capstone disassembler (dropping its GNU plugin), and M68k ColdFire support was added. Infineon C166 and MIL-STD-1750 support was added as well. DEC VAX was rewritten from scratch and analysis was implemented. On the RzIL front, uplifting was expanded with scalar x86 SSE/SSE2 floating-point instructions and a full SPARC lifter, and the RzIL VM can now halt on exceptions. Also, the uplifting was implemented for the whole TMS320C5x series. RzIL output is now first-class in the UI: a new pl / plF print path, colorized RzIL in ao , and colors, Unicode and RzIL in the visual bit editor . The pf format was completely reworked and syntax has changed to support more features and be more consistent. Consult with the doc/pf.md and pf? output for more details. A major new visualization arrived: statistical/entropy histograms . Rizin can now render per-block χ² , index of coincidence , min-entropy and serial-correlation graphs (essential indicators that allow to scrutinize data when simple entropy is uniform), both as vertical ( p= ) and horizontal ( p== ) histograms, several with an interactive minimap mode. A new Marks subsystem (the m command family) lets you place, color, comment, name and navigate named locations in the file. Visual bit editor mode was improved: A new color theme \"underwater\" was added: Binary-format support saw a lot of activity. New loaders/parsers were added for STABS debug info, Lua bytecode (Luac 5.0–5.5) and LuaJIT 2.1 , the CaRT container, Amiga hunk , MDT (Qualcomm peripheral images), and PEF (Preferred Executable Format) ; the NE parser was rewritten and bootimg now understands v1–v4 images. The iH header-structure command was extended to a long list of formats (WASM, DEX, AVR, PYC, bFLT, CGC, Menuet, …), and ELF coredump parsing was added for LoongArch, s390x, RISC-V, PPC64, HP PA-RISC and DEC Alpha . Python 3.14 bytecode is now supported. The debugger's heap inspection was reorganized into per-allocator namespaces under dmh : dmhg for glibc (renamed from dmh ), dmhw for Windows heaps (renamed from dmw ), and dmhj for jemalloc (renamed from dmx , with new jemalloc 5.3.0 support). On the analysis side we added value constraints for variables and globals, C++ devirtualization of virtual calls, and a typeclass system for types. As part of an ongoing licensing cleanup, several GPL/GNU-derived plugins (VAX, SPARC, HPPA) were removed in favor of LGPL or Capstone-based implementations. The unmaintained brainfuck , rzweb and rzpipe RzIO backends (and the brainfuck RzDebug plugin) were removed, along with the old pg \"print gadgets\"/visual-ROP feature and ESIL-based search. As usual, this cycle also brought broad performance work (a hashtable-based RzGraph , faster RzVector / RzBitVector / RzList primitives, a ROP/JOP/COP gadget cache) and continued the battle against global state for thread-safety, plus a large number of fixes across the framework. Note: the on-disk project format version was bumped from 19 to 25 during this cycle. Projects saved with older versions will be migrated/loaded through the compatibility path. New command line options rz-find -R <cmd> to execute a Rizin command for each search hit (complements -E , which runs a shell command per file) rz-find -V for verbose output (print each file scanned) rz-diff -K <theme> to set a color theme (same themes as the eco command) rz-ar became a working archive ( .a ) extraction tool: rz-ar [-hlqv] [-o outdir] archive [member ...] — -l list members, -o output directory, -q quiet, -v version New commands Marks (named locations) — new m family: m / m+ — add a mark, m- / m-* — remove one or all marks ml / ml. — list all marks / those covering the current offset mi — show marks in the current block, md — describe marks at the offset, mf — distance to a mark mc — set/show a mark color, mC — set/show a mark comment, mN — set/show a mark realname mm — move a mark, mr — rename a mark Statistical & entropy histograms: p=C / p=I / p=M / p=S — vertical histograms of χ², index of coincidence, min-entropy and serial correlation per block p==C / p==I / p==M / p==S — the same as horizontal histograms, with interactive …v variants ( p==Cv , p==Iv , p==Mv , p==Sv ) Gadget search (ROP/JOP/COP): /J , /J/ , /Jl , /Js , /Jg , /Jk , /J- — list/search JOP (Jump-Oriented Programming) gadgets /C , /C/ , /Cl , /Cs , /Cg , /Ck , /C- — list/search COP (Call-Oriented Programming) gadgets /Rl , /Rs , /R- — search ROP gadgets by size / by stack delta, and clear the gadget cache Debugger heap (reorganized, see Renames below for the moved commands): glibc dmhg* , Windows dmhw* , and jemalloc dmhj* families, including new jemalloc 5.3.0 commands dmhje / dmhjei (extent inspection) Analysis: afvc / afvcs / afvc- — list/set/remove value constraints of local variables (e.g. afvcs var0 \">0,<=9\" ) avgc / avgcs / avgc- — list/set/remove value constraints of global variables avD — devirtualize calls to virtual functions for the current function; avx — show addresses of calls to a virtual function ahie / ahie- — set/delete an enum type hint for an operand Types & classes: tk / tkl / tks — show / list / set the typeclass of a type tr — rename a type and update every type and function type that references it tdf — define a type from a pf format string (or a saved pf.<name> ) ica — apply class flags at a given address; ics — generate type definitions from classes Print / structured data: plf / plF — print RzIL / print Unicode RzIL of the function at the current seek pFas — deserialize an ASN.1 DER structure from the current block; pF8 — deserialize PKCS#8 private keys pfa — apply a format string at a given address and define flags for each field ppd/ — return the offset where a value appears in the default De Bruijn pattern Misc: obs — select the binary version for a given architecture from a fat binary ecl — list colors with their descriptions ?** , ?*** , ?**e — interactively search command summaries, their extended help, and settings (aliases for ?*~… , deep help search, and el~… ) A new Unicode-enabled plF RzIL output: Renames Heap commands were namespaced per allocator: glibc: dmh* → dmhg* (e.g. dmha → dmhga , dmhc → dmhgc , dmht → dmhgt , …) Windows: dmw* → dmhw* ( dmw → dmhw , dmwb → dmhwb , dmwbf → dmhwbf ) jemalloc: dmx* → dmhj* ( dmxa → dmhja , dmxb → dmhjb , dmxc → dmhjc , …) The ROP rop.* configuration variables were renamed to gadget.* (see Configuration variables changes ), reflecting that gadget handling now covers ROP, JOP and COP. Removals ESIL-based search /E (offset matching an ESIL expression) /cc — checksum-collision brute-force search pg , pg* , pg-* , pgm — the old \"print gadgets\" / visual-ROP feature ik* — \"show all binary header information\" (superseded by the now widely-supported iH ) dbh- — remove breakpoint plugin handler rz-asm -r (output in Rizin commands) rz-bin -X [fmt] [f] .. (package the given files/bins into a fat or zip archive) RzIO backends brainfuck , rzweb and rzpipe , plus the brainfuck RzDebug plugin GPL/GNU-derived VAX , SPARC and HPPA plugins (replaced by LGPL or Capstone-based ones) Deprecated/internal APIs: RzAsm from the public headers, rz_range , addrbytes from RzIO , several rz_list_iter_* helpers, and assorted ESIL remnants Configuration variables changes New options analysis.fcn_max_size — maximum function size (default 256K ) bin.show.blocks — append block-type information to strings (default true ) hex.nodot — hide the dot before printable characters in HexII mode ( pxi ) scr.pf.short — render pf offsets as +<delta> from the format base instead of absolute addresses scr.hist.ruler — show the histogram ruler scr.hist.minimap — show the top minimap on the visual histogram ( p==v ); auto-hides when data fits the screen scr.hist.width / scr.hist.height — default size of the horizontal histogram ( 0 = auto-clamp to the terminal) str.unprintable — comma-separated hex code points to treat as non-printable Renamed options rop.cache → gadget.cache rop.comments → gadget.comments rop.conditional → gadget.conditional rop.len → gadget.len rop.subchains → gadget.subchains graph.offset was merged into asm.offset Removed options asm.demangle (demangling is now controlled elsewhere; this drove the project-format bump) bin.debase64 Dependencies Capstone is now at 6.0.0-alpha9 . Swift demangling moved to the external rz-libswift dependency (the bundled use_swift_demangler path is disabled globally); rz-libdemangle was updated several times, including a CVE fix. Notes for packagers / API users The minimum on-disk project version is now 25 (was 19). RzAsm & RzAnalysis are no longer part of the public API surface; consumers should migrate to call appropriate functions & when available the new RzArch APIs. A compatibility layer remains for parts of the migration. ESIL now lives in its own namespace and remains deprecated. Sponsors @stephen-fox",
+          "source": "Rizin Releases",
+          "source_url": "https://github.com/rizinorg/rizin/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-06-21T11:36:26+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 32
+        },
+        {
+          "entry_id": "89462e3587b0a2ca6ed4cf72a0174c70c69e7169f16933bce948be2fbb20656d",
+          "title": "v4.5.1",
+          "url": "https://github.com/MobSF/Mobile-Security-Framework-MobSF/releases/tag/v4.5.1",
+          "summary": "v4.5.1 Changelog Features or Enhancements Added Jailbroken iOS Device support in MobSF, Tested in iPhone 6s and 8 with Checkra1n and Palera1n jailbreaks [Early Beta]. See docs: https://mobsf.github.io/docs/#/dynamic_analyzer_docker?id=jailbroken-ios-device-beta Added a new android rule to flag Webview mixed content Bug Fixes Macho Debug Symbol False positive fix in objdump Security Fixed Multiple Security issues GHSA-95px-34x5-p37h GHSA-x768-8642-mmq9 GHSA-3p54-567p-2wpr GHSA-8j49-mmcx-4mp5 What's Changed Jailbroken iOS Device Support by @ajinabraham in #2536 [HOTFIX] Fix false positive in debug symbol stripping check using objdump by @yushawnwong in #2616 Add Android WebView mixed-content detection rule by @potato-20 in #2618 [HOTFIX][Security] Security Updates July 5 2026 by @ajinabraham in #2627 New Contributors @yushawnwong made their first contribution in #2616 @potato-20 made their first contribution in #2618 Full Changelog : v4.4.6...v4.5.1",
+          "source": "MobSF Releases",
+          "source_url": "https://github.com/MobSF/Mobile-Security-Framework-MobSF/releases.atom",
+          "category": "mobile-security",
+          "published": "2026-07-06T00:12:49+00:00",
+          "trust": 9,
+          "source_boost": 5,
+          "topic_terms": [
+            "APK and IPA analysis",
+            "Malware analysis tooling"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Malware analysis tooling"
+          ],
+          "score": 31
+        },
+        {
+          "entry_id": "e25372b4b0b94847eab46f4bb37fe893546a4f032befd6f630e2e7afb3ae644f",
+          "title": "v6.6.0-rc1",
+          "url": "https://github.com/dnSpyEx/dnSpy/releases/tag/v6.6.0-rc1",
+          "summary": "Uhmmm, how do I even make a release in 2026? I guess I'll just use AI. [20 minutes of fighting with AI later] I guess doing it manually will work too :D Speaking of AI... There will not be an official dnSpy AI integration, or an MCP server, or whatever else. Stop asking! Find an extension, make one yourself, or just vibecode it, and if it doesn't work, don't ask me, ask the extension developer... or AI. New features: Added a new String References tool window, which allows viewing all strings present in the .NET metadata and method bodies (thanks to @Washi1337 ). Added a new .NET 10 distribution ( dnSpy-net ), which is not self-contained and contains both x64 and x86 binaries. This is intended as a more modern alternative to the dnSpy-netframework distribution. This is the recommended distribution if you have .NET 10 already installed on your system. Added support for the Windows 11 Snap Layout feature for dnSpy windows. dnSpy now detects when it is being run under Wine on Linux and disables WPF hardware acceleration to improve compatibility. SDK style projects can now be exported from dnSpy.Console . dnSpy's XML syntax highlighter now properly supports CDATA . Added support for the AllowByRefLike metadata flag on generic parameters in edit dialogs. Added support for generating .slnx solution files when exporting the decompilation to a project file. Improvements and bug fixes: Updated from .NET 8 to .NET 10. Ensure the Save Module window appears for at least some time on screen to signal that the module was actually written. Fixed the decompilation of the calling convention field of DllImport for .NET. Fixed export of resources with MemoryStream type when generating RESX files. Added additional monospace fallback fonts to improve compatibility for running dnSpy under Wine. Fixed incorrect thread exit codes being displayed in the debugger Output dialog. Improved UI tooltips for metadata members with partially corrupted metadata. Added more safeguards against StackOverflowException in the decompiler. Fixed a rare decompiler crash relating to the C# fixed statement. Properly escape resource names in the treeview. BAML decompiler now adds x:FieldModifier when necessary. Improved exporting BAML files to project files. Tweaked C# decompiler variable naming algorithm. Fixed BAML decompiler moving readonly properties into XML attributes, resulting in invalid code. The assembly resolver now considers the *.runtimeconfig.json file. Fixed incorrect syntax in IL disassembler and improved accuracy. Truncate the content of the long string resources when displaying them. Fixed unnatural scrolling on laptops equipped with precision touchpads. Updated translations. Dependency updates: Updated dnlib to 4.5.0 Updated VS MEF to 17.13.41 Updated Roslyn to 5.3.0 Updated NuGet.Configuration to 7.6.0 Updated dbgshim.dll component to the latest version New Contributors @zuoyuanchun made their first contribution in #337 @SlimeNull made their first contribution in #345 @jfevia made their first contribution in #366 @kant2002 made their first contribution in #464 @Washi1337 made their first contribution in #472 @oolanlongoo made their first contribution in #420 Full Changelog : v6.5.1...v6.6.0-rc1 Thanks to everyone for reporting issues, opening pull requests, and supporting the project through other means! This release would not have been possible otherwise :P A special thanks goes out to all my current and past GitHub Sponsors for supporting this project and me working on it! SHA-256 hashes: dnSpy-net.zip : ee0a000032e8a6a6624bef6a429aed4bb2ca214cdbb2943e46d6fa38e8f33d99 dnSpy-net-win32.zip : 1b9f5b15eb13a31106df97b40d80f2c648882c47588ac6b5388665dcfc3e85e2 dnSpy-net-win64.zip : c612c74f04e01895576fa64c0d2638e946551d9749eabdf200f5224a2e758daa dnSpy-netframework.zip : f41a3cb0e2d095cc5a6ec17490ef8d7f0a1e74c5c38093900137e6357dae26da",
+          "source": "dnSpyEx Releases",
+          "source_url": "https://github.com/dnSpyEx/dnSpy/releases.atom",
+          "category": "dotnet-decompilers",
+          "published": "2026-05-14T16:50:49+00:00",
+          "trust": 8,
+          "source_boost": 4,
+          "topic_terms": [
+            "C# decompilation"
+          ],
+          "matched_terms": [
+            "C# decompilation",
+            "Binary reverse engineering"
+          ],
+          "score": 31
+        },
+        {
+          "entry_id": "93b94794e2fb85fe99f40c0ba5e99028137b7974085af7e21a3d1a71861840e9",
+          "title": "1.0.0",
+          "url": "https://github.com/lief-project/LIEF/releases/tag/1.0.0",
+          "summary": "https://lief.re/doc/stable/changelog.html#july-12th-2026",
+          "source": "LIEF Releases",
+          "source_url": "https://github.com/lief-project/LIEF/releases.atom",
+          "category": "native-binary",
+          "published": "2026-07-12T14:03:40+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Native binary tooling",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Native binary tooling"
+          ],
+          "score": 30
+        },
+        {
+          "entry_id": "c982aba63aa9562d4f51b12fa8597f040bd0533d47ffb8db5fcfd99adcdcb907",
+          "title": "Android v3 – ace654289f5abc240509fc941453ebc5",
+          "url": "https://github.com/Impact-I/reFlutter/releases/tag/android-v3-ace654289f5abc240509fc941453ebc5",
+          "summary": "reFlutter Android engine build (v3). Snapshot hash: ace654289f5abc240509fc941453ebc5",
+          "source": "reFlutter Releases",
+          "source_url": "https://github.com/Impact-I/reFlutter/releases.atom",
+          "category": "mobile-reverse-engineering",
+          "published": "2026-06-15T03:52:42+00:00",
+          "trust": 7,
+          "source_boost": 3,
+          "topic_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "iOS reverse engineering"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "iOS reverse engineering"
+          ],
+          "score": 30
+        },
+        {
+          "entry_id": "e67248a3af334abbddfb8f3cd25cb6353719801541b0f0c9de796dda51cd6a22",
+          "title": "iOS v3 – ace654289f5abc240509fc941453ebc5",
+          "url": "https://github.com/Impact-I/reFlutter/releases/tag/ios-v3-ace654289f5abc240509fc941453ebc5",
+          "summary": "reFlutter iOS engine build (v3). Snapshot hash: ace654289f5abc240509fc941453ebc5",
+          "source": "reFlutter Releases",
+          "source_url": "https://github.com/Impact-I/reFlutter/releases.atom",
+          "category": "mobile-reverse-engineering",
+          "published": "2026-06-15T03:49:58+00:00",
+          "trust": 7,
+          "source_boost": 3,
+          "topic_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "iOS reverse engineering"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "iOS reverse engineering"
+          ],
+          "score": 30
+        },
+        {
+          "entry_id": "b7711bbfb4d89de2612c40b2a8f6978e5f68844a941822cd56811b56cc64548f",
+          "title": "6.0.0-Alpha10",
+          "url": "https://github.com/capstone-engine/capstone/releases/tag/6.0.0-Alpha10",
+          "summary": "API changes and additions Enum names of the Alpha architecture are now correctly all upper case. Because of an old Auto-Sync bug all the enum names were prefixed with Alpha instead of ALPHA and some contained lower case letters. Sadly, I just recently recognized that Alpha was effected by that bug. While this change is very annoying for everybody using the Alpha module, it must be done before the Beta release. Please excuse the inconvenience! A simple command to replace almost all of these occurrences in your code base is: find . -type f -regex \".*\\.\\(c\\|h\\)$\" -exec sed -i -E \"s|Alpha_([A-Z0-9_]+)|ALPHA_\\1|g\" {} + Author: @Rot127 RISC-V got a v5 compatibility macro for its header. With its recent module update CS_MODE_RISCVC was renamed to CS_MODE_RISCV_C to be more consistent with the other CS_MODE_ enums. This could break builds against a v5 code base which only has CS_MODE_RISCVC . Now you can simply define CAPSTONE_RISCV_COMPAT_HEADER before including capstone.h and CS_MODE_RISCVC will be defined as alias for CS_MODE_RISCV_C #define CAPSTONE_RISCV_COMPAT_HEADER #include <capstone/capstone.h> Author: @moste00 Prevent literal displacement truncation for AArch64 memory operands. There are AArch64 displacements which are 64bit in size. But aarch64_op_mem.disp was an int32_t . It was promoted to an int64_t . Author: @amaanmujawar Fixed several decoding bugs in the Alpha module. See #2967 for details. Author: @mattst88 The RISC-V details now also include the FP rounding mode cs_riscv.rounding_mode . Author: @moste00 AArch64: Add CS_OPT_SYNTAX_AARCH64_EXPLICIT_WIDE_IMM flag to print shifted MOVN and MOVZ instructions in their explicit forms instead of using the equivalent MOV aliases. Example output from cstool : > cstool aarch64 0xe402a012 mov w4, #-0x170001 > cstool aarch64+explicitwideimm 0xe402a012 movn w4, #0x17, lsl #16 > cstool aarch64+explicitwideimm 0xe402a052 movz w4, #0x17, lsl #16 Author: @amaanmujawar M68K: Fixed EA decoding error and added ColdFire EMAC_B dual-acc MAC. Author: @b1llow What's Changed Add CI job for building and testing on 32bit big endian by @trufae in #2941 Fixed CONTRIBUTING.md not listing all Architectures by @rectrap in #2952 Find writeback registers by @slate5 in #2960 m68k: fix off-by-one bounds check in M68K_insn_name by @jmestwa-coder in #2964 Fix OOB reads/writes - CVE-2026-55893 & CVE-2026-55894 by @Rot127 in #2968 Alpha: fix decoder bugs and add test coverage by @mattst88 in #2967 Fix crash due to invalid register by @moste00 in #2966 Fix naming convention for Alpha enums by @Rot127 in #2971 Add frm operands to float/double instructions by @moste00 in #2972 Apply clang-format by @Rot127 in #2975 Fix AArch64 predicate-as-counter register printed in hex by @yufengzjj in #2976 SH: fix signed shift overflow in sh_disassemble dsp decode by @jmestwa-coder in #2983 Guard operand append past MAX_MC_OPS in MCInst.c by @Samin061 in #2985 M68K: Handle EA decoding error case and add ColdFire EMAC_B dual-acc MAC by @b1llow in #2987 Xtensa: fix swapped isIntN arguments in decodeOffset_16_16Operand by @jmestwa-coder in #2986 Don't build cstool arch specific details printing, if not requested. by @Rot127 in #2888 Add overflow check to cs_kern_os_calloc by @Rot127 in #2980 M68K: Fix FPU condition and FMOVEM decoding by @b1llow in #2993 AArch64: enh Add option for explicit shifted wide immediates by @amaanmujawar in #2995 Add compat behaviour for RISCV for RISCVC/RISCV_C constant by @moste00 in #2996 AArch64: fix LDR literal detail operand truncation by @amaanmujawar in #2984 New Contributors @rectrap made their first contribution in #2952 @jmestwa-coder made their first contribution in #2964 @mattst88 made their first contribution in #2967 @yufengzjj made their first contribution in #2976 @Samin061 made their first contribution in #2985 @amaanmujawar made their first contribution in #2995 Full Changelog : 6.0.0-Alpha9...6.0.0-Alpha10",
+          "source": "Capstone Releases",
+          "source_url": "https://github.com/capstone-engine/capstone/releases.atom",
+          "category": "native-binary",
+          "published": "2026-07-21T17:16:23+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Native binary tooling",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 29
+        },
+        {
+          "entry_id": "64fa732403a60777a565182e2747076e08863452d97675040d9f36c7611b41d2",
+          "title": "Ghidra decompiler shows function as some pointer calculation",
+          "url": "https://reverseengineering.stackexchange.com/questions/33732/ghidra-decompiler-shows-function-as-some-pointer-calculation",
+          "summary": "jsr is a call instruction in csky architecture. Disassembler view shows r6 refers to right position. But decompiler view messed up . so how to produce strstr() in decompiler view instead of some pointer calculation? The address of libc::strstr() is calculated by: r28 = GOT start address, calculated by pc+offset r3 = strstr offset in GOT. r6 = [r3 + r28] And No matter lib function or function in this file. None of these sections are writable.",
+          "source": "Reverse Engineering Stack Exchange",
+          "source_url": "https://reverseengineering.stackexchange.com/feeds",
+          "category": "community-qa",
+          "published": "2026-07-11T08:42:58+00:00",
+          "trust": 7,
+          "source_boost": 2,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 29
+        },
+        {
+          "entry_id": "199147405a1a602f7ffa29b4485be911ea3263f680d0626a206e67d19a5c27a2",
+          "title": "REFORGE: A Method for Benchmarking LLMs' Reverse Engineering Capabilities in Decompiled Binary Function Naming",
+          "url": "https://arxiv.org/abs/2607.07738v1",
+          "summary": "Large language models (LLMs) are increasingly applied to reverse-engineering tasks, and recent threat-intelligence reporting shows them operating inside live offensive-security workflows. Claims about their capability, however, outpace our ability to measure it. Existing benchmarks for LLM-assisted binary analysis treat the construction of function-level ground truth as a solved pre-processing step and report accuracy without disclosing how many functions were reliably evaluable. We argue that the principal obstacle to fair evaluation is not model capability but the reliability of binary-to-source alignment under compiler optimization. This paper presents Reforge, a provenance-tracked pipeline that constructs function-level ground truth from C source through compilation, DWARF and syntactic extraction, alignment, and decompilation, and that operationalizes alignment uncertainty as an eight-gate confidence funnel with three-tier stratification. On a controlled micro-benchmark, high-confidence yield falls from 87.2% to 65.9% across optimization levels, and unpaired comparisons overstate optimization-induced performance decay through survivorship bias. A proof-of-concept evaluation of seven contemporary LLMs on function naming demonstrates the substrate and motivates uncertainty-aware benchmarking practice",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-07-07T23:17:03+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 29
+        }
+      ]
+    },
+    {
       "date": "2026-07-24",
-      "path": "/news/2026-07-24-unity-il2cpp-reverse-engineering-news.html",
+      "path": "/public/news/2026-07-24-unity-il2cpp-reverse-engineering-news.html",
       "title": "Unity IL2CPP & IL2CPP decompilation News — July 24, 2026",
       "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 24 relevant releases and technical developments with original sou…",
       "item_count": 24,
@@ -531,7 +1031,7 @@
     },
     {
       "date": "2026-07-23",
-      "path": "/news/2026-07-23-unity-il2cpp-reverse-engineering-news.html",
+      "path": "/public/news/2026-07-23-unity-il2cpp-reverse-engineering-news.html",
       "title": "Unity engine releases News — July 23, 2026",
       "description": "Curated Unity engine releases updates for developers and security researchers. 2 relevant releases and technical developments with original source links.",
       "item_count": 2,
@@ -580,7 +1080,7 @@
     },
     {
       "date": "2026-07-22",
-      "path": "/news/2026-07-22-unity-il2cpp-reverse-engineering-news.html",
+      "path": "/public/news/2026-07-22-unity-il2cpp-reverse-engineering-news.html",
       "title": "APK and IPA analysis & Dynamic instrumentation News — July 22, 2026",
       "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 2 relevant releases and technical developments with or…",
       "item_count": 2,
@@ -631,7 +1131,7 @@
     },
     {
       "date": "2026-07-21",
-      "path": "/news/2026-07-21-unity-il2cpp-reverse-engineering-news.html",
+      "path": "/public/news/2026-07-21-unity-il2cpp-reverse-engineering-news.html",
       "title": "APK and IPA analysis & Dynamic instrumentation News — July 21, 2026",
       "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 4 relevant releases and technical developments with or…",
       "item_count": 4,
@@ -720,7 +1220,7 @@
     },
     {
       "date": "2026-07-20",
-      "path": "/news/2026-07-20-unity-il2cpp-reverse-engineering-news.html",
+      "path": "/public/news/2026-07-20-unity-il2cpp-reverse-engineering-news.html",
       "title": "Unity IL2CPP & Unity runtime tooling News — July 20, 2026",
       "description": "Curated Unity IL2CPP, Unity runtime tooling updates for developers and security researchers. 14 relevant releases and technical developments with original so…",
       "item_count": 14,

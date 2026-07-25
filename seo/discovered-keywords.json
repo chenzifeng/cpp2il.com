@@ -2,56 +2,61 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 19,
+      "count": 24,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-24"
+      "last_seen": "2026-07-25"
     },
     "trending GitHub": {
-      "count": 19,
+      "count": 24,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-24"
+      "last_seen": "2026-07-25"
     },
     "GitHub repository": {
-      "count": 19,
+      "count": 24,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-24"
+      "last_seen": "2026-07-25"
+    },
+    "wasm": {
+      "count": 16,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-25"
+    },
+    "decompiler": {
+      "count": 12,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-25"
     },
     "Unity": {
       "count": 10,
       "first_seen": "2026-07-20",
       "last_seen": "2026-07-24"
     },
-    "wasm": {
-      "count": 9,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-07-24"
-    },
-    "decompiler": {
-      "count": 9,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-07-24"
+    "metadata": {
+      "count": 8,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-07-25"
     },
     "WebAssembly": {
+      "count": 5,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-07-25"
+    },
+    "decompilation": {
+      "count": 4,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-25"
+    },
+    "apk": {
       "count": 4,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-24"
+      "last_seen": "2026-07-25"
     },
     "reverse engineering": {
       "count": 4,
       "first_seen": "2026-07-24",
       "last_seen": "2026-07-24"
     },
-    "metadata": {
-      "count": 4,
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-07-24"
-    },
     "webassembly": {
-      "count": 3,
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-07-24"
-    },
-    "apk": {
       "count": 3,
       "first_seen": "2026-07-24",
       "last_seen": "2026-07-24"
@@ -71,15 +76,20 @@
       "first_seen": "2026-07-20",
       "last_seen": "2026-07-23"
     },
+    "WASM": {
+      "count": 2,
+      "first_seen": "2026-07-25",
+      "last_seen": "2026-07-25"
+    },
+    "v3 ace654289f5abc240509fc941453ebc5": {
+      "count": 2,
+      "first_seen": "2026-07-25",
+      "last_seen": "2026-07-25"
+    },
     "Il2CppDumper": {
       "count": 2,
       "first_seen": "2026-07-24",
       "last_seen": "2026-07-24"
-    },
-    "decompilation": {
-      "count": 2,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-07-20"
     }
   }
 }
