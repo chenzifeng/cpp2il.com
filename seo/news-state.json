@@ -1,11 +1,501 @@
 {
   "version": 3,
-  "last_generated_at": "2026-07-25T04:32:00.184860+00:00",
+  "last_generated_at": "2026-07-26T04:45:57.133539+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-07-26",
+      "path": "/public/news/2026-07-26-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — July 26, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 24 relevant releases and technical developments with original sou…",
+      "item_count": 24,
+      "new_item_count": 24,
+      "updated_at": "2026-07-26T04:45:57.133539+00:00",
+      "entries": [
+        {
+          "entry_id": "516cbd077308a6ff8eb5f4489c213e304ba58b2a561e9e90a309b2a9daaac184",
+          "title": "melonloader-IL2CPP/melon-loader-download — trending GitHub repository",
+          "url": "https://github.com/melonloader-IL2CPP/melon-loader-download",
+          "summary": "MelonLoader one-click Unity game mod loader installer for Windows. Supports VRChat, Gorilla Tag, BTD6, Bonelab, Schedule 1 and hundreds more. Android APK available. Not lemon loader this is the real tool from the official GitHub. Download, detect your game and start modding. GitHub discovery signal: 34 stars, 0 forks, 0 open issues; language C#; last pushed 2026-07-24. Topics: bonelab, btd6-mod, btd6-paragon, cvr, gorilla-tag, gorillatagmods, gorillatagvr, gtag, install-melonloader, melonloader.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-03-28+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-07-24T18:52:59+00:00",
+          "trust": 8,
+          "source_boost": 18,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation",
+            "Unity runtime tooling"
+          ],
+          "score": 76
+        },
+        {
+          "entry_id": "f9797909ca774e7bcd0be400d77d99e244cd8edccc4ae7ab6e69413a1534c14e",
+          "title": "Core+Lib: Stop using Il2CppTypeReflectionData in most places, it's no…",
+          "url": "https://github.com/SamboyCoding/Cpp2IL/commit/17bcb005f789537786d2ccae962845601ea7b80a",
+          "summary": "Core+Lib: Stop using Il2CppTypeReflectionData in most places, it's not a good data type. Also fixes silent coercion of SZArray types to Array[1] in various places in analysis",
+          "source": "Cpp2IL Development Commits",
+          "source_url": "https://github.com/SamboyCoding/Cpp2IL/commits/development.atom",
+          "category": "il2cpp-core",
+          "published": "2026-07-25T15:21:39+00:00",
+          "trust": 9,
+          "source_boost": 7,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 51
+        },
+        {
+          "entry_id": "5b4d0fa4021f3b99b1829932f058ae44fba693d88476f8e8b9a903dc411c6bb0",
+          "title": "Decompiler: Recover static fields, throw helpers, and rgctx, fix bool…",
+          "url": "https://github.com/SamboyCoding/Cpp2IL/commit/3381214fc401d17053b2184dc2be63f3ca7e417c",
+          "summary": "Decompiler: Recover static fields, throw helpers, and rgctx, fix bool flags, fix this param in IL, fix float handling somewhat",
+          "source": "Cpp2IL Development Commits",
+          "source_url": "https://github.com/SamboyCoding/Cpp2IL/commits/development.atom",
+          "category": "il2cpp-core",
+          "published": "2026-07-25T22:48:16+00:00",
+          "trust": 9,
+          "source_boost": 7,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 31
+        },
+        {
+          "entry_id": "4638312408dd4da842c72adee0d4e873ff8003d56cee27d8641122706106fd7c",
+          "title": "v1.3.5 - Usability improvements, initial Unity 6.6 support",
+          "url": "https://github.com/Unity-Technologies/UnityDataTools/releases/tag/v1.3.5",
+          "summary": "What's Changed Performance and CRC correctness #70 includes a significant performance fix related to the calculation of CRCs. There are also correctness fixes for the CRC calculation. However investigation discovered another existing flaw with CRC that could be relevant when comparing objects between different analyze databases, That will require its own separate fix, tracked in #74 . Usability improvements Improve dump command: add --stdout, refactors, more tests by @SkowronskiAndrew in #69 [ #49 ] Improve analyze file specification, CLI help and docs improvements by @SkowronskiAndrew in #76 [ #77 ] Detect missing TypeTrees up front in analyze and dump by @SkowronskiAndrew in #78 The support for \"--stdout\" makes it easier to use the dump command interactively and for piping in scripts. The new support for file and path specification for analyze makes it easier to analyze individual files, and to analyze Build Report files along with the build output. Initial support for content directory builds New type being introduced in Unity 6.6. More support will come in follow up releases. [ #70 ] Fix analyze CRC for cah:/ ContentDirectory resources; add --skip-crc by @SkowronskiAndrew in #73 Document ContentLayout.json and publish its schema by @SkowronskiAndrew in #75 Documentation improvement Docs: Addressables local→remote dependency example by @timt-unity3d in #67 Also doc improvements included in #77 Compatibility These changes should be pretty backward compatible for existing scripts and tools based on past version of UnityDataTool. However the fixes for CRC included in #70 can mean that the calculated CRC values for objects will now be different from the value calculated on the same objects in the older version of UnityDataTool. Full Changelog : v1.3.4...v1.3.5",
+          "source": "Unity Data Tools Releases",
+          "source_url": "https://github.com/Unity-Technologies/UnityDataTools/releases.atom",
+          "category": "unity-assets",
+          "published": "2026-06-16T13:44:42+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "Unity asset extraction"
+          ],
+          "matched_terms": [
+            "Unity engine releases",
+            "Unity asset extraction"
+          ],
+          "score": 29
+        },
+        {
+          "entry_id": "2655f649f4127fec2e9f7ec2050d3a1df625f9e770008a7e1671e7346819a89a",
+          "title": "1.12.5",
+          "url": "https://github.com/sensepost/objection/releases/tag/1.12.5",
+          "summary": "What's Changed Fix AttributeError in warn_about_older_operating_systems when device_state not yet set by @uceka in #788 (feat) Add local connection option for iOS simulator. by @IPMegladon in #795 (chore) Bump frida bridge versions to fix #800 . Full Changelog : 1.12.4...1.12.5",
+          "source": "Objection Releases",
+          "source_url": "https://github.com/sensepost/objection/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-06-02T09:35:54+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 29
+        },
+        {
+          "entry_id": "38ba765093df737216c409f682c4b6291e751e349f4ed3e24a2f72ee2cfa5b12",
+          "title": "v1.5.2",
+          "url": "https://github.com/BepInEx/Il2CppInterop/releases/tag/v1.5.2",
+          "summary": "Bump version",
+          "source": "Il2CppInterop Releases",
+          "source_url": "https://github.com/BepInEx/Il2CppInterop/releases.atom",
+          "category": "unity-runtime",
+          "published": "2026-05-15T00:57:55+00:00",
+          "trust": 9,
+          "source_boost": 6,
+          "topic_terms": [
+            "Unity runtime tooling",
+            "Unity IL2CPP"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "Unity runtime tooling"
+          ],
+          "score": 27
+        },
+        {
+          "entry_id": "c6f3887b472e69eb7942210a73da6c3444f059d4d90c6c4c21f96cf069421d28",
+          "title": "v3.0.3",
+          "url": "https://github.com/iBotPeaches/Apktool/releases/tag/v3.0.3",
+          "summary": "What's Changed build(deps): bump commons-io:commons-io from 2.21.0 to 2.22.0 by @dependabot [bot] in #4133 build(deps): bump com.google.guava:guava from 33.5.0-jre to 33.6.0-jre by @dependabot [bot] in #4131 chore: sanity check yaml + getters for ResConfig by @IgorEisberg in #4135 Optimize ResStringPool by @X1nto in #4138 Fix \"android:* not found\" errors by @Sleeeee in #4137 fix: support empty value for zero flags by @IgorEisberg in #4140 chore: convert tests to xpath by @IgorEisberg in #4141 build(deps): bump org.xmlunit:xmlunit-legacy from 2.11.0 to 2.12.0 by @dependabot [bot] in #4146 build(deps): bump gradle/actions from 6.1.0 to 6.2.0 by @dependabot [bot] in #4149 build(deps): bump actions/checkout from 6 to 7 by @dependabot [bot] in #4151 New Contributors @Sleeeee made their first contribution in #4137 Release Blog : https://apktool.org/blog/apktool-3.0.3 Full Changelog : v3.0.2...v3.0.3",
+          "source": "Apktool Releases",
+          "source_url": "https://github.com/iBotPeaches/Apktool/releases.atom",
+          "category": "android-reverse-engineering",
+          "published": "2026-07-20T10:37:54+00:00",
+          "trust": 9,
+          "source_boost": 5,
+          "topic_terms": [
+            "Android reverse engineering"
+          ],
+          "matched_terms": [
+            "Android reverse engineering"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "8d9f5a5ce55bcb99432c807967cf88558c57b9debcfc84a29bea8491f5ea1ca6",
+          "title": "1.5.6",
+          "url": "https://github.com/skylot/jadx/releases/tag/v1.5.6",
+          "summary": "Main features and fixes Security fixes: Reject absolute or path to CWD for zip entries Sanitize all string values for gradle scripts on export Add missing escaping on summary page Core: Use queue instead of recursion for type updates GUI: Graph views, code pane sync, and more (PR #2784 ) Collapse single-child directory chains in resource tree (PR #2866 ) Handle pasted file lists in file chooser (PR #2876 ) Show simple message box for file exceptions ( #2659 ) API: Allow to create input category node even if no matching files found ( #2806 ) New module/library for work with call graphs ( #2890 ) All changes Click to expand Features [core] Graph views, code pane sync, and more (PR #2784 ) [core] Use queue instead of recursion for type updates [core] New module/library for work with call graphs ( #2890 ) [gui] Add mimetype for desktop file [gui] Open single loaded class after load [gui] Add \"copy reference\" to context menu (PR #2863 ) [gui] Collapse single-child directory chains in resource tree (PR #2866 ) [gui] Handle pasted file lists in file chooser (PR #2876 ) [gui] Show simple message box for file exceptions ( #2659 ) Bug Fixes [core] Insert generic casts for variable assigned from fields with known types ( #2776 ) [core] Handle Kotlin 1.9+ $ENTRIES pattern in enum restoration (PR #2814 ) [core] Remove useless PHI for duplicate moves ( #2813 ) [core] Support enum restore for constructor without args ( #2821 ) [core] Handle null bounds in WindowLocation to prevent NPE on dialog dispose (PR #2826 ) [core] Stop type inference on exception (prevent endless loop) [core] Resolve class/package name conflicts on case-insensitive filesystems (PR #2828 ) [core] Use correct property for OS arch checks ( #2830 ) [core] Use correct args copy/replace in wrapped insns ( #2835 ) [core] Resolve minor decompilation issues ( #2835 ) [core] Remove result in wrapped insntructions ( #2835 ) [core] Limit ternary wrap to one level ( #2844 ) [core] Disable ternary mod for duplicated blocks ( #2844 ) [core] Harden XML parser in FileTypeDetector against XML bomb DoS (PR #2851 ) [core] Improve handler path check for regions [core] Limit 'if' region out block to current scope ( #2791 ) [core] Build correct file path for class from default package ( #2854 ) [core] Cover more situations for SwitchOverString (PR #2860 ) [core] Workaround for duplicated variables names index increment ( #2868 ) [core] Resolve duplicated error attr in fallback codegen, allow to set whole attr list at once ( #2842 ) [core] Keep all dimensions for anewarray of an array element type (PR #2887 ) [core] ImmutableList.lastIndexOf skipping index 0 (PR #2898 ) [api] Allow to create input category node even if no matching files found ( #2806 ) [build] Set *nix executable permissions on start scripts (PR #2838 ) [cli] In 'progress' log mode show issues from input plugins ( #2803 ) [gui] Update usage file data version (was changed in PR #2784 ) [gui] Resolve possible NPE during project data loading ( #2794 ) [gui] Stop token process on NULL token in JadxTokenMaker ( #2798 ) [gui] Use UI thread for scroll in code ( #2798 ) [gui] Make the Split view checkbox correctly toggle between both modes (PR #2801 ) [gui] Use UI thread for refreshStackFrameList in debugger view (PR #2807 ) [gui] Use UI thread for adding logcat messages ( #2811 ) [gui] Update zh_CN translation (PR #2812 ) [gui] Update zh_tw translation (PR #2818 ) [gui] Move scripts leftover code, save tree state on script run [gui] Resolve \"launchScriptPath\" is null [gui] Localize code cache mode labels (PR #2825 ) [gui] Use localized label for code cache preferences [gui] Add file end line feed for exported code (PR #2836 ) [gui] NullPointerException when changing line wrap mode (PR #2843 ) [gui] Ensure all fonts are 'composite' ( #2856 ) [gui] Improve code tabs, sync and related code [gui] Improve dot graph viewer, CFG generation simplified [gui] Fix token type error leading to disables right-click context menu rename button (PR #2897 ) [gui] Verify files and show fix actions, save project inputs hash on load ( #2659 ) [gui] Add missing escaping on summary page [gui] Workaround for CJK support in bundled fonts ( #2856 ) [quark] Change from 'virtualenv' to 'venv' (PR #2879 ) [res] Use safe number parsing for android manifest, refactor params object ( #2857 ) [script] Update imports in example scripts ( #2795 ) [xapk] Support files in sub-dirs in xapk ( #2834 ) New Contributors @gordon-f0 made their first contribution in #2784 @HdShare made their first contribution in #2812 @obus-globus made their first contribution in #2814 @dartcv made their first contribution in #2818 @peasoft made their first contribution in #2824 @mango766 made their first contribution in #2826 @johnwas made their first contribution in #2828 @mbv06 made their first contribution in #2876 @paraeee made their first contribution in #2879 @vasiliy-mikhailov made their first contribution in #2898 @amirdeljouyi made their first contribution in #2901 @Plasion made their first contribution in #2897 Full Changelog : v1.5.5...v1.5.6 Download files: jadx-gui-1.5.6-with-jre-win.zip - jadx-gui with bundled JRE jadx-gui-1.5.6-win.zip - jadx-gui Windows executable (system JRE must be installed) jadx-1.5.6.zip - cross-platform cli and gui bundle (system JRE must be installed) For system JRE the latest version is always preferred, download at oracle.com",
+          "source": "JADX Releases",
+          "source_url": "https://github.com/skylot/jadx/releases.atom",
+          "category": "android-reverse-engineering",
+          "published": "2026-07-10T19:07:35+00:00",
+          "trust": 9,
+          "source_boost": 5,
+          "topic_terms": [
+            "Android reverse engineering"
+          ],
+          "matched_terms": [
+            "Android reverse engineering"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "07571ab0fd267a8d15731108e1352912df87b9c22617fc5d1857b320862e05ae",
+          "title": "ahammadmejbah/Awesome-Datasets-Hub — trending GitHub repository",
+          "url": "https://github.com/ahammadmejbah/Awesome-Datasets-Hub",
+          "summary": "A curated collection of datasets for Large Language Models (LLMs), covering medical AI, NLP, multimodal learning, instruction tuning, reasoning, code generation, and evaluation benchmarks. GitHub discovery signal: 146 stars, 39 forks, 0 open issues; language Unknown; last pushed 2026-06-20. Topics: benchmark, benchmarking, deep-learning, deep-neural-networks, deeplearning, genetic-algorithm, llm, llm-evaluation, llm-inference, machine-learning.",
+          "source": "GitHub Hot Program Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=%22program+analysis%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-01-27+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-research",
+          "published": "2026-05-15T14:58:14+00:00",
+          "trust": 8,
+          "source_boost": 14,
+          "topic_terms": [
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "49f16c6cf7be22b17ad72f1b10723cb2018ebe7f29e780169593124f7a608f64",
+          "title": "Unity 6000.7.0 Alpha",
+          "url": "https://unity.com/releases/editor/alpha/6000.7.0a3",
+          "summary": "Unity 6000.7.0 Alpha",
+          "source": "Unity Alpha Releases",
+          "source_url": "https://unity.com/releases/editor/alpha-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-07-23T13:51:02+00:00",
+          "trust": 10,
+          "source_boost": 1,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 24
+        },
+        {
+          "entry_id": "223332a6a40f423d30b7b7a98910abf9de3008ae2ab462fa80a3c5db5b48775d",
+          "title": "GC and Exceptions in Wasmtime",
+          "url": "https://bytecodealliance.org/articles/wasmtime-gc",
+          "summary": "Hacker News signal: 152 points and 38 comments; submitted by phickey; source bytecodealliance.org. Discussion: https://news.ycombinator.com/item?id=48981665",
+          "source": "Hacker News Technical Top Stories",
+          "source_url": "https://news.ycombinator.com/news",
+          "category": "community-hot",
+          "published": "2026-07-20T17:10:50+00:00",
+          "trust": 7,
+          "source_boost": 7,
+          "topic_terms": [],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 24
+        },
+        {
+          "entry_id": "913360921060d9bf370b18f2bd6a921dbe3919703e1fd7b885214b31d847c472",
+          "title": "yaroslav/audition — trending GitHub repository",
+          "url": "https://github.com/yaroslav/audition",
+          "summary": "Auditions Ruby scripts, gems, Rack apps, and Rails applications for the ability to run under Ractors: static analysis of Ractor-isolation violations plus dynamic in-Ractor probing, with explanations and fixes. GitHub discovery signal: 15 stars, 0 forks, 0 open issues; language Ruby; last pushed 2026-07-23. Topics: analysis, dynamic-analysis, linter, parallelism, ractor, ractors, rails, ruby, static-analysis.",
+          "source": "GitHub Hot Program Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=%22program+analysis%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-01-27+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-research",
+          "published": "2026-07-17T21:07:17+00:00",
+          "trust": 8,
+          "source_boost": 13,
+          "topic_terms": [
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 24
+        },
+        {
+          "entry_id": "70f584927b6e71c271a6942a43e20ff0dc3d0761fdb25293fbe2f04d376d93a7",
+          "title": "v2.1.0 Content Directory support",
+          "url": "https://github.com/Unity-Technologies/UnityDataTools/releases/tag/v2.1.0",
+          "summary": "What's Changed This release adds new functionality to the analyze command , buiding on top of the AssetBundle schema cleanup that landed in v2.0.0. The main focus is introducing support for the new Unity 6.6 \" content directory \" build system. To analyze these builds properly the ContentLayout.json file should be read at the same time. For convenience a --build-history argument can be used to help match the correct layout file with the content directory build that is being analyzed. The ContentLayout.json is converted into equivalent database tables, and also used to resolve references in the actual built content. Also, to better \"expose\" missing content or incomplete information, there is now a \"dangling_refs\" table. It is expected that references to the \"unity default resources\" are reported here. Error handling to analyze is improved, instead of obscure or hidden SQL errors there will be a clear error if more than one serialized file with the same name is encounted. There are also significantly more documentation explaining the content inside Player and Content Directory builds, and improvements to the AssetBundle documentation. PRs For details see the individual PRs that landed: Document AssetBundle dependency references by @Abhinav-0311 in #91 [ #92 ] Add Player build and content directory format documentation by @SkowronskiAndrew in #95 [ #85 ] Track dangling references in analyze by @SkowronskiAndrew in #96 [ #97 ] Add Unity scenes to LeadingEdge reference builds by @SkowronskiAndrew in #98 [ #99 ] Import ContentLayout.json into the analyze database by @SkowronskiAndrew in #101 [ #99 ] Resolve ContentDirectory references via ContentLayout.json and validate analyze inputs by @SkowronskiAndrew in #102 [ #99 ] Create build report schema on demand; view rename and Content Directory docs by @SkowronskiAndrew in #103 [ #51 ] Clear error for duplicate SerializedFile/archive names by @SkowronskiAndrew in #104 Match SerializedFile names case-sensitively by @SkowronskiAndrew in #106 [ #99 ] Resolve ContentDirectory references when content files lack the .cf extension by @SkowronskiAndrew in #105 [ #99 ] Add --build-history option to analyze by @SkowronskiAndrew in #109 Schema differences Minor changes is case sensitivity and enforcing uniqueness for archive file names. New \"content_layout_*\" tables are added. New Contributors @Abhinav-0311 made their first contribution in #91 Full Changelog : v2.0.0...v2.1.0",
+          "source": "Unity Data Tools Releases",
+          "source_url": "https://github.com/Unity-Technologies/UnityDataTools/releases.atom",
+          "category": "unity-assets",
+          "published": "2026-07-23T13:05:50+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "Unity asset extraction"
+          ],
+          "matched_terms": [
+            "Unity engine releases",
+            "Unity asset extraction"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "b370309e9e950e0e7dd95a2d86a5a721e7453f57905c803b250a3160ad280f76",
+          "title": "v9.3.0",
+          "url": "https://github.com/angr/angr/releases/tag/v9.3.0",
+          "summary": "release version 9.3.0",
+          "source": "angr Releases",
+          "source_url": "https://github.com/angr/angr/releases.atom",
+          "category": "program-analysis",
+          "published": "2026-07-15T09:58:53+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "f1f2cbcb33342b181324a1e82f804bbd46a284ef759e3db434e2d8b23991cc5c",
+          "title": "Enhance: Revise Windows Yara installation instructions (#499)",
+          "url": "https://github.com/rednaga/APKiD/commit/6cfb4097d45b8744ecb71ac5de088815080ced37",
+          "summary": "Enhance: Revise Windows Yara installation instructions (#499) Updated installation instructions for Windows to include uninstallation of previous Yara versions.",
+          "source": "APKiD Commits",
+          "source_url": "https://github.com/rednaga/APKiD/commits/master.atom",
+          "category": "mobile-security",
+          "published": "2026-07-13T21:29:42+00:00",
+          "trust": 8,
+          "source_boost": 4,
+          "topic_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "matched_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "49c62df7b0bae3d2bea931d3554667370e3d653cb9797b061136ecbcf5e2db28",
+          "title": "v9.2.223",
+          "url": "https://github.com/angr/angr/releases/tag/v9.2.223",
+          "summary": "release version 9.2.223",
+          "source": "angr Releases",
+          "source_url": "https://github.com/angr/angr/releases.atom",
+          "category": "program-analysis",
+          "published": "2026-07-08T07:39:03+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "ed790e2b46d486e2c2d31780a5e4c95c50def907e4d7ba510d76f7925927a211",
+          "title": "Release v7.2.0",
+          "url": "https://github.com/wasmerio/wasmer/releases/tag/v7.2.0",
+          "summary": "Important For packaging purposes, use the provided wasmer-full-source.tar.xz , which includes all required submodules. This release adds: Cranelift Exception Handling on Mach-O ( #6712 ) - EH support extended to macOS. New CLI package commands: wasmer package show ( #6716 ) and wasmer package search ( #6715 ) for discovering and inspecting packages from the command line. Experimental interruptable WASM computation ( #6075 ) - ability to interrupt running WebAssembly. Baremetal trap-handler backend ( #6683 ) - new lightweight trap handler for the VM. Dropped WAMR and Wasmi backends ( #6500 ) - simplifying the engine ecosystem. Dropped x86_64-darwin target ( #6506 ) - Apple Silicon-only on macOS going forward. Better CPU scaling via parallel compilation revamp ( #6153 ) for LLVM and Cranelift. Singlepass: track maximum stack usage ( #6696 ) - better memory accounting. Various improvement to the WASIX networking ( #6741 , #6738 , #6718 ). LLVM backend upgraded to 22.1 ( #6300 ). V8 backend resurected and covered in CI ( #6673 ). Embedded Globals and funcref Table in VMContext ( #6290 ) - layout optimization. See full list of changes in the CHANGELOG Install this version of wasmer: curl https://get.wasmer.io -sSfL | sh -s \" v7.2.0 \"",
+          "source": "Wasmer Releases",
+          "source_url": "https://github.com/wasmerio/wasmer/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-06-30T20:34:45+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "67fbc8162ab0a7045611a301ebe2c083665fb4137696b8a093ecfb9cdf7c0d88",
+          "title": "2.5.0",
+          "url": "https://github.com/rizinorg/cutter/releases/tag/v2.5.0",
+          "summary": "Use Rizin v0.9.1 New Preferences tab to query and modify Rizin configuration variables (evars) directly from the UI New window listing all keybindings, browsable and searchable from the preferences Register, variable, and memory value tooltips while debugging or emulating, including sub-register values and previews of values inside brackets Follow conditional branch targets with the Enter/Return key in both Disassembly and Graph views Debugging improvements: Add an interface to change and specify register profiles Allow setting an RzRun profile before starting a debugging session Support debuginfod servers in the initial analysis options dialog Fix a deadlock in remote debug connections Types widget improvements: Make type and variable names clickable Show variables of the selected type in the Types tab Add rename and \"set type class\" options Search bars added to the Console and the XRefs dialog Docking is now optional — widgets can be floated freely instead of being forced to dock, with a new \"Enable/Disable Docking\" shortcut More information shown in the navigation bar Better use of screen space — configurable Quick Filter visibility and item-count label Add a toggle to show raw strings in the Strings widget Add a vertical scrollbar to the Hex panel Add an \"Add Flag\" option to the hexdump context menu Remember the IO mode (e.g. read-only vs. read-write) for recently opened files Show fewer entries in the Omnibar by default Switch to use Qt 6.11.0 Updated translations, with support for languages that have multiple regional variants Various bugfixes and refactoring Notes for packagers: The minimum required CMake version is now 3.12",
+          "source": "Cutter Releases",
+          "source_url": "https://github.com/rizinorg/cutter/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-06-30T18:37:00+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "0ea0aa72d4935eea40dcb7e00527fdb322dd8fffd59c504b36690d37494914a8",
+          "title": "v2.5.0-rc3",
+          "url": "https://github.com/rizinorg/cutter/releases/tag/v2.5.0-rc3",
+          "summary": "Use rizin 0.9.1",
+          "source": "Cutter Releases",
+          "source_url": "https://github.com/rizinorg/cutter/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-06-30T09:09:55+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "3861760b4399d7f59e2974216b1c9fe3a92fdc7027268af4be92bc56177a5f6d",
+          "title": "v2.0.0-beta.3 - 2026/06/22",
+          "url": "https://github.com/wasmi-labs/wasmi/releases/tag/v2.0.0-beta.3",
+          "summary": "Added Added a new validate crate feature to wasmi and wasmi_cli crates. 🚀 This feature controls whether Wasmi support Wasm validation. The feature is enabled by default with --no-default-features . Users who have full control over the Wasm inputs to Wasmi may have a great need for this as this can reduce binary artifact sizes by ~200-300kB. PR: #1902 Added new libm crate feature to Wasmi. #1860 This allows to enforce libm usage. Added support to Wasmi CLI to print funcref and externref with null value. #1839 Add support for hexdec encoded integer args to Wasmi CLI. #1851 Changed Wasmi IR operators now store their results in accumulator registers. 🚀 With this, Wasmi uses the same interpreter architecture as the fastest Wasm interpreters, Wasm3 and Stitch. Benchmarks concluded that Wasmi is on par and sometimes even exceeds performance of its competition now. PRs: #1827 : Definitions for new Wasmi IR #1855 : Adjustments Wasmi Translator & Executor Follow-up Optimizations: #1895 : Adds specialized i{32,64}.add operator variants. #1896 : Adds lowering from isub to iadd operators. #1905 : Make more SIMD operators return results in accumulator registers. New Wasmi execution optimizations: 🚀 Re-designed CodeMap to be lock-free & append-only. #1898 Wasmi makes full use of these CodeMap attributes which significantly improves Wasm to Wasm function call performance. Only zero-initialize non-parameter function locals upon Wasm call. #1893 This significantly improves Wasm to Wasm function call performance. CLI: disallow v128 argument types. #1848 With this Wasmi CLI now mirrors Wasmtime CLI's behavior. Improve instance preservation of same-instance calls. #1878 Translate ref.is_null via i32.eqz instead of i64.eqz . #1861 Fixed Fix operand order in v128_select_ssss translation. #1834 Thanks to @shumbo for the fix! Fix re-extraction of mem0 after host function calls. #1837 Thanks to @npiesco for the fix! Fixed incorrect NaN behavior for f{32,64}.{ceil,floor,trunc} . #1860 Internal Automatically create release artifacts for Wasmi GitHub releases. #1906 Added flag to steer LLVM away from bad codegen. #1873 Added missing std crate feature forward from wasmi to wasmi_ir . #1862 Update Wasmtime fuzzing oracle to v45. #1867 Make benchmarks test properly under Windows. #1885 Fixed a bug that wat based tests were not ignored on !wat . #1883 Added a whole variety of new Rust based benchmarks: PRs: #1870 : sort , matrix_mul , prime_sieve #1871 : n-body : physics simulation #1872 : argon2 : password hashing #1877 : mandelbrot spetralnorm json_parsing compression word_count",
+          "source": "wasmi Releases",
+          "source_url": "https://github.com/wasmi-labs/wasmi/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-06-22T16:21:42+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "65bfe1411e4afffae8de71ed6abbd9d8c3b4444e71d3e8e41ea54fab918c85ce",
+          "title": "fix: Google rule URL2 missing carriage return",
+          "url": "https://github.com/rednaga/APKiD/commit/33f1d757a951370d156e46bc15c5bd6c154daff4",
+          "summary": "fix: Google rule URL2 missing carriage return",
+          "source": "APKiD Commits",
+          "source_url": "https://github.com/rednaga/APKiD/commits/master.atom",
+          "category": "mobile-security",
+          "published": "2026-05-21T09:52:23+00:00",
+          "trust": 8,
+          "source_boost": 4,
+          "topic_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "matched_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "1dd330303244445cdbe4f7554c4e22f0296156c24775f2934b0f655edb2a50ae",
+          "title": "dev/5.4.10193: [Python] Fix exceptions from __del__ during interpreter shutdown",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10193",
+          "summary": "StructureType , EnumerationType , and NamedTypeReferenceType called super(Class, self) in __del__ . The interpreter nulls that module-global class name during teardown, so finalizers running at shutdown raised a TypeError . Switch to zero-arg super() here and across the rest of the Python API.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-07-22T20:49:46+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "c7e9149bce7dab52a6d497fc492af15a92ff84c7dfb539cad70709c25870473e",
+          "title": "dev/5.4.10192: [Python] Fix exceptions from __del__ during interpreter shutdown",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10192",
+          "summary": "StructureType , EnumerationType , and NamedTypeReferenceType called super(Class, self) in __del__ . The interpreter nulls that module-global class name during teardown, so finalizers running at shutdown raised a TypeError . Switch to zero-arg super() here and across the rest of the Python API.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-07-22T20:49:46+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "654711a9b94281bbbd97db1111afdd4ab0fa34999e7b804d4c2ef3a081d978d2",
+          "title": "v2.0.0-beta.4 - 2026/07/01",
+          "url": "https://github.com/wasmi-labs/wasmi/releases/tag/v2.0.0-beta.4",
+          "summary": "Added Added support for the Wasm deterministic profile. #1947 Enable Wasm deterministic profile by enabling the new deterministic crate feature. Added support to enable or disable memory64 support. #1934 Disabling memory64 slightly reduces the artifact binary size and may improve execution performance, especially on embedded targets. Added the portable-dispatch crate feature to the Wasmi C-API. #1950 The wasmi_c_api_impl (and wasmi_c_api ) crates now forward a portable-dispatch feature to the underlying wasmi crate, so C-API users can opt into the portable (loop-based) operator dispatch that does not rely on tail calls. This automatically enables the portable-dispatch feature for CMAKE_BUILD_TYPE=Debug . Added more optimizations and improvements for the Wasmi IR and codegen: Added fcopysign lowerings to fabs and fnabs . #1917 Emit better optimized copy operators in more places. #1924 Added highly specialized and optimized u64_copy_sNsM operators. #1935 Improved multi-value return codegen. #1944 Unify Wasmi IR return operators. #1948 Expanded the configurable crate features of the Wasmi C-API. #1951 The wasmi_c_api_impl and wasmi_c_api crates now forward most features exposed by wasmi . Fixed a bug that the std feature was not forwarded to wasmi . Fixed Fixed a stackoverflow issue when compiling Wasmi without portable-dispatch . [ #1942 ] Previously Wasmi was required to be compiled with at least opt-level = 3 and codegen-units = 1 to avoid the stackoverflow issue. With this update a mere opt-level = 2 is enough to make LLVM generate the tail-call dispatch for all but memory.grow and table.grow operators. Users who want tail calls even for those 2 remaining operators can compile Wasmi with a nightly toolchain and use the unstable crate feature to make Wasmi use Rust's unstable become keyword. Fixed a bug that caused Wasmi's compile-time to explode when using indirect-dispatch . #1939 Users were able to circumvent this LLVM codegen bug by using llvm-args=--switch-to-lookup=true . However, with this fix, that is no longer needed and Wasmi compile-times are back to normal again. This bug also negatively affected the execution performance of Wasmi which is fixed as well. Fixed an incorrect macOS linker flag in the C-API CMake build. #1952 Shared-library builds added a Linux-only $ORIGIN rpath on macOS, which dyld does not expand. It is now omitted on macOS (matching Wasmtime). Consumers of the shared libwasmi.dylib on macOS should add their own rpath (e.g. -Wl,-rpath,@loader_path ) to locate it at runtime. Fixed Wasmi C-API no_std support. #1915 Fixed a bug in the lowering of isub with immediate rhs to iadd . #1914 Internal Strengthened the CI guard for tail-call operator dispatch. [ #1942 ] The tail-call CI job now runs the entire wasmi_wast suite (not just the call tests) on the non- portable-dispatch path at codegen-units > 1 , plus a new wasmi_torture test that loops every Wasm operator category under a small RUST_MIN_STACK so any handler that stops tail-calling overflows the native stack and fails CI. The wasmi_wast test runner verifies NaN canonicalization when built with the deterministic feature. #1947 This requires nan:arithmetic results to match the canonical NaN. Simplify SIMD specific load operator IR and translation. #1922 Remove copy_span operators from Wasmi IR. #1929 Now all copies are always copying single values. Benchmarks showed that this is actually executing faster. Add cfg -guard badges to docs rendered at docs.rs . #1913 Update the nightly Rust toolchain used for the Wasmi CI. #1936",
+          "source": "wasmi Releases",
+          "source_url": "https://github.com/wasmi-labs/wasmi/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-06-30T22:54:31+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-07-25",
       "path": "/public/news/2026-07-25-unity-il2cpp-reverse-engineering-news.html",

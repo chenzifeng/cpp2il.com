@@ -2,34 +2,34 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 24,
+      "count": 27,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-25"
+      "last_seen": "2026-07-26"
     },
     "trending GitHub": {
-      "count": 24,
+      "count": 27,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-25"
+      "last_seen": "2026-07-26"
     },
     "GitHub repository": {
-      "count": 24,
+      "count": 27,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-25"
+      "last_seen": "2026-07-26"
     },
     "wasm": {
       "count": 16,
       "first_seen": "2026-07-20",
       "last_seen": "2026-07-25"
     },
+    "Unity": {
+      "count": 14,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-26"
+    },
     "decompiler": {
       "count": 12,
       "first_seen": "2026-07-20",
       "last_seen": "2026-07-25"
-    },
-    "Unity": {
-      "count": 10,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-07-24"
     },
     "metadata": {
       "count": 8,
@@ -37,14 +37,14 @@
       "last_seen": "2026-07-25"
     },
     "WebAssembly": {
-      "count": 5,
+      "count": 6,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-25"
+      "last_seen": "2026-07-26"
     },
     "decompilation": {
-      "count": 4,
+      "count": 5,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-07-25"
+      "last_seen": "2026-07-26"
     },
     "apk": {
       "count": 4,
@@ -55,6 +55,11 @@
       "count": 4,
       "first_seen": "2026-07-24",
       "last_seen": "2026-07-24"
+    },
+    "WASM": {
+      "count": 3,
+      "first_seen": "2026-07-25",
+      "last_seen": "2026-07-26"
     },
     "webassembly": {
       "count": 3,
@@ -76,10 +81,75 @@
       "first_seen": "2026-07-20",
       "last_seen": "2026-07-23"
     },
-    "WASM": {
+    "Wasm": {
       "count": 2,
-      "first_seen": "2026-07-25",
-      "last_seen": "2026-07-25"
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26"
+    },
+    "Python Fix exceptions": {
+      "count": 2,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26"
+    },
+    "Python Fix": {
+      "count": 2,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26"
+    },
+    "interpreter shutdown": {
+      "count": 2,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26"
+    },
+    "Fix exceptions del": {
+      "count": 2,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26"
+    },
+    "Fix exceptions": {
+      "count": 2,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26"
+    },
+    "exceptions del during": {
+      "count": 2,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26"
+    },
+    "exceptions del": {
+      "count": 2,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26"
+    },
+    "during interpreter shutdown": {
+      "count": 2,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26"
+    },
+    "during interpreter": {
+      "count": 2,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26"
+    },
+    "dev Python Fix": {
+      "count": 2,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26"
+    },
+    "dev Python": {
+      "count": 2,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26"
+    },
+    "del during interpreter": {
+      "count": 2,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26"
+    },
+    "del during": {
+      "count": 2,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26"
     },
     "v3 ace654289f5abc240509fc941453ebc5": {
       "count": 2,
