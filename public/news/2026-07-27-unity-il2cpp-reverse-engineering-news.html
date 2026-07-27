@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WebAssembly tooling &amp; WebAssembly runtime News — July 27, 2026 | CPP2IL</title>
+  <meta name="description" content="Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 15 relevant releases and technical developments with origin…">
+  <link rel="canonical" href="https://cpp2il.com/public/news/2026-07-27-unity-il2cpp-reverse-engineering-news.html">
+  <link rel="alternate" type="application/rss+xml" title="CPP2IL News RSS" href="https://cpp2il.com/public/news.xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WebAssembly tooling &amp; WebAssembly runtime News — July 27, 2026">
+  <meta property="og:description" content="Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 15 relevant releases and technical developments with origin…">
+  <meta property="og:url" content="https://cpp2il.com/public/news/2026-07-27-unity-il2cpp-reverse-engineering-news.html">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "WebAssembly tooling & WebAssembly runtime News — July 27, 2026", "description": "Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 15 relevant releases and technical developments with origin…", "url": "https://cpp2il.com/public/news/2026-07-27-unity-il2cpp-reverse-engineering-news.html", "dateModified": "2026-07-27T04:55:39.100610+00:00", "isPartOf": {"@type": "WebSite", "name": "CPP2IL", "url": "https://cpp2il.com/"}, "mainEntity": {"@type": "ItemList", "numberOfItems": 15, "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://github.com/Virtastic/openmw-web", "name": "Virtastic/openmw-web — trending GitHub repository"}, {"@type": "ListItem", "position": 2, "url": "https://arxiv.org/abs/2607.07738v2", "name": "REFORGE: A Method for Benchmarking LLMs' Reverse Engineering Capabilities in Decompiled Binary Function Naming"}, {"@type": "ListItem", "position": 3, "url": "https://arxiv.org/abs/2606.29155v1", "name": "OASIF: An Efficient Obfuscation-Aware Self-Improving Framework for LLM-Based Assembly Code Instruction Following and Comprehension"}, {"@type": "ListItem", "position": 4, "url": "https://github.com/x64dbg/x64dbg/releases/tag/2026.05.27", "name": "2026.05.27"}, {"@type": "ListItem", "position": 5, "url": "https://github.com/wasmerio/wasmer/releases/tag/v7.2.1", "name": "Release v7.2.1"}, {"@type": "ListItem", "position": 6, "url": "https://arxiv.org/abs/2606.29108v2", "name": "Symbolon: Symbolic Execution by Learning Code Transformation"}, {"@type": "ListItem", "position": 7, "url": "https://github.com/frida/frida-tools/releases/tag/14.10.4", "name": "14.10.4"}, {"@type": "ListItem", "position": 8, "url": "https://github.com/frida/frida-tools/releases/tag/14.10.3", "name": "14.10.3"}, {"@type": "ListItem", "position": 9, "url": "https://blog.trailofbits.com/2026/06/12/factoring-short-sleeve-rsa-keys-with-polynomials/", "name": "Factoring \"short-sleeve\" RSA keys with polynomials"}, {"@type": "ListItem", "position": 10, "url": "https://github.com/wazero/wazero/releases/tag/v1.12.0", "name": "v1.12.0"}, {"@type": "ListItem", "position": 11, "url": "https://github.com/0xeb/r2sql", "name": "0xeb/r2sql — trending GitHub repository"}, {"@type": "ListItem", "position": 12, "url": "https://github.com/rizinorg/rizin/releases/tag/v0.9.1", "name": "Release v0.9.1"}, {"@type": "ListItem", "position": 13, "url": "https://github.com/dotnet/runtime/releases/tag/v9.0.18", "name": ".NET 9.0.18"}, {"@type": "ListItem", "position": 14, "url": "https://github.com/dotnet/runtime/releases/tag/v8.0.29", "name": ".NET 8.0.29"}, {"@type": "ListItem", "position": 15, "url": "https://reverseengineering.stackexchange.com/questions/33738/what-does-a-workflow-for-game-decompilation-look-like", "name": "What does a workflow for game decompilation look like?"}]}, "publisher": {"@type": "Organization", "name": "CPP2IL", "url": "https://cpp2il.com/", "logo": {"@type": "ImageObject", "url": "https://cpp2il.com/logo.png"}}}</script>
+  <style>
+    :root { color-scheme:dark; --bg:#080b12; --panel:#111725; --text:#eef3ff; --muted:#9da9bd; --line:#263146; --accent:#72a7ff; }
+    * { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif; }
+    a { color:var(--accent); } .wrap { width:min(1080px,calc(100% - 32px)); margin:auto; }
+    header { padding:64px 0 28px; border-bottom:1px solid var(--line); } .eyebrow { color:var(--accent); font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { margin:.25em 0; font-size:clamp(2rem,6vw,4.3rem); line-height:1.04; } .lede { max-width:820px; color:var(--muted); font-size:1.08rem; }
+    .tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:22px; } .tag { text-decoration:none; padding:6px 11px; border:1px solid var(--line); border-radius:999px; background:#0d1320; }
+    main { display:grid; gap:18px; padding:32px 0 64px; } .card { padding:24px; border:1px solid var(--line); border-radius:18px; background:var(--panel); }
+    .card h2 { margin:.45em 0; line-height:1.25; } .card h2 a { color:var(--text); text-decoration:none; } .card h2 a:hover { color:var(--accent); }
+    .meta { display:flex; justify-content:space-between; gap:12px; color:var(--muted); font-size:.9rem; } .category { color:#c6d6f3; border:1px solid var(--line); border-radius:6px; padding:2px 6px; margin-right:6px; }
+    .why { color:#c6d1e5; } .source { font-weight:700; text-decoration:none; } footer { padding:28px 0 50px; color:var(--muted); border-top:1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <header><div class="wrap">
+    <div class="eyebrow">CPP2IL Technical News</div>
+    <h1>WebAssembly tooling &amp; WebAssembly runtime News — July 27, 2026</h1>
+    <p class="lede">Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 15 relevant releases and technical developments with origin… This page links to original publishers, uses short excerpts, and does not reproduce complete articles.</p>
+    <div class="tags"><a class="tag" href="/">WebAssembly tooling</a><a class="tag" href="/">WebAssembly runtime</a><a class="tag" href="/">Binary reverse engineering</a><a class="tag" href="/">Malware analysis tooling</a><a class="tag" href="/">Native binary tooling</a><a class="tag" href="/news/">Decompiler research</a><a class="tag" href="/">Dynamic instrumentation</a><a class="tag" href="/">C# decompilation</a><a class="tag" href="/public/news/">trending GitHub repository</a><a class="tag" href="/public/news/">trending GitHub</a><a class="tag" href="/public/news/">GitHub repository</a><a class="tag" href="/public/news/">wasm</a><a class="tag" href="/public/news/">Unity</a><a class="tag" href="/public/news/">decompiler</a></div>
+  </div></header>
+  <main class="wrap">
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Github Hot Wasm</span> GitHub Hot WebAssembly Tools</span>
+            <time datetime="2026-07-02T13:33:08+00:00">2026-07-02</time>
+          </div>
+          <h2><a href="https://github.com/Virtastic/openmw-web" rel="noopener noreferrer">Virtastic/openmw-web — trending GitHub repository</a></h2>
+          <p>Play Morrowind in your browser — the OpenMW engine compiled to WebAssembly. GitHub discovery signal: 27 stars, 3 forks, 6 open issues; language C++; last pushed 2026-07-27. Topics: browser-game, cpp, elder-scrolls, emscripten, game-engine, morrowind, openmw, wasm, webassembly, webgl2.</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to WebAssembly tooling, WebAssembly runtime.</p>
+          <a class="source" href="https://github.com/Virtastic/openmw-web" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Research</span> arXiv Reverse Engineering Research</span>
+            <time datetime="2026-07-24T13:29:41+00:00">2026-07-24</time>
+          </div>
+          <h2><a href="https://arxiv.org/abs/2607.07738v2" rel="noopener noreferrer">REFORGE: A Method for Benchmarking LLMs&#x27; Reverse Engineering Capabilities in Decompiled Binary Function Naming</a></h2>
+          <p>Large language models (LLMs) are increasingly applied to reverse-engineering tasks, and recent threat-intelligence reporting shows them operating inside live offensive-security workflows. Claims about their capability, however, outpace our ability to measure it. Existing benchmarks for LLM-assisted binary analysis treat the construction of function-level gr…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Binary reverse engineering, Malware analysis tooling.</p>
+          <a class="source" href="https://arxiv.org/abs/2607.07738v2" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Research</span> arXiv Reverse Engineering Research</span>
+            <time datetime="2026-06-28T02:28:10+00:00">2026-06-28</time>
+          </div>
+          <h2><a href="https://arxiv.org/abs/2606.29155v1" rel="noopener noreferrer">OASIF: An Efficient Obfuscation-Aware Self-Improving Framework for LLM-Based Assembly Code Instruction Following and Comprehension</a></h2>
+          <p>Large Language Models (LLMs) have recently shown promise in automated binary analysis, yet they remain brittle under commercial-grade obfuscation. We present OASIF, an Obfuscation-Aware Self-evolving Instruction-Following framework for obfuscated assembly comprehension. OASIF couples a token-efficient assembly encoder with a lightweight projector to expose…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Binary reverse engineering, Malware analysis tooling.</p>
+          <a class="source" href="https://arxiv.org/abs/2606.29155v1" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Debugging</span> x64dbg Releases</span>
+            <time datetime="2026-05-27T13:04:55+00:00">2026-05-27</time>
+          </div>
+          <h2><a href="https://github.com/x64dbg/x64dbg/releases/tag/2026.05.27" rel="noopener noreferrer">2026.05.27</a></h2>
+          <p>May 2026: Small hotfix release This is a small hotfix release after the April release. It fixes an r8 register modification issue, a trace reader memory fault, dark theme label coloring, and support for passing an absolute path to -cf . It also includes a few small UI, packaging, testing, and experimental Linux debugger updates. 📜 Changelog Added CPUStack (…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Binary reverse engineering, Native binary tooling.</p>
+          <a class="source" href="https://github.com/x64dbg/x64dbg/releases/tag/2026.05.27" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Webassembly Runtime</span> Wasmer Releases</span>
+            <time datetime="2026-07-23T11:04:33+00:00">2026-07-23</time>
+          </div>
+          <h2><a href="https://github.com/wasmerio/wasmer/releases/tag/v7.2.1" rel="noopener noreferrer">Release v7.2.1</a></h2>
+          <p>Important For packaging purposes, use the provided wasmer-full-source.tar.xz , which includes all required submodules. This release adds: Implement externref/funcref reference surface ( #6791 ) See full list of changes in the CHANGELOG Install this version of wasmer: curl https://get.wasmer.io -sSfL | sh -s &quot; v7.2.1 &quot;</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to WebAssembly runtime.</p>
+          <a class="source" href="https://github.com/wasmerio/wasmer/releases/tag/v7.2.1" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Research</span> arXiv Reverse Engineering Research</span>
+            <time datetime="2026-07-21T20:54:48+00:00">2026-07-21</time>
+          </div>
+          <h2><a href="https://arxiv.org/abs/2606.29108v2" rel="noopener noreferrer">Symbolon: Symbolic Execution by Learning Code Transformation</a></h2>
+          <p>Symbolic execution is a powerful program analysis technique with broad applications, such as vulnerability detection, security testing, and malware analysis. However, this technique is known to suffer from scalability issues, e.g., path explosion, complex constraints, due to certain structural and semantic patterns commonly presented in real-world programs…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Malware analysis tooling, Decompiler research.</p>
+          <a class="source" href="https://arxiv.org/abs/2606.29108v2" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Dynamic Analysis</span> Frida Tools Releases</span>
+            <time datetime="2026-06-25T00:09:13+00:00">2026-06-25</time>
+          </div>
+          <h2><a href="https://github.com/frida/frida-tools/releases/tag/14.10.4" rel="noopener noreferrer">14.10.4</a></h2>
+          <p>Ignore frida-trace handlers output</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Dynamic instrumentation.</p>
+          <a class="source" href="https://github.com/frida/frida-tools/releases/tag/14.10.4" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Dynamic Analysis</span> Frida Tools Releases</span>
+            <time datetime="2026-06-25T00:09:13+00:00">2026-06-25</time>
+          </div>
+          <h2><a href="https://github.com/frida/frida-tools/releases/tag/14.10.3" rel="noopener noreferrer">14.10.3</a></h2>
+          <p>Ignore frida-trace handlers output</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Dynamic instrumentation.</p>
+          <a class="source" href="https://github.com/frida/frida-tools/releases/tag/14.10.3" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Security Research</span> Trail of Bits Blog</span>
+            <time datetime="2026-06-12T11:00:00+00:00">2026-06-12</time>
+          </div>
+          <h2><a href="https://blog.trailofbits.com/2026/06/12/factoring-short-sleeve-rsa-keys-with-polynomials/" rel="noopener noreferrer">Factoring &quot;short-sleeve&quot; RSA keys with polynomials</a></h2>
+          <p>What happens when the bits of an RSA private key are heavily biased toward 0 instead of being randomly generated? The public key’s bits could be biased enough for us to detect these incorrectly generated keys in the wild. Together with Hanno Böck of the badkeys project, we found hundreds of unique keys that not only have this property, but can be quickly fa…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to C# decompilation, Malware analysis tooling.</p>
+          <a class="source" href="https://blog.trailofbits.com/2026/06/12/factoring-short-sleeve-rsa-keys-with-polynomials/" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Webassembly Runtime</span> wazero Releases</span>
+            <time datetime="2026-05-29T09:22:57+00:00">2026-05-29</time>
+          </div>
+          <h2><a href="https://github.com/wazero/wazero/releases/tag/v1.12.0" rel="noopener noreferrer">v1.12.0</a></h2>
+          <p>Hi wazero friends! The new release of wazero v1.12.0 has arrived. This release advances us a few more steps towards Wasm 3.0! See #2426 (comment) for where we currently stand. Behavioral changes 929e400 Extended Constant Expressions ( #2468 ) @mpoindexter bfb20e0 Exception handling ( #2489 ) @evacchi 2c14bbf Typed references ( #2497 ) @evacchi 8ee2508 , a87…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to WebAssembly runtime.</p>
+          <a class="source" href="https://github.com/wazero/wazero/releases/tag/v1.12.0" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Github Hot Research</span> GitHub Hot Program Analysis</span>
+            <time datetime="2026-06-09T01:53:49+00:00">2026-06-09</time>
+          </div>
+          <h2><a href="https://github.com/0xeb/r2sql" rel="noopener noreferrer">0xeb/r2sql — trending GitHub repository</a></h2>
+          <p>Radar2 live SQL AI connector for Vibe Reverse Engineering GitHub discovery signal: 15 stars, 1 forks, 0 open issues; language C++; last pushed 2026-07-12.</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Decompiler research.</p>
+          <a class="source" href="https://github.com/0xeb/r2sql" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Reverse Engineering</span> Rizin Releases</span>
+            <time datetime="2026-06-29T17:48:24+00:00">2026-06-29</time>
+          </div>
+          <h2><a href="https://github.com/rizinorg/rizin/releases/tag/v0.9.1" rel="noopener noreferrer">Release v0.9.1</a></h2>
+          <p>A patch release fixing: Scrolling issues in visual mode for meta items. Fixing the fun fortunes. Setting the default newline character for string search to NUL (to match commonly expected behavior).</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Binary reverse engineering.</p>
+          <a class="source" href="https://github.com/rizinorg/rizin/releases/tag/v0.9.1" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Dotnet Runtime</span> .NET Runtime Releases</span>
+            <time datetime="2026-07-15T00:14:10+00:00">2026-07-15</time>
+          </div>
+          <h2><a href="https://github.com/dotnet/runtime/releases/tag/v9.0.18" rel="noopener noreferrer">.NET 9.0.18</a></h2>
+          <p>Release What&#x27;s Changed [release/9.0-staging] Update dependencies from dotnet/cecil by @dotnet-maestro [bot] in #125099 [release/9.0-staging] Update dependencies from dotnet/runtime-assets by @dotnet-maestro [bot] in #125410 [release/9.0-staging] Update dependencies from dotnet/roslyn by @dotnet-maestro [bot] in #125816 [release/9.0-staging] Update dependenc…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to WebAssembly runtime.</p>
+          <a class="source" href="https://github.com/dotnet/runtime/releases/tag/v9.0.18" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Dotnet Runtime</span> .NET Runtime Releases</span>
+            <time datetime="2026-07-14T22:36:05+00:00">2026-07-14</time>
+          </div>
+          <h2><a href="https://github.com/dotnet/runtime/releases/tag/v8.0.29" rel="noopener noreferrer">.NET 8.0.29</a></h2>
+          <p>Release What&#x27;s Changed [release/8.0-staging] Fix loop hoist memory-dependence tracking by @AndyAyersMS in #128381 [release/8.0-staging] Update dependencies from dotnet/runtime-assets by @dotnet-maestro [bot] in #126495 [release/8.0-staging] Disable WASI CI by @maraf with @Copilot in #128858 Update branding to 8.0.29 by @vseanreesermsft in #128914 [release/8…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to WebAssembly runtime.</p>
+          <a class="source" href="https://github.com/dotnet/runtime/releases/tag/v8.0.29" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Community Qa</span> Reverse Engineering Stack Exchange</span>
+            <time datetime="2026-07-22T07:47:08+00:00">2026-07-22</time>
+          </div>
+          <h2><a href="https://reverseengineering.stackexchange.com/questions/33738/what-does-a-workflow-for-game-decompilation-look-like" rel="noopener noreferrer">What does a workflow for game decompilation look like?</a></h2>
+          <p>I&#x27;m new to reverse engineering in general there&#x27;s a discontinued Windows Store game I plan to decompile. My goal is to reconstruct readable source code similar to the one in the Space Cadet Pinball decompilation project: https://github.com/k4zmu2a/SpaceCadetpinball . I am curious how does one tackle this huge project. Is there any step-by-step process to fo…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Binary reverse engineering.</p>
+          <a class="source" href="https://reverseengineering.stackexchange.com/questions/33738/what-does-a-workflow-for-game-decompilation-look-like" rel="noopener noreferrer">Read the original source →</a>
+        </article></main>
+  <footer><div class="wrap">
+    <a href="/">CPP2IL</a> · <a href="/public/news/">News archive</a> · Updated 2026-07-27 04:55 UTC
+  </div></footer>
+</body>
+</html>

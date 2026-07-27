@@ -1,11 +1,301 @@
 {
   "version": 3,
-  "last_generated_at": "2026-07-26T04:45:57.133539+00:00",
+  "last_generated_at": "2026-07-27T04:55:39.100610+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-07-27",
+      "path": "/public/news/2026-07-27-unity-il2cpp-reverse-engineering-news.html",
+      "title": "WebAssembly tooling & WebAssembly runtime News — July 27, 2026",
+      "description": "Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 15 relevant releases and technical developments with origin…",
+      "item_count": 15,
+      "new_item_count": 15,
+      "updated_at": "2026-07-27T04:55:39.100610+00:00",
+      "entries": [
+        {
+          "entry_id": "1e1ba1d8f334a8721d11ac6a14fdd9fc9765d994d134d13992d38ac2886957a0",
+          "title": "Virtastic/openmw-web — trending GitHub repository",
+          "url": "https://github.com/Virtastic/openmw-web",
+          "summary": "Play Morrowind in your browser — the OpenMW engine compiled to WebAssembly. GitHub discovery signal: 27 stars, 3 forks, 6 open issues; language C++; last pushed 2026-07-27. Topics: browser-game, cpp, elder-scrolls, emscripten, game-engine, morrowind, openmw, wasm, webassembly, webgl2.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-04-28+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-07-02T13:33:08+00:00",
+          "trust": 8,
+          "source_boost": 13,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 40
+        },
+        {
+          "entry_id": "55cf229203741abce5a03ad8a40109bf431f3745ba5224c497a1b08e75af86b0",
+          "title": "REFORGE: A Method for Benchmarking LLMs' Reverse Engineering Capabilities in Decompiled Binary Function Naming",
+          "url": "https://arxiv.org/abs/2607.07738v2",
+          "summary": "Large language models (LLMs) are increasingly applied to reverse-engineering tasks, and recent threat-intelligence reporting shows them operating inside live offensive-security workflows. Claims about their capability, however, outpace our ability to measure it. Existing benchmarks for LLM-assisted binary analysis treat the construction of function-level ground truth as a solved pre-processing step and report accuracy without disclosing how many functions were reliably evaluable. We argue that the principal obstacle to fair evaluation is not model capability but the reliability of binary-to-source alignment under compiler optimization. This paper presents Reforge, a provenance-tracked pipeline that constructs function-level ground truth from C source through compilation, DWARF and syntactic extraction, alignment, and decompilation, and that operationalizes alignment uncertainty as an eight-gate confidence funnel with three-tier stratification. On a controlled micro-benchmark, high-confidence yield falls from 87.2% to 65.9% across optimization levels, and unpaired comparisons overstate optimization-induced performance decay through survivorship bias. A proof-of-concept evaluation of seven contemporary LLMs on function naming demonstrates the validity of the concept and generally motivates an uncertainty-aware benchmarking practice.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-07-24T13:29:41+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 29
+        },
+        {
+          "entry_id": "01b78bc07ad38fe088386e41c7ed93a83397f40f9375b131f54b32c2a0ad4b48",
+          "title": "OASIF: An Efficient Obfuscation-Aware Self-Improving Framework for LLM-Based Assembly Code Instruction Following and Comprehension",
+          "url": "https://arxiv.org/abs/2606.29155v1",
+          "summary": "Large Language Models (LLMs) have recently shown promise in automated binary analysis, yet they remain brittle under commercial-grade obfuscation. We present OASIF, an Obfuscation-Aware Self-evolving Instruction-Following framework for obfuscated assembly comprehension. OASIF couples a token-efficient assembly encoder with a lightweight projector to expose long obfuscated code to a pretrained code LLM under a bounded context budget and follows a three-phase training: (i) feature-space alignment, (ii) supervised instruction fine-tuning, and (iii) online self-evolving reinforcement learning with hybrid rewards, enabling continual adaptation with minimal manual verification. On VMISA-Bench, a challenging out-of-distribution suite featuring three commercial VM-based obfuscators, OASIF consistently improves open-source backbones; Qwen2.5-Coder-Instruct-14B attains Success Rate gains of +15.9, +5.8, and +16.9 percentage points (pp) on Code Virtualizer, Themida (v3.0.7), and VMProtect (v3.5), respectively, and improves the OASIF-Bench average by +9.8. OASIF further delivers stable gains across seven standard BCSD benchmarks while preserving general and domain-relevant capabilities on HumanEval, VulBench, and HumanEval-Decompile.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-06-28T02:28:10+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "4469aa228f27ab05b35906bea44353c73ee6887ded1dc6eab6503e1e31b99d1f",
+          "title": "2026.05.27",
+          "url": "https://github.com/x64dbg/x64dbg/releases/tag/2026.05.27",
+          "summary": "May 2026: Small hotfix release This is a small hotfix release after the April release. It fixes an r8 register modification issue, a trace reader memory fault, dark theme label coloring, and support for passing an absolute path to -cf . It also includes a few small UI, packaging, testing, and experimental Linux debugger updates. 📜 Changelog Added CPUStack (Linux) by @3rdit in #3839 Make tests declarative by @mrexodia in #3837 Fix cross CI windeployqt overwrite by @mrexodia in #3841 Fix \"Running\" label font color for dark theme by @d2k2-git in #3844 Fix r8 modification (closes #3850 ) Add module RVA address display mode in CPU by @ZehMatt in #3848 Add IMAGE_FILE_LARGE_ADDRESS_AWARE to x32dbg Fix memory fault in trace reader when memory status change by @torusrxxx in #3863 Move toggle FPU button into menu by @XanderSteyn in #3860 Add PageUp/PageDown selection movement by @mrexodia in #3842 Show hotkeys in toolbar tooltips ( #3864 ) Allow passing absolute path to -cf #3865 Full commit history: 2026.04.20...2026.05.27",
+          "source": "x64dbg Releases",
+          "source_url": "https://github.com/x64dbg/x64dbg/releases.atom",
+          "category": "debugging",
+          "published": "2026-05-27T13:04:55+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "Native binary tooling",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "7b5b5ef69d0f3f62bec415149117182b0b26b3e38ef7266b7d5e86a52ed75786",
+          "title": "Release v7.2.1",
+          "url": "https://github.com/wasmerio/wasmer/releases/tag/v7.2.1",
+          "summary": "Important For packaging purposes, use the provided wasmer-full-source.tar.xz , which includes all required submodules. This release adds: Implement externref/funcref reference surface ( #6791 ) See full list of changes in the CHANGELOG Install this version of wasmer: curl https://get.wasmer.io -sSfL | sh -s \" v7.2.1 \"",
+          "source": "Wasmer Releases",
+          "source_url": "https://github.com/wasmerio/wasmer/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-07-23T11:04:33+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 21
+        },
+        {
+          "entry_id": "8e9bc03c1489d80f1d2825f31a946e7c2b18f9d22e98bd5c8ccbe531751e3178",
+          "title": "Symbolon: Symbolic Execution by Learning Code Transformation",
+          "url": "https://arxiv.org/abs/2606.29108v2",
+          "summary": "Symbolic execution is a powerful program analysis technique with broad applications, such as vulnerability detection, security testing, and malware analysis. However, this technique is known to suffer from scalability issues, e.g., path explosion, complex constraints, due to certain structural and semantic patterns commonly presented in real-world programs. Existing approaches attempt to escape these patterns by transforming programs into new representations to reduce the execution cost. Unfortunately, these transformations are often too rigid to exploit diverse local program semantics and sometimes rely on compiler optimizations designed for concrete execution that may misalign with the goals of symbolic execution. We present Symbolon, a framework that automatically learns diverse code transformations and applies them context-sensitively to improve symbolic execution. Our key insight is to formulate transformation discovery as a search problem over program representations. To make the search practical, Symbolon learns transformations cheaply offline on small programs, distills them into a reusable library of agent skills, and uses an agent to instantiate these skills on repo-level targets. Our evaluation shows that Symbolon substantially improves the symbolic execution engine KLEE across 16 search strategies on 32 real-world programs, increasing line coverage by 3.69x on average while reducing peak memory and per-query solver time by 29.2x and 123x, respectively. When applied to the latest Linux kernel, Symbolon uncovers 21 previously unknown bugs, all of which have been reported to the kernel maintainers.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-07-21T20:54:48+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Malware analysis tooling",
+            "Decompiler research"
+          ],
+          "score": 21
+        },
+        {
+          "entry_id": "75a8e4f452991c18d7abc4ea2830885b1e79f19991afd526d685eb817167323d",
+          "title": "14.10.4",
+          "url": "https://github.com/frida/frida-tools/releases/tag/14.10.4",
+          "summary": "Ignore frida-trace handlers output",
+          "source": "Frida Tools Releases",
+          "source_url": "https://github.com/frida/frida-tools/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-06-25T00:09:13+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Dynamic instrumentation"
+          ],
+          "matched_terms": [
+            "Dynamic instrumentation"
+          ],
+          "score": 21
+        },
+        {
+          "entry_id": "ad915bfd3e7f0ba735ff954bb85c64546209b99a0dd973b72efb16b54542454e",
+          "title": "14.10.3",
+          "url": "https://github.com/frida/frida-tools/releases/tag/14.10.3",
+          "summary": "Ignore frida-trace handlers output",
+          "source": "Frida Tools Releases",
+          "source_url": "https://github.com/frida/frida-tools/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-06-25T00:09:13+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Dynamic instrumentation"
+          ],
+          "matched_terms": [
+            "Dynamic instrumentation"
+          ],
+          "score": 21
+        },
+        {
+          "entry_id": "1620c265513b58f023189b59ea3acfcfc835c7c304092dd503f3347f1492164e",
+          "title": "Factoring \"short-sleeve\" RSA keys with polynomials",
+          "url": "https://blog.trailofbits.com/2026/06/12/factoring-short-sleeve-rsa-keys-with-polynomials/",
+          "summary": "What happens when the bits of an RSA private key are heavily biased toward 0 instead of being randomly generated? The public key’s bits could be biased enough for us to detect these incorrectly generated keys in the wild. Together with Hanno Böck of the badkeys project, we found hundreds of unique keys that not only have this property, but can be quickly factored. We also found the bug that led to many of these keys and analyzed historical data to track the issue over time. Surprisingly, the pattern of 0 bits is often highly structured, allowing us to develop a powerful polynomial-based cryptanalytic technique that exploits the pattern. Figure 1: Two patterns of RSA moduli with repeated blocks of 0 bits seen in real-world examples. These “short-sleeve” keys, named for how the 0 bits don’t fully cover the limbs of the big integers, largely fell into two patterns. Pattern 1 remains unexplained, but we traced pattern 2 to a type mismatch in big-integer code from old versions of the CompleteFTP file transfer software. The CompleteFTP bug also generated vulnerable short-sleeve DSA keys, and we recovered 603 unique RSA private keys and 74 DSA keys from internet scans. If you used CompleteFTP to generate host keys between December 2016 and December 2023, CompleteFTP has released a tool to check whether your keys need to be regenerated. How we found the weak keys The badkeys project is an open-source service that checks public keys for known vulnerabilities. While developing this tool, Hanno collected a massive number of real-world keys from public sources, including Certificate Transparency logs, internet-wide TLS and SSH scans, PGP keys, and many others. By searching this dataset for unexpectedly sparse RSA moduli, we uncovered a large number of keys in the wild with the patterns in Figure 1. Both patterns include several regularly spaced blocks of all zeros interleaved with seemingly random data. Pattern 1 appears in CT logs for certificates issued to several large organizations, including Yahoo and Verizon , and on some devices running NetApp software. Fortunately, these certificates have already expired, but we still shared our findings with these companies. We wanted to learn more about which product could be responsible for generating these keys, but we did not hear back. Pattern 2 appears on SSH hosts running the CompleteFTP software from EnterpriseDT. The underlying vulnerability affects RSA keys generated using versions 10.0.0–12.0.0 (Dec 2016–Mar 2019) and DSA keys generated with v10.0.0–23.0.4 (Dec 2016–Dec 2023). These vulnerabilities affect a small minority of hosts on the internet, but the more interesting takeaway is that independent cryptographic implementations failed in similar ways. More implementations may include the same bugs, and so it’s worth tailoring cryptanalytic algorithms for this particular type of failure. Factoring with polynomials Cryptographic algorithms often need integers hundreds or thousands of bits long, and they represent these “big integers” using an array of smaller machine-sized values, called limbs . If we interpret pattern 1 as a sequence of 128-bit limbs, or 32-bit limbs in pattern 2, the repeated blocks of zeros correspond to a single block of zeros in each limb. Only a small contiguous subset of the limb is filled with random bits, and the rest of the limb is uncovered, hence the nickname “short-sleeve keys.” By exploiting this mathematical structure in the limbs of these moduli, we replace the hard problem of factoring integers with the easy problem of factoring polynomials. That is, we take the modulus $n$ with unknown factors $p$ and $q$, express it as a polynomial $f_n(x)$ with small coefficients, factor $f_n(x)$ into $f_p(x)$ and $f_q(x)$, and convert these factors into $p$ and $q$. The technique of converting between integers and polynomials is common, including doing fast polynomial multiplication , but sadly, few resources describe how to use it for fast integer factorization. In particular, we use the digits in the base-$B$ representation of the integer to set the coefficients of the polynomial. In the normal base-10 representation, this involves replacing powers of 10 with powers of $x$, and then converting a polynomial back to an integer involves replacing powers of $x$ with powers of 10. Mathematically, the base-$B$ representation of an integer $a = \\sum_i a_i B^i$ corresponds to the polynomial $f_a(x) = \\sum_i a_i x^i$, and the polynomial evaluation $a = f_a(B)$ converts back to an integer. For short-sleeve keys, the base corresponds to the limb size, and the extra zero bits in each limb will lead to polynomials with exceptionally small coefficients. Figure 2: Integers with blocks of 0 bits can be represented as polynomials with small coefficients. This method of representing integers with polynomials is useful because the product of evaluations $f_a(B) * f_c(B)$ equals the evaluation of the product $(f_a*f_c)(B)$. All evaluation does is replace $x$ with $B$, so it doesn’t matter if this happens before or after multiplication. The same is true of addition. 1 For a short-sleeve RSA modulus $n$ with $w$-bit limbs, we can use the base-$2^w$ representation to find a polynomial $f_n(x)$ with exceptionally small coefficients. If $f_p(x)$ and $f_q(x)$ also have exceptionally small coefficients, then $f_n(x) = f_p(x) * f_q(x)$. Note that for correctly generated prime factors, $f_p(x)$ and $f_q(x)$ will typically have $w$-bit coefficients; that’s why this attack doesn’t work in general. Factoring polynomials is easy, so we can factor $f_n(x)$ to get $f_p(x)$ and $f_q(x)$, then evaluate these factors at $2^w$ to get $p$ and $q$. This is the basic version of the attack, but I’m intentionally omitting a key insight needed to factor these real-world moduli. A full explanation is at the end of this blog. Figure 3: Special-form polynomials can be factored to reveal the RSA private key. The correspondence between integers and polynomials makes it easy to factor these special form moduli, but interestingly, it helps factor general RSA moduli as well. The General Number Field Sieve (GNFS) algorithm has the best known asymptotic performance, and the first step is defining a number field by selecting a polynomial $f_n(x)$ and evaluation point $m$ such that $f_n(m) = n$. 2 Reverse engineering the CompleteFTP vulnerability After applying this technique to the keys that Hanno found, we found that the private factors are indeed short-sleeved: the prime factors have large, regularly spaced blocks of unset bits. The SSH banners for the hosts with the second pattern indicate they use the CompleteFTP software, so we reverse-engineered a trial version to determine what caused the vulnerable keys. Dynamically generated RSA keys did not have the short-sleeve pattern 3 , so we used the ILSpy tool to decompile the .NET code in the demo binary. After some reverse engineering, we found the bug that generated the short-sleeve keys. The following function fills the big integer represented by bignumLimbs with a randomly generated value of the desired bit length. See if you can spot the problem. public void genRandomBits ( int bits ) { // Calculate the number of limbs int numLimbs = bits / 32 ; // Allocate space for the RNG output byte [] array = new byte [ numLimbs ]; // Call the system RNG rngProvider . GetNonZeroBytes ( array ); // Copy to the limbs of the big number Array . Copy ( array , 0 , bignumLimbs , 0 , numLimbs ); // Set the top bit to ensure proper bit length bignumLimbs [ numLimbs - 1 ] |= 0x80000000 ; // Store the length dataLength = numLimbs ; } Figure 4: Decompiled code for the vulnerable genRandomBits in CompleteFTP. Several branches have been removed for clarity, and comments are added. There’s a mismatch between the size of the limbs and the size of the RNG output! Each limb requires 32 bits of random material, but Array.Copy implicitly casts each 8-bit element of the RNG output to its own element of the big-integer limbs. The repeating structure in the short-sleeve keys is because the issue affects each limb, and the 0 bits are because too small of a value is copied to each limb. This exactly matches the pattern of the cryptanalyzed keys. We also figured out why our dynamic testing did not generate broken keys: the genRandomBits function was compiled in but unreachable in the latest version. Older versions used custom-written key-generation code that called this vulnerable function, which was later refactored to use standard .NET crypto APIs. We reverse-engineered an older version of the CompleteFTP software to look for other calls to genRandomBits and found that DSA key generation was also affected. The 160-bit DSA private key $x$ was previously generated by this function, and the public key and parameters include a generator $g$ and target $y = g^x$. The private key is easily recoverable , and once we knew what to look for, we found vulnerable DSA keys in the wild as well. 4 Since v12.1.0, CompleteFTP generates RSA keys using .NET’s RSACryptoServiceProvider , and since v23.1.0, it generates DSA keys using the DSA.Create API. How the vulnerability spread, and how it was contained The decision to refactor key-generation code to use standard libraries significantly mitigated the scope of the impact. This is actually reflected in the data. Prof. Nadia Heninger has a large collection of historical and contemporary SSH scans that we used to find broken SSH RSA signatures , so I checked to see whether it included CompleteFTP hosts. There were typically hundreds of CompleteFTP hosts in each IPv4-wide scan, and after aligning the historical scans to the release history, the trend is clear. Figure 5: Over time, fewer CompleteFTP hosts run the vulnerable software, but a significant fraction still use vulnerable keys. Starting with the introduction of the RSA vulnerability in December 2016, there was a consistent increase in the number of hosts with vulnerable keys, and once the rewritten RSA code was released in March 2019, this trend immediately stopped. However, even though the number of hosts running an affected version has steadily decreased since then, the proportion of affected keys has plateaued, consistent with customers who regularly update their software but generate their keys only once. The EnterpriseDT team was very responsive throughout disclosure. To help these users, EnterpriseDT released v26.1.0 of CompleteFTP on May 8, 2026; this update automatically checks if the system is using a vulnerable RSA or DSA key and alerts the user if the key needs to be regenerated. They also released a standalone tool that does the same. In addition, the badkeys website and standalone tool now support the detection of vulnerable short-sleeve RSA keys. In total, we recovered private keys for 603 unique RSA public keys and 74 DSA keys generated by vulnerable versions of CompleteFTP, and 26 RSA keys with the unidentified short-sleeve pattern. Our data sources are heavily biased toward RSA SSH keys, so these numbers do not reflect the actual prevalence. The search for more short-sleeve keys Unfortunately, we do not have more information about short-sleeve pattern 1, nor do we know whether that vulnerability extends to other key types. It’s common for cryptanalytic algorithms to exploit knowledge of irregularly spaced blocks of known bits (including ECDSA 5 and RSA 6 ), but the regular spacing of short-sleeve leakage adds new structure, and there may be powerful variants of these algorithms that can exploit this property. If this type of leakage appears in two independent implementations of RSA, there are likely to be even more examples of short-sleeve keys out there. In this instance, the impact of the vulnerabilities is fortunately limited, but it illustrates the power of practical research. The process of using known vulnerabilities to inspire more capable algorithms and using these algorithms to uncover new vulnerabilities generates a powerful feedback loop in cryptanalysis. It helps us understand how real cryptographic systems fail in practice, and it is only by observing how systems break that we learn how to make them more secure. Acknowledgments Thank you to Nadia Heninger for introducing me to Hanno and for letting me use the SSH scans for this project. Those scans consist of historical data from Censys and the University of Michigan provided by Zakir Durumeric and contemporary data and analysis scripts from Kevin He and George Sullivan. Appendix This final section is intended for those who want to implement the attack or write a proof that the attack works. I left out key details from the main post, but the following guided questions will help you close that gap. First, here are the full moduli for you to factorize. They are synthetically generated, but follow the same pattern as keys in the wild. The factors of $n_2$ were generated by calling genRandomBits(1024) in a loop until the result was prime. n_1=0xc889f7ef523b08e400000000000000014d2ee8284c7a03c000000000000000012c16eeaeab96ddc8000000000000000201036d671407a06600000000000000022f743377005a840d0000000000000001e8e3c0efdd8054ba000000000000000306ee98c677dfdf190000000000000002de525d2b1011ceae0000000000000424455c59eec3a0654500000000000003f8d762d68bcbe8cc3a00000000000000d31291f9aaa7e9a7d60000000000000337a82a59342aadff570000000000000295c495b3690a69b66c00000000000000d9c5e55654e9b14cba000000000000040f0f0f7d3bfdce03d6000000000000026b89ac77db000000000000000000036a77 n_2=0x40000049000014ac8000900e00010ec58000b17b8001e0720001be890002169f80029cd5000349190003cd4480037c8c000397660003b28300041021000418cb00058a210004c2708004924980053b8780051cbd8005ebe80006bb27800765e6800651478007f62300073949800860950008614d800863988008d103800884c100099a260009a6d90009578f0007e84300080db800072e59000724f10007c0ec0006ec6600062231000605930005ca4c000566cc0005da92000574dd00040bf1000457dc0004cfbe0004c5640003fe6d0003ada60002de110002cbb30002d5a6000243840001cdf40001a8a9000151be000113f4000101070000acdf000029e5 If you compute $f_{n_2}(x)$ using $B=2^{32}$, some of the coefficients are large. Why is that? Is it true that all of the coefficients of $f_p(x)$ and $f_q(x)$ are small? Is there a bit shift $p \\ll i$ such that $f_{2^i p}(x)$ has small coefficients? This is the key trick needed to turn arbitrary short-sleeve values into polynomials with small coefficients. If $f_{2^i p}(x)$ and $f_{2^j q}(x)$ have small coefficients, can you still compute $f_{2^i p}(x)*f_{2^j q}(x)$ from public information? Can you still recover $p$ and $q$? If this polynomial factorization technique worked for every $p$ and $q$, then RSA would be broken. Why is the short-sleeve property important, and why doesn’t this factorization method work in general? What are the limits? The short-sleeve property allows us to construct the product $f_{2^i p}(x)*f_{2^j q}(x)$, but unless $f_{2^i p}(x)$ and $f_{2^j q}(x)$ are irreducible, factorization may split this into more than two terms. Prove that there is always an efficient way to recover $p$ and $q$ from the polynomial factorization. In math terms, the evaluation map is a ring homomorphism. ↩︎ More accurately, modern factoring implementations use a generalization of this technique. They search for a pair of polynomials $f_0, f_1$ where $f_1$ is linear and $Resultant(f_0, f_1)$ is a small multiple of $n$. In the special case where $f_1$ is monic, then $Resultant(f_0, x - m) = n \\Leftrightarrow f_0(m) = n$. ↩︎ CompleteFTP RSA key generation on Linux had a separate issue where the private exponent was set to 65537 and the public exponent was large. We disclosed, and this issue was fixed in v26.0.2. The Linux version of the tool offers different features and is less popular than Windows. According to license data from EnterpriseDT, they believe no production users are affected by this issue. Our scans corroborate this claim, as we found no keys in the wild with this property. ↩︎ Diffie-Hellman key exchange also used the vulnerable function, but with a 2048-bit exponent. This is not vulnerable, and we believe that DH key exchanges that used this function are still cryptographically secure. ↩︎ Extended Hidden Number Problem and Its Cryptanalytic Applications by Hlaváč and Rosa considers the problem of (EC)DSA nonces with multiple blocks of unknown bits at arbitrary locations. ↩︎ Solving Linear Equations Modulo Divisors: On Factoring Given Any Bits by Herrmann and May considers factoring RSA when one of the factors has multiple contiguous blocks of unknown bits. ↩︎",
+          "source": "Trail of Bits Blog",
+          "source_url": "https://blog.trailofbits.com/feed/",
+          "category": "security-research",
+          "published": "2026-06-12T11:00:00+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "C# decompilation",
+            "Malware analysis tooling"
+          ],
+          "score": 21
+        },
+        {
+          "entry_id": "d7fe4e48674110fc341342aced03a8441a736795077f0b5b24774e3fd9337c83",
+          "title": "v1.12.0",
+          "url": "https://github.com/wazero/wazero/releases/tag/v1.12.0",
+          "summary": "Hi wazero friends! The new release of wazero v1.12.0 has arrived. This release advances us a few more steps towards Wasm 3.0! See #2426 (comment) for where we currently stand. Behavioral changes 929e400 Extended Constant Expressions ( #2468 ) @mpoindexter bfb20e0 Exception handling ( #2489 ) @evacchi 2c14bbf Typed references ( #2497 ) @evacchi 8ee2508 , a877b1b non-blocking IO on custom files ( #2476 , #2479 ) @paralin Bug fixes 2bbd517 Fix fd_prestat_get integer overflow on 32-bit platforms ( #2491 ) @hanxi 0bcb5f2 Ensure i32 operations are masked ( #2488 ) @evacchi dafe2ca Fix error when attempting to invoke a start function imported from a host module ( #2475 ) @mpoindexter f7cf169 Fix error when importing functions which were re-exported ( #2463 ) @mpoindexter aa7ebad Don't use compiler when executable mmap is disabled ( #2471 ) @anuraaga",
+          "source": "wazero Releases",
+          "source_url": "https://github.com/tetratelabs/wazero/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-05-29T09:22:57+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 21
+        },
+        {
+          "entry_id": "b03a58c481214bcf7d6c03bd176703450c75fbf779cc9d568974aecd9fe4483f",
+          "title": "0xeb/r2sql — trending GitHub repository",
+          "url": "https://github.com/0xeb/r2sql",
+          "summary": "Radar2 live SQL AI connector for Vibe Reverse Engineering GitHub discovery signal: 15 stars, 1 forks, 0 open issues; language C++; last pushed 2026-07-12.",
+          "source": "GitHub Hot Program Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=%22program+analysis%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-01-28+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-research",
+          "published": "2026-06-09T01:53:49+00:00",
+          "trust": 8,
+          "source_boost": 9,
+          "topic_terms": [
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 20
+        },
+        {
+          "entry_id": "e81d8aa5589abdb9d94e21d6e629117cfd9e02251b285a6a7e91e73766f63864",
+          "title": "Release v0.9.1",
+          "url": "https://github.com/rizinorg/rizin/releases/tag/v0.9.1",
+          "summary": "A patch release fixing: Scrolling issues in visual mode for meta items. Fixing the fun fortunes. Setting the default newline character for string search to NUL (to match commonly expected behavior).",
+          "source": "Rizin Releases",
+          "source_url": "https://github.com/rizinorg/rizin/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-06-29T17:48:24+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 16
+        },
+        {
+          "entry_id": "3a7a3a7d999485d700076b230d2c0188ca11b26231cc1bdc4194748c97e80bfe",
+          "title": ".NET 9.0.18",
+          "url": "https://github.com/dotnet/runtime/releases/tag/v9.0.18",
+          "summary": "Release What's Changed [release/9.0-staging] Update dependencies from dotnet/cecil by @dotnet-maestro [bot] in #125099 [release/9.0-staging] Update dependencies from dotnet/runtime-assets by @dotnet-maestro [bot] in #125410 [release/9.0-staging] Update dependencies from dotnet/roslyn by @dotnet-maestro [bot] in #125816 [release/9.0-staging] Update dependencies from dotnet/hotreload-utils by @dotnet-maestro [bot] in #126200 [backport/9.0-staging] Disable WASI CI by @maraf with @Copilot in #128775 Replace OSX.14.Arm64.Open with OSX.15.Arm64.Open queues by @akoeplinger in #128853 [release/9.0-staging] Update dependencies from dotnet/xharness by @dotnet-maestro [bot] in #128312 [release/9.0-staging] Update dependencies from dotnet/arcade by @dotnet-maestro [bot] in #128618 [release/9.0-staging] Update dependencies from dotnet/icu by @dotnet-maestro [bot] in #128794 Update branding to 9.0.18 by @vseanreesermsft in #128915 [release/9.0-staging] Update dependencies from dotnet/cecil by @dotnet-maestro [bot] in #128880 [release/9.0-staging] Update dependencies from dotnet/runtime-assets by @dotnet-maestro [bot] in #128934 [release/9.0-staging] [TestOnly] Fix NumberFormatInfoGroupSize test by @svick in #128578 [release/9.0] Update dependencies from dotnet/arcade by @dotnet-maestro [bot] in #126341 Merging internal commits for release/9.0 by @vseanreesermsft in #129194 [release/9.0-staging] Update dependencies from dotnet/xharness by @dotnet-maestro [bot] in #129116 [release/9.0] Update dependencies from dotnet/emsdk by @dotnet-maestro [bot] in #128224 [release/9.0-staging] Update dependencies from dotnet/cecil by @dotnet-maestro [bot] in #129150 [automated] Merge branch 'release/9.0' => 'release/9.0-staging' by @github-actions[bot] in #128216 Merge release/9.0-staging into release/9.0 by @steveisok in #129251 Full Changelog : v9.0.17...v9.0.18",
+          "source": ".NET Runtime Releases",
+          "source_url": "https://github.com/dotnet/runtime/releases.atom",
+          "category": "dotnet-runtime",
+          "published": "2026-07-15T00:14:10+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 14
+        },
+        {
+          "entry_id": "facd051b6bffe099bda11bd3ee5eeaed149dc681f568aa4a79193873b02a5196",
+          "title": ".NET 8.0.29",
+          "url": "https://github.com/dotnet/runtime/releases/tag/v8.0.29",
+          "summary": "Release What's Changed [release/8.0-staging] Fix loop hoist memory-dependence tracking by @AndyAyersMS in #128381 [release/8.0-staging] Update dependencies from dotnet/runtime-assets by @dotnet-maestro [bot] in #126495 [release/8.0-staging] Disable WASI CI by @maraf with @Copilot in #128858 Update branding to 8.0.29 by @vseanreesermsft in #128914 [release/8.0] Bump to OSX.15 helix queues by @akoeplinger in #128896 [release/8.0-staging] Update dependencies from dotnet/arcade by @dotnet-maestro [bot] in #128831 [release/8.0-staging] Update dependencies from dotnet/runtime-assets by @dotnet-maestro [bot] in #128933 [release/8.0-staging] [TestOnly] Fix NumberFormatInfoGroupSize test by @svick in #128579 [release/8.0] Update dependencies from dotnet/cecil by @dotnet-maestro [bot] in #126004 Merging internal commits for release/8.0 by @vseanreesermsft in #129195 [release/8.0] Update dependencies from dotnet/arcade by @dotnet-maestro [bot] in #126394 [release/8.0] Update dependencies from dotnet/emsdk by @dotnet-maestro [bot] in #128223 [automated] Merge branch 'release/8.0' => 'release/8.0-staging' by @github-actions[bot] in #128218 Merge release/8.0-staging into release/8.0 by @steveisok in #129250 Make scheduled outerloop builds succeed when only Helix tests fail by @mmitche in #129049 Full Changelog : v8.0.28...v8.0.29",
+          "source": ".NET Runtime Releases",
+          "source_url": "https://github.com/dotnet/runtime/releases.atom",
+          "category": "dotnet-runtime",
+          "published": "2026-07-14T22:36:05+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 14
+        },
+        {
+          "entry_id": "a4e1b1b0f26944b7729ff7c80bb4ddfc74f440f0e7f55644e7d048b0ab900bde",
+          "title": "What does a workflow for game decompilation look like?",
+          "url": "https://reverseengineering.stackexchange.com/questions/33738/what-does-a-workflow-for-game-decompilation-look-like",
+          "summary": "I'm new to reverse engineering in general there's a discontinued Windows Store game I plan to decompile. My goal is to reconstruct readable source code similar to the one in the Space Cadet Pinball decompilation project: https://github.com/k4zmu2a/SpaceCadetpinball . I am curious how does one tackle this huge project. Is there any step-by-step process to follow? I also wonder how does one make the most of tools like Ghidra and IDA throughout the process? Also, I wonder if there's more modern AI-assisted workflow that makes decompilation easier.",
+          "source": "Reverse Engineering Stack Exchange",
+          "source_url": "https://reverseengineering.stackexchange.com/feeds",
+          "category": "community-qa",
+          "published": "2026-07-22T07:47:08+00:00",
+          "trust": 7,
+          "source_boost": 2,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 13
+        }
+      ]
+    },
     {
       "date": "2026-07-26",
       "path": "/public/news/2026-07-26-unity-il2cpp-reverse-engineering-news.html",
