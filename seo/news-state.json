@@ -1,11 +1,183 @@
 {
   "version": 3,
-  "last_generated_at": "2026-07-27T04:55:39.100610+00:00",
+  "last_generated_at": "2026-07-28T04:30:58.299112+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-07-28",
+      "path": "/public/news/2026-07-28-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity WebGL reverse engineering & WebAssembly tooling News — July 28, 2026",
+      "description": "Curated Unity WebGL reverse engineering, WebAssembly tooling updates for developers and security researchers. 8 relevant releases and technical developments…",
+      "item_count": 8,
+      "new_item_count": 8,
+      "updated_at": "2026-07-28T04:30:58.299112+00:00",
+      "entries": [
+        {
+          "entry_id": "f1e0b066307ef608b1ead1ef1ce3c3a8a940b85a6977b0d3ba22a31c0368ced4",
+          "title": "6.0.4",
+          "url": "https://github.com/emscripten-core/emscripten/releases/tag/6.0.4",
+          "summary": "What's Changed The emscripten config file parser can now handle strings that contain environment variables (e.g. $HOME ) and that use the ~/ prefix. This means that it should be possible, in most cases, to avoid the use of python's os.path within the the config file itself. ( #27215 ) Legacy support for ancient vendor-prefixed DOM APIs was removed ( #27341 , #27339 , #27338 , #27340 , #27347 ) Removed legacy JS library symbols symbols: $ALLOC_NORMAL , $ALLOC_STACK , and $allocate . ( #27378 ) llvm-libc was updated to LLVM 22.1.8. ( #27374 ) mimalloc was updated to 3.4.1. ( #27380 ) Backport fix for musl's qsort ( CVE-2026-40200 ) ( #27029 ) recvmmsg and sendmmsg are now implemented in terms of recvmsg and sendmsg . ( #27395 ) Contributors Thanks to the following contributors: @sbc100 (42) @guybedford (7) @aheejin (1) @brendandahl (1) @HCL-JasonR (1) @kleisauke (1) @stephenduong1004 (1) Full Changelog : 6.0.3...6.0.4",
+          "source": "Emscripten Releases",
+          "source_url": "https://github.com/emscripten-core/emscripten/releases.atom",
+          "category": "webassembly",
+          "published": "2026-07-27T15:07:15+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Unity WebGL reverse engineering"
+          ],
+          "matched_terms": [
+            "Unity WebGL reverse engineering",
+            "WebAssembly tooling"
+          ],
+          "score": 34
+        },
+        {
+          "entry_id": "ed283f32904c1d68102a3d9add061eab4456c413d47642a943a5ad5b7653059a",
+          "title": "v2.2.0 Dump and BuildReport improvements",
+          "url": "https://github.com/Unity-Technologies/UnityDataTools/releases/tag/v2.2.0",
+          "summary": "What's Changed analyze support for BuildReports now includes additional data added in Unity 6.6. Also make small update to the schema to better support queries that group by file extension. dump command - further work to bring it to feature parity with binary2text. Concise display of large arrays, floating numbers as hex and proper display of GUID/Hash128 values. Bug fix for using UnityFileSystemApi to mount archives or open serialized files when there are non-ansii characters in the path. Documentation improvements: Document how to perform SQL queries matching functionality of the Project Auditor UI (for Player builds). Add a file to aid agents use the tool. Mark find-refs as experimental because agents were stumbling over it. Details [ #107 ] Add Unity 6.6 BuildReport Summary fields and ContentSummary tables by @SkowronskiAndrew in #108 [ #110 ] Add Player build report example queries matching Project Auditor views by @SkowronskiAndrew in #111 [ #65 ] Print GUID and Hash128 as single hex strings in dump output by @SkowronskiAndrew in #112 [ #32 ] Summarize large arrays with a hash in dump output by default by @SkowronskiAndrew in #113 [ #31 ] Add --hexfloat option to dump bit-exact float representations by @SkowronskiAndrew in #114 [ #14 ] Marshal native paths as UTF-8 to support non-ASCII paths by @SkowronskiAndrew in #122 [ #14 ] Address Copilot review follow-ups by @SkowronskiAndrew in #124 [ #119 ] Add AI agent guide and refresh user entry points by @SkowronskiAndrew in #123 Schema Differences The analyze database gets new columns, tables and views related to the BuildReport file (nothing renamed or removed): #107 Adds tables related to BuildReport ContentSummary and other BuildReport changes #110 build_report_source_assets gains asset_name (filename without extension) and asset_extension (lower-cased, without the dot) columns Full Changelog : v2.1.0...v2.2.0",
+          "source": "Unity Data Tools Releases",
+          "source_url": "https://github.com/Unity-Technologies/UnityDataTools/releases.atom",
+          "category": "unity-assets",
+          "published": "2026-07-27T17:54:50+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "Unity asset extraction"
+          ],
+          "matched_terms": [
+            "Unity engine releases",
+            "Unity asset extraction"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "5eacfa698b77956a68b07684ad18547d59853229e9168c3bb462137b032c9aa3",
+          "title": "fix #500: Update Protectt YARA rule with new sample and strings (#501)",
+          "url": "https://github.com/rednaga/APKiD/commit/5fa3b34fb37283d24a98eeff3171dbaf9cab0d80",
+          "summary": "fix #500: Update Protectt YARA rule with new sample and strings (#501) * Update Protectt YARA rule with new sample and strings * Update protectors.yara",
+          "source": "APKiD Commits",
+          "source_url": "https://github.com/rednaga/APKiD/commits/master.atom",
+          "category": "mobile-security",
+          "published": "2026-07-27T17:35:45+00:00",
+          "trust": 8,
+          "source_boost": 4,
+          "topic_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "matched_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "a60863930eecb82ed88731678d34c28869b9bb9eefeab832dda21c6ffda0e1a7",
+          "title": "v2.0.0-beta.8 - 2026/07/27",
+          "url": "https://github.com/wasmi-labs/wasmi/releases/tag/v2.0.0-beta.8",
+          "summary": "Added Added Config option to disallow running the start function of Wasm modules. #1985 Added some more optimizations to Wasmi: Greatly improved speed for accessing instance related objects in the executor. #1940 This optimization builds on a new improved internal Wasm instance layout + caching. Improve performance of call_imported and call_indirect via caching. #1996 Improve performance for accessing instance related objects on 32-bit platforms. #1997 Resolve deduplicated function types at translation time to improve call_indirect performance. #2006 All in all the count/globals benchmark saw a whopping ~35% improvement in performance. Despite Wasmi's module related bytecode, instance access is now as efficient as in Wasm3's or Stitch'es executors with their instance-related bytecodes. Fixed Fix potential memory invadliation bug when tail calling host functions. #1999 Internal Added benchmark to test call_indirect performance. #1993 Added benchmark to test call_imported performance for non-host calls. #1994 Added Stable{Arena,Vec} to wasmi_collections . #1987 These new collections are similar to Arena and Vec respectively but with stable internal pointers to their contained items. These collections were required to implement #1940 .",
+          "source": "wasmi Releases",
+          "source_url": "https://github.com/wasmi-labs/wasmi/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-07-27T18:41:10+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "672a65c3c0415ef4965ac0d0d77fdb390c88e17bf2f1cecbbb0740120c3c1ba6",
+          "title": "2026.07.27",
+          "url": "https://github.com/pwndbg/pwndbg/releases/tag/2026.07.27",
+          "summary": "fix(context/backtrace): addresses, symbols etc. being truncated ( #4042 )",
+          "source": "pwndbg Releases",
+          "source_url": "https://github.com/pwndbg/pwndbg/releases.atom",
+          "category": "debugging",
+          "published": "2026-07-27T15:21:38+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "Native binary tooling",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "51b40bfe5e189479543b164081d738df8ce8dbb81abb97cd1b31db905b84848d",
+          "title": "dev/5.4.10199: [Python] Fix exceptions from __del__ during interpreter shutdown",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10199",
+          "summary": "StructureType , EnumerationType , and NamedTypeReferenceType called super(Class, self) in __del__ . The interpreter nulls that module-global class name during teardown, so finalizers running at shutdown raised a TypeError . Switch to zero-arg super() here and across the rest of the Python API.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-07-22T20:49:46+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "eb3ad812e2359f231a04efd9c94317c514d1e2aa89d611fb15190852d393adf8",
+          "title": "dev/5.4.10198: [Python] Fix exceptions from __del__ during interpreter shutdown",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10198",
+          "summary": "StructureType , EnumerationType , and NamedTypeReferenceType called super(Class, self) in __del__ . The interpreter nulls that module-global class name during teardown, so finalizers running at shutdown raised a TypeError . Switch to zero-arg super() here and across the rest of the Python API.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-07-22T20:49:46+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "f0deade34b962fd337bac0214bf6a6b21b8a65a43760bd800a224a022b80c845",
+          "title": "Program Analysis with Prophecy and History Variables in the Nexis Compiler",
+          "url": "https://arxiv.org/abs/2607.23033v1",
+          "summary": "We present prophecy variables for forward formulations of program analysis problems that require information about the future execution of the program. We specify prophecy and history variables via a domain specific language that augments the step rules of the base operational semantics with subset inclusion constraints over the prophecy and history variables. This tight coupling between the prophecy and history variable specification and the operational semantics promotes the construction of correctness and optimality proofs for program transformations, with the proofs structured as forward simulations between the original and transformed versions of the program. In comparison with traditional dataflow approaches, this approach eliminates mechanisms such as explicit control flow graphs, abstraction functions, concretization functions, Galois connections, and separate backward and forward analyses. We present a verified implementation of prophecy and history variables and use the implementation to prove correctness and optimality properties of two classic transformations, partial dead code elimination and lazy code motion, that use both prophecy and history variables. To the best of our knowledge, these proofs are the first machine checked correctness and optimality proofs for these transformations.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-07-25T04:16:14+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 21
+        }
+      ]
+    },
     {
       "date": "2026-07-27",
       "path": "/public/news/2026-07-27-unity-il2cpp-reverse-engineering-news.html",
