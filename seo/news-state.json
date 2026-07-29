@@ -1,11 +1,85 @@
 {
   "version": 3,
-  "last_generated_at": "2026-07-28T04:30:58.299112+00:00",
+  "last_generated_at": "2026-07-29T04:34:05.116787+00:00",
   "source_errors": [
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-07-29",
+      "path": "/public/news/2026-07-29-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — July 29, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 3 relevant releases and technical developments with original sour…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-07-29T04:34:05.116787+00:00",
+      "entries": [
+        {
+          "entry_id": "160cf032f76d1246ec2056a85cdf5bf65ded9a122414941842fb538516e487c9",
+          "title": "Lib: Fix v106 (#590)",
+          "url": "https://github.com/SamboyCoding/Cpp2IL/commit/b20ca0d04f9d4deaf04636428b3c116589b2a167",
+          "summary": "Lib: Fix v106 (#590)",
+          "source": "Cpp2IL Development Commits",
+          "source_url": "https://github.com/SamboyCoding/Cpp2IL/commits/development.atom",
+          "category": "il2cpp-core",
+          "published": "2026-07-28T09:58:12+00:00",
+          "trust": 9,
+          "source_boost": 7,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 31
+        },
+        {
+          "entry_id": "ed2aa09dba2e41c8926665022ef8960a0ee4c402e4bdc9ea4f42b58a5a448dad",
+          "title": "dev/5.4.10214",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10214",
+          "summary": "Fix setter decorator for project property ( #8362 )",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-07-28T15:59:35+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "73e16df8dd297a1e8ad9cecd5fc2e2466b452e1b99d67a0687475e4ef8ee5aad",
+          "title": "dev/5.4.10212",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10212",
+          "summary": "Fix setter decorator for project property ( #8362 )",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-07-28T15:59:35+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-07-28",
       "path": "/public/news/2026-07-28-unity-il2cpp-reverse-engineering-news.html",
