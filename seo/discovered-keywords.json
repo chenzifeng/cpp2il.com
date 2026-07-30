@@ -2,19 +2,19 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 29,
+      "count": 30,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-27"
+      "last_seen": "2026-07-30"
     },
     "trending GitHub": {
-      "count": 29,
+      "count": 30,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-27"
+      "last_seen": "2026-07-30"
     },
     "GitHub repository": {
-      "count": 29,
+      "count": 30,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-27"
+      "last_seen": "2026-07-30"
     },
     "wasm": {
       "count": 17,
@@ -22,9 +22,9 @@
       "last_seen": "2026-07-27"
     },
     "Unity": {
-      "count": 15,
+      "count": 16,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-07-28"
+      "last_seen": "2026-07-30"
     },
     "decompiler": {
       "count": 12,
@@ -50,6 +50,21 @@
       "count": 6,
       "first_seen": "2026-07-24",
       "last_seen": "2026-07-27"
+    },
+    "Unity f1 LTS": {
+      "count": 4,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-30"
+    },
+    "Unity f1": {
+      "count": 4,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-30"
+    },
+    "f1 LTS": {
+      "count": 4,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-30"
     },
     "Wasm": {
       "count": 4,
@@ -135,21 +150,6 @@
       "count": 3,
       "first_seen": "2026-07-25",
       "last_seen": "2026-07-26"
-    },
-    "Unity f1 LTS": {
-      "count": 3,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-07-23"
-    },
-    "Unity f1": {
-      "count": 3,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-07-23"
-    },
-    "f1 LTS": {
-      "count": 3,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-07-23"
     },
     "Reverse Engineering": {
       "count": 2,

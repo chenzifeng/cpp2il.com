@@ -1,11 +1,185 @@
 {
   "version": 3,
-  "last_generated_at": "2026-07-29T04:34:05.116787+00:00",
+  "last_generated_at": "2026-07-30T04:23:40.595678+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-07-30",
+      "path": "/public/news/2026-07-30-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Native binary tooling News — July 30, 2026",
+      "description": "Curated Binary reverse engineering, Native binary tooling updates for developers and security researchers. 8 relevant releases and technical developments wit…",
+      "item_count": 8,
+      "new_item_count": 8,
+      "updated_at": "2026-07-30T04:23:40.595678+00:00",
+      "entries": [
+        {
+          "entry_id": "4e6b529caf1ef7ea00acfcaad0fc07a210cc5eaf7fd729c09031e528e254cd56",
+          "title": "bump pwndbg 2026.07.29",
+          "url": "https://github.com/pwndbg/pwndbg/releases/tag/2026.07.29",
+          "summary": "Co-Authored-By: Claude Fable 5 noreply@anthropic.com",
+          "source": "pwndbg Releases",
+          "source_url": "https://github.com/pwndbg/pwndbg/releases.atom",
+          "category": "debugging",
+          "published": "2026-07-29T13:05:37+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "Native binary tooling",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 36
+        },
+        {
+          "entry_id": "54d388812ddee3401d82281feae19b7fbac1acbb65c46578b48f79ea32d15257",
+          "title": "Patr1ck-S/ios-reverse-engineering-skill — trending GitHub repository",
+          "url": "https://github.com/Patr1ck-S/ios-reverse-engineering-skill",
+          "summary": "Claude Code 的 iOS 授权静态逆向分析 Skill。支持分析 IPA、Mach-O、.framework、.dylib、.dSYM，提取 Info.plist、entitlements、URL Schemes、embedded frameworks、Mach-O 架构、load commands、Objective-C/Swift 符号、API 端点线索，并生成 Markdown 报告。可选接入 IDA Pro MCP 进行深度的函数/字符串/xref/调用链分析。 GitHub discovery signal: 4 stars, 0 forks, 0 open issues; language Python; last pushed 2026-06-11.",
+          "source": "GitHub Hot iOS Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=%22ios+reverse+engineering%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-01+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-mobile",
+          "published": "2026-06-11T06:13:09+00:00",
+          "trust": 8,
+          "source_boost": 7,
+          "topic_terms": [
+            "iOS reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "iOS reverse engineering"
+          ],
+          "score": 27
+        },
+        {
+          "entry_id": "80cb7f3194c0ede55ae71d759e66b76206777f2639d28bfad8c230e6c8c1bc1d",
+          "title": "Unity 6000.3.21f1 LTS",
+          "url": "https://unity.com/releases/editor/whats-new/6000.3.21f1",
+          "summary": "Unity 6000.3.21f1 LTS",
+          "source": "Unity LTS Releases",
+          "source_url": "https://unity.com/releases/editor/lts-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-07-29T07:10:05+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "c2cd5a52abfb6d8f83da7a70a85725f133c7ab54e50e9604ab8f893028a049bf",
+          "title": "v9.3.1.post1",
+          "url": "https://github.com/angr/angr/releases/tag/v9.3.1.post1",
+          "summary": "release version 9.3.1.post1",
+          "source": "angr Releases",
+          "source_url": "https://github.com/angr/angr/releases.atom",
+          "category": "program-analysis",
+          "published": "2026-07-29T22:12:49+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "81fc74ee59387070b79255277b072abbe543d78ca70e4c92ac0e3ad033a23091",
+          "title": "v9.3.1",
+          "url": "https://github.com/angr/angr/releases/tag/v9.3.1",
+          "summary": "release version 9.3.1",
+          "source": "angr Releases",
+          "source_url": "https://github.com/angr/angr/releases.atom",
+          "category": "program-analysis",
+          "published": "2026-07-29T09:25:25+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "aaa8e4e1273181099dd8090e474ea9f46915fdb3979ebf6b5c715b8c506cf3e0",
+          "title": "dev/5.4.10225",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10225",
+          "summary": "Extend rbran's parser robustness fixes with file-backed bounds and co…",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-07-29T15:53:27+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "8d4b7115c06247686df858ede123fe6a81ec8496b913e4ec2b283a0ea817eb7d",
+          "title": "Not In My Git Yard: Catching Backdoors at Commit and Release Time",
+          "url": "https://arxiv.org/abs/2607.26719v1",
+          "summary": "Code-level backdoors-stealthy code changes that grant hidden privileges via secret triggers-pose a persistent threat to opensource software. Known attempts to inject such backdoors into widely used projects through malicious commits, tampered release packages, or compromised third-party dependencies, were stopped only by luck and manual review. Existing Continuous Integration (CI) pipelines cannot detect these attacks, and downstream binary analysis tools require substantial manual effort. In this work, we present Lily, an automated approach that strengthens open-source development and release processes against backdoor injection. Lily integrates a backdoor detection mechanism into (1) CI pipelines to block malicious commits, and (2) release vetting workflows to prevent tampered releases or compromised dependencies from entering large ecosystems, such as Linux distributions. Lily offers two key contributions. First, it enhances CI-compatible fuzzing with the capability to detect triggers of suspicious behavior based on historical and current software executions. This enables fast, precise backdoor detection suitable for both CI and update validation workflows. Second, it combines code change analysis with fuzzing data to precisely point maintainers to backdoor-revealing code regions, even when release updates modify millions of lines of code. We also outline five strategies attackers could use to evade Lily, and evaluate corresponding defenses. Our experiments across hundreds of benign and backdoored commits and releases show that Lily achieves high detection accuracy with low false alarm rates, reliably identifies malicious code, resists adversarial attempts, and would have prevented real-world backdoor incidents.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-07-29T10:09:48+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "1c81f76816780f5e180a6d21acbe9b79cc5370e9479f882249567b9a7a5a2b82",
+          "title": "dev/5.4.10221",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10221",
+          "summary": "Fix setter decorator for project property ( #8362 )",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-07-28T15:59:35+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-07-29",
       "path": "/public/news/2026-07-29-unity-il2cpp-reverse-engineering-news.html",
