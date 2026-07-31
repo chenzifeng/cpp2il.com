@@ -1,11 +1,147 @@
 {
   "version": 3,
-  "last_generated_at": "2026-07-30T04:23:40.595678+00:00",
+  "last_generated_at": "2026-07-31T04:45:55.491943+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-07-31",
+      "path": "/public/news/2026-07-31-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — July 31, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 6 relevant releases and technical developments with original sour…",
+      "item_count": 6,
+      "new_item_count": 6,
+      "updated_at": "2026-07-31T04:45:55.491943+00:00",
+      "entries": [
+        {
+          "entry_id": "3c661e4be4de3f8c78242fddd5d32bd081c641f27c4b3eee63600a9dabcdc8d5",
+          "title": "wwweeeqqu/honor-of-kings-RE-research — trending GitHub repository",
+          "url": "https://github.com/wwweeeqqu/honor-of-kings-RE-research",
+          "summary": "Full-stack mobile game-security research (Honor of Kings / sgame): kernel-mode cross-process memory reading (KernelPatch KPM), Tencent ACE anti-cheat & IL2CPP/native engine reverse engineering, and a real-time ESP overlay. Educational / research only; no proprietary binaries. GitHub discovery signal: 19 stars, 14 forks, 0 open issues; language C; last pushed 2026-06-08. Topics: android, anti-cheat, arm64, esp, frida, game-hacking, game-security, honor-of-kings, il2cpp, kernel-module.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-02+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-06-08T16:37:56+00:00",
+          "trust": 8,
+          "source_boost": 11,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation",
+            "Dynamic instrumentation"
+          ],
+          "score": 52
+        },
+        {
+          "entry_id": "cb6379162ed524d1c9e0e4cbec646607b4ea3941c042535ba2515bc26035b2dd",
+          "title": "2026.07.29",
+          "url": "https://github.com/pwndbg/pwndbg/releases/tag/2026.07.29",
+          "summary": "This release brings: exithandlers command to inspect glibc exit handlers, Linux kernel task introspection without typeinfo ( kstack , kseccomp , ksighand , knamespace ), glibc 2.43 heap inspection improvements, heap tracker allocation call sites ( track-heap --where ), a much richer procinfo output (netlink info, socket or pipe peers), vmmap being cached on macOS, LLDB fixes and many other! See below for screenshots and more info! Also, please sponsor the project to let us keep improving ! Thanks to everyone who made this possible! Quick install Install Pwndbg portable on Linux or macOS (choose one line for GDB or LLDB): curl --proto '=https' --tlsv1.2 -LsSf 'https://install.pwndbg.re' | sh -s -- -t pwndbg-gdb curl --proto '=https' --tlsv1.2 -LsSf 'https://install.pwndbg.re' | sh -s -- -t pwndbg-lldb Homebrew package (macOS only; choose one line for GDB or LLDB): brew install pwndbg/tap/pwndbg-gdb # only allows for remote debugging of ELFs brew install pwndbg/tap/pwndbg-lldb Nix package manager (Linux/macOS; choose one line for GDB or LLDB): nix shell github:pwndbg/pwndbg # this is pwndbg-gdb nix shell github:pwndbg/pwndbg#pwndbg-lldb Other options: Want specific distro and architecture package? Check out setup docs and download the specific asset below. Want latest development version? See install from source . What's changed Breaking Changes The mallocng-* , jemalloc-* and knft-* commands are now subcommands - use mallocng dump , mallocng vis , jemalloc heap , jemalloc extent-info , knft list-tables etc. instead of the old dash-separated names ( #3750 ) cyclic output is now consistent with pwntools - the generated de Bruijn sequence matches pwn cyclic ( #3801 ) Developer API: pwndbg.aglib.disasm.arch was renamed to pwndbg.aglib.disasm.assistant ( #3919 ) New: exithandlers Added the exithandlers command (alias exitfuncs ) - lists the currently registered glibc exit handlers by walking __exit_funcs and tls_dtor_list , demangling the PTR_MANGLE d function pointers and printing the pointer_guard cookie. Very handy when hijacking exit handlers during exploitation ( #3973 , alignment fixes in #3983 ) Linux Kernel Debugging Full support for debugging kernel tasks without typeinfo - along with four new commands to introspect any kernel task ( #3647 ): kstack [pid] - display information about the stack of a task kseccomp [pid] - display seccomp information of a user task ksighand [pid] - display signal handlers of a task knamespace [pid] - display namespaces of a task Other kernel improvements: Added the percpu GDB function - to resolve per-CPU variables from print / break expressions ( #3950 ) Added v2p and p2v GDB function helpers - to convert between virtual and physical addresses inside expressions ( #3842 ) Added support for breaking at the start of a JIT-compiled eBPF program ( #3757 ) Page table scanning now reads /proc/pid/mem by default, which is much faster ( #3947 ) Kernel common structs are now loaded only when necessary, speeding up startup ( #3948 ) Added a kernel symbol lookup function decorator ( #3776 ) slab_contains now shows inuse/total object count on its own line ( #3830 , #3833 ) Added help to slab subparsers ( #3769 ) IDT entries are now iterated with a generator ( #3768 ) Kernel image downloads are parallelized and much faster ( #3972 ) LOTS of fixes ( #3971 , #4003 , #3803 , #3940 , #3853 , #3785 , #3871 , #3918 , #3831 ) Heap & Allocators Added glibc 2.43 heap support ( #3744 ) Added support for tcache large chunks since glibc 2.42 ( #3854 ) Added heap --count <N> and address range limits - heap <start> <end> walks only the requested range, and both limits can be combined ( #3812 ) The heap tracker can now annotate each event with its call site - track-heap enable --where shows the nearest program symbol that triggered every malloc/realloc/calloc/free ( #3986 ) Added track-heap enable -r - to report offsets relative to the mapping instead of absolute addresses ( #3738 ) Musl libc is now detected in statically linked binaries ( #3798 ) Fixed a dead duplicate loop in Tracker.malloc ( #3997 ) Process & Memory procinfo now shows a lot more about file descriptors - netlink socket protocol, portid and groups ( #3892 ), the peer process for unix-domain sockets ( #3893 , #3993 ), and pipe peers together with the read/write end of each pipe ( #3894 ) Cleaned up and improved the mmap / mprotect commands - better argument handling, address validity warnings and hints, plus --quiet and --force flags ( #4039 ) Replaced the system readelf with pyelftools - so ELF parsing works for every architecture without external tools ( #3470 ) Added set vmmap-cache - vmmap is now persisted across stops on macOS ( #3913 ) Disassembly & Context Unresolved conditional branches are now marked with a question mark in the disassembly view ( #3906 ) The disassembly view now indicates when the current pc is at a breakpoint with a b► marker ( #3789 ) Added set telescope-pad-leading-zeroes on - to print pointer-aligned integers zero-padded to the pointer width in telescope ( #3902 ) GDB's print command now shows values in hex by default ( #3788 ) Fixed shortcomings of nearpc --function compared to disass ( #3823 ) Fixed addresses, symbols and other columns being truncated in the backtrace context ( #4042 ) Fixed alignment issues in the context backtrace ( #3946 ) and large frame offsets ( #3914 ) Fixed messed up stack repeating logic ( #3901 ) Fixed IndexError when longest_history == 1 ( #3904 ) dt Improvements The dt command now handles bitfields, nested structs and flexible array members properly - bitfields get sub-byte offsets ( +0x0000.1 ), nested field offsets are printed recursively, and flexible array members are displayed ( #3876 , #3862 , #3814 ) LLDB Command history and Enter-to-repeat now work on LLDB ( #1374 , #3980 ) Allowed C++ symbol characters in symbol name validation ( #3987 ) LLDB + Hexagon no longer crashes immediately ( #3671 ) Fixed invalid color setting on LLDB ( #4036 ) Architectures Enabled RISC-V B extension disassembling ( #3920 ) Upgraded past Capstone v6 alpha 6 ( #3864 ) Added the IOPL eflag field ( #3834 ) Handle ljmp instruction target resolution for i8086 ( #3953 ) Fixed unsupported architecture powerpc64le ( #3827 ) Fixed the vbar register in AArch64, which should be vbar_el1 ( #3869 ) Added register-name aliases to read_reg ( #3877 ) General The pwndbg themes collection now lives in the main repository - see the themes/ directory, previously hosted in pwndbg/pwndbg-themes ( #3928 ) stepsyscall can now step until a given syscall or condition - stepsyscall write or stepsyscall -c '$rdi==0' ( #3564 ) Added an optional count/length parameter to the windbg-style dds / dps / dqs / kd commands ( #3961 ) Invalid color names are now rejected instead of silently breaking the output, on both GDB and LLDB ( #3949 , #4033 , #4036 ), and a color decorator was implemented in pwndbg.color ( #4037 ) gnureadline is now optional ( #3787 ) Added more tips ( #3891 ) Fixed Go type direct_iface resolution ( #3868 ) Fixed Ghidra decompiler integration out of bounds ( #3932 ) Fixed profiler subcommand being optional when it is required ( #3951 ) Fixed OSError parameter order in get_file ( #4021 ) Fixed handling of GDB builds without debuginfod support ( #3867 ) gdbinit no longer triggers an early pwndbginit import ( #3964 ) Bumped GDB and LLDB used in our releases ( #3982 , #3794 , #4044 ) Internals & Housekeeping Enabled a lot more ruff rulesets: flake8-bugbear ( #4014 ), PLE ( #3999 ), PLR ( #3962 ), FURB ( #3955 ), SIM ( #3924 ), PIE ( #3925 ) and flake8-return ( #3923 ) Cleaned up pwndbg.hexdump ( #4030 ), pwndbg.aglib.onegadget ( #3942 ), pwndbg.color naming ( #3941 ) and wrappers/readelf.py ( #3850 ) Bumped Vermin to 1.8.0 ( #3883 ) and pyelftools now that types were added ( #3930 ) Pinned GitHub Actions to commit SHAs ( #3958 ) and fixed a number of flaky tests and Docker/CI caching issues ( #3957 , #3895 , #3872 , #3852 )",
+          "source": "pwndbg Releases",
+          "source_url": "https://github.com/pwndbg/pwndbg/releases.atom",
+          "category": "debugging",
+          "published": "2026-07-30T16:31:57+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "Native binary tooling",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 39
+        },
+        {
+          "entry_id": "f417dd5585990c7556ff8db8fddb2eb23142cb4c7dfe4a27f2c8ce5196583f07",
+          "title": "WAMR-2.4.5",
+          "url": "https://github.com/wasm-micro-runtime/wasm-micro-runtime/releases/tag/WAMR-2.4.5",
+          "summary": "Breaking Changes New Features Bug Fixes CVE-2026-54914. Fix a potential heap Buffer Overflow in WASI poll_oneoff. CVE-2026-54913. Fix a potential partial uninitialized memory read in load_init_expr. CVE-2026-54912. Fix a potential heap buffer overflow in fast interpreter. Enhancements Others",
+          "source": "WAMR Releases",
+          "source_url": "https://github.com/bytecodealliance/wasm-micro-runtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-06-29T23:07:45+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "ee71663dcca8163471a5f29f654163006ca5f93ab35437274e8cedf0516170ef",
+          "title": "v1.255.0",
+          "url": "https://github.com/bytecodealliance/wasm-tools/releases/tag/v1.255.0",
+          "summary": "What's Changed Fix generating deeply nested WIT types in wit-smith by @alexcrichton in #2576 wasm-tools mutate: validate the input module before mutating by @SAY-5 in #2577 link tag imports to exports instead of synthesizing tags by @dicej in #2580 Fix folded branch hints by @vouillon in #2578 support cooperative multithreading ABI in wit_component::linking by @dicej in #2581 avoid calling __wasm_init_task more than once in init module by @dicej in #2582 Support __wasm_{g,s}et_{tls_base,stack_pointer} in wit-component by @alexcrichton in #2584 fix table resolution for thread.new-indirect intrinsic calls by @dicej in #2585 Release wasm-tools 1.255.0 by @github-actions[bot] in #2586 Full Changelog : v1.254.0...v1.255.0",
+          "source": "wasm-tools Releases",
+          "source_url": "https://github.com/bytecodealliance/wasm-tools/releases.atom",
+          "category": "webassembly",
+          "published": "2026-07-30T20:02:51+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "Decompiler research"
+          ],
+          "score": 32
+        },
+        {
+          "entry_id": "40675e7e92295f0bc23b1c55a7bcd45d1add193ce5aab29b3e98a00863b58ee2",
+          "title": "dev/5.4.10246",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10246",
+          "summary": "Clarify which MCP server is in which editions.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-07-30T18:25:08+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "5e8cacc56767ffee934c239a98963cd8df820de38dc4d671cddb32322b2ef204",
+          "title": "dev/5.4.10242",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10242",
+          "summary": "Clarify which MCP server is in which editions.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-07-30T18:25:08+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-07-30",
       "path": "/public/news/2026-07-30-unity-il2cpp-reverse-engineering-news.html",
