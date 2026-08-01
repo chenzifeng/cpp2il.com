@@ -1,11 +1,101 @@
 {
   "version": 3,
-  "last_generated_at": "2026-07-31T04:45:55.491943+00:00",
+  "last_generated_at": "2026-08-01T04:40:36.598332+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-08-01",
+      "path": "/public/news/2026-08-01-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Dynamic instrumentation News — August 01, 2026",
+      "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 4 relevant releases and technical developments with or…",
+      "item_count": 4,
+      "new_item_count": 4,
+      "updated_at": "2026-08-01T04:40:36.598332+00:00",
+      "entries": [
+        {
+          "entry_id": "8563dcf6e98dd1167db6e915dce2efb3840e730891b16b52f59e37619c698422",
+          "title": "hero-mike/Android-Mobile-Security-Sandbox-Testing — trending GitHub repository",
+          "url": "https://github.com/hero-mike/Android-Mobile-Security-Sandbox-Testing",
+          "summary": "Ultimate Android Security Toolkit JAMBOREE Burp Objection Magisk 2026 Guide GitHub discovery signal: 155 stars, 1 forks, 0 open issues; language HTML; last pushed 2026-08-01. Topics: ai, ai-tools, android-emulator, burpsuite, hacking-tools, pentesting, pentesting-tools, zap.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-03+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-06-28T20:05:07+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 42
+        },
+        {
+          "entry_id": "a0113083fa439949ff5de4d8322d685568a8ccca1972093cdb24320980eec517",
+          "title": "Noelo-Lab/kuna — trending GitHub repository",
+          "url": "https://github.com/Noelo-Lab/kuna",
+          "summary": "An agent-first decompiler designed to be refined by other agents. Kuna is written in Rust and was originally ported from Ghidra. GitHub discovery signal: 277 stars, 12 forks, 5 open issues; language Rust; last pushed 2026-07-31. Topics: autonomous-refinement, binary-analysis, decompilation.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-03+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-06-07T18:01:35+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 36
+        },
+        {
+          "entry_id": "9bad58358f80a9d93477e25ca81a8c19bac98348b071933ee5c5a66200bc64ca",
+          "title": "dev/5.4.10248",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10248",
+          "summary": "Clarify which MCP server is in which editions.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-07-30T18:25:08+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "2d48812b33d319f397919f742c5167d05ddad681cb84385a78ac17af89011775",
+          "title": "Berberis translated x86_64 function",
+          "url": "https://reverseengineering.stackexchange.com/questions/33723/berberis-translated-x86-64-function",
+          "summary": "Heading If you know anything about berberis please stay! I’m currently reverse‑engineering an ARM64 library that runs on an x86_64 Android emulator using Berberis binary translation . My toolchain includes Ghidra , NPP , Android Studio (Pixel 9 Pro, API 36 “Baklava”), and Frida (frida‑server‑17.8.2‑android‑x86_64). Context The library I’m analyzing is compiled for ARM64 , while the host environment is x86_64 . Execution happens through Berberis, which translates ARM64 → x86_64 at runtime. According to the following sources: https://android.googlesource.com/platform/frameworks/libs/binary_translation/+/507544f3/runtime/runtime_library_x86_64.cc https://android.googlesource.com/platform/frameworks/libs/native_bridge_support/+/refs/heads/main/guest_state/include/native_bridge_support/riscv64/guest_state/guest_state_cpu_state.h https://android.googlesource.com/platform/frameworks/libs/native_bridge_support/+/refs/heads/main/guest_state/include/native_bridge_support/arm64/guest_state/guest_state_cpu_state.h Berberis does not use native x86_64 registers for guest execution. Instead, the registers hold internal state: rbp = pointer to ThreadState (CPUState) rax = guest PC (insn_addr) rbx, rbp, r12–r15 = callee‑saved rdi = ThreadState when calling back into runtime rsi = entry point for translated code rsp = stack for generated code ThreadState contains the fake ARM64 register file , so I mapped the offsets as follows: | Register | Offset (bytes) | | --- | --- | | x0 | **0x000** | | x1 | 0x008 | | x2 | 0x010 | | x3 | 0x018 | | x4 | 0x020 | | x5 | 0x028 | | x6 | 0x030 | | x7 | 0x038 | | x8 | 0x040 | | x9 | 0x048 | | x10 | 0x050 | | x11 | 0x058 | | x12 | 0x060 | | x13 | 0x068 | | x14 | 0x070 | | x15 | 0x078 | | x16 | 0x080 | | x17 | 0x088 | | x18 | 0x090 | | x19 | 0x098 | | x20 | 0x0A0 | | x21 | 0x0A8 | | x22 | 0x0B0 | | x23 | 0x0B8 | | x24 | 0x0C0 | | x25 | 0x0C8 | | x26 | 0x0D0 | | x27 | 0x0D8 | | x28 | 0x0E0 | | x29 | 0x0E8 | | x30 | 0x0F0 | What I expected The function I’m analyzing has the signature: (unsigned char*, unsigned int, unsigned char*, unsigned int, unsigned int*)+0) (BuildId: 62f540992864268ca916b229105f9040d6a149db) So I expected the first five ARM64 registers ( x0 – x4 ) to contain: pointers for params 1 and 3 integers for params 2 and 4 a pointer for param 5 What actually happens When I dump the first registers ( x0 – x4 ) via Frida, I get garbage values or unrelated pointers , not the expected arguments. To verify I’m in the correct function, I deliberately triggered a crash. Logcat confirms the crash occurs inside the translated and correct function. And the register dump looks like a proper ARM64 crash context : #00 pc 00000000000dc647 /apex/com.android.runtime/lib64/bionic/libc.so (tgkill+7) #01 pc 0000000000336b8d /system/lib64/libndk_translation.so (berberis::(anonymous namespace)::UndefinedInsnThunk(unsigned long)+13) #02 pc 0000000000158588 /memfd:exec (deleted) x0 00007f11eb306707 x1 0000000000000c5c x2 00007f0f995c5d69 x3 0000000000000010 x4 00007f0f96a4ec38 x5 8000000000000000 x6 ff52444c40594743 x7 7f7f7f7f7f7f7f7f x8 0000000000000031 x9 0000000000000007 x10 000000006434694f x11 0000000000000010 x12 000000000000000c x13 0000000000000007 x14 fffffffffffffffd x15 00007f0f96a4ed89 x16 00007f0f9957b350 x17 00007f0f990bfde8 x18 0000000000000008 x19 00007f0f96a4ecd8 x20 00007f0f96a4ece8 x21 0000000000000c63 x22 00007f12d319b040 x23 00007f0f995c5d68 x24 0000000000000000 x25 000000000000000e x26 0000000000000000 x27 0000000000000000 x28 0000000000000000 x29 00007f0f96a4ecc0 lr 00007f0f98d260c0 sp 00007f0f96a4ec30 pc 00007f0f990bfde8 pst 0000000000000000 This is exactly the kind of output I expected from the guest CPU. But when I manually read the registers from ThreadState , I get nonsense. Why do the values inside Berberis’s ThreadState not match the actual ARM64 register values shown in the crash log? (i am talking about, for example, ints at 2 and 4 being pointers instead of, well ints.) note; both the moment i dump and deliberately cause the crash happen at the epilogue of the function. when i dump deliberately late inside the function, the guest cpu's registers values change, but still remain rubbish and dont line up. what am i misunderstanding? why am i seeing rubbish in the registers? Anything would help.",
+          "source": "Reverse Engineering Stack Exchange",
+          "source_url": "https://reverseengineering.stackexchange.com/feeds",
+          "category": "community-qa",
+          "published": "2026-06-25T16:10:57+00:00",
+          "trust": 7,
+          "source_boost": 2,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Dynamic instrumentation"
+          ],
+          "score": 20
+        }
+      ]
+    },
     {
       "date": "2026-07-31",
       "path": "/public/news/2026-07-31-unity-il2cpp-reverse-engineering-news.html",

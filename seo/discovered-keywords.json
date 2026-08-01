@@ -2,19 +2,19 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 31,
+      "count": 33,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-31"
+      "last_seen": "2026-08-01"
     },
     "trending GitHub": {
-      "count": 31,
+      "count": 33,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-31"
+      "last_seen": "2026-08-01"
     },
     "GitHub repository": {
-      "count": 31,
+      "count": 33,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-31"
+      "last_seen": "2026-08-01"
     },
     "wasm": {
       "count": 18,
@@ -27,9 +27,14 @@
       "last_seen": "2026-07-30"
     },
     "decompiler": {
-      "count": 13,
+      "count": 14,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-07-31"
+      "last_seen": "2026-08-01"
+    },
+    "decompilation": {
+      "count": 8,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-08-01"
     },
     "metadata": {
       "count": 8,
@@ -44,11 +49,6 @@
     "WebAssembly": {
       "count": 7,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-27"
-    },
-    "decompilation": {
-      "count": 7,
-      "first_seen": "2026-07-20",
       "last_seen": "2026-07-27"
     },
     "Unity f1 LTS": {
