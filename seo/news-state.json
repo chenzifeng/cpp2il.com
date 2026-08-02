@@ -1,11 +1,64 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-01T04:40:36.598332+00:00",
+  "last_generated_at": "2026-08-02T04:42:40.669088+00:00",
   "source_errors": [
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-08-02",
+      "path": "/public/news/2026-08-02-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — August 02, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 2 relevant releases and technical developments with original sour…",
+      "item_count": 2,
+      "new_item_count": 2,
+      "updated_at": "2026-08-02T04:42:40.669088+00:00",
+      "entries": [
+        {
+          "entry_id": "b23c773f54f758454771a1aa68d9a1fb333fc4866da243e70f2df0424f3b5132",
+          "title": "Analysis performance improvements (#592)",
+          "url": "https://github.com/SamboyCoding/Cpp2IL/commit/c5464a9696f95cc4a930b3c0c847c0022adb4e85",
+          "summary": "Analysis performance improvements (#592)",
+          "source": "Cpp2IL Development Commits",
+          "source_url": "https://github.com/SamboyCoding/Cpp2IL/commits/development.atom",
+          "category": "il2cpp-core",
+          "published": "2026-08-01T18:14:05+00:00",
+          "trust": 9,
+          "source_boost": 7,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 31
+        },
+        {
+          "entry_id": "bcc7c14e191f7e8c5e6bb6159055dcb99239e70114b3a4e1561967b7261536f9",
+          "title": "dev/5.4.10254: Migrate remaining demangler consumers",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10254",
+          "summary": "Update the remaining C++ views, cache workflows, RTTI users, UI declarations, and plugin build wiring to the config-based demangler APIs. Remove duplicated cache-symbol helpers made obsolete by the unified result path.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-01T19:16:13+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-08-01",
       "path": "/public/news/2026-08-01-unity-il2cpp-reverse-engineering-news.html",
