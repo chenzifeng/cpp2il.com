@@ -2,19 +2,19 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 33,
+      "count": 35,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-01"
+      "last_seen": "2026-08-03"
     },
     "trending GitHub": {
-      "count": 33,
+      "count": 35,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-01"
+      "last_seen": "2026-08-03"
     },
     "GitHub repository": {
-      "count": 33,
+      "count": 35,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-01"
+      "last_seen": "2026-08-03"
     },
     "wasm": {
       "count": 18,
@@ -22,9 +22,9 @@
       "last_seen": "2026-07-31"
     },
     "Unity": {
-      "count": 16,
+      "count": 17,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-07-30"
+      "last_seen": "2026-08-03"
     },
     "decompiler": {
       "count": 14,
@@ -50,6 +50,11 @@
       "count": 7,
       "first_seen": "2026-07-24",
       "last_seen": "2026-07-27"
+    },
+    "apk": {
+      "count": 5,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-08-03"
     },
     "Unity f1 LTS": {
       "count": 4,
@@ -140,11 +145,6 @@
       "count": 4,
       "first_seen": "2026-07-24",
       "last_seen": "2026-07-27"
-    },
-    "apk": {
-      "count": 4,
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-07-25"
     },
     "WASM": {
       "count": 3,

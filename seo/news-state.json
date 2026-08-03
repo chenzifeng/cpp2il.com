@@ -1,11 +1,108 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-02T04:42:40.669088+00:00",
+  "last_generated_at": "2026-08-03T04:50:57.206779+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-08-03",
+      "path": "/public/news/2026-08-03-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — August 03, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 4 relevant releases and technical developments with original sour…",
+      "item_count": 4,
+      "new_item_count": 4,
+      "updated_at": "2026-08-03T04:50:57.206779+00:00",
+      "entries": [
+        {
+          "entry_id": "9fac6562d2300212b70f754849a69b35b340556c167f451d6218b2bb03747ba2",
+          "title": "MelonLoaderUnity/melon-loader-download — trending GitHub repository",
+          "url": "https://github.com/MelonLoaderUnity/melon-loader-download",
+          "summary": "MelonLoader download from GitHub one-click installer for Unity games on Windows 10/11. melonloader btd6 mods, melonloader schedule 1 mods and fixes, melonloader gorilla tag, melonloader bonelab download. melonloader btd6 mobile, melonloader schedule 1 not working fix included. Download MelonLoader free, best Unity mod loader 2026. GitHub discovery signal: 26 stars, 0 forks, 0 open issues; language C#; last pushed 2026-08-01. Topics: bloons-td-6, bonelab, btd6-mod, btd6-modding, btd6-paragon, gorilla-tag, gorillatagmods, gorillatagvr, gtag, il2cpp-modding.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-05+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-08-01T17:43:34+00:00",
+          "trust": 8,
+          "source_boost": 17,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation",
+            "Unity runtime tooling"
+          ],
+          "score": 72
+        },
+        {
+          "entry_id": "b12a64f718d647881482637d5db2c2a2364f42c14e9cf81069113abea72f3ab1",
+          "title": "Decompiler: Support szarray, virtual calls, address of local, plus cl…",
+          "url": "https://github.com/SamboyCoding/Cpp2IL/commit/35707d64caef63d1e62e1eb660a3c16623ba6c62",
+          "summary": "Decompiler: Support szarray, virtual calls, address of local, plus clean up ILSpy output by adjusting the IL",
+          "source": "Cpp2IL Development Commits",
+          "source_url": "https://github.com/SamboyCoding/Cpp2IL/commits/development.atom",
+          "category": "il2cpp-core",
+          "published": "2026-08-02T22:23:26+00:00",
+          "trust": 9,
+          "source_boost": 7,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation",
+            "C# decompilation"
+          ],
+          "score": 38
+        },
+        {
+          "entry_id": "7a344e9fd525360581b9ada0c3b05cb3a26593c3c483a9989d62cfca1e013e65",
+          "title": "sylhetyhackvenger/SSL-BYPASS — trending GitHub repository",
+          "url": "https://github.com/sylhetyhackvenger/SSL-BYPASS",
+          "summary": "SSLBPS is an Android security research project for analyzing APK structure, manifests, Smali code, certificate trust models, and mobile security controls. Built for educational analysis, defensive research, software auditing, and reverse‑engineering learning. Perfect for understanding app architecture, code review, and secure development practices GitHub discovery signal: 3 stars, 0 forks, 0 open issues; language Python; last pushed 2026-07-30. Topics: android-internals, android-reverse-engineering, android-security, apk-analysis-, appsec, binary-analysis, bytecode-analysis, certificate-analysis, cryptography, defensive-security.",
+          "source": "GitHub Hot Android Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-reverse-engineering+created%3A%3E%3D2026-05-05+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-mobile",
+          "published": "2026-06-15T22:52:29+00:00",
+          "trust": 8,
+          "source_boost": 7,
+          "topic_terms": [
+            "Android reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering"
+          ],
+          "score": 27
+        },
+        {
+          "entry_id": "0c043a2be920de91f0c4db2f8efefbc527f91536b1361bf6122ebd3667a12fef",
+          "title": "dev/5.4.10257: Migrate remaining demangler consumers",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10257",
+          "summary": "Update the remaining C++ views, cache workflows, RTTI users, UI declarations, and plugin build wiring to the config-based demangler APIs. Remove duplicated cache-symbol helpers made obsolete by the unified result path.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-01T19:16:13+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-08-02",
       "path": "/public/news/2026-08-02-unity-il2cpp-reverse-engineering-news.html",
