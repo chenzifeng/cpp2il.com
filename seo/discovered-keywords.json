@@ -31,6 +31,11 @@
       "first_seen": "2026-07-20",
       "last_seen": "2026-08-01"
     },
+    "reverse engineering": {
+      "count": 8,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-08-04"
+    },
     "decompilation": {
       "count": 8,
       "first_seen": "2026-07-20",
@@ -40,11 +45,6 @@
       "count": 8,
       "first_seen": "2026-07-24",
       "last_seen": "2026-07-25"
-    },
-    "reverse engineering": {
-      "count": 7,
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-07-31"
     },
     "WebAssembly": {
       "count": 7,
