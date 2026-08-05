@@ -1,11 +1,160 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-04T04:33:02.239693+00:00",
+  "last_generated_at": "2026-08-05T04:31:35.876177+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-08-05",
+      "path": "/public/news/2026-08-05-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Dynamic instrumentation News — August 05, 2026",
+      "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 7 relevant releases and technical developments with or…",
+      "item_count": 7,
+      "new_item_count": 7,
+      "updated_at": "2026-08-05T04:31:35.876177+00:00",
+      "entries": [
+        {
+          "entry_id": "4af3d805f323cce9efe1ea56ea846855485bffde7b937ce225ca0a030afbca6b",
+          "title": "Frida 17.17.0",
+          "url": "https://github.com/frida/frida/releases/tag/17.17.0",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-08-05T00:23:26+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "3e0040b1555a741608529a1aaf1f60952f305780ab7ef9b3ee442ccd54f4283d",
+          "title": "ILSpy 11.0 Release Candidate",
+          "url": "https://github.com/icsharpcode/ILSpy/releases/tag/v11.0-rc",
+          "summary": "This release is based on .NET 10.0 . Please make sure that you have it installed on your machine beforehand. Note for Mac users: see https://github.com/icsharpcode/ILSpy/wiki/Build-Artifacts#running-the-macos-artifact because the ILSpy.app is neither signed nor notarized. New Features PR #3936 : Add \"Open from running process\" dialog PR #3951 : Add --dump-table metadata dump mode to ilspycmd PR #3924 : ilspycmd: add --member for single-member decompilation User Interface PR #3932 : Metadata row details: full-width layout and a decompiler-styled editor for text blobs PR #3927 : Fix #2879 : show stored FieldList/MethodList values for memberless types PR #3922 : Fix #749 : toggle a member's fold together with its documentation PR #3923 : Fix #781 : click highlights member references, Ctrl+Click navigates PR #3918 : Fix #633 : Overrides analysis and this/base keyword navigation PR #3906 : Show hover tooltips for dynamic member accesses Enhancements PR #3933 : Convert float/double += 1 into increment and decrement expressions PR #3926 : Generate and resolve xml doc ID strings at the metadata level PR #3917 : Represent VB.NET parameterized properties as accessor methods in C# output PR #3899 : Don't undo the compiler's &&-to-& optimization PR #3889 : Reimplement cross-platform single-instance handling PR #3904 : Proper event tracing for ICSharpCode.Decompiler and ICSharpCode.ILSpyX PR #3902 : Beautify enum declarations by referencing previously declared members Testing / Infrastructure PR #3943 : Do not pass /shared to compilers that cannot reach a compiler server PR #3941 : Skip redundant push builds for branches with an open PR PR #3928 : Add pretty test for C# 13 ref struct interfaces / allows ref struct PR #3919 : Preserve Debug Steps tree state across filter sessions PR #3914 : Support Roslyn 1.x/2.x compiler configurations in tests on non-Windows PR #3915 : Revive TypeInferenceTests from NRefactory and cover the C# standard inference rules PR #3912 : Revive NRefactory conversion tests and cover all of C# standard chapter 10 PR #3907 : Generate version-info files with CRLF on all platforms Contributions PR #3903 : Provide a WholeProjectDecompiler constructor with no default parameter values — @ds5678 , thank you! PR #3934 : Publicize IProjectFileWriter implementations — @ds5678 , thank you! PR #3910 : Fix #3909 : emit nullable override disambiguators — @sailro , thank you! PR #3911 : Fix #3908 : use the async iterator element type for yield — @sailro , thank you! PR #3896 : Fix #3895 : keep byref-like ToString in string concatenation — @sailro , thank you! PR #3893 : Fix #3892 : preserve unsafe for pointer constructors — @sailro , thank you! Bug Fixes PR #3949 : Fix #3803 : Crash on nested deconstruction of custom structs PR #3947 : Fix #3230 : do not emit base-list interfaces the base list cannot name PR #3948 : Fix #3652 : Apostrophe in identifiers must not start a char literal PR #3929 : Fix #2032 : avoid propagating mutated SROA fields PR #3942 : Fix #3938 : nested-type members must not inherit ExtensionInfo PR #3916 : Fix #1603 : recognize foreach over enumerators that cannot be disposable PR #3905 : Fix #1638 : identify renamed yield state machine members via method impls PR #3898 : Fix #3891 : don't reduce nesting when there is no else block PR #3886 : Fix #3858 : Detect automatic events on the ILAst instead of the C# AST",
+          "source": "ILSpy Releases",
+          "source_url": "https://github.com/icsharpcode/ILSpy/releases.atom",
+          "category": "dotnet-decompilers",
+          "published": "2026-08-04T16:29:05+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "C# decompilation"
+          ],
+          "matched_terms": [
+            "C# decompilation"
+          ],
+          "score": 29
+        },
+        {
+          "entry_id": "bee6cbf29b9f40c3c1fe6e45ba8fe5457a8adb0a7711a04883abae6aaf500c54",
+          "title": "NotDec: WebAssembly Decompilation With Inter-Procedural Type Recovery",
+          "url": "https://arxiv.org/abs/2608.03286v1",
+          "summary": "With WebAssembly widely supported in browsers, containers, IoT devices, and serverless platforms and increasingly adopted as a universal low-level bytecode standard, auditing its hidden vulnerabilities and malicious intentions has become critical. Decompiling existing WebAssembly modules can help security researchers and end users understand binary behavior, but current tools suffer from verbose result, poor readability, and limited type recovery. We present NotDec, an advanced WebAssembly decompilation framework. NotDec extends the WebAssembly type checking algorithm to lift bytecode into an SSA-based IR, applies the inter-procedural type recovery algorithm Retypd with pointer and numeric value differentiation methods to recover complex data structures, and leverages Memory SSA alongside semantics-preserving structured control-flow analysis to emit readable, semantically consistent C code. NotDec achieves 100% recompilation success rate on all 5,241 Juliet samples and all Howard dataset programs, significantly outperforming baselines including Ghidra (45.95% success rate). On type recovery accuracy, NotDec recovers 85.33% of struct member accesses in real-world programs, vastly exceeding Ghidra's 9.24%. While the full inter-procedural version faces scalability challenges on large binaries, the intra-procedural variant NotDec_F demonstrates superior efficiency, consuming less than half of Ghidra's memory and up to 97% less execution time on unoptimized binaries.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-08-04T08:01:06+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 29
+        },
+        {
+          "entry_id": "993d8190e2d0e7d8ce2207817d6f1dc2c59e4b1fbafedef9cf548d74969af726",
+          "title": "Unity 6000.6.0 Beta",
+          "url": "https://unity.com/releases/editor/beta/6000.6.0b6",
+          "summary": "Unity 6000.6.0 Beta",
+          "source": "Unity Beta Releases",
+          "source_url": "https://unity.com/releases/editor/beta-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-08-04T08:32:50+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "92b5339d7f409b4031b41944cf559d8fdc52bf3f6ed2a29a398f45b10afd0546",
+          "title": "dev/5.4.10273",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10273",
+          "summary": "[Rust] Fix use-after-free in Function::set_int_display_type ( #8249 )",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-04T19:15:58+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "e551deee23c42769dc2f77d256ba35a31f4b1903d073766360c5cb4ad9fba3f4",
+          "title": "dev/5.4.10267",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10267",
+          "summary": "[Rust] Fix use-after-free in Function::set_int_display_type ( #8249 )",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-04T19:15:58+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "ff09b36cc874d4e48034a9f9ce9683773cbea5f078104ae9aa9ebb27e1316b2e",
+          "title": "gistya/swift-concurrency-reference — trending GitHub repository",
+          "url": "https://github.com/gistya/swift-concurrency-reference",
+          "summary": "Reference spec for Swift Concurrency GitHub discovery signal: 11 stars, 0 forks, 0 open issues; language Unknown; last pushed 2026-07-09.",
+          "source": "GitHub Hot Program Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=%22program+analysis%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-02-06+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-research",
+          "published": "2026-07-05T21:55:00+00:00",
+          "trust": 8,
+          "source_boost": 9,
+          "topic_terms": [
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 20
+        }
+      ]
+    },
     {
       "date": "2026-08-04",
       "path": "/public/news/2026-08-04-unity-il2cpp-reverse-engineering-news.html",
