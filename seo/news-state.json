@@ -1,11 +1,123 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-06T04:32:35.516938+00:00",
+  "last_generated_at": "2026-08-07T04:04:22.018274+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-08-07",
+      "path": "/public/news/2026-08-07-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Native binary tooling News — August 07, 2026",
+      "description": "Curated Binary reverse engineering, Native binary tooling updates for developers and security researchers. 5 relevant releases and technical developments wit…",
+      "item_count": 5,
+      "new_item_count": 5,
+      "updated_at": "2026-08-07T04:04:22.018274+00:00",
+      "entries": [
+        {
+          "entry_id": "132d3a14a378dc0494add2c15a7a0365281b736dabbe4e1e40dcb6e023f7fe99",
+          "title": "6.0.0-Alpha9",
+          "url": "https://github.com/capstone-engine/capstone/releases/tag/6.0.0-Alpha9",
+          "summary": "What's Changed Fix GHSA-5m9f-vqcm-g5pr and GHSA-jrw4-wj52-2vw8 found by @sondt99 Add pre-release version to capstone.h Full Changelog : 6.0.0-Alpha8...6.0.0-Alpha9",
+          "source": "Capstone Releases",
+          "source_url": "https://github.com/capstone-engine/capstone/releases.atom",
+          "category": "native-binary",
+          "published": "2026-05-29T14:57:01+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Native binary tooling",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 29
+        },
+        {
+          "entry_id": "12f254e47fbb6a9e4220a1635af4f00b7c1b23fd309036184f265b85d81dc92e",
+          "title": "Unity 6000.0.81f1 LTS",
+          "url": "https://unity.com/releases/editor/whats-new/6000.0.81f1",
+          "summary": "Unity 6000.0.81f1 LTS",
+          "source": "Unity LTS Releases",
+          "source_url": "https://unity.com/releases/editor/lts-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-08-06T09:43:51+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "04698c8e4fd7b4873e27465fda03b08b2cb2e7471910ff4df720f9d9d4569935",
+          "title": "Unity 6000.6.0 Beta",
+          "url": "https://unity.com/releases/editor/beta/6000.6.0b7",
+          "summary": "Unity 6000.6.0 Beta",
+          "source": "Unity Beta Releases",
+          "source_url": "https://unity.com/releases/editor/beta-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-08-05T18:54:01+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "d34c4caa17983d105c982d1da926c1f8d4a0b61b110376b9e07fefa06ebe995e",
+          "title": "dev/5.4.10318",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10318",
+          "summary": "[UI] Improve tokenized text view rendering",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-05T23:07:39+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "f343501faa4cee6ed8d393f03b52f5d56e2d6cb4ecc04130d446b1c0ee2a6162",
+          "title": "dev/5.4.10303",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10303",
+          "summary": "[UI] Improve tokenized text view rendering",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-05T23:07:39+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-08-06",
       "path": "/public/news/2026-08-06-unity-il2cpp-reverse-engineering-news.html",
