@@ -1,11 +1,82 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-09T03:09:23.431686+00:00",
+  "last_generated_at": "2026-08-10T03:19:29.300762+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden",
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-08-10",
+      "path": "/public/news/2026-08-10-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — August 10, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 3 relevant releases and technical developments with original sour…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-08-10T03:19:29.300762+00:00",
+      "entries": [
+        {
+          "entry_id": "f750941fd346d0b8e4232305bd331b7683880502f46ca25eedb389a046938eb7",
+          "title": "Core: Workaround thread safety issue with AssetRipper.CIL",
+          "url": "https://github.com/SamboyCoding/Cpp2IL/commit/a295653064f00f4b9ab540330bd1426e11d85161",
+          "summary": "Core: Workaround thread safety issue with AssetRipper.CIL",
+          "source": "Cpp2IL Development Commits",
+          "source_url": "https://github.com/SamboyCoding/Cpp2IL/commits/development.atom",
+          "category": "il2cpp-core",
+          "published": "2026-08-09T16:10:10+00:00",
+          "trust": 9,
+          "source_boost": 7,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation",
+            "Unity asset extraction"
+          ],
+          "score": 47
+        },
+        {
+          "entry_id": "9d712cadb85fdf39e05591e1a4034a74f1b11d9f38e95f257c3119a2457c5f92",
+          "title": "Beyond Text Matching: Towards Reference-Free Evaluation for Human-Oriented Binary Reverse Engineering",
+          "url": "https://arxiv.org/abs/2608.07038v1",
+          "summary": "Human-Oriented Binary Reverse Engineering (HOBRE) aims to transform decompiled pseudocode into a more human-friendly representation, thereby reducing the cognitive burden of reverse analysis and improving efficiency. However, reliably evaluating HOBRE outputs remains a fundamental challenge: human evaluation is costly, time-consuming, and difficult to scale, while existing automated metrics either require executable test cases and runtime environments that are often unavailable for real-world binaries, or rely on high-quality source code references that are typically inaccessible and fail to capture semantically equivalent but lexically diverse outputs. Although LLM-as-a-Judge paradigm is naturally well-suited to HOBRE evaluation, its effectiveness remains underexplored. This paper presents the first systematic investigation of the LLM-as-a-Judge paradigm for HOBRE across three representative tasks: function name recovery, binary code summarization, and decompilation optimization. We introduce BinJudgeBench, the first expert-annotated, reference-free evaluation benchmark based on multi-dimensional human judgment, where LLM-as-a-Judge achieves an average correlation of 63.20\\% with human judgment, outperforming traditional automated metrics at 35.04\\%. By analyzing judge configurations across backbone LLMs, prompting strategies, and decoding temperatures, we find that no ``one-size-fits-all'' configuration exists, as the optimal setup varies across tasks and individual samples. To address this, we propose BinJudge, which employs a lightweight routing mechanism to adaptively select the optimal judge configuration for each task and sample. BinJudge improves correlation with human experts by 4.5\\%-24.7\\% and reduces API cost to 0.06$\\times$-0.84$\\times$ of that of static best configurations, providing a scalable, cost-effective, and high-fidelity automated evaluation scheme for HOBRE.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-08-07T09:48:25+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 24
+        },
+        {
+          "entry_id": "e6619bf545c922ff4f938bfccc1a4b62331f8e8d9fcf8cc2c99de30e2b476ea4",
+          "title": "dev/5.4.10355",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10355",
+          "summary": "Bump UI ABI.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-08T02:52:53+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-08-09",
       "path": "/public/news/2026-08-09-unity-il2cpp-reverse-engineering-news.html",
