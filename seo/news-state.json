@@ -1,11 +1,211 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-10T03:19:29.300762+00:00",
+  "last_generated_at": "2026-08-11T03:12:05.329254+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-08-11",
+      "path": "/public/news/2026-08-11-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — August 11, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 9 relevant releases and technical developments with original sour…",
+      "item_count": 9,
+      "new_item_count": 9,
+      "updated_at": "2026-08-11T03:12:05.329254+00:00",
+      "entries": [
+        {
+          "entry_id": "0999a4af682cb553a92e059ad3d4979808aa8fa6c6da7ba9b28dcc946aae311c",
+          "title": "Bump AssetRipper.CIL from 1.3.1 to 1.3.2 (#600)",
+          "url": "https://github.com/SamboyCoding/Cpp2IL/commit/c68d1fbad136f57707eabd6ce795b2afdb4b68f1",
+          "summary": "Bump AssetRipper.CIL from 1.3.1 to 1.3.2 (#600) Signed-off-by: dependabot[bot] <support@github.com>",
+          "source": "Cpp2IL Development Commits",
+          "source_url": "https://github.com/SamboyCoding/Cpp2IL/commits/development.atom",
+          "category": "il2cpp-core",
+          "published": "2026-08-10T15:12:50+00:00",
+          "trust": 9,
+          "source_boost": 7,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation",
+            "Unity asset extraction"
+          ],
+          "score": 47
+        },
+        {
+          "entry_id": "a8c07bb2079b8cc99ab6efd4b137a47cb9ed5a4191dca97f2d2ae4506d9f3dc4",
+          "title": "manyuegong33/r0crawl_skills — trending GitHub repository",
+          "url": "https://github.com/manyuegong33/r0crawl_skills",
+          "summary": "r0crawl_skills is a massive reverse-engineering skill arsenal for web, Android, iOS, Frida, native binaries, protocols, malware, firmware, and anti-analysis—built for beginners, tuned for pros, and engineered for reproducible results. GitHub discovery signal: 73 stars, 42 forks, 0 open issues; language Python; last pushed 2026-08-06.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-13+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-08-06T02:00:04+00:00",
+          "trust": 8,
+          "source_boost": 18,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 44
+        },
+        {
+          "entry_id": "30db5f3df077423ae716704f621a942736711f9501bcab09d20a4ae41c68a566",
+          "title": "script-or-script/FlutterTap — trending GitHub repository",
+          "url": "https://github.com/script-or-script/FlutterTap",
+          "summary": "Zygisk module that intercepts Flutter app traffic — redirects to a proxy and bypasses BoringSSL TLS pinning. Persistent, no Frida session. Installable via MMRL. GitHub discovery signal: 87 stars, 14 forks, 0 open issues; language C++; last pushed 2026-08-07. Topics: android-security, apatch, boringssl, burpsuite, certificate-pinning, flutter, kernelsu, magisk, magisk-module, mobile-security.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-13+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-07-29T06:05:39+00:00",
+          "trust": 8,
+          "source_boost": 18,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 44
+        },
+        {
+          "entry_id": "eede7d0588f80615dc5aff33101ffb3240129957209b47a00882cfb3b8ff1b67",
+          "title": "asLody/dexdec — trending GitHub repository",
+          "url": "https://github.com/asLody/dexdec",
+          "summary": "Fast, accurate Android decompilation for humans and AI agents. GitHub discovery signal: 65 stars, 11 forks, 1 open issues; language Rust; last pushed 2026-08-10. Topics: android, dalvik-bytecode, decompiler, reverse-engineering.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-02-12+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-07-30T05:49:12+00:00",
+          "trust": 8,
+          "source_boost": 17,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 36
+        },
+        {
+          "entry_id": "169cd9bd144a956ef8b05ce50719266565de51efb08c09d9faccb32fb311b856",
+          "title": "v1.256.0",
+          "url": "https://github.com/bytecodealliance/wasm-tools/releases/tag/v1.256.0",
+          "summary": "What's Changed Import a data symbol for libdl.so by @alexcrichton in #2588 feat(wit-parser): add more -not-found variants to ResolveErrorKind by @mkatychev in #2589 Release to OCI registry by @andreaTP in #2587 Implement new handling of TLS base/symbols by @alexcrichton in #2590 Release wasm-tools 1.256.0 by @github-actions[bot] in #2592 New Contributors @andreaTP made their first contribution in #2587 Full Changelog : v1.255.0...v1.256.0",
+          "source": "wasm-tools Releases",
+          "source_url": "https://github.com/bytecodealliance/wasm-tools/releases.atom",
+          "category": "webassembly",
+          "published": "2026-08-10T16:07:46+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "Decompiler research"
+          ],
+          "score": 32
+        },
+        {
+          "entry_id": "1c2ece4adf916ee5dec8d9e4043960045e95822cde224377a1dd0172582303fc",
+          "title": "v4.5.2",
+          "url": "https://github.com/MobSF/Mobile-Security-Framework-MobSF/releases/tag/v4.5.2",
+          "summary": "v4.5.2 Changelog Features or Enhancements Updated Android certificate analysis with apksigner from build-tools 37.0.0 and apktool 3.x support for more robust, version-agnostic cert parsing Added high-confidence known secret format detection in Android/iOS string analysis (GitHub, Slack, Stripe, OpenAI, PEM keys, and more) Migrated VirusTotal integration to API v3 with large-file upload support (up to 650MB) CI/Docker supply-chain hardening: SBOM attestations, Actions updates, Postgres 18 compose layout, and PyPI publishing via OIDC Trusted Publishing Bug Fixes Fixed CSRF \"null origin\" error during SAML SSO login (e.g. Keycloak) Fixed formatting in SKIP_CLASS_PATH list Fixed Android rule to match the literal mode argument in getSharedPreferences What's Changed Update: certificate analysis (apksigner) by @AdrienHutinel in #2630 fix csrf error by @Antiksec in #2633 Fix formatting in SKIP_CLASS_PATH list by @Zen1th53 in #2634 fix(rules): match the literal mode argument in getSharedPreferences by @Eljees in #2638 ci: bump docker workflow actions and add SBOM attestations by @kobihikri in #2639 Detect known secret formats in Android/iOS string analysis by @mmmugh in #2640 ci/docker: supply-chain Actions updates and Postgres 18 compose layout by @ajinabraham in #2643 Migrate VirusTotal integration to API v3 by @ajinabraham in #2644 chore: bump Python dependencies by @ajinabraham in #2645 ci: publish to PyPI with OIDC Trusted Publishing by @ajinabraham in #2646 New Contributors @AdrienHutinel made their first contribution in #2630 @Zen1th53 made their first contribution in #2634 @Eljees made their first contribution in #2638 @kobihikri made their first contribution in #2639 @mmmugh made their first contribution in #2640 Full Changelog : v4.5.1...v4.5.2",
+          "source": "MobSF Releases",
+          "source_url": "https://github.com/MobSF/Mobile-Security-Framework-MobSF/releases.atom",
+          "category": "mobile-security",
+          "published": "2026-08-10T06:20:34+00:00",
+          "trust": 9,
+          "source_boost": 5,
+          "topic_terms": [
+            "APK and IPA analysis",
+            "Malware analysis tooling"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 32
+        },
+        {
+          "entry_id": "c5a2beae7b3c2beafd4384ac0e154586269ee276d051d9b1eda64737b55f8392",
+          "title": "dev/5.4.10367",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10367",
+          "summary": "Disallow database reload, use FileMetadata::ReopenMovedDatabase",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-10T17:52:13+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "2daeacd6e7cd76dcca31f41d13affdbe23b692df056972df9b8dd2d5eb55aef9",
+          "title": "v2.0.0-beta.10 - 2026/08/10",
+          "url": "https://github.com/wasmi-labs/wasmi/releases/tag/v2.0.0-beta.10",
+          "summary": "Added Added way to customize dynamic fuel metering. #2025 Added stable fuel metering. #2013 This replaces Wasmi's old fuel metering that was tied to its internal bytecode. The new stable fuel metering is tied to the input Wasm bytecode instead. While less precise, it has the big advantages that it stays relatively stable and that it is the same technique that is also used in Wasmtime. Added more optimizations to make Wasmi execute even faster: Massively improve performance across the board with fix that improves branch prediction. #2027 Re-use sp in Wasm calls. #2014 This improves performance of host calls primarily. Add InstanceEntity pointer to WasmFuncEntity . #2018 This improves performance of call_indirect and call_imported . Add special call_indirect operator variants for (table 0) . #2019 This is very beneficial since more call_indirect operators work on (table 0) . Reduce tons of unnecessary indirections in Wasmi's executor: PRs: #2023 , #2015 , #2020 , #2022 , #2024 Internal Add new sort-dyn benchmark test case to test call_indirect performance. #2017 Simplify Wasmi users README listing. #2021",
+          "source": "wasmi Releases",
+          "source_url": "https://github.com/wasmi-labs/wasmi/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-08-10T14:57:31+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "8e9096fe48f39cc0238c1bbbcc93a6f247e25a6419e97c6131ab75a7504a175f",
+          "title": "dev/5.4.10362",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10362",
+          "summary": "Fix Python 3.14 custom demangler dispatch",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-10T12:47:34+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-08-10",
       "path": "/public/news/2026-08-10-unity-il2cpp-reverse-engineering-news.html",

@@ -2,19 +2,19 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 40,
+      "count": 43,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-09"
+      "last_seen": "2026-08-11"
     },
     "trending GitHub": {
-      "count": 40,
+      "count": 43,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-09"
+      "last_seen": "2026-08-11"
     },
     "GitHub repository": {
-      "count": 40,
+      "count": 43,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-09"
+      "last_seen": "2026-08-11"
     },
     "Unity": {
       "count": 21,
@@ -22,19 +22,19 @@
       "last_seen": "2026-08-08"
     },
     "wasm": {
-      "count": 19,
+      "count": 20,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-08-08"
+      "last_seen": "2026-08-11"
     },
     "decompiler": {
-      "count": 16,
+      "count": 17,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-08-08"
+      "last_seen": "2026-08-11"
     },
     "decompilation": {
-      "count": 12,
+      "count": 13,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-08-10"
+      "last_seen": "2026-08-11"
     },
     "metadata": {
       "count": 11,
@@ -50,6 +50,11 @@
       "count": 8,
       "first_seen": "2026-07-24",
       "last_seen": "2026-08-04"
+    },
+    "Wasm": {
+      "count": 5,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-08-11"
     },
     "webassembly": {
       "count": 5,
@@ -75,11 +80,6 @@
       "count": 5,
       "first_seen": "2026-07-24",
       "last_seen": "2026-08-03"
-    },
-    "Wasm": {
-      "count": 4,
-      "first_seen": "2026-07-26",
-      "last_seen": "2026-07-28"
     },
     "Python Fix exceptions": {
       "count": 4,
