@@ -1,11 +1,143 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-11T03:12:05.329254+00:00",
+  "last_generated_at": "2026-08-12T03:30:33.112768+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-08-12",
+      "path": "/public/news/2026-08-12-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Native binary tooling News — August 12, 2026",
+      "description": "Curated Binary reverse engineering, Native binary tooling updates for developers and security researchers. 6 relevant releases and technical developments wit…",
+      "item_count": 6,
+      "new_item_count": 6,
+      "updated_at": "2026-08-12T03:30:33.112768+00:00",
+      "entries": [
+        {
+          "entry_id": "0802075fd0075d5f98935e10a1cc19e3abf6a446f94a9277cecc4afc08e20e48",
+          "title": "morluto/rea — trending GitHub repository",
+          "url": "https://github.com/morluto/rea",
+          "summary": "Reverse engineer anything with agents, from app behavior down to native binaries. GitHub discovery signal: 167 stars, 20 forks, 51 open issues; language TypeScript; last pushed 2026-08-11. Topics: agent-skills, ai-agent-tools, ai-agents, binary-analysis, cli, coding-agent, coding-agents, decompiler, disassembler, hopper-disassembler.",
+          "source": "GitHub Hot Binary Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Abinary-analysis+created%3A%3E%3D2026-04-14+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-08-11T10:36:04+00:00",
+          "trust": 8,
+          "source_boost": 20,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 47
+        },
+        {
+          "entry_id": "63a43bf78a6dcab6ac58d4af795d467d2baa38482b1f0203e246a63428aec40d",
+          "title": "darbra/awesome-ai-reverse — trending GitHub repository",
+          "url": "https://github.com/darbra/awesome-ai-reverse",
+          "summary": "ai reverse 一把梭 GitHub discovery signal: 706 stars, 65 forks, 0 open issues; language Unknown; last pushed 2026-08-08. Topics: crawler, frida, ida, reverse-engineering.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-14+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-08-08T11:16:49+00:00",
+          "trust": 8,
+          "source_boost": 21,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Dynamic instrumentation"
+          ],
+          "score": 40
+        },
+        {
+          "entry_id": "d313c376d90af6430c40c93f9b101cb4285674d1b0f11666cf3a404686d286b4",
+          "title": "AhmadHassan-BTed/OpenHeart — trending GitHub repository",
+          "url": "https://github.com/AhmadHassan-BTed/OpenHeart",
+          "summary": "Succinct Compositional Program Graph (SCPG) static analysis engine & 14-diagram UML generator in Rust. GitHub discovery signal: 11 stars, 0 forks, 7 open issues; language Rust; last pushed 2026-08-09. Topics: code-property-graph, compiler-theory, program-analysis, robdd, rust, static-analysis, succinct-data-structures, tree-sitter, uml-generator.",
+          "source": "GitHub Hot Program Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=%22program+analysis%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-02-13+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-research",
+          "published": "2026-08-08T16:11:06+00:00",
+          "trust": 8,
+          "source_boost": 13,
+          "topic_terms": [
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 24
+        },
+        {
+          "entry_id": "3a9d190de3d34b2d8d05dfefc95b1d1cbfcf39c8af40c463acac8292999db7a9",
+          "title": "dev/5.4.10389",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10389",
+          "summary": "[UI] Add focus-preserving navigation",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-12T01:33:25+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "f7764d76c40223b844af7abc54b2d1dfe89bebd86e624569279b516383942cd6",
+          "title": "dev/5.4.10385: [IDB] Improve IDB import",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10385",
+          "summary": "Rolled up and minimized version of #8245 Primarily contains fixes for newer IDB's which prevented them from being loadable, see https://github.com/Vector35/idb-rs for the parser fixes. Squashed commit messages below When an IDB only records a section-relative base address (loading_base of zero, so we fall back to min_ea as a BaseSection), the rebase delta was computed against the lowest mapped section in the view. That over-shifts every imported address for formats where the first section starts after the file header. IDA's min_ea is the image base and maps the file header too, whereas a Mach-O's first section (__text) begins after the header and load commands. Aligning against the lowest mapped segment (segments include the header region) yields the correct delta and stops imported addresses from being shifted by the header size. [idb_import] Remove orphaned types.rs translator The \"IDB Import refactor\" introduced translate.rs (TILTranslator) as the type translator used by the mapper, but left the previous translator in types.rs behind. The module was never re-declared in lib.rs, so it has not been compiled or referenced since the refactor. Removing it drops a large block of dead code along with its stale TODOs; TILTranslator is now the single source of truth for IDB->BN type translation. [idb_import] Improve TIL type translation fidelity Resolve the outstanding translation TODOs in the TIL translator: Size the variable-width C basic types (bool/short/int/long/long long/ long double) from the TIL header's compiler sizing info when a TIL is attached, falling back to the standard C ABI defaults. Both build_basic_ty and width_of_type now share these sizes so referenced-type placeholder widths stay in step with the types they stand in for. Translate BoolSized to a real width: a 1-byte bool stays bool, any other width becomes an unsigned int of that size (BN bool is always one byte). Honor pointer __ptr32 / __ptr64 modifiers to override the platform address size, and document that based/shifted pointers have no BN representation. Detect variadic functions via the ellipsis calling convention instead of hardcoding has_variable_args to false. Add udt extra_padding to the computed structure width so fixed-size UDTs occupy their true storage size. Document the resolved design decisions for grouped (bitmask) enums, flexible array members, struct/union placeholder widths, the function return location, and the authoritative pointer address size. [idb_import] Resolve parse.rs TODOs merged_types: carry an ordinal across the dedup when the kept entry lacks one, keeping name/ordinal lookups resolvable, and document that dir_tree types are clones of the same TIL definitions so no body merge is needed. TIL decompression: read_til already inflates Zlib/Zstd sections via its section header, so document that and drop the stale \"decompress til\" TODO. Function registers/stack variables: replace the dead exploratory block with a note scoping it as a follow-up feature (needs FunctionInfo and mapper support to apply named stack variables and register names). [idb_import] Resolve mapper/commands TODOs and surface IDB SHA256 Populate IDBInfo.sha256 from the input file SHA256 recorded in the IDB so it is no longer always None, and drop the stale placeholder comment. Mapper logs the recorded SHA256 and documents a future IDB verifier that would compare it against the mapped view before applying data. Define the fallback size_t only when the view lacks one, so a real platform/view definition is never clobbered. Document that the undo bracketing requires the mapper to be the sole writer, an invariant the run-once loader activity already guarantees. Document the name-based (not range-based) section dedup rationale: the BN loader already maps the address space, so a range check would suppress every IDA segment. Replace the remaining design-question TODOs (used-type ordering, attached TIL lookup, per-function platform tuple, OpenFileName filter naming) with decisions/notes explaining the current behavior and future direction. [idb_import] Verify IDB matches the loaded binary by SHA256 The IDB records the SHA256 of its original input file. Walk to the root of the view's parent chain (the raw view, whose bytes are that on-disk file), hash it in 1 MiB chunks, and compare against the recorded hash. On mismatch we warn that the imported data may not correspond to the binary; on match we log the verification at debug level. [idb_import] Recover argument locations and register variables Argument locations: translate IDA stack-passed argument locations (ArgLoc::Stack) into Binary Ninja parameter stack locations so explicit stack parameter placement is preserved. Register-encoded locations carry raw IDA register indices with no portable BN mapping and are left for analysis to derive. Register variables: parse IDA \"regvars\" (a register renamed by the user within a function) into FunctionInfo, carrying them through the function merge, and apply them in the mapper by resolving the register by name and creating a user variable typed to the register width. [idb_import] Import IDA stack frames as stack variables Parse each function's stack frame (named locals, saved registers and stack arguments) from the IDB along with its geometry (frsize/frregs), carry it on FunctionInfo through the function merge, and apply it in the mapper. IDA records the frame as a structure running from the bottom of the locals upward; Binary Ninja measures stack offsets from the return address, so an IDA frame offset is shifted down by local_size + saved_regs_size. Member offsets are the running sum of preceding member widths (the frame members carry no explicit offset), and the synthetic saved-register/return-address members are skipped while still advancing the offset. Variables are created as auto stack variables typed from their translated IDB types. [idb_import] Apply no-return functions and local labels Two pieces of IDB data were parsed but never applied to the view: is_no_return: mark functions IDA flags as non-returning (abort/exit/etc.) with set_auto_can_return(false) so analysis does not fall through calls to them. Local labels: IDA's in-function named locations were folded into the name list, where map_name_to_view skips anything inside code. Route them through the dedicated map_label_to_view so they land as local-label symbols. [idb_import] Import IDA function folders as Binary Ninja components IDA lets users organize functions into folders in the Functions window, stored as a dirtree. Parse that hierarchy (preserving nested folders, not just the leaf functions) into FunctionFolderEntry, and recreate it in the view as Binary Ninja components: each folder becomes a component nested under its parent, and every function leaf is added to its folder's component. Functions sitting at the dirtree root are left uncomponented, matching their \"no folder\" state in IDA. [idb_import] Resolve register-based argument locations Expose the processor's register names (indexed by IDA register number) from the database and hand them to the type translator along with the architecture. Argument locations encoded as registers (Reg1, the Reg2 register pair, and register-relative RRel) are now resolved through those names into Binary Ninja registers and emitted as value locations, in addition to the stack locations already handled. Forms with no equivalent (distributed, static, custom) still fall back to the calling convention. [idb_import] Make folder mapping robust and observable Function folders in Binary Ninja's symbol list are backed by the component API (the docs describe creating them \"automatically via the API\", linking to binaryninja.component.Component), so the component approach is correct. Improve the mapping so it does not depend on analysis having indexed the functions yet: capture the Ref returned when each function is created and key it by rebased address, then place those into folders directly (falling back to a view lookup only when needed). Add a summary log line reporting how many folders were created, how many functions were placed, and how many could not be found, and align terminology to \"folder\" to match the UI while the underlying type stays a component. [idb_import] Resolve function return-value locations Reuse the register/stack location resolver to honor a function's explicit return location (function retloc) when the database records one, attaching it to the BN return value at full confidence. Functions without an explicit return location, or whose location cannot be resolved, keep the calling-convention-derived return as before. [idb_import] Dedup segments by exact range as well as name A segment that covers the exact same address range as an existing section is the same region under a possibly different name, so skip it rather than add a duplicate. We still avoid an overlap-based check, which would wrongly suppress every segment because the loader maps the whole address space. [idb_import] Generalize base-address comment to all formats The lowest-segment rebasing fix is format agnostic; reword its comment so it no longer reads as Mach-O specific. The first section starting after the format headers (Mach-O load commands, PE headers, ELF program headers) is a general property, and aligning to the lowest segment matches IDA's image base regardless of format. [idb_import] Translate unknown-unsized basic type as void idb-rs now parses a bare unknown type (unspecified size) instead of erroring, so handle it here: a zero-width unknown has no integer representation, so map it to void rather than constructing a zero-width int. [idb_import] Import typed data variables from byte flags IDA records a type for the data items it defines (byte/word/dword/qword/ oword integers, float/double/tbyte reals, and string literals), but the importer previously only created data variables for data that was named or carried an explicit TIL type. Walk the byte flags (id1), recover each defined data item's kind and size, and define a Binary Ninja data variable of the corresponding type. These are applied before the name/TIL pass so a more precise named type still wins on the same address. Structs, alignment fill and vector/custom kinds are left to the type-driven path. [idb_import] Import per-operand number formats (opt-in) IDA records how each instruction operand's number is displayed (hexadecimal, decimal, character, octal, binary, offset). Recover those from the byte flags and, behind a new \"Apply IDB Operand Formats\" setting (default off, since it disassembles each formatted instruction), apply them to the disassembly via Function::set_int_display_type. Each formatted instruction is disassembled to recover its immediate values, and every value is set under each formatted operand index. set_int_display_type only takes effect for the exact (value, operand) Binary Ninja renders, so combinations that do not occur are simply ignored, which keeps the mapping from a possible operand-index mismatch harmless. [idb_import] Type struct data items with their real type The data-item pass typed scalar and string data but skipped struct items, leaving typed global structures untyped. Resolve a struct item's actual type from the TIL/byte info and define the data variable with it, preferring that explicit type over the byte-flag-derived scalar kind. The per-item type lookup is limited to struct items so the common scalar/string path stays fast. [idb_import] Type string data with their character width Use the string type idb-rs now exposes to size string data variables by their real character width: a 1-byte string stays a char array, while UTF-16/UTF-32 strings become wide-character arrays (with the element count being the character count) instead of being mistyped as a byte array. [idb_import] Display enum operands against their enumeration Recover operands IDA displays as enumeration members, resolve each to its enumeration via idb-rs (op_enum_type, which maps the operand's member tid to the owning enumeration by tid range), and apply it to the disassembly with EnumerationDisplayType. Like the number-format pass it disassembles each operand to recover the immediate value and is gated behind the same \"Apply IDB Operand Formats\" setting. [idb_import] Probe enum altval directly instead of gating on operand flag The previous pass only considered an operand for enum display when its operand-representation flag read back as Enum. IDA records the referenced enumeration in a separate altval, independent of that nibble, so operands such as the immediate of orr w8, w8, #imm carry an enum reference the flag does not reflect and were skipped. Probe op_enum_type for operands 0 and 1 directly; it resolves to None when no enum is referenced, so the probe is self-gating and now recovers every enum-displayed operand. [idb_import] Apply operand display overrides after functions exist Per-operand enum displays and number formats are applied with set_int_display_type, which needs the function containing the instruction. The IDB import runs as an early analysis activity, before functions are created, so functions_containing() returned empty and every override was silently dropped. Stash the rebased overrides in a per-view registry during the import and apply them from a BinaryViewInitialAnalysisCompletionEvent handler once functions exist, then request re-analysis so they render. Two further fixes make the overrides take effect: Key the override by Binary Ninja's operand index, defined as the number of operand-separator tokens before the token in the rendered instruction, not IDA's operand number (e.g. the immediate of orr w1, w8, #imm is operand 2, while IDA records it as operand 1). Both the enum and number-format passes now count operand separators. Apply enum displays before number formats and skip the format pass for addresses that carry an enum operand. IDA shows the enumeration even when the operand also has a number-format flag, so the format must not overwrite the enum override at the same operand. [idb_import] Split enum-operand and number-format settings Enum-displayed operands are a small, cheap set, while the per-operand number formats can number in the hundreds of thousands and dominate import time on large databases. Gate them independently: analysis.idb.applyOperandEnums controls enum displays. analysis.idb.applyOperandFormats controls number formats. Add analysis.idb.skipDefaultOperandFormats (default true): when applying number formats, skip operands whose format already matches Binary Ninja's default rendering (hexadecimal). These make up the bulk of formatted operands and applying them would not change the displayed text, so skipping them greatly reduces the disassembly work without affecting the result. [idb_import] Address PR #8245 review feedback Revert BaseSection rebasing: drop the segment-based min_ea calculation; it produced incorrect results on the reviewer's test binary. Fall back to the simpler bn_base_address.wrapping_sub(section_addr). Restore three TODO comments that were incorrectly converted to NOTEs: undo-thread-safety, types-after-functions, and idb-attached-tils. Add TODO to verify that set_auto_can_return persists across database saves. Restore TODO for per-function platform attachment (was NOTE). Use create_user_stack_var for stack frame variables to match the user variant already used for register variables. Wrap per-function variable creation (regvars + stack frame) in a begin/forget_undo_actions bracket, consistent with how comments are handled. Remove the redundant find(|f| f.start() == addr) filter on functions_at, which already returns only functions whose start is that address. Key functions_by_address with function::Location instead of raw u64. Document the IDA register-number invariant (no gaps, starts at 0) on the register_names field in ID0Info. Represent Basic::Unknown{bytes} as a named-type NTR (__unk_uN) rather than an anonymous integer so the type has a descriptive name in the UI. Wire up IDA __based pointers to TypeBuilder::set_pointer_base with RelativeToVariableAddressPointerBaseType instead of silently dropping them.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-11T20:51:38+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "dc1df14445424cb5b07177d0caea1dfe7fbaaf2db319440f1556df6c76144def",
+          "title": "yzhao062/awesome-auditable-ai — trending GitHub repository",
+          "url": "https://github.com/yzhao062/awesome-auditable-ai",
+          "summary": "Auditing AI agents: a curated list of papers, tools, datasets, benchmarks, and standards covering reliability, monitoring, failure attribution, and decision records. GitHub discovery signal: 39 stars, 12 forks, 4 open issues; language Python; last pushed 2026-08-11. Topics: agent-evaluation, agent-reliability, agentic-ai, ai-agents, ai-safety, auditable, auditing, awesome, awesome-list, failure-attribution.",
+          "source": "GitHub Hot Program Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=%22program+analysis%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-02-13+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-research",
+          "published": "2026-06-24T01:05:01+00:00",
+          "trust": 8,
+          "source_boost": 11,
+          "topic_terms": [
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-08-11",
       "path": "/public/news/2026-08-11-unity-il2cpp-reverse-engineering-news.html",
