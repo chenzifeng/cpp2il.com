@@ -1,11 +1,144 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-12T03:30:33.112768+00:00",
+  "last_generated_at": "2026-08-13T03:33:35.974688+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-08-13",
+      "path": "/public/news/2026-08-13-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Native binary tooling News — August 13, 2026",
+      "description": "Curated Binary reverse engineering, Native binary tooling updates for developers and security researchers. 6 relevant releases and technical developments wit…",
+      "item_count": 6,
+      "new_item_count": 6,
+      "updated_at": "2026-08-13T03:33:35.974688+00:00",
+      "entries": [
+        {
+          "entry_id": "8eacadd90a465c7df1f77c2862f58bf6e9256548f67de4eab9c9b63750e8c37a",
+          "title": "alexbevi/ghidra-manager — trending GitHub repository",
+          "url": "https://github.com/alexbevi/ghidra-manager",
+          "summary": "Cross-platform CLI for installing Ghidra, managing compatible plugins, launching GhidraMCP projects, and comparing binaries. GitHub discovery signal: 6 stars, 0 forks, 0 open issues; language Python; last pushed 2026-07-30. Topics: binary-analysis, cli, cross-platform, ghidra, ghidra-mcp, mcp, python, reverse-engineering.",
+          "source": "GitHub Hot Binary Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Abinary-analysis+created%3A%3E%3D2026-04-15+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-07-18T13:34:11+00:00",
+          "trust": 8,
+          "source_boost": 10,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 45
+        },
+        {
+          "entry_id": "f7c160a7cf58bf943df0f6727d0a1222f7a89d08ca5425e98cff56c9a9d5ffc7",
+          "title": "tripplyons/pokeemerald-3d — trending GitHub repository",
+          "url": "https://github.com/tripplyons/pokeemerald-3d",
+          "summary": "Pokemon Emerald in 3D (in WebAssembly) GitHub discovery signal: 35 stars, 4 forks, 2 open issues; language C; last pushed 2026-08-10. Topics: decompilation, pokemon, recompilation, wasm, webassembly.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-05-15+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-08-08T18:27:12+00:00",
+          "trust": 8,
+          "source_boost": 17,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 36
+        },
+        {
+          "entry_id": "88c63b74a2581d191df6857dfc029d13d78032b7cab921cd6fb609b68607ca47",
+          "title": "psxrestore/Condemned2Recomp — trending GitHub repository",
+          "url": "https://github.com/psxrestore/Condemned2Recomp",
+          "summary": "A static recompilation of Condemned 2: Bloodshot done with RexGlue. GitHub discovery signal: 120 stars, 3 forks, 11 open issues; language CMake; last pushed 2026-08-10. Topics: pc-port, recompilation, rexglue, static-recompilation, windows, xbox360.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-15+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-08-02T22:07:20+00:00",
+          "trust": 8,
+          "source_boost": 19,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 31
+        },
+        {
+          "entry_id": "4ad3f3dd854a42c85dc29f7ad4b7852aaf0a961f45848065fd72bf3253e2f214",
+          "title": "ILSpy 11.0",
+          "url": "https://github.com/icsharpcode/ILSpy/releases/tag/v11.0",
+          "summary": "The major news item of this release cycle is us porting ILSpy from WPF to Avalonia. With this port, ILSpy is now available on Linux and Mac in addition to Windows. Do note that there is no longer a WPF frontend, it was entirely removed in favor of the new Avalonia one. Aside from this already major UI work, a few other long-standing UI features from our wish list made it into ILSpy: File / Open from NuGet feed File / Open from running process (all platforms!) Window / Bookmarks (full-featured bookmarks implementation for the decompiled C# view) View / Options / Display / Show Omnibar (breadcrumb/search bar feature at the top of decompiled code) A second focus area was improving the ilspycmd story for agentic development. Download numbers for our dotnet tool took off in the last quarter of 2025, and agents like Claude are the reason for that (downloads are now exceeding 70k/week). Given we are using Claude as well, we found a few areas lacking that needed improvement, especially to save on token spend: PR #3924 : ilspycmd: add --member for single-member decompilation PR #3801 : Fix #3797 : resolve ilspycmd -t type names with fuzzy matching PR #3951 : Add --dump-table metadata dump mode to ilspycmd Together with list/extract embedded resources, decompile BAML to XAML which shipped in 10.1, we now have a good set of optimized options for the most common scenarios in skills and tool calling available for you. A part of this initiative was hardening: PR #3843 : Bound XamarinCompressedFileLoader against crafted XALZ headers PR #3842 : Bound WebCilFile section access against mapped-view length PR #3841 : Harden BAML reader against crafted-resource crashes PR #3840 : Bound .rsrc resource-tree parsing against crafted input PR #3838 : Guard against OOB read when bundle signature is at file start The third pillar of this release is fixing long-standing annoyances and in general investing in tech debt, eg fuzzing our decompiler engine with NuGet packages. A lot (!) of the changes detailled in the release notes for preview 1 and rc deal with exactly those many small to big improvements. Finally, we'd like to point out one retirement: the VS2017/2019 add-in has been removed, we continue to support VS2022-2026. What is new since RC? PR #3976 : Fix #3451 : qualify an explicit implementation as the type implements it PR #3971 : Fix #3510 : keep exporting a project when a member cannot be decompiled PR #3969 : Keep null-conditional LINQ chains in method syntax — @sailro , thank you! PR #3970 : Generate DecompilerSettings boilerplate from [DecompilerSetting] attributes PR #3967 : Keep ref-returning switches as statements — @sailro , thank you! PR #3950 : Reconstruct nested deconstruction designations PR #3956 : Fix #3952 : decompile VB.NET anonymous types and queries to valid C# PR #3959 : Fix overflow approximating fractions of large negative constants PR #3960 : Fix overflow computing the element count of a multi-dim array initializer PR #3961 : Recognize a protected copy constructor on a sealed record PR #3958 : Fix crash decompiling reference assemblies with stripped method bodies PR #3955 : Fix #3954 : name the entry point of a top-level program 'Main' For a full list of changes click here . This release is based on .NET 10.0 . Please make sure that you have it installed on your machine beforehand. Note for Mac users: see https://github.com/icsharpcode/ILSpy/wiki/Build-Artifacts#running-the-macos-artifact because the ILSpy.app is neither signed nor notarized.",
+          "source": "ILSpy Releases",
+          "source_url": "https://github.com/icsharpcode/ILSpy/releases.atom",
+          "category": "dotnet-decompilers",
+          "published": "2026-08-12T05:13:33+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "C# decompilation"
+          ],
+          "matched_terms": [
+            "C# decompilation"
+          ],
+          "score": 29
+        },
+        {
+          "entry_id": "d24adfbdb86f7d1f8b67f759d17ec52fb81f4b4a157e956a18147360bd4a2cbd",
+          "title": "dev/5.4.10394",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10394",
+          "summary": "Add new license APIs.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-12T15:03:04+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "7e8229e17e82f59a1f7c18ee1f1a01339330d0bd3e0dda7097cdd4cba269605a",
+          "title": "dev/5.4.10392: Add ARMv7 vabs and fix vcvt lifting",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10392",
+          "summary": "Lift scalar VABS directly when the lane and register widths match, and use intrinsics for packed ARM and Thumb forms Correct Thumb F32/F64 VCVT result sizing, fix scalar fixed-point rounding and extension, and add an intrinsic for lane-wise fixed-point conversions",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-12T13:56:47+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-08-12",
       "path": "/public/news/2026-08-12-unity-il2cpp-reverse-engineering-news.html",

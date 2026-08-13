@@ -2,64 +2,64 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 47,
+      "count": 50,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-12"
+      "last_seen": "2026-08-13"
     },
     "trending GitHub": {
-      "count": 47,
+      "count": 50,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-12"
+      "last_seen": "2026-08-13"
     },
     "GitHub repository": {
-      "count": 47,
+      "count": 50,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-12"
+      "last_seen": "2026-08-13"
+    },
+    "wasm": {
+      "count": 21,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-08-13"
     },
     "Unity": {
       "count": 21,
       "first_seen": "2026-07-20",
       "last_seen": "2026-08-08"
     },
-    "wasm": {
-      "count": 20,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-08-11"
-    },
     "decompiler": {
-      "count": 18,
+      "count": 19,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-08-12"
+      "last_seen": "2026-08-13"
     },
     "decompilation": {
-      "count": 13,
+      "count": 15,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-08-11"
+      "last_seen": "2026-08-13"
     },
     "metadata": {
-      "count": 11,
+      "count": 12,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-08"
+      "last_seen": "2026-08-13"
     },
     "WebAssembly": {
-      "count": 8,
+      "count": 9,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-05"
+      "last_seen": "2026-08-13"
     },
     "reverse engineering": {
       "count": 8,
       "first_seen": "2026-07-24",
       "last_seen": "2026-08-04"
     },
+    "webassembly": {
+      "count": 6,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-08-13"
+    },
     "Wasm": {
       "count": 5,
       "first_seen": "2026-07-26",
       "last_seen": "2026-08-11"
-    },
-    "webassembly": {
-      "count": 5,
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-08-08"
     },
     "Unity f1 LTS": {
       "count": 5,
@@ -146,6 +146,11 @@
       "first_seen": "2026-07-26",
       "last_seen": "2026-07-28"
     },
+    "decompile": {
+      "count": 3,
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-08-13"
+    },
     "Reverse Engineering": {
       "count": 3,
       "first_seen": "2026-07-27",
@@ -155,11 +160,6 @@
       "count": 3,
       "first_seen": "2026-07-25",
       "last_seen": "2026-07-26"
-    },
-    "decompile": {
-      "count": 2,
-      "first_seen": "2026-07-27",
-      "last_seen": "2026-07-27"
     },
     "v3 ace654289f5abc240509fc941453ebc5": {
       "count": 2,
