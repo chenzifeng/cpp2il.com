@@ -1,11 +1,123 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-13T03:33:35.974688+00:00",
+  "last_generated_at": "2026-08-14T03:31:12.504120+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-08-14",
+      "path": "/public/news/2026-08-14-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Decompiler research News — August 14, 2026",
+      "description": "Curated Binary reverse engineering, Decompiler research updates for developers and security researchers. 5 relevant releases and technical developments with…",
+      "item_count": 5,
+      "new_item_count": 5,
+      "updated_at": "2026-08-14T03:31:12.504120+00:00",
+      "entries": [
+        {
+          "entry_id": "249f3a620b3f1d0b46c9860318c92f1923327a36ae11d85104704443483513a8",
+          "title": "xsslize/idarem — trending GitHub repository",
+          "url": "https://github.com/xsslize/idarem",
+          "summary": "Review an IDA Pro database from your browser — an idarem plugin serves disassembly, pseudocode, graph view and more over HTTP to a React client, with live two-way sync GitHub discovery signal: 8 stars, 1 forks, 0 open issues; language TypeScript; last pushed 2026-08-04. Topics: binary-analysis, decompiler, disassembler, flask, hex-rays, ida-plugin, ida-pro, idapython, malware-analysis, react.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-02-15+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-06-25T16:09:04+00:00",
+          "trust": 8,
+          "source_boost": 9,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 36
+        },
+        {
+          "entry_id": "f904af8e23083587692f6a00846ac518b543964a43f957ed3d2662942a41e91c",
+          "title": "Unity 6000.3.22f1 LTS",
+          "url": "https://unity.com/releases/editor/whats-new/6000.3.22f1",
+          "summary": "Unity 6000.3.22f1 LTS",
+          "source": "Unity LTS Releases",
+          "source_url": "https://unity.com/releases/editor/lts-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-08-13T06:39:34+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "955397ee942dcf511ff3a3e5e4d636e50023736a5a9c0632e484b45f8e3bfbce",
+          "title": "Unity 6000.6.0 Beta",
+          "url": "https://unity.com/releases/editor/beta/6000.6.0b8",
+          "summary": "Unity 6000.6.0 Beta",
+          "source": "Unity Beta Releases",
+          "source_url": "https://unity.com/releases/editor/beta-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-08-12T05:56:41+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "310b3b7dfb865a2f2dba69ddec8d889fa1fc2aa0c7f24efeb21d2d0d402cb811",
+          "title": "dev/5.4.10427",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10427",
+          "summary": "move back to gloss logo",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-14T01:50:09+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "204531f38f17a3f625c20a11f1de49437354e2eaf6ed7703eca153b8bfa4a2af",
+          "title": "dev/5.4.10426",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10426",
+          "summary": "Add new API call to remove alternate names from a loaded type library…",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-12T19:58:28+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-08-13",
       "path": "/public/news/2026-08-13-unity-il2cpp-reverse-engineering-news.html",
