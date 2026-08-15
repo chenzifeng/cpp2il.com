@@ -1,11 +1,150 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-14T03:31:12.504120+00:00",
+  "last_generated_at": "2026-08-15T02:27:20.038027+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-08-15",
+      "path": "/public/news/2026-08-15-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Dynamic instrumentation News — August 15, 2026",
+      "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 6 relevant releases and technical developments with or…",
+      "item_count": 6,
+      "new_item_count": 6,
+      "updated_at": "2026-08-15T02:27:20.038027+00:00",
+      "entries": [
+        {
+          "entry_id": "b44323d50639046c6dd73c512fa7db776c8769a748698102976ae508c00cbb30",
+          "title": "PerspectiveSortLose/frida-suite-spark — trending GitHub repository",
+          "url": "https://github.com/PerspectiveSortLose/frida-suite-spark",
+          "summary": "Frida Suite Spark GitHub discovery signal: 58 stars, 0 forks, 0 open issues; language Unknown; last pushed 2026-08-14. Topics: frida, frida-ios-hook, frida-mcp, friday, friday-project, personal-assistant.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-17+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-07-30T01:35:42+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 49
+        },
+        {
+          "entry_id": "86577e928be5e517b7f43b633f76460599ddc2a5d9e9b743b9fa7546562e55ad",
+          "title": "gyh20062008-commits/re-ios — trending GitHub repository",
+          "url": "https://github.com/gyh20062008-commits/re-ios",
+          "summary": "MCP server for iOS reverse engineering: static analysis, Frida dynamic hooks, FairPlay decryption, IPA resigning. 31 tools. GitHub discovery signal: 2 stars, 1 forks, 0 open issues; language Python; last pushed 2026-07-09.",
+          "source": "GitHub Hot iOS Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=%22ios+reverse+engineering%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-17+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-mobile",
+          "published": "2026-07-09T02:35:25+00:00",
+          "trust": 8,
+          "source_boost": 6,
+          "topic_terms": [
+            "iOS reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "iOS reverse engineering",
+            "Dynamic instrumentation"
+          ],
+          "score": 41
+        },
+        {
+          "entry_id": "5ed3388950f68f0e01304a34ff07d96396ce5545e381dfa2a12845fff929cfd7",
+          "title": "caverav/flutterdec — trending GitHub repository",
+          "url": "https://github.com/caverav/flutterdec",
+          "summary": "The Flutter Decompiler: CLI tool that decompiles Flutter Android AOT (libapp.so) into Dart-like pseudocode, supporting obfuscated builds. GitHub discovery signal: 69 stars, 5 forks, 5 open issues; language Rust; last pushed 2026-08-14. Topics: android, android-security, cli, decompiler, flutter, mobile, mobile-pentest, mobile-pentesting, mobile-security, reverse-engineering.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-02-16+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-08-14T20:15:24+00:00",
+          "trust": 8,
+          "source_boost": 18,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "18e0e28ec4cdeea43d3fad326ebb0cac536a157bcf06b6cb2604d028b01e0330",
+          "title": "saudgl/ios-reverse-engineering-skills — trending GitHub repository",
+          "url": "https://github.com/saudgl/ios-reverse-engineering-skills",
+          "summary": "GitHub discovery signal: 3 stars, 0 forks, 0 open issues; language Shell; last pushed 2026-08-14.",
+          "source": "GitHub Hot iOS Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=%22ios+reverse+engineering%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-17+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-mobile",
+          "published": "2026-08-14T11:35:19+00:00",
+          "trust": 8,
+          "source_boost": 12,
+          "topic_terms": [
+            "iOS reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "iOS reverse engineering"
+          ],
+          "score": 32
+        },
+        {
+          "entry_id": "397fcf04fda5cccc258409ca42fbcf071f6ac4f7c3a39bf12d8eb0e8557269ea",
+          "title": "dev/5.4.10433",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10433",
+          "summary": "Add architecture-specific linear sweep capabilities",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-14T12:17:24+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Malware analysis tooling",
+            "Decompiler research"
+          ],
+          "score": 29
+        },
+        {
+          "entry_id": "10eea11b8748307504062f3f1d3096660a5d93b76ebe16e0ae686e13fdc43e08",
+          "title": "dev/5.4.10440: [ARMv7] Fix full-width bitfield instruction lifting",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10440",
+          "summary": "Use 64-bit intermediates when constructing masks for BFI, BFC, and Thumb-2 UBFX. This avoids undefined shifts for legal width-32 encodings, which previously produced incorrect no-op or zero-valued lifts.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-14T17:46:17+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-08-14",
       "path": "/public/news/2026-08-14-unity-il2cpp-reverse-engineering-news.html",
