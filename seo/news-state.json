@@ -1,11 +1,64 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-15T02:27:20.038027+00:00",
+  "last_generated_at": "2026-08-16T02:35:31.928916+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-08-16",
+      "path": "/public/news/2026-08-16-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Decompiler research News — August 16, 2026",
+      "description": "Curated Binary reverse engineering, Decompiler research updates for developers and security researchers. 2 relevant releases and technical developments with…",
+      "item_count": 2,
+      "new_item_count": 2,
+      "updated_at": "2026-08-16T02:35:31.928916+00:00",
+      "entries": [
+        {
+          "entry_id": "845b0b18bbeb3e316ac17647b9b32861ec40c0b199cccbefa18c2cf47e27acbf",
+          "title": "proofofbots/fingerprint-pro-internals — trending GitHub repository",
+          "url": "https://github.com/proofofbots/fingerprint-pro-internals",
+          "summary": "Documenting the internals of Fingerprint Pro's commercial agent, not the open-source FingerprintJS library GitHub discovery signal: 34 stars, 9 forks, 0 open issues; language JavaScript; last pushed 2026-08-14. Topics: decompiler, deobfuscation, fingerprintjs, fingerprintjs-pro, reverse-engineering, webscraping.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-02-17+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-08-14T15:11:45+00:00",
+          "trust": 8,
+          "source_boost": 17,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 36
+        },
+        {
+          "entry_id": "4f2adf0c911037340aa564bb12c23525c36a5f9f6c27912227d13c387741fecd",
+          "title": "dev/5.4.10453",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F5.4.10453",
+          "summary": "Regenerate rust license pages and add tms320c6x and ticoff",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-15T13:09:36+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-08-15",
       "path": "/public/news/2026-08-15-unity-il2cpp-reverse-engineering-news.html",
