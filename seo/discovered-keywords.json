@@ -31,15 +31,15 @@
       "first_seen": "2026-07-20",
       "last_seen": "2026-08-13"
     },
+    "metadata": {
+      "count": 15,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-08-18"
+    },
     "decompilation": {
       "count": 15,
       "first_seen": "2026-07-20",
       "last_seen": "2026-08-13"
-    },
-    "metadata": {
-      "count": 13,
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-08-17"
     },
     "reverse engineering": {
       "count": 9,

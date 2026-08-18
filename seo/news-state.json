@@ -1,11 +1,64 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-17T02:35:12.809704+00:00",
+  "last_generated_at": "2026-08-18T02:30:06.624777+00:00",
   "source_errors": [
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-08-18",
+      "path": "/public/news/2026-08-18-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Decompiler research News — August 18, 2026",
+      "description": "Curated Binary reverse engineering, Decompiler research updates for developers and security researchers. 2 relevant releases and technical developments with…",
+      "item_count": 2,
+      "new_item_count": 2,
+      "updated_at": "2026-08-18T02:30:06.624777+00:00",
+      "entries": [
+        {
+          "entry_id": "038fd9ad2636bc288af65ab8654680710748e969631264133cdce5b93863c244",
+          "title": "dev/6.0.10486",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.0.10486",
+          "summary": "[ObjC] Store Objective-C metadata in the database instead of regenera…",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-16T20:30:47+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "5b5edb8565953c29f87ddbe2267b20268592971d7bab083f3a562430fbe3af76",
+          "title": "dev/6.0.10483",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.0.10483",
+          "summary": "[ObjC] Store Objective-C metadata in the database instead of regenera…",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-16T20:30:47+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-08-17",
       "path": "/public/news/2026-08-17-unity-il2cpp-reverse-engineering-news.html",
