@@ -1,11 +1,147 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-19T02:32:36.611851+00:00",
+  "last_generated_at": "2026-08-20T02:31:41.514260+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-08-20",
+      "path": "/public/news/2026-08-20-unity-il2cpp-reverse-engineering-news.html",
+      "title": "WebAssembly tooling & WebAssembly runtime News — August 20, 2026",
+      "description": "Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 6 relevant releases and technical developments with origina…",
+      "item_count": 6,
+      "new_item_count": 6,
+      "updated_at": "2026-08-20T02:31:41.514260+00:00",
+      "entries": [
+        {
+          "entry_id": "7b31f3c1203e121b26613f933bf89ccee315817b1be80f02424066158d69d6b1",
+          "title": "v1.257.0",
+          "url": "https://github.com/bytecodealliance/wasm-tools/releases/tag/v1.257.0",
+          "summary": "What's Changed Enable wide-arithmetic/compact-imports by default by @alexcrichton in #2593 Adjust TLS scheme for wasip3 to be more toolchain-agnostic by @alexcrichton in #2596 Fix name conflicts with init-task wrappers by @alexcrichton in #2595 add map support to wit-dylib by @dicej in #2594 Use u64 to track file offsets instead of usize by @WorldSEnder in #2573 Refactor configuration of wit-component builders by @alexcrichton in #2597 Add an option to encode components with return_call_ref by @alexcrichton in #2598 Support importing memory in the main module in wit-component by @alexcrichton in #2599 Add a way to have wasm-tools compose print no output by @alexcrichton in #2601 Consolidate generated modules in wit-component into one by @alexcrichton in #2600 Fold the TLS get/set module into the shim module by @alexcrichton in #2604 Generalize __wasm_init_task to a \"task hook\" by @alexcrichton in #2603 Use __wasm_task_hook for realloc options by @alexcrichton in #2605 Expand wit-component's heuristic for context slot 1 by @alexcrichton in #2609 Fall back to cabi_realloc in the main module by @alexcrichton in #2606 Release wasm-tools 1.257.0 by @github-actions[bot] in #2610 Full Changelog : v1.256.0...v1.257.0",
+          "source": "wasm-tools Releases",
+          "source_url": "https://github.com/bytecodealliance/wasm-tools/releases.atom",
+          "category": "webassembly",
+          "published": "2026-08-19T16:32:49+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime",
+            "Decompiler research"
+          ],
+          "score": 39
+        },
+        {
+          "entry_id": "1b4c1b4303b1eb17e89c61e55754e5a6ddd9c65a813ba3c2ca9cd7779d5eca12",
+          "title": "wasi-sdk-34-rc.3",
+          "url": "https://github.com/WebAssembly/wasi-sdk/releases/tag/wasi-sdk-34-rc.3",
+          "summary": "Release wasi-sdk-34-rc.3",
+          "source": "WASI SDK Releases",
+          "source_url": "https://github.com/WebAssembly/wasi-sdk/releases.atom",
+          "category": "webassembly",
+          "published": "2026-08-19T23:03:08+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "1a612c515fb1b1c0a3ce888f398a6d21ded2498256b0cd6a1a83b8e66f15bd6c",
+          "title": "v1.257.1",
+          "url": "https://github.com/bytecodealliance/wasm-tools/releases/tag/v1.257.1",
+          "summary": "What's Changed Restore the default for component new --merge-imports-based-on-semver by @Lstarsky0 in #2611 Release wasm-tools 1.257.1 by @github-actions[bot] in #2612 New Contributors @Lstarsky0 made their first contribution in #2611 Full Changelog : v1.257.0...v1.257.1",
+          "source": "wasm-tools Releases",
+          "source_url": "https://github.com/bytecodealliance/wasm-tools/releases.atom",
+          "category": "webassembly",
+          "published": "2026-08-19T18:34:06+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "Decompiler research"
+          ],
+          "score": 32
+        },
+        {
+          "entry_id": "f08e60781f2b9bb25c14941157d57ec72248d8f539667bb68b31347e25131712",
+          "title": "Unity 6000.0.82f1 LTS",
+          "url": "https://unity.com/releases/editor/whats-new/6000.0.82f1",
+          "summary": "Unity 6000.0.82f1 LTS",
+          "source": "Unity LTS Releases",
+          "source_url": "https://unity.com/releases/editor/lts-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-08-19T13:32:25+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "ba30673844585bdb9aab5f3a9de1bbac8a35040a361bd402e45e2ab68f4f11b5",
+          "title": "v9.3.3",
+          "url": "https://github.com/angr/angr/releases/tag/v9.3.3",
+          "summary": "release version 9.3.3",
+          "source": "angr Releases",
+          "source_url": "https://github.com/angr/angr/releases.atom",
+          "category": "program-analysis",
+          "published": "2026-08-19T18:36:49+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "2c302a99fd8a57793ae18dfb6771549ad2aee9e29f5f44570af152f12cf0ccab",
+          "title": "dev/6.0.10507",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.0.10507",
+          "summary": "fix zensical offline search",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-19T18:52:49+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-08-19",
       "path": "/public/news/2026-08-19-unity-il2cpp-reverse-engineering-news.html",
