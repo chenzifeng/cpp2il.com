@@ -1,11 +1,183 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-20T02:31:41.514260+00:00",
+  "last_generated_at": "2026-08-21T02:37:41.370169+00:00",
   "source_errors": [
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-08-21",
+      "path": "/public/news/2026-08-21-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — August 21, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 8 relevant releases and technical developments with original sour…",
+      "item_count": 8,
+      "new_item_count": 8,
+      "updated_at": "2026-08-21T02:37:41.370169+00:00",
+      "entries": [
+        {
+          "entry_id": "9fb5c3c5d67715d464464ee6833dbd606f9ef5a477c5be0a48a4a776e96a3a30",
+          "title": "astra1dev/MalumMenu-Android — trending GitHub repository",
+          "url": "https://github.com/astra1dev/MalumMenu-Android",
+          "summary": "Among Us Cheat Menu for Android GitHub discovery signal: 29 stars, 7 forks, 6 open issues; language TypeScript; last pushed 2026-08-15. Topics: among-us, amongus, frida, frida-gadget, frida-il2cpp-bridge, il2cpp, mod, unity, unity-modding.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-23+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-06-26T20:58:31+00:00",
+          "trust": 8,
+          "source_boost": 12,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation",
+            "Dynamic instrumentation"
+          ],
+          "score": 53
+        },
+        {
+          "entry_id": "62a74cf5f348fc41b978a1c6f365cef50d62d459463871a31becb1af3f7a2502",
+          "title": "CrazyCoder/crossglyph — trending GitHub repository",
+          "url": "https://github.com/CrazyCoder/crossglyph",
+          "summary": "Build fonts for Xteink e-readers running CrossPoint, and tune them with live preview GitHub discovery signal: 34 stars, 1 forks, 0 open issues; language Python; last pushed 2026-08-20. Topics: bitmap-fonts, cpfont, crosspoint, eink, epaper, ereader, esp32, font-rendering, font-tools, fonts.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-05-23+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-08-15T00:48:37+00:00",
+          "trust": 8,
+          "source_boost": 17,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 36
+        },
+        {
+          "entry_id": "f964b7a31a08fc1523d7f9beee2ef7390c4b214695464524c111ec62c55d13d7",
+          "title": "v48.0.0: Release Wasmtime 48.0.0 (#14169)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v48.0.0",
+          "summary": "48.0.0 Released 2026-08-20. Added Wasmtime has an initial implementation of the component model fixed-length-lists feature. #12315 Wasmtime's reflection of component imports/exports now exposes external-id information. #13874 Cranelift's alias analysis pass now eliminates dead stores. #13806 #13947 Winch now supports the wasm SIMD proposal on AArch64. #13911 #13921 #13928 #13937 #13945 #13938 #13946 ... Cranelift now supports an AVX512-VNNI lowering for the dot-product wasm instruction and usdot on AArch64. #14006 #14054 Wasmtime's bindgen! macro now has an include_component_type option to generate a COMPONENT_TYPE constant with the encoded type of the world being bound. #14013 Wasmtime now supports configurable fuel costs for variable-length wasm opcodes. #13931 Changed Host-implemented traits in wasmtime-wasi-http are now the same across wasip2/wasip3 and no longer require separate implementations/structures. #13810 #13812 #13835 Wasmtime will now use the process_madvise syscall on Linux where available which can improve the performance of the pooling allocator when the deallocation batch size is configured to larger than 1. #13830 Synchronous cancellation of streams/futures/subtasks now traps if the waitable was already in a waitable set. #13708 Winch is now flagged to be compatible with component-model-async. #13845 Wasmtime's pooling allocator now uses more sharding to reduce lock contention. #13840 Wasmtime now requires Rust 1.95.0 to build. #13853 Cranelift now has a uniform maximum size across all backends on the bounds of a function's stack frame. #13783 Wasmtime's LinkerInstance for components now supports being reopened to gradually add more items. #13908 The wasmtime-wasi crate's default configuration now denies creation of TCP/UDP sockets by default. #13936 Wasmtime now configures async task context fields on realloc calls to zero. #13949 Work has continued on continuous verification of Cranelift's lowering rules on AArch64. #13935 #13929 #13998 Codegen for loads on AArch64 has been optimized slightly to improve sharing common sub-expressions. #13766 Work continues on implementing the stack-switching proposal. #11717 #13996 #14052 Permissions for wasi-filesystem in the implementation of the wasmtime-wasi crate have been simplified to either read-write or read-only for a directory. #14010 Fixed A late-drop of host-defined stream producers/consumers has been fixed. #13891 Call hooks are now invoked around async yields when dealing with concurrent execution. #13871 Extreme filesystem timestamps no longer cause panics. #13894 An erroneous trap was fixed where an async-delivered write-closed event was sent to a future. #13914 An erroneous trap where Wasmtime internally used the wrong thread id has been fixed. #13926 Cross-component instance streams are no longer erroneously flagged as being intra-instance. #14018 A panic in the wasmtime CLI with non-utf8 environment variables has been fixed. #14017 Atomic waits on big-endian hosts have been fixed. #14027 Enabling MPK with CoW images has been fixed. #14076",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-08-20T17:19:51+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "d0b680aa72b21d436ca4e4ba6d65af22440e54cba9346b94a6cc99ef2c50d04c",
+          "title": "v46.0.3: Release Wasmtime 46.0.3 (#14170)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v46.0.3",
+          "summary": "46.0.3 Released 2026-08-20 Fixed Guest controlled-size host heap allocation through WASIp3 streams. GHSA-x84v-gj2h-g759 Filesystem sandbox escape when paths or symlinks contain trailing slashes. GHSA-vqjp-4c8c-hfgg",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-08-20T17:12:50+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "f6b61e301441296e540963f58d25271cc01a8ec5be57c41fb61be2d9cba2c5e6",
+          "title": "Unity 6000.6.0 Beta",
+          "url": "https://unity.com/releases/editor/beta/6000.6.0b9",
+          "summary": "Unity 6000.6.0 Beta",
+          "source": "Unity Beta Releases",
+          "source_url": "https://unity.com/releases/editor/beta-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-08-18T20:23:55+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "4a5f3b9a4f033c0b059d7541b87079aee473cf3acf3f7132261ac05acf2c81d6",
+          "title": "Unity 6000.7.0 Alpha",
+          "url": "https://unity.com/releases/editor/alpha/6000.7.0a5",
+          "summary": "Unity 6000.7.0 Alpha",
+          "source": "Unity Alpha Releases",
+          "source_url": "https://unity.com/releases/editor/alpha-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-08-20T08:56:29+00:00",
+          "trust": 10,
+          "source_boost": 1,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 24
+        },
+        {
+          "entry_id": "a39c1e861fa3c6a473ac2a292dca606a640509fe7d53dcade6a32552ca9840f7",
+          "title": "dev/6.0.10515: Refactor `BinaryViewBase::save`",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.0.10515",
+          "summary": "Save the raw file contents in the default impl of BinaryViewBase::save Pass the view and file accessor into the function so its actually usable Add a simple test Mark view safe functions as unsafe as they cannot be called without upholding the main thread synchronization separately",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-20T15:36:05+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "51c8cfb32c4f6fbc264a38069f10d96796f3a05e0965a864f5cb21be679820e8",
+          "title": "dev/6.0.10513",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.0.10513",
+          "summary": "Document Windows MCP server options",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-20T12:34:21+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-08-20",
       "path": "/public/news/2026-08-20-unity-il2cpp-reverse-engineering-news.html",
