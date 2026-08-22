@@ -1,11 +1,86 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-21T02:37:41.370169+00:00",
+  "last_generated_at": "2026-08-22T02:29:10.695251+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-08-22",
+      "path": "/public/news/2026-08-22-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Binary reverse engineering News — August 22, 2026",
+      "description": "Curated APK and IPA analysis, Binary reverse engineering updates for developers and security researchers. 3 relevant releases and technical developments with…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-08-22T02:29:10.695251+00:00",
+      "entries": [
+        {
+          "entry_id": "3c5a416aacb9408f5fde05958bb7e0654c3cff50a0551c9121694e4df641fc3e",
+          "title": "bilieebiliee1-design/SOMCP — trending GitHub repository",
+          "url": "https://github.com/bilieebiliee1-design/SOMCP",
+          "summary": "SOMCP 是一个运行在 Android 手机上的本地 SO 逆向 MCP 服务器。它通过 Streamable HTTP 暴露 MCP 工具，让客户端可以在手机上完成 ELF 结构分析、Rizin 反汇编/分析、LIEF ELF 修复/重写、补丁会话、构建导出、Cloudflare Tunnel 暴露和可选 APK MCP 桥接 GitHub discovery signal: 143 stars, 43 forks, 4 open issues; language Kotlin; last pushed 2026-08-22.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-24+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-07-19T04:41:04+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Binary reverse engineering",
+            "Native binary tooling",
+            "Dynamic instrumentation"
+          ],
+          "score": 50
+        },
+        {
+          "entry_id": "9b0d9d7187d0ba20911cdbc998235ba86949a92fcdce1129f993aff6a2b1699c",
+          "title": "bl4ckr0ss3/knife — trending GitHub repository",
+          "url": "https://github.com/bl4ckr0ss3/knife",
+          "summary": "A reverse engineer's binary Swiss-army knife in Rust: triage, disassembly, function/CFG recovery, crypto-constant + YARA scanning for PE/ELF/Mach-O. Installs as 'knife'. GitHub discovery signal: 33 stars, 0 forks, 0 open issues; language Rust; last pushed 2026-08-22. Topics: binary-analysis, cli, disassembler, elf, macho, malware-analysis, pe, reverse-engineering, rust, security-tools.",
+          "source": "GitHub Hot Binary Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Abinary-analysis+created%3A%3E%3D2026-04-24+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-08-08T05:44:01+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 43
+        },
+        {
+          "entry_id": "c8edf82a1796381c6b441265594351f4f70ef5a3d7c0f8e7bdbde21d698e3599",
+          "title": "Release v7.3.0",
+          "url": "https://github.com/wasmerio/wasmer/releases/tag/v7.3.0",
+          "summary": "Important For packaging purposes, use the provided wasmer-full-source.tar.xz , which includes all required submodules. This release adds: Async JavaScript API with JSPI support. Experimental artifact format across LLVM, Cranelift, and Singlepass on all Linux targets, including GDB/LLDB profiling support. Full multi-memory support across all compiler backends. Multi-value host functions for Cranelift and LLVM. New CLI capabilities for cronjobs, app CDN cache management, and offline dependency resolution. C API support for externref and funcref. Page-granular mmap support through the updated WASIX libc. Windows support has been removed from the Sys compiler backends, including Singlepass. LLVM support for the RV32 target has been removed. See full list of changes in the CHANGELOG Install this version of wasmer: curl https://get.wasmer.io -sSfL | sh -s \" v7.3.0 \"",
+          "source": "Wasmer Releases",
+          "source_url": "https://github.com/wasmerio/wasmer/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-08-21T14:02:02+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "Malware analysis tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 29
+        }
+      ]
+    },
     {
       "date": "2026-08-21",
       "path": "/public/news/2026-08-21-unity-il2cpp-reverse-engineering-news.html",
