@@ -1,11 +1,84 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-22T02:29:10.695251+00:00",
+  "last_generated_at": "2026-08-23T02:38:05.235159+00:00",
   "source_errors": [
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-08-23",
+      "path": "/public/news/2026-08-23-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — August 23, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 3 relevant releases and technical developments with original sour…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-08-23T02:38:05.235159+00:00",
+      "entries": [
+        {
+          "entry_id": "ba2be3c3dbd81e7c2ad4f9fbd7785a936733481f1e0901a09abe883b5893788e",
+          "title": "NeonTeam58/HSR-OWNER — trending GitHub repository",
+          "url": "https://github.com/NeonTeam58/HSR-OWNER",
+          "summary": "Be Owner Dont Be Slave GitHub discovery signal: 35 stars, 11 forks, 0 open issues; language Rust; last pushed 2026-08-22. Topics: assetstudio, dumper, editor, enka-network, gacha, global-metadata, honkai-star-rail, il2cpp-dumper, mihoyo, mihoyo-hack.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-08-19T13:59:09+00:00",
+          "trust": 8,
+          "source_boost": 18,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation",
+            "Unity asset extraction"
+          ],
+          "score": 60
+        },
+        {
+          "entry_id": "f24b2e9c21b36d59e592815b16e012df3c6ca704b1ce53ed6a0693b489f3c641",
+          "title": "fission-systems/Fission — trending GitHub repository",
+          "url": "https://github.com/fission-systems/Fission",
+          "summary": "Rust-first reverse-engineering and decompilation workspace featuring Ghidra SLEIGH lifting, NIR/HIR structuring, and AI-assisted terminal/desktop UIs. GitHub discovery signal: 8 stars, 1 forks, 0 open issues; language Rust; last pushed 2026-08-23. Topics: ai, binary-analysis, compiler, decompilation, decompiler, dioxus, disassembler, ghidra, intermediate-representation, reverse-engineering.",
+          "source": "GitHub Hot Binary Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Abinary-analysis+created%3A%3E%3D2026-04-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-07-23T14:06:58+00:00",
+          "trust": 8,
+          "source_boost": 10,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 38
+        },
+        {
+          "entry_id": "9389db18bb99de8583343db02f43c77b2e596e3273603700a8fe21d72a1e081b",
+          "title": "pcm720/dvrpwned — trending GitHub repository",
+          "url": "https://github.com/pcm720/dvrpwned",
+          "summary": "The first ever working custom firmware for the PSX DESR DVRP GitHub discovery signal: 76 stars, 4 forks, 0 open issues; language C; last pushed 2026-08-16.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-08-15T19:30:50+00:00",
+          "trust": 8,
+          "source_boost": 18,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 30
+        }
+      ]
+    },
     {
       "date": "2026-08-22",
       "path": "/public/news/2026-08-22-unity-il2cpp-reverse-engineering-news.html",
