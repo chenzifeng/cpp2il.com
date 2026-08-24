@@ -1,11 +1,125 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-23T02:38:05.235159+00:00",
+  "last_generated_at": "2026-08-24T02:38:33.949037+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-08-24",
+      "path": "/public/news/2026-08-24-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Native binary tooling News — August 24, 2026",
+      "description": "Curated Binary reverse engineering, Native binary tooling updates for developers and security researchers. 5 relevant releases and technical developments wit…",
+      "item_count": 5,
+      "new_item_count": 5,
+      "updated_at": "2026-08-24T02:38:33.949037+00:00",
+      "entries": [
+        {
+          "entry_id": "b620d720a1612fa646bcf290375d94725a3d9b6111a9e420300bfb2c621b9ea6",
+          "title": "duty1g/x64dbg-mcp-server — trending GitHub repository",
+          "url": "https://github.com/duty1g/x64dbg-mcp-server",
+          "summary": "x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg programmatically: set breakpoints, step through code, read memory, dump registers, and more. Built with Zig — zero dependencies, single-binary output, cros GitHub discovery signal: 936 stars, 95 forks, 0 open issues; language Zig; last pushed 2026-08-23. Topics: ai-agents, ai-debugging, binary-analysis, claude, claude-code, malware-analysis, malware-research, malware-scanner, mcp, mcp-server.",
+          "source": "GitHub Hot Binary Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Abinary-analysis+created%3A%3E%3D2026-04-26+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-08-22T14:28:41+00:00",
+          "trust": 8,
+          "source_boost": 21,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 54
+        },
+        {
+          "entry_id": "2715357bf9ff0a3da97c3664a2a8c87d2586fc399468b3060645cfcfd92dc2e6",
+          "title": "haoliufanka/xuanjing-android-reverse-skill — trending GitHub repository",
+          "url": "https://github.com/haoliufanka/xuanjing-android-reverse-skill",
+          "summary": "玄镜 Android 逆向 Skill｜覆盖 APK、JADX、Frida、JNI、Native/SO、WebView、接口签名与离线复现。Evidence-driven Android reverse engineering for authorized targets. GitHub discovery signal: 3 stars, 1 forks, 0 open issues; language Python; last pushed 2026-07-30. Topics: android, android-reverse-engineering, apk-analysis, codex-skill, frida, jni, native-analysis, reverse-engineering, xuanjing.",
+          "source": "GitHub Hot Android Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-reverse-engineering+created%3A%3E%3D2026-05-26+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-mobile",
+          "published": "2026-07-30T06:04:31+00:00",
+          "trust": 8,
+          "source_boost": 9,
+          "topic_terms": [
+            "Android reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "Dynamic instrumentation"
+          ],
+          "score": 45
+        },
+        {
+          "entry_id": "e589321dc591a533dda6429a2b8f3b6e51f3aa64f2cf0311710a8789554817c7",
+          "title": "1rhino2/fnprint — trending GitHub repository",
+          "url": "https://github.com/1rhino2/fnprint",
+          "summary": "match functions in binaries by what they do, not what their bytes look like. behavioral function fingerprinting via microexecution. GitHub discovery signal: 28 stars, 2 forks, 0 open issues; language Rust; last pushed 2026-08-24. Topics: binary-analysis, binary-diffing, binary-similarity, capstone, ctf-tools, dynamic-analysis, elf, emulation, firmware, function-fingerprinting.",
+          "source": "GitHub Hot Binary Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Abinary-analysis+created%3A%3E%3D2026-04-26+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-08-19T06:22:03+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 42
+        },
+        {
+          "entry_id": "cbeec70617f67ca99f43c9590a6641aedaaa26d705f240176c53cbb295b4e8e1",
+          "title": "A-Box-of-Tools/website — trending GitHub repository",
+          "url": "https://github.com/A-Box-of-Tools/website",
+          "summary": "Source for https://abox.tools/ — a box of small web tools for images, video, audio, PDFs and text. Your files never leave your machine, because there is no code path that could send them anywhere. GitHub discovery signal: 74 stars, 1 forks, 1 open issues; language HTML; last pushed 2026-08-24. Topics: client-side, image-tools, no-upload, private, webassembly.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-05-26+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-08-19T04:32:35+00:00",
+          "trust": 8,
+          "source_boost": 18,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "5154ff79f58b9f8880bcca158ff1a342b58ef1b947d113173d9b862af16191bf",
+          "title": "uzokingkong/BTG-packer — trending GitHub repository",
+          "url": "https://github.com/uzokingkong/BTG-packer",
+          "summary": "A Rust-based x86-64 PE protection framework with RISC program virtualization, polymorphic VM bytecode, CFG transformation, runtime hardening, integrity checks, and execution verification. GitHub discovery signal: 24 stars, 3 forks, 0 open issues; language Rust; last pushed 2026-08-23. Topics: anti-debug, anti-dump, binary-protection, malware, obfuscation, obfuscator, obfuscator-llvm, obfuscators, packer, pe-packer.",
+          "source": "GitHub Hot Program Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=%22program+analysis%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-02-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-research",
+          "published": "2026-08-03T10:21:03+00:00",
+          "trust": 8,
+          "source_boost": 13,
+          "topic_terms": [
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 24
+        }
+      ]
+    },
     {
       "date": "2026-08-23",
       "path": "/public/news/2026-08-23-unity-il2cpp-reverse-engineering-news.html",
