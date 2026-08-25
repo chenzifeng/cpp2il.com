@@ -1,10 +1,189 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-24T02:38:33.949037+00:00",
+  "last_generated_at": "2026-08-25T02:32:12.046224+00:00",
   "source_errors": [
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-08-25",
+      "path": "/public/news/2026-08-25-unity-il2cpp-reverse-engineering-news.html",
+      "title": "WebAssembly tooling & WebAssembly runtime News — August 25, 2026",
+      "description": "Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 8 relevant releases and technical developments with origina…",
+      "item_count": 8,
+      "new_item_count": 8,
+      "updated_at": "2026-08-25T02:32:12.046224+00:00",
+      "entries": [
+        {
+          "entry_id": "5ece31f58ca87c409e428e42bb22a4faa577648940ab17210ba10c7639a8bf8a",
+          "title": "wasi-sdk-34",
+          "url": "https://github.com/WebAssembly/wasi-sdk/releases/tag/wasi-sdk-34",
+          "summary": "What's Changed reduce whitespace differences among cmake toolchain files by @yamt in #631 Update CppExceptions.md documentation by @alexcrichton in #630 Add WASI_SDK_BUILD_SHARED option by @rvandermeulen in #632 Set CMAKE_EXECUTABLE_SUFFIX in toolchain files by @alexcrichton in #634 Update wasm-component-ld by @alexcrichton in #635 Remove wasm32-wasi and wasm32-wasi-threads targets by @alexcrichton in #637 More work towards a wasip3 target by @alexcrichton in #636 Bump wasm-component-ld version by @alexcrichton in #642 Prepare for 34-rc.2 by @alexcrichton in #644 Update to the latest wasi-libc by @alexcrichton in #645 Update wasi-libc again by @alexcrichton in #646 Create a separate sysroot for coop threads by @alexcrichton in #647 Update LLVM PR patch file by @alexcrichton in #649 Sync LLVM patches with landed PRs by @alexcrichton in #650 Prepare for wasi-sdk-34-rc.3 by @alexcrichton in #651 Update LLVM's release branch commit by @alexcrichton in #652 New Contributors @rvandermeulen made their first contribution in #632 Full Changelog : wasi-sdk-33...wasi-sdk-34",
+          "source": "WASI SDK Releases",
+          "source_url": "https://github.com/WebAssembly/wasi-sdk/releases.atom",
+          "category": "webassembly",
+          "published": "2026-08-25T00:13:18+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 44
+        },
+        {
+          "entry_id": "532ce493e4bb6f7cf86bf9a170fd02354956c8361896a1141a23dc36d8705080",
+          "title": "1.3.11",
+          "url": "https://github.com/AssetRipper/AssetRipper/releases/tag/1.3.11",
+          "summary": "Premium Edition The premium edition can be acquired here . What's Changed Set ModuleDefinition.Mvid s in ForwardingAssemblyGenerator by @YoshiRulz in #2100 Add search functionality with instant filtering by @misterbubb in #2104 Collection page improvements by @ssap0 in #2110 Bump AssetRipper.Text.SourceGeneration from 1.2.2 to 1.2.3 by @dependabot [bot] in #2098 Bump crazy-max/ghaction-chocolatey from 3 to 4 by @dependabot [bot] in #2111 Bump AssetRipper.NativeDialogs from 1.1.1 to 1.1.2 by @dependabot [bot] in #2112 Bump Fmod5Sharp from 3.0.1 to 3.1.0 by @dependabot [bot] in #2114 Bump Swashbuckle.AspNetCore from 10.1.0 to 10.1.4 by @dependabot [bot] in #2116 Bump the nunit group by @dependabot [bot] in #2115 and #2124 Bump Microsoft.AspNetCore.OpenApi from 10.0.2 to 10.0.3 by @dependabot [bot] in #2108 Bump System.Text.Json from 10.0.2 to 10.0.3 by @dependabot [bot] in #2127 Bump actions/upload-artifact from 6 to 7 by @dependabot [bot] in #2128 Bump SharpCompress from 0.44.4 to 0.46.3 Fix regression in texture normal unpacking Export csproj files using the SDK style Improve export ID determinism Support recent versions of Unity Support recent Il2Cpp versions Fix issue where location was out of range for the vertex input semantics (premium edition) Improve matching name assignment for textures, samplers, and uniform buffers (premium edition) Improve shader metadata parsing (premium edition) Rewrote SPIRV bindings and upgraded to a newer version of the library (premium edition) New Contributors @misterbubb made their first contribution in #2104 @ssap0 made their first contribution in #2110 Full Changelog : 1.3.10...1.3.11",
+          "source": "AssetRipper Releases",
+          "source_url": "https://github.com/AssetRipper/AssetRipper/releases.atom",
+          "category": "unity-assets",
+          "published": "2026-08-24T18:57:55+00:00",
+          "trust": 9,
+          "source_boost": 5,
+          "topic_terms": [
+            "Unity asset extraction",
+            "Unity source code recovery"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "Unity source code recovery",
+            "Unity asset extraction"
+          ],
+          "score": 44
+        },
+        {
+          "entry_id": "592aa4fd2211dfc9b8bc5e5a2835aca3ead244eac0aa16b3c46715a07b12522f",
+          "title": "1.3.12",
+          "url": "https://github.com/AssetRipper/AssetRipper/releases/tag/1.3.12",
+          "summary": "Premium Edition The premium edition can be acquired here . What's Changed Bump AssetRipper.TextureDecoder from 2.6.0 to 2.6.1 by @dependabot [bot] in #2137 Use Path.GetTempPath() when the AssetRipper directory is not writable by @UlyssesZh in #2153 Bump NUnit by @dependabot [bot] in #2147 Bump SharpCompress from 0.47.0 to 0.47.1 by @dependabot [bot] in #2154 and #2162 Bump AsmResolver.Symbols.Pdb from 6.0.0-beta.5 to 6.0.0-rc.1 by @dependabot [bot] in #2156 Bump Microsoft.CodeAnalysis.Analyzers and Microsoft.CodeAnalysis.CSharp by @dependabot [bot] in #2160 Bump Microsoft.AspNetCore.OpenApi from 10.0.3 to 10.0.5 by @dependabot [bot] in #2159 Bump Swashbuckle.AspNetCore from 10.1.4 to 10.1.5 by @dependabot [bot] in #2163 Translations update from Weblate by @Weblate-Samboy-Dev in #2129 Ensure that MixedGameStructure includes all serialized files in a directory Call GC.Collect when Reset button is pressed Don't run processing if no asset collections loaded Bump AssetRipper.IO.Endian to 2.1.0 Use an inline array in SerializedTypeBase instead of byte[] Use TextWriter in JsonContentExtractor Only read the header when getting the Unity version from data.unity3d Updated the list of dependency licenses Clear IAssetBundle::PreloadTable to reduce memory usage Change path for secondary assets when grouping by bundle name Add support for Windows Phone game structure Fix file extension for GameAssembly on Linux games Update dxil-spirv (premium edition) Fix bug when stage input length doesn't match vertex input semantics (premium edition) Automatically choose the best gpu platform to decompile when decompiling shaders with multiple platforms (premium edition) Full Changelog : 1.3.11...1.3.12",
+          "source": "AssetRipper Releases",
+          "source_url": "https://github.com/AssetRipper/AssetRipper/releases.atom",
+          "category": "unity-assets",
+          "published": "2026-08-24T18:57:14+00:00",
+          "trust": 9,
+          "source_boost": 5,
+          "topic_terms": [
+            "Unity asset extraction",
+            "Unity source code recovery"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "Unity source code recovery",
+            "Unity asset extraction"
+          ],
+          "score": 44
+        },
+        {
+          "entry_id": "8af7764b67fdce86af98606178c7a383cdef935615824b7007aa2b49c91e4b77",
+          "title": "v1.258.0",
+          "url": "https://github.com/bytecodealliance/wasm-tools/releases/tag/v1.258.0",
+          "summary": "What's Changed Document that --realloc-via-memory-grow only affects adapters by @Lstarsky0 in #2613 fix: remap type indices of {stream,future}.cancel-{read,write} by @rvolosatovs in #2615 Remove post-return hooks, adjust sync task hooks by @alexcrichton in #2619 Add wasip3 compat to wit-dylib by @alexcrichton in #2617 Rebuild libdl.so without __wasi_init_tp import by @alexcrichton in #2616 Release wasm-tools 1.258.0 by @github-actions[bot] in #2620 Full Changelog : v1.257.1...v1.258.0",
+          "source": "wasm-tools Releases",
+          "source_url": "https://github.com/bytecodealliance/wasm-tools/releases.atom",
+          "category": "webassembly",
+          "published": "2026-08-24T17:11:32+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime",
+            "Decompiler research"
+          ],
+          "score": 39
+        },
+        {
+          "entry_id": "c9fe1311c8b49a44b2b5e92347e4c57aa0a9746a44162c989ccb8509f5dff230",
+          "title": "v48.0.1: Release Wasmtime 48.0.1 (#14197)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v48.0.1",
+          "summary": "48.0.1 Released 2026-08-24. Fixed Context slots in component compositions are now correctly managed. #14139 The Host header is now set by default for HTTP requests sent with WASIp2. #14167",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-08-24T20:03:55+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "475a911c73e7b31ea04630e386f1dcf753b3408aaae79cefcd440e300d753d41",
+          "title": "Krainium/ApkSignatureKillerX — trending GitHub repository",
+          "url": "https://github.com/Krainium/ApkSignatureKillerX",
+          "summary": "Next-gen Android APK signature verification bypass. Defeats direct-syscall checks, VMP packers (Ijiami 4th-gen), and preserves Play Integrity via bind mount. GitHub discovery signal: 5 stars, 2 forks, 0 open issues; language C; last pushed 2026-08-19. Topics: android, android-reverse-engineering, android-security, anti-tamper, apk-modding, apk-signature, arm64, bytehook, hooking, magisk.",
+          "source": "GitHub Hot Android Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-reverse-engineering+created%3A%3E%3D2026-05-27+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-mobile",
+          "published": "2026-08-15T04:18:16+00:00",
+          "trust": 8,
+          "source_boost": 12,
+          "topic_terms": [
+            "Android reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering"
+          ],
+          "score": 32
+        },
+        {
+          "entry_id": "889e72104d4f7f28243d50975208b2e07e153aae927fbebf02946b96d6b6a7d0",
+          "title": "dev/6.0.10526",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.0.10526",
+          "summary": "Delay-load dbghelp.dll in bindiff_similarity (Fix #1860 )",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-24T15:17:30+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "e5447ec701ffa6bdc6945456e035ec4b6ce30ad13a8b33031a2c05cce914272a",
+          "title": "v0.9.0",
+          "url": "https://github.com/wasm3/wasm3/releases/tag/v0.9.0",
+          "summary": "Awesome updates 📝 1,700+ commits 👥 2,300+ followers on X (Twitter) 🌟 8,000+ GitHub stargazers 🚧 Wasm3 now mostly conforms to the Wasm 2.0 specification + parts of Wasm 3.0 New in Wasm3 v0.9.0 🎉 Wasm3 now fully validates WebAssembly modules 🎉 Implemented WebAssembly features : Extended constant expressions Bulk memory operations (now fully supported) Reference types Typed function references (partial) Tail Calls (requires musttail support in your compiler) Custom Page Sizes Compact Import Section Other improvements LOTS of security and stability fixes All known OSS-Fuzz findings have been fixed 😱 d_m3MaxFunctionStackHeight increased to 8000 by default Added native stack tracking and limitation Updated all dependencies and toolchains TinyCC support Cosmopolitan updated to use cosmocc 👉 If you like Wasm3, please give us a GitHub star! 🌟",
+          "source": "wasm3 Releases",
+          "source_url": "https://github.com/wasm3/wasm3/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-08-24T17:27:02+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 21
+        }
+      ]
+    },
     {
       "date": "2026-08-24",
       "path": "/public/news/2026-08-24-unity-il2cpp-reverse-engineering-news.html",

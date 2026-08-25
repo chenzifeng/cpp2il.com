@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WebAssembly tooling &amp; WebAssembly runtime News — August 25, 2026 | CPP2IL</title>
+  <meta name="description" content="Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 8 relevant releases and technical developments with origina…">
+  <link rel="canonical" href="https://cpp2il.com/public/news/2026-08-25-unity-il2cpp-reverse-engineering-news.html">
+  <link rel="alternate" type="application/rss+xml" title="CPP2IL News RSS" href="https://cpp2il.com/public/news.xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WebAssembly tooling &amp; WebAssembly runtime News — August 25, 2026">
+  <meta property="og:description" content="Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 8 relevant releases and technical developments with origina…">
+  <meta property="og:url" content="https://cpp2il.com/public/news/2026-08-25-unity-il2cpp-reverse-engineering-news.html">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "WebAssembly tooling & WebAssembly runtime News — August 25, 2026", "description": "Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 8 relevant releases and technical developments with origina…", "url": "https://cpp2il.com/public/news/2026-08-25-unity-il2cpp-reverse-engineering-news.html", "dateModified": "2026-08-25T02:32:12.046224+00:00", "isPartOf": {"@type": "WebSite", "name": "CPP2IL", "url": "https://cpp2il.com/"}, "mainEntity": {"@type": "ItemList", "numberOfItems": 8, "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://github.com/WebAssembly/wasi-sdk/releases/tag/wasi-sdk-34", "name": "wasi-sdk-34"}, {"@type": "ListItem", "position": 2, "url": "https://github.com/AssetRipper/AssetRipper/releases/tag/1.3.11", "name": "1.3.11"}, {"@type": "ListItem", "position": 3, "url": "https://github.com/AssetRipper/AssetRipper/releases/tag/1.3.12", "name": "1.3.12"}, {"@type": "ListItem", "position": 4, "url": "https://github.com/bytecodealliance/wasm-tools/releases/tag/v1.258.0", "name": "v1.258.0"}, {"@type": "ListItem", "position": 5, "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v48.0.1", "name": "v48.0.1: Release Wasmtime 48.0.1 (#14197)"}, {"@type": "ListItem", "position": 6, "url": "https://github.com/Krainium/ApkSignatureKillerX", "name": "Krainium/ApkSignatureKillerX — trending GitHub repository"}, {"@type": "ListItem", "position": 7, "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.0.10526", "name": "dev/6.0.10526"}, {"@type": "ListItem", "position": 8, "url": "https://github.com/wasm3/wasm3/releases/tag/v0.9.0", "name": "v0.9.0"}]}, "publisher": {"@type": "Organization", "name": "CPP2IL", "url": "https://cpp2il.com/", "logo": {"@type": "ImageObject", "url": "https://cpp2il.com/logo.png"}}}</script>
+  <style>
+    :root { color-scheme:dark; --bg:#080b12; --panel:#111725; --text:#eef3ff; --muted:#9da9bd; --line:#263146; --accent:#72a7ff; }
+    * { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif; }
+    a { color:var(--accent); } .wrap { width:min(1080px,calc(100% - 32px)); margin:auto; }
+    header { padding:64px 0 28px; border-bottom:1px solid var(--line); } .eyebrow { color:var(--accent); font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { margin:.25em 0; font-size:clamp(2rem,6vw,4.3rem); line-height:1.04; } .lede { max-width:820px; color:var(--muted); font-size:1.08rem; }
+    .tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:22px; } .tag { text-decoration:none; padding:6px 11px; border:1px solid var(--line); border-radius:999px; background:#0d1320; }
+    main { display:grid; gap:18px; padding:32px 0 64px; } .card { padding:24px; border:1px solid var(--line); border-radius:18px; background:var(--panel); }
+    .card h2 { margin:.45em 0; line-height:1.25; } .card h2 a { color:var(--text); text-decoration:none; } .card h2 a:hover { color:var(--accent); }
+    .meta { display:flex; justify-content:space-between; gap:12px; color:var(--muted); font-size:.9rem; } .category { color:#c6d6f3; border:1px solid var(--line); border-radius:6px; padding:2px 6px; margin-right:6px; }
+    .why { color:#c6d1e5; } .source { font-weight:700; text-decoration:none; } footer { padding:28px 0 50px; color:var(--muted); border-top:1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <header><div class="wrap">
+    <div class="eyebrow">CPP2IL Technical News</div>
+    <h1>WebAssembly tooling &amp; WebAssembly runtime News — August 25, 2026</h1>
+    <p class="lede">Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 8 relevant releases and technical developments with origina… This page links to original publishers, uses short excerpts, and does not reproduce complete articles.</p>
+    <div class="tags"><a class="tag" href="/">WebAssembly tooling</a><a class="tag" href="/">WebAssembly runtime</a><a class="tag" href="/">Unity IL2CPP</a><a class="tag" href="/">Unity source code recovery</a><a class="tag" href="/">Unity asset extraction</a><a class="tag" href="/news/">Decompiler research</a><a class="tag" href="/">APK and IPA analysis</a><a class="tag" href="/">Android reverse engineering</a><a class="tag" href="/">Binary reverse engineering</a><a class="tag" href="/public/news/">trending GitHub repository</a><a class="tag" href="/public/news/">trending GitHub</a><a class="tag" href="/public/news/">GitHub repository</a><a class="tag" href="/public/news/">Unity</a><a class="tag" href="/public/news/">wasm</a></div>
+  </div></header>
+  <main class="wrap">
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Webassembly</span> WASI SDK Releases</span>
+            <time datetime="2026-08-25T00:13:18+00:00">2026-08-25</time>
+          </div>
+          <h2><a href="https://github.com/WebAssembly/wasi-sdk/releases/tag/wasi-sdk-34" rel="noopener noreferrer">wasi-sdk-34</a></h2>
+          <p>What&#x27;s Changed reduce whitespace differences among cmake toolchain files by @yamt in #631 Update CppExceptions.md documentation by @alexcrichton in #630 Add WASI_SDK_BUILD_SHARED option by @rvandermeulen in #632 Set CMAKE_EXECUTABLE_SUFFIX in toolchain files by @alexcrichton in #634 Update wasm-component-ld by @alexcrichton in #635 Remove wasm32-wasi and wa…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to WebAssembly tooling, WebAssembly runtime.</p>
+          <a class="source" href="https://github.com/WebAssembly/wasi-sdk/releases/tag/wasi-sdk-34" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Unity Assets</span> AssetRipper Releases</span>
+            <time datetime="2026-08-24T18:57:55+00:00">2026-08-24</time>
+          </div>
+          <h2><a href="https://github.com/AssetRipper/AssetRipper/releases/tag/1.3.11" rel="noopener noreferrer">1.3.11</a></h2>
+          <p>Premium Edition The premium edition can be acquired here . What&#x27;s Changed Set ModuleDefinition.Mvid s in ForwardingAssemblyGenerator by @YoshiRulz in #2100 Add search functionality with instant filtering by @misterbubb in #2104 Collection page improvements by @ssap0 in #2110 Bump AssetRipper.Text.SourceGeneration from 1.2.2 to 1.2.3 by @dependabot [bot] in…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Unity IL2CPP, Unity source code recovery, Unity asset extraction.</p>
+          <a class="source" href="https://github.com/AssetRipper/AssetRipper/releases/tag/1.3.11" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Unity Assets</span> AssetRipper Releases</span>
+            <time datetime="2026-08-24T18:57:14+00:00">2026-08-24</time>
+          </div>
+          <h2><a href="https://github.com/AssetRipper/AssetRipper/releases/tag/1.3.12" rel="noopener noreferrer">1.3.12</a></h2>
+          <p>Premium Edition The premium edition can be acquired here . What&#x27;s Changed Bump AssetRipper.TextureDecoder from 2.6.0 to 2.6.1 by @dependabot [bot] in #2137 Use Path.GetTempPath() when the AssetRipper directory is not writable by @UlyssesZh in #2153 Bump NUnit by @dependabot [bot] in #2147 Bump SharpCompress from 0.47.0 to 0.47.1 by @dependabot [bot] in #215…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Unity IL2CPP, Unity source code recovery, Unity asset extraction.</p>
+          <a class="source" href="https://github.com/AssetRipper/AssetRipper/releases/tag/1.3.12" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Webassembly</span> wasm-tools Releases</span>
+            <time datetime="2026-08-24T17:11:32+00:00">2026-08-24</time>
+          </div>
+          <h2><a href="https://github.com/bytecodealliance/wasm-tools/releases/tag/v1.258.0" rel="noopener noreferrer">v1.258.0</a></h2>
+          <p>What&#x27;s Changed Document that --realloc-via-memory-grow only affects adapters by @Lstarsky0 in #2613 fix: remap type indices of {stream,future}.cancel-{read,write} by @rvolosatovs in #2615 Remove post-return hooks, adjust sync task hooks by @alexcrichton in #2619 Add wasip3 compat to wit-dylib by @alexcrichton in #2617 Rebuild libdl.so without __wasi_init_tp…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to WebAssembly tooling, WebAssembly runtime, Decompiler research.</p>
+          <a class="source" href="https://github.com/bytecodealliance/wasm-tools/releases/tag/v1.258.0" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Webassembly Runtime</span> Wasmtime Releases</span>
+            <time datetime="2026-08-24T20:03:55+00:00">2026-08-24</time>
+          </div>
+          <h2><a href="https://github.com/bytecodealliance/wasmtime/releases/tag/v48.0.1" rel="noopener noreferrer">v48.0.1: Release Wasmtime 48.0.1 (#14197)</a></h2>
+          <p>48.0.1 Released 2026-08-24. Fixed Context slots in component compositions are now correctly managed. #14139 The Host header is now set by default for HTTP requests sent with WASIp2. #14167</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to WebAssembly runtime.</p>
+          <a class="source" href="https://github.com/bytecodealliance/wasmtime/releases/tag/v48.0.1" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Github Hot Mobile</span> GitHub Hot Android Reverse Engineering</span>
+            <time datetime="2026-08-15T04:18:16+00:00">2026-08-15</time>
+          </div>
+          <h2><a href="https://github.com/Krainium/ApkSignatureKillerX" rel="noopener noreferrer">Krainium/ApkSignatureKillerX — trending GitHub repository</a></h2>
+          <p>Next-gen Android APK signature verification bypass. Defeats direct-syscall checks, VMP packers (Ijiami 4th-gen), and preserves Play Integrity via bind mount. GitHub discovery signal: 5 stars, 2 forks, 0 open issues; language C; last pushed 2026-08-19. Topics: android, android-reverse-engineering, android-security, anti-tamper, apk-modding, apk-signature, ar…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to APK and IPA analysis, Android reverse engineering.</p>
+          <a class="source" href="https://github.com/Krainium/ApkSignatureKillerX" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Reverse Engineering</span> Binary Ninja API Releases</span>
+            <time datetime="2026-08-24T15:17:30+00:00">2026-08-24</time>
+          </div>
+          <h2><a href="https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.0.10526" rel="noopener noreferrer">dev/6.0.10526</a></h2>
+          <p>Delay-load dbghelp.dll in bindiff_similarity (Fix #1860 )</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Binary reverse engineering, Decompiler research.</p>
+          <a class="source" href="https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.0.10526" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Webassembly Runtime</span> wasm3 Releases</span>
+            <time datetime="2026-08-24T17:27:02+00:00">2026-08-24</time>
+          </div>
+          <h2><a href="https://github.com/wasm3/wasm3/releases/tag/v0.9.0" rel="noopener noreferrer">v0.9.0</a></h2>
+          <p>Awesome updates 📝 1,700+ commits 👥 2,300+ followers on X (Twitter) 🌟 8,000+ GitHub stargazers 🚧 Wasm3 now mostly conforms to the Wasm 2.0 specification + parts of Wasm 3.0 New in Wasm3 v0.9.0 🎉 Wasm3 now fully validates WebAssembly modules 🎉 Implemented WebAssembly features : Extended constant expressions Bulk memory operations (now fully supported) Referen…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to WebAssembly runtime.</p>
+          <a class="source" href="https://github.com/wasm3/wasm3/releases/tag/v0.9.0" rel="noopener noreferrer">Read the original source →</a>
+        </article></main>
+  <footer><div class="wrap">
+    <a href="/">CPP2IL</a> · <a href="/public/news/">News archive</a> · Updated 2026-08-25 02:32 UTC
+  </div></footer>
+</body>
+</html>
