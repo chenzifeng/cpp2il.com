@@ -2,24 +2,24 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 70,
+      "count": 72,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-25"
+      "last_seen": "2026-08-26"
     },
     "trending GitHub": {
-      "count": 70,
+      "count": 72,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-25"
+      "last_seen": "2026-08-26"
     },
     "GitHub repository": {
-      "count": 70,
+      "count": 72,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-25"
+      "last_seen": "2026-08-26"
     },
     "Unity": {
-      "count": 28,
+      "count": 29,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-08-25"
+      "last_seen": "2026-08-26"
     },
     "wasm": {
       "count": 26,
@@ -31,20 +31,20 @@
       "first_seen": "2026-07-20",
       "last_seen": "2026-08-23"
     },
+    "decompilation": {
+      "count": 17,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-08-26"
+    },
     "metadata": {
       "count": 17,
       "first_seen": "2026-07-24",
       "last_seen": "2026-08-25"
     },
-    "decompilation": {
-      "count": 16,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-08-23"
-    },
     "WebAssembly": {
-      "count": 10,
+      "count": 11,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-25"
+      "last_seen": "2026-08-26"
     },
     "reverse engineering": {
       "count": 10,

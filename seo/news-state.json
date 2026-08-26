@@ -1,11 +1,139 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-25T02:32:12.046224+00:00",
+  "last_generated_at": "2026-08-26T02:40:11.758198+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-08-26",
+      "path": "/public/news/2026-08-26-unity-il2cpp-reverse-engineering-news.html",
+      "title": "WebAssembly tooling & WebAssembly runtime News — August 26, 2026",
+      "description": "Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 6 relevant releases and technical developments with origina…",
+      "item_count": 6,
+      "new_item_count": 6,
+      "updated_at": "2026-08-26T02:40:11.758198+00:00",
+      "entries": [
+        {
+          "entry_id": "c0cddf0d22d41992cb08d7e55cfcf4bd79474ba933b2d32d7d8ccbd53632c907",
+          "title": "N0zoM1z0/th08-web — trending GitHub repository",
+          "url": "https://github.com/N0zoM1z0/th08-web",
+          "summary": "One browser tab. Two legal DAT files. One endless night. Source-built C++ → WebAssembly port of Touhou 8. GitHub discovery signal: 55 stars, 0 forks, 0 open issues; language C++; last pushed 2026-08-26. Topics: browser-game, bullet-hell, cpp, danmaku, emscripten, game-port, imperishable-night, th08, touhou, touhou-games.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-05-28+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-08-24T23:31:21+00:00",
+          "trust": 8,
+          "source_boost": 18,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 45
+        },
+        {
+          "entry_id": "a707ee2a38ba5d95c764ca3d93ca17f28055f031127ce7fd3de2de7da5956b60",
+          "title": "N0zoM1z0/th08 — trending GitHub repository",
+          "url": "https://github.com/N0zoM1z0/th08",
+          "summary": "Source reconstruction of 東方永夜抄 ～ Imperishable Night 1.00d GitHub discovery signal: 92 stars, 1 forks, 0 open issues; language C++; last pushed 2026-08-24. Topics: decompilation, game-preservation, ida-pro, msvc, reccmp, reverse-engineering, th08, touhou, touhou-games, touhou-project.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-28+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-08-13T02:24:08+00:00",
+          "trust": 8,
+          "source_boost": 18,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 30
+        },
+        {
+          "entry_id": "da0b12bda21ec05965185b135fe3f320935f3637f2d7cda407748d620d39a70c",
+          "title": "StabQ: Quantum Program Analysis via Weighted Stabilizer Representations",
+          "url": "https://arxiv.org/abs/2608.24144v1",
+          "summary": "Quantum program analysis remains challenging due to the exponentially large state space of quantum programs and the difficulty of precisely characterizing their execution behavior. In particular, non-Clifford operations introduce additional complexity that limits the applicability of stabilizer-based techniques. Although stabilizer representations provide compact descriptions for Clifford circuits, their limited expressiveness prevents them from directly supporting general quantum program analysis. In this work, we propose StabQ, a symbolic execution framework for quantum program analysis based on stabilizer representations. StabQ extends stabilizer-based symbolic execution beyond Clifford-only programs by introducing a symbolic state representation that captures and propagates quantum state evolution while preserving execution semantics. Based on this representation, StabQ constructs a Tableau Chain that represents the evolution of intermediate symbolic states throughout program execution and enables reusable analysis of quantum program executions. Furthermore, StabQ incorporates tableau consolidation and global-phase recovery mechanisms to mitigate symbolic state growth during execution. Building upon the Tableau Chain, StabQ supports multiple quantum program analysis tasks, including quantum state reconstruction, entanglement analysis, and Clifford-property detection. We evaluate StabQ on three benchmark suites---Algorithms, MQT Bench, and QASMBench. The results demonstrate that StabQ constructs semantically consistent symbolic models, accurately preserves quantum state evolution, and effectively supports downstream analysis tasks across diverse quantum programs.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-08-25T07:08:25+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 29
+        },
+        {
+          "entry_id": "f0b94a4c4755f6ad2bc9ef1f7c4e18da049b49f7a960cb7553328ac54bad9b14",
+          "title": "dev/6.1.10530",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10530",
+          "summary": "[DWARF] Commit each distinct debug info type once, not once per decla…",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-25T21:36:00+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "a95d789c30d2476a1e4ba2c7b1c989ffd5565d6e2e1f5b7cb06fa1f939ee1ad0",
+          "title": "dev/6.1.10528",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10528",
+          "summary": "Delay-load dbghelp.dll in bindiff_similarity (Fix #1860 )",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-24T15:17:30+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "c31a373d43d669407dd0770855e02160deac31fb41ef0ea32ccb2920951141cd",
+          "title": "Unite Seoul 2026 Keynote Recap: Announcing Unity 7",
+          "url": "https://unity.com/blog/unite-seoul-keynote-2026-recap",
+          "summary": "Unite Seoul 2026 Keynote announced the release of Unity 7, offering a sneak peek of some of the upcoming features, and major updates, including modern CoreCLR and .NET, 2D and 3D graphics tooling, and a free Unity CLI and MCP server to power better collaboration inside and outside the Unity Editor. The event also previewed updates to the In-App Purchase (IAP) SDK for direct-to-consumer commerce, ad creative enhancements powered by Unity Vector, and new tools for Industry enterprise customers.",
+          "source": "Unity Official Blog",
+          "source_url": "https://blog.unity.com/rss",
+          "category": "unity-official",
+          "published": "2026-07-21T00:00:00+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 13
+        }
+      ]
+    },
     {
       "date": "2026-08-25",
       "path": "/public/news/2026-08-25-unity-il2cpp-reverse-engineering-news.html",
