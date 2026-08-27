@@ -1,11 +1,127 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-26T02:40:11.758198+00:00",
+  "last_generated_at": "2026-08-27T11:13:35.944689+00:00",
   "source_errors": [
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-08-27",
+      "path": "/public/news/2026-08-27-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Android reverse engineering & Binary reverse engineering News — August 27, 2026",
+      "description": "Curated Android reverse engineering, Binary reverse engineering updates for developers and security researchers. 5 relevant releases and technical developmen…",
+      "item_count": 5,
+      "new_item_count": 5,
+      "updated_at": "2026-08-27T11:13:35.944689+00:00",
+      "entries": [
+        {
+          "entry_id": "e3ffe122efe8ba362e5af3ff2971576f55fb89d802545c5bd951bae54f2148b8",
+          "title": "TheQmaks/areclaw — trending GitHub repository",
+          "url": "https://github.com/TheQmaks/areclaw",
+          "summary": "Android Reverse Engineering Command-Line Automation Workspace. AI-driven security analysis with Claude Code. GitHub discovery signal: 66 stars, 10 forks, 0 open issues; language JavaScript; last pushed 2026-07-31. Topics: android, android-security, apk, claude-code, decompiler, frida, mobile-security, penetration-testing, reverse-engineering, security.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-02-28+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-07-31T20:37:24+00:00",
+          "trust": 8,
+          "source_boost": 15,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Android reverse engineering",
+            "Binary reverse engineering",
+            "Dynamic instrumentation",
+            "Decompiler research"
+          ],
+          "score": 49
+        },
+        {
+          "entry_id": "65c1aa564c59aacadfa776e5a7baaca57dddd7a195b4968b15e620085caf4a8d",
+          "title": "elliottophellia/Ryuumonbuchi — trending GitHub repository",
+          "url": "https://github.com/elliottophellia/Ryuumonbuchi",
+          "summary": "Maybe the headless Ghidra MCP you are looking for. GitHub discovery signal: 11 stars, 0 forks, 0 open issues; language Python; last pushed 2026-08-27. Topics: binary-analysis, decompiler, ghidra, ghidra-mcp, mcp, model-context-protocol, reverse-engineering.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-02-28+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-08-23T14:26:07+00:00",
+          "trust": 8,
+          "source_boost": 14,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 41
+        },
+        {
+          "entry_id": "f8ea56d1c91a4f3a0c50324f19404799de546698740f97c9e784ea001177b5a4",
+          "title": "Unity 6000.3.23f1 LTS",
+          "url": "https://unity.com/releases/editor/whats-new/6000.3.23f1",
+          "summary": "Unity 6000.3.23f1 LTS",
+          "source": "Unity LTS Releases",
+          "source_url": "https://unity.com/releases/editor/lts-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-08-26T14:35:12+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "06b41a1c9e4d9631543c3a444a41ad1d2d364330ccad00d996afdfa5651abc94",
+          "title": "dev/6.1.10540",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10540",
+          "summary": "Size WARP function rows for the current font; Resolves #8461",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-26T20:31:05+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "53a1fae747ad196a760d2370de6f880b1cf995adcc64606f219882626aa4a181",
+          "title": "dev/6.1.10539",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10539",
+          "summary": "Fix \"path on disk\" in triage view",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-26T19:48:20+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-08-26",
       "path": "/public/news/2026-08-26-unity-il2cpp-reverse-engineering-news.html",

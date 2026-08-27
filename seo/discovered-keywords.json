@@ -2,34 +2,34 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 72,
+      "count": 74,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-26"
+      "last_seen": "2026-08-27"
     },
     "trending GitHub": {
-      "count": 72,
+      "count": 74,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-26"
+      "last_seen": "2026-08-27"
     },
     "GitHub repository": {
-      "count": 72,
+      "count": 74,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-26"
+      "last_seen": "2026-08-27"
     },
     "Unity": {
-      "count": 29,
+      "count": 30,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-08-26"
+      "last_seen": "2026-08-27"
+    },
+    "decompiler": {
+      "count": 26,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-08-27"
     },
     "wasm": {
       "count": 26,
       "first_seen": "2026-07-20",
       "last_seen": "2026-08-25"
-    },
-    "decompiler": {
-      "count": 24,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-08-23"
     },
     "decompilation": {
       "count": 17,
@@ -51,45 +51,45 @@
       "first_seen": "2026-07-24",
       "last_seen": "2026-08-24"
     },
+    "Unity f1 LTS": {
+      "count": 8,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-08-27"
+    },
+    "Unity f1": {
+      "count": 8,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-08-27"
+    },
+    "f1 LTS": {
+      "count": 8,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-08-27"
+    },
     "apk": {
-      "count": 7,
+      "count": 8,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-25"
+      "last_seen": "2026-08-27"
     },
     "webassembly": {
       "count": 7,
       "first_seen": "2026-07-24",
       "last_seen": "2026-08-24"
     },
-    "Unity f1 LTS": {
-      "count": 7,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-08-20"
-    },
-    "Unity f1": {
-      "count": 7,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-08-20"
-    },
-    "f1 LTS": {
-      "count": 7,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-08-20"
-    },
     "Wasm": {
       "count": 6,
       "first_seen": "2026-07-26",
       "last_seen": "2026-08-25"
     },
+    "Reverse Engineering": {
+      "count": 5,
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-08-27"
+    },
     "decompile": {
       "count": 4,
       "first_seen": "2026-07-27",
       "last_seen": "2026-08-25"
-    },
-    "Reverse Engineering": {
-      "count": 4,
-      "first_seen": "2026-07-27",
-      "last_seen": "2026-08-17"
     },
     "Python Fix exceptions": {
       "count": 4,
