@@ -1,11 +1,43 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-29T07:54:17.246554+00:00",
+  "last_generated_at": "2026-08-30T06:45:57.340586+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-08-30",
+      "path": "/public/news/2026-08-30-unity-il2cpp-reverse-engineering-news.html",
+      "title": "WebAssembly tooling & WebAssembly runtime News — August 30, 2026",
+      "description": "Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 1 relevant releases and technical developments with origina…",
+      "item_count": 1,
+      "new_item_count": 1,
+      "updated_at": "2026-08-30T06:45:57.340586+00:00",
+      "entries": [
+        {
+          "entry_id": "2d634e245af58ac41d2ae1984f4c2cfa93c0a674dac0aee3aa3dbd5c936d9c66",
+          "title": "arthenica/ffmpeg-kit-next — trending GitHub repository",
+          "url": "https://github.com/arthenica/ffmpeg-kit-next",
+          "summary": "Official continuation of FFmpegKit. Supports Android, Flutter, iOS, iPadOS, Linux, macOS, React Native, tvOS, visionOS, Web (Wasm) and Windows GitHub discovery signal: 103 stars, 34 forks, 3 open issues; language C; last pushed 2026-08-27. Topics: android, ffmpeg, ffmpegkit, flutter, ios, linux, macos, react-native, tvos, webassembly.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-06-01+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-08-27T21:53:47+00:00",
+          "trust": 8,
+          "source_boost": 19,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 38
+        }
+      ]
+    },
     {
       "date": "2026-08-29",
       "path": "/public/news/2026-08-29-unity-il2cpp-reverse-engineering-news.html",
