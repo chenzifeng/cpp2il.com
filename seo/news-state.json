@@ -1,11 +1,62 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-30T06:45:57.340586+00:00",
+  "last_generated_at": "2026-08-31T07:04:11.168677+00:00",
   "source_errors": [
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-08-31",
+      "path": "/public/news/2026-08-31-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — August 31, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 2 relevant releases and technical developments with original sour…",
+      "item_count": 2,
+      "new_item_count": 2,
+      "updated_at": "2026-08-31T07:04:11.168677+00:00",
+      "entries": [
+        {
+          "entry_id": "c6d65587de02d41d3016a5f6b6f6ff0429f1687544ec9badefb0457fd84d6849",
+          "title": "ssyclr/zygisk-mcp-il2cpp — trending GitHub repository",
+          "url": "https://github.com/ssyclr/zygisk-mcp-il2cpp",
+          "summary": "一个MCP服务 GitHub discovery signal: 32 stars, 7 forks, 0 open issues; language Python; last pushed 2026-08-30.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-03+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-08-28T00:35:23+00:00",
+          "trust": 8,
+          "source_boost": 18,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 62
+        },
+        {
+          "entry_id": "82cf010847e9da6d003c72be793ef314009d1cc76303887b6fcc9b869561cf97",
+          "title": "N0zoM1z0/awesome-touhou — trending GitHub repository",
+          "url": "https://github.com/N0zoM1z0/awesome-touhou",
+          "summary": "⛩️ A curated, multilingual, and actively maintained index of the Touhou ecosystem ☯️ GitHub discovery signal: 81 stars, 1 forks, 4 open issues; language CSS; last pushed 2026-08-30. Topics: awesome, awesome-list, bullet-hell, community, curated-list, danmaku, decompilation, fangame, game-modding, game-preservation.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-03+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-08-15T06:42:50+00:00",
+          "trust": 8,
+          "source_boost": 17,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 29
+        }
+      ]
+    },
     {
       "date": "2026-08-30",
       "path": "/public/news/2026-08-30-unity-il2cpp-reverse-engineering-news.html",
