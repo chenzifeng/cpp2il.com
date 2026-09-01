@@ -1,11 +1,80 @@
 {
   "version": 3,
-  "last_generated_at": "2026-08-31T07:04:11.168677+00:00",
+  "last_generated_at": "2026-09-01T06:15:58.492490+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-01",
+      "path": "/public/news/2026-09-01-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Decompiler research & Binary reverse engineering News — September 01, 2026",
+      "description": "Curated Decompiler research, Binary reverse engineering updates for developers and security researchers. 3 relevant releases and technical developments with…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-09-01T06:15:58.492490+00:00",
+      "entries": [
+        {
+          "entry_id": "38ed2220786b8050a017ba9ab267323cdce2b9cd2b257806a800f4971e5cac01",
+          "title": "BaichengDanny/awesome-ai-for-cybersecurity-papers — trending GitHub repository",
+          "url": "https://github.com/BaichengDanny/awesome-ai-for-cybersecurity-papers",
+          "summary": "A curated, taxonomy-driven collection of influential papers and benchmarks in AI for cybersecurity. GitHub discovery signal: 22 stars, 0 forks, 0 open issues; language Python; last pushed 2026-08-28. Topics: ai-agents, ai-for-cybersecurity, awesome-list, cybersecurity.",
+          "source": "GitHub Hot Program Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=%22program+analysis%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-03-05+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-research",
+          "published": "2026-08-23T07:03:22+00:00",
+          "trust": 8,
+          "source_boost": 14,
+          "topic_terms": [
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "3816d939b2dbdb0f728ad3dab14fd3771c0627e0f38ea787a197daaae95e5f32",
+          "title": "dev/6.1.10562: [SVD] Fix derived peripherals not inheriting default properties",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10562",
+          "summary": "Fixes #8492",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-08-31T17:35:30+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "e689d88edddcea211bfeec52d22baeae5a5cbf03d8d31ca114bd343f44317502",
+          "title": "The Next Challenge for Agentic Cybersecurity: A Realistic, Contamination-Free Reverse Engineering Benchmark",
+          "url": "https://arxiv.org/abs/2608.11469v1",
+          "summary": "AI agents are rapidly improving in cybersecurity capabilities when the source code is available for analysis, yet much of the software most consequential to cybersecurity, including malware, firmware, and proprietary applications, is available only as binaries. Analyzing such software requires reverse engineering(RE): recovering program semantics before the analysis can be meaningfully performed. However, evaluating agentic RE poses a fundamental challenge: benchmark instances must be unseen as source code in the LLMs' training data to prevent models from taking shortcuts by recognizing them rather than really analyzing them, while also matching the scale and anti-analysis protections of real software. Unfortunately, however, existing benchmarks do not jointly satisfy these requirements. To this end, we introduce SRE-Bench, the first realistic, contamination-free RE benchmark. Built entirely from scratch by RE experts with over 5,000 hours, SRE-Bench comprises 19 private, real-world-scale programs averaging 16.9K lines of code. We further developed 44 in-house anti-analysis primitives, yielding 262 binary instances and 1572 deterministically graded tasks. Our evaluation across five frontier LLMs (GPT-5.6-sol,Claude-Opus-5,GPT-5.5,Grok-4.5, and GLM-5.2) shows that RE remains largely unsolved: the strongest model, GPT-5.6-sol, scores 61.4% per instance, and fully solves only 31.5% of the instances. Our analysis further reveals that agents behave differently from human engineers, where agents are relatively insensitive to compiler optimization and static linking. Controlled ablations also confirm that both contamination control and realistic scale are essential. These results indicate that strong source-code security capabilities do not yet transfer to binary analysis, highlighting RE as an important frontier for agentic cybersecurity and SRE-Bench as a rigorous testbed to measure progress.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-08-11T22:14:57+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-08-31",
       "path": "/public/news/2026-08-31-unity-il2cpp-reverse-engineering-news.html",
