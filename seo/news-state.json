@@ -1,11 +1,84 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-01T06:15:58.492490+00:00",
+  "last_generated_at": "2026-09-02T05:53:40.345103+00:00",
   "source_errors": [
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-09-02",
+      "path": "/public/news/2026-09-02-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Binary reverse engineering News — September 02, 2026",
+      "description": "Curated APK and IPA analysis, Binary reverse engineering updates for developers and security researchers. 3 relevant releases and technical developments with…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-09-02T05:53:40.345103+00:00",
+      "entries": [
+        {
+          "entry_id": "e49fdab4085cb8a636aa80551c3b591935e76c3e7dc7f0f3df3085ef4424d3bd",
+          "title": "2akouwu/codex-cli-portable-setup-kit — trending GitHub repository",
+          "url": "https://github.com/2akouwu/codex-cli-portable-setup-kit",
+          "summary": "Autonomous Systems & Security Toolkit for OpenAI Codex CLI. Deterministic binary analysis, decoupled pipeline, and zero-friction execution. GitHub discovery signal: 365 stars, 69 forks, 0 open issues; language Python; last pushed 2026-09-02. Topics: agentic-workflow, ai-agents, automation, codex, codex-cli, developer-tools, execution-first, hooks, openai, powershell.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-06-04+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-08-31T01:02:18+00:00",
+          "trust": 8,
+          "source_boost": 21,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Binary reverse engineering",
+            "Dynamic instrumentation"
+          ],
+          "score": 48
+        },
+        {
+          "entry_id": "786224e7b6f8c17ceaa16b1ddd2158c09ab27e53c206e82972acb6c7b00ba512",
+          "title": "v2.0.0 - 2026/09/01",
+          "url": "https://github.com/wasmi-labs/wasmi/releases/tag/v2.0.0",
+          "summary": "This release comes with an article: Wasmi 2.0 - Engineering Of The Fastest WebAssembly Interpreters Upgrading from Wasmi 1.x ? Please refer to the Wasmi v1 to v2 migration guide which lists all the changes that require action from users. Wasmi 2.0.0 includes all changes of the 2.0.0-beta.0 up to 2.0.0-beta.10 releases. Since those are far too many to repeat here, this entry only lists the highlights. For the complete, PR-by-PR record please refer to the respective beta release entries: Wasmi v2.0.0-beta.10 Wasmi v2.0.0-beta.9 Wasmi v2.0.0-beta.8 Wasmi v2.0.0-beta.7 Wasmi v2.0.0-beta.6 Wasmi v2.0.0-beta.5 Wasmi v2.0.0-beta.4 Wasmi v2.0.0-beta.3 Wasmi v2.0.0-beta.2 Wasmi v2.0.0-beta.1 Wasmi v2.0.0-beta.0 Highlights A completely new interpreter core Wasmi has an entirely new internal IR and executor. 🚀 #1655 Benchmarks conclude that Wasmi v2.0 is geomean roughly 2.2x faster than Wasmi v1.0. Wasmi IR operators now store their results in accumulator registers , the same interpreter architecture used by the fastest Wasm interpreters, Wasm3 and Stitch. PRs: #1827 #1855 Benchmarks concluded that Wasmi is on par and sometimes even exceeds performance of its competition now. Wasmi's executor now uses fixed 64-bit cells. #1755 Enabling the simd crate feature no longer affects memory consumption or execution performance of non- simd Wasm code. Operator dispatch is tail-call based on targets that are known to support it and falls back to the portable (loop-based) dispatch automatically via the new default-enabled auto-dispatch crate feature. #1968 Re-designed CodeMap to be lock-free and append-only significantly improving Wasm to Wasm call performance. PRs: #1898 #1893 A new InstanceEntity layout plus caching greatly improved access to all instance related data, namely Func , Global , Memory , Table , Data and Elem . PRs: #1940 #1996 #1997 Despite Wasmi's module independent bytecode, instance access is now as efficient as in Wasm3's or Stitch'es executors with their instance-related bytecodes. The count/globals benchmark improved by a whopping ~35%. wasmi::Table elements shrank from 64-bit (or even 128-bit with the simd crate feature enabled) to flat 32-bit references, shrinking Wasm tables by a factor of 2-4x. PRs: #1747 #1776 Binary artifact size Added a new validate crate feature that controls whether Wasmi supports Wasm validation. #1902 Users who have full control over the Wasm inputs to Wasmi can reduce binary artifact sizes by ~200-300kB by disabling it. Support for memory64 is now optional via the memory64 crate feature. #1934 Richer Op debug output moved behind a new, default-disabled debug crate feature and generic monomorphization in translation was replaced by explicit V-Tables. PRs: #1959 #1961 #1960 Fuel metering Wasmi's fuel metering is now stable: it is tied to the input Wasm bytecode instead of Wasmi's internal bytecode. #2013 While less precise, it stays relatively stable and is the same technique that is also used in Wasmtime. Fuel costs can now be customized via the new Config::operator_cost and Config::fuel_cost APIs. #2025 Crate Features & configuration Added support for the Wasm deterministic profile via the new deterministic crate feature. #1947 Added a Config option to disallow running the start function of Wasm modules. #1985 Added a new libm crate feature to enforce libm usage. #1860 Added a new unstable crate feature which enables Rust's unstable become keyword to enforce tail calls in Wasmi's operator dispatch on nightly Rust. #1825 Added richer error information to Wasm module instantiation errors. #1962 #1963 The Wasmi C-API now forwards most crate features exposed by wasmi , including portable-dispatch , and properly supports no_std . PRs: #1951 #1950 #1915 CLI The Wasmi CLI command has been renamed from wasmi_cli to just wasmi and, similar to Wasmtime's CLI, now features the run and wast sub-commands. #1798 #1799 Added new wasmi_cli crate features: wasi , wast , run , portable-dispatch and indirect-dispatch . PRs: #1784 #1787 #1788",
+          "source": "wasmi Releases",
+          "source_url": "https://github.com/wasmi-labs/wasmi/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-09-01T16:12:50+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "0937c035f5488d307084cde0fca89df78a0035107aa04101d340dc18d07678a6",
+          "title": "dev/6.1.10570",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10570",
+          "summary": "Update free version text for arm64 support",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-01T15:36:52+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-09-01",
       "path": "/public/news/2026-09-01-unity-il2cpp-reverse-engineering-news.html",
