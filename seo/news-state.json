@@ -1,11 +1,185 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-02T05:53:40.345103+00:00",
+  "last_generated_at": "2026-09-03T05:53:22.444952+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-03",
+      "path": "/public/news/2026-09-03-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Binary reverse engineering News — September 03, 2026",
+      "description": "Curated APK and IPA analysis, Binary reverse engineering updates for developers and security researchers. 8 relevant releases and technical developments with…",
+      "item_count": 8,
+      "new_item_count": 8,
+      "updated_at": "2026-09-03T05:53:22.444952+00:00",
+      "entries": [
+        {
+          "entry_id": "7d9a39e42475ae7e5cbf774f98bbd1a59b8392307c0542c23a5d45c1ab6008c1",
+          "title": "2akouwu/reverify — trending GitHub repository",
+          "url": "https://github.com/2akouwu/reverify",
+          "summary": "Verified reverse engineering: AI RE grounded on deterministic tools - results checked against the binary, not hallucinated. GitHub discovery signal: 602 stars, 127 forks, 0 open issues; language Python; last pushed 2026-09-02. Topics: agentic-workflow, ai-agents, automation, binary-analysis, codex, codex-cli, ctf, developer-tools, disassembler, execution-first.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-06-05+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-08-31T01:02:18+00:00",
+          "trust": 8,
+          "source_boost": 21,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Binary reverse engineering",
+            "Dynamic instrumentation"
+          ],
+          "score": 48
+        },
+        {
+          "entry_id": "343acd2717d7229ea04a25594d6f58548b0c56a4d931b36d8b0003ea16f8ebeb",
+          "title": "Unity 6000.0.83f1 LTS",
+          "url": "https://unity.com/releases/editor/whats-new/6000.0.83f1",
+          "summary": "Unity 6000.0.83f1 LTS",
+          "source": "Unity LTS Releases",
+          "source_url": "https://unity.com/releases/editor/lts-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-09-02T10:47:00+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "2dccbb3360f5f7f3db47aa3eeb173de6dce04b5765651ec8cfbe10d0efbfe309",
+          "title": "v9.3.4",
+          "url": "https://github.com/angr/angr/releases/tag/v9.3.4",
+          "summary": "release version 9.3.4",
+          "source": "angr Releases",
+          "source_url": "https://github.com/angr/angr/releases.atom",
+          "category": "program-analysis",
+          "published": "2026-09-02T20:02:39+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "ea2b5302c54414fb941680f42ee1566e388ab9e625dfa39ec63902f4aecf4c61",
+          "title": "fix: Dexprotector ELF rule hash update",
+          "url": "https://github.com/rednaga/APKiD/commit/158f2810f0ced74afd363b1891c9e9f5945cc21e",
+          "summary": "fix: Dexprotector ELF rule hash update",
+          "source": "APKiD Commits",
+          "source_url": "https://github.com/rednaga/APKiD/commits/master.atom",
+          "category": "mobile-security",
+          "published": "2026-09-02T18:55:13+00:00",
+          "trust": 8,
+          "source_boost": 4,
+          "topic_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "matched_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "1f6cc962cef75f17bc663e3aa8e01e3caf21b922eb07d849b49524127fc8f19b",
+          "title": "fix: Dexprotector ELF rule minor tweaks",
+          "url": "https://github.com/rednaga/APKiD/commit/c8d575871f43bcc0b8470efe2e6401e210893c1e",
+          "summary": "fix: Dexprotector ELF rule minor tweaks",
+          "source": "APKiD Commits",
+          "source_url": "https://github.com/rednaga/APKiD/commits/master.atom",
+          "category": "mobile-security",
+          "published": "2026-09-02T18:53:52+00:00",
+          "trust": 8,
+          "source_boost": 4,
+          "topic_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "matched_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "15046934dfb6fc7c8ff49d55ea6bc50d394cb36a1d92823e4bde021038a77351",
+          "title": "dev/6.1.10594: Add BinDiff to open source license page",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10594",
+          "summary": "Added with Google BinDiff similarity provider",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-02T16:53:42+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "a412ceba4c1fb5aa10a70a27d7882cce61ca2aa5d8e066e35240fd402e9c3e6d",
+          "title": "dev/6.1.10591: Add BinDiff to open source license page",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10591",
+          "summary": "Added with Google BinDiff similarity provider",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-02T16:53:42+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "abad99a04b0a6c1886f58fc0674338a5be761374237f2e4822143bbd87adca9a",
+          "title": "Engineering of the fastest WebAssembly interpreters",
+          "url": "https://wasmi-labs.github.io/blog/posts/wasmi-v2.0/",
+          "summary": "Hacker News signal: 72 points and 4 comments; submitted by herobird; source wasmi-labs.github.io. Discussion: https://news.ycombinator.com/item?id=49521031",
+          "source": "Hacker News Technical Top Stories",
+          "source_url": "https://news.ycombinator.com/news",
+          "category": "community-hot",
+          "published": "2026-09-01T12:25:13+00:00",
+          "trust": 7,
+          "source_boost": 4,
+          "topic_terms": [],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 14
+        }
+      ]
+    },
     {
       "date": "2026-09-02",
       "path": "/public/news/2026-09-02-unity-il2cpp-reverse-engineering-news.html",
