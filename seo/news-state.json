@@ -1,11 +1,165 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-03T05:53:22.444952+00:00",
+  "last_generated_at": "2026-09-04T05:58:56.955826+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-04",
+      "path": "/public/news/2026-09-04-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — September 04, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 7 relevant releases and technical developments with original sour…",
+      "item_count": 7,
+      "new_item_count": 7,
+      "updated_at": "2026-09-04T05:58:56.955826+00:00",
+      "entries": [
+        {
+          "entry_id": "cc7bf23efdba72891fc6565dbe963c46fbe786a0136a26292a508265a3551044",
+          "title": "BADDIV/punchline-arena-enhancer — trending GitHub repository",
+          "url": "https://github.com/BADDIV/punchline-arena-enhancer",
+          "summary": "Ultimate Trainer for Project L337 2026: Custom UI, Speed Boost & XP Multipliers GitHub discovery signal: 55 stars, 0 forks, 0 open issues; language HTML; last pushed 2026-08-25. Topics: cplusplus, cumrooms, il2cpp, imgui, kiero, minhook, steam, trainer, unity.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-07+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-08-25T09:26:55+00:00",
+          "trust": 8,
+          "source_boost": 18,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 52
+        },
+        {
+          "entry_id": "f98c04fa1124b346c7b08ce2c96444c6ace13730c0d2d1b83550e5172df123e3",
+          "title": "mrphrazer/ghidra-headless-mcp — trending GitHub repository",
+          "url": "https://github.com/mrphrazer/ghidra-headless-mcp",
+          "summary": "Headless Ghidra MCP server — giving AI agents deep reverse-engineering capabilities. GitHub discovery signal: 163 stars, 20 forks, 1 open issues; language Python; last pushed 2026-08-06.",
+          "source": "GitHub Hot Program Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=%22program+analysis%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-03-08+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-research",
+          "published": "2026-08-06T14:51:55+00:00",
+          "trust": 8,
+          "source_boost": 15,
+          "topic_terms": [
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Malware analysis tooling",
+            "Decompiler research"
+          ],
+          "score": 49
+        },
+        {
+          "entry_id": "c07fab351dcf590276f551a0b5cb12346a980c568e24f5cbe3427a709a0c3a22",
+          "title": "Inverx/com.zjwh.android_wh_physicalfitness-V7.3.40 — trending GitHub repository",
+          "url": "https://github.com/Inverx/com.zjwh.android_wh_physicalfitness-V7.3.40",
+          "summary": "运动世界校园 v7.3.40 纯 Python 协议实现，包含 NetSecKit 4.2.4、GeeTest v4、协议分析与自动化，脱离 Android App 与 Native SO 依赖。 GitHub discovery signal: 56 stars, 1 forks, 0 open issues; language Python; last pushed 2026-08-27. Topics: android, android-reverse-engineering, automation, cryptography, geetest, opencv, protocol-analysis, protocol-engineering, python, reverse-engineering.",
+          "source": "GitHub Hot Android Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-reverse-engineering+created%3A%3E%3D2026-06-06+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-mobile",
+          "published": "2026-08-26T08:54:28+00:00",
+          "trust": 8,
+          "source_boost": 17,
+          "topic_terms": [
+            "Android reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "e8b2ce4178b418db965737078e13bb4f2ddabc5f3b8b6c2c641ceb091c756472",
+          "title": "tearhacker/UE4Dump_imGui_AnalyseToolsForMCP — trending GitHub repository",
+          "url": "https://github.com/tearhacker/UE4Dump_imGui_AnalyseToolsForMCP",
+          "summary": "泪心UE4Dump逆向分析MCP工具 GitHub discovery signal: 83 stars, 25 forks, 0 open issues; language C++; last pushed 2026-09-01.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-07+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-08-28T21:24:34+00:00",
+          "trust": 8,
+          "source_boost": 19,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 31
+        },
+        {
+          "entry_id": "2f046cd2efdcfb31f92156a304d4a7ca489f5ddc76921fcdce006c2eb1e0c735",
+          "title": "Unity 6000.7.0 Alpha",
+          "url": "https://unity.com/releases/editor/alpha/6000.7.0a6",
+          "summary": "Unity 6000.7.0 Alpha",
+          "source": "Unity Alpha Releases",
+          "source_url": "https://unity.com/releases/editor/alpha-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-09-03T12:31:56+00:00",
+          "trust": 10,
+          "source_boost": 1,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 24
+        },
+        {
+          "entry_id": "fdabe66e21645782501ce2567b34dee92ade4f99bce0bb94b4bb1dad0d0ad948",
+          "title": "stable/6.0.10601",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/stable%2F6.0.10601",
+          "summary": "https://binary.ninja/2026/09/03/binary-ninja-6.0-krypton.html",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-04T00:44:15+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "3388fdcc21fd53968365f3231d9688bfbdea1bd07516fa7d97776f130116989e",
+          "title": "dev/6.1.10603",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10603",
+          "summary": "remove incorrectly added binexport setting from docs",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-03T19:05:47+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-09-03",
       "path": "/public/news/2026-09-03-unity-il2cpp-reverse-engineering-news.html",
