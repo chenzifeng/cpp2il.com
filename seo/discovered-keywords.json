@@ -2,19 +2,19 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 86,
+      "count": 87,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-04"
+      "last_seen": "2026-09-05"
     },
     "trending GitHub": {
-      "count": 86,
+      "count": 87,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-04"
+      "last_seen": "2026-09-05"
     },
     "GitHub repository": {
-      "count": 86,
+      "count": 87,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-04"
+      "last_seen": "2026-09-05"
     },
     "Unity": {
       "count": 33,
@@ -22,9 +22,9 @@
       "last_seen": "2026-09-04"
     },
     "wasm": {
-      "count": 27,
+      "count": 28,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-08-29"
+      "last_seen": "2026-09-05"
     },
     "decompiler": {
       "count": 26,
@@ -42,9 +42,9 @@
       "last_seen": "2026-08-25"
     },
     "WebAssembly": {
-      "count": 14,
+      "count": 15,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-03"
+      "last_seen": "2026-09-05"
     },
     "reverse engineering": {
       "count": 12,
@@ -160,6 +160,11 @@
       "count": 4,
       "first_seen": "2026-07-26",
       "last_seen": "2026-07-28"
+    },
+    "Barebone agents": {
+      "count": 2,
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05"
     },
     "source license page": {
       "count": 2,

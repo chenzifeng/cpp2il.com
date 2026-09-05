@@ -1,11 +1,128 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-04T05:58:56.955826+00:00",
+  "last_generated_at": "2026-09-05T05:49:58.703469+00:00",
   "source_errors": [
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-09-05",
+      "path": "/public/news/2026-09-05-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Malware analysis tooling & WebAssembly tooling News — September 05, 2026",
+      "description": "Curated Malware analysis tooling, WebAssembly tooling updates for developers and security researchers. 5 relevant releases and technical developments with or…",
+      "item_count": 5,
+      "new_item_count": 5,
+      "updated_at": "2026-09-05T05:49:58.703469+00:00",
+      "entries": [
+        {
+          "entry_id": "4328e1e871abbc53f5c76445efa01876fe282009e1030a4012f45d02128eae62",
+          "title": "britsman/WasmQuay — trending GitHub repository",
+          "url": "https://github.com/britsman/WasmQuay",
+          "summary": "Offline WebAssembly component inspection and capability-policy toolkit - decode .wasm binaries, classify host capabilities, gate against explicit policies. Rust + TypeScript, zero dependencies. GitHub discovery signal: 36 stars, 3 forks, 3 open issues; language Rust; last pushed 2026-09-04. Topics: binary-analysis, capability-policy, component-model, leb128, offline-tools, rust, sandboxing, security-tools, static-analysis, typescript.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-06-07+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-09-04T20:23:32+00:00",
+          "trust": 8,
+          "source_boost": 17,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "Malware analysis tooling",
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 43
+        },
+        {
+          "entry_id": "ca02e2f47257bf90a7530ad3db387673c82356effd5c6214b22e775c276e3ac7",
+          "title": "Barebone agents 17.17.1-barebone.14",
+          "url": "https://github.com/frida/frida/releases/tag/17.17.1-barebone.14",
+          "summary": "Barebone agents only, for testing. Not a Frida release.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-09-04T20:17:40+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 30
+        },
+        {
+          "entry_id": "b901b1b5739c34b269c54add894e3e644f5e0cbd61eb5b4a293e6cc71e420e32",
+          "title": "Barebone agents 17.17.1-barebone.13",
+          "url": "https://github.com/frida/frida/releases/tag/17.17.1-barebone.13",
+          "summary": "Barebone agents only, for testing. Not a Frida release.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-09-04T20:05:43+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 30
+        },
+        {
+          "entry_id": "9ae85cd083dcca089383e0526775daef4aaec8d1de1a3a9cee82f052f50b109c",
+          "title": "dev/6.1.10608",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10608",
+          "summary": "[MIPS] Support for o32 hard-float calling convention",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-04T18:42:58+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "651cdd8840169d1b6fa6491ce5a1454abf79246dc9fd4f99dd47dd88ea07b0ee",
+          "title": "dev/6.1.10606",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10606",
+          "summary": "[MIPS] Support for o32 hard-float calling convention",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-04T18:42:58+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-09-04",
       "path": "/public/news/2026-09-04-unity-il2cpp-reverse-engineering-news.html",
