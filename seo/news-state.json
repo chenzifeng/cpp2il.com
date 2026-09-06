@@ -1,11 +1,127 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-05T05:49:58.703469+00:00",
+  "last_generated_at": "2026-09-06T06:00:57.003077+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-06",
+      "path": "/public/news/2026-09-06-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity WebGL reverse engineering & WebAssembly tooling News — September 06, 2026",
+      "description": "Curated Unity WebGL reverse engineering, WebAssembly tooling updates for developers and security researchers. 5 relevant releases and technical developments…",
+      "item_count": 5,
+      "new_item_count": 5,
+      "updated_at": "2026-09-06T06:00:57.003077+00:00",
+      "entries": [
+        {
+          "entry_id": "b3654ed421b13124363fc800f9acc2f3200b32c2ef6a29ece4c6e1fc7812781b",
+          "title": "6.0.7",
+          "url": "https://github.com/emscripten-core/emscripten/releases/tag/6.0.7",
+          "summary": "What's Changed JavaScript library symbols can now use the __force and __export decorators to control inclusion and export visibility. ( #27436 ) contrib.glfw3 port upgraded to use the latest version of GLFW 3.5.1 ( #27508 ) -fwasm-exceptions now links the Wasm EH runtime (libunwind and the __cpp_exception tag) independently of C++ linking, so Wasm EH objects from non-C++ frontends (e.g. rustc, which links via emcc ) link without requiring em++ or -sDEFAULT_TO_CXX . ( #27496 ) FreeType was updated to 2.14.3 ( #27518 ) The oldest supported Safari version ( MIN_SAFARI_VERSION ) was raised from 14.1 to 15.0, making 15.0 the minimum version that can be targeted. This allows assuming bulk-memory , nontrapping-fptoint , and WASM_BIGINT ( JS_BIGINT_INTEGRATION ) are universally available across all supported engines, and removes legacy JS polyfills and Binaryen lowering passes. ( #27542 ) Contributors Thanks to the following contributors: @sbc100 (24) @hoodmane (4) @guybedford (2) @aheejin (1) @HCL-JasonR (1) @HendrikHuebner (1) @kleisauke (1) @ypujante (1) New Contributors @HendrikHuebner made their first contribution in #27522 Full Changelog : 6.0.6...6.0.7",
+          "source": "Emscripten Releases",
+          "source_url": "https://github.com/emscripten-core/emscripten/releases.atom",
+          "category": "webassembly",
+          "published": "2026-08-17T22:45:38+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Unity WebGL reverse engineering"
+          ],
+          "matched_terms": [
+            "Unity WebGL reverse engineering",
+            "WebAssembly tooling"
+          ],
+          "score": 34
+        },
+        {
+          "entry_id": "ab2e6e63143e20117d84d49c992b777b1dfe0187caf7ad2c1a9b9fe8a1af85c3",
+          "title": "Barebone agents 17.17.1-barebone.16",
+          "url": "https://github.com/frida/frida/releases/tag/17.17.1-barebone.16",
+          "summary": "Barebone agents only, for testing. Not a Frida release.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-09-05T18:10:12+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 30
+        },
+        {
+          "entry_id": "1fdb0a09dc6ce4973c344d100d2e630ee842ad08fe74d8ff75e0df42653d2787",
+          "title": "dev/6.1.10613",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10613",
+          "summary": "clarify in ghidra export docs it is ultimate only",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-05T17:46:20+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 30
+        },
+        {
+          "entry_id": "81064baddf0c815d84ee4bce02b4a08b2a35753e1559571c301702f177f4d921",
+          "title": "version_132",
+          "url": "https://github.com/WebAssembly/binaryen/releases/tag/version_132",
+          "summary": "No content.",
+          "source": "Binaryen Releases",
+          "source_url": "https://github.com/WebAssembly/binaryen/releases.atom",
+          "category": "webassembly",
+          "published": "2026-08-12T22:24:44+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Unity WebGL reverse engineering"
+          ],
+          "matched_terms": [
+            "Unity WebGL reverse engineering",
+            "WebAssembly tooling"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "6225f3fb938ebd5334e7371c62e04e32fe64f462701cb7e8802c4680c44e3419",
+          "title": "version_131",
+          "url": "https://github.com/WebAssembly/binaryen/releases/tag/version_131",
+          "summary": "No content.",
+          "source": "Binaryen Releases",
+          "source_url": "https://github.com/WebAssembly/binaryen/releases.atom",
+          "category": "webassembly",
+          "published": "2026-07-15T19:51:52+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Unity WebGL reverse engineering"
+          ],
+          "matched_terms": [
+            "Unity WebGL reverse engineering",
+            "WebAssembly tooling"
+          ],
+          "score": 26
+        }
+      ]
+    },
     {
       "date": "2026-09-05",
       "path": "/public/news/2026-09-05-unity-il2cpp-reverse-engineering-news.html",

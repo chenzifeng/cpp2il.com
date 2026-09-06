@@ -51,6 +51,11 @@
       "first_seen": "2026-07-24",
       "last_seen": "2026-09-03"
     },
+    "Wasm": {
+      "count": 9,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-09-06"
+    },
     "Unity f1 LTS": {
       "count": 9,
       "first_seen": "2026-07-20",
@@ -65,11 +70,6 @@
       "count": 9,
       "first_seen": "2026-07-20",
       "last_seen": "2026-09-03"
-    },
-    "Wasm": {
-      "count": 8,
-      "first_seen": "2026-07-26",
-      "last_seen": "2026-09-02"
     },
     "webassembly": {
       "count": 8,
@@ -162,9 +162,9 @@
       "last_seen": "2026-07-28"
     },
     "Barebone agents": {
-      "count": 2,
+      "count": 3,
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05"
+      "last_seen": "2026-09-06"
     },
     "source license page": {
       "count": 2,
