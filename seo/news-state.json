@@ -1,11 +1,62 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-07T06:10:01.558137+00:00",
+  "last_generated_at": "2026-09-08T06:00:38.800333+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-08",
+      "path": "/public/news/2026-09-08-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Decompiler research News — September 08, 2026",
+      "description": "Curated Binary reverse engineering, Decompiler research updates for developers and security researchers. 2 relevant releases and technical developments with…",
+      "item_count": 2,
+      "new_item_count": 2,
+      "updated_at": "2026-09-08T06:00:38.800333+00:00",
+      "entries": [
+        {
+          "entry_id": "67743c73fa2444b71e44ba65ef903e6d484182da0310839f43296c0f70b2e5ae",
+          "title": "IR0NBYTE/Jadart — trending GitHub repository",
+          "url": "https://github.com/IR0NBYTE/Jadart",
+          "summary": "Decompiler for Flutter and Dart AOT snapshots. Recovers the class tree, method bodies, strings and const tables from a stripped libapp.so. GitHub discovery signal: 10 stars, 1 forks, 2 open issues; language Python; last pushed 2026-09-06. Topics: android, android-security, apk-analysis, binary-analysis, bugbounty, ctf-tools, dart, dart-aot, decompiler, disassembler.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-03-12+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-09-06T10:21:20+00:00",
+          "trust": 8,
+          "source_boost": 14,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 41
+        },
+        {
+          "entry_id": "4b2a383b62cd37aa8ab6380ed1e324ac5f486aee7a9b17ba568272ef72c4cb0c",
+          "title": "freefrank/LostOdysseyRecomp — trending GitHub repository",
+          "url": "https://github.com/freefrank/LostOdysseyRecomp",
+          "summary": "Experimental native PC port of Lost Odyssey using static recompilation. No game assets included. GitHub discovery signal: 86 stars, 1 forks, 4 open issues; language C++; last pushed 2026-09-08.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-11+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-09-05T07:01:47+00:00",
+          "trust": 8,
+          "source_boost": 19,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 31
+        }
+      ]
+    },
     {
       "date": "2026-09-07",
       "path": "/public/news/2026-09-07-unity-il2cpp-reverse-engineering-news.html",

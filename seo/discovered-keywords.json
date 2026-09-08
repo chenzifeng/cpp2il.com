@@ -2,19 +2,19 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 88,
+      "count": 90,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-07"
+      "last_seen": "2026-09-08"
     },
     "trending GitHub": {
-      "count": 88,
+      "count": 90,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-07"
+      "last_seen": "2026-09-08"
     },
     "GitHub repository": {
-      "count": 88,
+      "count": 90,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-07"
+      "last_seen": "2026-09-08"
     },
     "Unity": {
       "count": 33,
@@ -27,9 +27,9 @@
       "last_seen": "2026-09-07"
     },
     "decompiler": {
-      "count": 26,
+      "count": 27,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-08-27"
+      "last_seen": "2026-09-08"
     },
     "decompilation": {
       "count": 19,
@@ -50,6 +50,11 @@
       "count": 12,
       "first_seen": "2026-07-24",
       "last_seen": "2026-09-03"
+    },
+    "apk": {
+      "count": 9,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-09-08"
     },
     "Wasm": {
       "count": 9,
@@ -75,11 +80,6 @@
       "count": 8,
       "first_seen": "2026-07-24",
       "last_seen": "2026-08-30"
-    },
-    "apk": {
-      "count": 8,
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-08-27"
     },
     "Reverse Engineering": {
       "count": 6,
