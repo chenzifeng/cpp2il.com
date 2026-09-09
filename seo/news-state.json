@@ -1,11 +1,100 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-08T06:00:38.800333+00:00",
+  "last_generated_at": "2026-09-09T06:03:31.311084+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-09",
+      "path": "/public/news/2026-09-09-unity-il2cpp-reverse-engineering-news.html",
+      "title": "WebAssembly tooling & WebAssembly runtime News — September 09, 2026",
+      "description": "Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 4 relevant releases and technical developments with origina…",
+      "item_count": 4,
+      "new_item_count": 4,
+      "updated_at": "2026-09-09T06:03:31.311084+00:00",
+      "entries": [
+        {
+          "entry_id": "10756874697c69a93cb91fc1246f82e55eba86c30bb28530b8bd70d3bb3823bf",
+          "title": "ayutaz/sanoTTS-jp — trending GitHub repository",
+          "url": "https://github.com/ayutaz/sanoTTS-jp",
+          "summary": "559 K パラメータの日本語 TTS を ESP32-S3 で実時間合成。漢字かな交じり文の形態素解析・アクセント推定まで端末内で走る（M5Stack CoreS3 実機で確認）。推論は依存ゼロの C99、ブラウザ demo あり。arXiv:2608.21378 sanoTTS の日本語 clean-room 再実装 GitHub discovery signal: 56 stars, 2 forks, 2 open issues; language Python; last pushed 2026-09-08. Topics: edge-ai, embedded, esp32, esp32-s3, g2p, japanese, japanese-tts, knowledge-distillation, m5stack, microcontroller.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-06-11+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-08-27T13:50:56+00:00",
+          "trust": 8,
+          "source_boost": 17,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 36
+        },
+        {
+          "entry_id": "961313e0461a417964aed96c42cbf52ce98012384f28b2f76baf07e8e2b7652e",
+          "title": "Sadpainy/Stuxnet — trending GitHub repository",
+          "url": "https://github.com/Sadpainy/Stuxnet",
+          "summary": "Stuxnet, Here reproduced by me, Only for researchs educations purposes. It set work on WindowsXP and Windows 7 only. GitHub discovery signal: 119 stars, 14 forks, 0 open issues; language C; last pushed 2026-09-09.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-12+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-09-06T23:32:39+00:00",
+          "trust": 8,
+          "source_boost": 20,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 32
+        },
+        {
+          "entry_id": "57646bdfb9f877bde502e858cd3c1d234b83af23d0a79bb67e651e84e6fc69f1",
+          "title": "dev/6.1.10616",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10616",
+          "summary": "Fix type actions for namespaced types",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-08T18:05:32+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "e755785c5019115d405bc38e8322f817efeeb8d428958009d1ddacb30439d0d3",
+          "title": "v11.0.0-rc.1.26425.128: [release/11.0-rc1] Source code updates from dotnet/dotnet (#132568)",
+          "url": "https://github.com/dotnet/runtime/releases/tag/v11.0.0-rc.1.26425.128",
+          "summary": "Note This is a codeflow update. It may contain both source code changes from the VMR as well as dependency updates. Learn more here . This pull request brings the following source code changes From https://github.com/dotnet/dotnet Subscription : 99e6e429-8827-48af-8b81-3c96d7d33a83 Build : 20260820.3 ( 327888 ) Date Produced : August 20, 2026 3:00:20 PM UTC Commit : 1d599674e31ad86ca9e6e1dad7055b531e4d58e4 Commit Diff : 7cdb217...1d59967 Branch : release/11.0.1xx-rc1 Updated Dependencies From 5.11.0-1.26411.119 to 5.11.0-1.26420.103 Microsoft.CodeAnalysis Microsoft.CodeAnalysis.Analyzers Microsoft.CodeAnalysis.BannedApiAnalyzers Microsoft.CodeAnalysis.CSharp Microsoft.Net.Compilers.Toolset From 11.0.100-rc.1.26411.119 to 11.0.100-rc.1.26420.103 Microsoft.CodeAnalysis.NetAnalyzers Microsoft.DotNet.ApiCompat.Task Microsoft.NET.Workload.Emscripten.Current.Manifest-11.0.100.Transport From 11.0.0-beta.26411.119 to 11.0.0-beta.26420.103 Microsoft.DotNet.Arcade.Sdk Microsoft.DotNet.Build.Tasks.Archives Microsoft.DotNet.Build.Tasks.Feed Microsoft.DotNet.Build.Tasks.FileCatalog Microsoft.DotNet.Build.Tasks.Installers Microsoft.DotNet.Build.Tasks.Packaging Microsoft.DotNet.Build.Tasks.TargetFramework Microsoft.DotNet.Build.Tasks.Templating Microsoft.DotNet.CodeAnalysis Microsoft.DotNet.GenAPI Microsoft.DotNet.GenFacades Microsoft.DotNet.Helix.JobMonitor Microsoft.DotNet.Helix.Sdk Microsoft.DotNet.PackageTesting Microsoft.DotNet.RemoteExecutor Microsoft.DotNet.SharedFramework.Sdk Microsoft.DotNet.XliffTasks Microsoft.DotNet.XUnitExtensions From 0.11.5-preview.26411.119 to 0.11.5-preview.26420.103 Microsoft.DotNet.Cecil From 2.9.3-beta.26411.119 to 2.9.3-beta.26420.103 Microsoft.DotNet.XUnitConsoleRunner From 11.0.0-rc.1.26411.119 to 11.0.0-rc.1.26420.103 Microsoft.NET.Runtime.Emscripten.Internal Microsoft.NET.Sdk.IL Microsoft.NETCore.App.Ref Microsoft.NETCore.ILAsm runtime.native.System.IO.Ports System.Reflection.Metadata System.Reflection.MetadataLoadContext System.Text.Json From 7.11.0-rc.65534 to 7.11.0-rc.42103 NuGet.Frameworks NuGet.Packaging NuGet.ProjectModel NuGet.Versioning From 3.0.0-rc.1.26411.119 to 3.0.0-rc.1.26420.103 System.CommandLine From 11.0.0-alpha.1.26407.6 to 11.0.0-alpha.1.26413.1 runtime.linux-arm64.Microsoft.NETCore.Runtime.Wasm.Node.Transport runtime.linux-musl-arm64.Microsoft.NETCore.Runtime.Wasm.Node.Transport runtime.linux-musl-x64.Microsoft.NETCore.Runtime.Wasm.Node.Transport runtime.linux-x64.Microsoft.NETCore.Runtime.Wasm.Node.Transport runtime.osx-arm64.Microsoft.NETCore.Runtime.Wasm.Node.Transport runtime.osx-x64.Microsoft.NETCore.Runtime.Wasm.Node.Transport runtime.win-arm64.Microsoft.NETCore.Runtime.Wasm.Node.Transport runtime.win-x64.Microsoft.NETCore.Runtime.Wasm.Node.Transport Associated changes in source repos dotnet/arcade@ 14b9295...09a0bcf dotnet/aspnetcore@ 3600ca0...96b7ae9 dotnet/cecil@ 74999f2...5ae012f dotnet/command-line-api@ bc16495...8a70ae0 dotnet/deployment-tools@ 3ccca8e...9baf0bb dotnet/diagnostics@ c014870...66ffffc dotnet/efcore@ dbf9771...227a63d dotnet/emsdk@ bf28440...74269dd dotnet/fsharp@ ea778bb...732b9eb dotnet/msbuild@ f08c806...b6d968a NuGet/NuGet.Client@ 1a68d86...2023968 dotnet/roslyn@ 9d07b18...0280f7f 067d74c...f2568ad dotnet/sdk@ 2763d13...6bb52e2 dotnet/source-build-assets@ b70367d...7171679 dotnet/sourcelink@ b989174...6ec19dd dotnet/symreader@ b579795...260aefc microsoft/vstest@ 6411dc2...0b289d5 dotnet/windowsdesktop@ 5d631bd...f356729 dotnet/winforms@ a5594f0...af0c793 dotnet/wpf@ 2ca0375...8218c1c dotnet/xdt@ 0d57d4b...2414cbd Diff the source with this PR branch darc vmr diff --name-only https://github.com/dotnet/dotnet:1d599674e31ad86ca9e6e1dad7055b531e4d58e4..https://github.com/dotnet/runtime:darc-release/11.0-rc1-0fc837dd-8cc6-4f21-916d-1dcfc371c211 Co-authored-by: dotnet-maestro[bot] <dotnet-maestro[bot]@users.noreply.github.com> Co-authored-by: Tanner Gooding tagoo@outlook.com Co-authored-by: Copilot App 223556219+Copilot@users.noreply.github.com Co-authored-by: Alexander Köplinger alex.koeplinger@outlook.com",
+          "source": ".NET Runtime Releases",
+          "source_url": "https://github.com/dotnet/runtime/releases.atom",
+          "category": "dotnet-runtime",
+          "published": "2026-08-24T18:31:10+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [],
+          "matched_terms": [
+            "WebAssembly tooling"
+          ],
+          "score": 15
+        }
+      ]
+    },
     {
       "date": "2026-09-08",
       "path": "/public/news/2026-09-08-unity-il2cpp-reverse-engineering-news.html",
