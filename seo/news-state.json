@@ -1,11 +1,86 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-09T06:03:31.311084+00:00",
+  "last_generated_at": "2026-09-10T06:03:08.963987+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-10",
+      "path": "/public/news/2026-09-10-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — September 10, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 3 relevant releases and technical developments with original sour…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-09-10T06:03:08.963987+00:00",
+      "entries": [
+        {
+          "entry_id": "f5379a4e8be232e724810fcbc4a381f4978bc94dd426b57c5a1ea36e1e51c254",
+          "title": "romanilyin/sgg-perfmeter — trending GitHub repository",
+          "url": "https://github.com/romanilyin/sgg-perfmeter",
+          "summary": "Lightweight runtime performance diagnostics and agent-readable profiling for Unity 6 URP+HDRP (FPS meter). GitHub discovery signal: 124 stars, 2 forks, 0 open issues; language C#; last pushed 2026-09-06.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-13+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-09-06T11:51:04+00:00",
+          "trust": 8,
+          "source_boost": 21,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation",
+            "Unity engine releases"
+          ],
+          "score": 51
+        },
+        {
+          "entry_id": "e08173fea220e02ee7b02716d3f1e2e8c19f30775e4bcff1873963c953137500",
+          "title": "Frida 17.18.0",
+          "url": "https://github.com/frida/frida/releases/tag/17.18.0",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-09-09T19:25:12+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "442b6708685ae34270880d117702a879d99a4850b240655de6380080502e6729",
+          "title": "dev/6.1.10623",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10623",
+          "summary": "Improve pointer type recovery and suppress pure-virtual no-return in …",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-09T12:47:26+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 29
+        }
+      ]
+    },
     {
       "date": "2026-09-09",
       "path": "/public/news/2026-09-09-unity-il2cpp-reverse-engineering-news.html",
