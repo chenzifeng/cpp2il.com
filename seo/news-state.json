@@ -1,11 +1,122 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-10T06:03:08.963987+00:00",
+  "last_generated_at": "2026-09-11T06:04:51.208066+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-11",
+      "path": "/public/news/2026-09-11-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — September 11, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 5 relevant releases and technical developments with original sour…",
+      "item_count": 5,
+      "new_item_count": 5,
+      "updated_at": "2026-09-11T06:04:51.208066+00:00",
+      "entries": [
+        {
+          "entry_id": "66a64ce02347f4eb2be0b48c3e2ffe21cbb94f38824cd9604f55474355866b62",
+          "title": "Dr-hydra/Better-Endfield — trending GitHub repository",
+          "url": "https://github.com/Dr-hydra/Better-Endfield",
+          "summary": "《明日方舟：终末地》登录场景角色、动画与角色配音控制器 GitHub discovery signal: 125 stars, 3 forks, 0 open issues; language C#; last pushed 2026-09-11. Topics: arknights-endfield, il2cpp, mod, winui3.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-14+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-08-04T16:51:20+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 50
+        },
+        {
+          "entry_id": "a1aa843d256994b4afae0400ae7e5c47084595735a7b4d142f7b4b5eb7da6d1e",
+          "title": "v1.259.0",
+          "url": "https://github.com/bytecodealliance/wasm-tools/releases/tag/v1.259.0",
+          "summary": "What's Changed Refactor name resolution of components in the text format by @alexcrichton in #2621 Import component spec tests as a submodule and run them. by @alexcrichton in #2623 Fix name uniqueness with methods/interfaces by @alexcrichton in #2625 Add compact import generation in wasm-smith by @chacailline in #2627 Drop hyphens when testing equality of kebab names by @alexcrichton in #2626 Enable wide-arithmetic by default in wasm-smith by @alexcrichton in #2628 Validate the size of defined component types by @alexcrichton in #2624 Update Wasmtime used in testing/fuzzing by @alexcrichton in #2629 Fix text format outer aliases from recent refactor by @alexcrichton in #2631 Remove cancellable immediate from component model intrinsics by @alexcrichton in #2630 Start requiring \"strict\" indices in the text format by @alexcrichton in #2633 Enable the cm-implements and cm-map features by default by @alexcrichton in #2634 Clamp sizes of element segments in wasm-smith by @alexcrichton in #2632 Fix wit-smith generating huge types by @alexcrichton in #2636 Fix disallow_traps in wasm-smith with custom page sizes by @alexcrichton in #2635 Resolve Cargo warnings on nightly by @alexcrichton in #2642 Return an error instead of panicking on fixed-length-list size overflow by @zikk090 in #2643 Try to improve performance of deinline_import_export by @alexcrichton in #2647 Document a non-obvious method argument by @alexcrichton in #2645 wasm-wave: Clean up syntax docs by @lann in #2644 Update dependency major tracks by @alexcrichton in #2649 Release wasm-tools 1.259.0 by @github-actions[bot] in #2650 New Contributors @chacailline made their first contribution in #2627 @zikk090 made their first contribution in #2643 Full Changelog : v1.258.0...v1.259.0",
+          "source": "wasm-tools Releases",
+          "source_url": "https://github.com/bytecodealliance/wasm-tools/releases.atom",
+          "category": "webassembly",
+          "published": "2026-09-10T17:55:43+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime",
+            "Decompiler research"
+          ],
+          "score": 39
+        },
+        {
+          "entry_id": "23df24a3350745ec94f4e45734f87e076c0308429115e9fdbe400435124da057",
+          "title": "v36.0.15: Release Wasmtime 36.0.15 (#14309)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v36.0.15",
+          "summary": "36.0.15 Released 2026-09-10 Changed Wasmtime's internal implementation of wasmtime-wasi no longer depends on cap-std crates for the underlying implementation. Instead the cap-std implementation was vendored into wasmtime-wasi . This is intended to have no visible side effects or result in any behavior changes. #14219",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-09-10T19:12:25+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "1c44ae3721a75c30105d23355b1e5a0fa1e95bb2cf6161bd5c58e2a767a514ea",
+          "title": "Unity 6000.3.24f1 LTS",
+          "url": "https://unity.com/releases/editor/whats-new/6000.3.24f1",
+          "summary": "Unity 6000.3.24f1 LTS",
+          "source": "Unity LTS Releases",
+          "source_url": "https://unity.com/releases/editor/lts-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-09-10T14:47:57+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "c95d644644f64443691d4b2fe7bab97e36662917d34c0cc821e72a388b78b0ac",
+          "title": "v0.9.1-beta.1",
+          "url": "https://github.com/wasm3/wasm3/releases/tag/v0.9.1",
+          "summary": "Awesome updates 🎉 Fold and fuse optimizations - 10-50% speedup on many workloads 🎉 New in Wasm3 v0.9.1 Implemented WebAssembly features : Exception Handling with exnref Multiple Memories Memory64 + Table64 Module Linking - partial support Deterministic Profile Other improvements New implementation of Gas Metering Simple-WASI improvements - now able to run clang.wasm , used in self-compiling demo Drop wasi_unstable support Guard pages Memory-mapped input wasm files Allow non-global WASI contexts - #331 Tightened CI + ASan + UBSan + Fuzzing Improve wasm spec tests coverage Warning-free builds Updated docs Standardized code formatting is now enforced LOTS of bugfixing 👉 If you like Wasm3, please give us a GitHub star! 🌟",
+          "source": "wasm3 Releases",
+          "source_url": "https://github.com/wasm3/wasm3/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-09-10T19:45:38+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-09-10",
       "path": "/public/news/2026-09-10-unity-il2cpp-reverse-engineering-news.html",
