@@ -1,11 +1,106 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-11T06:04:51.208066+00:00",
+  "last_generated_at": "2026-09-12T05:53:47.039972+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-12",
+      "path": "/public/news/2026-09-12-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Binary reverse engineering News — September 12, 2026",
+      "description": "Curated APK and IPA analysis, Binary reverse engineering updates for developers and security researchers. 4 relevant releases and technical developments with…",
+      "item_count": 4,
+      "new_item_count": 4,
+      "updated_at": "2026-09-12T05:53:47.039972+00:00",
+      "entries": [
+        {
+          "entry_id": "85ce5993c71c5d118812e2016b8e639b7660635b30d07e65fb9741217d5b45b1",
+          "title": "fdfsdfsdfss/spacepeng-frida-playground — trending GitHub repository",
+          "url": "https://github.com/fdfsdfsdfss/spacepeng-frida-playground",
+          "summary": "SpacePeng Trainer 2026: Advanced Frida Script Examples & Game Hacks GitHub discovery signal: 55 stars, 0 forks, 0 open issues; language HTML; last pushed 2026-08-25. Topics: androguard, android, burp-suite, course, dalvik-opcodes, dex2jar, frida, game, ghidra, hacking.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-06-14+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-08-25T10:30:09+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Binary reverse engineering",
+            "Dynamic instrumentation"
+          ],
+          "score": 57
+        },
+        {
+          "entry_id": "81e6f67f14084f11b93f782a9fe9549912dd9228a175baae81fdba5affbba7e9",
+          "title": "AdvDebug/Brovan — trending GitHub repository",
+          "url": "https://github.com/AdvDebug/Brovan",
+          "summary": "Brovan is a user-mode x86_64 binary emulator for your malware analysis & reverse engineering. GitHub discovery signal: 163 stars, 10 forks, 0 open issues; language C#; last pushed 2026-09-11. Topics: antivirus, binary-analysis, csharp, cybersecurity, debugger, debugging, directx, dotnet, drm, emulator.",
+          "source": "GitHub Hot Binary Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Abinary-analysis+created%3A%3E%3D2026-05-15+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-09-11T23:59:03+00:00",
+          "trust": 8,
+          "source_boost": 20,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling",
+            "Malware analysis tooling"
+          ],
+          "score": 46
+        },
+        {
+          "entry_id": "9772fb3870ed4fac9ada6b4221a7bd4b3fb4e4192de3706dbf18da293e21251c",
+          "title": "kanryu/hike-lang — trending GitHub repository",
+          "url": "https://github.com/kanryu/hike-lang",
+          "summary": "A Go-inspired systems language compiling to zero-overhead, C-ABI shared libraries and C/C++ headers via LLVM IR. GitHub discovery signal: 44 stars, 1 forks, 0 open issues; language Go; last pushed 2026-09-12. Topics: c-abi, golang, llvm, programming-language, wasm, webassembly, zero-overhead.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-06-14+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-08-30T12:17:13+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "92b97457251434c16d150445bd31a88cf0eb0d0982097f614aba336a4a1c131f",
+          "title": "kevincouton/awesome-rust-migrations — trending GitHub repository",
+          "url": "https://github.com/kevincouton/awesome-rust-migrations",
+          "summary": "The curated hub for migrating to Rust and eliminating memory-safety vulnerabilities: AI-assisted rewrites, C2Rust case studies, production adoptions at scale, interop tooling, and the evidence behind it. Originally based on malisper/awesome-ai-rust-rewrites (CC0). GitHub discovery signal: 32 stars, 1 forks, 1 open issues; language Unknown; last pushed 2026-09-11. Topics: awesome, awesome-list, c2rust, memory-safety, migration, rust, security.",
+          "source": "GitHub Hot Program Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=%22program+analysis%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-03-16+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-research",
+          "published": "2026-09-08T04:26:07+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 27
+        }
+      ]
+    },
     {
       "date": "2026-09-11",
       "path": "/public/news/2026-09-11-unity-il2cpp-reverse-engineering-news.html",
