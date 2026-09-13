@@ -1,11 +1,80 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-12T05:53:47.039972+00:00",
+  "last_generated_at": "2026-09-13T06:16:44.603108+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "arXiv Reverse Engineering Research: HTTP Error 429: Unknown Error"
   ],
   "pages": [
+    {
+      "date": "2026-09-13",
+      "path": "/public/news/2026-09-13-unity-il2cpp-reverse-engineering-news.html",
+      "title": "WebAssembly runtime & Binary reverse engineering News — September 13, 2026",
+      "description": "Curated WebAssembly runtime, Binary reverse engineering updates for developers and security researchers. 3 relevant releases and technical developments with…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-09-13T06:16:44.603108+00:00",
+      "entries": [
+        {
+          "entry_id": "4b6760d2722624252b5e532edab784345b27539dca4854b8792bbe47eb9313c2",
+          "title": "v0.9.1-beta.1",
+          "url": "https://github.com/wasm3/wasm3/releases/tag/v0.9.1-beta.1",
+          "summary": "Awesome updates 🎉 Fold and fuse optimizations - 10-50% speedup on many workloads 🎉 New in Wasm3 v0.9.1 Implemented WebAssembly features : Exception Handling with exnref Multiple Memories Memory64 + Table64 Module Linking - partial support Deterministic Profile Other improvements New implementation of Gas Metering Simple-WASI improvements - now able to run clang.wasm , used in self-compiling demo Drop wasi_unstable support Guard pages Memory-mapped input wasm files Allow non-global WASI contexts - #331 Tightened CI + ASan + UBSan + Fuzzing Improve wasm spec tests coverage Warning-free builds Updated docs Standardized code formatting is now enforced LOTS of bugfixing 👉 If you like Wasm3, please give us a GitHub star! 🌟",
+          "source": "wasm3 Releases",
+          "source_url": "https://github.com/wasm3/wasm3/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-09-12T16:25:17+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "2608ab8faba0d3ffb0fd4dbb16fa9757c77ec9d0908089310419a14f51a2afb1",
+          "title": "dev/6.1.10653: [aarch64] Disassemble and lift FEAT_CPA instructions",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10653",
+          "summary": "FEAT_CPA (Checked Pointer Arithmetic) adds pointer arithmetic instructions that, on overflow out of the address bits, force bit 54 to disagree with bit 55. This makes the result non-canonical so it faults when dereferenced. For readable decompilation these are lifted as if the instructions are supported but enforcement is disabled (i.e., as if the CPU supports FEAT_CPA but not FEAT_CPA2 ).",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-10T22:41:13+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "764f0ac99640817d432cd08c173591a06c43489d86fec452f9bff3a5d504a89d",
+          "title": "Performance of WebAssembly Runtimes in 2026",
+          "url": "https://00f.net/2026/06/23/webassembly-runtimes-2026/",
+          "summary": "Hacker News signal: 93 points and 24 comments; submitted by fagnerbrack; source 00f.net. Discussion: https://news.ycombinator.com/item?id=49623933",
+          "source": "Hacker News Technical Top Stories",
+          "source_url": "https://news.ycombinator.com/news",
+          "category": "community-hot",
+          "published": "2026-09-09T10:00:59+00:00",
+          "trust": 7,
+          "source_boost": 5,
+          "topic_terms": [],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-09-12",
       "path": "/public/news/2026-09-12-unity-il2cpp-reverse-engineering-news.html",

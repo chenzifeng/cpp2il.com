@@ -22,9 +22,9 @@
       "last_seen": "2026-09-11"
     },
     "wasm": {
-      "count": 32,
+      "count": 33,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-09-12"
+      "last_seen": "2026-09-13"
     },
     "decompiler": {
       "count": 27,
@@ -32,19 +32,19 @@
       "last_seen": "2026-09-08"
     },
     "decompilation": {
-      "count": 19,
+      "count": 20,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-09-07"
+      "last_seen": "2026-09-13"
+    },
+    "WebAssembly": {
+      "count": 19,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-09-13"
     },
     "metadata": {
       "count": 18,
       "first_seen": "2026-07-24",
       "last_seen": "2026-09-07"
-    },
-    "WebAssembly": {
-      "count": 17,
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-09-11"
     },
     "reverse engineering": {
       "count": 13,
