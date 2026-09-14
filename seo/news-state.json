@@ -1,12 +1,42 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-13T06:16:44.603108+00:00",
+  "last_generated_at": "2026-09-14T06:24:21.264155+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "arXiv Reverse Engineering Research: HTTP Error 429: Unknown Error"
+    "arXiv Reverse Engineering Research: The read operation timed out"
   ],
   "pages": [
+    {
+      "date": "2026-09-14",
+      "path": "/public/news/2026-09-14-unity-il2cpp-reverse-engineering-news.html",
+      "title": "WebAssembly runtime News — September 14, 2026",
+      "description": "Curated WebAssembly runtime updates for developers and security researchers. 1 relevant releases and technical developments with original source links.",
+      "item_count": 1,
+      "new_item_count": 1,
+      "updated_at": "2026-09-14T06:24:21.264155+00:00",
+      "entries": [
+        {
+          "entry_id": "3990828c069622e5fbb89af9ee76cc65b2ddfa06a8736c88fbfacb5666204a56",
+          "title": "Release v7.4.0",
+          "url": "https://github.com/wasmerio/wasmer/releases/tag/v7.4.0",
+          "summary": "Important For packaging purposes, use the provided wasmer-full-source.tar.xz , which includes all required submodules. This release includes: A WASIX import preparation hook. General N-API improvements, including guest heap growth through the store. A maximum output-size budget for Singlepass. An updated static MemoryStyle API, now requiring an 8 GiB memory mapping. See full list of changes in the CHANGELOG Install this version of wasmer: curl https://get.wasmer.io -sSfL | sh -s \" v7.4.0 \"",
+          "source": "Wasmer Releases",
+          "source_url": "https://github.com/wasmerio/wasmer/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-08-31T16:52:22+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-09-13",
       "path": "/public/news/2026-09-13-unity-il2cpp-reverse-engineering-news.html",
