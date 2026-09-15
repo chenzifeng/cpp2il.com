@@ -1,12 +1,44 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-14T06:24:21.264155+00:00",
+  "last_generated_at": "2026-09-15T06:12:46.012983+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "arXiv Reverse Engineering Research: The read operation timed out"
+    "arXiv Reverse Engineering Research: HTTP Error 429: Unknown Error"
   ],
   "pages": [
+    {
+      "date": "2026-09-15",
+      "path": "/public/news/2026-09-15-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Decompiler research News — September 15, 2026",
+      "description": "Curated Binary reverse engineering, Decompiler research updates for developers and security researchers. 1 relevant releases and technical developments with…",
+      "item_count": 1,
+      "new_item_count": 1,
+      "updated_at": "2026-09-15T06:12:46.012983+00:00",
+      "entries": [
+        {
+          "entry_id": "5b1fb6b765260cf7866727382aeba4288e4b442c522e0b7258dd788d773b8a5f",
+          "title": "dev/6.1.10654: Centralize Rust build logic into RustBuild.cmake",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10654",
+          "summary": "Each Rust crate now calls bn_add_rust_crate to configure its build, greatly reducing the amount of boilerplate. This CMake function discovers dependencies on other crates within the repository and generates the appropriate CMake dependencies. The build invocation for crates within the same workspace are combined where possible (i.e., no custom cargo flags are required) in order to allow dependencies to be reused and to improve scheduling efficiency. Static library variants of crates are generated when needed (static-only targets, or targets that are statically linked for demo builds), removing the need to maintain custom static variants of crates. Static libraries are merged into a static umbrella crate to avoid the duplicate symbol errors related to the Rust standard library that would otherwise occur when linking multiple static crates into the same binary.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-14T16:07:58+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-09-14",
       "path": "/public/news/2026-09-14-unity-il2cpp-reverse-engineering-news.html",
