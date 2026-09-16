@@ -1,12 +1,165 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-15T06:12:46.012983+00:00",
+  "last_generated_at": "2026-09-16T06:07:02.510897+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "arXiv Reverse Engineering Research: HTTP Error 429: Unknown Error"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-16",
+      "path": "/public/news/2026-09-16-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity WebGL reverse engineering & WebAssembly tooling News — September 16, 2026",
+      "description": "Curated Unity WebGL reverse engineering, WebAssembly tooling updates for developers and security researchers. 7 relevant releases and technical developments…",
+      "item_count": 7,
+      "new_item_count": 7,
+      "updated_at": "2026-09-16T06:07:02.510897+00:00",
+      "entries": [
+        {
+          "entry_id": "d816f080d533b7e09f6bcb4c24af09f1f25c757479fb6fc89ea20d3edda89c5e",
+          "title": "1.0.42",
+          "url": "https://github.com/WebAssembly/wabt/releases/tag/1.0.42",
+          "summary": "What's Changed [wasi-interp] fix integer overflow in wasi getMemPtr size calculation by @aizu-m in #2752 Use unsigned shift in GetAlignment to avoid signed overflow by @aizu-m in #2755 [wasm2c] Avoid size_t overflow in wasm_rt_grow table reallocation by @aizu-m in #2756 parse decimal float literals independent of the C locale by @aizu-m in #2757 [wasm-decompile] Avoid out-of-range shift in load/store rewrite by @aizu-m in #2758 [wasm2c] Use locale-independent ctype in GenerateHeaderGuard by @aizu-m in #2759 Avoid unbounded alloca in FloatParser::ParseFloat by @aizu-m in #2754 [interp] Use u64 table operands so out-of-range table64 indices trap by @aizu-m in #2760 Avoid string_view underflow in ParseCodeMetadataAnnotation by @aizu-m in #2761 Avoid Var::name() on function-level branches in decompiler by @aizu-m in #2762 Update man pages and html docs by @sbc100 in #2763 Avoid front() on an empty element expression in the validator by @aizu-m in #2765 Add ruff python linter. NFC by @sbc100 in #2770 Remove wasm-decompile by @sbc100 in #2769 Support 64 bit limits for tables by @zherczeg in #2767 [binary-reader] Templatize LEB reading functions. NFC by @sbc100 in #2771 Update from C++17 to C++20 by @sbc100 in #2772 Add -Wno-gnu-folding-constant when compiling c api examples by @sbc100 in #2774 Use C++20 standard bit utilities and std::bit_cast. NFC by @sbc100 in #2773 [wasm2c] Write float constants independent of the host locale by @aizu-m in #2768 Avoid out-of-bounds section_starts_ read on invalid reloc index by @aizu-m in #2777 Remove ReadLeb128 type argument by @zherczeg in #2776 [interp] Stop on first error in the binary reader fuzzer by @aizu-m in #2778 [cpp20] Modernize binary reader and writer APIs to use std::span by @sbc100 in #2775 Fix DecodeInvalidOpcode for 9-bit opcode codes by @sbc100 in #2781 wasm2c: (Security) fix runtime overflows when running Wasm modules with memory64 by @shravanrn in #2783 [validator] Allow call_indirect/return_call_indirect table elements to be subtypes of funcref by @6d6f6d656e746f in #2780 Check size overflow and calloc failure in wasm_rt_allocate_memory by @aizu-m in #2786 wasm2c: fix errors in atomic ops implementation by @shravanrn in #2784 wasm2c: fix to check address + offset addition for memory64 by @shravanrn in #2785 Bounds-check function index in name section local handlers by @aizu-m in #2787 wasm2c: Move to O3 optimizations for wasm2c spec compliance tests by @shravanrn in #2788 Zero-init an InitInst to avoid accessing unintialized memory by @lexi-nadia in #2789 Mark Result as [[nodiscard]] and fix associated errors by @lexi-nadia in #2791 Add WABT_USE annotations for Result values only used in assertions by @lexi-nadia in #2793 Fix WABT_PRINTF_TYPE_CODE to correctly handle INT_MIN by @lexi-nadia in #2792 Check memory64 addr+offset overflow in wasm2c store/atomic/simd ops by @aizu-m in #2790 Fix operand arity of v128.storeN_lane in GetExprArity by @aizu-m in #2764 Fix out-of-bounds read in BinaryReaderLogging::WriteIndent by @aizu-m in #2795 Fix out-of-bounds write in MakeTypeBindingReverseMapping by @aizu-m in #2796 Avoid out-of-bounds imports read in wasm_instance_new by @aizu-m in #2797 Fix out-of-bounds type stack read after rethrow in c-writer by @aizu-m in #2798 [interp] Pop memory.copy/table.copy length using the minimum index type by @aizu-m in #2800 Fix out-of-bounds read when tracing global.set and table ops by @aizu-m in #2802 wasm2c: Extend segue to simd and unshared atomics by @shravanrn in #2803 Fix memory64 offset truncation in the interp istream by @aizu-m in #2799 Fix use-after-free resolving reference type names in wast-parser by @aizu-m in #2805 wasm2c: Optimize call indirect code footprint for better performance by @shravanrn in #2807 Fix float argument types in wasm-interp --run-export by @XX-Q in #2811 wasm2c: Remove unnecessary force_read in bounds check mode for performance by @shravanrn in #2814 [binary-reader] Fix out-of-bounds read on invalid name sub-section by @aizu-m in #2801 Fix validation of typed select with empty result types ( #2708 ) by @ANAMASGARD in #2810 Give the tools an 8MB stack on msvc by @Nishuuzz in #2815 Assert that ReadBinaryIr is not used with skip_function_bodies by @Nishuuzz in #2817 [interp] Fix out-of-bounds read tracing call_ref and return_call_ref by @aizu-m in #2819 wasm2c: optimize performance of float handling by @shravanrn in #2822 Don't abort on an empty input file by @Nishuuzz in #2821 interp: assert stop_on_first_error in ReadBinaryInterp by @ANAMASGARD in #2816 wasm2c: Optimize force_read performance by @shravanrn in #2808 wasm2c: reject contradictory imports instead of aborting by @ANAMASGARD in #2813 wasm2c: Save memory base/size locally as a perf optimization by @shravanrn in #2804 Write init expressions folded so they can be parsed back by @Nishuuzz in #2830 Support (module definition ...) constructs by @zherczeg in #2829 Propagate parse errors out of instruction and expression lists by @Nishuuzz in #2824 Don't generate a bare \"$\" from an empty export name by @Nishuuzz in #2832 wasm2c: missing guard force_read error with escape hatch by @shravanrn in #2826 Enable supported stage 5 proposals by default by @sbc100 in #2837 Support u64 limits for wasm 3.0 by @zherczeg in #2836 Reject delegate depth overflow in TypeChecker::OnDelegate by @aizu-m in #2841 [cmake] Require Python 3.8 to run tests by @sbc100 in #2843 wasm2c: Re-enable s390x CI with some tests disabled (Fix #2655 ) by @shravanrn in #2855 [interp] Fix operand types when tracing table.set by @aizu-m in #2825 Update ruff version from 0.15.7 -> 0.16.6 by @sbc100 in #2844 [interp] Fix wasm-interp stack cleanup for tail calls by @KKiiim in #2835 ci: add -y to apt-get commands and unify cross-build install by @kevmoo in #2717 Fix validating imported global refs by @zherczeg in #2848 Support (module instance ...) constructs by @zherczeg in #2847 Bump version to 1.0.42 by @sbc100 in #2859 New Contributors @aizu-m made their first contribution in #2752 @6d6f6d656e746f made their first contribution in #2780 @lexi-nadia made their first contribution in #2789 @XX-Q made their first contribution in #2811 @ANAMASGARD made their first contribution in #2810 @Nishuuzz made their first contribution in #2815 Full Changelog : 1.0.41...1.0.42",
+          "source": "WABT Releases",
+          "source_url": "https://github.com/WebAssembly/wabt/releases.atom",
+          "category": "webassembly",
+          "published": "2026-09-15T20:40:06+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Unity WebGL reverse engineering"
+          ],
+          "matched_terms": [
+            "Unity WebGL reverse engineering",
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 41
+        },
+        {
+          "entry_id": "881fcac1d982a1ebb88461d7fd56a9df6f9840436861c69f00ad942d30dd861a",
+          "title": "bump pwndbg 2026.09.15",
+          "url": "https://github.com/pwndbg/pwndbg/releases/tag/2026.09.15",
+          "summary": "Co-Authored-By: Claude Opus 5 (1M context) noreply@anthropic.com",
+          "source": "pwndbg Releases",
+          "source_url": "https://github.com/pwndbg/pwndbg/releases.atom",
+          "category": "debugging",
+          "published": "2026-09-15T21:50:02+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "Native binary tooling",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 36
+        },
+        {
+          "entry_id": "aa0e51b87ace27c13b5312aa6b54646e000db8d7134cd3e0e38d5391c0d16e77",
+          "title": "hypnguyen1209/offensive-claude — trending GitHub repository",
+          "url": "https://github.com/hypnguyen1209/offensive-claude",
+          "summary": "Offensive security toolkit for Claude Code covering red team, exploit dev, AD attacks, EDR bypass, mobile pentest GitHub discovery signal: 367 stars, 61 forks, 0 open issues; language Python; last pushed 2026-09-15. Topics: claude-code, claude-code-skills, exploit-development, offensive-security, redteam.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-19+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-09-15T12:35:25+00:00",
+          "trust": 8,
+          "source_boost": 21,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 33
+        },
+        {
+          "entry_id": "f146cd3841f9aeeb92a2aa711a5328abd010c6f71bf4a46f5d187ec7c3e60666",
+          "title": "blakebratcher/bitwig-nitro-tools — trending GitHub repository",
+          "url": "https://github.com/blakebratcher/bitwig-nitro-tools",
+          "summary": "Offline reverse-engineering toolchain for Bitwig Studio's Nitro DSP format — decrypt, decompile, and read the DSP behind every native device and Grid module. Tools + format specs only; no Bitwig source or keys. GitHub discovery signal: 56 stars, 6 forks, 0 open issues; language Python; last pushed 2026-08-13. Topics: audio, bitwig, decompiler, dsp, nitro, reverse-engineering.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-03-20+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-08-12T19:38:20+00:00",
+          "trust": 8,
+          "source_boost": 14,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 33
+        },
+        {
+          "entry_id": "222d7d3937461dc84d350e9040a91847fe689f501115c101ae801b003b052b86",
+          "title": "dev/6.1.10667",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10667",
+          "summary": "Add bn::base::DynamicLibrary, an abstraction over runtime loading of …",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-15T22:32:03+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "c876652fff4c09f4b7ddea0b4b073d994bfcabc78ca2e5c6572b8b5fce828f21",
+          "title": "dev/6.1.10664: [MIPS] Expand floating-point, coprocessor, and shuffle lifting",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10664",
+          "summary": "Add scalar and paired-single FP arithmetic and conditional moves Lift TRUNC/ROUND/CEIL/FLOOR.W/L.S/D with fixed rounding semantics Model paired-single arithmetic and per-lane conditional moves with intrinsics Decode and lift ALIGN/DALIGN and BITSWAP/DBITSWAP Lift JALX, coprocessor zero-test branches, and PREFX Model COP2 operations, control/high-word transfers, and shadow GPR access with intrinsics Preserve branch inputs across conditional and split-register delay-slot writes Expand lifting regressions for endianness, register modes, aliasing, zero registers, and delay slots",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-15T13:29:18+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "1c969ed782708a1f1f6ea2aac6da516160e5c066ab4dc16165957658aa348bf8",
+          "title": "A Proliferated Space Architecture for Time-Domain Astrophysics",
+          "url": "https://arxiv.org/abs/2609.12153v1",
+          "summary": "Time-Domain and Multi-Messenger Astrophysics (TDAMM) is entering a discovery-rich but follow-up-limited era, creating an urgent need for responsive, multiwavelength space-based capabilities. The Hydra constellation is a concept for a proliferated space architecture for time-domain astrophysics. The constellation would act as a disaggregated observatory composed of coordinated, relatively low-cost spacecraft that collectively provide capabilities traditionally concentrated within a single large mission. The architecture would combine persistent wide-field gamma-ray monitoring, wide-field and focused X-ray observations, and rapid-response ultraviolet, optical, and infrared imaging and spectroscopy. The constellation would both discover high-energy transients and respond to external alerts from gravitational-wave detectors, neutrino observatories, and ground- and space-based surveys, using low-latency communications, automated event prioritization, and community coordination frameworks to rapidly assign observing resources. A proliferated architecture would offer operational advantages over a single larger mission, including simultaneous observations of multiple targets, graceful degradation following individual spacecraft failures, recurring technology refresh, and opportunities for commercial, international, and philanthropic contributed nodes to join the network. The constellation would address fundamental questions concerning cosmic accelerators, the origin and evolution of the elements, the behavior of matter at extreme density, and the nature of dark energy through gravitational-wave standard sirens. This white paper presents the Hydra concept description that was submitted to NASA's ASTRA initiative for consideration by the Cosmic Origins Program Analysis Group (CoPAG) and Physics of the Cosmos Program Analysis Group (PhysPAG).",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-09-10T19:40:01+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Malware analysis tooling",
+            "Decompiler research"
+          ],
+          "score": 21
+        }
+      ]
+    },
     {
       "date": "2026-09-15",
       "path": "/public/news/2026-09-15-unity-il2cpp-reverse-engineering-news.html",

@@ -2,19 +2,19 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 98,
+      "count": 100,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-12"
+      "last_seen": "2026-09-16"
     },
     "trending GitHub": {
-      "count": 98,
+      "count": 100,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-12"
+      "last_seen": "2026-09-16"
     },
     "GitHub repository": {
-      "count": 98,
+      "count": 100,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-12"
+      "last_seen": "2026-09-16"
     },
     "Unity": {
       "count": 35,
@@ -22,14 +22,14 @@
       "last_seen": "2026-09-11"
     },
     "wasm": {
-      "count": 33,
+      "count": 34,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-09-13"
+      "last_seen": "2026-09-16"
     },
     "decompiler": {
-      "count": 27,
+      "count": 29,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-09-08"
+      "last_seen": "2026-09-16"
     },
     "decompilation": {
       "count": 20,
@@ -51,6 +51,11 @@
       "first_seen": "2026-07-24",
       "last_seen": "2026-09-12"
     },
+    "Wasm": {
+      "count": 11,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-09-16"
+    },
     "Unity f1 LTS": {
       "count": 10,
       "first_seen": "2026-07-20",
@@ -66,11 +71,6 @@
       "first_seen": "2026-07-20",
       "last_seen": "2026-09-11"
     },
-    "Wasm": {
-      "count": 10,
-      "first_seen": "2026-07-26",
-      "last_seen": "2026-09-09"
-    },
     "webassembly": {
       "count": 9,
       "first_seen": "2026-07-24",
@@ -80,6 +80,11 @@
       "count": 9,
       "first_seen": "2026-07-24",
       "last_seen": "2026-09-08"
+    },
+    "decompile": {
+      "count": 6,
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-09-16"
     },
     "Reverse Engineering": {
       "count": 6,
@@ -95,11 +100,6 @@
       "count": 4,
       "first_seen": "2026-07-25",
       "last_seen": "2026-08-29"
-    },
-    "decompile": {
-      "count": 4,
-      "first_seen": "2026-07-27",
-      "last_seen": "2026-08-25"
     },
     "Python Fix exceptions": {
       "count": 4,
