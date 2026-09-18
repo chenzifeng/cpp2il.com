@@ -1,12 +1,147 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-17T06:11:03.350933+00:00",
+  "last_generated_at": "2026-09-18T05:59:41.536021+00:00",
   "source_errors": [
     "arXiv Reverse Engineering Research: HTTP Error 406: Not Acceptable",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-18",
+      "path": "/public/news/2026-09-18-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Dynamic instrumentation News — September 18, 2026",
+      "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 6 relevant releases and technical developments with or…",
+      "item_count": 6,
+      "new_item_count": 6,
+      "updated_at": "2026-09-18T05:59:41.536021+00:00",
+      "entries": [
+        {
+          "entry_id": "dfdb446ff5cc5f5b2feebcb5ddd3e299f00614f695df0f142c6be0366841d84c",
+          "title": "shinthink/blitzstrike — trending GitHub repository",
+          "url": "https://github.com/shinthink/blitzstrike",
+          "summary": "⚡ Blitz Strike — a universal MCP penetration-testing toolbelt. Structured methodology: reconnaissance & attack-surface mapping, source-to-sink analysis, and live validation. 57 escalation chains, 130-tool catalog, intelligence data layer. One server, every agent. GitHub discovery signal: 634 stars, 1 forks, 0 open issues; language TypeScript; last pushed 2026-09-17. Topics: active-directory, blue-team, bug-bounty, cve, defensive-security, exploit, mcp, mcp-server, nuclei, offensive-security.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-06-20+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-09-12T12:13:09+00:00",
+          "trust": 8,
+          "source_boost": 21,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 40
+        },
+        {
+          "entry_id": "a2ccbe71f5afbaf1b1e9bee07bb33a0c91bd166dfc34971302f34c8bd3217db7",
+          "title": "tiwe0/r0dump — trending GitHub repository",
+          "url": "https://github.com/tiwe0/r0dump",
+          "summary": "Android 16 ART-integrated DEX dumper & repair toolkit inspired by FART. In-memory DEX reconstruction, R0dump Manager, and portable AOSP/LineageOS patches. GitHub discovery signal: 86 stars, 37 forks, 0 open issues; language JavaScript; last pushed 2026-09-17. Topics: android, android-16, android-reverse-engineering, android-security, android-unpack, aosp, art-runtime, dexdump, lineageos, mobile-security.",
+          "source": "GitHub Hot Android Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-reverse-engineering+created%3A%3E%3D2026-06-20+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-mobile",
+          "published": "2026-07-17T05:05:09+00:00",
+          "trust": 8,
+          "source_boost": 14,
+          "topic_terms": [
+            "Android reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering"
+          ],
+          "score": 34
+        },
+        {
+          "entry_id": "04448d65d96372f0139ef4132c9599d118971b47fe516a2840ed0088b650b383",
+          "title": "Unity 6000.7.0 Beta",
+          "url": "https://unity.com/releases/editor/beta/6000.7.0b1",
+          "summary": "Unity 6000.7.0 Beta",
+          "source": "Unity Beta Releases",
+          "source_url": "https://unity.com/releases/editor/beta-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-09-17T12:15:56+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "8189f1edc67c2d5def8dd632bd50e777501dfda398b2a81d37acf9a9e4470061",
+          "title": "v10.0.0",
+          "url": "https://github.com/angr/angr/releases/tag/v10.0.0",
+          "summary": "release version 10.0.0",
+          "source": "angr Releases",
+          "source_url": "https://github.com/angr/angr/releases.atom",
+          "category": "program-analysis",
+          "published": "2026-09-17T06:06:17+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "9763344b0e8d724d4d5f3bec014897447d4ac09ee8686fa4e02f89af57638aaf",
+          "title": "dev/6.1.10684",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10684",
+          "summary": "Eliminate polling latency in BinaryView search generators.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-17T17:54:58+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "494dab8b53a9b7f7ab65cb1c5fb6475ffbdf96b1025dde3b1361b9eb7f5f3715",
+          "title": "dev/6.1.10682",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10682",
+          "summary": "Unify the navigation paths between graph/linear views, and improve de…",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-16T20:47:43+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-09-17",
       "path": "/public/news/2026-09-17-unity-il2cpp-reverse-engineering-news.html",
