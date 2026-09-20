@@ -1,12 +1,106 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-19T05:58:29.289782+00:00",
+  "last_generated_at": "2026-09-20T06:23:35.392915+00:00",
   "source_errors": [
     "arXiv Reverse Engineering Research: HTTP Error 406: Not Acceptable",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-20",
+      "path": "/public/news/2026-09-20-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — September 20, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 4 relevant releases and technical developments with original sour…",
+      "item_count": 4,
+      "new_item_count": 4,
+      "updated_at": "2026-09-20T06:23:35.392915+00:00",
+      "entries": [
+        {
+          "entry_id": "a868fbd6dab67e0162ac1c3552c288a9bde3e1ec73aede26d1d14759852ad610",
+          "title": "newliver666/apk-reverse — trending GitHub repository",
+          "url": "https://github.com/newliver666/apk-reverse",
+          "summary": "Suitable for Android APK reverse engineering analysis GitHub discovery signal: 310 stars, 132 forks, 0 open issues; language Python; last pushed 2026-09-19.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-23+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-09-19T13:12:54+00:00",
+          "trust": 8,
+          "source_boost": 22,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation",
+            "Android reverse engineering"
+          ],
+          "score": 54
+        },
+        {
+          "entry_id": "57b3f90d535565d99dee563bea3089a8d0845b35bdb4175ec2e9a26afc582903",
+          "title": "NotASithLord/peerd — trending GitHub repository",
+          "url": "https://github.com/NotASithLord/peerd",
+          "summary": "The first AI agent harness native to the browser. A browser extension that runs a full agent loop where you already work: it drives your tabs, spins up sandboxed compute (JS notebooks, WASM Linux VMs, client-side apps), and shares what it builds peer-to-peer. BYOK, no backend, no telemetry. GitHub discovery signal: 410 stars, 45 forks, 51 open issues; language JavaScript; last pushed 2026-09-15. Topics: agentic, ai-agent, browser-extension, chrome-extension, firefox-extension, llm, manifest-v3, p2p, webassembly, webrtc.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-06-22+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-09-15T03:37:20+00:00",
+          "trust": 8,
+          "source_boost": 21,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 40
+        },
+        {
+          "entry_id": "99fc53890621f36dffe426141688036a970e0f5b18da55c62d2b309fdc0f20d7",
+          "title": "ejfkdev/ddc — trending GitHub repository",
+          "url": "https://github.com/ejfkdev/ddc",
+          "summary": "DEX → Java decompiler in Rust — fast, progressive analysis, bilingual CLI GitHub discovery signal: 150 stars, 26 forks, 1 open issues; language Rust; last pushed 2026-09-19. Topics: android, decompiler, dex, reverse-engineering, rust.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-03-24+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-09-18T05:07:46+00:00",
+          "trust": 8,
+          "source_boost": 20,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 39
+        },
+        {
+          "entry_id": "64dfef2f4bde3b8f8d6d4458241d6338313f8012d3a0841e414851b126fb1728",
+          "title": "snakyvine/codex-maintainer — trending GitHub repository",
+          "url": "https://github.com/snakyvine/codex-maintainer",
+          "summary": "Evidence-grounded issue triage, pull request review, and release notes for GitHub maintainers. CLI + GitHub Action. GitHub discovery signal: 27 stars, 0 forks, 2 open issues; language TypeScript; last pushed 2026-09-17.",
+          "source": "GitHub Hot Program Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=%22program+analysis%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-03-24+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-research",
+          "published": "2026-09-17T01:39:27+00:00",
+          "trust": 8,
+          "source_boost": 15,
+          "topic_terms": [
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 26
+        }
+      ]
+    },
     {
       "date": "2026-09-19",
       "path": "/public/news/2026-09-19-unity-il2cpp-reverse-engineering-news.html",
