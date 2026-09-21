@@ -1,12 +1,67 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-20T06:23:35.392915+00:00",
+  "last_generated_at": "2026-09-21T06:28:03.931116+00:00",
   "source_errors": [
     "arXiv Reverse Engineering Research: HTTP Error 406: Not Acceptable",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-09-21",
+      "path": "/public/news/2026-09-21-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Android reverse engineering News — September 21, 2026",
+      "description": "Curated APK and IPA analysis, Android reverse engineering updates for developers and security researchers. 2 relevant releases and technical developments wit…",
+      "item_count": 2,
+      "new_item_count": 2,
+      "updated_at": "2026-09-21T06:28:03.931116+00:00",
+      "entries": [
+        {
+          "entry_id": "3e17ab3dc83a8d0f893550646df36440f7b3d89db38be11ad2c0f7cc87af492c",
+          "title": "v4.5.3",
+          "url": "https://github.com/MobSF/Mobile-Security-Framework-MobSF/releases/tag/v4.5.3",
+          "summary": "v4.5.3 Changelog Features or Enhancements Added REST API support for viewing decompiled Android XML ( type=xml on api/v1/view_source ) for APK, Android Studio source ZIP, and AAR scans Bumped the MobSF signature pack 4.5.3 dependency and supply-chain refresh: package bumps (including LIEF 0.17), GitHub Actions pinned to full commit SHAs, and related CI/release maintenance Replaced the third-party auto-comment Action with native gh , and fixed repo context so welcome comments work without a checkout Bug Fixes Fixed DNS-rebinding SSRF by pinning HTTPTools to safe, server-side HTTP requests Hardened path traversal checks against Windows root-relative and drive-relative escapes Bounded androguard in-memory ZIP member decompression to block zip-bomb extraction Fixed iOS Info.plist / CFBundleExecutable path traversal when resolving bundled files Fixed CSRF on dynamic analysis actions by requiring token-bearing POST (including GET-render / POST-stream for logcat) Rejected inactive SAML users before ACS group updates and login Fixed apktool not extracting PAK information correctly Stopped mitmdump from leaking and respawning a helper process on every dynamic analysis run Fixed the Maltrail malware-domain feed URL and increased the download timeout Fixed responsive analysis layouts (mobile nav, report summaries) and upload/request error handling, including IntegrityError races on user creation Fixed typo normnal → normal What's Changed fix: typo normnal -> normal by @ayushmanchhabra in #2652 fix!: apktool not extracting the pak informations properly by @AdrienHutinel in #2651 Fix DNS rebinding SSRF with pinned safe HTTP requests. by @ajinabraham in #2670 Replace wow-actions/auto-comment with native gh by @ajinabraham in #2672 ci: fix Auto Comment gh repo context by @ajinabraham in #2674 Harden path traversal against Windows root-relative escapes by @ajinabraham in #2673 Bound androguard ZIP member decompression by @ajinabraham in #2675 Reject inactive SAML users before ACS group updates by @ajinabraham in #2677 Fix iOS plist-derived path traversal by @ajinabraham in #2678 Fix CSRF in dynamic analysis actions by @ajinabraham in #2679 Prepare 4.5.3 dependency release by @ajinabraham in #2680 Update for /maltrail-malware-domains.txt link by @MikhailKasimov in #2662 fix: mitmdump process leaked and respawned on every dynamic analysis run by @alanhasn in #2658 Fix responsive layouts and request error handling by @ajinabraham in #2681 feat: expose decompiled Android XML files via the view_source REST API by @alanhasn in #2659 bump signatures by @ajinabraham in #2682 docs: note CSRF POST and DOM XSS rules in AGENTS.md by @ajinabraham in #2684 New Contributors @MikhailKasimov made their first contribution in #2662 @alanhasn made their first contribution in #2658 Full Changelog : v4.5.2...v4.5.3",
+          "source": "MobSF Releases",
+          "source_url": "https://github.com/MobSF/Mobile-Security-Framework-MobSF/releases.atom",
+          "category": "mobile-security",
+          "published": "2026-09-21T02:52:26+00:00",
+          "trust": 9,
+          "source_boost": 5,
+          "topic_terms": [
+            "APK and IPA analysis",
+            "Malware analysis tooling"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "Native binary tooling",
+            "Malware analysis tooling"
+          ],
+          "score": 46
+        },
+        {
+          "entry_id": "ae9cd1bb4554f3f0f76de75588655dcae5ccf6b8ad642878461abed80a3a79b5",
+          "title": "2026.09.15",
+          "url": "https://github.com/pwndbg/pwndbg/releases/tag/2026.09.15",
+          "summary": "This release brings lots of disassembly improvements: backwards disassembly in context and nearpc , better indirect jumps display and nearpc -f|--function working without debugging symbols; new stack-vis command to visualize stack frames (similarly to vis-heap-chunks ); emulation working with x64 kernels; v2p , p2v and pageinfo commands displaying full page info; LLDB and portable fixes; improved glibc 2.42-2.44 support and many other! See below for screenshots and more info! Also, please sponsor the project to let us keep improving ! Thanks to everyone who made this possible! Quick install Install Pwndbg portable on Linux or macOS (choose one line for GDB or LLDB): curl --proto '=https' --tlsv1.2 -LsSf 'https://install.pwndbg.re' | sh -s -- -t pwndbg-gdb curl --proto '=https' --tlsv1.2 -LsSf 'https://install.pwndbg.re' | sh -s -- -t pwndbg-lldb Homebrew package (macOS only; choose one line for GDB or LLDB): brew install pwndbg/tap/pwndbg-gdb # only allows for remote debugging of ELFs brew install pwndbg/tap/pwndbg-lldb Nix package manager (Linux/macOS; choose one line for GDB or LLDB): nix shell github:pwndbg/pwndbg # this is pwndbg-gdb nix shell github:pwndbg/pwndbg#pwndbg-lldb Other options: Want specific distro and architecture package? Check out setup docs and download the specific asset below. Want latest development version? See install from source . Dissasembly improvements Pwndbg can now disassemble backwards, which makes lifes easier in many ways (in context disasm it gives info on the stuff before $PC when stopping at a breakpoint or right after a syscall, and in nearpc you no longer need to guess addresses to go backwards) The nearpc -f|--function now works without debugging symbols. Finally, it now acts as a full replacement for GDB's/LLDB's disass command to disassemble a full function (is guaranteed to work in all cases the underlying command would work). Our disassembly adds all sorts of nice stuff (branch visualization, branch targets, showing strings and symbols of instruction operands, etc.) Indirect jumps are handled much better for x86 PLT. Return ( ret etc.) instructions and memory-indirect jumps that can segfault are now also handled, visualizing segfaulting ROP chains. Emulation now works when debugging x64 kernels, so get more perks of our disassembly system (emulated flow of instructions, concrete instructions operands indicated) New stack-vis command The stack-vis command can now be used to visualize the stack frames of current thread in a similar fashion as vis-heap-chunks can be used for heap chunks ( #3994 ) Linux kernel debugging The v2p , p2v and pageinfo commands now display full page info (vaddr, paddr, and page) ( #4057 ) Others Set defauly debuginfod server timeouts ( #4079 ) Fixed Glibc >= 2.42 tcache handling ( #4133 ), glibc 2.44 refilling of AT_RANDOM ( #4054 ), exithandlers command with glibc 2.44 ( #4053 ), and tcache_max_bytes for glibc 2.42 ( #4128 ) Bumped versions of LLDB to 23 and Capstone to 8.0.0 ( #4071 , #4094 ) Fixed multiple bugs and crashes with pwndbg-lldb and portable Breaking change: pwndbg.dbg_mod.Error was renamed to pwndbg.dbg_mod.DebuggerError ( #4034 ) ...and many many many others! See full changelog at: 2026.07.29...2026.09.15 Also thanks to all new contributors: @ksaweryr ( #3994 ), @ChickenisLegit ( #4068 ), @trukwava ( #4084 ), @Eirikwst ( #4099 ), @N3thunt3r69 ( #4124 ), @M4idCat ( #4128 ), @kozabrada123 ( #4133 )!",
+          "source": "pwndbg Releases",
+          "source_url": "https://github.com/pwndbg/pwndbg/releases.atom",
+          "category": "debugging",
+          "published": "2026-09-20T17:09:03+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "Native binary tooling",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 30
+        }
+      ]
+    },
     {
       "date": "2026-09-20",
       "path": "/public/news/2026-09-20-unity-il2cpp-reverse-engineering-news.html",
