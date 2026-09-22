@@ -1,12 +1,186 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-21T06:28:03.931116+00:00",
+  "last_generated_at": "2026-09-22T06:19:30.458756+00:00",
   "source_errors": [
     "arXiv Reverse Engineering Research: HTTP Error 406: Not Acceptable",
     "Unity Discussions Latest: HTTP Error 403: Forbidden",
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-09-22",
+      "path": "/public/news/2026-09-22-unity-il2cpp-reverse-engineering-news.html",
+      "title": "WebAssembly runtime & Unity WebGL reverse engineering News — September 22, 2026",
+      "description": "Curated WebAssembly runtime, Unity WebGL reverse engineering updates for developers and security researchers. 8 relevant releases and technical developments…",
+      "item_count": 8,
+      "new_item_count": 8,
+      "updated_at": "2026-09-22T06:19:30.458756+00:00",
+      "entries": [
+        {
+          "entry_id": "9598e9f6d3dbc1d66824542a4b152f96203ee9faaed7a70f8d074d7967861e1a",
+          "title": "v49.0.0: Release Wasmtime 49.0.0 (#14363)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v49.0.0",
+          "summary": "49.0.0 Released 2026-09-21. Added Winch now has initial experimental support for the WebAssembly exception-handling proposal. #14066 #14081 #14132 #14149 #14180 #14209 Wasmtime's type reflection APIs for WebAssembly GC types now have dedicated enums for Heap{Top,Bottom}Type s. #14208 Wasmtime now supports the use of environment variables to configure most CLI arguments in addition to the preexisting CLI flags. #14217 Cranelift will now fold u{add,mul}_overflow results combined with brif instructions for more optimal codegen. #14217 #14254 Components can be tested for equality with a new Component::same API. #14257 The Wasmtime C/C++ API now supports the component-model-implements feature. #14264 Cranelift will now emit the {u,s}bfm instructions on AArch64. #14187 Changed The wide-arithmetic WebAssembly proposal is now enabled by default. #14110 Config::operator_cost now applies to operators inside constant expressions (global initializers, element and data segment offsets, element segment expressions) and to the synthesized call to a module's start function. Previously each of those was charged 1 fuel unit regardless of the configured cost. #14215 Wasmtime's WASI implementation will no longer over-read stdin where possible. #14077 Wasmtime's WASIp2 implementation now maps host-level \"broken pipe\" errors to StreamError::Closed . #14107 Wasmtime's WASIp2 implementation of wasi:http now validates ports in the same manner as wasip3. #14123 Wasmtime's WASI implementation of wasi:filesystem now returns the is-directory error in some situations when a file is provided. #14135 The wasmtime-wasi-http crate now has the p3 feature enabled by default. #14137 Wasmtime's WASIp2 implementation of wasi:http now runs more hooks from the WasiHttpHooks trait in the same manner as wasip3. #14167 Wasmtime now requires Rust 1.96.0 to compile. #14184 Adjustments have been made to the scheduling of threads w.r.t. trapping behavior for cooperatively threaded components. These changes are made to align with the upstream component-model specification. #14146 #14250 Fuel for bulk operations is now consumed after the bulk operation has completed instead of up-front, restoring previous behavior where a failed very large memory growth doesn't trap the original program. #14213 A number of future poll calls throughout the WASIp2 implementation now explicitly opt-out of Tokio's per-task cooperative budget to better uphold guarantees of WASIp2 APIs. #14265 The run_concurrent function is now allowed to run recursively for separate stores, but it still can only be used at most once recursively for any one store. #14302 The compile-time performance of the alias analysis in Cranelift has been greatly improved. #14306",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-09-21T15:33:20+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "6a0d8d4da78d55b459f5178d2b7c6303ad5a069c89105500ad3d7dd29751e28f",
+          "title": "6.0.10",
+          "url": "https://github.com/emscripten-core/emscripten/releases/tag/6.0.10",
+          "summary": "What's Changed The SDL3 port is no longer considered experimental, and the compiler diagnostic warning has been removed. ( #27646 ) WASM=0 and WASM=2 (wasm2js) were marked as deprecated. (See #27608 ) mimalloc was updated to 3.5.1. ( #27662 ) -sWASM_BINDGEN supports emcc usage as a post-link step, where EXPORTED_FUNCTIONS is authoritative. wasm-bindgen processing is only performed when the linker inputs carry the wasm-bindgen Emscripten marker section, so -sWASM_BINDGEN can safely be passed to non-wasm-bindgen builds. ( #27208 ) Embind value_object and value_array argument temporaries for trivially constructible/destructible types (up to alignof 16) are now placed on the wasm stack instead of being heap-allocated per call, and per-field destructor bookkeeping is skipped when the type registers no destructor. This removes the per-call garbage on such calls. The registration ABI gained size and triviality parameters, so object files built against an older bind.h need to be rebuilt. ( #27610 ) emscripten_clear_timeout now releases the runtime keepalive held by the pending timeout, and both emscripten_clear_timeout and emscripten_clear_immediate are no-ops for ids that already fired. ( #27720 ) The NODE_CODE_CACHING setting was removed, as node's support for serializing WebAssembly modules has been missing for over 5 years now. Contributors Thanks to the following contributors: @sbc100 (46) @guybedford (9) @aheejin (4) @dschuff (4) @dimokol (2) @kleisauke (2) @brendandahl (1) @jeremy-code (1) @jrcain-usgs (1) @Kammu2000 (1) @kripken (1) @mrnickzh (1) @tlively (1) New Contributors @mrnickzh made their first contribution in #26886 @Kammu2000 made their first contribution in #27671 @jrcain-usgs made their first contribution in #27691 @dimokol made their first contribution in #27610 Full Changelog : 6.0.9...6.0.10",
+          "source": "Emscripten Releases",
+          "source_url": "https://github.com/emscripten-core/emscripten/releases.atom",
+          "category": "webassembly",
+          "published": "2026-09-21T21:37:02+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Unity WebGL reverse engineering"
+          ],
+          "matched_terms": [
+            "Unity WebGL reverse engineering",
+            "WebAssembly tooling"
+          ],
+          "score": 34
+        },
+        {
+          "entry_id": "07477bbd8b8869a4c6365c9ef4be7d5b0ccc18f412903ebbe3fbce6edfddca47",
+          "title": "Recurse-Labs/recurse — trending GitHub repository",
+          "url": "https://github.com/Recurse-Labs/recurse",
+          "summary": "AI Native IDE for reverse engineering GitHub discovery signal: 178 stars, 13 forks, 0 open issues; language Rust; last pushed 2026-09-22. Topics: agentic-ai, ctf, ctf-tools, ide, pwn, pwntools, reverse-engineering, rust, tauri.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-08-15T07:01:39+00:00",
+          "trust": 8,
+          "source_boost": 15,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 34
+        },
+        {
+          "entry_id": "d8abf93cc66632b0c04088137dbf8ce7353f896d049c0a05aa18cabe203a7593",
+          "title": "Ghidra 12.1.4",
+          "url": "https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidra_12.1.4_build",
+          "summary": "What's New Change History Getting Started SHA-256: ddac49f903da9d5bac833e5cc79395098b9c33cfd3279be5f31bd00387d2d4db",
+          "source": "Ghidra Releases",
+          "source_url": "https://github.com/NationalSecurityAgency/ghidra/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-21T17:38:59+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 33
+        },
+        {
+          "entry_id": "b1d8efcdab771206281be4492624f40eabca22ec9c7652e22e2e6745100c8873",
+          "title": "6.0.0-Alpha11",
+          "url": "https://github.com/capstone-engine/capstone/releases/tag/6.0.0-Alpha11",
+          "summary": "Highlights This is another patch release with multiple instruction fixes and bug fixes. This release adds an AGENTS.md file and developer AI guidelines. API changes/additions x86: Support alternative disassembly for JO/JNO operands in 64-bit mode. This adds two modes for x86: CS_MODE_X86_AMD and CS_MODE_X86_INTEL . Setting either of these flags will currently only affect the JO/JNO instructions. Please check the release guide for more details. The default behavior of the x86 module did not change. Xtensa: Gate ESP32-S3 and HIFI3 instructions behind CS_MODE_XTENSA_ESP32S3 New instruction PowerPC: add mcrxr instruction support Instruction fixes AArch64: report NZCV access for MRS/MSR of NZCV HHPA: Correct name of r0 register - flags -> r0 x86: use effective address size for the loop counter register x86: fix VMOVUPS memory operand access PowerPC: Keep BI out of the CTR-only branch predicate x86: fix EVEX writemask access in AT&T syntax What's Changed Xtensa: gate ESP32-S3 and HIFI3 ops behind CS_MODE_XTENSA_ESP32S3 by @germiBest in #2979 AArch64: report NZCV access for MRS/MSR of NZCV by @gaul in #3002 xtensa: sign-extend scaled offsets in decodeOffset_* helpers by @Samin061 in #2997 Fix Xtensa test with wrong mode selection. by @Rot127 in #3004 Xtensa: Fix Stack overflow by @Rot127 in #3012 AArch64: Fix diet-mode NULL deref in printMatrixTileVector by @amit-sides in #3017 HHPA: Correct name of r0 register - flags -> r0 by @Rot127 in #3024 Fix read from uninitialized memory by @Rot127 in #3011 Add MSAN build option to CMakeLists.txt by @Rot127 in #3029 x86: use effective address size for the loop counter register by @phverg in #3025 systemz: bounds-check register index in decodeRegisterClass by @jmestwa-coder in #3044 x86: fix VMOVUPS memory operand access by @raaller in #3035 PowerPC: Keep BI out of the CTR-only branch predicate by @phix33 in #3043 Alpha: Fix implicit read/write details for some memory instructions by @atirna in #3034 X86: Fix four AT&T operand-detail defects by @phix33 in #3042 RISCV: Revamp flags to allow fine grained control over aliasing by @moste00 in #3008 M68K: Fix fmove.x 96-bit extended immediate decode length and printing by @b1llow in #3016 AArch64: fix Rt operand of the integer STLUR forms by @gaul in #3046 AArch64: SYSL writes its Rt operand, it does not read it by @gaul in #3045 x86: fix near RET decoding with 0x66 and REX.W by @raaller in #3049 ARM/AArch64: Improve runtime of ARM/AArch64 register name patching. by @Rot127 in #3048 Handle case of vsprintf returning oob pointer offset. by @Rot127 in #3060 PowerPC: add mcrxr instruction support by @StilesCrisis in #3065 X86: Zero the operand slot before filling it in the Intel implicit insert by @phix33 in #3057 cstest: Compare the PPC branch details once and without requiring operands by @phix33 in #3058 Add AI guidelines and requirements. by @Rot127 in #3064 x86: Add missing access info for operand[3] of vmulps. by @raaller in #3059 x86: fix EVEX writemask access in AT&T syntax by @raaller in #3072 Replace all system allocations with cs_mem_ allocations. by @Rot127 in #3074 x86: fix JO/JNO operand size in 64-bit mode by @raaller in #3067 riscv: propagate register-class decode failure in custom decoders by @jmestwa-coder in #3071 x86: Fix access of X86_CMPSL memory operands by @raaller in #3080 Add AI guidance by @raaller in #3081 New Contributors @germiBest made their first contribution in #2979 @gaul made their first contribution in #3002 @amit-sides made their first contribution in #3017 @phverg made their first contribution in #3025 @raaller made their first contribution in #3035 @atirna made their first contribution in #3034 @StilesCrisis made their first contribution in #3065 Full Changelog : 6.0.0-Alpha10...6.0.0-Alpha11 Switch from v5 to v6 Please check out our release guide to get an overview what changed, improved, and how the transition can be made as painless as possible: https://github.com/capstone-engine/capstone/blob/next/docs/cs_v6_release_guide.md",
+          "source": "Capstone Releases",
+          "source_url": "https://github.com/capstone-engine/capstone/releases.atom",
+          "category": "native-binary",
+          "published": "2026-09-21T17:57:50+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Native binary tooling",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 29
+        },
+        {
+          "entry_id": "fd96d6f5a55e142e66ac2233e39c98b005927bf625b7344220cedc80cb4aebc8",
+          "title": "version_133",
+          "url": "https://github.com/WebAssembly/binaryen/releases/tag/version_133",
+          "summary": "No content.",
+          "source": "Binaryen Releases",
+          "source_url": "https://github.com/WebAssembly/binaryen/releases.atom",
+          "category": "webassembly",
+          "published": "2026-09-21T23:17:23+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Unity WebGL reverse engineering"
+          ],
+          "matched_terms": [
+            "Unity WebGL reverse engineering",
+            "WebAssembly tooling"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "3dc98b74099c9db35d1d112234a5fae68bea3bbecafc9b887294a153ba34cbd5",
+          "title": "dev/6.1.10711: [MachO] Recognize arm64e.x1 and other new Mach-O slice variants",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10711",
+          "summary": "Fixes #8571 .",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-22T00:20:33+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "1cb694be4889a2328e23eb5a80d661a4faf1134c48d21845f83b17fc47f6a828",
+          "title": "dev/6.1.10710: [MSP430] Fix SUB operand ordering",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10710",
+          "summary": "Fixes #8503",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-21T23:15:48+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-09-21",
       "path": "/public/news/2026-09-21-unity-il2cpp-reverse-engineering-news.html",

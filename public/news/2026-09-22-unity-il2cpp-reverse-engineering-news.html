@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WebAssembly runtime &amp; Unity WebGL reverse engineering News — September 22, 2026 | CPP2IL</title>
+  <meta name="description" content="Curated WebAssembly runtime, Unity WebGL reverse engineering updates for developers and security researchers. 8 relevant releases and technical developments…">
+  <link rel="canonical" href="https://cpp2il.com/public/news/2026-09-22-unity-il2cpp-reverse-engineering-news.html">
+  <link rel="alternate" type="application/rss+xml" title="CPP2IL News RSS" href="https://cpp2il.com/public/news.xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WebAssembly runtime &amp; Unity WebGL reverse engineering News — September 22, 2026">
+  <meta property="og:description" content="Curated WebAssembly runtime, Unity WebGL reverse engineering updates for developers and security researchers. 8 relevant releases and technical developments…">
+  <meta property="og:url" content="https://cpp2il.com/public/news/2026-09-22-unity-il2cpp-reverse-engineering-news.html">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "WebAssembly runtime & Unity WebGL reverse engineering News — September 22, 2026", "description": "Curated WebAssembly runtime, Unity WebGL reverse engineering updates for developers and security researchers. 8 relevant releases and technical developments…", "url": "https://cpp2il.com/public/news/2026-09-22-unity-il2cpp-reverse-engineering-news.html", "dateModified": "2026-09-22T06:19:30.458756+00:00", "isPartOf": {"@type": "WebSite", "name": "CPP2IL", "url": "https://cpp2il.com/"}, "mainEntity": {"@type": "ItemList", "numberOfItems": 8, "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v49.0.0", "name": "v49.0.0: Release Wasmtime 49.0.0 (#14363)"}, {"@type": "ListItem", "position": 2, "url": "https://github.com/emscripten-core/emscripten/releases/tag/6.0.10", "name": "6.0.10"}, {"@type": "ListItem", "position": 3, "url": "https://github.com/Recurse-Labs/recurse", "name": "Recurse-Labs/recurse — trending GitHub repository"}, {"@type": "ListItem", "position": 4, "url": "https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidra_12.1.4_build", "name": "Ghidra 12.1.4"}, {"@type": "ListItem", "position": 5, "url": "https://github.com/capstone-engine/capstone/releases/tag/6.0.0-Alpha11", "name": "6.0.0-Alpha11"}, {"@type": "ListItem", "position": 6, "url": "https://github.com/WebAssembly/binaryen/releases/tag/version_133", "name": "version_133"}, {"@type": "ListItem", "position": 7, "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10711", "name": "dev/6.1.10711: [MachO] Recognize arm64e.x1 and other new Mach-O slice variants"}, {"@type": "ListItem", "position": 8, "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10710", "name": "dev/6.1.10710: [MSP430] Fix SUB operand ordering"}]}, "publisher": {"@type": "Organization", "name": "CPP2IL", "url": "https://cpp2il.com/", "logo": {"@type": "ImageObject", "url": "https://cpp2il.com/logo.png"}}}</script>
+  <style>
+    :root { color-scheme:dark; --bg:#080b12; --panel:#111725; --text:#eef3ff; --muted:#9da9bd; --line:#263146; --accent:#72a7ff; }
+    * { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif; }
+    a { color:var(--accent); } .wrap { width:min(1080px,calc(100% - 32px)); margin:auto; }
+    header { padding:64px 0 28px; border-bottom:1px solid var(--line); } .eyebrow { color:var(--accent); font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { margin:.25em 0; font-size:clamp(2rem,6vw,4.3rem); line-height:1.04; } .lede { max-width:820px; color:var(--muted); font-size:1.08rem; }
+    .tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:22px; } .tag { text-decoration:none; padding:6px 11px; border:1px solid var(--line); border-radius:999px; background:#0d1320; }
+    main { display:grid; gap:18px; padding:32px 0 64px; } .card { padding:24px; border:1px solid var(--line); border-radius:18px; background:var(--panel); }
+    .card h2 { margin:.45em 0; line-height:1.25; } .card h2 a { color:var(--text); text-decoration:none; } .card h2 a:hover { color:var(--accent); }
+    .meta { display:flex; justify-content:space-between; gap:12px; color:var(--muted); font-size:.9rem; } .category { color:#c6d6f3; border:1px solid var(--line); border-radius:6px; padding:2px 6px; margin-right:6px; }
+    .why { color:#c6d1e5; } .source { font-weight:700; text-decoration:none; } footer { padding:28px 0 50px; color:var(--muted); border-top:1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <header><div class="wrap">
+    <div class="eyebrow">CPP2IL Technical News</div>
+    <h1>WebAssembly runtime &amp; Unity WebGL reverse engineering News — September 22, 2026</h1>
+    <p class="lede">Curated WebAssembly runtime, Unity WebGL reverse engineering updates for developers and security researchers. 8 relevant releases and technical developments… This page links to original publishers, uses short excerpts, and does not reproduce complete articles.</p>
+    <div class="tags"><a class="tag" href="/">WebAssembly runtime</a><a class="tag" href="/">Unity WebGL reverse engineering</a><a class="tag" href="/">WebAssembly tooling</a><a class="tag" href="/">Binary reverse engineering</a><a class="tag" href="/">Native binary tooling</a><a class="tag" href="/news/">Decompiler research</a><a class="tag" href="/public/news/">trending GitHub repository</a><a class="tag" href="/public/news/">trending GitHub</a><a class="tag" href="/public/news/">GitHub repository</a><a class="tag" href="/public/news/">Unity</a><a class="tag" href="/public/news/">wasm</a><a class="tag" href="/public/news/">decompiler</a><a class="tag" href="/public/news/">WebAssembly</a><a class="tag" href="/public/news/">decompilation</a></div>
+  </div></header>
+  <main class="wrap">
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Webassembly Runtime</span> Wasmtime Releases</span>
+            <time datetime="2026-09-21T15:33:20+00:00">2026-09-21</time>
+          </div>
+          <h2><a href="https://github.com/bytecodealliance/wasmtime/releases/tag/v49.0.0" rel="noopener noreferrer">v49.0.0: Release Wasmtime 49.0.0 (#14363)</a></h2>
+          <p>49.0.0 Released 2026-09-21. Added Winch now has initial experimental support for the WebAssembly exception-handling proposal. #14066 #14081 #14132 #14149 #14180 #14209 Wasmtime&#x27;s type reflection APIs for WebAssembly GC types now have dedicated enums for Heap{Top,Bottom}Type s. #14208 Wasmtime now supports the use of environment variables to configure most C…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to WebAssembly runtime.</p>
+          <a class="source" href="https://github.com/bytecodealliance/wasmtime/releases/tag/v49.0.0" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Webassembly</span> Emscripten Releases</span>
+            <time datetime="2026-09-21T21:37:02+00:00">2026-09-21</time>
+          </div>
+          <h2><a href="https://github.com/emscripten-core/emscripten/releases/tag/6.0.10" rel="noopener noreferrer">6.0.10</a></h2>
+          <p>What&#x27;s Changed The SDL3 port is no longer considered experimental, and the compiler diagnostic warning has been removed. ( #27646 ) WASM=0 and WASM=2 (wasm2js) were marked as deprecated. (See #27608 ) mimalloc was updated to 3.5.1. ( #27662 ) -sWASM_BINDGEN supports emcc usage as a post-link step, where EXPORTED_FUNCTIONS is authoritative. wasm-bindgen proc…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Unity WebGL reverse engineering, WebAssembly tooling.</p>
+          <a class="source" href="https://github.com/emscripten-core/emscripten/releases/tag/6.0.10" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Github Hot Re</span> GitHub Hot Ghidra Extensions</span>
+            <time datetime="2026-08-15T07:01:39+00:00">2026-08-15</time>
+          </div>
+          <h2><a href="https://github.com/Recurse-Labs/recurse" rel="noopener noreferrer">Recurse-Labs/recurse — trending GitHub repository</a></h2>
+          <p>AI Native IDE for reverse engineering GitHub discovery signal: 178 stars, 13 forks, 0 open issues; language Rust; last pushed 2026-09-22. Topics: agentic-ai, ctf, ctf-tools, ide, pwn, pwntools, reverse-engineering, rust, tauri.</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Binary reverse engineering, Native binary tooling.</p>
+          <a class="source" href="https://github.com/Recurse-Labs/recurse" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Reverse Engineering</span> Ghidra Releases</span>
+            <time datetime="2026-09-21T17:38:59+00:00">2026-09-21</time>
+          </div>
+          <h2><a href="https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidra_12.1.4_build" rel="noopener noreferrer">Ghidra 12.1.4</a></h2>
+          <p>What&#x27;s New Change History Getting Started SHA-256: ddac49f903da9d5bac833e5cc79395098b9c33cfd3279be5f31bd00387d2d4db</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Binary reverse engineering.</p>
+          <a class="source" href="https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidra_12.1.4_build" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Native Binary</span> Capstone Releases</span>
+            <time datetime="2026-09-21T17:57:50+00:00">2026-09-21</time>
+          </div>
+          <h2><a href="https://github.com/capstone-engine/capstone/releases/tag/6.0.0-Alpha11" rel="noopener noreferrer">6.0.0-Alpha11</a></h2>
+          <p>Highlights This is another patch release with multiple instruction fixes and bug fixes. This release adds an AGENTS.md file and developer AI guidelines. API changes/additions x86: Support alternative disassembly for JO/JNO operands in 64-bit mode. This adds two modes for x86: CS_MODE_X86_AMD and CS_MODE_X86_INTEL . Setting either of these flags will current…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Binary reverse engineering, Native binary tooling.</p>
+          <a class="source" href="https://github.com/capstone-engine/capstone/releases/tag/6.0.0-Alpha11" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Webassembly</span> Binaryen Releases</span>
+            <time datetime="2026-09-21T23:17:23+00:00">2026-09-21</time>
+          </div>
+          <h2><a href="https://github.com/WebAssembly/binaryen/releases/tag/version_133" rel="noopener noreferrer">version_133</a></h2>
+          <p>No content.</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Unity WebGL reverse engineering, WebAssembly tooling.</p>
+          <a class="source" href="https://github.com/WebAssembly/binaryen/releases/tag/version_133" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Reverse Engineering</span> Binary Ninja API Releases</span>
+            <time datetime="2026-09-22T00:20:33+00:00">2026-09-22</time>
+          </div>
+          <h2><a href="https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10711" rel="noopener noreferrer">dev/6.1.10711: [MachO] Recognize arm64e.x1 and other new Mach-O slice variants</a></h2>
+          <p>Fixes #8571 .</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Binary reverse engineering, Decompiler research.</p>
+          <a class="source" href="https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10711" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Reverse Engineering</span> Binary Ninja API Releases</span>
+            <time datetime="2026-09-21T23:15:48+00:00">2026-09-21</time>
+          </div>
+          <h2><a href="https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10710" rel="noopener noreferrer">dev/6.1.10710: [MSP430] Fix SUB operand ordering</a></h2>
+          <p>Fixes #8503</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Binary reverse engineering, Decompiler research.</p>
+          <a class="source" href="https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10710" rel="noopener noreferrer">Read the original source →</a>
+        </article></main>
+  <footer><div class="wrap">
+    <a href="/">CPP2IL</a> · <a href="/public/news/">News archive</a> · Updated 2026-09-22 06:19 UTC
+  </div></footer>
+</body>
+</html>
