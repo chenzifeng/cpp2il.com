@@ -1,12 +1,90 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-22T06:19:30.458756+00:00",
+  "last_generated_at": "2026-09-23T06:03:47.013449+00:00",
   "source_errors": [
     "arXiv Reverse Engineering Research: HTTP Error 406: Not Acceptable",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-23",
+      "path": "/public/news/2026-09-23-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Android reverse engineering News — September 23, 2026",
+      "description": "Curated APK and IPA analysis, Android reverse engineering updates for developers and security researchers. 3 relevant releases and technical developments wit…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-09-23T06:03:47.013449+00:00",
+      "entries": [
+        {
+          "entry_id": "722e5f1d47c62cac7de684d85ea2dd7cda2d224a062a0c2022900530a23d2d76",
+          "title": "Android v3 – 0451907c2eaa8467e848c0067bfe8ed4",
+          "url": "https://github.com/Impact-I/reFlutter/releases/tag/android-v3-0451907c2eaa8467e848c0067bfe8ed4",
+          "summary": "reFlutter Android engine build (v3). Snapshot hash: 0451907c2eaa8467e848c0067bfe8ed4",
+          "source": "reFlutter Releases",
+          "source_url": "https://github.com/Impact-I/reFlutter/releases.atom",
+          "category": "mobile-reverse-engineering",
+          "published": "2026-09-23T03:45:51+00:00",
+          "trust": 7,
+          "source_boost": 3,
+          "topic_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "iOS reverse engineering"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "iOS reverse engineering"
+          ],
+          "score": 30
+        },
+        {
+          "entry_id": "1f507aaa354d590e13591d3cb62301e2c33be213b9e61d359c9a671cb6a96c48",
+          "title": "iOS v3 – 0451907c2eaa8467e848c0067bfe8ed4",
+          "url": "https://github.com/Impact-I/reFlutter/releases/tag/ios-v3-0451907c2eaa8467e848c0067bfe8ed4",
+          "summary": "reFlutter iOS engine build (v3). Snapshot hash: 0451907c2eaa8467e848c0067bfe8ed4",
+          "source": "reFlutter Releases",
+          "source_url": "https://github.com/Impact-I/reFlutter/releases.atom",
+          "category": "mobile-reverse-engineering",
+          "published": "2026-09-23T03:44:47+00:00",
+          "trust": 7,
+          "source_boost": 3,
+          "topic_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "iOS reverse engineering"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "iOS reverse engineering"
+          ],
+          "score": 30
+        },
+        {
+          "entry_id": "d4386441afdbd4b43d5087caa0e9c58c218ceaeba6cb398f5e4949491149c681",
+          "title": "dev/6.1.10717",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10717",
+          "summary": "restore commercial/ultimate-only wording for projects docs",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-22T19:11:18+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-09-22",
       "path": "/public/news/2026-09-22-unity-il2cpp-reverse-engineering-news.html",
