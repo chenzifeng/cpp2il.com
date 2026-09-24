@@ -17,9 +17,9 @@
       "last_seen": "2026-09-22"
     },
     "Unity": {
-      "count": 37,
+      "count": 38,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-09-18"
+      "last_seen": "2026-09-24"
     },
     "wasm": {
       "count": 36,
@@ -27,19 +27,19 @@
       "last_seen": "2026-09-22"
     },
     "decompiler": {
-      "count": 30,
+      "count": 31,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-09-20"
+      "last_seen": "2026-09-24"
+    },
+    "decompilation": {
+      "count": 21,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-09-24"
     },
     "WebAssembly": {
       "count": 21,
       "first_seen": "2026-07-24",
       "last_seen": "2026-09-22"
-    },
-    "decompilation": {
-      "count": 20,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-09-13"
     },
     "metadata": {
       "count": 19,
@@ -87,9 +87,9 @@
       "last_seen": "2026-09-22"
     },
     "decompile": {
-      "count": 6,
+      "count": 7,
       "first_seen": "2026-07-27",
-      "last_seen": "2026-09-16"
+      "last_seen": "2026-09-24"
     },
     "Reverse Engineering": {
       "count": 6,
