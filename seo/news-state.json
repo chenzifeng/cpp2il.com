@@ -1,12 +1,141 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-24T06:13:32.792228+00:00",
+  "last_generated_at": "2026-09-25T06:11:17.376347+00:00",
   "source_errors": [
     "arXiv Reverse Engineering Research: HTTP Error 406: Not Acceptable",
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-25",
+      "path": "/public/news/2026-09-25-unity-il2cpp-reverse-engineering-news.html",
+      "title": "WebAssembly runtime & Unity engine releases News — September 25, 2026",
+      "description": "Curated WebAssembly runtime, Unity engine releases updates for developers and security researchers. 6 relevant releases and technical developments with origi…",
+      "item_count": 6,
+      "new_item_count": 6,
+      "updated_at": "2026-09-25T06:11:17.376347+00:00",
+      "entries": [
+        {
+          "entry_id": "199059979f38ab157c3c3dc0dd9317f1a822d98cdf23f795dbd8ed07caa03e65",
+          "title": "v49.0.1: Release Wasmtime 49.0.1 (#14401)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v49.0.1",
+          "summary": "49.0.1 Released 2026-09-24. Fixed Do not drop fuel-spend accrued by callees of call_ref and callees that return via exception throws. GHSA-m63x-6p34-q65x Fix fuel spend for dynamic record lifting. GHSA-jqpg-j7w6-42pr Fix host memory exhaustion on outgoing HTTP body write. GHSA-c9gc-w9vx-w86p wasmtime-wasi: Fix panic on out-of-range datetimes in WASI filesystem set-times, set-times-at. GHSA-j2g9-4prp-pf6h",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-09-24T19:22:42+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "dfb1b47f671b693ff5628b3cc624bad0efe433568adba0a7410c4de39f22db2a",
+          "title": "v36.0.16: Release Wasmtime 36.0.16 (#14402)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v36.0.16",
+          "summary": "36.0.16 Released 2026-09-24. Fixed Fix fuel spend for dynamic record lifting. GHSA-jqpg-j7w6-42pr Fix host memory exhaustion on outgoing HTTP body write. GHSA-c9gc-w9vx-w86p wasmtime-wasi: Fix panic on out-of-range datetimes in WASI filesystem set-times, set-times-at. GHSA-j2g9-4prp-pf6h",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-09-24T19:19:32+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "292ee6fc72b78ca927fc319a6996313fdaaa5bc66c6ce6efa33f132a9c5ee7d7",
+          "title": "Unity 6000.3.25f1 LTS",
+          "url": "https://unity.com/releases/editor/whats-new/6000.3.25f1",
+          "summary": "Unity 6000.3.25f1 LTS",
+          "source": "Unity LTS Releases",
+          "source_url": "https://unity.com/releases/editor/lts-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-09-24T12:52:52+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "282fb26b11171b3bbd932e9a0e5c607135b2bb79eb1bfc0f33a920e37fe66626",
+          "title": "Unity 6000.7.0 Beta",
+          "url": "https://unity.com/releases/editor/beta/6000.7.0b2",
+          "summary": "Unity 6000.7.0 Beta",
+          "source": "Unity Beta Releases",
+          "source_url": "https://unity.com/releases/editor/beta-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-09-23T11:23:51+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "6edda66c713bee51c7b3be0c7520231c9abc0ec96b2984a995470104df006308",
+          "title": "dev/6.1.10733",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10733",
+          "summary": "[Demangler] Don't let GNU3 demangler exceptions escape on non-ASCII n…",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-24T19:06:05+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "10a07415a91793a732724ed49415b3774d1356ad00bcbcca1b258be8f1e58a64",
+          "title": "dev/6.1.10732",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10732",
+          "summary": "Add UI helper for getting qualified name from type display name",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-24T18:40:09+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-09-24",
       "path": "/public/news/2026-09-24-unity-il2cpp-reverse-engineering-news.html",

@@ -17,9 +17,9 @@
       "last_seen": "2026-09-22"
     },
     "Unity": {
-      "count": 38,
+      "count": 40,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-09-24"
+      "last_seen": "2026-09-25"
     },
     "wasm": {
       "count": 36,
@@ -52,19 +52,19 @@
       "last_seen": "2026-09-22"
     },
     "Unity f1 LTS": {
-      "count": 11,
+      "count": 12,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-09-17"
+      "last_seen": "2026-09-25"
     },
     "Unity f1": {
-      "count": 11,
+      "count": 12,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-09-17"
+      "last_seen": "2026-09-25"
     },
     "f1 LTS": {
-      "count": 11,
+      "count": 12,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-09-17"
+      "last_seen": "2026-09-25"
     },
     "Wasm": {
       "count": 11,
