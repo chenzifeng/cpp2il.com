@@ -2,19 +2,19 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 110,
+      "count": 111,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-22"
+      "last_seen": "2026-09-26"
     },
     "trending GitHub": {
-      "count": 110,
+      "count": 111,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-22"
+      "last_seen": "2026-09-26"
     },
     "GitHub repository": {
-      "count": 110,
+      "count": 111,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-22"
+      "last_seen": "2026-09-26"
     },
     "Unity": {
       "count": 40,
@@ -42,9 +42,9 @@
       "last_seen": "2026-09-22"
     },
     "metadata": {
-      "count": 19,
+      "count": 20,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-19"
+      "last_seen": "2026-09-26"
     },
     "reverse engineering": {
       "count": 15,

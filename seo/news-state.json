@@ -1,12 +1,85 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-25T06:11:17.376347+00:00",
+  "last_generated_at": "2026-09-26T06:11:12.641965+00:00",
   "source_errors": [
-    "arXiv Reverse Engineering Research: HTTP Error 406: Not Acceptable",
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "arXiv Reverse Engineering Research: HTTP Error 406: Not Acceptable",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-26",
+      "path": "/public/news/2026-09-26-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Native binary tooling News — September 26, 2026",
+      "description": "Curated Binary reverse engineering, Native binary tooling updates for developers and security researchers. 3 relevant releases and technical developments wit…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-09-26T06:11:12.641965+00:00",
+      "entries": [
+        {
+          "entry_id": "ff7320c1303e1f8db8f631b35ad96454619f6ed34b742dc3c8a1fcd082372be7",
+          "title": "HullaBrian/ttd-capa — trending GitHub repository",
+          "url": "https://github.com/HullaBrian/ttd-capa",
+          "summary": "Capability extraction from Time Travel Debugging Traces GitHub discovery signal: 17 stars, 4 forks, 0 open issues; language C++; last pushed 2026-08-04. Topics: binary-analysis, malware-analysis, reverse-engineering, threat-intelligence.",
+          "source": "GitHub Hot Binary Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Abinary-analysis+created%3A%3E%3D2026-05-29+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-08-04T19:52:53+00:00",
+          "trust": 8,
+          "source_boost": 10,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling",
+            "Malware analysis tooling"
+          ],
+          "score": 43
+        },
+        {
+          "entry_id": "17cba97da555aa24ae6fc02caf6a91468a1561de1f6d72767fe7d8a215f20cf7",
+          "title": "Frida 17.19.0",
+          "url": "https://github.com/frida/frida/releases/tag/17.19.0",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-09-25T12:08:08+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "74c44294c3778ecfae6abb7bd70fcf369684fdc4ef82f87ca4530641d0e98be4",
+          "title": "Help tracing Generative Edit for interoperability",
+          "url": "https://reverseengineering.stackexchange.com/questions/33765/help-tracing-generative-edit-for-interoperability",
+          "summary": "I’m looking for help reverse-engineering the normal Generative Edit / object removal workflow in Samsung Photo Editor. Package: com.sec.android.mimage.photoretouching Version being analyzed: 3.8.24.16 The end goal is interoperability with another application I’m developing. I want an Android/web-based field application to be able to take a photograph, allow the user to mark or mask something that should be removed, pass the original image + removal mask into Samsung’s existing Generative Edit workflow, allow Samsung’s AI service to perform the removal/reconstruction, and then return the completed image back to the originating application. In simple terms: My app → photo + user mask → Samsung Generative Edit → Samsung AI service → edited photo → back to my app I am not trying to bypass Samsung account authentication, steal credentials, defeat payment systems, disable security, or gain unauthorized access to Samsung infrastructure. If Samsung already exposes an Intent, exported Activity, ContentProvider, framework API, or other legitimate interoperability mechanism, that would actually be preferable to reproducing the private protocol. What we have already found Decompiled and inspected Samsung Photo Editor. Identified protobuf structures associated with image editing. Located an EditDataRequest containing fields including: base_image mask_image sample_count service_version Identified response structures containing the generated/result image, patching-mask information, image number, model alias, and debugging metadata. Identified Samsung SCS Vision / gRPC infrastructure. Found methods including ScsVisionStream and ScsVisionUnary. Identified the runtime vision-service endpoint family including: scs-vision-use2.bixbyllm.com Identified configuration/service-discovery traffic involving: scs-config-use2.bixbyllm.com and a GetEndpoint flow. Found request metadata associated with package/signature information, device model, Android/One UI information, and Samsung authentication/token handling. Found references to Imagen model generations, including IMAGEN_2 and IMAGEN_3. There is also a possible simpler integration route through Android ACTION_EDIT targeted at com.sec.android.mimage.photoretouching, but we have not yet proven whether Samsung exposes an appropriate Activity or whether the completed Generative Edit can reliably be returned to the calling application. Attempts at straightforward live TLS interception have interfered with Photo Assist/Generative Edit, so at the moment static APK analysis has been more productive than MITM network analysis. What I believe is still missing The primary missing piece is the exact execution path for normal Generative Edit. We need to trace: Generative Edit UI action → mask preparation → base-image preparation → EditDataRequest construction → Samsung vision client → gRPC call → model/service selection → response decoding → final edited image In particular, I’m trying to determine which class/function actually constructs the EditDataRequest, how the mask and original image are encoded, how the appropriate service/model is selected at runtime, where the required authentication/device metadata is attached, and which code receives and commits the returned image. Another very useful answer would be discovering that we do not need the private cloud protocol at all because Samsung exposes an exported Activity, Intent, framework component, or supported handoff mechanism that allows another Android application to invoke Photo Editor/Generative Edit and receive the finished image. At this point we have most of the individual pieces. The difficult part is connecting them into the exact runtime call chain. If anyone has experience with JADX, smali, APKTool, Android framework internals, Samsung system apps, protobuf, gRPC, Frida, JNI/native .so tracing, or exported Android components, I would greatly appreciate help identifying the remaining call path. I can provide additional class names, strings, protobuf definitions, and other findings from the APK if someone wants to dig into it.",
+          "source": "Reverse Engineering Stack Exchange",
+          "source_url": "https://reverseengineering.stackexchange.com/feeds",
+          "category": "community-qa",
+          "published": "2026-09-25T12:02:33+00:00",
+          "trust": 7,
+          "source_boost": 2,
+          "topic_terms": [],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "Dynamic instrumentation"
+          ],
+          "score": 29
+        }
+      ]
+    },
     {
       "date": "2026-09-25",
       "path": "/public/news/2026-09-25-unity-il2cpp-reverse-engineering-news.html",
