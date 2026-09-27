@@ -1,12 +1,65 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-26T06:11:12.641965+00:00",
+  "last_generated_at": "2026-09-27T06:38:41.240324+00:00",
   "source_errors": [
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "arXiv Reverse Engineering Research: HTTP Error 406: Not Acceptable",
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-27",
+      "path": "/public/news/2026-09-27-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Android reverse engineering News — September 27, 2026",
+      "description": "Curated APK and IPA analysis, Android reverse engineering updates for developers and security researchers. 2 relevant releases and technical developments wit…",
+      "item_count": 2,
+      "new_item_count": 2,
+      "updated_at": "2026-09-27T06:38:41.240324+00:00",
+      "entries": [
+        {
+          "entry_id": "476b2dcf03c73293dfd197c6f1d3c0810b267a0dc59f1da29dd916a353eab137",
+          "title": "Cristallin2006/ghidra-skill-for-dsh — trending GitHub repository",
+          "url": "https://github.com/Cristallin2006/ghidra-skill-for-dsh",
+          "summary": "dsh (DeepSeek Harness) 逆向 agent skill 家族：Ghidra headless daemon + 分诊/脱壳/静态/漏洞/动态/流量/安卓七场景 | Reverse-engineering agent skills: triage, unpacking, decompile, pwn audit, pcap forensics, APK analysis GitHub discovery signal: 4 stars, 0 forks, 0 open issues; language Python; last pushed 2026-09-27. Topics: agent-skills, android-reverse-engineering, binary-analysis, ctf, ctf-tools, decompiler, deepseek-harness, frida, ghidra, malware-analysis.",
+          "source": "GitHub Hot Android Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-reverse-engineering+created%3A%3E%3D2026-06-29+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-mobile",
+          "published": "2026-09-13T14:43:44+00:00",
+          "trust": 8,
+          "source_boost": 11,
+          "topic_terms": [
+            "Android reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "Binary reverse engineering",
+            "Dynamic instrumentation"
+          ],
+          "score": 62
+        },
+        {
+          "entry_id": "66367490dc02c41677cf7786934923b4f815377bf563342dbf9e57756544f229",
+          "title": "vladtrc/iw4L — trending GitHub repository",
+          "url": "https://github.com/vladtrc/iw4L",
+          "summary": "Standalone experimental Call of Duty runtime in Rust, built on bevy and wgpu GitHub discovery signal: 127 stars, 10 forks, 3 open issues; language Rust; last pushed 2026-09-27.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-30+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-09-13T11:54:59+00:00",
+          "trust": 8,
+          "source_boost": 19,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 31
+        }
+      ]
+    },
     {
       "date": "2026-09-26",
       "path": "/public/news/2026-09-26-unity-il2cpp-reverse-engineering-news.html",
