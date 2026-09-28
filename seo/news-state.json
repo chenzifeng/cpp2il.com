@@ -1,12 +1,127 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-27T06:38:41.240324+00:00",
+  "last_generated_at": "2026-09-28T07:01:38.277522+00:00",
   "source_errors": [
     "arXiv Reverse Engineering Research: HTTP Error 406: Not Acceptable",
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-28",
+      "path": "/public/news/2026-09-28-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — September 28, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 5 relevant releases and technical developments with original sour…",
+      "item_count": 5,
+      "new_item_count": 5,
+      "updated_at": "2026-09-28T07:01:38.277522+00:00",
+      "entries": [
+        {
+          "entry_id": "3d0e9b3fd85a28eca36642390e0b461c34b121d77a35d22594d39d071049f205",
+          "title": "shiedless/unity-il2cpp-esp-tutorial — trending GitHub repository",
+          "url": "https://github.com/shiedless/unity-il2cpp-esp-tutorial",
+          "summary": "GitHub discovery signal: 37 stars, 0 forks, 0 open issues; language Unknown; last pushed 2026-09-26.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-31+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-09-23T16:51:07+00:00",
+          "trust": 8,
+          "source_boost": 18,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 62
+        },
+        {
+          "entry_id": "e642e29aef1907d47f01e3d66f8fbe1c71381eab16482b0a7c97ed5c6250def8",
+          "title": "Ch0pin/rdx — trending GitHub repository",
+          "url": "https://github.com/Ch0pin/rdx",
+          "summary": "A native APK and DEX decompiler written in Rust GitHub discovery signal: 73 stars, 2 forks, 0 open issues; language Rust; last pushed 2026-09-27.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-06-30+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-09-21T09:24:55+00:00",
+          "trust": 8,
+          "source_boost": 18,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "Dynamic instrumentation"
+          ],
+          "score": 45
+        },
+        {
+          "entry_id": "d6cc5ae4b61feefc7a0a01cb87c13daff6a8c486c2dc31189874acd99ba7686e",
+          "title": "Ablation-Tool/ablation — trending GitHub repository",
+          "url": "https://github.com/Ablation-Tool/ablation",
+          "summary": "Ablation is a reverse engineering framework GitHub discovery signal: 37 stars, 3 forks, 0 open issues; language Python; last pushed 2026-09-28. Topics: binary-analysis, claude-code, codex, decompiler, diffing, disassembler, educational, firmware-analysis, open-source, reverse-engineering.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-04-01+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-09-23T21:44:35+00:00",
+          "trust": 8,
+          "source_boost": 17,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 44
+        },
+        {
+          "entry_id": "7de8e183de92ecd1d4054ceda10338668839e62ca91f8c981e1d9c3bdad3e920",
+          "title": "tihanyin/REx-skill — trending GitHub repository",
+          "url": "https://github.com/tihanyin/REx-skill",
+          "summary": "REx@Skill - Agentic Reverse Engineering eXecution Skill for binary vulnerability discovery GitHub discovery signal: 97 stars, 17 forks, 0 open issues; language Python; last pushed 2026-09-23.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-31+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-09-23T06:49:12+00:00",
+          "trust": 8,
+          "source_boost": 19,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 31
+        },
+        {
+          "entry_id": "c55a7bc03f06b1fcd50d8fc53dc9f5e59f8a3f61a6143849b4f13afda4bdaf1e",
+          "title": "dev/6.1.10751",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10751",
+          "summary": "Declare LinearView::canCopy override.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-27T18:22:15+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-09-27",
       "path": "/public/news/2026-09-27-unity-il2cpp-reverse-engineering-news.html",
