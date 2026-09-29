@@ -2,19 +2,19 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 117,
+      "count": 120,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-29"
     },
     "trending GitHub": {
-      "count": 117,
+      "count": 120,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-29"
     },
     "GitHub repository": {
-      "count": 117,
+      "count": 120,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-29"
     },
     "Unity": {
       "count": 40,
@@ -32,9 +32,9 @@
       "last_seen": "2026-09-28"
     },
     "decompilation": {
-      "count": 21,
+      "count": 22,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-09-24"
+      "last_seen": "2026-09-29"
     },
     "WebAssembly": {
       "count": 21,
@@ -66,35 +66,40 @@
       "first_seen": "2026-07-20",
       "last_seen": "2026-09-25"
     },
+    "webassembly": {
+      "count": 11,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-09-29"
+    },
     "Wasm": {
       "count": 11,
       "first_seen": "2026-07-26",
       "last_seen": "2026-09-16"
-    },
-    "webassembly": {
-      "count": 10,
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-09-20"
     },
     "apk": {
       "count": 10,
       "first_seen": "2026-07-24",
       "last_seen": "2026-09-20"
     },
+    "decompile": {
+      "count": 9,
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-09-29"
+    },
     "WASM": {
       "count": 9,
       "first_seen": "2026-07-25",
       "last_seen": "2026-09-22"
     },
-    "decompile": {
-      "count": 8,
-      "first_seen": "2026-07-27",
-      "last_seen": "2026-09-27"
-    },
     "Reverse Engineering": {
       "count": 7,
       "first_seen": "2026-07-27",
       "last_seen": "2026-09-28"
+    },
+    "dev Python": {
+      "count": 6,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-09-29"
     },
     "Barebone agents": {
       "count": 4,
@@ -151,11 +156,6 @@
       "first_seen": "2026-07-26",
       "last_seen": "2026-07-28"
     },
-    "dev Python": {
-      "count": 4,
-      "first_seen": "2026-07-26",
-      "last_seen": "2026-07-28"
-    },
     "del during interpreter": {
       "count": 4,
       "first_seen": "2026-07-26",
@@ -165,6 +165,26 @@
       "count": 4,
       "first_seen": "2026-07-26",
       "last_seen": "2026-07-28"
+    },
+    "requirements users.": {
+      "count": 2,
+      "first_seen": "2026-09-29",
+      "last_seen": "2026-09-29"
+    },
+    "Python requirements users.": {
+      "count": 2,
+      "first_seen": "2026-09-29",
+      "last_seen": "2026-09-29"
+    },
+    "Python requirements": {
+      "count": 2,
+      "first_seen": "2026-09-29",
+      "last_seen": "2026-09-29"
+    },
+    "dev Python requirements": {
+      "count": 2,
+      "first_seen": "2026-09-29",
+      "last_seen": "2026-09-29"
     },
     "v3 c2eaa8467e848c0067bfe8ed4": {
       "count": 2,

@@ -1,12 +1,125 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-28T07:01:38.277522+00:00",
+  "last_generated_at": "2026-09-29T06:59:44.628092+00:00",
   "source_errors": [
-    "arXiv Reverse Engineering Research: HTTP Error 406: Not Acceptable",
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-09-29",
+      "path": "/public/news/2026-09-29-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Native binary tooling News — September 29, 2026",
+      "description": "Curated Binary reverse engineering, Native binary tooling updates for developers and security researchers. 5 relevant releases and technical developments wit…",
+      "item_count": 5,
+      "new_item_count": 5,
+      "updated_at": "2026-09-29T06:59:44.628092+00:00",
+      "entries": [
+        {
+          "entry_id": "1c3874d301d66511b16fc8a076e91b634c56442b9d829aa3c158b37552df87d1",
+          "title": "toratako/ghidra-cli — trending GitHub repository",
+          "url": "https://github.com/toratako/ghidra-cli",
+          "summary": "The agent-native Ghidra CLI — headless analysis, decompilation, and structured JSON built for AI agents. GitHub discovery signal: 10 stars, 0 forks, 0 open issues; language Rust; last pushed 2026-09-25. Topics: ai, ai-agent, ai-agents, ai-tools, binary, binary-analysis, cli, ctf, decompilation, decompile.",
+          "source": "GitHub Hot Binary Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Abinary-analysis+created%3A%3E%3D2026-06-01+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-09-03T22:04:31+00:00",
+          "trust": 8,
+          "source_boost": 11,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 46
+        },
+        {
+          "entry_id": "930694145e4c7f53450bf52b7154058129628cefd442f840ea55664b8bf93ac6",
+          "title": "open-subs/opensubs — trending GitHub repository",
+          "url": "https://github.com/open-subs/opensubs",
+          "summary": "Subtitle any video without uploading it. Whisper, translation, styling and burn-in — all local, in the browser, on the desktop, or from the command line. GitHub discovery signal: 50 stars, 5 forks, 0 open issues; language Rust; last pushed 2026-09-26. Topics: ass-subtitles, local-first, privacy, speech-to-text, srt, subtitles, transcription, webassembly, webgpu, whisper.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-07-01+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-09-10T07:10:43+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "25faed83f890fc8d142f66685600460637679704622bf69a594d12867f9815cb",
+          "title": "salmaanfarisshaik-art/Digital-Forensics — trending GitHub repository",
+          "url": "https://github.com/salmaanfarisshaik-art/Digital-Forensics",
+          "summary": "GitHub discovery signal: 136 stars, 0 forks, 0 open issues; language Unknown; last pushed 2026-09-28.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-06-01+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-09-17T11:59:01+00:00",
+          "trust": 8,
+          "source_boost": 19,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 31
+        },
+        {
+          "entry_id": "4317ff74a5353713ab6fe7513caad134e65e33b36fff1a38e5ad8a61e5c4d642",
+          "title": "dev/6.1.10768: Update Python version requirements for users.",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10768",
+          "summary": "As of right now, I don't know that there's technically anything preventing 3.10 from still working. But, since our build infrastructure has moved to 3.12 as a minimum, it feels like we should stop advertising 3.10 support since it's not being tested.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-29T02:58:59+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "cb3838521fbba115a5cb7a9806970caa1c5b56d6c5bade4d37ba96ebdf90df12",
+          "title": "dev/6.1.10767: Update Python version requirements for users.",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10767",
+          "summary": "As of right now, I don't know that there's technically anything preventing 3.10 from still working. But, since our build infrastructure has moved to 3.12 as a minimum, it feels like we should stop advertising 3.10 support since it's not being tested.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-29T02:58:59+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-09-28",
       "path": "/public/news/2026-09-28-unity-il2cpp-reverse-engineering-news.html",
