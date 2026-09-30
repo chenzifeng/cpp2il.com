@@ -1,11 +1,81 @@
 {
   "version": 3,
-  "last_generated_at": "2026-09-29T06:59:44.628092+00:00",
+  "last_generated_at": "2026-09-30T06:48:43.843834+00:00",
   "source_errors": [
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-09-30",
+      "path": "/public/news/2026-09-30-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Decompiler research News — September 30, 2026",
+      "description": "Curated Binary reverse engineering, Decompiler research updates for developers and security researchers. 3 relevant releases and technical developments with…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-09-30T06:48:43.843834+00:00",
+      "entries": [
+        {
+          "entry_id": "17999bbb46f0182f9ad4b829166fae662dc63d8287163e20d8b392f624fe3263",
+          "title": "dev/6.1.10774: Update Python version requirements for users.",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10774",
+          "summary": "As of right now, I don't know that there's technically anything preventing 3.10 from still working. But, since our build infrastructure has moved to 3.12 as a minimum, it feels like we should stop advertising 3.10 support since it's not being tested.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-29T02:58:59+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "6ec91cf1234f4909a285d39f74fdfc5929eb06c65b9ed3a51d0e4daade8ad04a",
+          "title": "dev/6.1.10769: Update Python version requirements for users.",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10769",
+          "summary": "As of right now, I don't know that there's technically anything preventing 3.10 from still working. But, since our build infrastructure has moved to 3.12 as a minimum, it feels like we should stop advertising 3.10 support since it's not being tested.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-09-29T02:58:59+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "12415bda1a9bd4321a33dd6a1f49a5dccba23663f3765ed8cbe784bc7838e3ca",
+          "title": "Show HN: NetWasm – Independent .NET Compiler/Runtime (82.5 KB Hello World in C#)",
+          "url": "https://playground.netwasm.com/",
+          "summary": "I’ve been building NetWasm: an independent .NET compiler, CoreLib and runtime designed specifically for WebAssembly. It compiles Roslyn-generated CIL into standalone core WASM or WASI Preview 2 components - without shipping CoreCLR or Mono. A clean Release application containing Console.WriteLine(4… Hacker News signal: 5 points and 4 comments; submitted by zionsati; source playground.netwasm.com. Discussion: https://news.ycombinator.com/item?id=49892613",
+          "source": "Show HN Reverse Engineering Tools",
+          "source_url": "https://news.ycombinator.com/show",
+          "category": "community-hot",
+          "published": "2026-09-29T13:09:27+00:00",
+          "trust": 7,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 13
+        }
+      ]
+    },
     {
       "date": "2026-09-29",
       "path": "/public/news/2026-09-29-unity-il2cpp-reverse-engineering-news.html",
