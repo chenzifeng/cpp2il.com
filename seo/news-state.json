@@ -1,12 +1,201 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-02T07:03:31.754918+00:00",
+  "last_generated_at": "2026-10-03T06:36:30.194052+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "arXiv Reverse Engineering Research: The read operation timed out"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-10-03",
+      "path": "/public/news/2026-10-03-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Dynamic instrumentation News — October 03, 2026",
+      "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 9 relevant releases and technical developments with or…",
+      "item_count": 9,
+      "new_item_count": 9,
+      "updated_at": "2026-10-03T06:36:30.194052+00:00",
+      "entries": [
+        {
+          "entry_id": "fce685da24d5f236baefa358c6847b98f8cc47cd374db7a3b617668f42b4d4a7",
+          "title": "Frida 17.21.0",
+          "url": "https://github.com/frida/frida/releases/tag/17.21.0",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-10-02T19:46:43+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "b89c8ae457ba332663e6bf7ecc7120ae5e5574b28bcc9f7c1f5c9c0e3eed79d1",
+          "title": "v48.0.5: Release Wasmtime 48.0.5 (#14495)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v48.0.5",
+          "summary": "48.0.5 Released 2026-10-02. Fixed Fixed an issue where artifacts for 48.0.4 didn't get correctly published from CI and a GitHub release for 48.0.4 wasn't made. #14494 48.0.4 Released 2026-10-02. Fixed WASI preview 0 implementation of poll_oneoff circumvents fuel consumption. GHSA-j366-h8gg-77pm Excessive allocated memory on the host when guests don't have stdio. GHSA-gqmc-89g8-p25r fd_readdir copies uninitialized struct padding into guest memory. GHSA-96f6-r43r-8c24 Guest can panic host through filesystem timestamp before the epoch on wasip3. GHSA-mr2v-56j5-cmfc Wasmtime component async-lifted callback result count is unvalidated, causing a native stack buffer overflow. GHSA-32h6-97mm-8q3c Mis-typed WebAssembly tag imports can lead to GC heap corruption. GHSA-cfhf-m2cr-62wj Wasmtime wasi:http implementation panics with a zero timeout supplied. GHSA-w4qr-p94g-mjhv Rooting for GC values live across try_call may be missing, causing GC heap corruption. GHSA-hw8m-q44c-ggrf",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-10-02T19:34:26+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "c65c66c64f07fe6e3cd578dd59e84555d55c2c158e2e2a223572b5943475f74c",
+          "title": "v49.0.2: Release Wasmtime 49.0.2 (#14474)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v49.0.2",
+          "summary": "49.0.2 Released 2026-10-02. Fixed WASI preview 0 implementation of poll_oneoff circumvents fuel consumption. GHSA-j366-h8gg-77pm Excessive allocated memory on the host when guests don't have stdio. GHSA-gqmc-89g8-p25r fd_readdir copies uninitialized struct padding into guest memory. GHSA-96f6-r43r-8c24 Guest can panic host through filesystem timestamp before the epoch on wasip3. GHSA-mr2v-56j5-cmfc Wasmtime component async-lifted callback result count is unvalidated, causing a native stack buffer overflow. GHSA-32h6-97mm-8q3c Mis-typed WebAssembly tag imports can lead to GC heap corruption. GHSA-cfhf-m2cr-62wj Wasmtime wasi:http implementation panics with a zero timeout supplied. GHSA-w4qr-p94g-mjhv Rooting for GC values live across try_call may be missing, causing GC heap corruption. GHSA-hw8m-q44c-ggrf",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-10-02T16:55:05+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "2dc4f50ad08f1adec087be1a82118b8dfbab473989da2ded2251bb7bf4807f74",
+          "title": "Characterizing and Codifying Malware Sophistication",
+          "url": "https://arxiv.org/abs/2610.00098v1",
+          "summary": "'Sophisticated' is widely used to describe malware, yet it lacks a consistent definition within academic literature. While existing software quality and complexity metrics offer some insight into malware structure, they do not capture the broader adversarial and operational traits that contribute to real-world threat potential. This paper presents a systematization of existing approaches for assessing malware quality using static binary analysis. We define malware sophistication through a quality-focused lens by reinterpreting select characteristics from the ISO/IEC 25010 software quality standard, including reliability, maintainability, flexibility, and security, and evaluating their applicability to malware binaries. We identify which characteristics are both relevant to malware and measurable through static analysis, forming the basis for future frameworks that consistently assess malware sophistication when source code is unavailable or dynamic execution is infeasible.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-09-08T16:26:37+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 31
+        },
+        {
+          "entry_id": "c96aa1b93b3eef45dabe4432d0031597f4713ba51e2a446a4317045d6c39c924",
+          "title": "v2.4.0 Usability improvements and Unity 6.7 support",
+          "url": "https://github.com/Unity-Technologies/UnityDataTools/releases/tag/v2.4.0",
+          "summary": "What Changed Analyze usability improvements: Analyze now records SerializeReference instances in the new managed_references table. Previously this information was hard to determine without large scale dumping of all the built content. Archive files (e.g. asset bundles) are tracked by relative path so that it is not a conflict if the same name appears twice in different subfolders. Dump and Serialized-File Usability The new --entry argument can be used to run dump and serialized-file commands directly on serialized files that are inside archive files. Unity 6.7 Support for Content Directories Support the v3 version of ContentLayout.json . This is required to understand Unity 6.7 content directory output. Backward compatibility is maintained with the Unity 6.6 format. PRs [ #149 ] Name archives by their path relative to the scanned directory by @SkowronskiAndrew in #150 [ #151 ] Add --entry to dump and serialized-file to read a SerializedFile inside an archive by @SkowronskiAndrew in #152 [ #131 ] Support ContentLayout v3 (Unity 6.7) with v2 backward compatibility by @SkowronskiAndrew in #147 [ #53 ] Track SerializeReference instances in analyze by @SkowronskiAndrew in #153 Analyze Schema Change Summary The analyze database schema version ( PRAGMA user_version ) goes from 7 to 10 in this release. Re-run analyze to get the new schema. archives.name archives.name is now the archive's path relative to the directory passed to analyze , for example dlc/weapons/main instead of main . The same value appears in the archive column of object_view , assetbundle_asset_view , monoscript_view , script_object_view and the other views. content_layout_* changes To match the new ContentLayout.json schema there are some changes to the content_layout* tables. Queries over these tables written for v2.3.0 need updating: Table / view Before Now content_layout_serialized_files cfid , content_hash stable_id , artifact_index (the content hash is on content_layout_serialized_files_view and content_layout_binary_artifacts ) content_layout_loadable_objects keyed by object_id_hash keyed by loadable_index ; object_id_hash is gone content_layout_loadable_objects lfid = id in the source asset, output_lfid = id in the output file lfid = id in the output content file; output_lfid is gone content_layout_loadable_objects asset_path always present asset_path and source_lfid (the old lfid ) exist only when a version 2 layout was imported content_layout_loadable_objects is_root_asset 0/1 1-based position in the layout's RootAssets ; 0 when not a root (still usable as a boolean) content_layout_loadable_dependencies object_id_hash loadable_index content_layout_serialized_file_dependencies_view dependency_cfid dependency_stable_id Watch out for lfid : in a database from a version 2 layout it used to be the source-asset id, and is now the output-file id. For the source-asset id use source_lfid . New tables and views New managed_references table, managed_reference_view and managed_reference_stats_view . They list every [SerializeReference] instance held by MonoBehaviours and ScriptableObjects: class, namespace, assembly, rid and data size. Full Changelog : v2.3.0...v2.4.0",
+          "source": "Unity Data Tools Releases",
+          "source_url": "https://github.com/Unity-Technologies/UnityDataTools/releases.atom",
+          "category": "unity-assets",
+          "published": "2026-10-02T14:42:32+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "Unity asset extraction"
+          ],
+          "matched_terms": [
+            "Unity engine releases",
+            "Unity asset extraction"
+          ],
+          "score": 29
+        },
+        {
+          "entry_id": "50d879ca793566f491efbd7ee7d098dcad1222c4c3bd6e9ca0061a40c8ffa120",
+          "title": "v2.3.0 Unity 6.7 support",
+          "url": "https://github.com/Unity-Technologies/UnityDataTools/releases/tag/v2.3.0",
+          "summary": "What's Changed The focus for this release is adding support for Unity 6.7, which is now in Beta. The main changes for Unity 6.7 support: the new \"v9\" for the Unity Archive format (which will greatly improves patchability when using chunk based compression, e.g. LZ4, LZ4HC). multiple changes to the serialized file format updated version of UnityFileSystemApi (necessary for loading the new file format) Backward compatibility is maintained to read content built by older versions of Unity. Automated tests include reference files with older versions to help ensure ongoing support. Independent of 6.7 support - the documentation and support for AssetBundle variants has been improved. Note: This version does not include support for Unity 6.7 Content Directories. The ContentLayout.json is changing between Unity 6.6 and Unity 6.7. Currently there is a git branch with initial support, which will be folded into an upcoming release of UnityDataTools once final schema for 6.7 is set, see #147 Details [ #130 ] Support SerializedFile v26 (Unity 6.7) in #145 [ #131 ] Read storage block offsets from the archive BlocksInfo (format version 9) in #128 AssetBundle variant - documentation and clear error handler by @SkowronskiAndrew in #148 Full Changelog : v2.2.1...v2.3.0",
+          "source": "Unity Data Tools Releases",
+          "source_url": "https://github.com/Unity-Technologies/UnityDataTools/releases.atom",
+          "category": "unity-assets",
+          "published": "2026-10-02T14:28:33+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "Unity asset extraction"
+          ],
+          "matched_terms": [
+            "Unity engine releases",
+            "Unity asset extraction"
+          ],
+          "score": 29
+        },
+        {
+          "entry_id": "91e32e2f5da531a0b6feeb9eb5c4bede9bcb38cf5424af675e49f9b2daef2522",
+          "title": "v10.0.1.post1",
+          "url": "https://github.com/angr/angr/releases/tag/v10.0.1.post1",
+          "summary": "release version 10.0.1.post1",
+          "source": "angr Releases",
+          "source_url": "https://github.com/angr/angr/releases.atom",
+          "category": "program-analysis",
+          "published": "2026-10-02T06:59:17+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "ff2ee636b87254c3cb90ab7da2463f46bc3785595fdc651ad179bdf6f3416051",
+          "title": "dev/6.1.10815: Bound PE section name expansion and fix limit settings display",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10815",
+          "summary": "Validate string-table offsets and bound section name reads using configurable per-name and aggregate limits. Fall back to header names with one warning when names are invalid or exceed a limit. Allow -1 to disable each limit. Always resolve names of eight bytes or fewer, including .reloc, to preserve relocation handling.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-02T17:10:58+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "26db9b6cfd7f3d9f46a4106c3be1eba7bc7d3be5dde41d693e791fe2c8976926",
+          "title": "dev/6.1.10811: Bound PE section name expansion and fix limit settings display",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10811",
+          "summary": "Validate string-table offsets and bound section name reads using configurable per-name and aggregate limits. Fall back to header names with one warning when names are invalid or exceed a limit. Allow -1 to disable each limit. Always resolve names of eight bytes or fewer, including .reloc, to preserve relocation handling.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-02T17:10:58+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-10-02",
       "path": "/public/news/2026-10-02-unity-il2cpp-reverse-engineering-news.html",

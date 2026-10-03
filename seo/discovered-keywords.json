@@ -17,9 +17,9 @@
       "last_seen": "2026-10-02"
     },
     "Unity": {
-      "count": 40,
+      "count": 42,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-09-25"
+      "last_seen": "2026-10-03"
     },
     "wasm": {
       "count": 38,
@@ -31,15 +31,15 @@
       "first_seen": "2026-07-20",
       "last_seen": "2026-09-28"
     },
+    "WebAssembly": {
+      "count": 25,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-10-03"
+    },
     "metadata": {
       "count": 23,
       "first_seen": "2026-07-24",
       "last_seen": "2026-10-02"
-    },
-    "WebAssembly": {
-      "count": 23,
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-10-01"
     },
     "decompilation": {
       "count": 22,
@@ -186,6 +186,96 @@
       "first_seen": "2026-07-26",
       "last_seen": "2026-07-28"
     },
+    "Unity support": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "settings display": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "section name expansion": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "section name": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "PE section name": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "PE section": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "name expansion fix": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "name expansion": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "limit settings display": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "limit settings": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "fix limit settings": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "fix limit": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "expansion fix limit": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "expansion fix": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "dev Bound PE": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "dev Bound": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "Bound PE section": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
+    "Bound PE": {
+      "count": 2,
+      "first_seen": "2026-10-03",
+      "last_seen": "2026-10-03"
+    },
     "v3 c2eaa8467e848c0067bfe8ed4": {
       "count": 2,
       "first_seen": "2026-09-23",
@@ -210,76 +300,6 @@
       "count": 2,
       "first_seen": "2026-09-03",
       "last_seen": "2026-09-03"
-    },
-    "license page": {
-      "count": 2,
-      "first_seen": "2026-09-03",
-      "last_seen": "2026-09-03"
-    },
-    "fix Dexprotector ELF": {
-      "count": 2,
-      "first_seen": "2026-09-03",
-      "last_seen": "2026-09-03"
-    },
-    "fix Dexprotector": {
-      "count": 2,
-      "first_seen": "2026-09-03",
-      "last_seen": "2026-09-03"
-    },
-    "ELF rule": {
-      "count": 2,
-      "first_seen": "2026-09-03",
-      "last_seen": "2026-09-03"
-    },
-    "Dexprotector ELF rule": {
-      "count": 2,
-      "first_seen": "2026-09-03",
-      "last_seen": "2026-09-03"
-    },
-    "Dexprotector ELF": {
-      "count": 2,
-      "first_seen": "2026-09-03",
-      "last_seen": "2026-09-03"
-    },
-    "dev Add BinDiff": {
-      "count": 2,
-      "first_seen": "2026-09-03",
-      "last_seen": "2026-09-03"
-    },
-    "dev Add": {
-      "count": 2,
-      "first_seen": "2026-09-03",
-      "last_seen": "2026-09-03"
-    },
-    "BinDiff open source": {
-      "count": 2,
-      "first_seen": "2026-09-03",
-      "last_seen": "2026-09-03"
-    },
-    "BinDiff open": {
-      "count": 2,
-      "first_seen": "2026-09-03",
-      "last_seen": "2026-09-03"
-    },
-    "Add BinDiff open": {
-      "count": 2,
-      "first_seen": "2026-09-03",
-      "last_seen": "2026-09-03"
-    },
-    "Add BinDiff": {
-      "count": 2,
-      "first_seen": "2026-09-03",
-      "last_seen": "2026-09-03"
-    },
-    "v3 ace654289f5abc240509fc941453ebc5": {
-      "count": 2,
-      "first_seen": "2026-07-25",
-      "last_seen": "2026-07-25"
-    },
-    "Il2CppDumper": {
-      "count": 2,
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-07-24"
     }
   }
 }
