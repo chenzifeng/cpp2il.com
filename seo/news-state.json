@@ -1,11 +1,84 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-03T06:36:30.194052+00:00",
+  "last_generated_at": "2026-10-04T07:00:12.889738+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-10-04",
+      "path": "/public/news/2026-10-04-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — October 04, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 3 relevant releases and technical developments with original sour…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-10-04T07:00:12.889738+00:00",
+      "entries": [
+        {
+          "entry_id": "6960b1050b4e669df15027bc6116f92e7e04e34a9c4d50e48462395a7a2c75cd",
+          "title": "stine814-sk/Il2Cpp-Trainer-Forge — trending GitHub repository",
+          "url": "https://github.com/stine814-sk/Il2Cpp-Trainer-Forge",
+          "summary": "Modular Unity IL2Cpp Trainer Framework 2026 GitHub discovery signal: 53 stars, 0 forks, 0 open issues; language HTML; last pushed 2026-10-04. Topics: game, il2cpp, internal, melonloader, trainer, unity3d.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-06-06+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-09-21T22:42:12+00:00",
+          "trust": 8,
+          "source_boost": 18,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation",
+            "Unity runtime tooling"
+          ],
+          "score": 79
+        },
+        {
+          "entry_id": "a2780f958ae99c1489d5462918cb392912f09b2aa90ae9e8456e87e5bfda90f8",
+          "title": "Frida 17.22.0",
+          "url": "https://github.com/frida/frida/releases/tag/17.22.0",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-10-03T06:47:42+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "48fda13edf55b7869041e7fd20a552c993a42f146c3227fe4b4c1a26ce35b907",
+          "title": "14.11.0",
+          "url": "https://github.com/frida/frida-tools/releases/tag/14.11.0",
+          "summary": "repl: Appease black",
+          "source": "Frida Tools Releases",
+          "source_url": "https://github.com/frida/frida-tools/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-10-03T07:36:33+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Dynamic instrumentation"
+          ],
+          "matched_terms": [
+            "Dynamic instrumentation"
+          ],
+          "score": 14
+        }
+      ]
+    },
     {
       "date": "2026-10-03",
       "path": "/public/news/2026-10-03-unity-il2cpp-reverse-engineering-news.html",
