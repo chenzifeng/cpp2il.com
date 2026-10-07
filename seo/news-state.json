@@ -1,12 +1,87 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-06T07:37:23.898515+00:00",
+  "last_generated_at": "2026-10-07T07:18:05.910153+00:00",
   "source_errors": [
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "arXiv Reverse Engineering Research: HTTP Error 429: Unknown Error"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-10-07",
+      "path": "/public/news/2026-10-07-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & C# decompilation News — October 07, 2026",
+      "description": "Curated Unity IL2CPP, C# decompilation updates for developers and security researchers. 3 relevant releases and technical developments with original source l…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-10-07T07:18:05.910153+00:00",
+      "entries": [
+        {
+          "entry_id": "256a721cadd2380de9826d3383c12c5baf801794ec1ddddbfa8dcaed61e6b1f7",
+          "title": "mynamescrax/il2csharp — trending GitHub repository",
+          "url": "https://github.com/mynamescrax/il2csharp",
+          "summary": "IL2CPP to C# decompiler: global-metadata.dat + GameAssembly.dll in, a real source tree out, every method body lifted from native x64. GitHub discovery signal: 13 stars, 2 forks, 0 open issues; language Python; last pushed 2026-10-06. Topics: csharp, decompiler, il2cpp, reverse-engineering, unity.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-04-10+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-09-28T13:50:45+00:00",
+          "trust": 8,
+          "source_boost": 14,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "C# decompilation",
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 52
+        },
+        {
+          "entry_id": "a11f6d1326ba5a7f82a6a75111429d5becca84afa87aa345fbcf37dde7668186",
+          "title": "dev/6.1.10853: Add a plug-in API for MCP tools",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10853",
+          "summary": "Previously, MCP tools were compiled into the MCP server, so a plug-in could not offer its own. Now plug-ins written in C++, Python or Rust can register MCP tools. Each binding generates a tool's input schema from its parameters and checks the arguments before the handler runs, so a handler only has to do the tool's work. A new guide explains how to write a tool in each language. Fixes #8484 .",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-07T01:10:05+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "aa6da50cfc835c34d86a85e780f19d59d5eee0f82c6593755bc4d869d4339b3e",
+          "title": "dev/6.1.10849",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10849",
+          "summary": "Add LEB-128 support to BinaryReader",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-06T13:43:07+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-10-06",
       "path": "/public/news/2026-10-06-unity-il2cpp-reverse-engineering-news.html",
