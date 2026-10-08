@@ -1,11 +1,169 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-07T07:18:05.910153+00:00",
+  "last_generated_at": "2026-10-08T07:29:12.421804+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-10-08",
+      "path": "/public/news/2026-10-08-unity-il2cpp-reverse-engineering-news.html",
+      "title": "WebAssembly tooling & WebAssembly runtime News — October 08, 2026",
+      "description": "Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 7 relevant releases and technical developments with origina…",
+      "item_count": 7,
+      "new_item_count": 7,
+      "updated_at": "2026-10-08T07:29:12.421804+00:00",
+      "entries": [
+        {
+          "entry_id": "f7bbb20124b41b9caf2a60864a778db98c6d17610a7f9146c9fbbea7bdcdeadd",
+          "title": "snuri00/psp-web-recomp — trending GitHub repository",
+          "url": "https://github.com/snuri00/psp-web-recomp",
+          "summary": "PSP games in the browser without an emulator: static recompilation to WebAssembly, an HLE kernel and a WebGL2 renderer GitHub discovery signal: 141 stars, 1 forks, 0 open issues; language C++; last pushed 2026-10-07. Topics: emscripten, god-of-war, psp, recompilation, static-recompilation, webassembly, webgl2.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-07-10+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-10-07T11:21:20+00:00",
+          "trust": 8,
+          "source_boost": 20,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 47
+        },
+        {
+          "entry_id": "607f5b45315e8967317a86f3b3e0220c2d930b383efcfb4e106bb9ae32869995",
+          "title": "sarb2u/luau-bytecode-lens — trending GitHub repository",
+          "url": "https://github.com/sarb2u/luau-bytecode-lens",
+          "summary": "Best Open-Source Luau Obfuscator and Decompiler Suite 2026 GitHub discovery signal: 68 stars, 1 forks, 0 open issues; language HTML; last pushed 2026-10-08. Topics: bytecode, decompiler, disassembler, luau, obfuscator, reverse-engineering, roblox, rust.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-04-11+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-09-22T20:09:32+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 43
+        },
+        {
+          "entry_id": "d7c97c3b9fe435d988e6c53ddfa0a28a790c6bf8e84e6a1bb38f478f8e001911",
+          "title": "Frida 17.23.0",
+          "url": "https://github.com/frida/frida/releases/tag/17.23.0",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-10-07T15:21:39+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "86935e997b416384a7aecd3bac35ebf5164cbb84b1781c97de78cb54bf1dcbfc",
+          "title": "v10.0.2",
+          "url": "https://github.com/angr/angr/releases/tag/v10.0.2",
+          "summary": "release version 10.0.2",
+          "source": "angr Releases",
+          "source_url": "https://github.com/angr/angr/releases.atom",
+          "category": "program-analysis",
+          "published": "2026-10-07T18:23:13+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "d03f73bf99c646d5fd30f7bc3bf459fce5e946b65cb9fea3a3b485dffbe6f620",
+          "title": "enhance: add rule for Dart >= 3.13 AOT export symbols (#502)",
+          "url": "https://github.com/rednaga/APKiD/commit/5cb6b2572a2fe1580d7dd2fd807ada5fb6377a12",
+          "summary": "enhance: add rule for Dart >= 3.13 AOT export symbols (#502)",
+          "source": "APKiD Commits",
+          "source_url": "https://github.com/rednaga/APKiD/commits/master.atom",
+          "category": "mobile-security",
+          "published": "2026-10-07T17:17:43+00:00",
+          "trust": 8,
+          "source_boost": 4,
+          "topic_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "matched_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "30373d292ca6d23d836d3418fe1f32705ea4e8afdaa5604ba6fffb788739243e",
+          "title": "Update README.md (#503)",
+          "url": "https://github.com/rednaga/APKiD/commit/6c33138db43cbb3e5017241219ba8476f4018fe7",
+          "summary": "Update README.md (#503) Add an instruction to install required python packages `yara-python` and `yara-python-dex` if it's not already done",
+          "source": "APKiD Commits",
+          "source_url": "https://github.com/rednaga/APKiD/commits/master.atom",
+          "category": "mobile-security",
+          "published": "2026-10-07T17:15:09+00:00",
+          "trust": 8,
+          "source_boost": 4,
+          "topic_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "matched_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "f0a27f5c875b98cb7eef3b67ab407b772bb038f9cc88fcba959e66ceff24d33a",
+          "title": "dev/6.1.10864",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10864",
+          "summary": "Update dependencies for bugfixes.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-07T18:37:22+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-10-07",
       "path": "/public/news/2026-10-07-unity-il2cpp-reverse-engineering-news.html",
