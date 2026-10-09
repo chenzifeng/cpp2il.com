@@ -1,11 +1,225 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-08T07:29:12.421804+00:00",
+  "last_generated_at": "2026-10-09T07:27:45.739984+00:00",
   "source_errors": [
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-10-09",
+      "path": "/public/news/2026-10-09-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Dynamic instrumentation News — October 09, 2026",
+      "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 10 relevant releases and technical developments with o…",
+      "item_count": 10,
+      "new_item_count": 10,
+      "updated_at": "2026-10-09T07:27:45.739984+00:00",
+      "entries": [
+        {
+          "entry_id": "4346184b482e39a59ac7f23694b8bc229c64859869d4fc1b3c5ad20c0cb2da77",
+          "title": "friday-memory/friday — trending GitHub repository",
+          "url": "https://github.com/friday-memory/friday",
+          "summary": "The open-source persistent cognitive memory layer for AI coding agents. Stop your Cursor, Claude & Copilot from having amnesia. GitHub discovery signal: 66 stars, 10 forks, 6 open issues; language Python; last pushed 2026-10-04. Topics: ai-agents, ai-memory, antigravity, antigravity-cli, antigravity-ide, claude-code, claudecode, codex, cognitive-ai, cursor.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-07-11+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-09-16T15:53:02+00:00",
+          "trust": 8,
+          "source_boost": 15,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 48
+        },
+        {
+          "entry_id": "0f2bc741efd7589cfb50fea9d4fcb35c0b78663dfdc32619157e6c1c2e01ca55",
+          "title": "Frida 17.23.1",
+          "url": "https://github.com/frida/frida/releases/tag/17.23.1",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-10-08T16:40:23+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "3fb9d81d55d87a691a426d4bb12ac987a9f76f4d727cf734914fbdd505fc18cf",
+          "title": "6.0.12",
+          "url": "https://github.com/emscripten-core/emscripten/releases/tag/6.0.12",
+          "summary": "What's Changed The embind library functions getInheritedInstanceCount and getLiveInheritedInstances were marked as deprecated. ( #27899 ) MAXIMUM_MEMORY is now honored with IMPORTED_MEMORY even without ALLOW_MEMORY_GROWTH : the module accepts an imported memory of any size up to the maximum, but never grows it. Previously the maximum was ignored, with a warning, and only a memory of exactly INITIAL_MEMORY was accepted. ( #27859 ) Added experimental emscripten_epoll_listener_add and emscripten_epoll_listener_remove in the new <emscripten/epoll.h> . These listeners deliver an epoll set's readiness to a callback, supported on the main thread only. The callback itself is then able to collect the events via a zero-timeout epoll_wait , without an ASYNCIFY / JSPI requirement. ( #27547 ) Contributors Thanks to the following contributors: @sbc100 (31) @Benedikt-Brunner (2) @guybedford (2) @JosepMariaBlasco (2) @tomayac (2) @brendandahl (1) @hoodmane (1) @JulesPatmanidis (1) @typedrat (1) New Contributors @Benedikt-Brunner made their first contribution in #27861 @JosepMariaBlasco made their first contribution in #27890 Full Changelog : 6.0.11...6.0.12",
+          "source": "Emscripten Releases",
+          "source_url": "https://github.com/emscripten-core/emscripten/releases.atom",
+          "category": "webassembly",
+          "published": "2026-10-08T22:51:52+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Unity WebGL reverse engineering"
+          ],
+          "matched_terms": [
+            "Unity WebGL reverse engineering",
+            "WebAssembly tooling"
+          ],
+          "score": 34
+        },
+        {
+          "entry_id": "64124e59da8a6c2f8ff1aff4fb1852bc40824c4ac656e98b3d44d06a7df5f1e9",
+          "title": "Characterizing Overconfident Failure in LLM-Based Code Generation",
+          "url": "https://arxiv.org/abs/2610.11300v1",
+          "summary": "Large language models (LLMs) are increasingly used for automated code generation, but generated programs can appear syntactically plausible while still failing execution-based correctness checks. Existing validation methods, such as testing and program analysis, remain essential but are often incomplete, costly, or applied only after generation. Model-derived uncertainty is therefore a natural early reliability signal. This paper studies the dilemma of overconfidence in code LLMs where incorrect programs are often generated with token-level confidence comparable to correct programs. We study this dilemma across four open-source code models and three execution-based benchmarks. Our analysis begins by investigating whether existing uncertainty metrics provide reliable proxies for execution correctness in code generation. We then characterize overconfidence at both global and local token levels, asking whether incorrect programs remain indistinguishable from correct ones under confidence and entropy summaries, including selective generation and the limits of instruction tuning. Finally, we evaluate whether common mitigation strategies reduce this failure mode. Our study yields four findings. First, existing uncertainty signals provide only partial and model-dependent evidence of execution failure. Second, overconfidence persists at both program and token levels, and uncertainty-based selection does not consistently improve accepted-set accuracy. Third, instruction tuning can increase certainty on failing generations without consistently improving correctness discrimination. Fourth, common mitigation techniques improve specific aspects of reliability but do not reliably resolve overconfident failure. Our exploratory latent analysis suggests that hidden representations may encode correctness-related signals that output confidence does not expose.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-10-08T06:07:44+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 30
+        },
+        {
+          "entry_id": "23d889c80fd951cca02ee7d6ef813bda41fb22e9b98a21d0ed38a0eb7be60723",
+          "title": "Harmony 3.0.0-rc.1",
+          "url": "https://github.com/pardeike/Harmony/releases/tag/v3.0.0-rc.1",
+          "summary": "Harmony 3.0.0-rc.1 is the first public release candidate for Harmony 3. The main new feature is Infix : apply prefixes, postfixes, and finalizers around selected operations inside a method, including calls, property access, field reads and writes, construction, and literal loads. Infix also supports selected compiler-generated iterator and async bodies, captured variables, and patch-owned state across suspensions. See the Harmony 3 documentation and what is new for examples and supported behavior. All three variants are available as NuGet packages at version 3.0.0-rc.1 : Lib.Harmony : Fat, with MonoMod merged into 0Harmony.dll . Lib.Harmony.Thin : Thin, with MonoMod supplied as a NuGet dependency. Lib.Harmony.Ref : reference assemblies for compilation against .NET Standard 2.0. The matching Fat, Thin, and Ref ZIP downloads are attached below. This is a prerelease; Harmony 2.4.2 remains the stable release. Mixed Harmony 2/3 loading and patches from different engines on the same target still have the limitations documented in the compatibility notes . What's Changed Add \"Genshin Impact Miliastra Wonderland\" to README.md by @JWJUN233233 in #747 [WIP] Add ipsate feature implementation by @pardeike with @Copilot in #752 Add complete finalizer documentation examples by @pardeike with @Copilot in #763 Avoid importing unused assembly Serialization.Formatters in .NET 9.0+ by @aubymori in #765 New Contributors @JWJUN233233 made their first contribution in #747 @aubymori made their first contribution in #765 Full Changelog : v2.4.2.0...v3.0.0-rc.1",
+          "source": "Harmony Releases",
+          "source_url": "https://github.com/pardeike/Harmony/releases.atom",
+          "category": "dotnet-runtime",
+          "published": "2026-10-08T22:53:35+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity runtime tooling",
+            "C# decompilation"
+          ],
+          "matched_terms": [
+            "Unity runtime tooling",
+            "C# decompilation"
+          ],
+          "score": 28
+        },
+        {
+          "entry_id": "f5f54e4d264baac15d7d47fc6a2aa3bce05c081f56cb62752d9993de2d786376",
+          "title": "salingnh/android-reverse-engineering-mcp — trending GitHub repository",
+          "url": "https://github.com/salingnh/android-reverse-engineering-mcp",
+          "summary": "Claude Code skill to support Android app's reverse engineering. (Safe) GitHub discovery signal: 3 stars, 1 forks, 1 open issues; language Python; last pushed 2026-09-04. Topics: ai-agents, ai-tools, android-ai-tool, android-reverse, android-reverse-engineering, android-tools, mcp-server, reverse-engineering, reverse-mcp.",
+          "source": "GitHub Hot Android Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-reverse-engineering+created%3A%3E%3D2026-07-11+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-mobile",
+          "published": "2026-08-20T10:37:46+00:00",
+          "trust": 8,
+          "source_boost": 7,
+          "topic_terms": [
+            "Android reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering"
+          ],
+          "score": 27
+        },
+        {
+          "entry_id": "cc7ae780b9194de6c947e32ac94fc9a3ae7d895d5ffab63796ee16aa94620814",
+          "title": "Unity 6000.3.26f1 LTS",
+          "url": "https://unity.com/releases/editor/whats-new/6000.3.26f1",
+          "summary": "Unity 6000.3.26f1 LTS",
+          "source": "Unity LTS Releases",
+          "source_url": "https://unity.com/releases/editor/lts-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-10-08T13:38:24+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "9bb3557333486a98abed0d118d5afe10c70191047980e82d60201dcc45618e07",
+          "title": "Unity 6000.7.0 Beta",
+          "url": "https://unity.com/releases/editor/beta/6000.7.0b4",
+          "summary": "Unity 6000.7.0 Beta",
+          "source": "Unity Beta Releases",
+          "source_url": "https://unity.com/releases/editor/beta-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-10-08T12:35:27+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "11c1f7c25c1fa695f16d03a12b3a3c0f01745b3ef0997ff10bb5ea382876fccb",
+          "title": "dev/6.1.10886: [aarch64] Lift vector min, max and abs through their intrinsics",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10886",
+          "summary": "The SMAX , SMIN , UMAX , UMIN and ABS cases lift the FEAT_CSSC scalar forms directly and lifted every other encoding as unimplemented, which skipped the ACLE intrinsic fallback. The Neon forms now lift to their intrinsics, such as vminq_u32 , as other vector instructions do.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-09T01:57:16+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "dcd747a57394954b6704dfb3c9953d199dbdd3c7a0bcfe83cff568ac23793bc3",
+          "title": "dev/6.1.10883",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10883",
+          "summary": "Fix a directory cycle in bindiff / binexport",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-08T23:30:25+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-10-08",
       "path": "/public/news/2026-10-08-unity-il2cpp-reverse-engineering-news.html",
