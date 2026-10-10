@@ -1,11 +1,149 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-09T07:27:45.739984+00:00",
+  "last_generated_at": "2026-10-10T07:14:50.707380+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-10-10",
+      "path": "/public/news/2026-10-10-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & iOS reverse engineering News — October 10, 2026",
+      "description": "Curated APK and IPA analysis, iOS reverse engineering updates for developers and security researchers. 6 relevant releases and technical developments with or…",
+      "item_count": 6,
+      "new_item_count": 6,
+      "updated_at": "2026-10-10T07:14:50.707380+00:00",
+      "entries": [
+        {
+          "entry_id": "161208a0591be91df53f641e88c13569b07d3bf34a3a3e8661f8c7c095c02355",
+          "title": "morluto/awesome-reverse-engineering — trending GitHub repository",
+          "url": "https://github.com/morluto/awesome-reverse-engineering",
+          "summary": "Curated reverse-engineering tools and learning resources for binaries, apps, firmware, formats, and protocols. GitHub discovery signal: 30 stars, 4 forks, 0 open issues; language Unknown; last pushed 2026-10-09. Topics: agent-skills, ai-agents, awesome, awesome-list, binary-analysis, ctf, cybersecurity, debugging, decompiler, disassembler.",
+          "source": "GitHub Hot iOS Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=%22ios+reverse+engineering%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-06-12+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-mobile",
+          "published": "2026-10-09T14:58:20+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "iOS reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "iOS reverse engineering",
+            "Binary reverse engineering"
+          ],
+          "score": 44
+        },
+        {
+          "entry_id": "81e59e0e9b1ea458b2340fb7b0913c5c0f83e71e6607bc94b62187f4470652e9",
+          "title": "Frida 17.23.3",
+          "url": "https://github.com/frida/frida/releases/tag/17.23.3",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-10-09T19:27:48+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "8e1342c3266139297d5910b32bbec4f10d8d169920d9e478e31c578ee91e492e",
+          "title": "Frida 17.23.2",
+          "url": "https://github.com/frida/frida/releases/tag/17.23.2",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-10-09T16:58:35+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "b31c25cccaea87a9cbfdedc859160cf1f18673e6b30672c2bcd8d10d26b9dcc4",
+          "title": "Carter54git/Greates-Games-Decompilations-List — trending GitHub repository",
+          "url": "https://github.com/Carter54git/Greates-Games-Decompilations-List",
+          "summary": "Greates Games Decompilations List GitHub discovery signal: 7 stars, 2 forks, 0 open issues; language Unknown; last pushed 2026-10-09.",
+          "source": "GitHub Hot iOS Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=%22ios+reverse+engineering%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-06-12+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-mobile",
+          "published": "2026-10-09T07:01:57+00:00",
+          "trust": 8,
+          "source_boost": 13,
+          "topic_terms": [
+            "iOS reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "iOS reverse engineering"
+          ],
+          "score": 33
+        },
+        {
+          "entry_id": "267ad77c44669dfed42d53eda3719141058905ddad961d7aa12db94d766cf3c2",
+          "title": "dev/6.1.10897",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10897",
+          "summary": "Release the type library reference returned when importing a library …",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-09T02:01:19+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "87ac08ea6471bbe8d079fbe330c8d24afd7e23444452f8b80afd970f57dfb64d",
+          "title": "dev/6.1.10895",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10895",
+          "summary": "Release the type library reference returned when importing a library …",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-09T02:01:19+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-10-09",
       "path": "/public/news/2026-10-09-unity-il2cpp-reverse-engineering-news.html",
