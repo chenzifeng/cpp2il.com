@@ -1,11 +1,85 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-10T07:14:50.707380+00:00",
+  "last_generated_at": "2026-10-11T07:17:01.690997+00:00",
   "source_errors": [
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-10-11",
+      "path": "/public/news/2026-10-11-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Android reverse engineering News — October 11, 2026",
+      "description": "Curated APK and IPA analysis, Android reverse engineering updates for developers and security researchers. 3 relevant releases and technical developments wit…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-10-11T07:17:01.690997+00:00",
+      "entries": [
+        {
+          "entry_id": "dd839d074628a6e57b5362e3a2c6516183760a765d1e4a8259d78271fc57ed5d",
+          "title": "BAB2007/yuda-run-helper — trending GitHub repository",
+          "url": "https://github.com/BAB2007/yuda-run-helper",
+          "summary": "不想跑校园跑的来 GitHub discovery signal: 3 stars, 0 forks, 0 open issues; language Java; last pushed 2026-10-11. Topics: android-reverse-engineering, campus-running, protocol-reverse-engineering, web-reverse-engineering.",
+          "source": "GitHub Hot Android Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-reverse-engineering+created%3A%3E%3D2026-07-13+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-mobile",
+          "published": "2026-10-07T16:23:16+00:00",
+          "trust": 8,
+          "source_boost": 12,
+          "topic_terms": [
+            "Android reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering"
+          ],
+          "score": 32
+        },
+        {
+          "entry_id": "1b1e08e3e64047881a24f0d7cf2b8f09d42701290a9bef2a8d4ae5de1cf308f0",
+          "title": "v10.0.3",
+          "url": "https://github.com/angr/angr/releases/tag/v10.0.3",
+          "summary": "release version 10.0.3",
+          "source": "angr Releases",
+          "source_url": "https://github.com/angr/angr/releases.atom",
+          "category": "program-analysis",
+          "published": "2026-10-10T07:17:22+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "30f7b31a46b0ce97561a50933c66cbaa3d8a01a6f899623fafb5ca38f1780afd",
+          "title": "dev/6.1.10898: [Rust] Add `Platform::register_calling_convention` (#8651)",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10898",
+          "summary": "Co-authored-by: Mason Reed mason@vector35.com",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-11T05:18:30+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-10-10",
       "path": "/public/news/2026-10-10-unity-il2cpp-reverse-engineering-news.html",
