@@ -1,11 +1,65 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-12T07:26:30.737373+00:00",
+  "last_generated_at": "2026-10-13T07:47:29.253090+00:00",
   "source_errors": [
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "arXiv Reverse Engineering Research: HTTP Error 429: Unknown Error"
   ],
   "pages": [
+    {
+      "date": "2026-10-13",
+      "path": "/public/news/2026-10-13-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Decompiler research News — October 13, 2026",
+      "description": "Curated Binary reverse engineering, Decompiler research updates for developers and security researchers. 2 relevant releases and technical developments with…",
+      "item_count": 2,
+      "new_item_count": 2,
+      "updated_at": "2026-10-13T07:47:29.253090+00:00",
+      "entries": [
+        {
+          "entry_id": "07c262dc7ea1ff8a92db6b02dd4ce953675279728f2ff0ba45ebc421592fa243",
+          "title": "dev/6.1.10919",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10919",
+          "summary": "Fix detection of bundled python in PythonScriptingProvider",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-12T20:58:03+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "178374e81b6f4d95e67bd32784421acec902bed8ffbaf531e652f58fa20776a1",
+          "title": "dev/6.1.10916",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10916",
+          "summary": "Fix detection of bundled python in PythonScriptingProvider",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-12T20:58:03+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-10-12",
       "path": "/public/news/2026-10-12-unity-il2cpp-reverse-engineering-news.html",
