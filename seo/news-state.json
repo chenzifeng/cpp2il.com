@@ -1,12 +1,85 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-13T07:47:29.253090+00:00",
+  "last_generated_at": "2026-10-14T06:12:17.197994+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "arXiv Reverse Engineering Research: HTTP Error 429: Unknown Error"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-10-14",
+      "path": "/public/news/2026-10-14-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Decompiler research News — October 14, 2026",
+      "description": "Curated Binary reverse engineering, Decompiler research updates for developers and security researchers. 3 relevant releases and technical developments with…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-10-14T06:12:17.197994+00:00",
+      "entries": [
+        {
+          "entry_id": "00e8e48165adbacfd9092a0d4d3fd7e07091e97685d2e2954879310886bebfb8",
+          "title": "valorisa/Reverse-Engineer-Anything — trending GitHub repository",
+          "url": "https://github.com/valorisa/Reverse-Engineer-Anything",
+          "summary": "Guide pédagogique non officiel en français sur REA (Reverse Engineer Anything) : analyser des applications et des binaires avec un agent de code via MCP et CLI, Hopper ou Ghidra, preuves à l'appui. Inclut le cadre légal de la rétro-ingénierie. Projet amont : morluto/rea. GitHub discovery signal: 15 stars, 5 forks, 0 open issues; language Unknown; last pushed 2026-10-09. Topics: agent-skills, ai-agent-tools, ai-agents, binary-analysis, cli, coding-agents, decompiler, disassembler, documentation, education.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-04-17+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-10-09T19:49:18+00:00",
+          "trust": 8,
+          "source_boost": 15,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 43
+        },
+        {
+          "entry_id": "43de763d44090cc57e8f053bdd81f4704bc9a1d1b55db1ba103c0b33cffa63a3",
+          "title": "dev/6.1.10926",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10926",
+          "summary": "[Arm64, Apple] Added X1 as a second syscall retval register",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-13T16:59:26+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "561b70a4b278039ccabf565bbcc64862690e0b186dac4e2d895b2b95bf9bebbc",
+          "title": "dev/6.1.10924",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10924",
+          "summary": "[Arm64, Apple] Added X1 as a second syscall retval register",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-13T16:59:26+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-10-13",
       "path": "/public/news/2026-10-13-unity-il2cpp-reverse-engineering-news.html",
