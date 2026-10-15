@@ -2,34 +2,34 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 139,
+      "count": 142,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-14"
+      "last_seen": "2026-10-15"
     },
     "trending GitHub": {
-      "count": 139,
+      "count": 142,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-14"
+      "last_seen": "2026-10-15"
     },
     "GitHub repository": {
-      "count": 139,
+      "count": 142,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-14"
+      "last_seen": "2026-10-15"
     },
     "Unity": {
       "count": 46,
       "first_seen": "2026-07-20",
       "last_seen": "2026-10-09"
     },
+    "decompiler": {
+      "count": 40,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-10-15"
+    },
     "wasm": {
       "count": 40,
       "first_seen": "2026-07-20",
       "last_seen": "2026-10-05"
-    },
-    "decompiler": {
-      "count": 39,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-10-14"
     },
     "WebAssembly": {
       "count": 28,
@@ -37,9 +37,9 @@
       "last_seen": "2026-10-08"
     },
     "metadata": {
-      "count": 26,
+      "count": 27,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-07"
+      "last_seen": "2026-10-15"
     },
     "decompilation": {
       "count": 23,
@@ -47,9 +47,9 @@
       "last_seen": "2026-10-06"
     },
     "reverse engineering": {
-      "count": 19,
+      "count": 20,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-09"
+      "last_seen": "2026-10-15"
     },
     "webassembly": {
       "count": 15,
@@ -77,9 +77,9 @@
       "last_seen": "2026-10-09"
     },
     "apk": {
-      "count": 11,
+      "count": 12,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-12"
+      "last_seen": "2026-10-15"
     },
     "Wasm": {
       "count": 11,
@@ -187,9 +187,9 @@
       "last_seen": "2026-07-28"
     },
     "Arm64": {
-      "count": 2,
+      "count": 3,
       "first_seen": "2026-10-14",
-      "last_seen": "2026-10-14"
+      "last_seen": "2026-10-15"
     },
     "Rust Add Platform": {
       "count": 2,

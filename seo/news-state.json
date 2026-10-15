@@ -1,11 +1,207 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-14T06:12:17.197994+00:00",
+  "last_generated_at": "2026-10-15T05:56:23.106552+00:00",
   "source_errors": [
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-10-15",
+      "path": "/public/news/2026-10-15-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Decompiler research News — October 15, 2026",
+      "description": "Curated Binary reverse engineering, Decompiler research updates for developers and security researchers. 9 relevant releases and technical developments with…",
+      "item_count": 9,
+      "new_item_count": 9,
+      "updated_at": "2026-10-15T05:56:23.106552+00:00",
+      "entries": [
+        {
+          "entry_id": "d200d560142577eaaabfe30e3991bd5528a965c40d8f5f5581f87ccd16c5508c",
+          "title": "Zfinix/eleven — trending GitHub repository",
+          "url": "https://github.com/Zfinix/eleven",
+          "summary": "Agent-first reverse engineering for macOS, Windows and Linux: any ACP agent reads, renames and patches binaries, Android apps and GPU kernels next to you. GitHub discovery signal: 105 stars, 11 forks, 1 open issues; language TypeScript; last pushed 2026-10-14. Topics: acp, ai-agents, android, decompiler, disassembler, ghidra, macos, reverse-engineering.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-04-18+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-10-13T13:47:31+00:00",
+          "trust": 8,
+          "source_boost": 19,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 47
+        },
+        {
+          "entry_id": "97a94bc2e23098f53525ec2d61459aa53f1041cf505c633c619f48418e0a1210",
+          "title": "v49.0.3: Release Wasmtime 49.0.3 (#14725)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v49.0.3",
+          "summary": "49.0.3 Released 2026-10-14. Fixed Out-of-bounds zero-length stream writes can panic. GHSA-93g3-36p8-x2gc Host panic when component call_async is cancelled under some conditions. GHSA-3r89-v5mq-j5xf Panic on erroneous call-to-host from guest realloc call. GHSA-7v24-42x9-pxf7 Yielding in a component start function can lead to a host panic. GHSA-5hhx-4wrr-3j9g Panic when invoking an async-lifted function via call . GHSA-m6w2-jwq2-cv2c Panic when pending calls are run after a trap. GHSA-hmwq-g22x-qjw5 Stack overflow dropping a long chain of recursive types. GHSA-wjc8-633q-pwxr Wasmtime may not properly enforce async-entrypoint requirement. GHSA-vcg5-q8m5-8379 Panic viewing component model stream or future as the wrong type. GHSA-63h4-6cx9-pjfj Component-model handle tables are capped only per instance and charged to no limit. GHSA-q554-3cjc-rx7p Exception tags can cause host data structures to be unaligned. GHSA-p79w-pv2r-29qp Filesystem sandbox escape when renaming symlinks with trailing slashes. GHSA-m9f7-9w4p-gv38 Overlapping string transcode in a fused adapter can panic. GHSA-54p9-vhhq-8f7q Guests can send absolute-form HTTP requests to different hosts. GHSA-5qpp-g3j2-8frx wasi-http : Request with long url before query parameter crashes host. GHSA-w36r-2hch-9xp9",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-10-14T17:17:37+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "f4a8e7f07a1804349ada8ce64ad29deb6dd69646f3c486b497a54684129c7254",
+          "title": "v48.0.6: Release Wasmtime 48.0.6 (#14723)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v48.0.6",
+          "summary": "48.0.6 Released 2026-10-14. Fixed Out-of-bounds zero-length stream writes can panic. GHSA-93g3-36p8-x2gc Host panic when component call_async is cancelled under some conditions. GHSA-3r89-v5mq-j5xf Panic on erroneous call-to-host from guest realloc call. GHSA-7v24-42x9-pxf7 Yielding in a component start function can lead to a host panic. GHSA-5hhx-4wrr-3j9g Panic when invoking an async-lifted function via call . GHSA-m6w2-jwq2-cv2c Panic when pending calls are run after a trap. GHSA-hmwq-g22x-qjw5 Stack overflow dropping a long chain of recursive types. GHSA-wjc8-633q-pwxr Wasmtime may not properly enforce async-entrypoint requirement. GHSA-vcg5-q8m5-8379 Panic viewing component model stream or future as the wrong type. GHSA-63h4-6cx9-pjfj Component-model handle tables are capped only per instance and charged to no limit. GHSA-q554-3cjc-rx7p Exception tags can cause host data structures to be unaligned. GHSA-p79w-pv2r-29qp Filesystem sandbox escape when renaming symlinks with trailing slashes. GHSA-m9f7-9w4p-gv38 Guests can send absolute-form HTTP requests to different hosts. GHSA-5qpp-g3j2-8frx wasi-http : Request with long url before query parameter crashes host. GHSA-w36r-2hch-9xp9",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-10-14T17:05:34+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "f1268d8aa38a9c59c6475151a3d692d096d7d62f073082ec9abcade2ade8ecb8",
+          "title": "Inverx/com.zjwh.android_wh_physicalfitness — trending GitHub repository",
+          "url": "https://github.com/Inverx/com.zjwh.android_wh_physicalfitness",
+          "summary": "运动世界校园纯 Python 协议实现，包含 NetSecKit 4.2.4、GeeTest v4、全链路协议分析与自动化套件，脱离 Android App 与 Native SO 依赖。 GitHub discovery signal: 117 stars, 16 forks, 1 open issues; language Python; last pushed 2026-10-15. Topics: android, android-reverse-engineering, automation, cryptography, geetest, opencv, protocol-analysis, protocol-engineering, python, reverse-engineering.",
+          "source": "GitHub Hot Android Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-reverse-engineering+created%3A%3E%3D2026-07-17+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-mobile",
+          "published": "2026-08-26T08:54:28+00:00",
+          "trust": 8,
+          "source_boost": 15,
+          "topic_terms": [
+            "Android reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "056ee5d3d933f43b353ffb333c1073710d7424cdfe8b14c9e3ca89ecad3c9fd1",
+          "title": "EncidXVII/claude-reverse-engineering-skill — trending GitHub repository",
+          "url": "https://github.com/EncidXVII/claude-reverse-engineering-skill",
+          "summary": "Reverse engineering skill for Claude Code and other AI coding agents. GitHub discovery signal: 5 stars, 1 forks, 0 open issues; language Python; last pushed 2026-10-14. Topics: agent-skills, ai-agents, android-reverse-engineering, apk, binary-analysis, claude, claude-code, claude-skills, codex, ctf.",
+          "source": "GitHub Hot Android Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-reverse-engineering+created%3A%3E%3D2026-07-17+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-mobile",
+          "published": "2026-10-12T13:04:18+00:00",
+          "trust": 8,
+          "source_boost": 13,
+          "topic_terms": [
+            "Android reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering"
+          ],
+          "score": 33
+        },
+        {
+          "entry_id": "12ec0be3af39d23e496293167ba2287e1efee2a991633b0714e18a9d353d03b8",
+          "title": "v10.0.4.post1",
+          "url": "https://github.com/angr/angr/releases/tag/v10.0.4.post1",
+          "summary": "release version 10.0.4.post1",
+          "source": "angr Releases",
+          "source_url": "https://github.com/angr/angr/releases.atom",
+          "category": "program-analysis",
+          "published": "2026-10-14T17:20:33+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "dbf13530bde9d5e37cbd5bccdafd0763ac5db0755adcf29b02a4cf01935c8a85",
+          "title": "v10.0.4",
+          "url": "https://github.com/angr/angr/releases/tag/v10.0.4",
+          "summary": "release version 10.0.4",
+          "source": "angr Releases",
+          "source_url": "https://github.com/angr/angr/releases.atom",
+          "category": "program-analysis",
+          "published": "2026-10-14T11:20:26+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "d27ccdcda965f79a7fb2d72be39f8defb29a2b1084bf13393a2704fe4ce9cd85",
+          "title": "dev/6.1.10933: [ELF] Skip malformed section metadata instead of rejecting the file",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10933",
+          "summary": "Keep overflow-safe bounds checks, but warn and skip truncated section tables or sections with out-of-bounds contents. Preserve section indices so valid symbol and relocation references remain intact.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-14T16:38:10+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "9b10baa2a09863ab86463dcecbeaf044a88d33b05d140d9b1b6cf882f1c114f1",
+          "title": "dev/6.1.10931",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10931",
+          "summary": "[Arm64, Apple] Added X1 as a second syscall retval register",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-13T16:59:26+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-10-14",
       "path": "/public/news/2026-10-14-unity-il2cpp-reverse-engineering-news.html",
