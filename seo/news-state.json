@@ -1,11 +1,105 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-15T05:56:23.106552+00:00",
+  "last_generated_at": "2026-10-16T05:54:58.174853+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-10-16",
+      "path": "/public/news/2026-10-16-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Android reverse engineering News — October 16, 2026",
+      "description": "Curated APK and IPA analysis, Android reverse engineering updates for developers and security researchers. 4 relevant releases and technical developments wit…",
+      "item_count": 4,
+      "new_item_count": 4,
+      "updated_at": "2026-10-16T05:54:58.174853+00:00",
+      "entries": [
+        {
+          "entry_id": "fff518d6e8d9d6bcc0a87406bea063db85a1414e2d818c9455c2e63f3a3f8c1c",
+          "title": "zhuyansen/awesome-ai-reverse-engineering — trending GitHub repository",
+          "url": "https://github.com/zhuyansen/awesome-ai-reverse-engineering",
+          "summary": "Open-source AI reverse engineering tools for coding agents: Ghidra MCP, IDA Pro MCP, jadx, Frida, skills and REA. 122 repos, each read and security-graded. EN + 中文. GitHub discovery signal: 2 stars, 0 forks, 0 open issues; language Unknown; last pushed 2026-10-15. Topics: agent-skills, awesome, awesome-list, decompiler, ghidra, ida-pro, mcp, reverse-engineering.",
+          "source": "GitHub Hot iOS Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=%22ios+reverse+engineering%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-06-18+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-mobile",
+          "published": "2026-10-13T10:15:46+00:00",
+          "trust": 8,
+          "source_boost": 11,
+          "topic_terms": [
+            "iOS reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "iOS reverse engineering",
+            "Binary reverse engineering",
+            "Dynamic instrumentation"
+          ],
+          "score": 54
+        },
+        {
+          "entry_id": "c33dfd42bc857b0bff13cf360d1528f26b13fc386135a031515bcd1a6664c323",
+          "title": "Unity 6000.0.85f1 LTS",
+          "url": "https://unity.com/releases/editor/whats-new/6000.0.85f1",
+          "summary": "Unity 6000.0.85f1 LTS",
+          "source": "Unity LTS Releases",
+          "source_url": "https://unity.com/releases/editor/lts-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-10-15T11:57:40+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "0420c401774bdcfe9626248dcdccf14b80814be07f4e8f7a144130008c594c5d",
+          "title": "Unity 6000.7.0 Beta",
+          "url": "https://unity.com/releases/editor/beta/6000.7.0b5",
+          "summary": "Unity 6000.7.0 Beta",
+          "source": "Unity Beta Releases",
+          "source_url": "https://unity.com/releases/editor/beta-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-10-15T10:14:33+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "8b3c96be09ac4b3ec4d5a4583973ccb09f2d98326bfba3e6a630634248f5d4ed",
+          "title": "dev/6.1.10939",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10939",
+          "summary": "update licenses",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-15T17:29:04+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-10-15",
       "path": "/public/news/2026-10-15-unity-il2cpp-reverse-engineering-news.html",
