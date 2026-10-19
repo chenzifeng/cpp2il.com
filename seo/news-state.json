@@ -1,11 +1,43 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-18T06:00:58.178495+00:00",
+  "last_generated_at": "2026-10-19T06:17:23.023137+00:00",
   "source_errors": [
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-10-19",
+      "path": "/public/news/2026-10-19-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Dynamic instrumentation News — October 19, 2026",
+      "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 1 relevant releases and technical developments with or…",
+      "item_count": 1,
+      "new_item_count": 1,
+      "updated_at": "2026-10-19T06:17:23.023137+00:00",
+      "entries": [
+        {
+          "entry_id": "42350476553c841d2c49d076266e369b9dba7bc5cac79af97b9040aedaeaa54e",
+          "title": "Frida 17.24.2",
+          "url": "https://github.com/frida/frida/releases/tag/17.24.2",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-10-18T12:42:30+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        }
+      ]
+    },
     {
       "date": "2026-10-18",
       "path": "/public/news/2026-10-18-unity-il2cpp-reverse-engineering-news.html",
