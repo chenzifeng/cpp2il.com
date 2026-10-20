@@ -1,11 +1,224 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-19T06:17:23.023137+00:00",
+  "last_generated_at": "2026-10-20T06:05:58.473428+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden",
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
   ],
   "pages": [
+    {
+      "date": "2026-10-20",
+      "path": "/public/news/2026-10-20-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Dynamic instrumentation News — October 20, 2026",
+      "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 10 relevant releases and technical developments with o…",
+      "item_count": 10,
+      "new_item_count": 10,
+      "updated_at": "2026-10-20T06:05:58.473428+00:00",
+      "entries": [
+        {
+          "entry_id": "16735c4a4faa70b143ba5e8d8eb33be2abe7180ce8f57917f9d0eec7e8ee7593",
+          "title": "cranebeaker/coop-anything — trending GitHub repository",
+          "url": "https://github.com/cranebeaker/coop-anything",
+          "summary": "Co-op Anything: point your AI agent at any single-player game and play it with friends (online and/or splitscreen!). MCP server and playbook to let you reverse engineer, fix, test, ship and share what it learns. GitHub discovery signal: 600 stars, 59 forks, 46 open issues; language C; last pushed 2026-10-19.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-07-22+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-10-16T11:12:03+00:00",
+          "trust": 8,
+          "source_boost": 21,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 40
+        },
+        {
+          "entry_id": "a68bd8261e93b6ceaba56537e787f59e578c1d33a35f959da133d1375a38a1de",
+          "title": "openbin-ai/binny — trending GitHub repository",
+          "url": "https://github.com/openbin-ai/binny",
+          "summary": "BINNY: an open source agent harness for reverse engineering. Plug in any model, or a local one. GitHub discovery signal: 180 stars, 21 forks, 0 open issues; language Go; last pushed 2026-10-17. Topics: ghidra, llm-agent, malware-analysis, ollama, reverse-engineering, security-research.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-06-22+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-10-10T05:03:07+00:00",
+          "trust": 8,
+          "source_boost": 19,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 39
+        },
+        {
+          "entry_id": "66b93d1fa2bb2d185666d6f74287c00334a3282ec3e96364a5d0765432ba7867",
+          "title": "Frida 17.24.3",
+          "url": "https://github.com/frida/frida/releases/tag/17.24.3",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-10-19T09:26:35+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "753cf750609869c0622ee6a36dd2b62e75bee4068b12acb6b06cfcae2e62a405",
+          "title": "0xgf-18/unpacker-by-fahad — trending GitHub repository",
+          "url": "https://github.com/0xgf-18/unpacker-by-fahad",
+          "summary": "Unpacker by Fahad - DPT-format Android packer analysis: RC4 code-store key recovery, dex restore/rebuild, APK signing and validation pipeline. GitHub discovery signal: 3 stars, 4 forks, 0 open issues; language Kotlin; last pushed 2026-09-27. Topics: android, android-reverse-engineering, apk, cpp, crypto, dotnet, frida, malware-analysis, python, reverse-engineering.",
+          "source": "GitHub Hot Android Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-reverse-engineering+created%3A%3E%3D2026-07-22+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-mobile",
+          "published": "2026-09-25T09:48:19+00:00",
+          "trust": 8,
+          "source_boost": 9,
+          "topic_terms": [
+            "Android reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "Dynamic instrumentation"
+          ],
+          "score": 36
+        },
+        {
+          "entry_id": "40d60bdecee6db8fa342b078d0b05f06dc8cfe0fb7bb88ac1a45362e95dd3fd2",
+          "title": "v49.0.4: Release Wasmtime 49.0.4 (#14816)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v49.0.4",
+          "summary": "49.0.4 Released 2026-10-19. Fixed wasi-http: Guests can add conflicting content lengths to messages GHSA-r8xh-cgf7-392j wasi-http p3: forwarded trailers aren't checked against is_forbidden_header hook GHSA-jxcf-8qw5-5c33 wasi-http p3: Guests can set incorrect content-length for spliced response bodies GHSA-9prg-84vf-g5fc Cranelift backend on aarch64 can jump to incorrect target on large Wasm br_table instruction GHSA-mghf-wjfp-p5xm Update rustls to 0.23.46 #14767 Panic lowering a host-created component model stream into a guest that expects a different payload type. GHSA-9pvw-hwfg-92h5",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-10-19T19:20:37+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "6f01dd9f8578c65808c367b080835eeea63aa575a4894d7cb6a2c98ca37a9769",
+          "title": "v48.0.7: Release Wasmtime 48.0.7 (#14817)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v48.0.7",
+          "summary": "48.0.7 Released 2026-10-19. Fixed wasi-http: Guests can add conflicting content lengths to messages GHSA-r8xh-cgf7-392j wasi-http p3: forwarded trailers aren't checked against is_forbidden_header hook GHSA-jxcf-8qw5-5c33 wasi-http p3: Guests can set incorrect content-length for spliced response bodies GHSA-9prg-84vf-g5fc Cranelift backend on aarch64 can jump to incorrect target on large Wasm br_table instruction GHSA-mghf-wjfp-p5xm Update rustls to 0.23.46 #14768 Panic lowering a host-created component model stream into a guest that expects a different payload type. GHSA-9pvw-hwfg-92h5",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-10-19T19:20:31+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "cdb189c54c8061e17d682f1d515a6081c590f799d338176ac140afb0163024ed",
+          "title": "v4.0.0-alpha.1",
+          "url": "https://github.com/mandiant/flare-floss/releases/tag/v4.0.0-alpha.1",
+          "summary": "FLOSS v4.0.0-alpha.1 This is the first alpha pre-release of FLOSS 4.0, merging the QUANTUMSTRAND architecture into floss and unifying layout-aware static string analysis, semantic tagging, and deobfuscation into a single pipeline. Install from PyPI with pip install --pre flare-floss (or pip install flare-floss==4.0.0a1 ), or download the standalone binaries below. Highlights Since v3.1.1 / v3.2.0 Unified Layout-Aware Static Strings & Tagging Layout analysis by default : FLOSS parses PE, ELF, and Mach-O (Thin and Universal/Fat) structure layouts—sections, segments, import/export/delay-import tables, resources, rich headers, relocations, code signatures, entitlements, and code ranges—and renders static strings within their structural context. Non-structured or empty inputs fall back to a single binary layout node. Semantic string tags : Static strings are annotated using embedded databases and heuristics: #capa — expert rules imported from capa #winapi — Windows API and DLL names #msvc — Microsoft C runtime strings (filtered by library false-positive threshold) #common , #code-junk — global prevalence and instruction-byte junk ( gp family; #code-junk is hidden by default) #<library> — open-source library strings ( oss family: #openssl , #zlib , #curl , etc.) #code , #reloc , #duplicate , #decoded — layout and cross-category context tags Filtering & views : Filter by section ( --section / --no-section ), structure ( --structure / --no-structure ), tag or tag family ( --tag / --no-tag ), regex ( --query ), or per-section relevance cap ( --max-strings ). --interesting hides noisy strings ( #common , #duplicate , #code , #reloc , #code-junk ) unless they also carry a highlight tag ( #capa ). --summary emits a fast static-only overview (metadata, counts, tag histogram, and high-value strings). --plain renders the classic flat string list without layout or tags. --columns {tags,offset,structure,encoding} customizes the layout view columns. Interactive Web Viewer & Standalone HTML Reports --html output : floss --html sample.exe > report.html generates a self-contained offline HTML report with embedded results. Hosted viewer : Upload floss -j JSON output to https://mandiant.github.io/flare-floss/ to interactively search, filter by tags/structures/types, inspect obfuscated and language strings, and download a standalone offline copy of the viewer. Caching, CLI, and Security Improvements Result caching : Analysis results are cached by default in the platform cache directory (configurable via FLOSS_CACHE_DIR , FLOSS_CACHE_ENABLE=0 , FLOSS_CACHE_REFRESH=1 ). Shell completions : Generate tab completions with floss --print-completion {bash,zsh,tcsh,fish,powershell} . Safe Vivisect workspace loading : Crafted .viv files are no longer auto-loaded. Loading an existing <sample>.viv requires FLOSS_LOAD_VIV_WORKSPACE=1 (and saving requires FLOSS_SAVE_WORKSPACE=1 ). Changes Since quantumstrand-beta3 Merged the separate qs preview tool into the main floss CLI and pipeline ( floss.layout , floss.tags , floss.pipeline ). The standalone qs entry point has been removed. Unified the JSON results document ( ResultDocument ) to carry metadata , analysis , strings , and layout in a single schema. Applied semantic tagging to classic strings (stack, tight, decoded, and language strings) in addition to layout strings. Added --html standalone report generation, --summary , --plain , --interesting , --query , --max-strings , and --print-completion . Replaced machofile with native Mach-O header parsing and switched expert regex matching to google-re2 . Hardened PE/ELF/Mach-O layout parsing (delay-load import table tagging, import name bounds checks, bounded resource recursion, raw PointerToRawData section placement, RVA clamping, security directory guards, large virtual extent caps, and empty/string-less input handling). Updated global prevalence ( gp ) and open-source ( oss ) string databases, hid #code-junk strings by default, and applied the library false-positive threshold to #msvc . Breaking Changes Python >= 3.12 required : Dropped support for Python 3.8–3.11. CLI flags : Replaced --only and --no with --string-type and --no-string-type ( static , stack , tight , decoded , language , all ). Replaced -functions / --functions with --analyze-functions . Removed -l / --load ; passing a saved JSON results file as the positional sample argument is now detected and loaded automatically. Removed -x / --disable-progress . JSON schema ( floss -j ) : Top-level document now includes layout ( ResultLayout | null ), metadata.{md5,sha1,sha256} , metadata.runtime.{layout,tags} , and analysis.{enable_language_strings,enable_layout,enable_tags} . strings.static_strings entries now include tags , section , and structure . In JSON mode ( -j ), CLI/pipeline errors are emitted as structured JSON ( {\"error\": ..., \"code\": ...} ) on STDERR . Standalone binaries : Standalone executables for Linux, Windows, and macOS bundle the tag databases, FLIRT signatures, and HTML viewer template. Note that --version in the PyInstaller standalone binary reports the git describe tag string ( v4.0.0-alpha.1-0-g<sha> ). Full Changelog : v3.2.0...v4.0.0-alpha.1",
+          "source": "FLOSS Releases",
+          "source_url": "https://github.com/mandiant/flare-floss/releases.atom",
+          "category": "malware-analysis",
+          "published": "2026-10-19T19:33:47+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Malware analysis tooling",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 31
+        },
+        {
+          "entry_id": "355ea493168999064c37c547412f1204b0f51c503d1cad3cb1cc11d9a8289680",
+          "title": "dev/6.1.10957",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10957",
+          "summary": "Mask a register bit offset when lifting the bt instruction family.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-19T18:50:23+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "ab0e8276d174f1e917da8ee7db26540367b7042278e67f16e5aa5123181b50e7",
+          "title": "dev/6.1.10955",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10955",
+          "summary": "[aarch64] Lift the unprivileged, LOR, acquire exclusive pair and LSE …",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-19T15:41:02+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "977c9d574cd74c98318200fead19c83ba7faaac7ea006cf53840dcf07b5f73a2",
+          "title": "LLM-based Code Auditing by Inferring and Evaluating Developer Assumptions",
+          "url": "https://arxiv.org/abs/2610.15729v1",
+          "summary": "When we see a null pointer check, we know that the developer believes that the pointer may not be initialized. If the same pointer is later used without a null pointer check, we may consider this a violation of the developer's belief and ultimately a bug. We develop such a belief-guided program analysis for vulnerability detection (VD). For example, when an authentication function returns the same error for both, a wrong user name and a wrong password, an auditor may infer that the developer believes that both cases are indistinguishable, mitigating a user enumeration attack. This belief is reasonable, as it follows standard security practice. Yet, a function call inducing a difference in response time for both cases, contradicts this belief. This contradiction uncovers a timing side-channel that syntactic analysis tools would miss. Existing static analysis tools struggle with this type of flaw because they require them to be expressible by general, syntactic patterns. Our belief-guided approach detects such domain-specific, high-level semantic security flaws that remain elusive. Given a function, our approach, Creed, infers the developer's security-related beliefs, evaluates how reasonable each one is, and derives the conditions under which it is violated. In contrast to existing ML-based VD techniques, Creed explains the root cause, the symptoms, and the conditions under which each issue is exploitable. To address the context-dependency problem in the evaluation, we introduce two measures for explanation-based VD: recall quantifies how effectively an approach correctly explains a known vulnerability, and overhead quantifies the effort of inspecting its reports. On a recent real-world vulnerability benchmark, Creed detects both semantic and syntactic vulnerabilities more effectively than existing explanation-based VD tools, achieving the best effectiveness-effort trade-off.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-10-11T16:07:53+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Native binary tooling",
+            "Decompiler research"
+          ],
+          "score": 21
+        }
+      ]
+    },
     {
       "date": "2026-10-19",
       "path": "/public/news/2026-10-19-unity-il2cpp-reverse-engineering-news.html",
