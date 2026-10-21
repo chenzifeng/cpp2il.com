@@ -1,11 +1,183 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-20T06:05:58.473428+00:00",
+  "last_generated_at": "2026-10-21T06:05:58.012792+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-10-21",
+      "path": "/public/news/2026-10-21-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — October 21, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 8 relevant releases and technical developments with original sour…",
+      "item_count": 8,
+      "new_item_count": 8,
+      "updated_at": "2026-10-21T06:05:58.012792+00:00",
+      "entries": [
+        {
+          "entry_id": "1e32491b6f13d88229e7da6a254ceac5d36e49080f0ad257b42c2d0270d278c0",
+          "title": "Networkapbridge/dll-decryptor — trending GitHub repository",
+          "url": "https://github.com/Networkapbridge/dll-decryptor",
+          "summary": "dll decryptor — dumps encrypted DLL payloads, resolves imports, rebuilds PE headers, exports or memory-maps the decrypted module GitHub discovery signal: 72 stars, 31 forks, 0 open issues; language HTML; last pushed 2026-10-20. Topics: assembly-decryptor, binary-analysis, csharp-decompiler, dll-decryption, dll-decryptor, dll-unpacker, dll-unpacking, dnspy, il2cpp-decryptor, ilspy.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-06-23+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-10-20T11:55:37+00:00",
+          "trust": 8,
+          "source_boost": 19,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation",
+            "C# decompilation"
+          ],
+          "score": 61
+        },
+        {
+          "entry_id": "4c62554cc33bb8b58808fb7ab8cb3dbd13bc4852bb1d6ca4ff1d12a67f78f890",
+          "title": "v50.0.0: Release Wasmtime 50.0.0 (#14877)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v50.0.0",
+          "summary": "50.0.0 Released 2026-10-20. Added Wasmtime now supports the WebAssembly compact imports proposal, disabled by default, via Config::wasm_compact_imports . #14335 The Wasmtime CLI now has options to configure unsafe intrinsics and compile-time builtins. #14279 The Wasmtime CLI and C API can now enable the component model's canonical names and accessors features. #14344 #14497 A new Store::gc_heap_grow method can be used to manually grow the GC heap of a store. #14341 A new ResourceAny::resource_drop_concurrent method can be used to drop a guest resource with only an Accessor . #14362 A new Engine::release_idle_pool_memory method can be used to release memory kept resident by the pooling allocator for idle slots. #14419 #14507 A new off-by-default task-group-hook feature enables embedders to associate guest-to-host calls with their corresponding host-to-guest calls when using component-model-async. #14416 The wasmtime-wasi and wasmtime-wasi-http crates now support \"named imports\", the implements field of the component model. #14275 The wasmtime explore command now supports components and has resizable panes. #14426 #14427 #14458 The debugger now exposes shared memories to gdbstub. #14087 Winch now supports tail calls on x86_64 and AArch64. #14349 Cranelift has initial support for some x86_64 APX instructions. #13916 The wasmtime serve command can now inherit listening sockets from a service manager (e.g. systemd socket units) with a new --systemd-listenfd option, can serve on Unix sockets, and can automatically exit when idle with a new --idle-process-timeout option. #14294 #14320 #14392 Changed Epoch deadline and call-hook callbacks now receive a StoreHookState instead of a StoreContextMut , which only allows access to the T in a Store<T> . #14386 The wasmtime CLI no longer enables WASIp0 ( wasi_unstable ) by default. It can be enabled with -Spreview0 . #14479 Winch no longer enables the GC types, exceptions, or tail-call proposals by default as support for these is not yet Tier 1. #14449 #14502 Accessor::spawn now takes an async closure instead of an AccessorTask . #14376 Component-model-async has been updated to the latest specification: the cancellable immediate has been removed from intrinsics, subtask.cancel semantics have been refined, task.cancel now traps before the cancel event is delivered, and use of stream/future handles after the other end has been dropped now traps. #14244 #14340 #14342 #14378 #14382 Component-model-async now periodically yields during concurrent work to avoid starving other host tasks. #14460 The performance of async guest-to-host calls in component-model-async has been improved by lazily creating host tasks, and sync-to-sync adapters no longer need to call {enter,exit}-sync-call in many cases. #14350 #14270 Wasmtime now drops cached compiler contexts between compiling modules/components, reducing sustained memory usage. #14314 Cranelift's alias analysis is faster and more precise, and GC struct fields, array elements, and GC header fields now all have their own alias regions. #14290 #14425 #14351 #14353 Wasmtime now uses bulk libunwind section registration when available. #14304 Fuel is now charged for more host allocations made with Val . #14415 Default wasi:http hooks now classify connection and TLS errors in more detail. #14501 wasi:http now always accepts an empty path-with-query. #14446 The CLI now rejects zero for the --http-outgoing-body-* options. #14448 Work continues on implementing the stack-switching proposal. #14140 #14369 #14398 #14441 Wasmtime now requires Rust 1.97.0 to compile. #14466 The pooling allocator now scans further than a fixed set of region and additionally correctly resets pages that have been paged out. #14357 Fixed Converting a borrowed Resource<T> or ResourceDynamic created with new_borrow into a ResourceAny outside of a component call no longer panics. The borrow is now lowered into the guest when the call happens, and ResourceAny::resource_drop is no longer required for such borrows. #14384 Recursive run_concurrent is now allowed for disparate stores. #14302 Fuel is now correctly saved and restored around call_ref and exception catches in Cranelift, and buffered fuel charges in a module's start function are no longer dropped. #14407 #14391 The check-write budget is now enforced in wasi:http outgoing bodies and some wasi:io output streams. #14408 #14429 #14505 Store::set_epoch_deadline no longer overflows with very large deltas. #14513 JIT code is now made coherent with the instruction cache correctly on AArch64. #14454 Native stack-walking on macOS arm64 has been fixed. #14303 A stack overflow translating a variant with a huge number of cases between components has been fixed. #14355 Resource aliases are now preserved when stubbing unknown imports. #14396 bindgen! now uses fully-qualified paths for prelude types to avoid collisions with WIT type names. #14543 Validation of if without else in the presence of subtyping has been fixed. #14334 A debug assertion in ref.test of internalized externref s has been fixed. #14315 Cranelift now allows returns via xmm1 with WindowsFastCall for extern \"Rust\" . #14361 cranelift-object now sets symbol flags correctly and returns an error, instead of panicking, for data objects declared with different TLS values. #14519 #14469 Winch now handles unreachable try_table , emits fuel updates before throwing exceptions, and preserves typed select result types for GC stack maps. #14379 #14297 #14455 wasmtime run now honors the --http-outgoing-body-* options. #14440 Graceful shutdown of wasmtime serve has been fixed. #14388 The CLI no longer panics on overflow when deriving the async stack size. #14514 A number of wasi:filesystem fixes: set-times on directory descriptors, stat of symlinks with trailing slashes, the stat fast path, datetime overflow, and directory entry file types on filesystems without d_type . #14420 #14387 #14368 #14403 #14381 Accepted TCP sockets now preserve their peer address after a reset. #14443 MACH_RCV_INTERRUPT is no longer used in the macOS mach ports implementation. #14414 wasi-http p3: Correctly enforce content-length for response bodies #14822 wasi-http p3: Apply forbidden header check to trailers #14823 wasi-http: Prohibit duplicate content-length headers #14824 Cranelift/aarch64: fix br_tables with very large target count #14826 Centralize type-checks of futures/streams #14827",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-10-20T16:22:46+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "5123e333a934fcb8dc3394e804fdf31f4276e0ba63ffaeb62786db7fc81ec921",
+          "title": "InterType: Breaking the Single-Function Barrier in Neural Binary Type Inference",
+          "url": "https://arxiv.org/abs/2610.26906v1",
+          "summary": "Variable type recovery is a critical task in binary reverse engineering, enabling downstream applications such as vulnerability discovery, malware analysis, and security enforcement. While recent Transformer-based models have demonstrated strong performance in type inference by learning instruction-level semantics, they predominantly operate within single-function boundaries (i.e. intra-procedural analysis), ignoring the rich type constraints that propagate across function calls. Empirical studies have shown that nearly 44% of variables in real-world binaries propagate across function boundaries as arguments or return values, representing a significant source of type information that intra-procedural models cannot exploit. In this paper, we propose InterType, a method that embeds inter-procedural analysis into a pre-trained Transformer model for binary type recovery. Our approach builds on CodeArt, a state-of-the-art Transformer model for stripped binary analysis, and extends it by incorporating caller-callee data flow dependencies during fine-tuning. Specifically, we extract data flow dependence for each caller-callee pair from disassembled binaries and construct training instances that provide the model with cross-function context. By exposing the Transformer to inter-procedural variable propagation patterns, our model learns to resolve types that depend on cross-function data flow. We evaluate InterType on the coreutils benchmark compiled with optimization levels O0 through O3. On O1 binaries, InterType improves recall by 2.76 percentage points, from 89.00% for the intra-procedural CodeArt baseline to 91.76%, corresponding to a 25.1% reduction in recall error rate (1 - recall).",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-10-17T02:09:54+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Malware analysis tooling",
+            "Decompiler research"
+          ],
+          "score": 31
+        },
+        {
+          "entry_id": "557e6d5babe197ea9eb881e5cafdda18db1566812e6b006549eb3b98965c1665",
+          "title": "enhance: Add --print-matches option with include/exclude rule filter …",
+          "url": "https://github.com/rednaga/APKiD/commit/dfb74d916b233dbc1af420deef8b077fb5da3cf8",
+          "summary": "enhance: Add --print-matches option with include/exclude rule filter (#506) * Add --print-matches option with include/exclude rule filter * Fix --print-matches issue with nested files when the filename is printed * Remove duplicated parse_print_filter() function",
+          "source": "APKiD Commits",
+          "source_url": "https://github.com/rednaga/APKiD/commits/master.atom",
+          "category": "mobile-security",
+          "published": "2026-10-20T14:00:50+00:00",
+          "trust": 8,
+          "source_boost": 4,
+          "topic_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "matched_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "403d70fa98cc8fb3449ca8503be333313b02c2f3143e9bbdc75820cfb1e8d3ff",
+          "title": "Fix #507 , #352 , #275 , #269: Remove deprecated `dexguard_d` rule",
+          "url": "https://github.com/rednaga/APKiD/commit/3de6cf52364f75d1ebf0881879758b012723c33f",
+          "summary": "Fix #507 , #352 , #275 , #269: Remove deprecated `dexguard_d` rule",
+          "source": "APKiD Commits",
+          "source_url": "https://github.com/rednaga/APKiD/commits/master.atom",
+          "category": "mobile-security",
+          "published": "2026-10-20T13:57:23+00:00",
+          "trust": 8,
+          "source_boost": 4,
+          "topic_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "matched_terms": [
+            "Android reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "d98a38e95742df85beb383d139cc8b5de7acd4f4499782d2e9210b71acc189f4",
+          "title": "dev/6.1.10974",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10974",
+          "summary": "Model the ARM32 barrel shifter's value and carry.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-19T20:22:15+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "de8e8b62cd9b462674b537509d5bfeb7d54f55e6ae9710a19997c7693cf08b7c",
+          "title": "dev/6.1.10971",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10971",
+          "summary": "Model the ARM32 barrel shifter's value and carry.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-19T20:22:15+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "a7fa6da904af08f9fb6f1b04f9bd0fc4fb0e7fafffeddc189fe22cc0a016a313",
+          "title": "Android RE. Step up from pentesting to researching",
+          "url": "https://reverseengineering.stackexchange.com/questions/33781/android-re-step-up-from-pentesting-to-researching",
+          "summary": "I'm a cybersecurity engineer with 2–3 years in product security and about a year focused on Android. I'm writing because I've hit a specific wall that I think many mid-level Android people face. Where I am right now: I open an APK with jadx-gui, read the manifest, enumerate exported components, go to the class, look at how it handles intents... and then I freeze. I know the API-side business logic work well because it resembles other backend work I've done. But once the manifest and the intent handler are done, I don't have a mental model of what else to look at in an Android app. I feel like I'm running tools and checking boxes rather than researching. I keep finding things like an adb command that opens an arbitrary WebView or a self-XSS with no real exploitation path. They're technically findings, but they're not the kind of bugs that teach you the platform or that are worth writing up. What I actually want is to understand the Android ecosystem at a deeper level and eventually find and exploit my own bugs (the kind that are interesting enough to publish). I have read enough to know that there is a whole world beyond exported Activities and Services: Binder, native system services, JNI libraries, etc. But knowing the names of these surfaces is not the same as knowing how to approach them. So my questions for the reverse engineers and researchers here are concrete. On attack surface enumeration beyond the manifest: after you finish the exported-component pass, what is your next step? On moving from Java to native: for someone comfortable with jadx but not yet with ARM assembly and JNI, what's the most effective way to start reading .so libraries without getting lost? On fuzzing: is fuzzing a realistic entry point for someone at my level to learn how these surfaces behave, or is it something you only do after you already understand the target deeply? And on choosing depth over noise: how do you personally decide that a finding is worth pursuing versus a dead-end WebView/self-XSS? What heuristics do you use to separate \"this is a real, publishable bug\" from \"this is a checkbox finding\"? One more thing I keep going back and forth on is AI. In Android I sometimes feel the problem is almost deterministic—the APK is public and static, so in theory an AI could help me reason about it. But in practice I end up feeling like the AI's slave: I feed it snippets, wait for suggestions, follow one thread for 30 minutes, and often end up in a rabbit hole with nothing to show for it. I'm curious how you all think about this. Do you use AI at all in Android RE/research? If so, at what stage and with what boundaries? If not, why not—and what do you do instead when you're stuck? I'm not talking about asking it to \"find bugs for me\", but about whether it's a useful reasoning aid at all in this context. I'm not looking for course recommendations or a list of tools. I'm looking for the mental models and workflows that people who actually do this use when they sit down with a target. Thanks for reading.",
+          "source": "Reverse Engineering Stack Exchange",
+          "source_url": "https://reverseengineering.stackexchange.com/feeds",
+          "category": "community-qa",
+          "published": "2026-10-20T13:05:10+00:00",
+          "trust": 7,
+          "source_boost": 2,
+          "topic_terms": [],
+          "matched_terms": [
+            "Android reverse engineering"
+          ],
+          "score": 13
+        }
+      ]
+    },
     {
       "date": "2026-10-20",
       "path": "/public/news/2026-10-20-unity-il2cpp-reverse-engineering-news.html",

@@ -2,19 +2,19 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 149,
+      "count": 150,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-20"
+      "last_seen": "2026-10-21"
     },
     "trending GitHub": {
-      "count": 149,
+      "count": 150,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-20"
+      "last_seen": "2026-10-21"
     },
     "GitHub repository": {
-      "count": 149,
+      "count": 150,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-20"
+      "last_seen": "2026-10-21"
     },
     "Unity": {
       "count": 48,
@@ -22,34 +22,34 @@
       "last_seen": "2026-10-16"
     },
     "decompiler": {
-      "count": 42,
+      "count": 43,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-21"
     },
     "wasm": {
       "count": 40,
       "first_seen": "2026-07-20",
       "last_seen": "2026-10-05"
     },
+    "WebAssembly": {
+      "count": 29,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-10-21"
+    },
     "metadata": {
       "count": 29,
       "first_seen": "2026-07-24",
       "last_seen": "2026-10-20"
     },
-    "WebAssembly": {
-      "count": 28,
+    "reverse engineering": {
+      "count": 24,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-08"
+      "last_seen": "2026-10-21"
     },
     "decompilation": {
       "count": 24,
       "first_seen": "2026-07-20",
       "last_seen": "2026-10-17"
-    },
-    "reverse engineering": {
-      "count": 23,
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-10-20"
     },
     "webassembly": {
       "count": 16,
@@ -191,6 +191,11 @@
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-15"
     },
+    "ARM32": {
+      "count": 2,
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21"
+    },
     "Rust Add Platform": {
       "count": 2,
       "first_seen": "2026-10-12",
@@ -292,11 +297,6 @@
       "last_seen": "2026-10-03"
     },
     "limit settings": {
-      "count": 2,
-      "first_seen": "2026-10-03",
-      "last_seen": "2026-10-03"
-    },
-    "fix limit settings": {
       "count": 2,
       "first_seen": "2026-10-03",
       "last_seen": "2026-10-03"
