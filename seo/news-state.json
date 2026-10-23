@@ -1,12 +1,224 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-22T06:09:14.313057+00:00",
+  "last_generated_at": "2026-10-23T06:04:39.440829+00:00",
   "source_errors": [
-    "Mozilla Hacks: HTTP Error 403: Forbidden",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss"
+    "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-10-23",
+      "path": "/public/news/2026-10-23-unity-il2cpp-reverse-engineering-news.html",
+      "title": "WebAssembly tooling & WebAssembly runtime News — October 23, 2026",
+      "description": "Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 10 relevant releases and technical developments with origin…",
+      "item_count": 10,
+      "new_item_count": 10,
+      "updated_at": "2026-10-23T06:04:39.440829+00:00",
+      "entries": [
+        {
+          "entry_id": "bb6eba25f0df79393c2c8821a75beaeaa4aa53ee1748504ad60fde958546c5e5",
+          "title": "Dhaiwat10/cricket07-browser — trending GitHub repository",
+          "url": "https://github.com/Dhaiwat10/cricket07-browser",
+          "summary": "EA Sports Cricket 07 (2006) running in the browser: every function statically recompiled from x86 to C, then WebAssembly, with Direct3D 8 rebuilt on WebGPU. Bring your own copy. GitHub discovery signal: 80 stars, 27 forks, 2 open issues; language C; last pushed 2026-10-22. Topics: cricket, direct3d, emscripten, reverse-engineering, static-recompilation, webassembly, webgpu.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-07-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-10-16T08:46:01+00:00",
+          "trust": 8,
+          "source_boost": 19,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 46
+        },
+        {
+          "entry_id": "a0bac513900ee9d639d475331669ab5d08513d8a8195455ab5cd0c264e570cd8",
+          "title": "Wtrwx/vesper — trending GitHub repository",
+          "url": "https://github.com/Wtrwx/vesper",
+          "summary": "iOS reverse engineering platform: MCP tools and agent skills for runtime inspection, automation, decryption, debugging and tweak development GitHub discovery signal: 28 stars, 3 forks, 0 open issues; language Python; last pushed 2026-10-23.",
+          "source": "GitHub Hot iOS Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=%22ios+reverse+engineering%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-06-25+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-mobile",
+          "published": "2026-10-22T16:06:04+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "iOS reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "iOS reverse engineering"
+          ],
+          "score": 44
+        },
+        {
+          "entry_id": "013ace24ac157aa9e36e0b8345954ab45422ee9a21faee14d7e2b659029c4c07",
+          "title": "2026.10.22",
+          "url": "https://github.com/pwndbg/pwndbg/releases/tag/2026.10.22",
+          "summary": "This release brings support for m68k architecture and unknown architectures, better C++ symbols, expression support and guides ( debugging C++ , symbol mangling , pretty printing ), nearpc -o showing opcode bytes, Android Bionic detection and libc information, Objective-C class inspection ( objc show-class and objc list-classes ), better glibc heap discovery, Linux kernel 7.0 SLUB sheaf and barn inspection, a new setrlimit command to set debugee' resource limits, displaying SIMD registers with regs command and more! Screenshots and details below. Thanks to everyone who contributed! Please sponsor us at Pwndbg so we can keep improving it! -- We can give you a talk about Pwndbg too! Quick install Install Pwndbg portable on Linux or macOS (choose one line for GDB or LLDB): curl --proto ' =https ' --tlsv1.2 -LsSf ' https://install.pwndbg.re ' | sh -s -- -t pwndbg-gdb curl --proto ' =https ' --tlsv1.2 -LsSf ' https://install.pwndbg.re ' | sh -s -- -t pwndbg-lldb Homebrew package (macOS only; choose one line for GDB or LLDB): brew install pwndbg/tap/pwndbg-gdb # only allows for remote debugging of ELFs brew install pwndbg/tap/pwndbg-lldb Nix package manager (Linux/macOS; choose one line for GDB or LLDB): nix shell github:pwndbg/pwndbg # this is pwndbg-gdb nix shell github:pwndbg/pwndbg#pwndbg-lldb Other options: For distro and architecture packages, see the setup docs and the release assets below. For the latest development version, install from source . What's changed Architectures Added m68k support including disassembly via Capstone and emulation of code via Unicorn engine. This includes branch target resolution and instruction annotations ( #4225 ) Pwndbg also no longer refuses to start on architectures it does not explicitly support. It falls back to the underlying debugger's disassembler, with reduced context functionality and no emulation ( #4226 ). Nearpc changes and regs The nearpc --opcode (or -o ) now shows opcode bytes to fit the longest instruction in the listing, or nearpc -o 4 for a fixed four-byte column. This works per command, without changing nearpc-num-opcode-bytes ( #4220 ). The nearpc <start> <end> now disassembles up to an end address. Use -r 0 to omit the preceding instructions ( #4176 ) Branch visualization now colors the full branch path and avoids misleading connections between separate address regions ( #4182 , #4175 ) Regs command changes The regs command now decodes individual flags register flags ( regs eflags ; #4211 ) and can display SIMD registers, for example regs xmm0 ( #4212 ). Android Bionic libc support Pwndbg now detects Bionic and resolves Android libc and loader mappings. It shows this with the libc (or libcinfo ) command. This is a first step toward better Android debugging ( #3988 ). Heap & Linux Kernel Debugging We improvec glibc heap discovery combining debug symbols with fallback heuristics. This improves tcache discovery on glibc 2.42 and newer, where the tcache is not necessarily the first heap chunk ( #4172 ). The resolve-heap-via-heuristic configuration is deprecated and has no effect. Pwndbg always tries symbols first and then heuristics ( #4172 ). Linux 7.0+ SLUB support: the slab info now displays per-CPU sheaves and per-node barns ( #3990 ) We also added slab sheaf <address> commant to dump objects in a sheaf ( #3990 ) Objective-C classes inspection commands We added two new commands in #4205 : objc show-class -n MyClass displays class metadata in pseudo-Objective-C syntax, including method implementation and selector addresses. You can also look up a class by address with -a <address> or module with -m <module> . objc list-classes lists classes in the main module; use -a for all modules except the DYLD shared cache, or -A to include it. LLDB Added target create -r for specifying a remote executable path and process launch -w for setting working directory ( #4194 ) Launching now respects target.run-args ( #4221 ) Fixed powerpc64le architecture support ( #3821 ) Others We added setrlimit command to set resource limits. For example setrlimit nofile 1 2 will set soft and hard open-files limit, whereas setrlimit core infinite will set both core-file limits to unlimited ( #4251 ) Quoted C++ symbols and expressions now work more reliably in GDB commands including expressions such as 'my symbol'+1. Symbol arguments also have more intuitive value/address handling ( #4190 , #4235 , #4247 ) We added new guides for: debugging C++ , symbol mangling and pretty printing , covering quoted symbols, libstdc++ pretty printers and type casting ( #4183 ) Fixed p2p crashing with any or * mappings and documented begin:end ranges with examples ( #4240 , #4249 ) Fixed search -1 -- -1 cases ( #4250 ) Fixed vmmap -A omitting last result ( #4244 ) Fixed mmap <flags> to be incorrectly processed ( #4242 ) We actually did many many more! Full Changelog here: 2026.09.15...2026.10.22 Thanks also to our new contributors: @victorwon2001 ( #4145 ), @dolszewski-antmicro ( #4210 ), @Tusm11 ( #4213 ), @MishowHD ( #4219 ), @Sarthak-Shreshtha01 ( #4230 ), @APX403 ( #4222 ), @stanleys12 ( #4214 ), @u7k4rs6 ( #4240 ), @k0nnect ( #4221 ), and @xovishnukosuri ( #3821 )!",
+          "source": "pwndbg Releases",
+          "source_url": "https://github.com/pwndbg/pwndbg/releases.atom",
+          "category": "debugging",
+          "published": "2026-10-22T11:29:28+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "Native binary tooling",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 39
+        },
+        {
+          "entry_id": "8efb0a70897d1662e1c2435f85ec485c7f0212c34345dd8e41cacecf8c54fbd9",
+          "title": "WasmEdge 0.18.1",
+          "url": "https://github.com/WasmEdge/WasmEdge/releases/tag/0.18.1",
+          "summary": "0.18.1 (2026-10-23) Fixed issues: [Validator] Bounded the array.new_fixed operand check by the value stack height instead of the count immediate, so a huge count fails the validation without allocating gigabytes. ( #5472 ) [CAPI] Restored the backward-compatible WasmEdge_ModuleInstanceAdd* symbols for the applications linked against 0.17.x, by binding the shims to the WASMEDGE_0.16 version node and building them without LTO. ( #5443 ) [AOT] Supported building and running the LLVM backend with LLVM 9 to 23, and corrected the alias value types, the null reference defaults, and the i8x16.shuffle mask on all LLVM versions. ( #5426 ) [Tools] Fixed the uint32_t overflow in the name section bounds checks, which hung wasmedge parse on the malformed name sections. ( #5446 ) [WASI-NN] Hardened the Piper backend: validated the JSON input, the synthesis option ranges, and the model paths, caught the libpiper exceptions and the streaming errors, bounded the audio size, and kept the last audio chunk. ( #4903 ) Misc: [Documentation] Updated the roadmap for Q4/2026 ( #5401 ), and nominated Wang-Yang Li as a WasmEdge maintainer ( #5388 ). CI: [Runner] Checked that the changed C API symbols keep their compat aliases, and ran the symbol check on the manylinux builds. ( #5443 ) [dependabot] ci(dependabot): bump github/codeql-action from 4.38.2 to 4.39.0 ( #5433 , #5434 , #5457 , #5458 ) ci(dependabot): bump step-security/harden-runner from 2.21.1 to 2.22.1 ( #5432 ) ci(dependabot): bump cachix/install-nix-action from 31.11.1 to 31.11.2 ( #5456 ) ci(dependabot): bump vedantmgoyal9/winget-releaser from a8fff44 to b7370d4 ( #5435 ) ci(dependabot): bump the upload-and-download-artifact group with 2 updates ( #5431 ) ci(dependabot): bump docker/bake-action from 7.4.0 to 7.5.0 in the docker group ( #5455 ) Thank all the contributors who made this release possible! Anshika Jain, hydai, Shen-Ta Hsieh(BestSteve), Yi-Ying He If you want to build from source, please use WasmEdge-0.18.1-src.tar.gz instead of the zip or tarball provided by GitHub directly.",
+          "source": "WasmEdge Releases",
+          "source_url": "https://github.com/WasmEdge/WasmEdge/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-10-22T21:05:46+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "ab6874e2912b1bac690103e81ff38d850aed3892fe0c9b705c7711a7d70be71b",
+          "title": "WasmEdge 0.18.1-rc.1",
+          "url": "https://github.com/WasmEdge/WasmEdge/releases/tag/0.18.1-rc.1",
+          "summary": "0.18.1-rc.1 (2026-10-20) Fixed issues: [CAPI] Restored the backward-compatible WasmEdge_ModuleInstanceAdd* symbols for the applications linked against 0.17.x, by binding the shims to the WASMEDGE_0.16 version node and building them without LTO. ( #5443 ) [AOT] Supported building and running the LLVM backend with LLVM 9 to 23, and corrected the alias value types, the null reference defaults, and the i8x16.shuffle mask on all LLVM versions. ( #5426 ) [Tools] Fixed the uint32_t overflow in the name section bounds checks, which hung wasmedge parse on the malformed name sections. ( #5446 ) [WASI-NN] Hardened the Piper backend: validated the JSON input, the synthesis option ranges, and the model paths, caught the libpiper exceptions and the streaming errors, bounded the audio size, and kept the last audio chunk. ( #4903 ) Misc: [Documentation] Updated the roadmap for Q4/2026 ( #5401 ), and nominated Wang-Yang Li as a WasmEdge maintainer ( #5388 ). CI: [Runner] Checked that the changed C API symbols keep their compat aliases, and ran the symbol check on the manylinux builds. ( #5443 ) [dependabot] ci(dependabot): bump github/codeql-action from 4.38.2 to 4.39.0 ( #5433 , #5434 , #5457 , #5458 ) ci(dependabot): bump step-security/harden-runner from 2.21.1 to 2.22.1 ( #5432 ) ci(dependabot): bump cachix/install-nix-action from 31.11.1 to 31.11.2 ( #5456 ) ci(dependabot): bump vedantmgoyal9/winget-releaser from a8fff44 to b7370d4 ( #5435 ) ci(dependabot): bump the upload-and-download-artifact group with 2 updates ( #5431 ) ci(dependabot): bump docker/bake-action from 7.4.0 to 7.5.0 in the docker group ( #5455 ) Thank all the contributors who made this release possible! Anshika Jain, hydai, Shen-Ta Hsieh(BestSteve), Yi-Ying He If you want to build from source, please use WasmEdge-0.18.1-rc.1-src.tar.gz instead of the zip or tarball provided by GitHub directly.",
+          "source": "WasmEdge Releases",
+          "source_url": "https://github.com/WasmEdge/WasmEdge/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-10-22T13:08:16+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "d0948dabc9c631eaff1d477a03be9fbed7bafb52e2bb76376ab01805befd04b1",
+          "title": "Ghidra 12.2",
+          "url": "https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidra_12.2_build",
+          "summary": "What's New Change History Getting Started SHA-256: 2c2cd776db3c1f6a097ba418922378ac3649cadd5e844a6f5f088ae628a7be67",
+          "source": "Ghidra Releases",
+          "source_url": "https://github.com/NationalSecurityAgency/ghidra/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-22T08:31:12+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 33
+        },
+        {
+          "entry_id": "0197c6b16a9a57808e384f527d6d871a0853010f7441a3a9303bc1f30344ce2c",
+          "title": "Acm1011/ProgramGym — trending GitHub repository",
+          "url": "https://github.com/Acm1011/ProgramGym",
+          "summary": "Scaling Training Environments for Long-Horizon Program Reproduction Agents GitHub discovery signal: 13 stars, 0 forks, 1 open issues; language Unknown; last pushed 2026-10-12. Topics: coding-agents, llm-agents, programgym.",
+          "source": "GitHub Hot Program Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=%22program+analysis%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-26+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-research",
+          "published": "2026-10-12T02:02:03+00:00",
+          "trust": 8,
+          "source_boost": 13,
+          "topic_terms": [
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 24
+        },
+        {
+          "entry_id": "702e432756b6e2196df84d42a484d4fa0fa34ea2f1e8bc25e759269398b9a28f",
+          "title": "v10.0.5",
+          "url": "https://github.com/angr/angr/releases/tag/v10.0.5",
+          "summary": "release version 10.0.5",
+          "source": "angr Releases",
+          "source_url": "https://github.com/angr/angr/releases.atom",
+          "category": "program-analysis",
+          "published": "2026-10-22T18:13:04+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "27c932d2d15a4e62858b70c61bff156b6af7236f895fd8afef324eaf60a6ad7b",
+          "title": "dev/6.1.11003: [ARM] Fix overlapping address registers in pair loads",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11003",
+          "summary": "Lift ARM pair loads as two 32-bit loads and preserve the first destination in a temporary when it is also used to compute the load address. Apply the same preservation to Thumb pair loads so the second load uses the original address. Avoid temporaries when no preservation is needed.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-22T18:42:58+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "886d3b065e8efe6c23065e4aeead32742ea0348bf5f1dec1927849903d8a25f8",
+          "title": "dev/6.1.10998: [ARM] Fix overlapping address registers in pair loads",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.10998",
+          "summary": "Lift ARM pair loads as two 32-bit loads and preserve the first destination in a temporary when it is also used to compute the load address. Apply the same preservation to Thumb pair loads so the second load uses the original address. Avoid temporaries when no preservation is needed.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-22T18:42:58+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-10-22",
       "path": "/public/news/2026-10-22-unity-il2cpp-reverse-engineering-news.html",
