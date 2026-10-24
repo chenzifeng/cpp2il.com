@@ -1,11 +1,128 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-23T06:04:39.440829+00:00",
+  "last_generated_at": "2026-10-24T05:58:52.579776+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-10-24",
+      "path": "/public/news/2026-10-24-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Android reverse engineering News — October 24, 2026",
+      "description": "Curated APK and IPA analysis, Android reverse engineering updates for developers and security researchers. 5 relevant releases and technical developments wit…",
+      "item_count": 5,
+      "new_item_count": 5,
+      "updated_at": "2026-10-24T05:58:52.579776+00:00",
+      "entries": [
+        {
+          "entry_id": "71612afd139b61f241359a2ed026957fbe9af137befff5339532e1908eb7938e",
+          "title": "samalyxx/appunpack — trending GitHub repository",
+          "url": "https://github.com/samalyxx/appunpack",
+          "summary": "Local Android APK decompiler and reverse-engineering CLI. Recover Java/resources with JADX, inspect splits, and connect AI agents via MCP. GitHub discovery signal: 4 stars, 0 forks, 0 open issues; language JavaScript; last pushed 2026-10-23. Topics: android, android-reverse-engineering, android-security, apk, apk-analysis, apk-decompiler, apktool, cli, decompiler, ghidra.",
+          "source": "GitHub Hot Android Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-reverse-engineering+created%3A%3E%3D2026-07-26+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-mobile",
+          "published": "2026-10-20T13:56:59+00:00",
+          "trust": 8,
+          "source_boost": 12,
+          "topic_terms": [
+            "Android reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering",
+            "Binary reverse engineering"
+          ],
+          "score": 49
+        },
+        {
+          "entry_id": "cd2ce9a26d0c352d3f47c8981ff5dc43829422888ee5b21b5e6d619134db0182",
+          "title": "BepInEx 5.4.23.6",
+          "url": "https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.6",
+          "summary": "This update mainly aims to improve compatibility with MacOS. What's Changed Change MacOS arch in build script from x64 to universal by @arrowmaster in #1268 v5: Fix HarmonyX version in README by @Zman350x in #1287 Make [Obsolete] text for GetConfigEntries more actionable by @ratijas in #1306 v5: Fix crash on macOS arm64: wrap XTermFix and ConsoleSetOutFix in Utility.TryDo by @brianmiller in #1288 v5: Don't kill the chainloader when Unity log callbacks are stripped by @ObjectInSpace in #1392 v5: Fix building from BepInEx:master GH workflows by @arrowmaster in #1398 v5: Fix plugin loading on native arm64 macOS by @cdobbyn in #1402 v5: Upgrade UnityDoorstop to version 4.6.0 by @arrowmaster in #1419 New Contributors @Zman350x made their first contribution in #1287 @ratijas made their first contribution in #1306 @brianmiller made their first contribution in #1288 @cdobbyn made their first contribution in #1402 Full Changelog : v5.4.23.5...v5.4.23.6 ⚠️ BepInEx 5 is in long term support (LTS) mode BepInEx 5.4 is the last version of BepInEx 5 with major updates. Any BepInEx 5 releases starting version 5.4 will be minor and only contain fixes along with package version updates. Our main development focus now shifts to implementing BepInEx 6. For developers: BepInEx 5 source code is now maintained on v5-lts branch. In turn master branch will start hosting BepInEx 6 source. All PRs regarding BepInEx 5 should be targeting that branch instead of master .",
+          "source": "BepInEx Releases",
+          "source_url": "https://github.com/BepInEx/BepInEx/releases.atom",
+          "category": "unity-runtime",
+          "published": "2026-10-23T23:53:21+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Unity runtime tooling",
+            "Unity IL2CPP"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "Unity runtime tooling"
+          ],
+          "score": 46
+        },
+        {
+          "entry_id": "77b73633db8017396444a4e909dae997d4603f28e56fb3e59a82e36e2b7f28e5",
+          "title": "Improve PDB output plugin (#611)",
+          "url": "https://github.com/SamboyCoding/Cpp2IL/commit/b5ad444b82267cb1e4b88b8b373c008105bdea52",
+          "summary": "Improve PDB output plugin (#611)",
+          "source": "Cpp2IL Development Commits",
+          "source_url": "https://github.com/SamboyCoding/Cpp2IL/commits/development.atom",
+          "category": "il2cpp-core",
+          "published": "2026-09-12T12:37:10+00:00",
+          "trust": 9,
+          "source_boost": 7,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 31
+        },
+        {
+          "entry_id": "a45d9b9142bdb994d5da48f02a6163553fc5c7de8a3aace5d97949aad30ccfb2",
+          "title": "dev/6.1.11009",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11009",
+          "summary": "[ARMv7] Report every stale lift expectation, and refresh the shifter …",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-23T18:52:21+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "31c2e599c761ba1cb587b1b8e66f2a1de8b6ec9824325ede7fa1c476741325ff",
+          "title": "dev/6.1.11008: Resolve ARM and Thumb VFP conditions through semantic flag groups",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11008",
+          "summary": "Emit semantic condition groups in ARM and Thumb lifted IL and classify VFP comparison flag writes separately from integer writes. GE can then resolve directly to floating >= before MLIL or HLIL propagation. Map only floating conditions that exactly match the architectural NZCV outcomes, preserving flag expansion for unordered-inclusive conditions and mixed definitions. Keep carry inversion boolean-sized and update lifting expectations.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-23T14:05:18+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-10-23",
       "path": "/public/news/2026-10-23-unity-il2cpp-reverse-engineering-news.html",
