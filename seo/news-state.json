@@ -1,11 +1,64 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-24T05:58:52.579776+00:00",
+  "last_generated_at": "2026-10-25T06:14:08.830306+00:00",
   "source_errors": [
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-10-25",
+      "path": "/public/news/2026-10-25-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — October 25, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 2 relevant releases and technical developments with original sour…",
+      "item_count": 2,
+      "new_item_count": 2,
+      "updated_at": "2026-10-25T06:14:08.830306+00:00",
+      "entries": [
+        {
+          "entry_id": "1b5fe4c4075f23f2b8dd0fb49de16a89b167747dc00eb8e904da000c840206a6",
+          "title": "tcmmm/dump-tool — trending GitHub repository",
+          "url": "https://github.com/tcmmm/dump-tool",
+          "summary": "il2cpp Dump 翻译工作台 - Unity il2cpp 游戏逆向辅助工具 GitHub discovery signal: 45 stars, 11 forks, 1 open issues; language Python; last pushed 2026-10-19.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-06-27+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-10-19T10:23:35+00:00",
+          "trust": 8,
+          "source_boost": 18,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 53
+        },
+        {
+          "entry_id": "06074c5594807400e3f528322bac567e043be1c326e6ef998d61051b798d48b4",
+          "title": "Bump Microsoft.NET.Test.Sdk from 18.9.0 to 18.10.0 (#615)",
+          "url": "https://github.com/SamboyCoding/Cpp2IL/commit/bbdada2d71755e9d5d31212525127213ed839ca2",
+          "summary": "Bump Microsoft.NET.Test.Sdk from 18.9.0 to 18.10.0 (#615) Signed-off-by: dependabot[bot] <support@github.com>",
+          "source": "Cpp2IL Development Commits",
+          "source_url": "https://github.com/SamboyCoding/Cpp2IL/commits/development.atom",
+          "category": "il2cpp-core",
+          "published": "2026-09-12T12:21:33+00:00",
+          "trust": 9,
+          "source_boost": 7,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 31
+        }
+      ]
+    },
     {
       "date": "2026-10-24",
       "path": "/public/news/2026-10-24-unity-il2cpp-reverse-engineering-news.html",
