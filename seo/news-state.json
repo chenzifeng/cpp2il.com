@@ -1,11 +1,44 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-25T06:14:08.830306+00:00",
+  "last_generated_at": "2026-10-26T06:22:07.436364+00:00",
   "source_errors": [
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "arXiv Reverse Engineering Research: The read operation timed out"
   ],
   "pages": [
+    {
+      "date": "2026-10-26",
+      "path": "/public/news/2026-10-26-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity source code recovery & Unity asset extraction News — October 26, 2026",
+      "description": "Curated Unity source code recovery, Unity asset extraction updates for developers and security researchers. 1 relevant releases and technical developments wi…",
+      "item_count": 1,
+      "new_item_count": 1,
+      "updated_at": "2026-10-26T06:22:07.436364+00:00",
+      "entries": [
+        {
+          "entry_id": "3141bd84ef5aa55737f8006c00287b90c3a97da63f8d346b878dfd85e5fc08ab",
+          "title": "Cynthia-wlan9509/offline-game-revival — trending GitHub repository",
+          "url": "https://github.com/Cynthia-wlan9509/offline-game-revival",
+          "summary": "🎮 AI agent skill that revives shut-down mobile games as fully offline memorial builds — plus a zero-token pipeline that rescues lost game data from screenshots & screen recordings. 停服手游离线化 · 录屏抽帧OCR GitHub discovery signal: 4 stars, 1 forks, 0 open issues; language Python; last pushed 2026-10-26. Topics: agent-skills, android, apk, claude-code, claude-code-plugin, claude-skills, emulation-alternative, game-preservation, keyframe-extraction, layaair.",
+          "source": "GitHub Hot Unity Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=%22unity+reverse+engineering%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-06-28+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-unity",
+          "published": "2026-10-19T01:42:59+00:00",
+          "trust": 8,
+          "source_boost": 11,
+          "topic_terms": [
+            "Unity source code recovery",
+            "Unity asset extraction"
+          ],
+          "matched_terms": [
+            "Unity source code recovery",
+            "Unity asset extraction"
+          ],
+          "score": 32
+        }
+      ]
+    },
     {
       "date": "2026-10-25",
       "path": "/public/news/2026-10-25-unity-il2cpp-reverse-engineering-news.html",
