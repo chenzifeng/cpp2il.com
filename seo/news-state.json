@@ -1,12 +1,122 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-26T06:22:07.436364+00:00",
+  "last_generated_at": "2026-10-27T06:22:53.212696+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
     "Google Project Zero: Feed exceeds maximum size of 2000000 bytes: https://googleprojectzero.blogspot.com/feeds/posts/default?alt=rss",
-    "arXiv Reverse Engineering Research: The read operation timed out"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-10-27",
+      "path": "/public/news/2026-10-27-unity-il2cpp-reverse-engineering-news.html",
+      "title": "WebAssembly tooling & WebAssembly runtime News — October 27, 2026",
+      "description": "Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 5 relevant releases and technical developments with origina…",
+      "item_count": 5,
+      "new_item_count": 5,
+      "updated_at": "2026-10-27T06:22:53.212696+00:00",
+      "entries": [
+        {
+          "entry_id": "b697efbc32d5d56ca4b4cabd7de712528dfea38eace615131d577cd391ee74b2",
+          "title": "heydeer/pngdeer — trending GitHub repository",
+          "url": "https://github.com/heydeer/pngdeer",
+          "summary": "Smaller PNGs, same picture. Lossy PNG compression that picks the quality for you: 8–12% smaller than TinyPNG at the same quality. Command line and in the browser. GitHub discovery signal: 207 stars, 18 forks, 0 open issues; language Rust; last pushed 2026-10-27. Topics: cli, color-quantization, image-compression, png, png-compression, rust, webassembly.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-07-29+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-10-25T05:09:24+00:00",
+          "trust": 8,
+          "source_boost": 21,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 40
+        },
+        {
+          "entry_id": "dadd5ffa0c3e22e7a52c5ac0e8490fafe1ee9610ce9e81e33387ce283b0bed4d",
+          "title": "typetheoryforall/FVjobs — trending GitHub repository",
+          "url": "https://github.com/typetheoryforall/FVjobs",
+          "summary": "A Job Board for Formal Verification GitHub discovery signal: 57 stars, 1 forks, 0 open issues; language Python; last pushed 2026-10-26.",
+          "source": "GitHub Hot Program Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=%22program+analysis%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-04-30+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-research",
+          "published": "2026-10-26T14:11:16+00:00",
+          "trust": 8,
+          "source_boost": 17,
+          "topic_terms": [
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 28
+        },
+        {
+          "entry_id": "a84dd78f63a0a3deec36e77598b2109cf92e0362ad7daaaffc1f3da6f536cf09",
+          "title": "From Instructions to Exploits: Applying Program Analysis to Malicious Agent Skills Across Natural Language and Code",
+          "url": "https://arxiv.org/abs/2610.33489v1",
+          "summary": "LLM-powered agents increasingly rely on third-party skills that combine natural-language instructions with executable code, creating supply-chain risks that may span both artifacts. Existing skill scanners often rely on rule matching or direct LLM judgments and provide limited support for tracing such cross-domain behavior. We present the Supply-Chain Scanner for Agent Skills (SCS), a static analysis framework that unifies instructions and code for security analysis. SCS compiles natural-language instructions into a constrained Python-style intermediate representation using a limited set of security-oriented APIs. It then constructs program dependence graphs for instructions and bundled code and connects them into a cross-domain graph (xPDG). A Trust-Sensitivity-Capability (TSC) model propagates security properties over the graph to support structured, largely deterministic risk detection. On a manually verified benchmark of 117 malicious and 117 benign skills, SCS achieves the highest average accuracy (85.6%), recall (95.2%), and F1-score (86.9%) among evaluated methods across five LLMs, with 80.2% precision and average token consumption of 13.7 million. Its NL-to-IR compiler achieves 92.5%-94.5% step-level correctness on 400 human-annotated instruction steps. Finally, analyzing 66,157 real-world ClawHub skills yields 2,473 candidates, of which 627 are confirmed malicious through auxiliary dynamic validation and manual review.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-10-24T06:35:43+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Malware analysis tooling",
+            "Decompiler research"
+          ],
+          "score": 28
+        },
+        {
+          "entry_id": "4636fbaf90948cd8557cb6945169cbc03018b87e2138577395d7ce2fc6e0f099",
+          "title": "dev/6.1.11011",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11011",
+          "summary": "Rust architecture hook plugin example",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-26T15:08:29+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "f6323a040467cda6f85829b35a9a28b539b6850be667b57e39d83ebfcc20aaf0",
+          "title": "dev/6.1.11010: Add SupportsStandaloneInstructionDecoding callback to Architecture class",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11010",
+          "summary": "Allows UI widgets and core to consult the architecture to determine if instruction bytes can be decoded without additional context",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-26T13:07:06+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-10-26",
       "path": "/public/news/2026-10-26-unity-il2cpp-reverse-engineering-news.html",
