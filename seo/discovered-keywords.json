@@ -31,25 +31,25 @@
       "first_seen": "2026-07-20",
       "last_seen": "2026-10-05"
     },
+    "metadata": {
+      "count": 31,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-10-28"
+    },
     "WebAssembly": {
       "count": 30,
       "first_seen": "2026-07-24",
       "last_seen": "2026-10-23"
     },
-    "metadata": {
-      "count": 30,
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-10-23"
+    "decompilation": {
+      "count": 26,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-10-28"
     },
     "reverse engineering": {
       "count": 26,
       "first_seen": "2026-07-24",
       "last_seen": "2026-10-23"
-    },
-    "decompilation": {
-      "count": 25,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-10-22"
     },
     "webassembly": {
       "count": 18,
@@ -186,10 +186,90 @@
       "first_seen": "2026-07-26",
       "last_seen": "2026-07-28"
     },
+    "AOT": {
+      "count": 3,
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-28"
+    },
     "Arm64": {
       "count": 3,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-15"
+    },
+    "variables incorrectly": {
+      "count": 2,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28"
+    },
+    "reporting operands variables": {
+      "count": 2,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28"
+    },
+    "reporting operands": {
+      "count": 2,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28"
+    },
+    "Python IL bindings": {
+      "count": 2,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28"
+    },
+    "Python IL": {
+      "count": 2,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28"
+    },
+    "operands variables incorrectly": {
+      "count": 2,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28"
+    },
+    "operands variables": {
+      "count": 2,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28"
+    },
+    "IL bindings reporting": {
+      "count": 2,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28"
+    },
+    "IL bindings": {
+      "count": 2,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28"
+    },
+    "Fix Python IL": {
+      "count": 2,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28"
+    },
+    "Fix Python": {
+      "count": 2,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28"
+    },
+    "dev Fix Python": {
+      "count": 2,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28"
+    },
+    "dev Fix": {
+      "count": 2,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28"
+    },
+    "bindings reporting operands": {
+      "count": 2,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28"
+    },
+    "bindings reporting": {
+      "count": 2,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28"
     },
     "registers in pair": {
       "count": 2,
@@ -220,86 +300,6 @@
       "count": 2,
       "first_seen": "2026-10-23",
       "last_seen": "2026-10-23"
-    },
-    "in pair": {
-      "count": 2,
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23"
-    },
-    "Fix overlapping address": {
-      "count": 2,
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23"
-    },
-    "Fix overlapping": {
-      "count": 2,
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23"
-    },
-    "dev ARM Fix": {
-      "count": 2,
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23"
-    },
-    "dev ARM": {
-      "count": 2,
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23"
-    },
-    "ARM Fix overlapping": {
-      "count": 2,
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23"
-    },
-    "ARM Fix": {
-      "count": 2,
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23"
-    },
-    "AOT": {
-      "count": 2,
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23"
-    },
-    "address registers in": {
-      "count": 2,
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23"
-    },
-    "address registers": {
-      "count": 2,
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23"
-    },
-    "ARM32": {
-      "count": 2,
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21"
-    },
-    "Rust Add Platform": {
-      "count": 2,
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12"
-    },
-    "Rust Add": {
-      "count": 2,
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12"
-    },
-    "register calling convention": {
-      "count": 2,
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12"
-    },
-    "register calling": {
-      "count": 2,
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12"
-    },
-    "Platform register calling": {
-      "count": 2,
-      "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12"
     }
   }
 }
