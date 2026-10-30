@@ -1,10 +1,120 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-29T07:11:56.055487+00:00",
+  "last_generated_at": "2026-10-30T07:15:00.173225+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-10-30",
+      "path": "/public/news/2026-10-30-unity-il2cpp-reverse-engineering-news.html",
+      "title": "WebAssembly runtime & Unity runtime tooling News — October 30, 2026",
+      "description": "Curated WebAssembly runtime, Unity runtime tooling updates for developers and security researchers. 5 relevant releases and technical developments with origi…",
+      "item_count": 5,
+      "new_item_count": 5,
+      "updated_at": "2026-10-30T07:15:00.173225+00:00",
+      "entries": [
+        {
+          "entry_id": "793d0dbe22656e7837fc70bebc57aaf6b630ea20bdd795e73d3210b53d8a603d",
+          "title": "v50.0.1: Release Wasmtime 50.0.1 (#15061)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v50.0.1",
+          "summary": "50.0.1 Released 2026-10-29. Fixed wasi-sockets: UDP connect only required the address to be permitted for sending or receiving, allowing guests to send datagrams to addresses denied for UdpSend . GHSA-hmmr-87qq-258j Cross-engine type confusion with host-created struct-types-with-supertypes has been fixed. GHSA-qw58-7h65-crq2 Panic with typed functions with i31 or nullref arguments has been fixed. GHSA-3982-jqvv-277m Unchecked memory usage in transferring borrowed resources between components has been fixed. GHSA-6fr9-xmw9-5352 Fixed a possibility of content-length being invalid or not matching body length in wasi-http p2. GHSA-h4wp-g4x3-7398",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-10-29T18:51:59+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "3b68115fae7ae655718dbb034e5cd2f65c51612a7d81fa1fb739c94a1909a379",
+          "title": "v48.0.8: Release Wasmtime 48.0.8 (#15071)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v48.0.8",
+          "summary": "48.0.8 Fixed 2026-10-29. Fixed wasi-sockets: UDP connect only required the address to be permitted for sending or receiving, allowing guests to send datagrams to addresses denied for UdpSend . GHSA-hmmr-87qq-258j Cross-engine type confusion with host-created struct-types-with-supertypes has been fixed. GHSA-qw58-7h65-crq2 Panic with typed functions with i31 or nullref arguments has been fixed. GHSA-3982-jqvv-277m Unchecked memory usage in transferring borrowed resources between components has been fixed. GHSA-6fr9-xmw9-5352 Fixed a possibility of content-length being invalid or not matching body length in wasi-http p2. GHSA-h4wp-g4x3-7398 Compiling a module with more than ~32k data segments with copy-on-write memory initialization disabled no longer panics with MemFlagsSetOverflow . #15050",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-10-29T18:40:23+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "b5283a4d8b5706afbbfe7f75a41e60843c44820646d694e84ed2f08dafab1279",
+          "title": "Harmony 3.0.0-rc.4",
+          "url": "https://github.com/pardeike/Harmony/releases/tag/v3.0.0-rc.4",
+          "summary": "Fix the patch-installation performance regression reported in #783 . Ordinary CoreCLR patches, exception handlers, finalizers and dynamic callbacks use direct dynamic methods without loading replacement or callback-proxy assemblies. Preserve the exact exception table and calculate the complete evaluation-stack depth, including returning calli instructions. Ordinary patches and Infixes continue to share the same patch-construction pipeline and detour mechanism. Preserve exact runtime callback identities and release retired dynamic replacements without retaining their callbacks in Harmony's method lookup. Keep assembly generation for explicit diagnostic output and runtime limitations, including custom-modified call-site signatures before .NET 10. Reduce dependency-name allocation on this path while preserving quoted assembly names and ambiguity checks. Add .NET 11 support, verified with RC3, and embed MonoMod.Core 1.4.0-prerelease.1 for all targets. Native async methods remain unsupported and throw NotSupportedException when patched or reverse-patched. Ordinary Task -returning methods and compiler-generated async state machines remain supported. Known issue on .NET 11: callers compiled with runtime-async, including the .NET 11 runtime libraries, call the async variant of an ordinary Task -returning method, which a patch does not reach. With the embedded MonoMod, a variant compiled after the patch corrupts code and can crash the process ( MonoMod#344 , fix proposed in MonoMod#345 ). Harmony logs the bypass when Harmony.DEBUG is on.",
+          "source": "Harmony Releases",
+          "source_url": "https://github.com/pardeike/Harmony/releases.atom",
+          "category": "dotnet-runtime",
+          "published": "2026-10-30T02:13:30+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity runtime tooling",
+            "C# decompilation"
+          ],
+          "matched_terms": [
+            "Unity runtime tooling",
+            "C# decompilation"
+          ],
+          "score": 28
+        },
+        {
+          "entry_id": "4d3acd04fa3edeaf0608b0117b9211595f9a5536840727333c3238b95f29dcda",
+          "title": "Unity 6000.7.0 Beta",
+          "url": "https://unity.com/releases/editor/beta/6000.7.0b7",
+          "summary": "Unity 6000.7.0 Beta",
+          "source": "Unity Beta Releases",
+          "source_url": "https://unity.com/releases/editor/beta-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-10-29T15:06:37+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "45bdb26a5754c3ecb119e73270a8c1f6714844b744aacc7ba288119576f10c88",
+          "title": "dev/6.1.11046: Add API for type libraries to declare named types without defining them",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11046",
+          "summary": "The C++, Python and Rust APIs can now declare a named type in a type library without defining it, and list the types a library declares. Previously Python's NamedTypeReferenceType.target and Rust's NamedTypeReference::target looked up a reference only by its type id. A reference to a declared type has no type under its id, so they now fall back to the reference's name, matching core. Python gains BinaryView.get_type_by_ref to do this. Python's cycle detection when following references recorded the type object rather than its id, and never recorded the starting id. A cycle recursed until Python raised RecursionError . It now raises TypeError .",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-29T21:52:41+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-10-29",
       "path": "/public/news/2026-10-29-unity-il2cpp-reverse-engineering-news.html",
