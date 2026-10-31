@@ -2,24 +2,24 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 160,
+      "count": 162,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-29"
+      "last_seen": "2026-10-31"
     },
     "trending GitHub": {
-      "count": 160,
+      "count": 162,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-29"
+      "last_seen": "2026-10-31"
     },
     "GitHub repository": {
-      "count": 160,
+      "count": 162,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-29"
+      "last_seen": "2026-10-31"
     },
     "Unity": {
-      "count": 53,
+      "count": 54,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-10-30"
+      "last_seen": "2026-10-31"
     },
     "decompiler": {
       "count": 46,
@@ -27,19 +27,19 @@
       "last_seen": "2026-10-24"
     },
     "wasm": {
-      "count": 41,
+      "count": 42,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-10-29"
+      "last_seen": "2026-10-31"
     },
     "WebAssembly": {
-      "count": 32,
+      "count": 33,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-29"
+      "last_seen": "2026-10-31"
     },
     "metadata": {
-      "count": 31,
+      "count": 32,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-28"
+      "last_seen": "2026-10-31"
     },
     "decompilation": {
       "count": 26,
@@ -52,9 +52,9 @@
       "last_seen": "2026-10-23"
     },
     "webassembly": {
-      "count": 19,
+      "count": 20,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-29"
+      "last_seen": "2026-10-31"
     },
     "apk": {
       "count": 15,

@@ -1,10 +1,167 @@
 {
   "version": 3,
-  "last_generated_at": "2026-10-30T07:15:00.173225+00:00",
+  "last_generated_at": "2026-10-31T07:03:27.632814+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-10-31",
+      "path": "/public/news/2026-10-31-unity-il2cpp-reverse-engineering-news.html",
+      "title": "WebAssembly tooling & WebAssembly runtime News — October 31, 2026",
+      "description": "Curated WebAssembly tooling, WebAssembly runtime updates for developers and security researchers. 7 relevant releases and technical developments with origina…",
+      "item_count": 7,
+      "new_item_count": 7,
+      "updated_at": "2026-10-31T07:03:27.632814+00:00",
+      "entries": [
+        {
+          "entry_id": "ea10e8115e3d77de8af54fe2c919a212f556e459ea2bd53d9f96caa530d32f85",
+          "title": "TabStationToo/TabStationToo — trending GitHub repository",
+          "url": "https://github.com/TabStationToo/TabStationToo",
+          "summary": "TabStationToo - PS2 emulation in the browser: PCSX2 compiled to WebAssembly. GitHub discovery signal: 88 stars, 8 forks, 1 open issues; language C++; last pushed 2026-10-30. Topics: browser, emscripten, emulator, pcsx2, ps2-emulator, webassembly.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-08-02+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-10-16T09:40:24+00:00",
+          "trust": 8,
+          "source_boost": 17,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 44
+        },
+        {
+          "entry_id": "331f39dc269e34bf1af56de6f284348ca42f13458400eef63f0ee2d739749e56",
+          "title": "v1.263.0",
+          "url": "https://github.com/bytecodealliance/wasm-tools/releases/tag/v1.263.0",
+          "summary": "What's Changed Bump arbitrary from 1.4.2 to 1.5.0 by @dependabot [bot] in #2772 mutate: Remove eq-associates rewrite rules by @tamaroning in #2776 wit-parser: reject @external-id where it isn't supported by @jrandolf in #2781 mutate: Remove algebric rewrites that breaks semantics by @tamaroning in #2774 wast: support map values by @jrandolf in #2784 wasm-wave: return an error instead of panicking on unsupported values by @jrandolf in #2778 Expose the types within a ModuleType by @alexcrichton in #2786 wast: accept import/export attributes in any order by @jrandolf in #2780 Update spec test suite by @alexcrichton in #2787 wasm-wave: support the component model map type by @jrandolf in #2782 Bump wit-bindgen from 0.62.0 to 0.63.0 by @dependabot [bot] in #2788 mutate: Don't reorder, drop or duplicate effectful operands by @tamaroning in #2775 Move recursion in wasmprinter to the heap by @alexcrichton in #2790 Reject handles in the value types of maps by @jrandolf in #2791 Plumb wasm features through reencoding/printing by @alexcrichton in #2797 Implement the acquire-release-atomics proposal by @alexcrichton in #2799 wasmprinter: fix outer aliases that print unparsable or shadowed identifiers by @jrandolf in #2795 wast: parse core rec groups in component and instance types by @jrandolf in #2798 Implement the multibyte-array-access proposal by @alexcrichton in #2800 wit-parser: fix panics decoding WIT from components by @jrandolf in #2794 Bump wasmtime from 49.0.1 to 50.0.0 by @dependabot [bot] in #2801 wasm-wave: require commas between record/flag/map entries per the grammar by @willemschots in #2802 Release wasm-tools 1.263.0 by @github-actions[bot] in #2803 New Contributors @tamaroning made their first contribution in #2776 @jrandolf made their first contribution in #2781 @willemschots made their first contribution in #2802 Full Changelog : v1.262.0...v1.263.0",
+          "source": "wasm-tools Releases",
+          "source_url": "https://github.com/bytecodealliance/wasm-tools/releases.atom",
+          "category": "webassembly",
+          "published": "2026-10-30T20:30:32+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime",
+            "Decompiler research"
+          ],
+          "score": 39
+        },
+        {
+          "entry_id": "6062a615b9f135797035c94139fdc5556dc969e10d310f9a60452455c5112761",
+          "title": "Frida 17.25.0",
+          "url": "https://github.com/frida/frida/releases/tag/17.25.0",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-10-30T14:29:08+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "d3e88504b39e8eae9cd6c79afc64a337c7379e8e92738d46010902bc3ac587a1",
+          "title": "Huai-Tian/Exuvia — trending GitHub repository",
+          "url": "https://github.com/Huai-Tian/Exuvia",
+          "summary": "Deterministic Android unpacking pipeline for AI agents: zero-token mechanical analysis, LLM-outsourced bottlenecks, Rust-side verdicts. GitHub discovery signal: 31 stars, 0 forks, 0 open issues; language Python; last pushed 2026-10-25. Topics: ai-agents, android-reverse-engineering, android-security, deobfuscation, dex, security-research, unpacker.",
+          "source": "GitHub Hot Android Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-reverse-engineering+created%3A%3E%3D2026-08-02+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-mobile",
+          "published": "2026-10-14T12:43:36+00:00",
+          "trust": 8,
+          "source_boost": 15,
+          "topic_terms": [
+            "Android reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "78b92f1d5fd5a5efbfdd740c0532334a5d32fe3b854560067f5a9519c883de19",
+          "title": "Unity 6000.3.27f2 LTS",
+          "url": "https://unity.com/releases/editor/whats-new/6000.3.27f2",
+          "summary": "Unity 6000.3.27f2 LTS",
+          "source": "Unity LTS Releases",
+          "source_url": "https://unity.com/releases/editor/lts-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-10-30T16:57:42+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "121ef22b388e5a39a72d9bb2741bd0b9416f80794ab33361e87b5f81b08bbae8",
+          "title": "dev/6.1.11052",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11052",
+          "summary": "Fix integer overflow in Fat Mach-O header size checks and catch excep…",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-30T19:46:15+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "08207a85eb809af2671cb1539dd60f2879144f2d3d4db2bd9ba4f8b9d0a6ac7e",
+          "title": "dev/6.1.11050: Use a splitter instead of a stack for image/metadata preview widgets",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11050",
+          "summary": "Needed to show both the image thumbnail and metadata text at once.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-30T08:17:38+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-10-30",
       "path": "/public/news/2026-10-30-unity-il2cpp-reverse-engineering-news.html",
