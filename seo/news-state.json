@@ -1,10 +1,42 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-01T07:37:33.841676+00:00",
+  "last_generated_at": "2026-11-02T07:44:39.747466+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-02",
+      "path": "/public/news/2026-11-02-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Dynamic instrumentation News — November 02, 2026",
+      "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 1 relevant releases and technical developments with or…",
+      "item_count": 1,
+      "new_item_count": 1,
+      "updated_at": "2026-11-02T07:44:39.747466+00:00",
+      "entries": [
+        {
+          "entry_id": "ee718062cf113f539e720cf5b2cef7b5d69173dffa694fa825a927f088501a85",
+          "title": "Frida 17.25.1",
+          "url": "https://github.com/frida/frida/releases/tag/17.25.1",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-11-01T15:05:35+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        }
+      ]
+    },
     {
       "date": "2026-11-01",
       "path": "/public/news/2026-11-01-unity-il2cpp-reverse-engineering-news.html",
