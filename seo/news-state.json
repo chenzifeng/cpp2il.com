@@ -1,10 +1,146 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-02T07:44:39.747466+00:00",
+  "last_generated_at": "2026-11-03T07:58:26.112267+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-03",
+      "path": "/public/news/2026-11-03-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & Binary reverse engineering News — November 03, 2026",
+      "description": "Curated Unity IL2CPP, Binary reverse engineering updates for developers and security researchers. 6 relevant releases and technical developments with origina…",
+      "item_count": 6,
+      "new_item_count": 6,
+      "updated_at": "2026-11-03T07:58:26.112267+00:00",
+      "entries": [
+        {
+          "entry_id": "4fce283a2cc7d92fbe8c5b2ff8f7c993635f641c008eaa9fdc2667bc31cbbaf4",
+          "title": "laaielichter/Reverseport — trending GitHub repository",
+          "url": "https://github.com/laaielichter/Reverseport",
+          "summary": "Reverse engineer anything. Port it anywhere. MCP server, CLI and Claude Code plugin for AI coding agents: read Godot .pck, Unity IL2CPP, .NET and native builds (via your own Ghidra, IDA or Hopper), compare builds, keep proof for every claim, and port games between Godot, Unity, Unreal and three.js with parity checks. Local, MIT. GitHub discovery signal: 18 stars, 2 forks, 14 open issues; language TypeScript; last pushed 2026-11-03. Topics: agent-skills, ai-agents, binary-analysis, claude-code, claude-code-plugin, decompiler, game-development, gdscript, ghidra, godot.",
+          "source": "GitHub Hot Binary Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Abinary-analysis+created%3A%3E%3D2026-07-06+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-10-12T15:00:35+00:00",
+          "trust": 8,
+          "source_boost": 12,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 50
+        },
+        {
+          "entry_id": "693a46c5e9a24d7a5fff66adcc6be77f38232a2be7b1aac22575c0dc960faa9d",
+          "title": "vvs1off/awesome-reverse-engineering — trending GitHub repository",
+          "url": "https://github.com/vvs1off/awesome-reverse-engineering",
+          "summary": "A curated list of reverse engineering and binary analysis resources: disassemblers, debuggers, malware analysis, CTFs, books and more. GitHub discovery signal: 11 stars, 0 forks, 0 open issues; language Unknown; last pushed 2026-11-02. Topics: awesome, awesome-list, binary-analysis, ctf, frida, ghidra, malware-analysis, reverse-engineering, security.",
+          "source": "GitHub Hot Program Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=%22program+analysis%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-07+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-research",
+          "published": "2026-11-01T23:41:22+00:00",
+          "trust": 8,
+          "source_boost": 13,
+          "topic_terms": [
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Dynamic instrumentation",
+            "Malware analysis tooling",
+            "Decompiler research"
+          ],
+          "score": 48
+        },
+        {
+          "entry_id": "9102b12400be69dd6aa6fc59c120311fd895c08720e8f0b57122e7e513856b23",
+          "title": "Frida 17.25.2",
+          "url": "https://github.com/frida/frida/releases/tag/17.25.2",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-11-02T22:16:54+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "1f37364a224ca1be7b271ddf6579d811592f0419b7b6e13e58d3fe205fb57e18",
+          "title": "dev/6.1.11055: Run Find Next and Find All on a background thread",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11055",
+          "summary": "Both Find Next and Find All searched on the main thread, running the event loop from progress callbacks. The recursive mutex meant to prevent overlapping finds didn't work as intended, so one find could run nested inside another and change its parameters. They now run on a background thread through BackgroundFind . Find Next's state moves from MainWindow into a new FindNextState class. SearchResultWidget owns the Find All's BackgroundFind and observes it for new matches, instead of MainWindow pushing them in. The View::find* methods are removed. They only forwarded to BinaryView , and nothing calls them now. Fixes #8523 .",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-02T17:03:07+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "2508d92393dba72766d1e587612cef901ed2382743ac7fb4c2369e1c9466ece5",
+          "title": "Rethinking Neural Decompilation: Candidate Selection as the Hidden Bottleneck",
+          "url": "https://arxiv.org/abs/2611.02788v1",
+          "summary": "Reverse engineering obfuscated binaries is a core task in malware analysis and software security auditing. While neural decompilers based on Large Language Models (LLMs) have improved the readability and functional fidelity of recovered code over heuristic tools such as Ghidra and IDA Pro, a substantial gap remains between best-sample performance and practical single-output accuracy, particularly under code obfuscation. We study this gap through the lens of candidate generation and candidate selection. Using the LLM4Decompile architecture, we show that ground-truth tokens lie within the model's top-five next-token predictions in 95.6% of positions on average and that multi-sample decoding reaches a pass@100 of 93% on HumanEval-Decompile, indicating that correct reconstructions are typically already present in the model's sampling space. We then evaluate a generate-then-select pipeline that ranks 100 candidates per input with text-, syntax-, embedding-, consensus-, and likelihood-based selectors. Negative perplexity emerges as the strongest static selector on HumanEval-Decompile (73.3% pass@1), while execution-guided selection nearly closes the oracle gap on ExeBench (86.3% pass@1). Combined with one epoch of fine-tuning on our newly released ExeBench-Obfuscated dataset containing 362,647 obfuscated OLLVM samples, the same pipeline increases the pass@1 rate for obfuscated binaries to 88.8%, directly contradicting prior claims that released LLM4Decompile checkpoints are unsuitable for obfuscated inputs.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-11-02T09:02:54+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Malware analysis tooling"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "32e43cbf1e23ef747fbeb0d838bb94d3a012b92c07591edb96388d5ebc294f09",
+          "title": "dev/6.1.11053",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11053",
+          "summary": "Fix integer overflow in Fat Mach-O header size checks and catch excep…",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-10-30T19:46:15+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-11-02",
       "path": "/public/news/2026-11-02-unity-il2cpp-reverse-engineering-news.html",
