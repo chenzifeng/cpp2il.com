@@ -1,10 +1,101 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-03T07:58:26.112267+00:00",
+  "last_generated_at": "2026-11-04T07:32:53.020456+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-04",
+      "path": "/public/news/2026-11-04-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity engine releases & Binary reverse engineering News — November 04, 2026",
+      "description": "Curated Unity engine releases, Binary reverse engineering updates for developers and security researchers. 4 relevant releases and technical developments wit…",
+      "item_count": 4,
+      "new_item_count": 4,
+      "updated_at": "2026-11-04T07:32:53.020456+00:00",
+      "entries": [
+        {
+          "entry_id": "9282c2cfdcf5905716ffd4c28f8eef60cd74bac458d526597fea100c6524dcef",
+          "title": "Unity 6000.0.85f2 LTS",
+          "url": "https://unity.com/releases/editor/whats-new/6000.0.85f2",
+          "summary": "Unity 6000.0.85f2 LTS",
+          "source": "Unity LTS Releases",
+          "source_url": "https://unity.com/releases/editor/lts-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-11-03T16:15:34+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "ce0d1eed67877e3f6bfff6bc997f578733091e5eb61dfc94c445664b1b3971cc",
+          "title": "Unity 6000.3.28f1 LTS",
+          "url": "https://unity.com/releases/editor/whats-new/6000.3.28f1",
+          "summary": "Unity 6000.3.28f1 LTS",
+          "source": "Unity LTS Releases",
+          "source_url": "https://unity.com/releases/editor/lts-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-11-03T16:15:25+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "a1ec9197ff2a245ad988c329458594160b4ba75ed6afe959b683705f879884ea",
+          "title": "dev/6.1.11067",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11067",
+          "summary": "[DWARF Import] Do not apply data variables with address 0 if they fal…",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-03T18:48:55+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "bf420eb950a6c9f4f7eb35ee336f5171f92d786638e889531a260fff856ec23a",
+          "title": "dev/6.1.11062",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11062",
+          "summary": "Update locked certifi version",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-03T14:29:46+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-11-03",
       "path": "/public/news/2026-11-03-unity-il2cpp-reverse-engineering-news.html",
