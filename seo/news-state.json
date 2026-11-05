@@ -1,10 +1,82 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-04T07:32:53.020456+00:00",
+  "last_generated_at": "2026-11-05T07:56:38.289359+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-05",
+      "path": "/public/news/2026-11-05-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Decompiler research News — November 05, 2026",
+      "description": "Curated Binary reverse engineering, Decompiler research updates for developers and security researchers. 3 relevant releases and technical developments with…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-11-05T07:56:38.289359+00:00",
+      "entries": [
+        {
+          "entry_id": "c682c33eb206157582c12b443faa678f65da211c18b463e5135bf067dfa15799",
+          "title": "dev/6.1.11079: Preserve unordered outcomes in ARM64 floating conditions",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11079",
+          "summary": "Correct VS/VC ordering and expand conditions whose truth tables include unordered comparisons through architectural NZCV predicates. Define floating N/Z/C/V explicitly; the companion core test suite covers FCMP/FCMPE conditions, physical flags, and integer flag overwrites.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-04T17:27:35+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "147017dec935d8bcde46d59fb3e344a333e4740055ac0b552207d878d9e8336d",
+          "title": "dev/6.1.11076: Preserve unordered outcomes in ARM64 floating conditions",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11076",
+          "summary": "Correct VS/VC ordering and expand conditions whose truth tables include unordered comparisons through architectural NZCV predicates. Define floating N/Z/C/V explicitly; the companion core test suite covers FCMP/FCMPE conditions, physical flags, and integer flag overwrites.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-04T17:27:35+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "a0d7c77a11de83eccdb3e6e9dfdee17e71cd8c5856dda1ea0d783222cdc7f4ef",
+          "title": "Release v7.5.0",
+          "url": "https://github.com/wasmerio/wasmer/releases/tag/v7.5.0",
+          "summary": "Important For packaging purposes, use the provided wasmer-full-source.tar.xz , which includes all required submodules. Install this version of wasmer: curl https://get.wasmer.io -sSfL | sh -s \" v7.5.0 \" See full list of changes in the CHANGELOG",
+          "source": "Wasmer Releases",
+          "source_url": "https://github.com/wasmerio/wasmer/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-10-01T11:32:50+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 21
+        }
+      ]
+    },
     {
       "date": "2026-11-04",
       "path": "/public/news/2026-11-04-unity-il2cpp-reverse-engineering-news.html",

@@ -196,6 +196,76 @@
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-15"
     },
+    "unordered outcomes in": {
+      "count": 2,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05"
+    },
+    "unordered outcomes": {
+      "count": 2,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05"
+    },
+    "Preserve unordered outcomes": {
+      "count": 2,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05"
+    },
+    "Preserve unordered": {
+      "count": 2,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05"
+    },
+    "outcomes in ARM64": {
+      "count": 2,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05"
+    },
+    "outcomes in": {
+      "count": 2,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05"
+    },
+    "in ARM64 floating": {
+      "count": 2,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05"
+    },
+    "in ARM64": {
+      "count": 2,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05"
+    },
+    "floating conditions": {
+      "count": 2,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05"
+    },
+    "dev Preserve unordered": {
+      "count": 2,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05"
+    },
+    "dev Preserve": {
+      "count": 2,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05"
+    },
+    "ARM64 floating conditions": {
+      "count": 2,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05"
+    },
+    "ARM64 floating": {
+      "count": 2,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05"
+    },
+    "ARM64": {
+      "count": 2,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05"
+    },
     "variables incorrectly": {
       "count": 2,
       "first_seen": "2026-10-28",
@@ -230,76 +300,6 @@
       "count": 2,
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28"
-    },
-    "IL bindings reporting": {
-      "count": 2,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28"
-    },
-    "IL bindings": {
-      "count": 2,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28"
-    },
-    "Fix Python IL": {
-      "count": 2,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28"
-    },
-    "Fix Python": {
-      "count": 2,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28"
-    },
-    "dev Fix Python": {
-      "count": 2,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28"
-    },
-    "dev Fix": {
-      "count": 2,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28"
-    },
-    "bindings reporting operands": {
-      "count": 2,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28"
-    },
-    "bindings reporting": {
-      "count": 2,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28"
-    },
-    "registers in pair": {
-      "count": 2,
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23"
-    },
-    "registers in": {
-      "count": 2,
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23"
-    },
-    "pair loads": {
-      "count": 2,
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23"
-    },
-    "overlapping address registers": {
-      "count": 2,
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23"
-    },
-    "overlapping address": {
-      "count": 2,
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23"
-    },
-    "in pair loads": {
-      "count": 2,
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23"
     }
   }
 }
