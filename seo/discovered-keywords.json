@@ -17,19 +17,19 @@
       "last_seen": "2026-11-03"
     },
     "Unity": {
-      "count": 57,
+      "count": 58,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-11-04"
+      "last_seen": "2026-11-06"
     },
     "decompiler": {
-      "count": 48,
+      "count": 49,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-11-03"
+      "last_seen": "2026-11-06"
     },
     "wasm": {
-      "count": 42,
+      "count": 43,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-10-31"
+      "last_seen": "2026-11-06"
     },
     "WebAssembly": {
       "count": 34,
@@ -37,9 +37,9 @@
       "last_seen": "2026-11-01"
     },
     "metadata": {
-      "count": 32,
+      "count": 33,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-10-31"
+      "last_seen": "2026-11-06"
     },
     "reverse engineering": {
       "count": 27,
@@ -77,9 +77,9 @@
       "last_seen": "2026-11-01"
     },
     "WASM": {
-      "count": 14,
+      "count": 15,
       "first_seen": "2026-07-25",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-11-06"
     },
     "Wasm": {
       "count": 13,
@@ -186,6 +186,11 @@
       "first_seen": "2026-07-26",
       "last_seen": "2026-07-28"
     },
+    "ARM64": {
+      "count": 3,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-06"
+    },
     "AOT": {
       "count": 3,
       "first_seen": "2026-10-23",
@@ -195,6 +200,61 @@
       "count": 3,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-15"
+    },
+    "Unify scalar paired-single": {
+      "count": 2,
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06"
+    },
+    "Unify scalar": {
+      "count": 2,
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06"
+    },
+    "scalar paired-single FPR": {
+      "count": 2,
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06"
+    },
+    "scalar paired-single": {
+      "count": 2,
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06"
+    },
+    "PPC Unify scalar": {
+      "count": 2,
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06"
+    },
+    "PPC Unify": {
+      "count": 2,
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06"
+    },
+    "paired-single FPR representations.": {
+      "count": 2,
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06"
+    },
+    "paired-single FPR": {
+      "count": 2,
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06"
+    },
+    "FPR representations.": {
+      "count": 2,
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06"
+    },
+    "dev PPC Unify": {
+      "count": 2,
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06"
+    },
+    "dev PPC": {
+      "count": 2,
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-06"
     },
     "unordered outcomes in": {
       "count": 2,
@@ -240,66 +300,6 @@
       "count": 2,
       "first_seen": "2026-11-05",
       "last_seen": "2026-11-05"
-    },
-    "dev Preserve unordered": {
-      "count": 2,
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    "dev Preserve": {
-      "count": 2,
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    "ARM64 floating conditions": {
-      "count": 2,
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    "ARM64 floating": {
-      "count": 2,
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    "ARM64": {
-      "count": 2,
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    "variables incorrectly": {
-      "count": 2,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28"
-    },
-    "reporting operands variables": {
-      "count": 2,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28"
-    },
-    "reporting operands": {
-      "count": 2,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28"
-    },
-    "Python IL bindings": {
-      "count": 2,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28"
-    },
-    "Python IL": {
-      "count": 2,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28"
-    },
-    "operands variables incorrectly": {
-      "count": 2,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28"
-    },
-    "operands variables": {
-      "count": 2,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28"
     }
   }
 }
