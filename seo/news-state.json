@@ -1,10 +1,182 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-06T07:58:50.208491+00:00",
+  "last_generated_at": "2026-11-07T07:15:57.773181+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-07",
+      "path": "/public/news/2026-11-07-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Native binary tooling News — November 07, 2026",
+      "description": "Curated Binary reverse engineering, Native binary tooling updates for developers and security researchers. 8 relevant releases and technical developments wit…",
+      "item_count": 8,
+      "new_item_count": 8,
+      "updated_at": "2026-11-07T07:15:57.773181+00:00",
+      "entries": [
+        {
+          "entry_id": "f006a9e1dca41fcd5f41f78b2a32b850bb3de0f4138c552afa5608b7c9aaca1f",
+          "title": "czcdr/dsh-plugin-rea — trending GitHub repository",
+          "url": "https://github.com/czcdr/dsh-plugin-rea",
+          "summary": "第三方适配插件：把上游 REA（github.com/morluto/rea）的 MCP 服务接入 DeepSeek Harness，提供 mcp__rea__* 工具。2.x 会自动准备 Node、REA CLI、JDK 与 Ghidra 并把那一行接好；逆向分析能力全部由上游 REA 提供。 GitHub discovery signal: 75 stars, 15 forks, 0 open issues; language JavaScript; last pushed 2026-11-07. Topics: binary-analysis, cordis-plugin, deepseek-harness, dsh, dsh-plugin, ghidra, mcp, mcp-server, rea, reverse-engineering.",
+          "source": "GitHub Hot Binary Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Abinary-analysis+created%3A%3E%3D2026-07-10+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-10-12T14:42:26+00:00",
+          "trust": 8,
+          "source_boost": 15,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 42
+        },
+        {
+          "entry_id": "ec5996b4b32efcdbc93417168210a86e63348447818d5bb1be338b4ac0f9b99e",
+          "title": "7.0.0",
+          "url": "https://github.com/emscripten-core/emscripten/releases/tag/7.0.0",
+          "summary": "What's Changed Remove support for the EMCC_ONLY_FORCED_STDLIBS environment variable, which was deprecated in 2.0.14 ( #13448 ). Use -nostdlib instead to avoid linking standard libraries. ( #28151 ) libclang_rt.builtins and libclang_rt.profile are now linked directly into all side modules, matching upstream clang behaviour. This means they are no longer exported from the main module, reducing MAIN_MODULE=1 code size. A new system library, libemcc , now exists for the emscripten-specific code that was previously included in libclang_rt.builtins but requires a single program-wide definition. If you build with -nostdlib , and explictly list system libraries you would now need to include -lemcc . ( #28142 ) Split libclang_rt.profile out of libclang_rt.builtins so that it is only linked when profiling or coverage flags (such as -fprofile-instr-generate or --coverage ) are enabled, avoiding unwanted default.profraw output at exit in MAIN_MODULE=1 builds. ( #28123 ) Pipes now have a 64 KiB capacity: non-blocking writes to a full pipe fail with EAGAIN . For now, blocking writes remain unbounded. ( #27831 ) When compiling and linking in a single command, auxiliary compiler output files (such as .dwo files from -gsplit-dwarf or .json files from -ftime-trace ) are now named <output>-<input>.<ext> , matching the behavior of clang . Previously, .dwo files were named <input>.dwo and other auxiliary files were written to the temporary directory. ( #28045 ) libcxx, libcxxabi, libunwind and compiler-rt were updated to LLVM 23.1.3. Note that libc++ 23 removes many transitive header includes by default, which may cause build errors in code that relies on them. As a temporary workaround, you can define -D_LIBCPP_KEEP_TRANSITIVE_INCLUDES_LLVM23 until missing #include directives are added. See the libc++ 23 release notes for details: https://libcxx.llvm.org/ReleaseNotes/23.html#potentially-breaking-changes ( #28011 , #28014 , #28108 , #28149 ) The WasmFS OPFS backend now uses readwrite-unsafe access handles in pthreads builds, so unlink and rename fail with EIO on files open read-only. ( #27937 ) mimalloc was updated to 3.6.1. ( #28026 , #28068 , #28121 ) Restored --whole-archive behaviour when linking with -sSIDE_MODULE=1 (fixing a regression from 6.0.0 where static archives were no longer included in full), while keeping native archive behaviour for -shared . ( #28055 ) JavaScript library dependencies on other JavaScript library symbols are now detected automatically by the compiler, so __deps is no longer required for direct JS-to-JS references ( __deps is still supported for dependencies on compiled C/C++ symbols or indirect dependencies). ( #27995 ) The default minimum browser versions targeted by Emscripten were increased: MIN_CHROME_VERSION : 85 (Aug 2020) -> 93 (Aug 2021) MIN_FIREFOX_VERSION : 79 (Jul 2020) -> 92 (Sep 2021) MIN_SAFARI_VERSION : 15.0 (Sep 2021) -> 15.4 (Mar 2022) ( #28141 ) Contributors Thanks to the following contributors: @sbc100 (70) @aheejin (7) @kleisauke (7) @clementperon (4) @guybedford (4) @dschuff (2) @JulesPatmanidis (2) @rustyconover (2) @tlively (2) @ypujante (2) @arsnyder16 (1) @basvandijk (1) @brendandahl (1) @dimokol (1) @Grantim (1) @hoodmane (1) @JesusFileto (1) @kripken (1) @lyrixx (1) @piandtheradians-glitch (1) @Project516 (1) @RagedPanda (1) @stephenduong1004 (1) @subhaushsingh (1) @Thanatos9404 (1) @trackoor (1) New Contributors @rustyconover made their first contribution in #28002 @JesusFileto made their first contribution in #28033 @RagedPanda made their first contribution in #28070 @piandtheradians-glitch made their first contribution in #28066 @Project516 made their first contribution in #28110 @lyrixx made their first contribution in #28135 @basvandijk made their first contribution in #28125 @Thanatos9404 made their first contribution in #28177 @trackoor made their first contribution in #28170 Full Changelog : 6.0.13...7.0.0",
+          "source": "Emscripten Releases",
+          "source_url": "https://github.com/emscripten-core/emscripten/releases.atom",
+          "category": "webassembly",
+          "published": "2026-11-06T21:48:12+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Unity WebGL reverse engineering"
+          ],
+          "matched_terms": [
+            "Unity WebGL reverse engineering",
+            "Malware analysis tooling",
+            "WebAssembly tooling"
+          ],
+          "score": 41
+        },
+        {
+          "entry_id": "d2e88b68b8502ad5b488dc412d8c299bf3bea04586e983ab580c449dcf5d0d6c",
+          "title": "Frida 17.26.1",
+          "url": "https://github.com/frida/frida/releases/tag/17.26.1",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-11-06T13:17:11+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "a34d312836108320498a68f23550650261125abe3d1e224cc62ec1c295b9ed66",
+          "title": "Harmony 3.0.0-rc.5",
+          "url": "https://github.com/pardeike/Harmony/releases/tag/v3.0.0-rc.5",
+          "summary": "Add MethodBodyPatching for runtimes that replace method bodies themselves. A host registers an eligibility check, a baseline reader and an installer. Harmony then exports each patched body, and the host installs it. A patch on an open generic definition applies to every instantiation. Ordinary runtimes keep the MonoMod detour. Add CodeMatch.GetsProperty and CodeMatch.SetsProperty to match calls to a property's getter or setter ( #790 ). SymbolExtensions.GetPropertyInfo returns the property from a lambda. Reject a transpiler that jumps to a label that no instruction carries. Before, such a jump could go to the start of the method and loop forever. The error names the transpilers. The stack depth error now names both depths and the transpilers. Validation stays on by default. For a runtime that accepts such IL, Harmony.ValidateStack = false or the environment variable HARMONY_VALIDATE_STACK=0 leaves the check to the runtime. Fix AccessTools.IsNetCoreRuntime , which was false on every runtime. AccessTools.IsNetFrameworkRuntime is no longer true on .NET Core 3.x. Fix the InvalidOperationException that the .NET 11 compile watch threw when a DynamicMethod was compiled ( #788 ). Document every public member. The API reference now builds from the net48 assembly, so it includes MethodType.Async and AccessTools.AsyncMoveNext . Known issue on .NET 11, unchanged from rc.4: callers compiled with runtime-async, including the .NET 11 runtime libraries, call the async variant of an ordinary Task -returning method, which a patch does not reach. With the embedded MonoMod, a variant compiled after the patch corrupts code and can crash the process ( MonoMod#344 ). Harmony logs the bypass when Harmony.DEBUG is on.",
+          "source": "Harmony Releases",
+          "source_url": "https://github.com/pardeike/Harmony/releases.atom",
+          "category": "dotnet-runtime",
+          "published": "2026-11-06T22:38:22+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity runtime tooling",
+            "C# decompilation"
+          ],
+          "matched_terms": [
+            "Unity runtime tooling",
+            "C# decompilation"
+          ],
+          "score": 28
+        },
+        {
+          "entry_id": "71af7d3d676d45da593da1f788a1b5ceb6c00c57e0111c9cfea44784df7f3a4b",
+          "title": "dev/6.1.11093",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11093",
+          "summary": "Fix jump to next instruction instead of memory value in LDM/LDMIA/LDM…",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-05T19:41:14+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "5c2eaaca8626a76b908b4c5a711abff39f249859b062e467848a8d3ace06c45d",
+          "title": "14.12.0",
+          "url": "https://github.com/frida/frida-tools/releases/tag/14.12.0",
+          "summary": "agents: Bump frida-compile to 19.1.0",
+          "source": "Frida Tools Releases",
+          "source_url": "https://github.com/frida/frida-tools/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-11-06T11:28:31+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Dynamic instrumentation"
+          ],
+          "matched_terms": [
+            "Dynamic instrumentation"
+          ],
+          "score": 21
+        },
+        {
+          "entry_id": "052922906a048cd527df9ae4d69dab12f634f1c66fdb3bbda7096880da16caed",
+          "title": "After Binance, check what your signing systems can approve",
+          "url": "https://blog.trailofbits.com/2026/11/06/after-binance-check-what-your-signing-systems-can-approve/",
+          "summary": "Binance’s October 2026 security incident raises an operational question for every organization holding user funds: Can your security controls recognize when a valid signature grants an attacker wallet authority? If an organization only monitors transfers and ownership changes, it may miss the shift in wallet authority until assets move. Binance’s initial update about the incident suggested that a compromised DevOps laptop allowed an attacker to access a service container and submit unauthorized withdrawals. Its second update reported additional breaches but no evidence that wallet private keys had leaked. In its November 3 report , Binance described a broader attack involving social engineering, misuse of an internal AI tool, stolen credentials, and unauthorized access to its wallet-signing service. The attacker nevertheless obtained valid signatures, illustrating a major risk: a compromised server with permission to request signatures can misuse a protected key without extracting it. The attacker used an EIP-7702 delegation that allows a wallet to sign a standing instruction: “Use this code when my account is called.” Ethereum keeps that instruction in place until it is changed or cleared using the wallet’s key. That enabled repeated transfers , including funds deposited after the first theft, without further signatures from Binance. Other Binance wallets were drained through ordinary signed transfers. Transaction execution and monitoring systems must keep pace with Ethereum. EIP-7702 places delegation authorizations outside ordinary calldata. Session keys, recovery paths, authorization modules, Safe modules, and ERC-4337 UserOperations all add execution paths that signing policies and monitors must understand. Systems that have not been updated can miss malicious authority changes and asset movements, leaving wallets exposed. Teams must update their detection rules and test that these attack paths are covered. If you’re responsible for securing wallet infrastructure, start with our checklist. Four steps to strengthen wallet security These four recommendations address the risks exposed by the attack. We also provide tests to help you verify that these security controls work. 1. Reduce access to signing infrastructure Document every service and API that can request wallet signatures, who can call it, and what it can authorize, including transfers, delegation, and arbitrary data. Review this inventory whenever wallet functionality changes on supported chains. Separate signing infrastructure from everyday business systems and verify transaction details through an independent system. Use our TRAIL method to trace how a compromised laptop or server could reach signing. Verify the result: For each identified compromise path, use the access and credentials available to the compromised system to attempt an unapproved action. Identify the control expected to block it and retain evidence that no usable signature was produced. 2. Treat delegation as an administrative privilege Configure signing services to recognize requests that change account authority. Reject EIP-7702 authorizations for custody externally owned accounts (EOAs) that do not need delegation, and ensure generic digest-signing APIs cannot bypass that restriction. Where delegation is required, separately approve the authorizing account, delegate address and code, chain, and nonce. Before evaluating execution, simulations must apply the proposed delegation and inspect changes to permissions and future execution authority alongside immediate balance changes. Verify the result: Delegation requests for accounts with delegation disabled are rejected through both dedicated and generic signing interfaces. Changing an approved account, delegate, chain, or nonce requires renewed approval. Simulations expose added authority even when the transaction moves no assets immediately. 3. Limit damage even if signing is compromised Even after delegation, the original EOA key can still transfer funds or change the delegate. This means that if the key is compromised, an attacker can bypass limits enforced by the delegate. Protect those assets with separate custody controls that the operational key cannot change. Our cold-storage guidance describes independently enforced limits, monitored delays on sensitive actions, and a separate configuration authority. Verify the result: Treat the operational key as compromised and attempt direct transfers, delegate replacement, and policy changes. Confirm these paths cannot bypass the claimed protections, including shortening or removing delays. Exercise incident response against a malicious withdrawal. Record alert and containment times, and demonstrate that responders can cancel or contain the withdrawal before execution. Confirm that the blocked withdrawal cannot subsequently execute. 4. Detect changes in wallet authority Map each wallet to the assets and contracts it controls, including wallets that hold no funds. Alerts should identify the affected systems and privileges (e.g., an unapproved delegation on an account that can upgrade funded vaults). Attribute direct calls, module execution, and ERC-4337 operations to their authorization paths. Verify the result: Test various delegation scenarios, mixed authorization tuples, multisig-module execution, and failed UserOperations inside successful bundles. Monitoring should reconstruct authority changes and asset movements in order, identify affected systems, and distinguish detection from controls that block execution before funds move. Make signing infrastructure an ongoing responsibility If your organization runs wallets or signing services, take another look at how they’re secured. Test whether your signing policies account for EIP-7702 and ERC-4337, whether independent safeguards still work if an attacker gains access to signing, and whether your monitoring catches changes to accounts and permissions. Give someone ownership of this review and put it on a regular schedule. Run it again whenever you change the protocols you support, the wallets you use, or your signing services.",
+          "source": "Trail of Bits Blog",
+          "source_url": "https://blog.trailofbits.com/feed/",
+          "category": "security-research",
+          "published": "2026-11-06T12:00:00+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 15
+        },
+        {
+          "entry_id": "48cbc66a3dcde27669e3ba8e080a75da62bf30d1b59c20cf572d733c858d4aa5",
+          "title": "14.13.0: application: Add --env for spawn environments",
+          "url": "https://github.com/frida/frida-tools/releases/tag/14.13.0",
+          "summary": "--aux can only pass string, bool and int values to Device.spawn(), while the env/envp options take a mapping, so there was no way to set an environment variable when spawning, e.g. DISABLE_TWAKS=1 to work around ellekit crashes on iOS. Add a repeatable --env KEY=VALUE that feeds the env parameter, which merges into the environment the spawn would otherwise inherit. Fixes #193",
+          "source": "Frida Tools Releases",
+          "source_url": "https://github.com/frida/frida-tools/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-11-06T11:37:22+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Dynamic instrumentation"
+          ],
+          "matched_terms": [
+            "Dynamic instrumentation"
+          ],
+          "score": 14
+        }
+      ]
+    },
     {
       "date": "2026-11-06",
       "path": "/public/news/2026-11-06-unity-il2cpp-reverse-engineering-news.html",
