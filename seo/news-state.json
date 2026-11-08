@@ -1,10 +1,166 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-07T07:15:57.773181+00:00",
+  "last_generated_at": "2026-11-08T07:27:55.761774+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-08",
+      "path": "/public/news/2026-11-08-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — November 08, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 7 relevant releases and technical developments with original sour…",
+      "item_count": 7,
+      "new_item_count": 7,
+      "updated_at": "2026-11-08T07:27:55.761774+00:00",
+      "entries": [
+        {
+          "entry_id": "f1bcda5b921e6ef9db4d2a28a8d8acbda9525c462e66cecac5fe0c066f455ac1",
+          "title": "ShrugYu/game-client-to-server-reverse — trending GitHub repository",
+          "url": "https://github.com/ShrugYu/game-client-to-server-reverse",
+          "summary": "从游戏客户端反推服务端协议并复现可部署服务端 (Agent Skill)。Unity/UE/Cocos, IL2CPP/Lua/JS… GitHub discovery signal: 79 stars, 33 forks, 0 open issues; language Python; last pushed 2026-11-01. Topics: agent-skill, agent-skills, ai-agents, claude-code, claude-code-skill, claude-skills, game-server, il2cpp, private-server, protocol-reverse.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-07-11+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-09-22T05:15:23+00:00",
+          "trust": 8,
+          "source_boost": 15,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 49
+        },
+        {
+          "entry_id": "0da5ca6e1c77ec0c3fe5d52bf5e8aa79db21a2ff0377a62613a6871de57a2b29",
+          "title": "Virtastic/d2-web — trending GitHub repository",
+          "url": "https://github.com/Virtastic/d2-web",
+          "summary": "Play Diablo II: Lord of Destruction in your browser — the 1.13c engine reimplemented in C++ and compiled to WebAssembly. Bring your own game files. GitHub discovery signal: 68 stars, 5 forks, 6 open issues; language C++; last pushed 2026-11-08. Topics: browser-game, cpp, diablo-ii, diablo2, emscripten, game-engine, reimplementation, wasm, webassembly, webgl2.",
+          "source": "GitHub Hot WebAssembly Tools",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Awebassembly+created%3A%3E%3D2026-08-10+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-wasm",
+          "published": "2026-10-29T23:44:42+00:00",
+          "trust": 8,
+          "source_boost": 17,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 44
+        },
+        {
+          "entry_id": "195c34de350fc89004f64377262eb4f083ccf9d6cb2e3c8ccbadd5a4eb6ab76f",
+          "title": "Altumptic/paranoia — trending GitHub repository",
+          "url": "https://github.com/Altumptic/paranoia",
+          "summary": "Open reverse engineering — PE/ELF/Mach-O, x86/x64/AArch64, graphs, pseudocode. Rust engine, no network. Desktop · CLI · browser. GitHub discovery signal: 47 stars, 2 forks, 13 open issues; language Rust; last pushed 2026-11-06. Topics: binary-analysis, decompiler, disassembler, electron, ida-alternative, malware-analysis, reverse-engineering, rust, security.",
+          "source": "GitHub Hot Binary Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Abinary-analysis+created%3A%3E%3D2026-07-11+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-10-15T17:38:01+00:00",
+          "trust": 8,
+          "source_boost": 14,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 41
+        },
+        {
+          "entry_id": "9d8bc44145023b7ab617aad706a963dbee9f57759ddb448e2b5e9b836791b109",
+          "title": "maluramichael/awesome-reverse-engineer-anything — trending GitHub repository",
+          "url": "https://github.com/maluramichael/awesome-reverse-engineer-anything",
+          "summary": "Trending open projects that reverse engineered apps, games, consoles, protocols and devices, plus the tools they used. Star trends refreshed daily. GitHub discovery signal: 311 stars, 16 forks, 0 open issues; language Python; last pushed 2026-11-07. Topics: awesome, awesome-list, clean-room, decompilation, emulators, reverse-engineering, static-recompilation.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-08-10+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-11-02T10:42:04+00:00",
+          "trust": 8,
+          "source_boost": 21,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 40
+        },
+        {
+          "entry_id": "8dc3e826797c628c352f1c95626b07784a1bf5db23884b0a4f1ed0f7b706f3d1",
+          "title": "riyadmondol2006/Smali-Helper-Plus — trending GitHub repository",
+          "url": "https://github.com/riyadmondol2006/Smali-Helper-Plus",
+          "summary": "Smali Helper Plus: modern offline Dalvik bytecode & Smali reference for Android. All 224+ opcodes, typo-tolerant search, Smali playground, Smali-to-Java explainer, learning academy and reverse-engineering tools. Kotlin + Jetpack Compose + Material 3. GitHub discovery signal: 6 stars, 1 forks, 0 open issues; language Kotlin; last pushed 2026-10-31. Topics: android, android-app, android-reverse-engineering, apk, apktool, baksmali, bytecode, cheat-sheet, dalvik, dalvik-bytecode.",
+          "source": "GitHub Hot Android Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Aandroid-reverse-engineering+created%3A%3E%3D2026-08-10+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-mobile",
+          "published": "2026-10-31T19:54:56+00:00",
+          "trust": 8,
+          "source_boost": 12,
+          "topic_terms": [
+            "Android reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Android reverse engineering"
+          ],
+          "score": 40
+        },
+        {
+          "entry_id": "495dba391d371583c01b77d9475509c83b6f531477e1bd81a4d6d1de74a31397",
+          "title": "Frida 17.26.2",
+          "url": "https://github.com/frida/frida/releases/tag/17.26.2",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-11-07T17:17:40+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "75b0806dd24abe7e503fccd62c5681e53fa46966d2cd69ae197c6bd4735fab60",
+          "title": "storytold/craft-anything — trending GitHub repository",
+          "url": "https://github.com/storytold/craft-anything",
+          "summary": "Craft Anything: understand how any software works, and craft your own. GitHub discovery signal: 21,288 stars, 4,159 forks, 292 open issues; language Rust; last pushed 2026-11-08.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-07-11+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-10-31T14:50:00+00:00",
+          "trust": 8,
+          "source_boost": 20,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 32
+        }
+      ]
+    },
     {
       "date": "2026-11-07",
       "path": "/public/news/2026-11-07-unity-il2cpp-reverse-engineering-news.html",
