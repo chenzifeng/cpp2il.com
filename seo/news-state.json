@@ -1,10 +1,138 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-08T07:27:55.761774+00:00",
+  "last_generated_at": "2026-11-10T08:28:22.137937+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-10",
+      "path": "/public/news/2026-11-10-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Dynamic instrumentation News — November 10, 2026",
+      "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 6 relevant releases and technical developments with or…",
+      "item_count": 6,
+      "new_item_count": 6,
+      "updated_at": "2026-11-10T08:28:22.137937+00:00",
+      "entries": [
+        {
+          "entry_id": "f321b4c1cb3cc5e3430acc01a54a1ac9729604d270ae8452acc4935b67e51f38",
+          "title": "FJNB5/fujiang-pojia — trending GitHub repository",
+          "url": "https://github.com/FJNB5/fujiang-pojia",
+          "summary": "富江破甲（破甲）：DeepSeek Harness破甲插件，激活词富江，所有东西直接大白话问，内含技能库skill下载与调用、漏洞知识库poc利用、漏洞报告更新和全自动授权渗透。当前版本：0.20.12，附免责声明。插件图片看最下面 GitHub discovery signal: 389 stars, 221 forks, 2 open issues; language JavaScript; last pushed 2026-11-09. Topics: ai-agent, cve, deepseek, deepseek-harness, fujiang-pojia, knowledge-base, pojia, security-assessment, skills.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-08-12+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-11-09T05:55:55+00:00",
+          "trust": 8,
+          "source_boost": 21,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 40
+        },
+        {
+          "entry_id": "c901b9c743f71d27b9eab3afa6fa792b8bf3ff51d8c49939631ce0bc0c8f3ba5",
+          "title": "dev/6.1.11108: Avoid ld64 warnings about duplicate libraries",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11108",
+          "summary": "Clang already links libSystem into every binary, and libc and libm are aliases of it on macOS, so bn_rust_native_static_libs now leaves all three out of the libraries needed to link with a Rust crate. Setting CMP0156 to NEW lets CMake drop a static library that appears more than once on a link line created from target dependencies.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-10T03:53:49+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "e1d7488467f46578b1713c226f350450ff675456da1369b2d29bad8c43b0480e",
+          "title": "Beyond Tokens: NumAnchor for Address-Grounded Numeric Operand Representation in Assembly Language Models",
+          "url": "https://arxiv.org/abs/2610.29027v2",
+          "summary": "Assembly language models (ALMs) are becoming important for automated binary analysis, yet their token-level interfaces often obscure numeric-like operands. In two corpora, such operands account for 45.7% and 40.9% of operand occurrences and may denote branch targets, global data, stack slots, constants, or unresolved pointer-derived values. Existing normalization strategies often lose their identities and structural relationships. We present NumAnchor, an input-boundary adapter that represents recoverable numeric-like operands as typed, canonicalized program entities. NumAnchor encodes code, data, and stack context in compact structural side descriptors, preserving entity identity and locality without increasing the host sequence length. These descriptors are fused into input embeddings before the first Transformer layer, while the host architecture, pretraining objectives, and downstream protocols remain unchanged. Probing frozen instruction-level embeddings yields 98.7% hierarchical-location accuracy and AUROC scores of 0.932 and 0.907 for jump and call target alignment, respectively, showing that the encoded structural information remains recoverable. Across multiple ALM families, NumAnchor achieves relative improvements of up to 35.0% in Recall@1 and 31.7% in MRR on 10k-candidate function retrieval, and improves execution-aware type recovery by up to 5.2 F1 points. Ablations show complementary gains from code, data, and stack descriptors with modest overhead.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-11-07T17:38:11+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "27da4f3b207cd5218cae7063cde0e656098a181714c3695b675e27a7d67a8be4",
+          "title": "dev/6.1.11107",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11107",
+          "summary": "Fix jump to next instruction instead of memory value in LDM/LDMIA/LDM…",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-05T19:41:14+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "19ea097ec655d3037c937153723bcaaff09f01088fa448b8b9952a8fe2ca8f18",
+          "title": "14.13.1: application: Wait for cancellation on stdin EOF",
+          "url": "https://github.com/frida/frida-tools/releases/tag/14.13.1",
+          "summary": "With stdin redirected from /dev/null, readline() returns \"\" right away, so await_enter() stopped the reactor before frida-pull and frida-push did their work, and await_ctrl_c() spun at 100% CPU. When stdin is not a terminal, EOF means no line will ever arrive, so block until cancelled. On a terminal an empty read is Ctrl-D, which still returns as before.",
+          "source": "Frida Tools Releases",
+          "source_url": "https://github.com/frida/frida-tools/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-11-09T21:13:05+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Dynamic instrumentation"
+          ],
+          "matched_terms": [
+            "Dynamic instrumentation"
+          ],
+          "score": 21
+        },
+        {
+          "entry_id": "4442fc88b0c4804e55f74f67f0c00b9780c928a11cbfae07f26bea1f0f2576da",
+          "title": "Show HN: Black Friday for Developers",
+          "url": "https://www.blackfriday.dev",
+          "summary": "Hacker News signal: 5 points and 1 comments; submitted by elwingo1; source www.blackfriday.dev. Discussion: https://news.ycombinator.com/item?id=50429172",
+          "source": "Show HN Reverse Engineering Tools",
+          "source_url": "https://news.ycombinator.com/show",
+          "category": "community-hot",
+          "published": "2026-11-09T18:07:53+00:00",
+          "trust": 7,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Dynamic instrumentation"
+          ],
+          "score": 20
+        }
+      ]
+    },
     {
       "date": "2026-11-08",
       "path": "/public/news/2026-11-08-unity-il2cpp-reverse-engineering-news.html",
