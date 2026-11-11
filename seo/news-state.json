@@ -1,10 +1,118 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-10T08:28:22.137937+00:00",
+  "last_generated_at": "2026-11-11T07:47:21.933642+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-11",
+      "path": "/public/news/2026-11-11-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — November 11, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 5 relevant releases and technical developments with original sour…",
+      "item_count": 5,
+      "new_item_count": 5,
+      "updated_at": "2026-11-11T07:47:21.933642+00:00",
+      "entries": [
+        {
+          "entry_id": "1c82802a20c69ec37fb602706026a215333dbd48b7de6c855e7b7cef37e0f3d6",
+          "title": "BLSNCVS/Castlevania-Grimoire-of-Souls-Recomp — trending GitHub repository",
+          "url": "https://github.com/BLSNCVS/Castlevania-Grimoire-of-Souls-Recomp",
+          "summary": "Castlevania: Grimoire of Souls (Apple Arcade, macOS) running natively on Windows. GitHub discovery signal: 206 stars, 4 forks, 29 open issues; language C++; last pushed 2026-11-05.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-07-14+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-11-03T22:54:53+00:00",
+          "trust": 8,
+          "source_boost": 21,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 45
+        },
+        {
+          "entry_id": "306352da82b33ca3c176c5417184baf67bd4057d25ac089e028647465d5c9db5",
+          "title": "xopJack/XopProtector — trending GitHub repository",
+          "url": "https://github.com/xopJack/XopProtector",
+          "summary": "Android APK protector (packer + native shell).Android APK 加固工具（DEX 加密 + 壳保护 +VMP + 反调试） GitHub discovery signal: 231 stars, 72 forks, 14 open issues; language C++; last pushed 2026-11-10. Topics: android, dex, native, obfuscation, packer.",
+          "source": "GitHub Hot Frida Tools",
+          "source_url": "https://api.github.com/search/repositories?q=frida+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-08-13+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-dynamic",
+          "published": "2026-11-10T07:12:42+00:00",
+          "trust": 8,
+          "source_boost": 21,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 40
+        },
+        {
+          "entry_id": "d3b92dbe83dc869290725fe569893b9db1b71d7f17f2dede6259b87f2e6f0a37",
+          "title": "v10.0.6",
+          "url": "https://github.com/angr/angr/releases/tag/v10.0.6",
+          "summary": "release version 10.0.6",
+          "source": "angr Releases",
+          "source_url": "https://github.com/angr/angr/releases.atom",
+          "category": "program-analysis",
+          "published": "2026-11-10T10:38:12+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "387ae1fc21401c50bb80a489c794cf7642ff66bc7bf1a89b758722fb0089bc29",
+          "title": "Swanada: Split-Encoder Capability-Routed Conformer CTC and Sub-30 MB On-Device Speech Recognition Across Twelve Scripts",
+          "url": "https://arxiv.org/abs/2611.13814v1",
+          "summary": "Client-side automatic speech recognition (ASR) across Indic and Classical scripts eliminates cloud transcription costs, network tail latency, and server-side audio retention, yet neural exports face four systems bottlenecks in browsers and mobile runtimes: (1) monolithic per-language Conformer checkpoints require ~177 MiB per script (> 2.1 GiB across 12 scripts), exhausting CacheStorage quotas; (2) static relative positional encoding tables embed 10.2-20.5 MB of FP32 constants while 1x1 Conv1d layers trigger slow or unsupported ConvInteger kernels in WebAssembly SIMD; (3) sliding-window CTC flickers on boundary tokens; and (4) mobile WebAudio pipelines suffer 44.1/48 kHz sample-rate mismatches and silent AudioWorklet stalls under iOS WKWebView. We present Swanada, an open-source 16 kHz streaming ASR system spanning Classical Sanskrit, Indian English, and ten Indian languages (sa, en, hi, kn, mr, bn, ta, te, ml, gu, pa, or) across browser WebAssembly, Node.js, and Python. Swanada pairs capability-routed shared INT8 Conformer encoders (a 17-layer 177.38 MiB Studio tier at $d = 512$ for desktop/servers and a distilled 14-layer 25.35 MiB Mobile tier at $d = 256$ for phones) with twelve hot-swappable 515.0 KiB native-script linear CTC heads ($257 \\times 512$), cutting 12-language storage by $11.6\\times$ (183.4 MiB) and $67.8\\times$ (31.39 MiB; 25.85 MiB first load). Runtime protobuf tail surgery exposes the shared representation in $< 2$ ms, while dynamic positional synthesis, MatMul pointwise convolutions, and post-quantization QInt8 head calibration preserve sub-30 MB accuracy. Across $N = 480$ held-out and $N = 1,280$ open public test clips (FLEURS, LibriSpeech, GLOBE, AMI, wild Sanskrit), Swanada achieves 5.43% held-out and 8.87% 12-language open CER on Studio (18.56% and 19.23% on Mobile) at $0.0097\\times$-$0.0264\\times$ RTF, with 30.6 ms median TTFT and 0.00% committed-prefix churn.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-11-10T09:43:36+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Malware analysis tooling"
+          ],
+          "score": 21
+        },
+        {
+          "entry_id": "c7dde5373f1c927a3a39cfe253a4522ed0f8f35a1b2fbff5ad44c4d13db88bab",
+          "title": "Announcing .NET 11",
+          "url": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/",
+          "summary": ".NET 11 is here with C# 15, faster developer tools, runtime and library improvements, and new capabilities for web, mobile, desktop, and AI apps. The post Announcing .NET 11 appeared first on .NET Blog .",
+          "source": ".NET Blog",
+          "source_url": "https://devblogs.microsoft.com/dotnet/feed/",
+          "category": "dotnet-official",
+          "published": "2026-11-10T16:11:00+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [],
+          "matched_terms": [
+            "Malware analysis tooling"
+          ],
+          "score": 14
+        }
+      ]
+    },
     {
       "date": "2026-11-10",
       "path": "/public/news/2026-11-10-unity-il2cpp-reverse-engineering-news.html",
