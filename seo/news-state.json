@@ -1,10 +1,78 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-11T07:47:21.933642+00:00",
+  "last_generated_at": "2026-11-12T08:24:15.607068+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-12",
+      "path": "/public/news/2026-11-12-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity engine releases & Binary reverse engineering News — November 12, 2026",
+      "description": "Curated Unity engine releases, Binary reverse engineering updates for developers and security researchers. 3 relevant releases and technical developments wit…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-11-12T08:24:15.607068+00:00",
+      "entries": [
+        {
+          "entry_id": "9f9c4c14cdbb6f8aedf5e525003764fdd9a67b96c10e8fa2f86399647a981dac",
+          "title": "Unity 6000.7.0 Beta",
+          "url": "https://unity.com/releases/editor/beta/6000.7.0b9",
+          "summary": "Unity 6000.7.0 Beta",
+          "source": "Unity Beta Releases",
+          "source_url": "https://unity.com/releases/editor/beta-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-11-11T12:46:54+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "41081121441c51f4c2b98c4a0f26202996871f2a31d90693a23ae2974e5e98db",
+          "title": "dev/6.1.11118",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11118",
+          "summary": "Fix automated rust cargo fmt warning.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-11T16:58:38+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "a79b4855feaed915bc5e3dfc470401d7b0b778165361c1591362e4858cf9f72c",
+          "title": "How do I split an external 1 byte control into bits on a 8051 project in the Ghidra Memory Map",
+          "url": "https://reverseengineering.stackexchange.com/questions/33785/how-do-i-split-an-external-1-byte-control-into-bits-on-a-8051-project-in-the-ghi",
+          "summary": "I am trying to RE a 8051 binary file on a 1990s test instrument with Ghidra. I have the circuit diagram so I am trying to create the memory map in Ghidra. There is an external write-only register memory mapped as one byte at address 0x4000. The low 3 bits control LCD backlight DAC. The upper 5 bits control temp compensation DAC of the CCFL. How do I tell Ghidra to split the byte into 3 and 5 bits in the memory map? I have looked at the Ghidra Memory Map Docs but they are not helping me. There are other parts in the circuit where single bits of an external memory mapped write-only register have control functions.",
+          "source": "Reverse Engineering Stack Exchange",
+          "source_url": "https://reverseengineering.stackexchange.com/feeds",
+          "category": "community-qa",
+          "published": "2026-10-31T10:35:01+00:00",
+          "trust": 7,
+          "source_boost": 2,
+          "topic_terms": [],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 21
+        }
+      ]
+    },
     {
       "date": "2026-11-11",
       "path": "/public/news/2026-11-11-unity-il2cpp-reverse-engineering-news.html",
