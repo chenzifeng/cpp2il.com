@@ -2,19 +2,19 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 177,
+      "count": 178,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-11-13"
+      "last_seen": "2026-11-14"
     },
     "trending GitHub": {
-      "count": 177,
+      "count": 178,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-11-13"
+      "last_seen": "2026-11-14"
     },
     "GitHub repository": {
-      "count": 177,
+      "count": 178,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-11-13"
+      "last_seen": "2026-11-14"
     },
     "Unity": {
       "count": 61,
@@ -22,9 +22,9 @@
       "last_seen": "2026-11-13"
     },
     "decompiler": {
-      "count": 50,
+      "count": 51,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-14"
     },
     "wasm": {
       "count": 44,
@@ -42,9 +42,9 @@
       "last_seen": "2026-11-06"
     },
     "reverse engineering": {
-      "count": 28,
+      "count": 29,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-14"
     },
     "decompilation": {
       "count": 28,
@@ -55,6 +55,11 @@
       "count": 21,
       "first_seen": "2026-07-24",
       "last_seen": "2026-11-08"
+    },
+    "apk": {
+      "count": 18,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-11-14"
     },
     "Unity f1 LTS": {
       "count": 17,
@@ -70,11 +75,6 @@
       "count": 17,
       "first_seen": "2026-07-20",
       "last_seen": "2026-11-13"
-    },
-    "apk": {
-      "count": 17,
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-11-08"
     },
     "WASM": {
       "count": 15,

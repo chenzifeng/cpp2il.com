@@ -1,11 +1,144 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-13T08:06:33.156172+00:00",
+  "last_generated_at": "2026-11-14T07:38:49.184552+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden",
-    "arXiv Reverse Engineering Research: The read operation timed out"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-14",
+      "path": "/public/news/2026-11-14-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Android reverse engineering & Binary reverse engineering News — November 14, 2026",
+      "description": "Curated Android reverse engineering, Binary reverse engineering updates for developers and security researchers. 6 relevant releases and technical developmen…",
+      "item_count": 6,
+      "new_item_count": 6,
+      "updated_at": "2026-11-14T07:38:49.184552+00:00",
+      "entries": [
+        {
+          "entry_id": "d9e9a8991c3b68f34c92375229ba639b961fa7acb26572f65bdef79893261fa1",
+          "title": "dagoSte/reverseai — trending GitHub repository",
+          "url": "https://github.com/dagoSte/reverseai",
+          "summary": "Static reverse engineering of untrusted files with verifiable, byte-anchored evidence. Open tools (Ghidra, JADX, LIEF, YARA-X, Babel) in locked offline containers, from the command line or from AI agents over MCP. GitHub discovery signal: 19 stars, 3 forks, 4 open issues; language Python; last pushed 2026-11-11. Topics: ai-agents, android, apk, binary-analysis, decompiler, docker, electron, ghidra, jadx, javascript.",
+          "source": "GitHub Hot Binary Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Abinary-analysis+created%3A%3E%3D2026-07-17+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-10-20T07:30:46+00:00",
+          "trust": 8,
+          "source_boost": 12,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Android reverse engineering",
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 54
+        },
+        {
+          "entry_id": "5d59bc3f070a27033fa955bd8411c47ad832ddb2f9d720ee3574324d0e87ac43",
+          "title": "Frida 17.26.3",
+          "url": "https://github.com/frida/frida/releases/tag/17.26.3",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-11-13T12:21:49+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "0e2add627afa7440a6885314f2371168ecfd266e035443ef77f4239816a2311b",
+          "title": "Doomsday: Friday, 13 November, A.D. 2026 (1960)",
+          "url": "https://www.science.org/doi/10.1126/science.132.3436.1291",
+          "summary": "Hacker News signal: 470 points and 323 comments; submitted by voxleone; source www.science.org. Discussion: https://news.ycombinator.com/item?id=50482379",
+          "source": "Hacker News Technical Top Stories",
+          "source_url": "https://news.ycombinator.com/news",
+          "category": "community-hot",
+          "published": "2026-11-13T12:10:24+00:00",
+          "trust": 7,
+          "source_boost": 16,
+          "topic_terms": [],
+          "matched_terms": [
+            "Dynamic instrumentation"
+          ],
+          "score": 33
+        },
+        {
+          "entry_id": "1df128f2eca5922297c34021ca783cce057c71f0d0a2bbfc571658f2af022f6d",
+          "title": "v10.0.7",
+          "url": "https://github.com/angr/angr/releases/tag/v10.0.7",
+          "summary": "release version 10.0.7",
+          "source": "angr Releases",
+          "source_url": "https://github.com/angr/angr/releases.atom",
+          "category": "program-analysis",
+          "published": "2026-11-13T18:39:55+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 23
+        },
+        {
+          "entry_id": "0f2b39111619fa2fbae4dbbb8fb37e0007614cf266c5b1f430db9eaeb1886a7c",
+          "title": "dev/6.1.11141",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11141",
+          "summary": "Fix automated rust cargo fmt warning.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-11T16:58:38+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "47da49db70ec15dcd775e0db0d0cdc82dbe7c9682a813753adeaabeef6560638",
+          "title": "dev/6.1.11139",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11139",
+          "summary": "Fix automated rust cargo fmt warning.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-11T16:58:38+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-11-13",
       "path": "/public/news/2026-11-13-unity-il2cpp-reverse-engineering-news.html",
