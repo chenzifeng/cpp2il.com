@@ -2,19 +2,19 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 178,
+      "count": 179,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     "trending GitHub": {
-      "count": 178,
+      "count": 179,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     "GitHub repository": {
-      "count": 178,
+      "count": 179,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-15"
     },
     "Unity": {
       "count": 61,
@@ -41,15 +41,15 @@
       "first_seen": "2026-07-24",
       "last_seen": "2026-11-06"
     },
+    "decompilation": {
+      "count": 29,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-11-15"
+    },
     "reverse engineering": {
       "count": 29,
       "first_seen": "2026-07-24",
       "last_seen": "2026-11-14"
-    },
-    "decompilation": {
-      "count": 28,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-11-08"
     },
     "webassembly": {
       "count": 21,
@@ -100,6 +100,11 @@
       "count": 8,
       "first_seen": "2026-07-26",
       "last_seen": "2026-09-30"
+    },
+    "ARM64": {
+      "count": 4,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-15"
     },
     "requirements users.": {
       "count": 4,
@@ -186,11 +191,6 @@
       "first_seen": "2026-07-26",
       "last_seen": "2026-07-28"
     },
-    "ARM64": {
-      "count": 3,
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-06"
-    },
     "AOT": {
       "count": 3,
       "first_seen": "2026-10-23",
@@ -200,6 +200,11 @@
       "count": 3,
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-15"
+    },
+    "IPA": {
+      "count": 2,
+      "first_seen": "2026-11-15",
+      "last_seen": "2026-11-15"
     },
     "Unify scalar paired-single": {
       "count": 2,
@@ -292,11 +297,6 @@
       "last_seen": "2026-11-05"
     },
     "in ARM64": {
-      "count": 2,
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    "floating conditions": {
       "count": 2,
       "first_seen": "2026-11-05",
       "last_seen": "2026-11-05"

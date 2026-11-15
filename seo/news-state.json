@@ -1,10 +1,86 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-14T07:38:49.184552+00:00",
+  "last_generated_at": "2026-11-15T07:54:59.734765+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-15",
+      "path": "/public/news/2026-11-15-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & iOS reverse engineering News — November 15, 2026",
+      "description": "Curated APK and IPA analysis, iOS reverse engineering updates for developers and security researchers. 3 relevant releases and technical developments with or…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-11-15T07:54:59.734765+00:00",
+      "entries": [
+        {
+          "entry_id": "b33485024428a1d4af6f7baa7eb01cc0f317d910bcf7a9dd5f4d610c9b938069",
+          "title": "Laurent-xscope/ios-reverse-engineering-skill — trending GitHub repository",
+          "url": "https://github.com/Laurent-xscope/ios-reverse-engineering-skill",
+          "summary": "iOS Reverse & Tweak Engineering Suite: Decompile IPA/Mach-O, FairPlay DRM triage, Swift symbol recovery, Frida & LLDB dynamic instrumentation, ARM64 binary patching & tweak development GitHub discovery signal: 2 stars, 0 forks, 0 open issues; language Shell; last pushed 2026-11-14. Topics: amfi, antigravity-skill, api-extraction, arm64-patching, binary-analysis, claude-code-skill, dyld, fairplay-drm, frida-ios, ghidra.",
+          "source": "GitHub Hot iOS Reverse Engineering",
+          "source_url": "https://api.github.com/search/repositories?q=%22ios+reverse+engineering%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-07-18+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-mobile",
+          "published": "2026-11-13T09:02:51+00:00",
+          "trust": 8,
+          "source_boost": 11,
+          "topic_terms": [
+            "iOS reverse engineering",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "iOS reverse engineering",
+            "Binary reverse engineering",
+            "Dynamic instrumentation"
+          ],
+          "score": 48
+        },
+        {
+          "entry_id": "b22c2ec6e8b9153673275fa8aa21b092baa2fc40c0b7fced7528dac129f453c7",
+          "title": "v4.6.6",
+          "url": "https://github.com/MobSF/Mobile-Security-Framework-MobSF/releases/tag/v4.6.6",
+          "summary": "v4.6.6 Changelog This release adds JavaScript, TypeScript and hybrid app analysis (including Hermes bytecode), rebuilds Windows APPX / MSIX static analysis so it runs on any host, adds iOS entitlements and provisioning profile analysis, iOS SBOM support, URLhaus malware checks and Flutter source ZIP support, and includes several security and static analysis fixes. Features or Enhancements Added JavaScript, TypeScript and hybrid app static analysis using Tree-sitter AST rules, with framework detection for React Native, Expo, Cordova / Ionic, Capacitor and NativeScript Added Hermes bytecode ( .bundle , .jsbundle , .hbc ) decompilation so AST rules, URL/domain extraction and secret scanning work on Hermes bundles Added Cordova config.xml , Capacitor capacitor.config.json and Expo app config checks, React Native @ReactMethod bridge discovery, and a View JavaScript source browser with a JavaScript / Hybrid Code Analysis report section for Android and iOS Replaced the unmaintained EnlighterJS viewer with PrismJS, with dark mode and windowed pagination for multi-million-line files Rebuilt Windows static analysis to run in-process on any host, without a Windows VM, BinSkim or BinScope Added lief PE hardening checks for every packaged binary (ASLR, high entropy VA, DEP, CFG, SafeSEH, /GS , RWX sections, Authenticode, SDL banned APIs), with .NET IL-only assembly detection Added AppxManifest.xml capability and extension analysis, AppxSignature.p7x signer and publisher checks, and support for .msix , .appxbundle and .msixbundle Added string, URL, email, secret, malware domain and tracker detection for Windows packages Added iOS Entitlements and Provisioning Profile security analysis for IPA and iOS source ZIP scans Added modern iOS binary rules (insecure TLS validation, weak Keychain accessibility, WKWebView file access, UIPasteboard , raw SQLite APIs) and cross-platform lief Objective-C / Swift class dump Added iOS Info.plist file-sharing checks and tracker detection from embedded .framework bundles Added URLhaus malware domain and IP checks alongside Maltrail Improved Android SBOM extraction and added iOS SBOM support (embedded frameworks, Podfile.lock , Package.resolved , Cartfile.resolved , pubspec.lock , package-lock.json ) Added Flutter project source ZIP support Rate-limited Maltrail and Trackers DB update checks ( MOBSF_DB_UPDATE_INTERVAL , default 1 hour) so scans no longer re-download the databases every time Pinned PostgreSQL to 18 in the Docker Compose files Security Fixes Fixed stored XSS from manifest activity names and deeplink schemes in the Android dynamic analyzer ( GHSA-2pfr-pfcp-pv44 ) Fixed stored XSS from the analyzed Android app in the Live API Monitor ( GHSA-q882-9g6p-v5f2 ) Fixed stored XSS from the analyzed iOS app in the iOS API Monitor via marker injection; Frida dump records are now validated as strict JSON ( GHSA-6p6x-gx77-3gv3 ) Fixed a pre-extraction symlink mode stripping bypass in the OS unzip fallback by hardening os_unzip with isolated staging extraction, an offset-independent central directory mode sweep, and rejection of symlinks and special files ( GHSA-j7g2-gm7j-mfvm ) Bounded ar ( .a ) archive parsing with per-member and total size limits and validated extended name tables Validated iOS app data container paths reported through Frida before using them to archive app data Served dynamic analysis file and .pcap downloads as attachments with sanitized filenames Validated and URL-encoded package and bundle IDs in Play Store and App Store lookups, which now go through safe_request Removed the tests/ URL route from the web application Hardened Android icon analysis against symlinks, log injection and vd2svg command-line option injection Rendered app- and device-derived data as text in dynamic analysis status logs and the TLS test log Validated Corellium bundle IDs before listing or linking them Windows packages are extracted with per-entry path, symlink and size checks, and manifests are parsed with defusedxml Bug Fixes Fixed iOS ipa_rules regex boundaries that caused banned function, insecure random and logging rules to miss matches Fixed PDF report LayoutError on long unbroken strings that span a page boundary Fixed Android icon resolution for obfuscated adaptive icons, Android system colors, corrupted PNGs, XAPK root icons, activity-level icons and PNG-in-WebP icons Removed literal <strong> and </br> tags from Android Manifest Analysis titles Downgraded NSExceptionMinimumTLSVersion = TLSv1.2 from warning to info Skipped Swift symbol names in high-entropy secret detection to reduce false positives Fixed double-escaped URLs on the compare page What's Changed fix(pdf): use word-break:break-word in PDF templates to fix row split LayoutError by @ajinabraham in #2758 feat(ios): add Entitlements and Provisioning Profile security analysis by @ajinabraham in #2759 feat(ios): fix ipa_rules regex boundaries, add modern binary rules, and add LIEF classdump by @ajinabraham in #2760 feat(static): iOS Info.plist file-sharing checks, framework trackers, and strip manifest HTML tags by @ajinabraham in #2762 fix(android): resolve obfuscated adaptive icons, Android system colors, and corrupted PNGs by @ajinabraham in #2763 Rate-limit Maltrail and Trackers DB update checks by @ajinabraham in #2764 Pin postgres to 18 in the Docker Compose files before latest moves to 19 by @CyberNativeAI in #2765 security: harden os_unzip with staging extraction and offset-independent mode sweep by @ajinabraham in #2766 fix(android): resolve XAPK root icons, activity-level icons, and PNG-in-WebP icons by @ajinabraham in #2767 Skip Swift symbol names in high-entropy secret detection by @captainrogers69 in #2751 Add URLhaus malware domain and IP checks alongside Maltrail by @ajinabraham in #2768 Support Flutter project source ZIPs by @captainrogers69 in #2734 Improve Android SBOM extraction and add iOS SBOM support by @ajinabraham in #2769 chore(deps): Bump paramiko from 3.5.1 to 5.0.0 by @dependabot [bot] in #2770 chore(deps): Bump actions/setup-java from 6.1.0 to 6.2.0 by @dependabot [bot] in #2775 chore(deps): Bump docker/login-action from 4.7.0 to 4.8.0 by @dependabot [bot] in #2774 Add JavaScript/Hybrid Tree-sitter & Hermes bytecode analysis and replace EnlighterJS with PrismJS by @ajinabraham in #2771 Modernize Windows APPX/MSIX static analysis by @ajinabraham in #2776 Refine JavaScript AST rules and hybrid configuration checks by @ajinabraham in #2777 New Contributors @CyberNativeAI made their first contribution in #2765 Full Changelog : v4.6.4...v4.6.6",
+          "source": "MobSF Releases",
+          "source_url": "https://github.com/MobSF/Mobile-Security-Framework-MobSF/releases.atom",
+          "category": "mobile-security",
+          "published": "2026-11-15T00:37:27+00:00",
+          "trust": 9,
+          "source_boost": 5,
+          "topic_terms": [
+            "APK and IPA analysis",
+            "Malware analysis tooling"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Native binary tooling",
+            "Dynamic instrumentation",
+            "Malware analysis tooling"
+          ],
+          "score": 46
+        },
+        {
+          "entry_id": "197585348c8b6377b64817c62f6fb15eb895396c013928123ff70846504a9194",
+          "title": "Release v7.5.0-rc.1",
+          "url": "https://github.com/wasmerio/wasmer/releases/tag/v7.5.0-rc.1",
+          "summary": "Important For packaging purposes, use the provided wasmer-full-source.tar.xz , which includes all required submodules. Install this version of wasmer: curl https://get.wasmer.io -sSfL | sh -s \" v7.5.0-rc.1 \" See full list of changes in the CHANGELOG",
+          "source": "Wasmer Releases",
+          "source_url": "https://github.com/wasmerio/wasmer/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-10-01T06:54:10+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 21
+        }
+      ]
+    },
     {
       "date": "2026-11-14",
       "path": "/public/news/2026-11-14-unity-il2cpp-reverse-engineering-news.html",
