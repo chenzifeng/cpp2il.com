@@ -1,10 +1,59 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-15T07:54:59.734765+00:00",
+  "last_generated_at": "2026-11-16T08:02:44.805093+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-16",
+      "path": "/public/news/2026-11-16-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Native binary tooling News — November 16, 2026",
+      "description": "Curated Binary reverse engineering, Native binary tooling updates for developers and security researchers. 2 relevant releases and technical developments wit…",
+      "item_count": 2,
+      "new_item_count": 2,
+      "updated_at": "2026-11-16T08:02:44.805093+00:00",
+      "entries": [
+        {
+          "entry_id": "2b274880c9700c399c0a6815e834b90f4e357b6f34af451ac9b55db1632c670d",
+          "title": "ayushcmd/go-green — trending GitHub repository",
+          "url": "https://github.com/ayushcmd/go-green",
+          "summary": "GoGreen is a polyglot systems engineering laboratory exploring low-level programming, CPU architecture, Assembly, binary analysis, distributed computing, performance engineering, and secure execution. GitHub discovery signal: 28 stars, 0 forks, 4 open issues; language TypeScript; last pushed 2026-11-05. Topics: binary-analysis, compiler-explorer, low-level-programming, nasm, performance-engineering, rust, sandbox, systems-engineering.",
+          "source": "GitHub Hot Binary Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Abinary-analysis+created%3A%3E%3D2026-07-19+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-11-04T12:24:27+00:00",
+          "trust": 8,
+          "source_boost": 15,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Native binary tooling"
+          ],
+          "score": 42
+        },
+        {
+          "entry_id": "53ece3d020a2602887e68a9b938f8573a3f24a011160ebff41bcfee4e1e999f9",
+          "title": "Ninada: Sub-Clause Split-Graph VITS Streaming and Capability-Routed 24 kHz Speech Synthesis Across Twelve Scripts",
+          "url": "https://arxiv.org/abs/2611.10035v2",
+          "summary": "End-to-end VITS text-to-speech models synthesize natural speech in a single forward pass, yet standard ONNX exports execute monolithically over an entire clause, delaying Time-To-First-Audio (TTFA) to several seconds and spiking activation memory. Client-side deployment across Indic scripts faces four further bottlenecks: 138.8 MB float32 checkpoints per language strain browser caches, mobile WebGPU stalls for 6-14 s compiling convolution shaders while still running slower than real time ($1.44\\times$ RTF), small WebAssembly pthread pools stall at barriers on big-LITTLE mobile CPUs, and mobile Web Audio pipelines drop frames or mute output under AudioWorklet contention and iOS WKWebView rules. We present Ninada, an open-source 24 kHz TTS system covering English, Classical Sanskrit, and ten Indian languages (sa, en, hi, kn, mr, bn, ta, te, ml, gu, pa, or) across a capability-routed 48-checkpoint fleet: 24 studio HiFi-GAN v1 specialists (27.9 MB W8A32+FP16 ONNX) for desktop/WebGPU and 24 distilled c8c8_384 iSTFTNet specialists (21.7 MB ONNX, $2.64\\times$ fewer vocoder MACs via an exact NOLA dual-window ConvTranspose1d inverse STFT with zero complex ops) for mobile WASM, plus a 0.0 MB zero-dependency Klatt fallback. At runtime, Ninada splits a single ONNX file in memory in $< 15$ ms into prior, flow, and windowed vocoder sub-sessions streaming 12-frame halos with raised-cosine crossfades. On $N = 480$ held-out 24 kHz studio utterances, Ninada achieves 3.22 dB 0-8 kHz MCD (3.09 dB mobile iSTFTNet; 1.33 dB 24-voice distillation MCD, vs. 5.17 dB for the 1,526.8 MB 16 kHz Meta MMS fleet) and 6.07 dB 8-12 kHz error, delivering 89-155 ms audible startup on desktop WebGPU and 538-649 ms zero-underrun streaming at 0.75-0.76x RTF on a physical Google Pixel 10 Pro XL.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-11-10T09:19:58+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Malware analysis tooling"
+          ],
+          "score": 21
+        }
+      ]
+    },
     {
       "date": "2026-11-15",
       "path": "/public/news/2026-11-15-unity-il2cpp-reverse-engineering-news.html",
