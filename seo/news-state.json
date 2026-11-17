@@ -1,10 +1,215 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-16T08:02:44.805093+00:00",
+  "last_generated_at": "2026-11-17T09:17:33.878473+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-17",
+      "path": "/public/news/2026-11-17-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Dynamic instrumentation News — November 17, 2026",
+      "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 10 relevant releases and technical developments with o…",
+      "item_count": 10,
+      "new_item_count": 10,
+      "updated_at": "2026-11-17T09:17:33.878473+00:00",
+      "entries": [
+        {
+          "entry_id": "e1caa6961c2c2a5293adf7948a18e8ff5611a9bfedb5c8bce93d6cb5fd9508ad",
+          "title": "Frida 17.26.4",
+          "url": "https://github.com/frida/frida/releases/tag/17.26.4",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-11-16T23:16:19+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "b52218fbcd4f1bee754e7176fcf880a7e9e3789768881cb7bca19fe99f73a45c",
+          "title": "WAMR-2.4.6",
+          "url": "https://github.com/wasm-micro-runtime/wasm-micro-runtime/releases/tag/WAMR-2.4.6",
+          "summary": "Breaking Changes New Features Bug Fixes libc-wasi: Fix a dangling DIR handle left in a released fd_object, and return ENOTDIR from fd_readdir for non-directory fds. libc-builtin: Fix an out-of-bounds write of the guest endptr in strtol/strtoul, which also leaked the high 32 bits of a host address. Fix a potential out-of-bounds read/write in realloc caused by an unchecked guest pointer. Fix a potential host stack overflow by validating the signatures of the entry functions used by wasi_thread_start, pthread_create and pthread_key_create. Fix a potential out-of-bounds write in module_malloc caused by an unchecked offset returned from the module's malloc. libc-wasi: Fix a double fetch of guest memory in the iovec and socket address handling, which could cause a heap overflow and bypass --addr-pool. libc-wasi: Fix a NULL pointer dereference when from == to, and a double decrement of ft->used, in fd_renumber. Fix a loader crash when a const expr fails to load with WAMR_BUILD_EXTENDED_CONST_EXPR=1. aot: Fix integer overflow in the constant-folded and bulk memory bounds checks, so that AOT results match the interpreter. Enhancements Others Upgrade macOS runner of CIs to 15 ( #4770 ) ( #4969 )",
+          "source": "WAMR Releases",
+          "source_url": "https://github.com/bytecodealliance/wasm-micro-runtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-11-17T07:42:02+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "f18fb6e8067d3c234c8ded78daa1824d568de22fd110f90626ac912aad3fccf6",
+          "title": "v50.0.2: Release Wasmtime 50.0.2 (#15305)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v50.0.2",
+          "summary": "50.0.2 Released 2026-11-16. Fixed Unbounded host memory growth via empty writes to AsyncWriteStream in wasmtime-wasi has been fixed. GHSA-5m8g-xhq4-4h93 Stale GC heap base pointer in compiled code lets a Wasm guest abort the host process has been fixed. GHSA-43j2-gcp4-m22g Panic when a component cancels a stream or future copy on the wrong end has been fixed. GHSA-xrvr-8678-5wp8 Panic in Caller::get_module_export when a host function isn't called from WebAssembly has been fixed. GHSA-hj27-mpw9-ff4c Process abort when a GC heap's reservation isn't a multiple of the page size has been fixed. GHSA-wvgq-g5hf-6gm6 Fixed abort in Wasmtime builds without the gc cargo feature. GHSA-rc4p-x33f-vpr2 Fixed abort in Wasmtime builds without the threads cargo feature. GHSA-2674-w29h-wqvj Empty Body Writes can result in unbound heap usage with HTTP/2 has been fixed. GHSA-f8mm-ggr3-89wh",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-11-16T21:03:15+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "9dc4d6d833d57cd90129d95a016febf41fa73317cac3f9bd90416663715c3a74",
+          "title": "v48.0.9: Release Wasmtime 48.0.9 (#15303)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v48.0.9",
+          "summary": "48.0.9 Fixed 2026-11-16. Fixed Unbounded host memory growth via empty writes to AsyncWriteStream in wasmtime-wasi has been fixed. GHSA-5m8g-xhq4-4h93 Stale GC heap base pointer in compiled code lets a Wasm guest abort the host process has been fixed. GHSA-43j2-gcp4-m22g Panic when a component cancels a stream or future copy on the wrong end has been fixed. GHSA-xrvr-8678-5wp8 Panic in Caller::get_module_export when a host function isn't called from WebAssembly as been fixed. GHSA-hj27-mpw9-ff4c Process abort when a GC heap's reservation isn't a multiple of the page size has been fixed. GHSA-wvgq-g5hf-6gm6 Fixed abort in Wasmtime builds without the gc cargo feature. GHSA-rc4p-x33f-vpr2 Fixed abort in Wasmtime builds without the threads cargo feature. GHSA-2674-w29h-wqvj Empty Body Writes can result in Unbound Heap Usage with HTTP/2. GHSA-f8mm-ggr3-89wh",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-11-16T21:00:07+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "8cd0ddfb87c4b41266c195ae6ed06a464c82231b3ae72cbb04d0a99c49be34ca",
+          "title": "Many of Amazon’s Black Friday and Cyber Monday “deals” offered no savings",
+          "url": "http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/",
+          "summary": "Hacker News signal: 892 points and 528 comments; submitted by DeepLogin; source groundworkcollaborative.org. Discussion: https://news.ycombinator.com/item?id=50517488",
+          "source": "Hacker News Technical Top Stories",
+          "source_url": "https://news.ycombinator.com/news",
+          "category": "community-hot",
+          "published": "2026-11-16T13:39:07+00:00",
+          "trust": 7,
+          "source_boost": 16,
+          "topic_terms": [],
+          "matched_terms": [
+            "Dynamic instrumentation"
+          ],
+          "score": 33
+        },
+        {
+          "entry_id": "a0812d516f6ff6655cf85a7929bf6536fa9444b77136cc6747b4fd879067c638",
+          "title": "Harmony 3.0.0-rc.6",
+          "url": "https://github.com/pardeike/Harmony/releases/tag/v3.0.0-rc.6",
+          "summary": "Fix stale __args in ordinary patches ( #792 ). Each patch that takes __args now gets the current argument values, including writes from earlier patches and from the original. Before, a patch that only read __args could undo an earlier ref write or the original's ref and out results. Behavior change: a ref object parameter bound to a value-type argument passed by value now writes back to that argument. Harmony 2 discarded the write. The box must hold the argument's own type, because Harmony does not convert numbers. For a long argument, value = 17 throws InvalidCastException . Write value = 17L . __args and arguments passed by reference already follow this rule. Support the .NET 11 release ( #785 ). Earlier candidates were built and tested with RC3. Add MethodType members for the unsigned right shift operator, the checked operators and the compound assignment operators ( #791 ). Embed MonoMod.Core 1.4.0-prerelease.2. On .NET 11, a patch on an ordinary Task -returning method now reaches callers compiled with runtime-async. The known issue from rc.4 and rc.5 no longer occurs in Harmony's tests on x64 and ARM64 ( MonoMod#344 ). New limit on .NET 11: MonoMod refuses to detour a generic method instantiation such as Method<int>() , and Harmony.Patch throws NotSupportedException . A non-generic method of a generic class is not affected. Lib.Harmony.Thin no longer ships the build workaround for MonoMod's .NET 11 guard.",
+          "source": "Harmony Releases",
+          "source_url": "https://github.com/pardeike/Harmony/releases.atom",
+          "category": "dotnet-runtime",
+          "published": "2026-11-17T05:54:30+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity runtime tooling",
+            "C# decompilation"
+          ],
+          "matched_terms": [
+            "Unity runtime tooling",
+            "C# decompilation"
+          ],
+          "score": 28
+        },
+        {
+          "entry_id": "2f227bd0e964b268b00c894114e62dcd2f8a25e8d3e63ef3e29465122683b9be",
+          "title": "conceptcountry/weight-space-programming — trending GitHub repository",
+          "url": "https://github.com/conceptcountry/weight-space-programming",
+          "summary": "Gradient-free weight editing reduces overthinking in Qwen3.8-27B — analysis code and evaluation artifacts GitHub discovery signal: 34 stars, 4 forks, 0 open issues; language Typst; last pushed 2026-11-08. Topics: interpretability, llm, machine-learning.",
+          "source": "GitHub Hot Program Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=%22program+analysis%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-05-21+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-research",
+          "published": "2026-11-08T04:58:16+00:00",
+          "trust": 8,
+          "source_boost": 15,
+          "topic_terms": [
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "dbb97bb454acf85c97277e09676d4075da188c91e453bfcc88bd6774eaf7a8c0",
+          "title": "dev/6.1.11155: [API] Retrieve a type builder's integer display type without finalizing",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11155",
+          "summary": "The C API had no getter for a type builder's integer display type, so the C++, Python and Rust bindings each finalized the builder and read the display type from the resulting type. The Python implementation had a use after free. BNGetTypeBuilderIntegerTypeDisplayType is added to read the display type directly from the builder, and all three bindings now use it.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-14T02:11:24+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "fd686c23b779083598d3c2930826aeb4337c54eae2f4ac86fb1bd2708f44358e",
+          "title": "dev/6.1.11153: [API] Retrieve a type builder's integer display type without finalizing",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11153",
+          "summary": "The C API had no getter for a type builder's integer display type, so the C++, Python and Rust bindings each finalized the builder and read the display type from the resulting type. The Python implementation had a use after free. BNGetTypeBuilderIntegerTypeDisplayType is added to read the display type directly from the builder, and all three bindings now use it.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-14T02:11:24+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "6eab444adc6533903c0ebfb887d21ae7f6af231b571e9a20c7b0d32b8ef42370",
+          "title": "Live Noise Fingerprints for Quantum Program Analysis",
+          "url": "https://arxiv.org/abs/2611.19143v1",
+          "summary": "Quantum programs are probabilistic in nature, and noisy execution due to current imperfect hardware further complicates their analysis. In this paper, we study abstract semantics for analysing quantum programs under these conditions. We introduce noise fingerprints, compact descriptions of the observable effects of noise relative to a finite interface of input states and output measurements. We use them to define our abstract domain with respect to the concrete noise-related behaviour. We relate the concrete and abstract domains through a probabilistic Galois connection, extending the Galois-connection framework to distribution-valued interpretations. We study the resulting abstraction in terms of observational soundness, conciseness, efficiency, and ability to adapt to changing noise. We show that polynomial-size interfaces yield exponentially smaller fingerprints than full noise models while preserving the chosen observations, and that fingerprint distance characterises the largest observational discrepancy over the chosen interface. Further, we develop ChanShadow, which reuses noise fingerprints of commonly used short program fragments to analyse noisy execution of whole programs and provides a uniform finite-sample error bound. We construct working examples showing how fingerprints support program analysis. We evaluate fingerprint precision, representation cost, measurement requirements, and behaviour under noise drift. On a synthetic benchmark, fingerprints retain $(99 \\pm 1)\\%$ of the noise strength information of a full noise model. On simulated noise drift, reusing earlier measurements reduces the number of fresh measurement rounds needed to reach an error tolerance of $0.10$ by a factor of $2.3$ at $95\\%$ confidence and by a factor of $27$ under the median-error criterion.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-11-14T04:05:09+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 21
+        }
+      ]
+    },
     {
       "date": "2026-11-16",
       "path": "/public/news/2026-11-16-unity-il2cpp-reverse-engineering-news.html",

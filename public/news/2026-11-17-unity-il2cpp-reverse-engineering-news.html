@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>APK and IPA analysis &amp; Dynamic instrumentation News — November 17, 2026 | CPP2IL</title>
+  <meta name="description" content="Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 10 relevant releases and technical developments with o…">
+  <link rel="canonical" href="https://cpp2il.com/public/news/2026-11-17-unity-il2cpp-reverse-engineering-news.html">
+  <link rel="alternate" type="application/rss+xml" title="CPP2IL News RSS" href="https://cpp2il.com/public/news.xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="APK and IPA analysis &amp; Dynamic instrumentation News — November 17, 2026">
+  <meta property="og:description" content="Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 10 relevant releases and technical developments with o…">
+  <meta property="og:url" content="https://cpp2il.com/public/news/2026-11-17-unity-il2cpp-reverse-engineering-news.html">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "APK and IPA analysis & Dynamic instrumentation News — November 17, 2026", "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 10 relevant releases and technical developments with o…", "url": "https://cpp2il.com/public/news/2026-11-17-unity-il2cpp-reverse-engineering-news.html", "dateModified": "2026-11-17T09:17:33.878473+00:00", "isPartOf": {"@type": "WebSite", "name": "CPP2IL", "url": "https://cpp2il.com/"}, "mainEntity": {"@type": "ItemList", "numberOfItems": 10, "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://github.com/frida/frida/releases/tag/17.26.4", "name": "Frida 17.26.4"}, {"@type": "ListItem", "position": 2, "url": "https://github.com/wasm-micro-runtime/wasm-micro-runtime/releases/tag/WAMR-2.4.6", "name": "WAMR-2.4.6"}, {"@type": "ListItem", "position": 3, "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v50.0.2", "name": "v50.0.2: Release Wasmtime 50.0.2 (#15305)"}, {"@type": "ListItem", "position": 4, "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v48.0.9", "name": "v48.0.9: Release Wasmtime 48.0.9 (#15303)"}, {"@type": "ListItem", "position": 5, "url": "http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/", "name": "Many of Amazon’s Black Friday and Cyber Monday “deals” offered no savings"}, {"@type": "ListItem", "position": 6, "url": "https://github.com/pardeike/Harmony/releases/tag/v3.0.0-rc.6", "name": "Harmony 3.0.0-rc.6"}, {"@type": "ListItem", "position": 7, "url": "https://github.com/conceptcountry/weight-space-programming", "name": "conceptcountry/weight-space-programming — trending GitHub repository"}, {"@type": "ListItem", "position": 8, "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11155", "name": "dev/6.1.11155: [API] Retrieve a type builder's integer display type without finalizing"}, {"@type": "ListItem", "position": 9, "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11153", "name": "dev/6.1.11153: [API] Retrieve a type builder's integer display type without finalizing"}, {"@type": "ListItem", "position": 10, "url": "https://arxiv.org/abs/2611.19143v1", "name": "Live Noise Fingerprints for Quantum Program Analysis"}]}, "publisher": {"@type": "Organization", "name": "CPP2IL", "url": "https://cpp2il.com/", "logo": {"@type": "ImageObject", "url": "https://cpp2il.com/logo.png"}}}</script>
+  <style>
+    :root { color-scheme:dark; --bg:#080b12; --panel:#111725; --text:#eef3ff; --muted:#9da9bd; --line:#263146; --accent:#72a7ff; }
+    * { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif; }
+    a { color:var(--accent); } .wrap { width:min(1080px,calc(100% - 32px)); margin:auto; }
+    header { padding:64px 0 28px; border-bottom:1px solid var(--line); } .eyebrow { color:var(--accent); font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { margin:.25em 0; font-size:clamp(2rem,6vw,4.3rem); line-height:1.04; } .lede { max-width:820px; color:var(--muted); font-size:1.08rem; }
+    .tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:22px; } .tag { text-decoration:none; padding:6px 11px; border:1px solid var(--line); border-radius:999px; background:#0d1320; }
+    main { display:grid; gap:18px; padding:32px 0 64px; } .card { padding:24px; border:1px solid var(--line); border-radius:18px; background:var(--panel); }
+    .card h2 { margin:.45em 0; line-height:1.25; } .card h2 a { color:var(--text); text-decoration:none; } .card h2 a:hover { color:var(--accent); }
+    .meta { display:flex; justify-content:space-between; gap:12px; color:var(--muted); font-size:.9rem; } .category { color:#c6d6f3; border:1px solid var(--line); border-radius:6px; padding:2px 6px; margin-right:6px; }
+    .why { color:#c6d1e5; } .source { font-weight:700; text-decoration:none; } footer { padding:28px 0 50px; color:var(--muted); border-top:1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <header><div class="wrap">
+    <div class="eyebrow">CPP2IL Technical News</div>
+    <h1>APK and IPA analysis &amp; Dynamic instrumentation News — November 17, 2026</h1>
+    <p class="lede">Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 10 relevant releases and technical developments with o… This page links to original publishers, uses short excerpts, and does not reproduce complete articles.</p>
+    <div class="tags"><a class="tag" href="/">APK and IPA analysis</a><a class="tag" href="/">Dynamic instrumentation</a><a class="tag" href="/">WebAssembly runtime</a><a class="tag" href="/">Unity runtime tooling</a><a class="tag" href="/">C# decompilation</a><a class="tag" href="/news/">Decompiler research</a><a class="tag" href="/">Binary reverse engineering</a><a class="tag" href="/public/news/">trending GitHub repository</a><a class="tag" href="/public/news/">trending GitHub</a><a class="tag" href="/public/news/">GitHub repository</a><a class="tag" href="/public/news/">Unity</a><a class="tag" href="/public/news/">decompiler</a><a class="tag" href="/public/news/">wasm</a><a class="tag" href="/public/news/">WebAssembly</a></div>
+  </div></header>
+  <main class="wrap">
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Dynamic Analysis</span> Frida Releases</span>
+            <time datetime="2026-11-16T23:16:19+00:00">2026-11-16</time>
+          </div>
+          <h2><a href="https://github.com/frida/frida/releases/tag/17.26.4" rel="noopener noreferrer">Frida 17.26.4</a></h2>
+          <p>See https://frida.re/news/ for details.</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to APK and IPA analysis, Dynamic instrumentation.</p>
+          <a class="source" href="https://github.com/frida/frida/releases/tag/17.26.4" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Webassembly Runtime</span> WAMR Releases</span>
+            <time datetime="2026-11-17T07:42:02+00:00">2026-11-17</time>
+          </div>
+          <h2><a href="https://github.com/wasm-micro-runtime/wasm-micro-runtime/releases/tag/WAMR-2.4.6" rel="noopener noreferrer">WAMR-2.4.6</a></h2>
+          <p>Breaking Changes New Features Bug Fixes libc-wasi: Fix a dangling DIR handle left in a released fd_object, and return ENOTDIR from fd_readdir for non-directory fds. libc-builtin: Fix an out-of-bounds write of the guest endptr in strtol/strtoul, which also leaked the high 32 bits of a host address. Fix a potential out-of-bounds read/write in realloc caused b…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to WebAssembly runtime.</p>
+          <a class="source" href="https://github.com/wasm-micro-runtime/wasm-micro-runtime/releases/tag/WAMR-2.4.6" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Webassembly Runtime</span> Wasmtime Releases</span>
+            <time datetime="2026-11-16T21:03:15+00:00">2026-11-16</time>
+          </div>
+          <h2><a href="https://github.com/bytecodealliance/wasmtime/releases/tag/v50.0.2" rel="noopener noreferrer">v50.0.2: Release Wasmtime 50.0.2 (#15305)</a></h2>
+          <p>50.0.2 Released 2026-11-16. Fixed Unbounded host memory growth via empty writes to AsyncWriteStream in wasmtime-wasi has been fixed. GHSA-5m8g-xhq4-4h93 Stale GC heap base pointer in compiled code lets a Wasm guest abort the host process has been fixed. GHSA-43j2-gcp4-m22g Panic when a component cancels a stream or future copy on the wrong end has been fixe…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to WebAssembly runtime.</p>
+          <a class="source" href="https://github.com/bytecodealliance/wasmtime/releases/tag/v50.0.2" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Webassembly Runtime</span> Wasmtime Releases</span>
+            <time datetime="2026-11-16T21:00:07+00:00">2026-11-16</time>
+          </div>
+          <h2><a href="https://github.com/bytecodealliance/wasmtime/releases/tag/v48.0.9" rel="noopener noreferrer">v48.0.9: Release Wasmtime 48.0.9 (#15303)</a></h2>
+          <p>48.0.9 Fixed 2026-11-16. Fixed Unbounded host memory growth via empty writes to AsyncWriteStream in wasmtime-wasi has been fixed. GHSA-5m8g-xhq4-4h93 Stale GC heap base pointer in compiled code lets a Wasm guest abort the host process has been fixed. GHSA-43j2-gcp4-m22g Panic when a component cancels a stream or future copy on the wrong end has been fixed…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to WebAssembly runtime.</p>
+          <a class="source" href="https://github.com/bytecodealliance/wasmtime/releases/tag/v48.0.9" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Community Hot</span> Hacker News Technical Top Stories</span>
+            <time datetime="2026-11-16T13:39:07+00:00">2026-11-16</time>
+          </div>
+          <h2><a href="http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/" rel="noopener noreferrer">Many of Amazon’s Black Friday and Cyber Monday “deals” offered no savings</a></h2>
+          <p>Hacker News signal: 892 points and 528 comments; submitted by DeepLogin; source groundworkcollaborative.org. Discussion: https://news.ycombinator.com/item?id=50517488</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Dynamic instrumentation.</p>
+          <a class="source" href="http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Dotnet Runtime</span> Harmony Releases</span>
+            <time datetime="2026-11-17T05:54:30+00:00">2026-11-17</time>
+          </div>
+          <h2><a href="https://github.com/pardeike/Harmony/releases/tag/v3.0.0-rc.6" rel="noopener noreferrer">Harmony 3.0.0-rc.6</a></h2>
+          <p>Fix stale __args in ordinary patches ( #792 ). Each patch that takes __args now gets the current argument values, including writes from earlier patches and from the original. Before, a patch that only read __args could undo an earlier ref write or the original&#x27;s ref and out results. Behavior change: a ref object parameter bound to a value-type argument pass…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Unity runtime tooling, C# decompilation.</p>
+          <a class="source" href="https://github.com/pardeike/Harmony/releases/tag/v3.0.0-rc.6" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Github Hot Research</span> GitHub Hot Program Analysis</span>
+            <time datetime="2026-11-08T04:58:16+00:00">2026-11-08</time>
+          </div>
+          <h2><a href="https://github.com/conceptcountry/weight-space-programming" rel="noopener noreferrer">conceptcountry/weight-space-programming — trending GitHub repository</a></h2>
+          <p>Gradient-free weight editing reduces overthinking in Qwen3.8-27B — analysis code and evaluation artifacts GitHub discovery signal: 34 stars, 4 forks, 0 open issues; language Typst; last pushed 2026-11-08. Topics: interpretability, llm, machine-learning.</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Decompiler research.</p>
+          <a class="source" href="https://github.com/conceptcountry/weight-space-programming" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Reverse Engineering</span> Binary Ninja API Releases</span>
+            <time datetime="2026-11-14T02:11:24+00:00">2026-11-14</time>
+          </div>
+          <h2><a href="https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11155" rel="noopener noreferrer">dev/6.1.11155: [API] Retrieve a type builder&#x27;s integer display type without finalizing</a></h2>
+          <p>The C API had no getter for a type builder&#x27;s integer display type, so the C++, Python and Rust bindings each finalized the builder and read the display type from the resulting type. The Python implementation had a use after free. BNGetTypeBuilderIntegerTypeDisplayType is added to read the display type directly from the builder, and all three bindings now us…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Binary reverse engineering, Decompiler research.</p>
+          <a class="source" href="https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11155" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Reverse Engineering</span> Binary Ninja API Releases</span>
+            <time datetime="2026-11-14T02:11:24+00:00">2026-11-14</time>
+          </div>
+          <h2><a href="https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11153" rel="noopener noreferrer">dev/6.1.11153: [API] Retrieve a type builder&#x27;s integer display type without finalizing</a></h2>
+          <p>The C API had no getter for a type builder&#x27;s integer display type, so the C++, Python and Rust bindings each finalized the builder and read the display type from the resulting type. The Python implementation had a use after free. BNGetTypeBuilderIntegerTypeDisplayType is added to read the display type directly from the builder, and all three bindings now us…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Binary reverse engineering, Decompiler research.</p>
+          <a class="source" href="https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11153" rel="noopener noreferrer">Read the original source →</a>
+        </article>
+        <article class="card">
+          <div class="meta">
+            <span><span class="category">Research</span> arXiv Reverse Engineering Research</span>
+            <time datetime="2026-11-14T04:05:09+00:00">2026-11-14</time>
+          </div>
+          <h2><a href="https://arxiv.org/abs/2611.19143v1" rel="noopener noreferrer">Live Noise Fingerprints for Quantum Program Analysis</a></h2>
+          <p>Quantum programs are probabilistic in nature, and noisy execution due to current imperfect hardware further complicates their analysis. In this paper, we study abstract semantics for analysing quantum programs under these conditions. We introduce noise fingerprints, compact descriptions of the observable effects of noise relative to a finite interface of in…</p>
+          <p class="why"><strong>Why it matters:</strong> Relevant to Decompiler research.</p>
+          <a class="source" href="https://arxiv.org/abs/2611.19143v1" rel="noopener noreferrer">Read the original source →</a>
+        </article></main>
+  <footer><div class="wrap">
+    <a href="/">CPP2IL</a> · <a href="/public/news/">News archive</a> · Updated 2026-11-17 09:17 UTC
+  </div></footer>
+</body>
+</html>
