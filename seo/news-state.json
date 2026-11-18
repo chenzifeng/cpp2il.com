@@ -1,10 +1,142 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-17T09:17:33.878473+00:00",
+  "last_generated_at": "2026-11-18T08:36:26.787712+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-18",
+      "path": "/public/news/2026-11-18-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Dynamic instrumentation News — November 18, 2026",
+      "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 6 relevant releases and technical developments with or…",
+      "item_count": 6,
+      "new_item_count": 6,
+      "updated_at": "2026-11-18T08:36:26.787712+00:00",
+      "entries": [
+        {
+          "entry_id": "2f5eaef6234fd8d0e7cbb7a24c42ba369c3206da064c11d65fb6950fffc2c2ef",
+          "title": "Frida 17.27.0",
+          "url": "https://github.com/frida/frida/releases/tag/17.27.0",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-11-17T21:12:52+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "481c87d962ba986cc077fc6186ad5699040067a9cba957fcdb59b13d08a42529",
+          "title": "v2.0.1 - 2026/11/18",
+          "url": "https://github.com/wasmi-labs/wasmi/releases/tag/v2.0.1",
+          "summary": "Added The unstable crate feature now uses Rust's unstable rust-preserve-none ABI for execution handlers. #2036 Takes effect on x86_64 and aarch64 targets; other targets fall back to the Rust ABI. Thanks to Noa for implementing it! Fixes Removes stack frames for {memory,table}.grow execution handlers. #2066 This fixes a bug that could lead to a stackoverflow with certain Wasm inputs. Thanks to Jack Dishman for reporting the bug! Improves performance and memory consumption of instantiating linear memories in some cases. #2064 Thanks to Bruno Bowden for reporting this performance issue! Fix a divide-by-zero issue in enforce_limits for some malformed Wasm inputs. #2068 Thanks to Jack Dishman for reporting the bug! Fuel metering now charges for zero-initializing non-parameter function locals. #2041 Costs 1 fuel per 8 Wasm locals, rounded up. Thanks to Peng Wang for reporting and fixing the issue! Fix a bug where functions escaping a failed instantiation could access a partially initialized instance. #2076 Thanks to Jeremy Spence for reporting the bug! Fix select fused with a zero test (e.g. x != 0 ) of a slot operand. #2048 Thanks to Szymon Teżewski for reporting the bug. Thanks to Sébastien Celles for fixing the bug. auto-dispatch now falls back to portable dispatch if debug-assertions are enabled. #2050 This fixes a stackoverflow in optimized debug builds using [profile.dev.package.wasmi] opt-level = 3 . Requires Cargo 1.93 or newer and only detects debug-assertions set via Cargo profiles, not via RUSTFLAGS . Thanks to soraxa-dev for reporting the bug! Thanks to Kansuke Habano for fixing the bug! Fix a translation panic for stores whose address and value alias the same register. #2098 Only affected stores that cannot use the (memory 0) fast path, e.g. offsets above u16::MAX . Thanks to Sven Kubisch for reporting the bug! Fix a panic when growing a memory64 declared with the largest allowed maximum size. #2053 This also fixes memory.grow being wrongly denied by StoreLimits on 32-bit hosts due to a truncated maximum size. Thanks to Sharadhi V for reporting and fixing the bug! Fix a panic when memory.grow exceeds the capacity of a Memory::new_static buffer. #2086 Fix an off-by-one allowing 32-bit memories with 1-byte pages to have 2^32 pages. #2087 Fix a miscompilation where a local.set in a branch of a block , loop or if with parameters could clobber an earlier local.get of the same local. #2088 Thanks to Doron Somech for reporting the bug! Fix a use-after-free when memory.grow grows (memory 0) through another memory index aliasing it. #2051 This could happen if the same linear memory is imported more than once. Thanks to Sharadhi V for reporting and fixing the bug! Fix a Stacked/Tree Borrows violation of the cached (memory 0) pointer. #2090 Thanks to Xiaotian Zhou for reporting the bug! Memory::new , Memory::new_static and Table::new now respect ResourceLimiter::{memories,tables} . #2091 Previously, host-created memories and tables could exceed these limits, failing later instantiations instead. Fix resumable calls running out of fuel in table.grow resuming at the wrong instruction. #2056 This re-executed already executed code, e.g. global or memory stores and host calls. Thanks to Sharadhi V for reporting and fixing the bug! Add the missing wasmi_error_message definition to the Wasmi C-API. #2092 Thanks to Kevin Jones for reporting the bug! Fix prefix-symbols affecting Wasmi C-API wasmi_* functions; only wasm_* functions are prefixed now. #2094 This mangled wasmi_error_new , wasmi_error_delete and wasmi_store_delete . Fix instantiation counting imported memories and tables against ResourceLimiter::{memories,tables} . #2083 Only the memories and tables a module defines are counted now. Thanks to Anthony Menghi for reporting and fixing the bug! Re-export LimiterError in wasmi::errors so that ResourceLimiter can be implemented without depending on wasmi_core . #2082 Thanks to Anthony Menghi for reporting and fixing the issue! Fix memory.grow past the declared maximum bypassing the ResourceLimiter . #2084 With StoreLimitsBuilder::trap_on_grow_failure(true) this now traps instead of returning -1 , as for tables. Thanks to Anthony Menghi for reporting and fixing the bug!",
+          "source": "wasmi Releases",
+          "source_url": "https://github.com/wasmi-labs/wasmi/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-11-17T23:53:49+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "Malware analysis tooling",
+            "WebAssembly runtime"
+          ],
+          "score": 28
+        },
+        {
+          "entry_id": "f1092e7dfe2384be8328cca2183430499d47cd767bca908e04253bd8756b19d1",
+          "title": "Release 4.15.1",
+          "url": "https://github.com/Gallopsled/pwntools/releases/tag/4.15.1",
+          "summary": "This a maintenance release hosting a lot of bug fixes and bringing pwntools to the latest Python versions. It contains a long overdue relaxation of the Unicorn Engine version dependency to allow easy installation on Python 3.14+. Many fixes targetted the latest development branch originally and were only backported to the 4.15.* release later to include them in a patch release earlier. Thank you to everyone helping with this release! What's Changed Allow running with Unicorn 2.1.[34] but throw when emulating MIPS by @peace-maker in #2721 Support paginated libc.rip API requests by @peace-maker in #2767 Support context.timeout in ~/.pwn.conf by @Feyorsh in #2592 fix: pad bytes fields to correct field size in FileStructure by @nightcityblade in #2694 Fix _build_date() crash on non-standard locale date strings by @coder999999999 in #2701 fix: apply force_to_bytes to readline result in non-term_mode path by @danstam in #2707 ROP: fix ROP(ELF(exe)).leave is None in some ELF by @RocketMaDev in #2506 checksec: more forgiving when passed directory arguments by @tesuji in #2530 Raise EOFError during process.recv when stdout closes on Windows by @peace-maker in #2524 Fix a bug that incorrectly reports GNU_STACK missing when its not. by @devx00 in #2493 Fix aarch64 ABI by @k4lizen in #2598 Fix log.progress ignoring context.log_console by @peace-maker in #2610 GitHub Actions: Test on Python 3.14 by @cclauss in #2627 safeeval: allow LIST_APPEND and SET_ADD opcodes (Python 3.14) by @ChrisJr404 in #2722 Add aarch64_be qemu mapping by @OBarronCS in #2653 Remove \"pip\" as explicit dependency by @peace-maker in #2642 fix(libcdb-cli): return early if no matched libc found by @the-soloist in #2646 asm: try native binutils before fallback architectures by @peace-maker in #2669 Fix tty and raw arguments in ssh.process by @peace-maker in #2699 Close SSH client connection when authentication failed by @peace-maker in #2688 refactor: replace unsafe eval with ast.literal_eval in ROP cache loading by @RinZ27 in #2677 fix(dirent): allow bytes with trailing 0 when parsing dirents by @RocketMaDev in #2803 fix(elf): prevent elf.libc returning the executable when its name starts with libc[.-] by @h4kk4p4kk4 in #2781 ssh: Discard stderr of lsb_release for Distro lookup by @peace-maker in #2704 fix(packing): dd() raises TypeError on a bytearray destination by @MaxFreedomPollard in #2772 gdb.corefile: Run gdb directly to prevent detach race by @peace-maker in #2787 fix(srop): correct amd64 SigreturnFrame uc_sigmask offset by @tarann26 in #2762 fix pwnlib.shellcraft submodule imports on python 3.12+ by @clmoon2 in #2739 fix(regsort): drop self-assignments through register aliases by @rahul05ranjan in #2795 Backport bugfixes from 5.0 to stable by @peace-maker in #2796 Disable debuginfod doctests in libcdb.unstrip_libc on stable by @MaxFreedomPollard in #2773 fix: delay upstream DNS resolution to prevent nginx startup failures by @ZackaryShen in #2718 CI: Pin to Ubuntu 24.04 by @peace-maker in #2810 New Contributors @devx00 made their first contribution in #2493 @RinZ27 made their first contribution in #2677 @nightcityblade made their first contribution in #2694 @coder999999999 made their first contribution in #2701 @danstam made their first contribution in #2707 @ZackaryShen made their first contribution in #2718 @clmoon2 made their first contribution in #2739 @tarann26 made their first contribution in #2762 @MaxFreedomPollard made their first contribution in #2773 @h4kk4p4kk4 made their first contribution in #2781 @rahul05ranjan made their first contribution in #2795 Full Changelog : 4.15.0...4.15.1",
+          "source": "pwntools Releases",
+          "source_url": "https://github.com/Gallopsled/pwntools/releases.atom",
+          "category": "debugging",
+          "published": "2026-11-17T19:05:37+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "Native binary tooling"
+          ],
+          "matched_terms": [
+            "Native binary tooling"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "e2db4afa69aa128f02276e3057c86585755e4cbc43a8ca62d3f59a95bf68a6de",
+          "title": "dev/6.1.11164",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11164",
+          "summary": "Lift calls to retpoline thunks as indirect calls and add regression t…",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-17T14:23:11+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "a008152c9fbea64ec56c5744f0d9b7695d2d8f978547629b4821eb384d3d23ed",
+          "title": "dev/6.1.11162",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11162",
+          "summary": "[DWARF] Reconstruction now requires GCC's removed-parameter marker (D…",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-16T20:28:38+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "7fc7227d33c02204663d93466537f241e1285684eea79016de050bbfe5324d21",
+          "title": "Unity 7000.0.0 Alpha",
+          "url": "https://unity.com/releases/editor/alpha/7000.0.0a16",
+          "summary": "Unity 7000.0.0 Alpha",
+          "source": "Unity Alpha Releases",
+          "source_url": "https://unity.com/releases/editor/alpha-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-11-05T10:21:21+00:00",
+          "trust": 10,
+          "source_boost": 1,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 12
+        }
+      ]
+    },
     {
       "date": "2026-11-17",
       "path": "/public/news/2026-11-17-unity-il2cpp-reverse-engineering-news.html",

@@ -17,9 +17,9 @@
       "last_seen": "2026-11-17"
     },
     "Unity": {
-      "count": 61,
+      "count": 62,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-11-13"
+      "last_seen": "2026-11-18"
     },
     "decompiler": {
       "count": 51,
@@ -76,15 +76,15 @@
       "first_seen": "2026-07-20",
       "last_seen": "2026-11-13"
     },
+    "Wasm": {
+      "count": 16,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-11-18"
+    },
     "WASM": {
       "count": 16,
       "first_seen": "2026-07-25",
       "last_seen": "2026-11-16"
-    },
-    "Wasm": {
-      "count": 15,
-      "first_seen": "2026-07-26",
-      "last_seen": "2026-11-17"
     },
     "Reverse Engineering": {
       "count": 9,
