@@ -1,10 +1,139 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-18T08:36:26.787712+00:00",
+  "last_generated_at": "2026-11-19T08:52:14.642922+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-19",
+      "path": "/public/news/2026-11-19-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Dynamic instrumentation News — November 19, 2026",
+      "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 6 relevant releases and technical developments with or…",
+      "item_count": 6,
+      "new_item_count": 6,
+      "updated_at": "2026-11-19T08:52:14.642922+00:00",
+      "entries": [
+        {
+          "entry_id": "4b1c4a9c3e9f7b95c98806a21dea49fd31d0a4348214de1a88b90ab00f9c117f",
+          "title": "Frida 17.27.1",
+          "url": "https://github.com/frida/frida/releases/tag/17.27.1",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-11-18T20:44:48+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "bdf69586cd160923b8da9614b93ac7c7c0fb294e1b9979e0d1e27877676c01e6",
+          "title": "Fanqi89/dsh-craft-anything — trending GitHub repository",
+          "url": "https://github.com/Fanqi89/dsh-craft-anything",
+          "summary": "Craft Anything for DeepSeek Harness: mcp__craft__* MCP bridge to the local craft-anything CLI, with a clean-room/deep mode switch in the composer, a status page, a CLI runner and a SHA256-verified installer. 把 Craft Anything 接入 DSH 的插件。 GitHub discovery signal: 369 stars, 82 forks, 0 open issues; language JavaScript; last pushed 2026-11-17.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-07-22+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-11-06T05:05:10+00:00",
+          "trust": 8,
+          "source_boost": 20,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 32
+        },
+        {
+          "entry_id": "449f6d428cdb7353115f1bee0e9b99dbf4f9ccc5821d4805fb323ae6e9f56459",
+          "title": "1.5.7",
+          "url": "https://github.com/skylot/jadx/releases/tag/v1.5.7",
+          "summary": "⚠️ Security release Bundled Java JDK updated as a Java4Shell vulnerability mitigation. This release includes only a stable changes from master branch. Features [build] Create a macOS install bundle for jadx-gui (PR #2916 ) [build] Add file associations for macOS (PR #2917 ) [build] Build Windows .msi bundle [gui] Use ResourcePanel with file-type specific tabs. (PR #2915 ) [gui] Make inheritance graphs display both super and subclass relations (PR #2935 ) [gui] Add tree filter (PR #2941 ) Bug Fixes [core] Sanitize user comments (PR #2940 ) [core] Disable AdjustForIfMergeVisitor as regression workaround ( #2951 ) [gui] Copy full code snippet when copy all search results (PR #2911 ) [gui] Don't throw exception if NLS key missing in fallback locale [gui] Set locale before loading gui config (PR #2923 ) [gui] Collapsed single-child directory chains causing display problems (PR #2925 ) [gui] Allow adb serial numbers with 8 and 9 characters ( #2927 , PR #2928 ) [gui] Improve Chinese localization in Messages_zh_CN.properties (PR #2934 ) [gui] Use save mode for package directory export (PR #2937 ) [gui] Avoid project reload when saving settings on start page (PR #2943 ) [gui] Load next binary block at block boundary (PR #2948 ) [gui] Use correct versions for j2v8 libs ( #2959 ) [quark] Fix missing string escape in report panel, resolve some code warnings New Contributors @nstion made their first contribution in #2911 @arimu1 made their first contribution in #2923 @tim21-f0 made their first contribution in #2935 @cuishuang made their first contribution in #2948 Full Changelog : v1.5.6...v1.5.7 Download files: jadx-gui-1.5.7.msi - jadx-gui Windows installer with bundled JRE jadx-gui-1.5.7-with-jre-win.zip - jadx-gui with bundled JRE jadx-gui-1.5.7-win.zip - jadx-gui Windows executable (system JRE must be installed) jadx-gui-1.5.7-mac-aarch64.dmg and jadx-gui-1.5.7-mac-x86_64.dmg - jadx-gui macOS DMG bundles jadx-1.5.7.zip - cross-platform cli and gui bundle (system JRE must be installed) For system JDK the latest version is always preferred, download at oracle.com",
+          "source": "JADX Releases",
+          "source_url": "https://github.com/skylot/jadx/releases.atom",
+          "category": "android-reverse-engineering",
+          "published": "2026-11-18T20:44:35+00:00",
+          "trust": 9,
+          "source_boost": 5,
+          "topic_terms": [
+            "Android reverse engineering"
+          ],
+          "matched_terms": [
+            "Android reverse engineering"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "55c6479b5ff4b3b735c9295306dc9edb824848ccdd36c288b15c8e9a504a984e",
+          "title": "dev/6.1.11183",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11183",
+          "summary": "Use Wayland-compatible method for tab/sidebar drag and drop",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-19T02:01:19+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "1b7ffed74d99615bdcaa08dcd8ea7c408c07feeef92777974df0b8490c51fc4b",
+          "title": "dev/6.1.11182",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11182",
+          "summary": "Use Wayland-compatible method for tab/sidebar drag and drop",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-19T02:01:19+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "917537bd5a0f52187385d3fef2d057e3120ff23500be3790f08fdfb3598ed4ac",
+          "title": "Live Noise Fingerprints for Quantum Program Analysis",
+          "url": "https://arxiv.org/abs/2611.19143v2",
+          "summary": "Quantum programs are probabilistic in nature, and noisy execution due to current imperfect hardware further complicates their analysis. In this paper, we study abstract semantics for analysing quantum programs under these conditions. We introduce noise fingerprints, compact descriptions of the observable effects of noise relative to a finite interface of input states and output measurements. We use them to define our abstract domain with respect to the concrete noise-related behaviour. We relate the concrete and abstract domains through a probabilistic Galois connection, extending the Galois-connection framework to distribution-valued interpretations. We study the resulting abstraction in terms of observational soundness, conciseness, efficiency, and ability to adapt to changing noise. We show that polynomial-size interfaces yield exponentially smaller fingerprints than full noise models while preserving the chosen observations, and that fingerprint distance characterises the largest observational discrepancy over the chosen interface. Further, we develop ChanShadow, which reuses noise fingerprints of commonly used short program fragments to analyse noisy execution of whole programs and provides a uniform finite-sample error bound. We construct working examples showing how fingerprints support program analysis. We evaluate fingerprint precision, representation cost, measurement requirements, and behaviour under noise drift. On a synthetic benchmark, fingerprints retain $(99 \\pm 1)\\%$ of the noise strength information of a full noise model. On simulated noise drift, reusing earlier measurements reduces the number of fresh measurement rounds needed to reach an error tolerance of $0.10$ by a factor of $2.3$ at $95\\%$ confidence and by a factor of $27$ under the median-error criterion.",
+          "source": "arXiv Reverse Engineering Research",
+          "source_url": "https://export.arxiv.org/api/query?search_query=all%3A%22binary%20analysis%22%20OR%20all%3A%22decompilation%22%20OR%20all%3A%22WebAssembly%22%20OR%20all%3A%22program%20analysis%22&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending",
+          "category": "research",
+          "published": "2026-11-18T06:38:55+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 21
+        }
+      ]
+    },
     {
       "date": "2026-11-18",
       "path": "/public/news/2026-11-18-unity-il2cpp-reverse-engineering-news.html",
