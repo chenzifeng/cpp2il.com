@@ -1,13 +1,20 @@
 {
   "version": 2,
-  "last_checked_at": "2026-11-19T08:52:14.642922+00:00",
+  "last_checked_at": "2026-11-20T08:38:56.007402+00:00",
   "summary": {
     "configured": 84,
     "successful": 83,
     "failed": 1
   },
   "sources": {
-    "Unity Beta Releases": {
+    "Zygisk Il2CppDumper Releases": {
+      "status": "ok",
+      "item_count": 0,
+      "consecutive_failures": 0,
+      "last_error": "",
+      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
+    },
+    "Il2CppDumper Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
@@ -28,23 +35,9 @@
       "last_error": "",
       "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
     },
-    "Zygisk Il2CppDumper Releases": {
-      "status": "ok",
-      "item_count": 0,
-      "consecutive_failures": 0,
-      "last_error": "",
-      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
-    },
-    "Il2CppDumper Releases": {
+    "Unity Beta Releases": {
       "status": "ok",
       "item_count": 10,
-      "consecutive_failures": 0,
-      "last_error": "",
-      "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
-    },
-    "Unity Official Blog": {
-      "status": "ok",
-      "item_count": 50,
       "consecutive_failures": 0,
       "last_error": "",
       "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
@@ -84,13 +77,6 @@
       "last_error": "",
       "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
     },
-    "UABEA Releases": {
-      "status": "ok",
-      "item_count": 9,
-      "consecutive_failures": 0,
-      "last_error": "",
-      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
-    },
     "Il2CppVersions Commits": {
       "status": "ok",
       "item_count": 20,
@@ -98,7 +84,28 @@
       "last_error": "",
       "last_changed_at": "2026-11-10T08:28:22.137937+00:00"
     },
-    "Cpp2IL Releases": {
+    "UABEA Releases": {
+      "status": "ok",
+      "item_count": 9,
+      "consecutive_failures": 0,
+      "last_error": "",
+      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
+    },
+    "Unity Official Blog": {
+      "status": "ok",
+      "item_count": 50,
+      "consecutive_failures": 0,
+      "last_error": "",
+      "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
+    },
+    "BepInEx Releases": {
+      "status": "ok",
+      "item_count": 10,
+      "consecutive_failures": 0,
+      "last_error": "",
+      "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
+    },
+    "MelonLoader Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
@@ -112,7 +119,7 @@
       "last_error": "",
       "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
-    "MelonLoader Releases": {
+    "Cpp2IL Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
@@ -125,27 +132,6 @@
       "consecutive_failures": 0,
       "last_error": "",
       "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
-    },
-    "BepInEx Releases": {
-      "status": "ok",
-      "item_count": 10,
-      "consecutive_failures": 0,
-      "last_error": "",
-      "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
-    },
-    ".NET Blog": {
-      "status": "ok",
-      "item_count": 10,
-      "consecutive_failures": 0,
-      "last_error": "",
-      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
-    },
-    "Harmony Releases": {
-      "status": "ok",
-      "item_count": 10,
-      "consecutive_failures": 0,
-      "last_error": "",
-      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
     "Unity Data Tools Releases": {
       "status": "ok",
@@ -168,12 +154,12 @@
       "last_error": "",
       "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
-    "Il2CppInterop Releases": {
+    "Harmony Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
       "last_error": "",
-      "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
+      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
     "Ghidra Releases": {
       "status": "ok",
@@ -182,12 +168,19 @@
       "last_error": "",
       "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
     },
-    "dnSpyEx Releases": {
+    "Il2CppInterop Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
       "last_error": "",
       "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
+    },
+    ".NET Blog": {
+      "status": "ok",
+      "item_count": 10,
+      "consecutive_failures": 0,
+      "last_error": "",
+      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
     "Rizin Releases": {
       "status": "ok",
@@ -196,14 +189,21 @@
       "last_error": "",
       "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
-    "Cutter Releases": {
+    "dnSpyEx Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
       "last_error": "",
-      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
+      "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
     },
-    ".NET Runtime Releases": {
+    "ILSpy Releases": {
+      "status": "ok",
+      "item_count": 10,
+      "consecutive_failures": 0,
+      "last_error": "",
+      "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
+    },
+    "Cutter Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
@@ -238,7 +238,28 @@
       "last_error": "",
       "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
+    ".NET Runtime Releases": {
+      "status": "ok",
+      "item_count": 10,
+      "consecutive_failures": 0,
+      "last_error": "",
+      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
+    },
+    "Frida Releases": {
+      "status": "ok",
+      "item_count": 10,
+      "consecutive_failures": 0,
+      "last_error": "",
+      "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
+    },
     "Unicorn Releases": {
+      "status": "ok",
+      "item_count": 10,
+      "consecutive_failures": 0,
+      "last_error": "",
+      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
+    },
+    "Binary Ninja API Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
@@ -259,20 +280,6 @@
       "last_error": "",
       "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
-    "Frida Releases": {
-      "status": "ok",
-      "item_count": 10,
-      "consecutive_failures": 0,
-      "last_error": "",
-      "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
-    },
-    "Binary Ninja API Releases": {
-      "status": "ok",
-      "item_count": 10,
-      "consecutive_failures": 0,
-      "last_error": "",
-      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
-    },
     "x64dbg Releases": {
       "status": "ok",
       "item_count": 10,
@@ -280,35 +287,7 @@
       "last_error": "",
       "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
-    "Capstone Releases": {
-      "status": "ok",
-      "item_count": 10,
-      "consecutive_failures": 0,
-      "last_error": "",
-      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
-    },
-    "ILSpy Releases": {
-      "status": "ok",
-      "item_count": 10,
-      "consecutive_failures": 0,
-      "last_error": "",
-      "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
-    },
     "reFlutter Releases": {
-      "status": "ok",
-      "item_count": 10,
-      "consecutive_failures": 0,
-      "last_error": "",
-      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
-    },
-    "pwndbg Releases": {
-      "status": "ok",
-      "item_count": 10,
-      "consecutive_failures": 0,
-      "last_error": "",
-      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
-    },
-    "Objection Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
@@ -322,6 +301,13 @@
       "last_error": "",
       "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
+    "Capstone Releases": {
+      "status": "ok",
+      "item_count": 10,
+      "consecutive_failures": 0,
+      "last_error": "",
+      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
+    },
     "pwntools Releases": {
       "status": "ok",
       "item_count": 10,
@@ -329,14 +315,21 @@
       "last_error": "",
       "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
-    "MobSF Releases": {
+    "Objection Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
       "last_error": "",
       "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
-    "FLOSS Releases": {
+    "pwndbg Releases": {
+      "status": "ok",
+      "item_count": 10,
+      "consecutive_failures": 0,
+      "last_error": "",
+      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
+    },
+    "MobSF Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
@@ -364,14 +357,14 @@
       "last_error": "",
       "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
-    "wasm-tools Releases": {
+    "FLOSS Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
       "last_error": "",
       "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
-    "Binaryen Releases": {
+    "Wasmtime Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
@@ -385,7 +378,28 @@
       "last_error": "",
       "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
     },
-    "Wasmtime Releases": {
+    "wasm3 Releases": {
+      "status": "ok",
+      "item_count": 9,
+      "consecutive_failures": 0,
+      "last_error": "",
+      "last_changed_at": "2026-09-11T06:04:51.208066+00:00"
+    },
+    "Wasmer Releases": {
+      "status": "ok",
+      "item_count": 10,
+      "consecutive_failures": 0,
+      "last_error": "",
+      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
+    },
+    "V8 Blog": {
+      "status": "ok",
+      "item_count": 10,
+      "consecutive_failures": 0,
+      "last_error": "",
+      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
+    },
+    "Binaryen Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
@@ -399,21 +413,7 @@
       "last_error": "",
       "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
-    "WABT Releases": {
-      "status": "ok",
-      "item_count": 10,
-      "consecutive_failures": 0,
-      "last_error": "",
-      "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
-    },
-    "V8 Blog": {
-      "status": "ok",
-      "item_count": 10,
-      "consecutive_failures": 0,
-      "last_error": "",
-      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
-    },
-    "Wasmer Releases": {
+    "GitHub Security Blog": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
@@ -427,23 +427,23 @@
       "last_error": "",
       "last_changed_at": "2026-10-23T06:04:39.440829+00:00"
     },
-    "GitHub Security Blog": {
+    "wasm-tools Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
       "last_error": "",
       "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
-    "wasm3 Releases": {
+    "WABT Releases": {
       "status": "ok",
-      "item_count": 9,
+      "item_count": 10,
       "consecutive_failures": 0,
       "last_error": "",
-      "last_changed_at": "2026-09-11T06:04:51.208066+00:00"
+      "last_changed_at": "2026-07-20T06:36:40.636942+00:00"
     },
-    "Trail of Bits Blog": {
+    "Chicory Releases": {
       "status": "ok",
-      "item_count": 20,
+      "item_count": 10,
       "consecutive_failures": 0,
       "last_error": "",
       "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
@@ -455,7 +455,14 @@
       "last_error": "",
       "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
-    "Chicory Releases": {
+    "Trail of Bits Blog": {
+      "status": "ok",
+      "item_count": 20,
+      "consecutive_failures": 0,
+      "last_error": "",
+      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
+    },
+    "wasmi Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
@@ -476,7 +483,14 @@
       "last_error": "",
       "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
-    "wasmi Releases": {
+    "WAMR Releases": {
+      "status": "ok",
+      "item_count": 10,
+      "consecutive_failures": 0,
+      "last_error": "",
+      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
+    },
+    "WasmEdge Releases": {
       "status": "ok",
       "item_count": 10,
       "consecutive_failures": 0,
@@ -489,20 +503,6 @@
       "consecutive_failures": 0,
       "last_error": "",
       "last_changed_at": "2026-11-14T07:38:49.184552+00:00"
-    },
-    "WasmEdge Releases": {
-      "status": "ok",
-      "item_count": 10,
-      "consecutive_failures": 0,
-      "last_error": "",
-      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
-    },
-    "WAMR Releases": {
-      "status": "ok",
-      "item_count": 10,
-      "consecutive_failures": 0,
-      "last_error": "",
-      "last_changed_at": "2026-07-24T04:37:48.426658+00:00"
     },
     "Unity Discussions Latest": {
       "status": "error",
@@ -583,17 +583,17 @@
     },
     "Hacker News Technical Top Stories": {
       "status": "ok",
-      "item_count": 80,
+      "item_count": 82,
       "consecutive_failures": 0,
       "last_error": "",
-      "last_changed_at": "2026-11-19T08:52:14.642922+00:00"
+      "last_changed_at": "2026-11-20T08:38:56.007402+00:00"
     },
     "Show HN Reverse Engineering Tools": {
       "status": "ok",
-      "item_count": 50,
+      "item_count": 67,
       "consecutive_failures": 0,
       "last_error": "",
-      "last_changed_at": "2026-11-19T08:52:14.642922+00:00"
+      "last_changed_at": "2026-11-20T08:38:56.007402+00:00"
     }
   }
 }

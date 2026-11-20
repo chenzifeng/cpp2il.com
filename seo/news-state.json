@@ -1,10 +1,240 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-19T08:52:14.642922+00:00",
+  "last_generated_at": "2026-11-20T08:38:56.007402+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-20",
+      "path": "/public/news/2026-11-20-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Decompiler research News — November 20, 2026",
+      "description": "Curated Binary reverse engineering, Decompiler research updates for developers and security researchers. 11 relevant releases and technical developments with…",
+      "item_count": 11,
+      "new_item_count": 11,
+      "updated_at": "2026-11-20T08:38:56.007402+00:00",
+      "entries": [
+        {
+          "entry_id": "4ebf764fd5d79ca0a1e2839800561f94e25ca733cde9d49ba6d67e8ac8974f58",
+          "title": "ioma8/ghidra-decompile-skill — trending GitHub repository",
+          "url": "https://github.com/ioma8/ghidra-decompile-skill",
+          "summary": "Agent skill + 22 Ghidra scripts for fast targeted decompilation, and the fix for GhidraMCP extension/Ghidra version mismatches. GitHub discovery signal: 37 stars, 4 forks, 0 open issues; language Java; last pushed 2026-11-18. Topics: agent-skills, binary-analysis, decompiler, ghidra, mcp, reverse-engineering.",
+          "source": "GitHub Hot Decompilers",
+          "source_url": "https://api.github.com/search/repositories?q=topic%3Adecompiler+created%3A%3E%3D2026-05-24+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-decompiler",
+          "published": "2026-11-11T15:56:00+00:00",
+          "trust": 8,
+          "source_boost": 16,
+          "topic_terms": [
+            "Decompiler research",
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 51
+        },
+        {
+          "entry_id": "51dd757d14c73dc59a065f768c43a63a00a11427534103ff6230658a35636b54",
+          "title": "Frida 17.27.3",
+          "url": "https://github.com/frida/frida/releases/tag/17.27.3",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-11-20T05:22:11+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "a915bcc494deab77fe48403af27bd3c574724634bfd5355d014aacd9189676a7",
+          "title": "Frida 17.27.2",
+          "url": "https://github.com/frida/frida/releases/tag/17.27.2",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-11-19T11:35:16+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "dc29454904bc6a87a6c1f14dcd338eb708fc234e9ca5cbb39c0428748892f8e1",
+          "title": "v50.0.3: Release Wasmtime 50.0.3 (#15370)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v50.0.3",
+          "summary": "50.0.3 Fixed 2026-11-19. Fixed WASI filesystem sandbox escape on Windows through a drive-prefixed path component GHSA-f2pq-268w-886c",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-11-19T19:46:39+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "61c5f5e55ff86f25a9ba4266721971d5e1c95f19e2274417553ad4b5e8f913de",
+          "title": "v49.0.7: Release Wasmtime 49.0.7 (#15369)",
+          "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v49.0.7",
+          "summary": "49.0.7 Fixed 2026-11-19. Fixed WASI filesystem sandbox escape on Windows through a drive-prefixed path component GHSA-f2pq-268w-886c",
+          "source": "Wasmtime Releases",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-11-19T17:16:25+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 35
+        },
+        {
+          "entry_id": "e6a381ef81340b764245c2e21fd4ac32d6bc0344e2ba29e4cca2aa2bc7e6eb86",
+          "title": "Unity 6000.3.29f1 LTS",
+          "url": "https://unity.com/releases/editor/whats-new/6000.3.29f1",
+          "summary": "Unity 6000.3.29f1 LTS",
+          "source": "Unity LTS Releases",
+          "source_url": "https://unity.com/releases/editor/lts-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-11-19T10:35:33+00:00",
+          "trust": 10,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 26
+        },
+        {
+          "entry_id": "1bcff75bf3317305ac92d78cd7edd0305a03201202e56b8c018f28c0f7dd5b4f",
+          "title": "Unity 6000.7.0 Beta",
+          "url": "https://unity.com/releases/editor/beta/6000.7.0b10",
+          "summary": "Unity 6000.7.0 Beta",
+          "source": "Unity Beta Releases",
+          "source_url": "https://unity.com/releases/editor/beta-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-11-19T10:59:57+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "40f24266b6a0ffb5d9d08acedbd489d1d795058a0e563d255efd468e05c9562f",
+          "title": "dev/6.1.11189",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11189",
+          "summary": "Use Wayland-compatible method for tab/sidebar drag and drop",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-19T02:01:19+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "6d5a5be9bf9176fb018772619f39f6abaa2fbae22e08df2c6a666ef32fc93bdf",
+          "title": "dev/6.1.11187",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11187",
+          "summary": "Use Wayland-compatible method for tab/sidebar drag and drop",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-19T02:01:19+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "0e81e0b71dec2a575c65301e0dafdd4556f6b43829a652e125e8ec9e3490717a",
+          "title": "v2.0.2 - 2026/11/19",
+          "url": "https://github.com/wasmi-labs/wasmi/releases/tag/v2.0.2",
+          "summary": "Fixes Fix a miscompilation of multi-value br_table with equal-height targets whose branch values sit above another operand. #2106 Thanks to Sharadhi V for reporting and fixing the bug! Thanks to SRLabs for independently also reporting the bug! Fix a miscompilation of if blocks with parameters whose then block writes a local. #2108 Thanks to SRLabs for reporting the bug! Fix a miscompilation of loop blocks with parameters that overwrote a preceding local.tee result. #2109 Thanks to SRLabs for reporting the bug! Fix resuming a host trap of a tail called host function writing the host results into the wrong caller slots. #2110 Thanks to Dickson Wu for reporting the bug! Thanks to Sharadhi V for independently also reporting the bug in #2107 ! Fix a segfault after tail calling a host function without parameters and results. #2099 Thanks to Sharadhi V for reporting and fixing the bug! Fix a use-after-free when resuming a TypedResumableCallOutOfFuel on a Store that did not start it. #2103 Resuming on a different Store now panics for all resumable call kinds. Thanks to Sharadhi V for reporting and fixing the bug! Fix a CLI panic when printing non- null funcref or externref results. #2116 Thanks to SRLabs for reporting the bug! Fix call_indirect signature check bypasses and use-after-frees when instantiating a Module compiled by another Engine than the Store 's. #2113 Instantiating such a Module now panics. Thanks to Sharadhi V for reporting and fixing the bug! Fix creating 64-bit tables with a maximum size above usize::MAX on 32-bit hosts. #2112 Deprecated TableError::MaximumSizeOverflow and MemoryError::MaximumSizeOverflow since they are no longer returned. Thanks to 0z5a for fixing the bug! Internal Add AGENTS.md with guidance for AI coding agents. #2119",
+          "source": "wasmi Releases",
+          "source_url": "https://github.com/wasmi-labs/wasmi/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-11-19T14:39:40+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 14
+        },
+        {
+          "entry_id": "4a703d3e7829f2bbd0383d3c6e4d3c05353e8f17547e7e7cfe98ca2af3df0a92",
+          "title": "Unity 7000.0.0 Alpha",
+          "url": "https://unity.com/releases/editor/alpha/7000.0.0a20",
+          "summary": "Unity 7000.0.0 Alpha",
+          "source": "Unity Alpha Releases",
+          "source_url": "https://unity.com/releases/editor/alpha-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-11-19T11:21:37+00:00",
+          "trust": 10,
+          "source_boost": 1,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 12
+        }
+      ]
+    },
     {
       "date": "2026-11-19",
       "path": "/public/news/2026-11-19-unity-il2cpp-reverse-engineering-news.html",
