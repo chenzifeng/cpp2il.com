@@ -2,19 +2,19 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 183,
+      "count": 184,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-11-20"
+      "last_seen": "2026-11-21"
     },
     "trending GitHub": {
-      "count": 183,
+      "count": 184,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-11-20"
+      "last_seen": "2026-11-21"
     },
     "GitHub repository": {
-      "count": 183,
+      "count": 184,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-11-20"
+      "last_seen": "2026-11-21"
     },
     "Unity": {
       "count": 65,
@@ -32,14 +32,14 @@
       "last_seen": "2026-11-08"
     },
     "WebAssembly": {
-      "count": 39,
+      "count": 40,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-11-17"
+      "last_seen": "2026-11-21"
     },
     "metadata": {
-      "count": 33,
+      "count": 34,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-11-06"
+      "last_seen": "2026-11-21"
     },
     "decompilation": {
       "count": 30,
@@ -77,9 +77,9 @@
       "last_seen": "2026-11-14"
     },
     "Wasm": {
-      "count": 16,
+      "count": 17,
       "first_seen": "2026-07-26",
-      "last_seen": "2026-11-18"
+      "last_seen": "2026-11-21"
     },
     "WASM": {
       "count": 16,
@@ -201,105 +201,105 @@
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-15"
     },
+    "when type printer": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "when type": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "type printer plugin": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "type printer": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "printer plugin lines": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "printer plugin": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "plugin lines omit": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "plugin lines": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "optional fields": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "omit optional fields": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "omit optional": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "lines omit optional": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "lines omit": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "Fix crash when": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "Fix crash": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "dev Fix crash": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "dev Fix": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "crash when type": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
+    "crash when": {
+      "count": 2,
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21"
+    },
     "without finalizing": {
       "count": 2,
       "first_seen": "2026-11-17",
       "last_seen": "2026-11-17"
-    },
-    "type without finalizing": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
-    },
-    "type without": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
-    },
-    "type builder integer": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
-    },
-    "type builder": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
-    },
-    "Retrieve type builder": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
-    },
-    "Retrieve type": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
-    },
-    "integer display type": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
-    },
-    "integer display": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
-    },
-    "display type without": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
-    },
-    "display type": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
-    },
-    "dev API Retrieve": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
-    },
-    "dev API": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
-    },
-    "builder integer display": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
-    },
-    "builder integer": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
-    },
-    "API Retrieve type": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
-    },
-    "API Retrieve": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
-    },
-    "IPA": {
-      "count": 2,
-      "first_seen": "2026-11-15",
-      "last_seen": "2026-11-15"
-    },
-    "Unify scalar paired-single": {
-      "count": 2,
-      "first_seen": "2026-11-06",
-      "last_seen": "2026-11-06"
-    },
-    "Unify scalar": {
-      "count": 2,
-      "first_seen": "2026-11-06",
-      "last_seen": "2026-11-06"
     }
   }
 }
