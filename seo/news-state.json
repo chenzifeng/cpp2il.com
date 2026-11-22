@@ -1,10 +1,64 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-21T08:20:09.805100+00:00",
+  "last_generated_at": "2026-11-22T08:05:32.071238+00:00",
   "source_errors": [
-    "Unity Discussions Latest: HTTP Error 403: Forbidden"
+    "Unity Discussions Latest: HTTP Error 403: Forbidden",
+    "arXiv Reverse Engineering Research: The read operation timed out"
   ],
   "pages": [
+    {
+      "date": "2026-11-22",
+      "path": "/public/news/2026-11-22-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity WebGL reverse engineering & WebAssembly tooling News — November 22, 2026",
+      "description": "Curated Unity WebGL reverse engineering, WebAssembly tooling updates for developers and security researchers. 2 relevant releases and technical developments…",
+      "item_count": 2,
+      "new_item_count": 2,
+      "updated_at": "2026-11-22T08:05:32.071238+00:00",
+      "entries": [
+        {
+          "entry_id": "329aab67f3575ad5f60caf50c02238b70e63fa6b206c473802ae01b306b829bb",
+          "title": "7.0.1",
+          "url": "https://github.com/emscripten-core/emscripten/releases/tag/7.0.1",
+          "summary": "What's Changed Emscripten's JavaScript tools ( tools/compiler.mjs , tools/preprocessor.mjs , tools/acorn-optimizer.mjs , tools/unsafe_optimizations.mjs , and tools/lz4-compress.mjs ) are now bundled into dist/ using rolldown . For folks using a git checkout of emscripten, ./bootstrap.py runs this bundling step automatically. ( #28281 ) Embind now generates JavaScript invoker functions at link time instead of using new Function at runtime. This improves startup time, makes -sDYNAMIC_EXECUTION=0 bindings just as fast as -sDYNAMIC_EXECUTION=1 without needing -sEMBIND_AOT . ( #28181 ) C preprocessor defines from struct_info.json (previously accessed via {{{ cDefs.FOO }}} ) are now exposed as const JavaScript library symbols (e.g., ENOENT , O_CREAT ) and referenced directly in JS library code, making unminified output more readable. ( #28144 ) zlib port updated from 1.3.2 to 1.4. ( #28210 ) In multi-threaded builds with assertions enabled, addFunction now warns when it adds a function to the table: each thread has its own table, so the function pointer is only valid in the calling thread. ( #28275 ) emscripten_get_now() (and clock_gettime(CLOCK_MONOTONIC) ) in pthreads builds now reads performance.timeOrigin once per thread. In Safari its value can vary between reads, which made the clock go backwards. ( #28272 ) Building with -sJSPI now bumps the default minimum supported browser versions to the first ones that support JSPI: Chrome 137, Firefox 153, Safari 27 and Node.js 24. ( #28334 ) Contributors Thanks to the following contributors: @sbc100 (66) @juj (26) @dschuff (5) @guybedford (5) @brendandahl (4) @stephenduong1004 (3) @tlively (3) @clementperon (2) @farisbasha (2) @aheejin (1) @dasa (1) @gribbet (1) @jeremy-code (1) @rosalbito (1) @ryanking13 (1) @subhaushsingh (1) @Thanatos9404 (1) @ypujante (1) New Contributors @rosalbito made their first contribution in #28169 @gribbet made their first contribution in #28272 @farisbasha made their first contribution in #28295 Full Changelog : 7.0.0...7.0.1",
+          "source": "Emscripten Releases",
+          "source_url": "https://github.com/emscripten-core/emscripten/releases.atom",
+          "category": "webassembly",
+          "published": "2026-11-21T18:48:42+00:00",
+          "trust": 10,
+          "source_boost": 4,
+          "topic_terms": [
+            "WebAssembly tooling",
+            "Unity WebGL reverse engineering"
+          ],
+          "matched_terms": [
+            "Unity WebGL reverse engineering",
+            "WebAssembly tooling"
+          ],
+          "score": 34
+        },
+        {
+          "entry_id": "0d220c29f1ecf68383235a7b6f2c0ca3e07d760b2c603cdff182761ef39f1a21",
+          "title": "dev/6.1.11209",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11209",
+          "summary": "Link clang/llvm as a shared library",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-21T08:08:28+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        }
+      ]
+    },
     {
       "date": "2026-11-21",
       "path": "/public/news/2026-11-21-unity-il2cpp-reverse-engineering-news.html",
