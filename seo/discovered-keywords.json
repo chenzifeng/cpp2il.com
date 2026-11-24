@@ -2,19 +2,19 @@
   "version": 3,
   "keywords": {
     "trending GitHub repository": {
-      "count": 185,
+      "count": 186,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-11-23"
+      "last_seen": "2026-11-24"
     },
     "trending GitHub": {
-      "count": 185,
+      "count": 186,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-11-23"
+      "last_seen": "2026-11-24"
     },
     "GitHub repository": {
-      "count": 185,
+      "count": 186,
       "first_seen": "2026-07-24",
-      "last_seen": "2026-11-23"
+      "last_seen": "2026-11-24"
     },
     "Unity": {
       "count": 65,
@@ -101,15 +101,15 @@
       "first_seen": "2026-07-26",
       "last_seen": "2026-09-30"
     },
+    "ARM64": {
+      "count": 6,
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-24"
+    },
     "AOT": {
       "count": 5,
       "first_seen": "2026-10-23",
       "last_seen": "2026-11-23"
-    },
-    "ARM64": {
-      "count": 5,
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-17"
     },
     "requirements users.": {
       "count": 4,

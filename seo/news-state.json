@@ -1,10 +1,84 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-23T09:11:39.393684+00:00",
+  "last_generated_at": "2026-11-24T11:03:53.041885+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-24",
+      "path": "/public/news/2026-11-24-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — November 24, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 3 relevant releases and technical developments with original sour…",
+      "item_count": 3,
+      "new_item_count": 3,
+      "updated_at": "2026-11-24T11:03:53.041885+00:00",
+      "entries": [
+        {
+          "entry_id": "e9775bb173f52107b259f1e22e87a6804b07340d8d051aa79862f85253f13c0f",
+          "title": "Freminet/ScarlettX — trending GitHub repository",
+          "url": "https://github.com/Freminet/ScarlettX",
+          "summary": "Experimental, clean-room Xbox Series X|S (Scarlett) HLE and compatibility layer for Windows x64. GitHub discovery signal: 249 stars, 25 forks, 29 open issues; language C++; last pushed 2026-11-22.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-07-27+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-11-20T06:54:47+00:00",
+          "trust": 8,
+          "source_boost": 22,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 46
+        },
+        {
+          "entry_id": "09b0741beca76e0d57cef5a1ffcd2dc24c38ebb21b9421d3d002df8542c07cd0",
+          "title": "Frida 17.27.5",
+          "url": "https://github.com/frida/frida/releases/tag/17.27.5",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-11-23T23:26:29+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "480714cf1831eff58ecb1855f66cbe98e5e26c02c1c46a0d2675433811026ad3",
+          "title": "Harmony 3.0.0-rc.8",
+          "url": "https://github.com/pardeike/Harmony/releases/tag/v3.0.0-rc.8",
+          "summary": "Embed MonoMod.Core 1.4.0-prerelease.3. Fix patches on .NET 11 methods that the runtime recompiles after many calls ( #794 ). A patch on a method that had already been called often had no effect. On ARM64, a patch made earlier was lost at the recompile, and removing it then crashed the process. Remove the .NET 11 limit from rc.6 and rc.7. A generic method instantiation such as Method<int>() can be patched again.",
+          "source": "Harmony Releases",
+          "source_url": "https://github.com/pardeike/Harmony/releases.atom",
+          "category": "dotnet-runtime",
+          "published": "2026-11-24T07:17:42+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "Unity runtime tooling",
+            "C# decompilation"
+          ],
+          "matched_terms": [
+            "Unity runtime tooling",
+            "C# decompilation"
+          ],
+          "score": 28
+        }
+      ]
+    },
     {
       "date": "2026-11-23",
       "path": "/public/news/2026-11-23-unity-il2cpp-reverse-engineering-news.html",
