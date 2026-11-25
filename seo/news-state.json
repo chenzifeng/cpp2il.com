@@ -1,10 +1,101 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-24T11:03:53.041885+00:00",
+  "last_generated_at": "2026-11-25T09:54:07.993998+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-25",
+      "path": "/public/news/2026-11-25-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Binary reverse engineering & Decompiler research News — November 25, 2026",
+      "description": "Curated Binary reverse engineering, Decompiler research updates for developers and security researchers. 4 relevant releases and technical developments with…",
+      "item_count": 4,
+      "new_item_count": 4,
+      "updated_at": "2026-11-25T09:54:07.993998+00:00",
+      "entries": [
+        {
+          "entry_id": "8d4dc82eaf182be1b5f68741affc2a8171b9e69c7057d39adf8852a90215fc88",
+          "title": "dev/6.1.11222: [TMS320 C6x] Identify ELF block labels independently of platform names",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11222",
+          "summary": "Use EM_TI_C6000 instead of the selected platform name to identify TI block-label symbols. Keep these labels from becoming functions with big-endian architectures or custom platforms, while retaining the existing dollar-sign and LOOP naming rules. Refresh ultimate architecture analysis expectations for the expanded TMS320 C6x implementation.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-24T14:38:06+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "ed5393eed4e6c542b77736e921186c5e911ead3cff22448b7c6ef1542feff2a9",
+          "title": "dev/6.1.11218: [TMS320 C6x] Identify ELF block labels independently of platform names",
+          "url": "https://github.com/Vector35/binaryninja-api/releases/tag/dev%2F6.1.11218",
+          "summary": "Use EM_TI_C6000 instead of the selected platform name to identify TI block-label symbols. Keep these labels from becoming functions with big-endian architectures or custom platforms, while retaining the existing dollar-sign and LOOP naming rules. Refresh ultimate architecture analysis expectations for the expanded TMS320 C6x implementation.",
+          "source": "Binary Ninja API Releases",
+          "source_url": "https://github.com/Vector35/binaryninja-api/releases.atom",
+          "category": "reverse-engineering",
+          "published": "2026-11-24T14:38:06+00:00",
+          "trust": 9,
+          "source_boost": 3,
+          "topic_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering",
+            "Decompiler research"
+          ],
+          "score": 22
+        },
+        {
+          "entry_id": "eb0dca4efcf722ebbdd71cf13316ffa7c58682e53ffc3e213271c58c05376f7a",
+          "title": "v2.0.3 - 2026/11/24",
+          "url": "https://github.com/wasmi-labs/wasmi/releases/tag/v2.0.3",
+          "summary": "Fixes Fix memory-unsafe execution of v128.store8_lane and v128.store16_lane when simd is enabled without memory64 . #2126 Thanks to neit-16 for reporting the bug and proposing a fix! Changed TrapCode errors no longer allocate. #2125 An Error carrying only a TrapCode now points to a static ErrorKind . Thanks to moroznah for filing this feature request in #2069 ! Internal Added wasmi_core::for_each_trap_code! to generate code for all TrapCode variants. #2124",
+          "source": "wasmi Releases",
+          "source_url": "https://github.com/wasmi-labs/wasmi/releases.atom",
+          "category": "webassembly-runtime",
+          "published": "2026-11-24T19:12:33+00:00",
+          "trust": 8,
+          "source_boost": 3,
+          "topic_terms": [
+            "WebAssembly runtime"
+          ],
+          "matched_terms": [
+            "WebAssembly runtime"
+          ],
+          "score": 21
+        },
+        {
+          "entry_id": "10441a5718c727c06db2b74ec8442ce8c1c65c819f89c915d6457f99a54d28f8",
+          "title": "Unity 7000.0.0 Alpha",
+          "url": "https://unity.com/releases/editor/alpha/7000.0.0a21",
+          "summary": "Unity 7000.0.0 Alpha",
+          "source": "Unity Alpha Releases",
+          "source_url": "https://unity.com/releases/editor/alpha-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-11-24T12:22:16+00:00",
+          "trust": 10,
+          "source_boost": 1,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 12
+        }
+      ]
+    },
     {
       "date": "2026-11-24",
       "path": "/public/news/2026-11-24-unity-il2cpp-reverse-engineering-news.html",

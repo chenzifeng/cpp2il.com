@@ -17,9 +17,9 @@
       "last_seen": "2026-11-24"
     },
     "Unity": {
-      "count": 65,
+      "count": 66,
       "first_seen": "2026-07-20",
-      "last_seen": "2026-11-20"
+      "last_seen": "2026-11-25"
     },
     "decompiler": {
       "count": 52,
@@ -201,6 +201,91 @@
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-15"
     },
+    "TMS320 C6x Identify": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
+    "TMS320 C6x": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
+    "platform names": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
+    "labels independently platform": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
+    "labels independently": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
+    "independently platform names": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
+    "independently platform": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
+    "Identify ELF block": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
+    "Identify ELF": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
+    "ELF block labels": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
+    "ELF block": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
+    "dev TMS320 C6x": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
+    "dev TMS320": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
+    "C6x Identify ELF": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
+    "C6x Identify": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
+    "block labels independently": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
+    "block labels": {
+      "count": 2,
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25"
+    },
     "when type printer": {
       "count": 2,
       "first_seen": "2026-11-21",
@@ -215,91 +300,6 @@
       "count": 2,
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21"
-    },
-    "type printer": {
-      "count": 2,
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21"
-    },
-    "printer plugin lines": {
-      "count": 2,
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21"
-    },
-    "printer plugin": {
-      "count": 2,
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21"
-    },
-    "plugin lines omit": {
-      "count": 2,
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21"
-    },
-    "plugin lines": {
-      "count": 2,
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21"
-    },
-    "optional fields": {
-      "count": 2,
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21"
-    },
-    "omit optional fields": {
-      "count": 2,
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21"
-    },
-    "omit optional": {
-      "count": 2,
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21"
-    },
-    "lines omit optional": {
-      "count": 2,
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21"
-    },
-    "lines omit": {
-      "count": 2,
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21"
-    },
-    "Fix crash when": {
-      "count": 2,
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21"
-    },
-    "Fix crash": {
-      "count": 2,
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21"
-    },
-    "dev Fix crash": {
-      "count": 2,
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21"
-    },
-    "dev Fix": {
-      "count": 2,
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21"
-    },
-    "crash when type": {
-      "count": 2,
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21"
-    },
-    "crash when": {
-      "count": 2,
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21"
-    },
-    "without finalizing": {
-      "count": 2,
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17"
     }
   }
 }
