@@ -1,10 +1,97 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-26T09:38:47.163857+00:00",
+  "last_generated_at": "2026-11-27T09:43:45.509899+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-27",
+      "path": "/public/news/2026-11-27-unity-il2cpp-reverse-engineering-news.html",
+      "title": "APK and IPA analysis & Dynamic instrumentation News — November 27, 2026",
+      "description": "Curated APK and IPA analysis, Dynamic instrumentation updates for developers and security researchers. 4 relevant releases and technical developments with or…",
+      "item_count": 4,
+      "new_item_count": 4,
+      "updated_at": "2026-11-27T09:43:45.509899+00:00",
+      "entries": [
+        {
+          "entry_id": "d60c18800495b2de9f6cf1f1b7588c5fcc0f53ba6e492b558c5ed450e3133e7c",
+          "title": "Frida 17.28.0",
+          "url": "https://github.com/frida/frida/releases/tag/17.28.0",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-11-26T20:10:53+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "f516994ccc1b72913ec72f74f55500931c6ce52bf81e4d2fc57157d949b2d2dc",
+          "title": "Unity 6000.7.0 Beta",
+          "url": "https://unity.com/releases/editor/beta/6000.7.0b11",
+          "summary": "Unity 6000.7.0 Beta",
+          "source": "Unity Beta Releases",
+          "source_url": "https://unity.com/releases/editor/beta-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-11-26T09:50:51+00:00",
+          "trust": 10,
+          "source_boost": 2,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 25
+        },
+        {
+          "entry_id": "c1b58c7c5714c675873946f2c6c1a9fa54bc10b799895ce15e58fca95ef26fc2",
+          "title": "Buy Nothing Day – Friday November 27th 2026",
+          "url": "https://www.buynothingday.co.uk/",
+          "summary": "Hacker News signal: 74 points and 12 comments; submitted by f_allwein; source www.buynothingday.co.uk. Discussion: https://news.ycombinator.com/item?id=50663261",
+          "source": "Hacker News Technical Top Stories",
+          "source_url": "https://news.ycombinator.com/news",
+          "category": "community-hot",
+          "published": "2026-11-27T05:52:42+00:00",
+          "trust": 7,
+          "source_boost": 4,
+          "topic_terms": [],
+          "matched_terms": [
+            "Dynamic instrumentation"
+          ],
+          "score": 21
+        },
+        {
+          "entry_id": "6a6b64ca64e39d8512a4007c7e92540cf060536f0e45b3925b6cc0c96c090ee4",
+          "title": "Unity 7000.0.0 Alpha",
+          "url": "https://unity.com/releases/editor/alpha/7000.0.0a22",
+          "summary": "Unity 7000.0.0 Alpha",
+          "source": "Unity Alpha Releases",
+          "source_url": "https://unity.com/releases/editor/alpha-releases.xml",
+          "category": "unity-releases",
+          "published": "2026-11-26T10:30:14+00:00",
+          "trust": 10,
+          "source_boost": 1,
+          "topic_terms": [
+            "Unity engine releases"
+          ],
+          "matched_terms": [
+            "Unity engine releases"
+          ],
+          "score": 12
+        }
+      ]
+    },
     {
       "date": "2026-11-26",
       "path": "/public/news/2026-11-26-unity-il2cpp-reverse-engineering-news.html",
