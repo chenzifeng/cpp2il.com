@@ -1,10 +1,122 @@
 {
   "version": 3,
-  "last_generated_at": "2026-11-27T09:43:45.509899+00:00",
+  "last_generated_at": "2026-11-28T08:56:51.903196+00:00",
   "source_errors": [
     "Unity Discussions Latest: HTTP Error 403: Forbidden"
   ],
   "pages": [
+    {
+      "date": "2026-11-28",
+      "path": "/public/news/2026-11-28-unity-il2cpp-reverse-engineering-news.html",
+      "title": "Unity IL2CPP & IL2CPP decompilation News — November 28, 2026",
+      "description": "Curated Unity IL2CPP, IL2CPP decompilation updates for developers and security researchers. 5 relevant releases and technical developments with original sour…",
+      "item_count": 5,
+      "new_item_count": 5,
+      "updated_at": "2026-11-28T08:56:51.903196+00:00",
+      "entries": [
+        {
+          "entry_id": "cab75f6c4b2acb2765b9630e2ea4182b694680a375ba53a8c3531645770d18ec",
+          "title": "schmidt21402/hwid-spoofer — trending GitHub repository",
+          "url": "https://github.com/schmidt21402/hwid-spoofer",
+          "summary": "HWID Spoofer — HWID Spoofer GitHub discovery signal: 269 stars, 35 forks, 0 open issues; language Go; last pushed 2026-11-28. Topics: hwid, hwid-spoofer, spoofer.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-07-31+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-11-28T03:34:11+00:00",
+          "trust": 8,
+          "source_boost": 22,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 46
+        },
+        {
+          "entry_id": "81b4c6f856e33ef52939190442e2304a6a561cef5c88c27c8ac44add1c0263b1",
+          "title": "lindawu10389/cs2-cheat — trending GitHub repository",
+          "url": "https://github.com/lindawu10389/cs2-cheat",
+          "summary": "CS2 Cheat — CS2 Cheats GitHub discovery signal: 269 stars, 34 forks, 0 open issues; language Go; last pushed 2026-11-28. Topics: cs2, cs2-cheat, cs2-cheats, cs2-esp, cs2-external.",
+          "source": "GitHub Hot IL2CPP Projects",
+          "source_url": "https://api.github.com/search/repositories?q=il2cpp+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-07-31+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D2&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-il2cpp",
+          "published": "2026-11-28T03:33:58+00:00",
+          "trust": 8,
+          "source_boost": 22,
+          "topic_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "matched_terms": [
+            "Unity IL2CPP",
+            "IL2CPP decompilation"
+          ],
+          "score": 46
+        },
+        {
+          "entry_id": "8858d18ba3aa5833aa9072482d75effba78b79c960bdfa916284b9fc1b591716",
+          "title": "Frida 17.28.1",
+          "url": "https://github.com/frida/frida/releases/tag/17.28.1",
+          "summary": "See https://frida.re/news/ for details.",
+          "source": "Frida Releases",
+          "source_url": "https://github.com/frida/frida/releases.atom",
+          "category": "dynamic-analysis",
+          "published": "2026-11-28T00:10:24+00:00",
+          "trust": 9,
+          "source_boost": 4,
+          "topic_terms": [
+            "Dynamic instrumentation",
+            "APK and IPA analysis"
+          ],
+          "matched_terms": [
+            "APK and IPA analysis",
+            "Dynamic instrumentation"
+          ],
+          "score": 37
+        },
+        {
+          "entry_id": "62bc7d305baa83341e390d685c718da317d8281ea4ec09bf4504d5833aa50424",
+          "title": "dazacode/vilauncher — trending GitHub repository",
+          "url": "https://github.com/dazacode/vilauncher",
+          "summary": "VILauncher by the VIPortLive team: install, update and play community game projects. You bring your own game build. GitHub discovery signal: 442 stars, 57 forks, 7 open issues; language Rust; last pushed 2026-11-28. Topics: game-tools, gta, launcher, rockstar, rockstar-games, rockstargames, rust, tauri, windows.",
+          "source": "GitHub Hot Ghidra Extensions",
+          "source_url": "https://api.github.com/search/repositories?q=ghidra+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-07-31+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=30",
+          "category": "github-hot-re",
+          "published": "2026-11-27T01:11:31+00:00",
+          "trust": 8,
+          "source_boost": 21,
+          "topic_terms": [
+            "Binary reverse engineering"
+          ],
+          "matched_terms": [
+            "Binary reverse engineering"
+          ],
+          "score": 33
+        },
+        {
+          "entry_id": "70a6524a74837fb365e00010a5223ee7079a02636ca687a30996d758e6e9fc6f",
+          "title": "nstudio/nativescript-compiler — trending GitHub repository",
+          "url": "https://github.com/nstudio/nativescript-compiler",
+          "summary": "Release NativeScript as Swift & Kotlin GitHub discovery signal: 15 stars, 0 forks, 0 open issues; language TypeScript; last pushed 2026-11-28. Topics: kotlin, nativescript, swift, typescript.",
+          "source": "GitHub Hot Program Analysis",
+          "source_url": "https://api.github.com/search/repositories?q=%22program+analysis%22+in%3Aname%2Cdescription%2Creadme+created%3A%3E%3D2026-06-01+archived%3Afalse+fork%3Afalse+stars%3A%3E%3D3&sort=stars&order=desc&per_page=25",
+          "category": "github-hot-research",
+          "published": "2026-11-25T22:26:14+00:00",
+          "trust": 8,
+          "source_boost": 14,
+          "topic_terms": [
+            "Decompiler research"
+          ],
+          "matched_terms": [
+            "Decompiler research"
+          ],
+          "score": 25
+        }
+      ]
+    },
     {
       "date": "2026-11-27",
       "path": "/public/news/2026-11-27-unity-il2cpp-reverse-engineering-news.html",
